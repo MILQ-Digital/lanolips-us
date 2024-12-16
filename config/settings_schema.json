@@ -19,7 +19,7 @@
         "type": "range",
         "id": "logo_width", 
         "min": 184,
-        "max": 460,
+        "max": 368,
         "step": 8,
         "default": 184,
         "unit": "px",
