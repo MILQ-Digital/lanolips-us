@@ -2919,7 +2919,7 @@ summary.list-menu__item {
 }
 
 .header__menu-item {
-  padding: 16px 25px;
+  padding: 16px 0;
   text-decoration: none;
   color: rgba(var(--color-foreground), 1);
 }
