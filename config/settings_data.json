@@ -41,7 +41,7 @@
     "inputs_radius": 0,
     "inputs_shadow_opacity": 0,
     "inputs_shadow_horizontal_offset": 0,
-    "inputs_shadow_vertical_offset": 12,
+    "inputs_shadow_vertical_offset": 0,
     "inputs_shadow_blur": 5,
     "card_style": "standard",
     "card_image_padding": 0,
@@ -157,13 +157,13 @@
       },
       "scheme-2": {
         "settings": {
-          "background": "#f3f3f3",
+          "background": "#ffffff",
           "background_gradient": "",
-          "text": "#121212",
-          "button": "#121212",
-          "button_label": "#f3f3f3",
-          "secondary_button_label": "#121212",
-          "shadow": "#121212"
+          "text": "#2b4676",
+          "button": "#fb558e",
+          "button_label": "#ffffff",
+          "secondary_button_label": "#2b4676",
+          "shadow": "rgba(0,0,0,0)"
         }
       },
       "scheme-3": {
