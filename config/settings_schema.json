@@ -17,11 +17,11 @@
       },
       {
         "type": "range",
-        "id": "logo_width", 
-        "min": 184,
-        "max": 368,
-        "step": 4,
-        "default": 184,
+        "id": "logo_width",
+        "min": 90,
+        "max": 500,
+        "step": 5,
+        "default": 100,
         "unit": "px",
         "label": "t:settings_schema.logo.settings.logo_width.label"
       },
