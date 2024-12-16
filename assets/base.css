@@ -1,5 +1,6 @@
 :root {
   --page-width: 100%;
+  --outer: 40px;
   --alpha-button-background: 1;
   --alpha-button-border: 1;
   --alpha-link: 0.85;
@@ -226,8 +227,8 @@ body:has(.section-header .drawer-menu) .announcement-bar-section .page-width {
 
 @media screen and (min-width: 990px) {
   .header:not(.drawer-menu).page-width {
-    padding-left: 5rem;
-    padding-right: 5rem;
+    padding-left: var(--outer);
+    padding-right: var(--outer);
   }
 
   .page-width--narrow {
