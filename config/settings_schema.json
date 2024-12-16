@@ -18,9 +18,9 @@
       {
         "type": "range",
         "id": "logo_width", 
-        "min": 184,
-        "max": 300,
-        "step": 4,
+        "min": 23,
+        "max": 460,
+        "step": 8,
         "default": 184,
         "unit": "px",
         "label": "t:settings_schema.logo.settings.logo_width.label"
