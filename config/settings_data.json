@@ -145,13 +145,13 @@
     "color_schemes": {
       "scheme-1": {
         "settings": {
-          "background": "#ffffff",
+          "background": "#f3e5ef",
           "background_gradient": "",
-          "text": "#121212",
-          "button": "#121212",
+          "text": "#2b4676",
+          "button": "#fb558e",
           "button_label": "#ffffff",
-          "secondary_button_label": "#121212",
-          "shadow": "#121212"
+          "secondary_button_label": "#2b4676",
+          "shadow": "rgba(0,0,0,0)"
         }
       },
       "scheme-2": {
