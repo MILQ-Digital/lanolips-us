@@ -20,7 +20,7 @@
         "id": "logo_width", 
         "min": 184,
         "max": 368,
-        "step": 8,
+        "step": 2,
         "default": 184,
         "unit": "px",
         "label": "t:settings_schema.logo.settings.logo_width.label"
