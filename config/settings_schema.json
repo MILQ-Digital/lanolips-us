@@ -17,7 +17,7 @@
       },
       {
         "type": "range",
-        "id": "logo_width",
+        "id": "logo_width", 
         "min": 40,
         "max": 300,
         "step": 4,
