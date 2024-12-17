@@ -1331,6 +1331,7 @@ button.shopify-payment-button__button--unbranded {
 
 .button--secondary {
   background-color: var(--color-background-bg); 
+  box-shadow: var(--color-background-bg); 
 }
 
 .button:before,
