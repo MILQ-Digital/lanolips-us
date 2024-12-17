@@ -1378,6 +1378,12 @@ button.shopify-payment-button__button--unbranded {
     0 0 0 calc(var(--buttons-border-width) + 1px) rgba(var(--color-button), var(--alpha-button-background));
 }
 
+.button--secondary:not([disabled]):after, 
+.button--secondary:after {
+  box-shadow: 0 0 0 calc(var(--buttons-border-width) + var(--border-offset)) rgba(var(--color-button-text), var(--border-opacity)), 0 0 0 var(--buttons-border-width) rgba(var(--color-button-text), var(--alpha-button-background));
+  transition: box-shadow var(--duration-short) ease;
+}
+
 .button--secondary:not([disabled]):hover:after, .button--secondary:hover:after {
   --border-offset: -1px;
     box-shadow: 0 0 0 calc(var(--buttons-border-width) + var(--border-offset)) rgba(var(--color-button-text), var(--border-opacity)), 0 0 0 calc(var(--buttons-border-width) + 0px) rgba(var(--color-button-text), var(--alpha-button-background));
