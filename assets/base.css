@@ -1329,6 +1329,10 @@ button.shopify-payment-button__button--unbranded {
   background-color: rgba(var(--color-button), var(--alpha-button-background));
 }
 
+.button--secondary {
+  background-color:  
+}
+
 .button:before,
 .shopify-challenge__button:before,
 .customer button:before,
@@ -2918,7 +2922,7 @@ summary.list-menu__item {
 }
 
 .header__menu-item {
-  padding: 16px 0;
+  padding: 15px 0 0;
   text-decoration: none;
   color: rgba(var(--color-foreground), 1);
   font-weight: 500;
