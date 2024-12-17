@@ -1380,7 +1380,8 @@ button.shopify-payment-button__button--unbranded {
 
 .button--secondary:not([disabled]):hover:after, .button--secondary:hover:after {
   --border-offset: -1px;
-  box-shadow: 0 0 0 calc(var(--buttons-border-width) + var(--border-offset)) rgba(var(--color-button-text), var(--border-opacity)), 0 0 0 calc(var(--buttons-border-width) + 0px) var(--color-background-bg), var(--alpha-button-background);
+    box-shadow: 0 0 0 calc(var(--buttons-border-width) + var(--border-offset)) rgba(var(--color-button-text), var(--border-opacity)), 0 0 0 calc(var(--buttons-border-width) + 0px) rgba(var(--color-button-text), var(--alpha-button-background));
+    background-color: rgba(var(--color-button-text), .2);
 }
 
 .button--secondary:after {
