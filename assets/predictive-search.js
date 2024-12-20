@@ -290,3 +290,26 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+  const carousel = document.querySelector('.carousel');
+  const nextButton = document.createElement('button');
+  const prevButton = document.createElement('button');
+
+  nextButton.textContent = 'Next';
+  prevButton.textContent = 'Previous';
+
+  nextButton.classList.add('carousel-button', 'next');
+  prevButton.classList.add('carousel-button', 'prev');
+
+  carousel.parentElement.appendChild(prevButton);
+  carousel.parentElement.appendChild(nextButton);
+
+  nextButton.addEventListener('click', function() {
+    carousel.scrollBy({ left: 300, behavior: 'smooth' }); // Adjust scroll distance as needed
+  });
+
+  prevButton.addEventListener('click', function() {
+    carousel.scrollBy({ left: -300, behavior: 'smooth' }); // Adjust scroll distance as needed
+  });
+});
