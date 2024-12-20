@@ -3,6 +3,7 @@
   font-size: var(--body-sm);
   color: #AFB6C3;
   box-shadow: unset;
+  padding-left: 0;
 }
 
 .search__button {

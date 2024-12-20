@@ -25,7 +25,7 @@
           id="predictive-search-results-queries-list"
           class="predictive-search__results-list list-unstyled"
           role="group"
-          aria-labelledby="predictive-search-queries"
+          aria-labelledby="predictive-search-queries" 
         >
           {%- for query in predictive_search.resources.queries -%}
             <li
@@ -118,12 +118,6 @@
       <div class="predictive-search__result-group">
         {%- if predictive_search.resources.products.size > 0 -%}
           <div>
-            <h2
-              id="predictive-search-products"
-              class="predictive-search__heading text-body caption-with-letter-spacing"
-            >
-              {{- 'templates.search.products' | t -}}
-            </h2>
             <ul
               id="predictive-search-results-products-list"
               class="predictive-search__results-list list-unstyled grid"
@@ -157,12 +151,6 @@
         {%- endif -%}
         {%- if predictive_search.resources.articles.size > 0 or predictive_search.resources.pages.size > 0 -%}
           <div class="predictive-search__pages-wrapper">
-            <h2
-              id="predictive-search-pages-mobile"
-              class="predictive-search__heading text-body caption-with-letter-spacing"
-            >
-              {{- 'templates.search.pages' | t -}}
-            </h2>
             <ul
               id="predictive-search-results-pages-list-mobile"
               class="predictive-search__results-list list-unstyled"

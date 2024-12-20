@@ -121,31 +121,42 @@
         -%}
         <div class="predictive-search predictive-search--empty" data-popular-searches>
 
-            {%- if show_empty_search_menu and show_empty_search_product_list -%}
-              <div class="predictive-search__layout predictive-search__results-groups-wrapper">
-            {%- endif -%}
-
               {%- if show_empty_search_menu -%}
                 {%- assign animation_delay = animation_delay | plus: 100 -%}
-                <div class="predictive-search__column predictive-search__result-group">
-                  <p class="predictive-search__heading">{{ 'general.search.popular_searches' | t }}</p>
+                <div class="predictive-search__result-group">
+                  <h3 id="predictive-search-queries" class="predictive-search__heading text-body caption-with-letter-spacing">
+                    {{ 'general.search.popular_searches' | t }}
+                  </h3>
 
-                  <div class="predictive-search__group">
+                  <ul
+                    id="predictive-search-results-queries-list"
+                    class="predictive-search__results-list list-unstyled"
+                    role="group"
+                    aria-labelledby="predictive-search-queries" 
+                  >
                     {%- for link in empty_search_menu.links -%}
-                      <div class="predictive-search__item">
-                        <a class="predictive-search__link" href="{{ link.url }}">{{ link.title }}</a>
+                     <li id="predictive-search-option-query-{{ forloop.index }}"
+                        class="predictive-search__list-item"
+                        role="option"
+                        aria-selected="false"
+                      >
+                        <a  class="predictive-search__item link link--text" tabindex="-1" href="{{ link.url }}">{{ link.title }}</a>
                       </div>
                     {%- endfor -%}
-                  </div>
+                  </ul>
                 </div>
               {%- endif -%}
 
               {%- if show_empty_search_product_list -%}
                 {%- assign animation_delay = animation_delay | plus: 100 -%}
-                <div class="predictive-search__column predictive-search__result-group" style="--columns: repeat({{ empty_search_product_list_size }}, minmax(0, 1fr));">
-                  <div class="predictive-search__group">
-                    <div class="predictive-search__products__list grid-outer">
-                      <div class="grid">
+                <div class="predictive-search__result-group">
+                  <div>
+                    <ul
+                      id="predictive-search-results-products-list"
+                      class="predictive-search__results-list list-unstyled grid"
+                      role="group"
+                      aria-labelledby="predictive-search-products"
+                    >                  
                         {%- for product in empty_search_product_list limit: empty_search_product_list_size -%}
                           <li
                             class="grid__item{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
@@ -168,8 +179,7 @@
                             %}
                           </li>
                         {%- endfor -%}
-                      </div>
-                    </div>
+                    </ul>
                   </div>
                 </div>
               {%- endif -%}
