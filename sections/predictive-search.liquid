@@ -120,7 +120,12 @@
           {%- assign product_count = predictive_search.resources.products.size -%}
           {%- if product_count > 3 -%}
             <div class="carousel">
-                <ul class="carousel-track">
+              <ul
+                id="predictive-search-results-products-list"
+                class="predictive-search__results-list list-unstyled grid"
+                role="group"
+                aria-labelledby="predictive-search-products"
+              >
                   {%- for product in predictive_search.resources.products -%}
                     <li
                       class="grid__item{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
