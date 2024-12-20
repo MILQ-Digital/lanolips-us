@@ -249,7 +249,7 @@ predictive-search[loading] .predictive-search__results-groups-wrapper ~ .predict
   animation: slide 12s linear infinite;
 }
 
-.carousel-item {
+.carousel-track .grid__item {
   flex: 0 0 calc(33.333% - 1rem);
   box-sizing: border-box;
   background: #fff;
@@ -261,7 +261,7 @@ predictive-search[loading] .predictive-search__results-groups-wrapper ~ .predict
   transition: transform 0.3s;
 }
 
-.carousel-item:hover {
+.carousel-track .grid__item:hover {
   transform: scale(1.05);
 }
 
