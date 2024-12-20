@@ -117,36 +117,66 @@
     -%}
       <div class="predictive-search__result-group">
         {%- if predictive_search.resources.products.size > 0 -%}
+          {%- assign product_count = predictive_search.resources.products.size -%}
           <div>
-            <ul
-              id="predictive-search-results-products-list"
-              class="predictive-search__results-list list-unstyled grid"
-              role="group"
-              aria-labelledby="predictive-search-products"
-            >
-              {%- for product in predictive_search.resources.products -%}
-                <li
-                  class="grid__item{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
-                  {% if settings.animations_reveal_on_scroll %}
-                    data-cascade
-                    style="--animation-order: {{ forloop.index }};"
-                  {% endif %}
-                >
-                  {% render 'card-product',
-                    card_product: product,
-                    media_aspect_ratio: section.settings.image_ratio,
-                    image_shape: section.settings.image_shape,
-                    show_secondary_image: section.settings.show_secondary_image,
-                    show_vendor: section.settings.show_vendor,
-                    show_rating: section.settings.show_rating,
-                    lazy_load: lazy_load,
-                    skip_styles: skip_card_product_styles,
-                    quick_add: section.settings.quick_add,
-                    section_id: section.id
-                  %}
-                </li>
-              {%- endfor -%}
-            </ul>
+
+            {%- if product_count > 3 -%}
+              <div class="carousel-wrapper">
+                  <div class="carousel">
+                    <ul class="carousel-items">
+                      {%- for product in predictive_search.resources.products -%}
+                        <li
+                          class="grid__item{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
+                          {% if settings.animations_reveal_on_scroll %} data-cascade style="--animation-order: {{ forloop.index }};" {% endif %}
+                        >
+                          {% render 'card-product',
+                            card_product: product,
+                            media_aspect_ratio: section.settings.image_ratio,
+                            image_shape: section.settings.image_shape,
+                            show_secondary_image: section.settings.show_secondary_image,
+                            show_vendor: section.settings.show_vendor,
+                            show_rating: section.settings.show_rating,
+                            lazy_load: lazy_load,
+                            skip_styles: skip_card_product_styles,
+                            quick_add: section.settings.quick_add,
+                            section_id: section.id
+                          %}
+                        </li>
+                      {%- endfor -%}
+                    </ul>
+                  </div>
+              </div>
+            {%- else -%}
+              <ul
+                id="predictive-search-results-products-list"
+                class="predictive-search__results-list list-unstyled grid"
+                role="group"
+                aria-labelledby="predictive-search-products"
+              >
+                {%- for product in predictive_search.resources.products -%}
+                  <li
+                    class="grid__item{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
+                    {% if settings.animations_reveal_on_scroll %}
+                      data-cascade
+                      style="--animation-order: {{ forloop.index }};"
+                    {% endif %}
+                  >
+                    {% render 'card-product',
+                      card_product: product,
+                      media_aspect_ratio: section.settings.image_ratio,
+                      image_shape: section.settings.image_shape,
+                      show_secondary_image: section.settings.show_secondary_image,
+                      show_vendor: section.settings.show_vendor,
+                      show_rating: section.settings.show_rating,
+                      lazy_load: lazy_load,
+                      skip_styles: skip_card_product_styles,
+                      quick_add: section.settings.quick_add,
+                      section_id: section.id
+                    %}
+                  </li>
+                {%- endfor -%}
+              </ul>
+            {%- endif -%}
           </div>
         {%- endif -%}
         {%- if predictive_search.resources.articles.size > 0 or predictive_search.resources.pages.size > 0 -%}
