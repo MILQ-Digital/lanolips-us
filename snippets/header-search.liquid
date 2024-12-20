@@ -144,7 +144,16 @@
                         role="option"
                         aria-selected="false"
                       >
-                        <a  class="predictive-search__item link link--text" tabindex="-1" href="{{ link.url }}">{{ link.title }}</a>
+                        <a  class="predictive-search__item link link--text" tabindex="-1" href="{{ link.url }}">
+                          <div class="predictive-search__item-content predictive-search__item-content--centered">
+                            <p
+                              class="predictive-search__item-heading predictive-search__item-query-result"
+                              aria-label="{{ link.title }}"
+                            >
+                              {{ link.title }}
+                            </p>
+                          </div>
+                        </a>
                       </li>
                     {%- endfor -%}
                   </ul>
