@@ -602,7 +602,8 @@ h6:empty {
 }
 
 .link--text:hover {
-  color: rgba(var(--color-foreground), 0.75);
+  text-decoration: underline;
+  text-underline-offset: 2px;
 }
 
 .link-with-icon {
