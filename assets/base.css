@@ -31,6 +31,7 @@
   --font-body-family: "Supreme LL TT", sans-serif;
   --font-heading-family: "Supreme LL TT", sans-serif;
   --inputs-radius: 4px;
+  --grid-desktop-horizontal-spacing: 20px;
 }
 
 body {
