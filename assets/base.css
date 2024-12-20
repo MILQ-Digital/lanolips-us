@@ -2936,7 +2936,7 @@ summary.list-menu__item {
 }
 
 .header__menu-item {
-  padding: 15px 0 0;
+  padding: 11px 0 0;
   text-decoration: none;
   color: rgba(var(--color-foreground), 1);
   font-weight: 500;

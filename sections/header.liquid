@@ -86,10 +86,6 @@
       if section.settings.menu != blank
         render 'header-drawer'
       endif
-
-      if section.settings.logo_position == 'top-center' or section.settings.menu == blank
-        render 'header-search', input_id: 'Search-In-Modal-1'
-      endif
     -%}
 
     {%- if section.settings.logo_position != 'middle-center' -%}
@@ -223,6 +219,10 @@
             {% render block %}
         {%- endcase -%}
       {%- endfor -%}
+
+      {%- if section.settings.logo_position == 'top-center' or section.settings.menu == blank
+        render 'header-search', input_id: 'Search-In-Modal-1'
+      endif -%}
 
       <a href="{{ routes.cart_url }}" class="header__icon header__icon--cart link focus-inset" id="cart-icon-bubble">
           {% if cart == empty %}
