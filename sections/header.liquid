@@ -182,6 +182,7 @@
           </localization-form>
         {%- endif -%}
       </div>
+
       {% render 'header-search', input_id: 'Search-In-Modal' %}
 
       {%- if shop.customer_accounts_enabled -%}
@@ -220,9 +221,9 @@
         {%- endcase -%}
       {%- endfor -%}
 
-      {%- if section.settings.logo_position == 'top-center' or section.settings.menu == blank
-        render 'header-search', input_id: 'Search-In-Modal-1'
-      endif -%}
+      {%- if section.settings.logo_position == 'top-center' or section.settings.menu == blank -%}
+        {%- render 'header-search', input_id: 'Search-In-Modal-1' -%}
+      {%- endif -%}
  
       <a href="{{ routes.cart_url }}" class="header__icon header__icon--cart link focus-inset" id="cart-icon-bubble">
           {% if cart == empty %}
