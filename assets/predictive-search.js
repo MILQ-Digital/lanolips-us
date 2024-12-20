@@ -292,29 +292,14 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 document.addEventListener('DOMContentLoaded', function() {
-  const carousel = document.querySelector('.carousel');
-  if (!carousel) {
-    console.error('Carousel element not found.');
-    return;
+  let currentIndex = 0;
+
+  function move(step) {
+    const container = document.querySelector('.carousel-container');
+    const items = document.querySelectorAll('.carousel-item');
+    const totalItems = items.length;
+  
+    currentIndex = (currentIndex + step + totalItems) % totalItems;
+    container.style.transform = `translateX(-${currentIndex * 100}%)`;
   }
-
-  const nextButton = document.createElement('button');
-  const prevButton = document.createElement('button');
-
-  nextButton.textContent = 'Next';
-  prevButton.textContent = 'Previous';
-
-  nextButton.classList.add('carousel-button', 'next');
-  prevButton.classList.add('carousel-button', 'prev');
-
-  carousel.parentElement.appendChild(prevButton);
-  carousel.parentElement.appendChild(nextButton);
-
-  nextButton.addEventListener('click', function() {
-    carousel.scrollBy({ left: 300, behavior: 'smooth' }); // Adjust scroll distance as needed
-  });
-
-  prevButton.addEventListener('click', function() {
-    carousel.scrollBy({ left: -300, behavior: 'smooth' }); // Adjust scroll distance as needed
-  });
 });
