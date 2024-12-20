@@ -293,6 +293,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
 document.addEventListener('DOMContentLoaded', function() {
   const carousel = document.querySelector('.carousel');
+  if (!carousel) {
+    console.error('Carousel element not found.');
+    return;
+  }
+
   const nextButton = document.createElement('button');
   const prevButton = document.createElement('button');
 
