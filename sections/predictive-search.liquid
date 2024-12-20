@@ -280,9 +280,7 @@
       endif
     %}
   </span>
-{%- endif -%}
-
-{%- if show_empty_search -%}
+{%- else -%}
         {%- liquid
           assign animation_delay = 100
           assign animation_duration = 800
@@ -336,4 +334,4 @@
             {%- endif -%}
           </div>
         </div>
-      {%- endif -%}
+{%- endif -%}
