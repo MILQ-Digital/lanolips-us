@@ -140,6 +140,13 @@
                     <div class="predictive-search__products__list grid-outer">
                       <div class="grid">
                         {%- for product in empty_search_product_list limit: empty_search_product_list_size -%}
+                <li
+                  class="grid__item{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
+                  {% if settings.animations_reveal_on_scroll %}
+                    data-cascade
+                    style="--animation-order: {{ forloop.index }};"
+                  {% endif %}
+                >
                   {% render 'card-product',
                     card_product: product,
                     media_aspect_ratio: section.settings.image_ratio,
@@ -152,6 +159,7 @@
                     quick_add: section.settings.quick_add,
                     section_id: section.id
                   %}
+                </li>
                         {%- endfor -%}
                       </div>
                     </div>
