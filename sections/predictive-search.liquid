@@ -18,7 +18,7 @@
     {%- endif -%}
     {%- if predictive_search.resources.queries.size > 0 or predictive_search.resources.collections.size > 0 -%}
       <div>
-        <h3 id="predictive-search-queries" class="predictive-search__heading text-body caption-with-letter-spacing">
+        <h3 id="predictive-search-queries" class="predictive-search__heading text-body">
           {{- 'templates.search.suggestions' | t -}}
         </h3>
         <ul
@@ -67,7 +67,7 @@
       <div class="predictive-search__pages-wrapper">
         <h3
           id="predictive-search-pages-desktop"
-          class="predictive-search__heading text-body caption-with-letter-spacing"
+          class="predictive-search__heading text-body"
         >
           {{- 'templates.search.pages' | t -}}
         </h3>
