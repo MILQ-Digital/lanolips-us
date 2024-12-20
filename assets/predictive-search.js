@@ -275,3 +275,20 @@ class PredictiveSearch extends SearchForm {
 }
 
 customElements.define('predictive-search', PredictiveSearch);
+
+document.addEventListener('DOMContentLoaded', () => {
+  const searchInput = document.querySelector('#Search-In-Modal-1');
+  const emptySearch = document.querySelector('.predictive-search--empty');
+
+  if (searchInput && emptySearch) {
+    searchInput.addEventListener('focus', () => {
+      emptySearch.style.display = 'none';
+    });
+
+    searchInput.addEventListener('blur', () => {
+      if (!searchInput.value.trim()) {
+        emptySearch.style.display = '';
+      }
+    });
+  }
+});
