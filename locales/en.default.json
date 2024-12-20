@@ -37,7 +37,9 @@
     },
     "search": {
       "search": "Search",
-      "reset": "Clear search term"
+      "reset": "Clear search term",
+      "popular_searches": "Popular searches",
+      "popular_products": "Popular products"      
     },
     "cart": {
       "view": "View cart ({{ count }})",
