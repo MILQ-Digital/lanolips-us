@@ -30,6 +30,7 @@
   --link: 16px;
   --font-body-family: "Supreme LL TT", sans-serif;
   --font-heading-family: "Supreme LL TT", sans-serif;
+  --inputs-radius: 4px;
 }
 
 body {
@@ -1740,7 +1741,7 @@ details[open] > .share-button__fallback {
   left: var(--inputs-border-width);
   border: 0.1rem solid transparent;
   border-radius: var(--inputs-radius);
-  box-shadow: 0 0 0 var(--inputs-border-width) rgba(var(--color-foreground), var(--inputs-border-opacity));
+  border-color: inherit;
   transition: box-shadow var(--duration-short) ease;
   z-index: 1;
 }
@@ -2165,8 +2166,10 @@ input[type='checkbox'] {
 }
 
 .modal__close-button .icon {
-  width: 1.7rem;
-  height: 1.7rem;
+  width: 16px;
+  height: 16px;
+  color: var(--Lano-Blue);
+  stroke: var(--Lano-Blue);
 }
 
 .modal__content {
