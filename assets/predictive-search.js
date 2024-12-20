@@ -281,13 +281,11 @@ document.addEventListener('DOMContentLoaded', () => {
   const emptySearch = document.querySelector('.predictive-search--empty');
 
   if (searchInput && emptySearch) {
-    searchInput.addEventListener('focus', () => {
-      emptySearch.style.display = 'none';
-    });
-
-    searchInput.addEventListener('blur', () => {
-      if (!searchInput.value.trim()) {
-        emptySearch.style.display = '';
+    searchInput.addEventListener('input', () => {
+      if (searchInput.value.trim()) {
+        emptySearch.style.display = 'none'; // Hide when typing
+      } else {
+        emptySearch.style.display = ''; // Show when input is cleared
       }
     });
   }
