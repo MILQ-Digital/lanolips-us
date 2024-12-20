@@ -134,8 +134,6 @@
               {%- if show_empty_search_product_list -%}
                 {%- assign animation_delay = animation_delay | plus: 100 -%}
                 <div class="predictive-search__column predictive-search__result-group" style="--columns: repeat({{ empty_search_product_list_size }}, minmax(0, 1fr));">
-                  <p class="predictive-search__heading">{{ 'general.search.popular_products' | t }}</p>
-
                   <div class="predictive-search__group">
                     <div class="predictive-search__products__list grid-outer">
                       <div class="grid">
