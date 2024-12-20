@@ -140,13 +140,7 @@
                     <div class="predictive-search__products__list grid-outer">
                       <div class="grid">
                         {%- for product in empty_search_product_list limit: empty_search_product_list_size -%}
-                          {%- render 'search-product-item',
-                            product: product,
-                            animation_delay: animation_delay,
-                            animation_duration: animation_duration,
-                            animation_anchor: animation_anchor,
-                            product_item_classes: product_item_classes,
-                            focusable: true -%}
+                          {%- render 'card-product', product: product -%}
                         {%- endfor -%}
                       </div>
                     </div>

@@ -131,10 +131,7 @@
               aria-labelledby="predictive-search-products"
             >
               {%- for product in predictive_search.resources.products -%}
-                           {%- render 'search-product-item',
-                            product: product,
-                            product_item_classes: product_item_classes,
-                            focusable: true -%}
+                 {%- render 'card-product', product: product -%}
               {%- endfor -%}
             </ul>
           </div>
