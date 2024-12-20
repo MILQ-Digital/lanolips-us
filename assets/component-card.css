@@ -479,6 +479,8 @@
 
 .card-information > .price {
   color: rgb(var(--color-foreground));
+  font-size: var(--body-sm);
+  font-weight: 700;
 }
 
 .card--horizontal .card-information > .price {
@@ -498,7 +500,7 @@
 }
 
 .card-information > *:not(.visually-hidden:first-child) + *:not(.rating):not(.card__information-volume-pricing-note) {
-  margin-top: 0.7rem;
+  margin-top: 10px;
 }
 
 .card-information .caption {
