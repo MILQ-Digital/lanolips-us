@@ -8,6 +8,7 @@
 .search__button {
   left: var(--inputs-border-width);
   top: var(--inputs-border-width);
+  position: relative;
 }
 
 .search__button svg {
