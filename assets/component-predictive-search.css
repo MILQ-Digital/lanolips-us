@@ -97,8 +97,8 @@ predictive-search[loading] .predictive-search {
 }
 
 .predictive-search__heading {
-  margin: 0 2rem;
-  padding: 1.5rem 0 0.75rem;
+  margin: 0 ;
+  padding: 1.5rem 0 5px;
   color: var(--Lano-Blue);
   font-weight: 500;
 }
@@ -148,7 +148,7 @@ predictive-search[loading] .predictive-search__results-groups-wrapper ~ .predict
 
 .predictive-search__item {
   display: flex;
-  padding: 1rem 2rem;
+  padding: 5px 0;
   text-align: left;
   text-decoration: none;
   width: 100%;
@@ -177,6 +177,7 @@ predictive-search[loading] .predictive-search__results-groups-wrapper ~ .predict
 
 .predictive-search__item-heading {
   margin: 0;
+  line-height: 150%;
 }
 
 .predictive-search__item-query-result *:not(mark) {
