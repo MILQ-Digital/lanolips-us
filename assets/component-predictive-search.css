@@ -237,39 +237,47 @@ predictive-search[loading] .predictive-search__results-groups-wrapper ~ .predict
 }
 
 
-.carousel-wrapper {
-  display: flex;
-  justify-content: center;
-  overflow: hidden;
-}
-
+/* Basic carousel styles */
 .carousel {
+  width: 100%;
+  max-width: 600px;
+  overflow: hidden;
+  margin: auto;
+  position: relative;
+}
+
+.carousel-container {
   display: flex;
-  flex-wrap: nowrap;
-  transition: transform 0.3s ease-in-out;
+  transition: transform 0.5s ease-in-out;
 }
 
-.carousel-items {
+.carousel-item {
+  min-width: 100%;
+  box-sizing: border-box;
+  text-align: center;
+  background: lightblue;
+  font-size: 24px;
+  padding: 20px;
+}
+
+/* Add optional buttons for navigation */
+.carousel-navigation {
+  position: absolute;
+  top: 50%;
+  width: 100%;
   display: flex;
-  list-style: none;
-  padding: 0;
-  margin: 0;
+  justify-content: space-between;
+  transform: translateY(-50%);
 }
 
-.carousel-items .grid__item {
-  flex: 0 0 auto; /* Prevent items from shrinking or growing */
-  width: 300px;  /* Adjust item width as needed */
-  margin-right: 20px; /* Adjust spacing between items */
+button {
+  background: rgba(0, 0, 0, 0.5);
+  border: none;
+  color: white;
+  padding: 10px;
+  cursor: pointer;
 }
 
-.carousel-wrapper .carousel {
-  display: flex;
-  flex-direction: row;
-  gap: 10px;
-  overflow-x: auto;
-  scroll-snap-type: x mandatory;
-}
-
-.carousel-items .grid__item {
-  scroll-snap-align: start;
+button:hover {
+  background: rgba(0, 0, 0, 0.8);
 }
