@@ -1,5 +1,8 @@
 .search__input.field__input {
-  padding-left: 9.8rem;
+  padding-left: 40px;
+  position: relative;
+  font-size: var(--body-sm);
+  color: #AFB6C3;
 }
 
 .search__button {
@@ -7,9 +10,18 @@
   top: var(--inputs-border-width);
 }
 
+.search__button svg {
+  width: 16px;
+  height: 16px;
+}
+
 .search-modal__form .modal__close-button.link {
   position: absolute;
   right: -5.4rem;
+}
+
+.search-modal__form .field__label {
+  margin-left: 20px;
 }
 
 .reset__button {
