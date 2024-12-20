@@ -186,7 +186,7 @@
               role="group"
               aria-labelledby="predictive-search-pages-mobile"
             >
-              {%- for page in predictive_search.resources.pages | limit: 4 -%}
+              {%- for page in predictive_search.resources.pages -%}
                 <li
                   id="predictive-search-option-page-mobile-{{ forloop.index }}"
                   class="predictive-search__list-item"
@@ -200,7 +200,7 @@
                   </a>
                 </li>
               {%- endfor -%}
-              {%- for article in predictive_search.resources.articles | limit: 4 -%}
+              {%- for article in predictive_search.resources.articles -%}
                 <li
                   id="predictive-search-option-article-mobile-{{ forloop.index }}"
                   class="predictive-search__list-item"
