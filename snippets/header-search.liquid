@@ -111,14 +111,14 @@
           assign animation_duration = 800
         -%}
         <div class="predictive-search predictive-search--empty" data-popular-searches>
-          <div class="wrapper">
+
             {%- if show_empty_search_menu and show_empty_search_product_list -%}
-              <div class="predictive-search__layout">
+              <div class="predictive-search__layout predictive-search__results-groups-wrapper">
             {%- endif -%}
 
               {%- if show_empty_search_menu -%}
                 {%- assign animation_delay = animation_delay | plus: 100 -%}
-                <div class="predictive-search__column">
+                <div class="predictive-search__column predictive-search__result-group">
                   <p class="predictive-search__heading">{{ 'general.search.popular_searches' | t }}</p>
 
                   <div class="predictive-search__group">
@@ -133,33 +133,33 @@
 
               {%- if show_empty_search_product_list -%}
                 {%- assign animation_delay = animation_delay | plus: 100 -%}
-                <div class="predictive-search__column" style="--columns: repeat({{ empty_search_product_list_size }}, minmax(0, 1fr));">
+                <div class="predictive-search__column predictive-search__result-group" style="--columns: repeat({{ empty_search_product_list_size }}, minmax(0, 1fr));">
                   <p class="predictive-search__heading">{{ 'general.search.popular_products' | t }}</p>
 
                   <div class="predictive-search__group">
                     <div class="predictive-search__products__list grid-outer">
                       <div class="grid">
                         {%- for product in empty_search_product_list limit: empty_search_product_list_size -%}
-                <li
-                  class="grid__item{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
-                  {% if settings.animations_reveal_on_scroll %}
-                    data-cascade
-                    style="--animation-order: {{ forloop.index }};"
-                  {% endif %}
-                >
-                  {% render 'card-product',
-                    card_product: product,
-                    media_aspect_ratio: section.settings.image_ratio,
-                    image_shape: section.settings.image_shape,
-                    show_secondary_image: section.settings.show_secondary_image,
-                    show_vendor: section.settings.show_vendor,
-                    show_rating: section.settings.show_rating,
-                    lazy_load: lazy_load,
-                    skip_styles: skip_card_product_styles,
-                    quick_add: section.settings.quick_add,
-                    section_id: section.id
-                  %}
-                </li>
+                          <li
+                            class="grid__item{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
+                            {% if settings.animations_reveal_on_scroll %}
+                              data-cascade
+                              style="--animation-order: {{ forloop.index }};"
+                            {% endif %}
+                          >
+                            {% render 'card-product',
+                              card_product: product,
+                              media_aspect_ratio: section.settings.image_ratio,
+                              image_shape: section.settings.image_shape,
+                              show_secondary_image: section.settings.show_secondary_image,
+                              show_vendor: section.settings.show_vendor,
+                              show_rating: section.settings.show_rating,
+                              lazy_load: lazy_load,
+                              skip_styles: skip_card_product_styles,
+                              quick_add: section.settings.quick_add,
+                              section_id: section.id
+                            %}
+                          </li>
                         {%- endfor -%}
                       </div>
                     </div>
@@ -170,7 +170,6 @@
             {%- if show_empty_search_menu and show_empty_search_product_list -%}
               </div>
             {%- endif -%}
-          </div>
         </div>
         {%- endif -%}            
 
