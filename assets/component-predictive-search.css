@@ -68,11 +68,15 @@ predictive-search[loading] .predictive-search {
   display: flex;
   flex-direction: column;
   flex: 1 1 auto;
-  gap: 2rem;
 }
 
 .predictive-search__result-group:first-child .predictive-search__pages-wrapper {
   display: none;
+}
+
+.predictive-search--empty .list-unstyled li{
+  display: inline-block;
+  width: 46%;
 }
 
 @media screen and (min-width: 750px) {
