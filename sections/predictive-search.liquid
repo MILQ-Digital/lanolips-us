@@ -20,7 +20,7 @@
   endif
 -%}  
 
-{%- if predictive_search.performed -%}
+
   {% assign first_column_results_size = predictive_search.resources.queries.size
     | plus: predictive_search.resources.collections.size
     | plus: predictive_search.resources.pages.size
@@ -280,12 +280,14 @@
       endif
     %}
   </span>
-{%- else -%}
+
+
+{%- if show_empty_search -%}
         {%- liquid
           assign animation_delay = 100
           assign animation_duration = 800
         -%}
-        <div id="predictive-search-results" role="listbox" class="predictive-search predictive-search--empty">
+        <div class="predictive-search predictive-search--empty" data-popular-searches>
           <div class="wrapper">
             {%- if show_empty_search_menu and show_empty_search_product_list -%}
               <div class="predictive-search__layout">
@@ -334,4 +336,4 @@
             {%- endif -%}
           </div>
         </div>
-{%- endif -%}
+      {%- endif -%}
