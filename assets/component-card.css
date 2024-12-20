@@ -303,6 +303,7 @@
   object-position: center center;
   width: 100%;
   mix-blend-mode: multiply;
+  padding: 20px;
 }
 
 .card__inner:not(.ratio) > .card__content {
