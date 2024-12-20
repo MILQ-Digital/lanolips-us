@@ -31,6 +31,13 @@
   top: var(--inputs-border-width);
 }
 
+.reset__button .svg-wrapper,
+.reset__button .icon.icon-close {
+  height: 17px;
+  width: 17px;
+  fill: var(--Lano-Blue);
+}
+
 .reset__button:not(:focus-visible)::after {
   border-right: 0.1rem solid rgba(var(--color-foreground), 0.08);
   display: block;
