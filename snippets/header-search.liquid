@@ -121,6 +121,10 @@
         -%}
         <div class="predictive-search predictive-search--empty" data-popular-searches>
 
+            {%- if show_empty_search_menu and show_empty_search_product_list -%}
+              <div class="predictive-search__results-groups-wrapper">
+            {%- endif -%}
+
               {%- if show_empty_search_menu -%}
                 {%- assign animation_delay = animation_delay | plus: 100 -%}
                 <div class="predictive-search__result-group">
@@ -183,6 +187,10 @@
                   </div>
                 </div>
               {%- endif -%}
+
+            {%- if show_empty_search_menu and show_empty_search_product_list -%}
+              </div>
+            {%- endif -%}
         </div>
         {%- endif -%}            
 
