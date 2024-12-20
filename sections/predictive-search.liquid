@@ -1,4 +1,25 @@
 {% comment %}theme-check-disable ImgLazyLoading{% endcomment %}
+
+{%- liquid
+  assign empty_search_menu = settings.empty_search_menu
+  assign empty_search_product_list = settings.empty_search_product_list
+  assign empty_search_product_list_size = empty_search_product_list | map: 'handle' | join: ',' | split: ',' | uniq | size | at_most: 5 | at_least: 3
+  assign show_empty_search = false
+  assign show_empty_search_menu = false
+  assign show_empty_search_product_list = false
+
+  if empty_search_menu != blank
+    assign show_empty_search = true
+    assign show_empty_search_menu = true
+    assign empty_search_product_list_size = empty_search_product_list_size | at_most: 4
+  endif
+
+  if empty_search_product_list != blank
+    assign show_empty_search = true
+    assign show_empty_search_product_list = true
+  endif
+-%}  
+
 {%- if predictive_search.performed -%}
   {% assign first_column_results_size = predictive_search.resources.queries.size
     | plus: predictive_search.resources.collections.size
@@ -260,3 +281,59 @@
     %}
   </span>
 {%- endif -%}
+
+{%- if show_empty_search -%}
+        {%- liquid
+          assign animation_delay = 100
+          assign animation_duration = 800
+        -%}
+        <div class="predictive-search predictive-search--empty" data-popular-searches>
+          <div class="wrapper">
+            {%- if show_empty_search_menu and show_empty_search_product_list -%}
+              <div class="predictive-search__layout">
+            {%- endif -%}
+
+              {%- if show_empty_search_menu -%}
+                {%- assign animation_delay = animation_delay | plus: 100 -%}
+                <div class="predictive-search__column">
+                  <p class="predictive-search__heading">{{ 'general.search.popular_searches' | t }}</p>
+
+                  <div class="predictive-search__group">
+                    {%- for link in empty_search_menu.links -%}
+                      <div class="predictive-search__item">
+                        <a class="predictive-search__link" href="{{ link.url }}">{{ link.title }}</a>
+                      </div>
+                    {%- endfor -%}
+                  </div>
+                </div>
+              {%- endif -%}
+
+              {%- if show_empty_search_product_list -%}
+                {%- assign animation_delay = animation_delay | plus: 100 -%}
+                <div class="predictive-search__column" style="--columns: repeat({{ empty_search_product_list_size }}, minmax(0, 1fr));">
+                  <p class="predictive-search__heading">{{ 'general.search.popular_products' | t }}</p>
+
+                  <div class="predictive-search__group">
+                    <div class="predictive-search__products__list grid-outer">
+                      <div class="grid">
+                        {%- for product in empty_search_product_list limit: empty_search_product_list_size -%}
+                          {%- render 'search-product-item',
+                            product: product,
+                            animation_delay: animation_delay,
+                            animation_duration: animation_duration,
+                            animation_anchor: animation_anchor,
+                            product_item_classes: product_item_classes,
+                            focusable: true -%}
+                        {%- endfor -%}
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              {%- endif -%}
+
+            {%- if show_empty_search_menu and show_empty_search_product_list -%}
+              </div>
+            {%- endif -%}
+          </div>
+        </div>
+      {%- endif -%}
