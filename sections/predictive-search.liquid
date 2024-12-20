@@ -142,10 +142,35 @@
                   {%- endfor -%}
                 </ul>
             </div>
-            <div class="carousel-navigation">
-              <button class="prev" onclick="move(-1)">&#10094;</button>
-              <button class="next" onclick="move(1)">&#10095;</button>
-            </div>
+            <script>
+              document.addEventListener('DOMContentLoaded', function() {
+                const carousel = document.querySelector('.carousel');
+                if (!carousel) {
+                  console.error('Carousel element not found.');
+                  return;
+                }
+
+                const nextButton = document.createElement('button');
+                const prevButton = document.createElement('button');
+
+                nextButton.textContent = 'Next';
+                prevButton.textContent = 'Previous';
+
+                nextButton.classList.add('carousel-button', 'next');
+                prevButton.classList.add('carousel-button', 'prev');
+
+                carousel.parentElement.appendChild(prevButton);
+                carousel.parentElement.appendChild(nextButton);
+
+                nextButton.addEventListener('click', function() {
+                  carousel.scrollBy({ left: 300, behavior: 'smooth' }); // Adjust scroll distance as needed
+                });
+
+                prevButton.addEventListener('click', function() {
+                  carousel.scrollBy({ left: -300, behavior: 'smooth' }); // Adjust scroll distance as needed
+                });
+            });
+          </script>
           {%- else -%}
             <div>
               <ul

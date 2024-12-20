@@ -291,15 +291,3 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 });
 
-document.addEventListener('DOMContentLoaded', function() {
-  let currentIndex = 0;
-
-  function move(step) {
-    const container = document.querySelector('.carousel-container');
-    const items = document.querySelectorAll('.carousel-item');
-    const totalItems = items.length;
-  
-    currentIndex = (currentIndex + step + totalItems) % totalItems;
-    container.style.transform = `translateX(-${currentIndex * 100}%)`;
-  }
-});
