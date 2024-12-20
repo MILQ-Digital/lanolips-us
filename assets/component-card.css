@@ -305,6 +305,7 @@
   margin-bottom: 0;
   font-size: var(--body-sm);
   color: var(--Lano-Blue);
+  line-height: 20px;
 }
 
 .card__heading:last-child {

@@ -653,7 +653,7 @@ hr {
 
 .full-unstyled-link {
   text-decoration: none;
-  color: currentColor;
+  color: inherit;
   display: block;
 }
 
