@@ -28,6 +28,8 @@
   --body-sm: 16px;
   --body-xs: 14px;
   --link: 16px;
+  --font-body-family: "Supreme LL TT", sans-serif;
+  --font-heading-family: "Supreme LL TT", sans-serif;
 }
 
 body {
