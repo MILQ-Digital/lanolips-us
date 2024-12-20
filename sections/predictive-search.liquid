@@ -119,8 +119,9 @@
         {%- if predictive_search.resources.products.size > 0 -%}
           {%- assign product_count = predictive_search.resources.products.size -%}
           {%- if product_count > 3 -%}
-            <div class="carousel">
-                <ul class="carousel-container">
+            <div class="carousel-wrapper">
+              <div class="carousel">
+                <ul class="carousel-items">
                   {%- for product in predictive_search.resources.products -%}
                     <li
                       class="grid__item{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
@@ -141,6 +142,7 @@
                     </li>
                   {%- endfor -%}
                 </ul>
+              </div>
             </div>
             <script>
               document.addEventListener('DOMContentLoaded', function() {
