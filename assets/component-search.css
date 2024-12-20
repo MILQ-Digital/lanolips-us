@@ -36,6 +36,7 @@
   height: 17px;
   width: 17px;
   fill: var(--Lano-Blue);
+  stroke: #fff;
 }
 
 .reset__button:not(:focus-visible)::after {
