@@ -536,6 +536,12 @@
         "label": "t:settings_schema.global.settings.text_alignment.label"
       },
       {
+        "type": "checkbox",
+        "id": "show_secondary_image",
+        "default": false,
+        "label": "t:sections.featured-collection.settings.show_secondary_image.label"
+      },
+      {
         "type": "color_scheme",
         "id": "card_color_scheme",
         "label": "t:sections.all.colors.label",
