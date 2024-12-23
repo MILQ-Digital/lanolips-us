@@ -20,8 +20,8 @@ slideshow-component .slideshow.banner {
   visibility: visible;
 }
 
-.slideshow.banner:after, 
-.slideshow.banner__media:after {
+.slideshow__media.banner:after, 
+.slideshow__media.banner__media:after {
   background-color: #fff;
 }
 
