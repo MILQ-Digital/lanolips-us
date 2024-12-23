@@ -16,9 +16,11 @@
           "type": "slide",
           "settings": {
             "image": "shopify://shop_images/Lanolips_hero_f9877320-08cc-4403-8b4a-f49e2f0ff9c4.webp",
+            "subheading": "Freshly Baked",
+            "subheading_script": "Freshly Baked",
             "heading": "The new Lanolips 101 Delicious 123 bla collection for us",
             "heading_size": "hxxl",
-            "subheading": "Tell your brand's story through images",
+            "subcontent": "<p>Image slide</p>",
             "button_label": "Button label",
             "link": "shopify://collections/all",
             "button_style_secondary": true,
@@ -32,11 +34,14 @@
         },
         "slide_NAx7bN": {
           "type": "slide",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/Lanolips_hero_f9877320-08cc-4403-8b4a-f49e2f0ff9c4.webp",
+            "subheading": "Tell your brand's story through images",
+            "subheading_script": "Freshly Baked",
             "heading": "The new Lanolips 101 Delicious 123 bla collection for us",
             "heading_size": "h0",
-            "subheading": "Tell your brand's story through images",
+            "subcontent": "<p>Image slide</p>",
             "button_label": "Button label",
             "link": "shopify://collections/all",
             "button_style_secondary": false,
