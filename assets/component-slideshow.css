@@ -20,7 +20,7 @@ slideshow-component .slideshow.banner {
   visibility: visible;
 }
 
-.slider-counter__link {
+slideshow-component .slider-counter__link {
   padding: 10px 5px;
 }
 
@@ -266,19 +266,19 @@ slideshow-component:not(.page-width) .slider-buttons {
   transform: scale(0.8);
 }
 
-.slider-counter__link--dots .dot, 
-.slider-counter__link--numbers {
+slideshow-component .slider-counter__link--dots .dot, 
+slideshow-component .slider-counter__link--numbers {
   background-color: #fff;
 }
 
-.slider-counter__link--dots .dot, 
-.slider-counter__link--numbers {
+slideshow-component .slider-counter__link--dots .dot, 
+slideshow-component .slider-counter__link--numbers {
   background-color: rgba(255,255,255,.4);
   border: 0;
   width: 10px;
   height: 10px;
 }
 
-.slider-counter__link--active.slider-counter__link--dots .dot {
+slideshow-component .slider-counter__link--active.slider-counter__link--dots .dot {
   background-color: rgba(255,255,255,2);
 }
