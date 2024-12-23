@@ -34,8 +34,8 @@ slideshow-component .slideshow.banner {
 
   @media screen and (min-width: 750px) {
     .slideshow.banner--large:not(.banner--adapt) {
-        min-height: calc(100vh - 200px);
-        height: calc(100vh - 200px);
+        min-height: calc(100vh - 194px);
+        height: calc(100vh - 194px);
     }
 }  
 }
