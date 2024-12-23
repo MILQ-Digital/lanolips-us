@@ -153,59 +153,6 @@
         "padding_bottom": 0
       }
     },
-    "multicolumn_Xjjqzg": {
-      "type": "multicolumn",
-      "blocks": {
-        "column_8hkyxf": {
-          "type": "column",
-          "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "column_nBRUb7": {
-          "type": "column",
-          "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "column_iXi66c": {
-          "type": "column",
-          "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
-            "link_label": "",
-            "link": ""
-          }
-        }
-      },
-      "block_order": [
-        "column_8hkyxf",
-        "column_nBRUb7",
-        "column_iXi66c"
-      ],
-      "settings": {
-        "title": "Multicolumn",
-        "heading_size": "h1",
-        "image_width": "full",
-        "image_ratio": "adapt",
-        "columns_desktop": 3,
-        "column_alignment": "left",
-        "background_style": "primary",
-        "button_label": "Button label",
-        "button_link": "",
-        "color_scheme": "scheme-2",
-        "columns_mobile": "1",
-        "swipe_on_mobile": false,
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
     "collection_list_ejatAX": {
       "type": "collection-list",
       "blocks": {
@@ -245,13 +192,101 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "rich_text_3y7a76": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_Bt6pWU": {
+          "type": "heading",
+          "settings": {
+            "heading": "Talk about your brand",
+            "heading_size": "h1"
+          }
+        },
+        "text_tLNmaU": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.</p>"
+          }
+        },
+        "button_CJhkgz": {
+          "type": "button",
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_Bt6pWU",
+        "text_tLNmaU",
+        "button_CJhkgz"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-2",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "multicolumn_gqYkVh": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_mGc7n6": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/lano-cake.webp",
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "link_label": "Shop Now",
+            "link": ""
+          }
+        },
+        "column_nBnMPt": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/lano-cake.webp",
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "link_label": "Shop Now",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_mGc7n6",
+        "column_nBnMPt"
+      ],
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "square",
+        "columns_desktop": 2,
+        "column_alignment": "center",
+        "background_style": "none",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "scheme-2",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
     "slideshow_dJncwY",
     "featured_collection",
     "image_with_text_WkDiJU",
-    "multicolumn_Xjjqzg",
-    "collection_list_ejatAX"
+    "collection_list_ejatAX",
+    "rich_text_3y7a76",
+    "multicolumn_gqYkVh"
   ]
 }
