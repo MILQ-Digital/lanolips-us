@@ -23,7 +23,7 @@
             "subcontent": "<p>Discover our new range of mouth watering flavours Discover our new range of mouth watering flavours Discover our new range of mouth watering flavours Discover our new  </p>",
             "button_label": "Button label",
             "link": "shopify://collections/all",
-            "button_style_secondary": true,
+            "button_style_secondary": false,
             "box_align": "middle-left",
             "show_text_box": false,
             "text_alignment": "left",
