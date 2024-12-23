@@ -34,21 +34,20 @@
         },
         "slide_NAx7bN": {
           "type": "slide",
-          "disabled": true,
           "settings": {
-            "image": "shopify://shop_images/Lanolips_hero_f9877320-08cc-4403-8b4a-f49e2f0ff9c4.webp",
+            "image": "shopify://shop_images/lano-cake.webp",
             "subheading": "Tell your brand's story through images",
             "subheading_script": "Freshly Baked",
             "heading": "The new Lanolips 101 Delicious 123 bla collection for us",
             "heading_size": "h0",
-            "subcontent": "<p>Image slide</p>",
-            "button_label": "Button label",
+            "subcontent": "<p>Discover our new range of mouth watering flavours Discover our new range of mouth watering flavours Discover our new range of mouth watering flavours Discover our new </p>",
+            "button_label": "Shop Now",
             "link": "shopify://collections/all",
             "button_style_secondary": false,
             "box_align": "middle-center",
             "show_text_box": true,
             "text_alignment": "center",
-            "image_overlay_opacity": 0,
+            "image_overlay_opacity": 80,
             "color_scheme": "scheme-3",
             "text_alignment_mobile": "center"
           }
