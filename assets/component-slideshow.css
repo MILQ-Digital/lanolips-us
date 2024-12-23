@@ -44,6 +44,12 @@ slideshow-component .slideshow.banner {
   max-width: 100%;
 }
 
+.slideshow__text .banner__sub_heading  {
+  font-size: var(--font-size-14);
+  line-height: 18.9px;
+  letter-spacing: 12%;
+}
+
 @media screen and (max-width: 749px) {
   slideshow-component.page-width .slideshow__text {
     border-right: var(--text-boxes-border-width) solid rgba(var(--color-foreground), var(--text-boxes-border-opacity));
