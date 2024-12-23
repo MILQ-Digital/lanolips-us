@@ -294,8 +294,8 @@ slideshow-component .slider-counter__link--active.slider-counter__link--dots .do
   color: #fff!important;
 }
 
-.slideshow__autoplay:hover path {
-  fill: #fff;
+.slideshow__autoplay path {
+  fill: #fff; 
 }
 
 .slideshow__autoplay.slider-button .svg-wrapper {
