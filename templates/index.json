@@ -45,7 +45,7 @@
             "link": "shopify://collections/all",
             "button_style_secondary": false,
             "box_align": "middle-left",
-            "show_text_box": true,
+            "show_text_box": false,
             "text_alignment": "center",
             "image_overlay_opacity": 80,
             "color_scheme": "scheme-3",
