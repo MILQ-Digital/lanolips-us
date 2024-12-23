@@ -159,9 +159,10 @@ slideshow-component .slideshow.banner {
   position: absolute;
   border: 0;
   z-index: 2;
-  bottom: 0;
+  bottom: 20px;
   width: 100%;
   justify-content: space-between;
+  padding: 0 42px;
 }
 
 .slideshow__controls--top {
