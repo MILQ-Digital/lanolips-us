@@ -154,7 +154,7 @@ slideshow-component .slideshow.banner {
   }
 }
 
-.slideshow__controls {
+slideshow-component .slideshow__controls {
   border: 0;
   position: absolute;
   border: 0;
