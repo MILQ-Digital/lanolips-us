@@ -47,7 +47,7 @@ slideshow-component .slideshow.banner {
 .slideshow__text .banner__sub_heading  {
   font-size: var(--font-size-14);
   line-height: 18.9px;
-  letter-spacing: calc(var( --font-size-14) * (12% / 100));
+  letter-spacing: calc(var( --font-size-14) * (12 / 100));
   text-transform: uppercase;
   font-weight: 500;
 }
