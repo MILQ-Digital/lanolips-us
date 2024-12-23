@@ -61,8 +61,8 @@ slideshow-component .slideshow.banner {
 .slideshow__text .banner__subheading_script {
   font-size: var(--font-size-42);
   letter-spacing: calc(var(--font-size-42) * (-3 / 100));
-  line-height: : 31.5px;
-
+  line-height: 31.5px;
+  margin-bottom: 0;
 }
 
 @media screen and (max-width: 749px) {
