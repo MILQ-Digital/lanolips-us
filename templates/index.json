@@ -23,7 +23,7 @@
             "link": "shopify://collections/all",
             "button_style_secondary": true,
             "box_align": "middle-left",
-            "show_text_box": true,
+            "show_text_box": false,
             "text_alignment": "left",
             "image_overlay_opacity": 0,
             "color_scheme": "scheme-3",
