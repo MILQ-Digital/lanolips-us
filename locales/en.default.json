@@ -48,7 +48,7 @@
       "search": "Search",
       "reset": "Clear search term",
       "popular_searches": "Popular searches",
-      "popular_products": "Popular products"      
+      "popular_products": "Popular products"
     },
     "cart": {
       "view": "View cart ({{ count }})",
@@ -117,7 +117,7 @@
   },
   "products": {
     "product": {
-      "add_to_cart": "Add to cart",
+      "add_to_cart": "Add To Bag",
       "choose_options": "Choose options",
       "choose_product_options": "Choose options for {{ product_name }}",
       "description": "Description",
@@ -283,7 +283,6 @@
       "announcement": "Announcement",
       "announcement_bar": "Announcement bar"
     },
-
     "header": {
       "announcement": "Announcement",
       "menu": "Menu",
