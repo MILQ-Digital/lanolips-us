@@ -59,27 +59,32 @@ body {
 .hxxl {
   font-size: var(--heading-xl);
   line-height: 120%; /* 86.4px */
+  font-weight: 500;
 }
 
 .heading-lg,
 .hxl {
   font-size: var(--heading-lg);
   line-height: 120%; /* 76.8px */
+  font-weight: 500;
 }
 
 .heading-md {
   font-size: var(--heading-md);
   line-height: 120%; /* 57.6px */
+  font-weight: 500;
 }
 
 .heading-sm {
   font-size: var(--heading-sm);
   line-height: 120%; /* 43.2px */
+  font-weight: 500;
 }
 
 .heading-xs {
   font-size: var(--heading-xs);
   line-height: 120%; /* 33.6px */
+  font-weight: 500;
 }
 
 .subheading  {
