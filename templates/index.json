@@ -21,7 +21,7 @@
             "heading": "The new Lanolips 101 Delicious 123 bla collection for us",
             "heading_size": "hxxl",
             "subcontent": "<p>Discover our new range of mouth watering flavours Discover our new range of mouth watering flavours Discover our new range of mouth watering flavours Discover our new  </p>",
-            "button_label": "Button label",
+            "button_label": "Shop Now",
             "link": "shopify://collections/all",
             "button_style_secondary": false,
             "box_align": "middle-left",
@@ -60,7 +60,7 @@
       ],
       "settings": {
         "layout": "full_bleed",
-        "slide_height": "adapt_image",
+        "slide_height": "large",
         "slider_visual": "dots",
         "auto_rotate": false,
         "change_slides_speed": 5,
