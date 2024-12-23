@@ -22,7 +22,11 @@ slideshow-component .slideshow.banner {
 
 .slideshow__media.banner:after, 
 .slideshow__media.banner__media:after {
-  background-color: #fff;
+  background: rgb(255,255,255);
+  background: -moz-linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%);
+  background: -webkit-linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%);
+  background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#ffffff",GradientType=1);
 }
 
 @media screen and (max-width: 749px) {
