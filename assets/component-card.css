@@ -307,11 +307,12 @@
 }
 
 .card__media .media img:first-child {
-  max-width: 85px;
-  height: 95%;
+  height: 90%;
   left: auto;
   right: auto;
   top: auto;
+  margin: 0 auto;
+  width: 80%;
 }
 
 .card__inner:not(.ratio) > .card__content {
