@@ -46,7 +46,7 @@
             "button_style_secondary": false,
             "box_align": "middle-left",
             "show_text_box": false,
-            "text_alignment": "center",
+            "text_alignment": "left",
             "image_overlay_opacity": 80,
             "color_scheme": "scheme-3",
             "text_alignment_mobile": "center"
