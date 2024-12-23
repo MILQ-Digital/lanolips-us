@@ -62,7 +62,14 @@ slideshow-component .slideshow.banner {
   font-size: var(--font-size-42);
   letter-spacing: calc(var(--font-size-42) * (-3 / 100));
   line-height: 31.5px;
-  margin-bottom: 0;
+  margin-bottom: 15px;
+  margin-top: 20px;
+}
+
+.slideshow__text .rte {
+  max-width: 85%;
+  font-size: 20px;
+  line-height: 29px;
 }
 
 @media screen and (max-width: 749px) {
