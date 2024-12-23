@@ -25,8 +25,8 @@ slideshow-component .slideshow.banner {
   background: rgb(255,255,255);
 }
 
-.banner__content--middle-left .slideshow__media.banner:after, 
-.banner__content--middle-left .slideshow__media.banner__media:after {
+.banner__media--middle-left .slideshow__media.banner:after, 
+.banner__media--middle-left .slideshow__media.banner__media:after {
   background: rgb(255,255,255);
   background: -moz-linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%);
   background: -webkit-linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%);
