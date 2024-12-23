@@ -95,7 +95,7 @@
       }
       {% endfor %}
 
-      {{ scheme_classes }} {
+      {{ scheme_classes | prepend: 'body' }} {
         color: rgba(var(--color-foreground), 1);
         background-color: rgb(var(--color-background));
       }
