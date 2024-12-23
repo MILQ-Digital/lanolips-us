@@ -70,6 +70,7 @@ slideshow-component .slideshow.banner {
   max-width: 85%;
   font-size: 20px;
   line-height: 29px;
+  margin-bottom: 35px;
 }
 
 @media screen and (max-width: 749px) {
