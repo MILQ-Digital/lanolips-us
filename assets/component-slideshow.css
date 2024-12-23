@@ -48,6 +48,7 @@ slideshow-component .slideshow.banner {
   font-size: var(--font-size-14);
   line-height: 18.9px;
   letter-spacing: 12%;
+  text-transform: uppercase;
 }
 
 @media screen and (max-width: 749px) {
