@@ -282,3 +282,25 @@ slideshow-component .slider-counter__link--numbers {
 slideshow-component .slider-counter__link--active.slider-counter__link--dots .dot {
   background-color: rgba(255,255,255,2);
 }
+
+
+.slideshow__autoplay.slider-button {
+  border: 2px solid #fff;
+  border-radius: 100%;
+  width: 27px;
+  height: 27px;
+  justify-content: center;
+  padding: 0;
+  color: #fff!important;
+}
+
+.slideshow__autoplay:hover path {
+  fill: #fff;
+}
+
+.slideshow__autoplay.slider-button .svg-wrapper {
+  position: absolute;
+  left: auto;
+  right: auto;
+  width: auto;
+}
