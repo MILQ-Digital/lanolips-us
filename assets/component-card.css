@@ -298,19 +298,12 @@
   margin: 1.3rem;
 }
 
-.card__media .media img,
-.card--standard .card__media .media img {
+.card__media .media img {
+  height: 100%;
   object-fit: cover;
   object-position: center center;
-  mix-blend-mode: multiply;
-  display: block;
-  max-width: 85%;
-  position: absolute;
-  top: auto;
-  left: auto;
-  height: 90%;
   width: 100%;
-  right: auto;
+  mix-blend-mode: multiply;
 }
 
 .card__inner:not(.ratio) > .card__content {
