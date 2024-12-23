@@ -292,6 +292,7 @@ slideshow-component .slider-counter__link--active.slider-counter__link--dots .do
   justify-content: center;
   padding: 0;
   color: #fff!important;
+  right: 42px;
 }
 
 .slideshow__autoplay:hover path,
