@@ -57,6 +57,13 @@ slideshow-component .slideshow.banner {
   text-transform: capitalize;
 }
 
+.slideshow__text .banner__subheading_script {
+  font-size: var(--font-size-42);
+  letter-spacing: calc(var(--font-size-42) * (-3 / 100));
+  line-height: : 31.5px;
+  
+}
+
 @media screen and (max-width: 749px) {
   slideshow-component.page-width .slideshow__text {
     border-right: var(--text-boxes-border-width) solid rgba(var(--color-foreground), var(--text-boxes-border-opacity));

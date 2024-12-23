@@ -44,6 +44,7 @@ body {
 
 .lanoscript {
   font-family: var(--lanoscript);
+  font-weight: 600;
 }
 
 .heading {
