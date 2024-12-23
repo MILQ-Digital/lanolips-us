@@ -50,6 +50,7 @@ slideshow-component .slideshow.banner {
   letter-spacing: calc(var( --font-size-14) * (12 / 100));
   text-transform: uppercase;
   font-weight: 500;
+  margin-bottom: 0;
 }
 
 .slideshow__text .banner__heading  {
@@ -61,7 +62,7 @@ slideshow-component .slideshow.banner {
   font-size: var(--font-size-42);
   letter-spacing: calc(var(--font-size-42) * (-3 / 100));
   line-height: : 31.5px;
-  
+
 }
 
 @media screen and (max-width: 749px) {
