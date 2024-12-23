@@ -34,6 +34,7 @@
         },
         "slide_NAx7bN": {
           "type": "slide",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/lano-cake.webp",
             "subheading": "Serie",
