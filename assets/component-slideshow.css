@@ -37,7 +37,7 @@ slideshow-component .slideshow.banner {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  max-width: 54.5rem;
+  max-width: 65rem;
 }
 
 .slideshow__text > * {
@@ -50,6 +50,11 @@ slideshow-component .slideshow.banner {
   letter-spacing: calc(var( --font-size-14) * (12 / 100));
   text-transform: uppercase;
   font-weight: 500;
+}
+
+.slideshow__text .banner__heading  {
+  letter-spacing: 0;
+  text-transform: capitalize;
 }
 
 @media screen and (max-width: 749px) {
