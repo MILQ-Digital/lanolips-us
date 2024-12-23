@@ -42,6 +42,10 @@ body {
   letter-spacing: 0;
 }
 
+.lanoscript {
+  font-family: var(--lanoscript);
+}
+
 .heading {
   font-style: normal;
   font-weight: 500;
@@ -50,7 +54,8 @@ body {
   color: var(--Lano-Blue);
 }
 
-.heading-xl {
+.heading-xl,
+.hxxl {
   font-size: var(--heading-xl);
   line-height: 120%; /* 86.4px */
 }
