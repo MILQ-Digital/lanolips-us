@@ -22,7 +22,7 @@
             "button_label": "Button label",
             "link": "shopify://collections/all",
             "button_style_secondary": true,
-            "box_align": "middle-center",
+            "box_align": "middle-left",
             "show_text_box": true,
             "text_alignment": "left",
             "image_overlay_opacity": 0,
@@ -42,7 +42,7 @@
             "button_style_secondary": false,
             "box_align": "middle-center",
             "show_text_box": true,
-            "text_alignment": "left",
+            "text_alignment": "center",
             "image_overlay_opacity": 0,
             "color_scheme": "scheme-3",
             "text_alignment_mobile": "center"
