@@ -367,7 +367,7 @@
   right: calc(var(--border-width) * -1);
   top: calc(var(--border-width) * -1);
 }
-
+/*
 .card__heading a::after {
   bottom: 0;
   content: '';
@@ -401,6 +401,7 @@
   box-shadow: none;
   outline: 0;
 }
+*/
 
 @media screen and (min-width: 990px) {
   .card .media.media--hover-effect > img:only-child,
