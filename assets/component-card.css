@@ -621,6 +621,10 @@
 /** Product **/
 .quick-add-media {
   opacity: 0;
+  position: absolute;
+  bottom: 10px;
+  left: 20px;
+  right: 20px;
 }
 
 .card-wrapper:hover .quick-add-media {
