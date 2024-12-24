@@ -13,6 +13,7 @@
   --Lano-Pink: #F3E5EF;
   --Lano-light-pink: #F8F2F6; 
   --Lano-Bright-pink: #FB558E;
+  --Lano-Bright-pink-hover: #ED4A82;
   --Lano-Grey: #AEB7C9; 
   --Lano-Light-Grey: #CBD2DF; 
   --default-font: "Supreme LL TT", sans-serif;
@@ -132,6 +133,12 @@ body {
   background-color: var(--Lano-Bright-pink);
   border-color: var(--Lano-Bright-pink);
   box-shadow: unset;
+  color: #fff;
+}
+
+.button.button--bright-pink:hover {
+  background-color: var(--Lano-Bright-pink-hover);
+  border-color: var(--Lano-Bright-pink-hover);
 }
 
 .button.button--bright-pink:after,
