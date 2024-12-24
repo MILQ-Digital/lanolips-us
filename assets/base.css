@@ -710,6 +710,10 @@ details > * {
   transition: text-decoration-thickness ease 100ms;
 }
 
+.underlined-link {
+  text-decoration: underline;
+}
+
 .underlined-link,
 .customer a {
   color: rgba(var(--color-link), var(--alpha-link));
