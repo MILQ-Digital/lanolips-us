@@ -365,8 +365,7 @@
                     data-sold-out-message="true"
                     {% if card_product.selected_or_first_available_variant.available == false %}
                       disabled
-                    {% endif %} - {% render 'price-button', product: card_product, price_class: '', show_compare_at_price: true %}
-                  >
+                    {% endif %} >
                     <span>
                       {%- if card_product.selected_or_first_available_variant.available -%}
                         {{ 'products.product.add_to_cart' | t }}
@@ -383,6 +382,7 @@
                       </span>
                     {%- endif -%}
                     {%- render 'loading-spinner' -%}
+                    - {% render 'price-button', product: card_product, price_class: '', show_compare_at_price: true %}
                   </button>
                 {%- endform -%}
               </product-form>
