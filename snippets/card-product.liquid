@@ -366,6 +366,7 @@
                     {% if card_product.selected_or_first_available_variant.available == false %}
                       disabled
                     {% endif %}
+                    - {% render 'price', product: card_product, price_class: '', show_compare_at_price: true %}
                   >
                     <span>
                       {%- if card_product.selected_or_first_available_variant.available -%}
