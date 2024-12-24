@@ -142,8 +142,8 @@
             {%- endif -%}
           </div>
         </div>
-{% if quick_add == 'standard' %}
-          <div class="quick-add no-js-hidden">
+        {% if quick_add == 'standard' %}
+          <div class="quick-add no-js-hidden quick-add-media">
             {%- liquid
               assign qty_rules = false
               if card_product.selected_or_first_available_variant.quantity_rule.min > 1 or card_product.selected_or_first_available_variant.quantity_rule.max != null or card_product.selected_or_first_available_variant.quantity_rule.increment > 1
