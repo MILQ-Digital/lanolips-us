@@ -617,3 +617,18 @@
     clip-path: polygon(var(--shape--blob-5));
   }
 }
+
+/** Product **/
+.quick-add-media {
+  opacity: 0;
+}
+
+.card-wrapper:hover .quick-add-media {
+  opacity: 1;
+}
+
+@media screen and (min-width: 990px) {
+  .quick-add-mobile {
+    display: none;
+  }
+}
