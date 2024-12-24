@@ -365,13 +365,7 @@
                     data-sold-out-message="true"
                     {% if card_product.selected_or_first_available_variant.available == false %}
                       disabled
-                    {% endif %}
-          <span class="price-item price-item--regular">
-            {{-
-              'products.product.volume_pricing.price_range'
-              | t: minimum: money_price_min, maximum: money_price_max
-            -}}
-          </span>                
+                    {% endif %} - {% render 'price-button', product: card_product, price_class: '', show_compare_at_price: true %}
                   >
                     <span>
                       {%- if card_product.selected_or_first_available_variant.available -%}
