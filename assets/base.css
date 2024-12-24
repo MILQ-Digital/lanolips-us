@@ -131,6 +131,12 @@ body {
 .button.button--bright-pink {
   background-color: var(--Lano-Bright-pink);
   border-color: var(--Lano-Bright-pink);
+  box-shadow: unset;
+}
+
+.button.button--bright-pink:after,
+.button.button--bright-pink:before {
+  display: none;
 }
 
 .product-card-wrapper .card,
