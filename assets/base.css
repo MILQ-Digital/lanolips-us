@@ -712,6 +712,7 @@ details > * {
 
 .underlined-link {
   text-decoration: underline;
+  text-transform: capitalize;
 }
 
 .underlined-link,
