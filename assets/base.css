@@ -128,6 +128,11 @@ body {
   line-height: 120%; /* 33.6px */
 }
 
+.button--bright-pink {
+  background-color: var(--Lano-Bright-pink);
+  border-color: var(--Lano-Bright-pink);
+}
+
 .product-card-wrapper .card,
 .contains-card--product {
   --border-radius: var(--product-card-corner-radius);
