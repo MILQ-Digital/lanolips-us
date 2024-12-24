@@ -129,7 +129,7 @@
       "101-ointment-multi-balm-banana-cream-pie",
       "101-ointment-multi-balm-raspberry-shortcake"
     ],
-    "currency_code_enabled": true,
+    "currency_code_enabled": false,
     "cart_type": "drawer",
     "show_vendor": false,
     "show_cart_note": false,
