@@ -128,7 +128,7 @@ body {
   line-height: 120%; /* 33.6px */
 }
 
-.button--bright-pink {
+.button.button--bright-pink {
   background-color: var(--Lano-Bright-pink);
   border-color: var(--Lano-Bright-pink);
 }
