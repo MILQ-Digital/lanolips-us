@@ -40,13 +40,13 @@
       assign ratio = 1
     endif
   -%}
-  <div class="card-wrapper product-card-wrapper">
-    <a
+ <a
                 href="{{ card_product.url }}"
                 id="StandardCardNoMediaLink-{{ section_id }}-{{ card_product.id }}"
                 class="full-unstyled-link"
                 aria-labelledby="StandardCardNoMediaLink-{{ section_id }}-{{ card_product.id }} NoMediaStandardBadge-{{ section_id }}-{{ card_product.id }}"
-            >
+            > 
+  <div class="card-wrapper product-card-wrapper">
     <div class=" card card--{{ settings.card_style }}
         {% if card_product.featured_media %} card--media{% else %} card--text{% endif %}
         {% if settings.card_style == 'card' %} color-{{ settings.card_color_scheme }} gradient{% endif %}
@@ -665,8 +665,8 @@
         </div>
       </div>
     </div>
-    </a>
   </div>
+</a>
 {%- else -%}
   {%- liquid
     assign ratio = 1
