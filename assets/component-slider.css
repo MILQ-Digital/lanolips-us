@@ -144,8 +144,6 @@ slider-component.slider-component-full-width {
 @media screen and (min-width: 990px) {
   .slider-component-desktop.page-width {
     max-width: none;
-    padding-left: var(--outer);
-    padding-right: var(--outer);
   }
 
   .slider--desktop {
@@ -187,7 +185,7 @@ slider-component.slider-component-full-width {
   }
 
   .slider-component-full-width .slider--desktop .slider__slide:first-child {
-    margin-left: 1.5rem;
+    margin-left: 0;
     scroll-margin-left: 1.5rem;
   }
 
@@ -197,7 +195,7 @@ slider-component.slider-component-full-width {
   }
 
   .slider--desktop.grid--5-col-desktop .grid__item {
-    width: calc(100%  / 5 );
+    width: 18.97%;
   }
 
   .slider--desktop.grid--4-col-desktop .grid__item {
