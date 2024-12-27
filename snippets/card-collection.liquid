@@ -122,12 +122,13 @@
               {%- endif -%}
           </h3>
           <button class="button button--bright-pink ">Shop Now</button>
+        </div>
           {%- if card_collection.featured_image and card_collection.description != blank -%}
             <p class="card__caption_bottom">
               {{- card_collection.description | strip_html | truncatewords: 12 -}}
             </p>
           {%- endif -%}
-        </div>
+        
       </div>
     {%- endif -%}
     {%- if card_collection == blank -%}
