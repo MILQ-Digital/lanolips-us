@@ -186,7 +186,7 @@ slider-component.slider-component-full-width {
 
   .slider-component-full-width .slider--desktop .slider__slide:first-child {
     margin-left: 0;
-    scroll-margin-left: 1.5rem;
+    scroll-margin-left: 0;
   }
 
   /* Fix to show some space at the end of our sliders in all browsers */
