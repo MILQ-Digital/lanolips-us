@@ -1,3 +1,8 @@
+image-with-text {
+  border-radius: 20px;
+  overflow: hidden;
+}
+
 .image-with-text .grid {
   margin-bottom: 0;
 }
