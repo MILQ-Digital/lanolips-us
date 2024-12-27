@@ -137,7 +137,7 @@
             </a>
           </h3>
           {%- if card_collection.featured_image and card_collection.description != blank -%}
-            <p class="card__caption">
+            <p class="card__caption_bottom">
               {{- card_collection.description | strip_html | truncatewords: 12 -}}
               <span class="icon-wrap">
                 {{- 'icon-arrow.svg' | inline_asset_content -}}
