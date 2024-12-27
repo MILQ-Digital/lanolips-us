@@ -20,6 +20,7 @@
 .image-with-text__media {
   min-height: 100%;
   overflow: visible;
+  border: 0;
 }
 
 .image-with-text__media--small {
