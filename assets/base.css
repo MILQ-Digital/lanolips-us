@@ -114,22 +114,26 @@ body {
   letter-spacing: -1.26px;
 }
 
-.body-lg {
+.body-lg,
+.subtitle {
   font-size: var(--body-lg);
   line-height: 150%; /* 27px */
 }
 
-.body-md {
+.body-md,
+.subtitle--medium {
   font-size: var(--body-md);
   line-height: 120%; /* 57.6px */
 }
 
-.body-sm {
+.body-sm,
+.subtitle--small {
   font-size: var(--body-sm);
   line-height: 120%; /* 43.2px */
 }
 
-.body-xs {
+.body-xs,
+.subtitle--xsmall {
   font-size: var(--body-xs);
   line-height: 120%; /* 33.6px */
 }
@@ -971,22 +975,6 @@ summary::-webkit-details-marker {
   margin-top: 0;
 }
 
-.subtitle {
-  font-size: 1.8rem;
-  line-height: calc(1 + 0.8 / var(--font-body-scale));
-  letter-spacing: 0.06rem;
-  color: rgba(var(--color-foreground), 0.7);
-}
-
-.subtitle--small {
-  font-size: 1.4rem;
-  letter-spacing: 0.1rem;
-}
-
-.subtitle--medium {
-  font-size: 1.6rem;
-  letter-spacing: 0.08rem;
-}
 
 /* component-grid */
 .grid {
