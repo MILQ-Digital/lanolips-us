@@ -153,6 +153,46 @@
         "padding_bottom": 0
       }
     },
+    "collection_list_aGyhDV": {
+      "type": "collection-list",
+      "blocks": {
+        "featured_collection_PE3zqw": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "lips"
+          }
+        },
+        "featured_collection_hBDbwN": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "face"
+          }
+        },
+        "featured_collection_FVHLxp": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "hands-body"
+          }
+        }
+      },
+      "block_order": [
+        "featured_collection_PE3zqw",
+        "featured_collection_hBDbwN",
+        "featured_collection_FVHLxp"
+      ],
+      "settings": {
+        "title": "Shop By Category",
+        "heading_size": "hs",
+        "image_ratio": "portrait",
+        "columns_desktop": 3,
+        "color_scheme": "scheme-2",
+        "show_view_all": false,
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "padding_top": 64,
+        "padding_bottom": 36
+      }
+    },
     "multicolumn_qzFe7j": {
       "type": "multicolumn",
       "blocks": {
@@ -169,8 +209,8 @@
         "column_HDEzTC": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/lips.webp",
-            "title": "Lips",
+            "image": "shopify://shop_images/face.webp",
+            "title": "Face",
             "text": "<p>Sub heading copy goes here Sub heading </p>",
             "link_label": "Shop Now",
             "link": "shopify://collections/lips"
@@ -179,8 +219,8 @@
         "column_Qt8QPA": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/lips.webp",
-            "title": "Lips",
+            "image": "shopify://shop_images/hands-body.webp",
+            "title": "Hands & Body",
             "text": "<p>Sub heading copy goes here Sub heading </p>",
             "link_label": "Shop Now",
             "link": "shopify://collections/lips"
@@ -192,9 +232,10 @@
         "column_HDEzTC",
         "column_Qt8QPA"
       ],
+      "disabled": true,
       "settings": {
         "title": "Shop By Category",
-        "heading_size": "h2",
+        "heading_size": "hs",
         "image_width": "full",
         "image_ratio": "adapt",
         "columns_desktop": 3,
@@ -301,6 +342,7 @@
     "slideshow_dJncwY",
     "featured_collection",
     "image_with_text_WkDiJU",
+    "collection_list_aGyhDV",
     "multicolumn_qzFe7j",
     "rich_text_3y7a76",
     "multicolumn_gqYkVh"
