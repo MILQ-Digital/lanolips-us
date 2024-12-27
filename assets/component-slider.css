@@ -41,6 +41,13 @@ slider-component.slider-component-full-width {
   }
 }
 
+@media screen and (max-width: 1649px) {
+  slider-component.slider-component-full-width {
+    padding-left: var(--outer) !important;
+    padding-right: var(--outer) !important;
+  }
+}
+
 @media screen and (max-width: 749px) {
   .slider.slider--mobile {
     position: relative;
