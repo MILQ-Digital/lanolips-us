@@ -457,8 +457,8 @@
     transition: transform var(--duration-long) ease;
   }
 
-  .card:hover .media.media--hover-effect > img:first-child:only-child,
-  .card-wrapper:hover .media.media--hover-effect > img:first-child:only-child {
+  :not(.collection-list) .card:hover .media.media--hover-effect > img:first-child:only-child,
+  :not(.collection-list) .card-wrapper:hover .media.media--hover-effect > img:first-child:only-child {
     transform: scale(1.03);
   }
 
