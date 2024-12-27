@@ -183,7 +183,7 @@
       "settings": {
         "title": "Shop By Category",
         "heading_size": "hs",
-        "image_ratio": "adapt",
+        "image_ratio": "portrait",
         "columns_desktop": 3,
         "color_scheme": "scheme-2",
         "show_view_all": false,
