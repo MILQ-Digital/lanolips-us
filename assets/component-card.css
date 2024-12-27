@@ -164,6 +164,7 @@
 
 .collection-list .card__information .card__caption_bottom {
   margin-top: -10px;
+  margin-bottom: 0;
 }
 
 .card:not(.ratio) > .card__content {
