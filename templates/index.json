@@ -194,7 +194,7 @@
       ],
       "settings": {
         "title": "Shop By Category",
-        "heading_size": "h2",
+        "heading_size": "hs",
         "image_width": "full",
         "image_ratio": "adapt",
         "columns_desktop": 3,
