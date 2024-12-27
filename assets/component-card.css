@@ -153,6 +153,10 @@
   justify-content: space-between;
 }
 
+.collection-list .card__information button {
+  max-height: 44px;
+}
+
 .card:not(.ratio) > .card__content {
   grid-template-rows: max-content minmax(0, 1fr) max-content auto;
 }
