@@ -121,6 +121,7 @@
                 {{ 'onboarding.collection_title' | t }}
               {%- endif -%}
           </h3>
+          <button class="button button--bright-pink ">Shop Now</button>
           {%- if card_collection.featured_image and card_collection.description != blank -%}
             <p class="card__caption_bottom">
               {{- card_collection.description | strip_html | truncatewords: 12 -}}
