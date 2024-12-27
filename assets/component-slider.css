@@ -193,7 +193,7 @@ slider-component.slider-component-full-width {
   .slider-component-full-width .slider--desktop:after {
     padding-left: 1.5rem;
     padding-left: var(--outer);
-    padding-right: var(--outer);
+    padding-right: var(--outer); 
   }
 
   .slider--desktop.grid--5-col-desktop .grid__item {
