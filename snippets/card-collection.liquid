@@ -103,6 +103,7 @@
                   </span>
                 {%- endif %}
               </a>
+              {{- card_collection.description | strip_html | truncatewords: 12 -}}
             </h3>
             {%- if card_collection.description != blank -%}
               <p class="card__caption">
