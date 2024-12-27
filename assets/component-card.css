@@ -167,7 +167,15 @@
   margin-bottom: 0;
 }
 
-.collection-list .card-wrapper:hover .card__inner .card__media .media {
+.collection-list .card__inner .card__media {
+  border-radius: 22px;
+  -webkit-transition: all 0.35s ease;
+  -moz-transition: all 0.35s ease;
+  transition: all 0.35s ease;  
+}
+
+.collection-list .card-wrapper:hover .card__inner .card__media .media,
+.collection-list .card-wrapper:hover .card__information {
   -webkit-transform: translateY(-10%);
     -moz-transform: translateY(-10%);
     -ms-transform: translateY(-10%);
