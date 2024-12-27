@@ -167,12 +167,15 @@
   margin-bottom: 0;
 }
 
-.collection-list .card-wrapper:hover .card__inner {
+.collection-list .card-wrapper:hover .card__inner .card__media {
   -webkit-transform: translateY(-20%);
     -moz-transform: translateY(-20%);
     -ms-transform: translateY(-20%);
     -o-transform: translateY(-20%);
     transform: translateY(-20%);
+    -webkit-transition: all 0.35s ease;
+    -moz-transition: all 0.35s ease;
+    transition: all 0.35s ease;
 }
 
 .card:not(.ratio) > .card__content {
