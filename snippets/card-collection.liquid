@@ -113,11 +113,6 @@
     </div>
     {%- if card_collection != blank and card_style == 'card' or card_collection.featured_image -%}
       <div class="card__content">
-          {%- if card_collection.featured_image and card_collection.description != blank -%}
-            <p class="card__caption_bottom">
-              {{- card_collection.description | strip_html | truncatewords: 12 -}}
-            </p>
-          {%- endif -%}      
         <div class="card__information">
           <h3 class="card__heading_hs hs">
               {%- if card_collection.title != blank -%}
@@ -128,6 +123,12 @@
           </h3>
           <button class="button button--bright-pink ">Shop Now</button>
         </div>
+          {%- if card_collection.featured_image and card_collection.description != blank -%}
+            <p class="card__caption_bottom">
+              {{- card_collection.description | strip_html | truncatewords: 12 -}}
+            </p>
+          {%- endif -%}
+        
       </div>
     {%- endif -%}
     {%- if card_collection == blank -%}
