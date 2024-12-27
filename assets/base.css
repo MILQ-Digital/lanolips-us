@@ -146,8 +146,8 @@ body {
 .button.button--bright-pink:after,
 .button.button--bright-pink:before,
 .color-scheme-3 .button--primary:before,
-.color-scheme-1 .button--primary:after,
-.color-scheme-3 .button--primary:before,
+.color-scheme-1 .button--primary:before,
+.color-scheme-3 .button--primary:after,
 .color-scheme-1 .button--primary:after {
   display: none;
 }
