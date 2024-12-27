@@ -119,7 +119,7 @@
           "type": "text",
           "settings": {
             "text": "<p>The least complicated skincare you'll find. Your everyday essentials for hydrated, healthy skin. <br/><br/></p>",
-            "text_style": "body"
+            "text_style": "subtitle"
           }
         },
         "button_AxwgMt": {
