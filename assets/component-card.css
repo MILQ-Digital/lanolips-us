@@ -151,10 +151,19 @@
 .collection-list .card__information {
   display: flex;
   justify-content: space-between;
+  max-height: 85px;
+  overflow: hidden;
+  margin-bottom: 0;
+  padding-bottom: 0;
 }
 
 .collection-list .card__information button {
   max-height: 44px;
+  margin-top: 20px;
+}
+
+.collection-list .card__information .card__caption_bottom {
+  margin-top: -10px;
 }
 
 .card:not(.ratio) > .card__content {
