@@ -29,7 +29,7 @@ slider-component.slider-component-full-width {
   padding-bottom: 0;
 }
 
-@media screen and (min-width: 1500px) {
+@media screen and (min-width: 1650px) {
   slider-component,
   .slider--desktop {
     max-width: 1650px;
@@ -339,12 +339,24 @@ slider-component.slider-component-full-width {
 }
 
 .slider-buttons .slider-button--prev {
-  left: -20px;
+  left: 0;
 }
 
 .slider-buttons .slider-button--next {
-  right: -20px;
+  right: 0;
 }
+
+@media screen and (min-width: 1650px) {
+  .slider-buttons .slider-button--prev {
+    left: -20px;
+  }
+  
+  .slider-buttons .slider-button--next {
+    right: -20px;
+  }
+}
+
+
 
 @media screen and (min-width: 990px) {
   .slider:not(.slider--everywhere):not(.slider--desktop) + .slider-buttons {
