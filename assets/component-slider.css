@@ -182,8 +182,6 @@ slider-component.slider-component-full-width {
 
   .slider-component-full-width .slider--desktop {
     scroll-padding-left: 0;
-    padding-left: var(--outer);
-    padding-right: var(--outer);
   }
   
 
