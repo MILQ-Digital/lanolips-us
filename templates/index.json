@@ -232,6 +232,7 @@
         "column_HDEzTC",
         "column_Qt8QPA"
       ],
+      "disabled": true,
       "settings": {
         "title": "Shop By Category",
         "heading_size": "hs",
