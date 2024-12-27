@@ -464,7 +464,6 @@
   .card-wrapper:hover .media.media--hover-effect > img + img {
     opacity: 1;
     transition: transform var(--duration-long) ease;
-    transform: scale(1.03);
   }
 
   .underline-links-hover:hover a {
