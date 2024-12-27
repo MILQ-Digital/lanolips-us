@@ -187,7 +187,7 @@
 }
  
 .collection-list .card-wrapper:hover .card__information {
-  height: auto;
+  max-height: auto;
 }
 
 .card:not(.ratio) > .card__content {
