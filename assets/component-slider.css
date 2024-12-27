@@ -182,9 +182,7 @@ slider-component.slider-component-full-width {
   }
 
   .slider-component-full-width .slider--desktop {
-    scroll-padding-left: 1.5rem;
-    padding-left: var(--outer);
-    padding-right: var(--outer); 
+    scroll-padding-left: 0;
   }
 
   .slider-component-full-width .slider--desktop .slider__slide:first-child {
