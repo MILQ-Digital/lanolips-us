@@ -134,7 +134,7 @@ body {
   border-color: var(--Lano-Bright-pink);
   box-shadow: unset;
   color: #fff;
-  transition: transform var(--duration-short) ease;
+  transition: all var(--duration-short) ease;
 }
 
 .button.button--bright-pink:hover,
@@ -142,7 +142,7 @@ body {
 .color-scheme-1 .button--primary:hover {
   background-color: var(--Lano-Bright-pink-hover);
   border-color: var(--Lano-Bright-pink-hover);
-  transition: transform var(--duration-short) ease;
+  transition: all var(--duration-short) ease;
 }
 
 .button.button--bright-pink:after,
