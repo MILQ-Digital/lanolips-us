@@ -175,7 +175,7 @@
 }
 
 .collection-list .card-wrapper:hover .card__inner .card__media .media,
-.collection-list .card-wrapper:hover .card__information {
+.collection-list .card-wrapper:hover .card__content {
   -webkit-transform: translateY(-10%);
     -moz-transform: translateY(-10%);
     -ms-transform: translateY(-10%);
@@ -184,6 +184,10 @@
     -webkit-transition: all 0.35s ease;
     -moz-transition: all 0.35s ease;
     transition: all 0.35s ease;
+}
+
+.collection-list .card-wrapper:hover .card__information {
+  height: auto;
 }
 
 .card:not(.ratio) > .card__content {
