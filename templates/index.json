@@ -73,7 +73,7 @@
       "type": "featured-collection",
       "settings": {
         "title": "Lanolips Best Sellers",
-        "heading_size": "h2",
+        "heading_size": "hs",
         "description": "",
         "show_description": false,
         "description_style": "body",
@@ -153,43 +153,59 @@
         "padding_bottom": 0
       }
     },
-    "collection_list_ejatAX": {
-      "type": "collection-list",
+    "multicolumn_qzFe7j": {
+      "type": "multicolumn",
       "blocks": {
-        "featured_collection_EEGJJq": {
-          "type": "featured_collection",
+        "column_VBxmpa": {
+          "type": "column",
           "settings": {
-            "collection": ""
+            "image": "shopify://shop_images/lips.webp",
+            "title": "Lips",
+            "text": "<p>Sub heading copy goes here Sub heading </p>",
+            "link_label": "Shop Now",
+            "link": "shopify://collections/lips"
           }
         },
-        "featured_collection_xjcjQ4": {
-          "type": "featured_collection",
+        "column_HDEzTC": {
+          "type": "column",
           "settings": {
-            "collection": ""
+            "image": "shopify://shop_images/lips.webp",
+            "title": "Lips",
+            "text": "<p>Sub heading copy goes here Sub heading </p>",
+            "link_label": "Shop Now",
+            "link": "shopify://collections/lips"
           }
         },
-        "featured_collection_6EDaLm": {
-          "type": "featured_collection",
+        "column_Qt8QPA": {
+          "type": "column",
           "settings": {
-            "collection": ""
+            "image": "shopify://shop_images/lips.webp",
+            "title": "Lips",
+            "text": "<p>Sub heading copy goes here Sub heading </p>",
+            "link_label": "Shop Now",
+            "link": "shopify://collections/lips"
           }
         }
       },
       "block_order": [
-        "featured_collection_EEGJJq",
-        "featured_collection_xjcjQ4",
-        "featured_collection_6EDaLm"
+        "column_VBxmpa",
+        "column_HDEzTC",
+        "column_Qt8QPA"
       ],
       "settings": {
         "title": "Shop By Category",
-        "heading_size": "hs",
-        "image_ratio": "portrait",
+        "heading_size": "h2",
+        "image_width": "full",
+        "image_ratio": "adapt",
         "columns_desktop": 3,
-        "color_scheme": "scheme-3",
-        "show_view_all": false,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "scheme-2",
         "columns_mobile": "1",
         "swipe_on_mobile": true,
-        "padding_top": 64,
+        "padding_top": 36,
         "padding_bottom": 36
       }
     },
@@ -285,7 +301,7 @@
     "slideshow_dJncwY",
     "featured_collection",
     "image_with_text_WkDiJU",
-    "collection_list_ejatAX",
+    "multicolumn_qzFe7j",
     "rich_text_3y7a76",
     "multicolumn_gqYkVh"
   ]
