@@ -73,7 +73,7 @@
       "type": "featured-collection",
       "settings": {
         "title": "Lanolips Best Sellers",
-        "heading_size": "h2",
+        "heading_size": "hs",
         "description": "",
         "show_description": false,
         "description_style": "body",
