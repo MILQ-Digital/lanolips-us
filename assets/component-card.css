@@ -327,6 +327,10 @@
   line-height: 20px;
 }
 
+.card__heading_hs {
+  margin-top: 0;
+}
+
 .card__heading:last-child {
   margin-bottom: 0;
 }
