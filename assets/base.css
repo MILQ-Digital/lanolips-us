@@ -65,19 +65,22 @@ body {
 }
 
 .heading-lg,
-.hxl {
+.hxl,
+.hl {
   font-size: var(--heading-lg);
   line-height: 120%; /* 76.8px */
   font-weight: 500;
 }
 
-.heading-md {
+.heading-md,
+.hm {
   font-size: var(--heading-md);
   line-height: 120%; /* 57.6px */
   font-weight: 500;
 }
 
-.heading-sm {
+.heading-sm,
+.hs {
   font-size: var(--heading-sm);
   line-height: 120%; /* 43.2px */
   font-weight: 500;
