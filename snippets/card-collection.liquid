@@ -32,21 +32,23 @@
 -%}
 
 <div class="card-wrapper animate-arrow {% if wrapper_class and wrapper_class != 'none' %}{{ wrapper_class }}{% else %}collection-card-wrapper{% endif %}">
-  <div
-    class="
-      card
-      card--{{ card_style }}
+  <a
+    {% if card_collection == blank %}
+      role="link" aria-disabled="true"
+    {% else %}
+      href="{{ card_collection.url }}"
+    {% endif %}
+    class="full-unstyled-link"
+  >
+  <div class="card card--{{ card_style }}
       {% if card_collection.featured_image %} card--media{% else %} card--text{% endif %}
       {% if card_style == 'card' %} color-{{ card_color_scheme }} gradient{% endif %}
       {% if extend_height %} card--extend-height{% endif %}
       {% if card_collection.featured_image == nil and card_style == 'card' %} ratio{% endif %}
-    "
-    style="--ratio-percent: {{ 1 | divided_by: ratio | times: 100 }}%;"
-  >
-    <div
-      class="card__inner {% if card_style == 'standard' %}color-{{ card_color_scheme }} gradient{% endif %}{% if card_collection.featured_image or card_style == 'standard' %} ratio{% endif %}"
-      style="--ratio-percent: {{ 1 | divided_by: ratio | times: 100 }}%;"
-    >
+    "style="--ratio-percent: {{ 1 | divided_by: ratio | times: 100 }}%;">
+    <div class="card__inner {% if card_style == 'standard' %}color-{{ card_color_scheme }} gradient{% endif %}{% if card_collection.featured_image or card_style == 'standard' %} ratio{% endif %}"
+      style="--ratio-percent: {{ 1 | divided_by: ratio | times: 100 }}%;">
+    
       {%- if card_collection.featured_image -%}
         <div class="card__media">
           <div class="media media--transparent media--hover-effect">
@@ -84,14 +86,7 @@
         <div class="card__content">
           <div class="card__information">
             <h3 class="card__heading_hs hs">
-              <a
-                {% if card_collection == blank %}
-                  role="link" aria-disabled="true"
-                {% else %}
-                  href="{{ card_collection.url }}"
-                {% endif %}
-                class="full-unstyled-link"
-              >
+
                 {%- if card_collection.title != blank -%}
                   {{- card_collection.title | escape -}}
                 {%- else -%}
@@ -102,7 +97,6 @@
                     {{- 'icon-arrow.svg' | inline_asset_content -}}
                   </span>
                 {%- endif %}
-              </a>
               
             </h3>
             {%- if card_collection.description != blank -%}
@@ -121,20 +115,11 @@
       <div class="card__content">
         <div class="card__information">
           <h3 class="card__heading_hs hs">
-            <a
-              {% if card_collection == blank %}
-                role="link" aria-disabled="true"
-              {% else %}
-                href="{{ card_collection.url }}"
-              {% endif %}
-              class="full-unstyled-link"
-            >
               {%- if card_collection.title != blank -%}
                 {{- card_collection.title | escape -}}
               {%- else -%}
                 {{ 'onboarding.collection_title' | t }}
               {%- endif -%}
-            </a>
           </h3>
           {%- if card_collection.featured_image and card_collection.description != blank -%}
             <p class="card__caption_bottom">
@@ -148,15 +133,16 @@
       <div class="card__content">
         <div class="card__information">
           <h3 class="card__heading_hs card__heading--placeholder hs">
-            <a role="link" aria-disabled="true" class="full-unstyled-link">
+
               {{ 'onboarding.collection_title' | t }}
               <span class="icon-wrap">
                 {{- 'icon-arrow.svg' | inline_asset_content -}}
               </span>
-            </a>
+
           </h3>
         </div>
       </div>
     {%- endif -%}
   </div>
+  </a>
 </div>
