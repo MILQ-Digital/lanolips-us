@@ -180,7 +180,7 @@ slider-component.slider-component-full-width {
   }
 
   .slider--desktop.grid--5-col-desktop .slider__slide:first-child {
-    margin-left: 45px;
+    margin-left: 0;
   }
 
   .slider-component-full-width .slider--desktop {
