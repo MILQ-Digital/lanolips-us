@@ -114,13 +114,21 @@
     {%- if card_collection != blank and card_style == 'card' or card_collection.featured_image -%}
       <div class="card__content">
         <div class="card__information">
-          <h3 class="card__heading_hs hs">
+          <div class="card__details">
+            <h3 class="card__heading_hs hs">
               {%- if card_collection.title != blank -%}
                 {{- card_collection.title | escape -}}
               {%- else -%}
                 {{ 'onboarding.collection_title' | t }}
               {%- endif -%}
-          </h3>
+            </h3>
+            <p>
+              Explore The Range
+              <span class="icon-wrap">
+                {{- 'icon-arrow.svg' | inline_asset_content -}}
+              </span>            
+            </p>
+          </div>
           <button class="button button--bright-pink ">Shop Now</button>
         </div>
           {%- if card_collection.featured_image and card_collection.description != blank -%}

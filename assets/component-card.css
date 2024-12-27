@@ -148,6 +148,11 @@
   padding: 1.3rem 1rem;
 }
 
+.collection-list .card__information {
+  display: flex;
+  justify-content: space-between;
+}
+
 .card:not(.ratio) > .card__content {
   grid-template-rows: max-content minmax(0, 1fr) max-content auto;
 }
