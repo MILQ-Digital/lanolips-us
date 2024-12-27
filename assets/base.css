@@ -144,7 +144,11 @@ body {
 }
 
 .button.button--bright-pink:after,
-.button.button--bright-pink:before {
+.button.button--bright-pink:before,
+.color-scheme-3 .button--primary:before,
+.color-scheme-1 .button--primary:after,
+.color-scheme-3 .button--primary:before,
+.color-scheme-1 .button--primary:after {
   display: none;
 }
 
@@ -1351,7 +1355,6 @@ button.shopify-payment-button__button--unbranded {
   box-shadow: var(--color-background-bg); 
 }
 
-/*
 .button:before,
 .shopify-challenge__button:before,
 .customer button:before,
@@ -1385,7 +1388,7 @@ button.shopify-payment-button__button--unbranded {
     0 0 0 var(--buttons-border-width) rgba(var(--color-button), var(--alpha-button-background));
   transition: box-shadow var(--duration-short) ease;
 }
-*/
+
 
 .button:not([disabled]):hover::after,
 .shopify-challenge__button:hover::after,
