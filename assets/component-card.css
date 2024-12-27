@@ -457,11 +457,6 @@
     transition: transform var(--duration-long) ease;
   }
 
-  :not(.collection-list) .card:hover .media.media--hover-effect > img:first-child:only-child,
-  :not(.collection-list) .card-wrapper:hover .media.media--hover-effect > img:first-child:only-child {
-    transform: scale(1.03);
-  }
-
   .card-wrapper:hover .media.media--hover-effect > img:first-child:not(:only-child) {
     opacity: 0;
   }
