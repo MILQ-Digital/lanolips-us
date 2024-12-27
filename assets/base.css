@@ -137,7 +137,8 @@ body {
 }
 
 .button.button--bright-pink:hover,
-.color-scheme-3 .button--primary:hover {
+.color-scheme-3 .button--primary:hover,
+.color-scheme-1 .button--primary:hover {
   background-color: var(--Lano-Bright-pink-hover);
   border-color: var(--Lano-Bright-pink-hover);
 }
