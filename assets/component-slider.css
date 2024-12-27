@@ -175,6 +175,10 @@ slider-component.slider-component-full-width {
     scroll-margin-left: var(--desktop-margin-left-first-item);
   }
 
+  .slider--desktop.grid--5-col-desktop .slider__slide:first-child {
+    margin-left: 45px;
+  }
+
   .slider-component-full-width .slider--desktop {
     scroll-padding-left: 1.5rem;
   }
