@@ -165,13 +165,13 @@
         "featured_collection_hBDbwN": {
           "type": "featured_collection",
           "settings": {
-            "collection": "lips"
+            "collection": "face"
           }
         },
         "featured_collection_FVHLxp": {
           "type": "featured_collection",
           "settings": {
-            "collection": "lips"
+            "collection": "hands-body"
           }
         }
       },
