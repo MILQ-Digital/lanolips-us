@@ -167,7 +167,7 @@
   margin-bottom: 0;
 }
 
-.collection-list .card-wrapper:hover .card__inner .card__media img {
+.collection-list .card-wrapper:hover .card__inner .card__media .media {
   -webkit-transform: translateY(-20%);
     -moz-transform: translateY(-20%);
     -ms-transform: translateY(-20%);
