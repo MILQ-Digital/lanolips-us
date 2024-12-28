@@ -130,8 +130,8 @@
           {% when 'checkbox' %}
             <a
               href="{{ block.settings.text_link }}"
-              class="{% if section.settings.view_all_style == 'link' %}link underlined-link{% elsif section.settings.view_all_style == 'solid' %}button{% else %}button button--secondary{% endif %}">
-              {{ 'block.settings.text_text' }}
+              class="{% if block.settings.view_all_style == 'link' %}link underlined-link{% elsif block.settings.view_all_style == 'solid' %}button{% else %}button button--secondary{% endif %}">
+              {{ 'block.settings.text_text' | escape }}
               <span class="svg-wrapper">
                 {{- 'icon-caret.svg' | inline_asset_content -}}
               </span>
