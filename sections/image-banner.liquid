@@ -126,7 +126,7 @@
     <div class="banner__box content-container content-container--full-width-mobile color-{{ section.settings.color_scheme }} gradient">
       {%- for block in section.blocks -%}
         {%- case block.type -%}
-          {%- when icon -%}
+          {%- when Image -%}
             <img 
               src="{{ block.settings.image_icon | image_url: width: 3200 }}" 
               srcset="
