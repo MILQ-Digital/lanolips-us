@@ -192,6 +192,11 @@
   -ms-transform: translateY(-40%);
   -o-transform: translateY(-40%);
   transform: translateY(-40%);  
+  background: rgb(255,255,255);
+  background: -moz-linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(0,0,0,0.039653361344537785) 100%);
+  background: -webkit-linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(0,0,0,0.039653361344537785) 100%);
+  background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(0,0,0,0.039653361344537785) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#000000",GradientType=1);
 }
 
 .card:not(.ratio) > .card__content {
