@@ -235,6 +235,10 @@ body {
   --shadow-visible: var(--media-shadow-visible);
 }
 
+.text_link a {
+  
+}
+
 /* base */
 
 .page-width {
