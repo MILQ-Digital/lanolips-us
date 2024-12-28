@@ -243,7 +243,8 @@ body {
 }
 
 .text_link a span {
-  width: 0;
+  width: 0px;
+  overflow: hidden;
 }
 
 .text_link a:hover span {
