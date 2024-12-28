@@ -127,6 +127,13 @@
       {%- for block in section.blocks -%}
         {%- case block.type -%}
 
+          {% when 'checkbox' %}
+            <a
+              href="{{ block.settings.text_link }}"
+              class="{% if section.settings.view_all_style == 'link' %}link underlined-link{% elsif section.settings.view_all_style == 'solid' %}button{% else %}button button--secondary{% endif %}"            >
+              {{ 'block.settings.text_text' | t }}
+            </a>          
+
           {%- when 'icon' -%}
              <img 
                 src="{{ block.settings.image_icon | image_url: width: 3200 }}" 
@@ -528,10 +535,14 @@
       "limit": 1,
       "settings": [
         {
-          "type": "checkbox",
-          "id": "show_view_all",
-          "default": true,
-          "label": "t:sections.featured-collection.settings.show_view_all.label"
+          "type": "text",
+          "id": "text_text",
+          "label": "Link Label"
+        },
+        {
+          "type": "url",
+          "id": "text_link",
+          "label": "Link"
         },
         {
           "type": "select",
