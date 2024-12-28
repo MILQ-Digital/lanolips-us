@@ -28,9 +28,12 @@
     opacity: {{ section.settings.image_overlay_opacity | divided_by: 100.0 }};
   }
 
-  #Banner-{{ section.id }} {
+  {% if section.settings.color_background %}
+  #Banner-{{ section.id }},
+  #Banner-{{ section.id }} .media {
     background-color: {{ section.settings.color_background }};
   }
+  {% endif %}
 {%- endstyle -%}
 
 {%- liquid
