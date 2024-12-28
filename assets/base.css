@@ -245,10 +245,16 @@ body {
 .text_link a span {
   width: 0px;
   overflow: hidden;
+  -webkit-transition: all 0.35s ease;
+  -moz-transition: all 0.35s ease;
+  transition: all 0.35s ease;  
 }
 
 .text_link a:hover span {
   width: auto;
+  -webkit-transition: all 0.35s ease;
+  -moz-transition: all 0.35s ease;
+  transition: all 0.35s ease;  
 }
 
 /* base */
