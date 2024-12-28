@@ -236,7 +236,18 @@ body {
 }
 
 .text_link a {
-  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.text_link a span {
+  width: 0;
+}
+
+.text_link a:hover span {
+  width: auto;
 }
 
 /* base */
