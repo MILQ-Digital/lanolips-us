@@ -209,18 +209,22 @@
             "heading_size": "hm"
           }
         },
-        "text_wLF9ki": {
-          "type": "text",
+        "buttons_VRJ6Mg": {
+          "type": "buttons",
           "settings": {
-            "text": "Give customers details about the banner image(s) or content on the template.",
-            "text_style": "body"
+            "button_label_1": "Learn More",
+            "button_link_1": "shopify://pages/contact",
+            "button_style_secondary_1": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
           }
         }
       },
       "block_order": [
         "icon_YQkFzD",
         "heading_hVPN7C",
-        "text_wLF9ki"
+        "buttons_VRJ6Mg"
       ],
       "settings": {
         "image": "shopify://shop_images/SWIRL.png",
