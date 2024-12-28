@@ -248,7 +248,7 @@
           "settings": {
             "image": "shopify://shop_images/bundles.webp",
             "title": "Engaging headline about bundles",
-            "text": "<p>Lorem ipsum dolor sit amet<br/><br/></p>",
+            "text": "<p>Lorem ipsum dolor sit amet</p>",
             "link_label": "Shop Now",
             "link": "shopify://collections/all",
             "button_style_secondary": false
@@ -259,7 +259,7 @@
           "settings": {
             "image": "shopify://shop_images/gifting.webp",
             "title": "Something about gifting",
-            "text": "<p>Lorem ipsum dolor sit amet<br/><br/></p>",
+            "text": "<p>Lorem ipsum dolor sit amet</p>",
             "link_label": "Shop Now",
             "link": "shopify://collections/all",
             "button_style_secondary": false
