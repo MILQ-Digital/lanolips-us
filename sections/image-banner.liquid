@@ -36,8 +36,8 @@
   {% endif %}
 
   #Banner-{{ section.id }} {
-    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
-    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+    padding-top: {{ section.settings.padding_top | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | round: 0 }}px;
   }   
 {%- endstyle -%}
 
