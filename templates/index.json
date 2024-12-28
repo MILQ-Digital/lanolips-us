@@ -250,7 +250,8 @@
             "title": "Engaging headline about bundles",
             "text": "<p>Lorem ipsum dolor sit amet<br/><br/></p>",
             "link_label": "Shop Now",
-            "link": "shopify://collections/all"
+            "link": "shopify://collections/all",
+            "button_style_secondary": false
           }
         },
         "column_nBnMPt": {
@@ -260,7 +261,8 @@
             "title": "Something about gifting",
             "text": "<p>Lorem ipsum dolor sit amet<br/><br/></p>",
             "link_label": "Shop Now",
-            "link": "shopify://collections/all"
+            "link": "shopify://collections/all",
+            "button_style_secondary": false
           }
         }
       },
@@ -278,7 +280,7 @@
         "background_style": "none",
         "button_label": "",
         "button_link": "",
-        "color_scheme": "scheme-2",
+        "color_scheme": "scheme-3",
         "columns_mobile": "1",
         "swipe_on_mobile": false,
         "padding_top": 44,
