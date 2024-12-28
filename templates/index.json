@@ -216,15 +216,21 @@
             "text_style": "body"
           }
         },
-        "buttons_VRJ6Mg": {
+        "buttons_EaJR6F": {
           "type": "buttons",
           "settings": {
-            "button_label_1": "Learn More",
-            "button_link_1": "shopify://pages/contact",
+            "button_label_1": "Button label",
+            "button_link_1": "",
             "button_style_secondary_1": false,
-            "button_label_2": "",
+            "button_label_2": "Button label",
             "button_link_2": "",
             "button_style_secondary_2": false
+          }
+        },
+        "checkbox_LMyxQA": {
+          "type": "checkbox",
+          "settings": {
+            "view_all_style": "link"
           }
         }
       },
@@ -232,7 +238,8 @@
         "icon_YQkFzD",
         "heading_hVPN7C",
         "text_QCHyki",
-        "buttons_VRJ6Mg"
+        "buttons_EaJR6F",
+        "checkbox_LMyxQA"
       ],
       "settings": {
         "image": "shopify://shop_images/SWIRL.png",
