@@ -367,6 +367,10 @@
     box-shadow: none;
   }
 
+  .banner--desktop-transparent .banner__box.slideshow__text {
+    padding: 4rem 0;
+  }  
+
   .banner--desktop-transparent .button--secondary {
     --alpha-button-background: 0;
   }
