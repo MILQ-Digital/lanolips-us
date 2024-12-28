@@ -141,8 +141,9 @@
   }
 }
 
-.multicolumn-list .media {
+.multicolumn-list .media img {
   border-radius: 20px;
+  max-height: 599px;
 }
 
 .background-none .multicolumn-card-spacing {
@@ -192,10 +193,6 @@
 }
 
 @media screen and (min-width: 750px) {
-  .background-none .multicolumn-card__image-wrapper {
-    margin-left: 1.5rem;
-    margin-right: 1.5rem;
-  }
 
   .background-none .multicolumn-list .multicolumn-card__info,
   .background-none .multicolumn-list:not(.slider) .center .multicolumn-card__info {
