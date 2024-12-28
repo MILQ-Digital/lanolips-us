@@ -196,6 +196,12 @@
     "image_banner_rxCeJC": {
       "type": "image-banner",
       "blocks": {
+        "icon_wABKtN": {
+          "type": "icon",
+          "settings": {
+            "image_icon": "shopify://shop_images/image_46.png"
+          }
+        },
         "heading_hVPN7C": {
           "type": "heading",
           "settings": {
@@ -212,6 +218,7 @@
         }
       },
       "block_order": [
+        "icon_wABKtN",
         "heading_hVPN7C",
         "text_wLF9ki"
       ],
