@@ -45,7 +45,8 @@ body {
   overflow-x: hidden;
 }
 
-.lanoscript {
+.lanoscript,
+.banner__heading em {
   font-family: var(--lanoscript);
   font-weight: 600;
 }
