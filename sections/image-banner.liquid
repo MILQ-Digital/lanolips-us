@@ -127,18 +127,11 @@
       {%- for block in section.blocks -%}
         {%- case block.type -%}
           {%- when icon -%}
-            {% capture sizes %}
-              (min-width: {{ settings.page_width }}px) calc(({{ settings.page_width }}px - {{ grid_space_desktop }}) * {{ image_width }} /  {{ number_of_columns }}),
-              (min-width: 990px) calc((100vw - {{ grid_space_desktop }}) * {{ image_width }} / {{ number_of_columns }}),
-              (min-width: 750px) calc((100vw - {{ grid_space_tablet }}) * {{ image_width }} / {{ number_of_columns_mobile }}),
-               calc((100vw - {{ grid_space_mobile }}) * {{ image_width }} / {{ number_of_columns_mobile }})
-            {% endcapture %}
             {{
                block.settings.image
                 | image_url: width: 3200
                 | image_tag:
                 widths: '50, 75, 100, 150, 200, 300, 400, 500, 750, 1000, 1250, 1500, 1750, 2000, 2250, 2500, 2750, 3000, 3200',
-                sizes: sizes,
                 class: 'image_icon'
             }}       
           {%- when 'heading' -%}
