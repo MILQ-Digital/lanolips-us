@@ -146,6 +146,12 @@
   max-height: 599px;
 }
 
+.multicolumn-list .media..media--square {
+  max-height: 599px;
+  padding-bottom: auto;
+}
+
+
 .background-none .multicolumn-card-spacing {
   padding: 0;
   margin: 0;
