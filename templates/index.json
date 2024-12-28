@@ -193,63 +193,6 @@
         "padding_bottom": 36
       }
     },
-    "multicolumn_qzFe7j": {
-      "type": "multicolumn",
-      "blocks": {
-        "column_VBxmpa": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/lips.webp",
-            "title": "Lips",
-            "text": "<p>Sub heading copy goes here Sub heading </p>",
-            "link_label": "Shop Now",
-            "link": "shopify://collections/lips"
-          }
-        },
-        "column_HDEzTC": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/face.webp",
-            "title": "Face",
-            "text": "<p>Sub heading copy goes here Sub heading </p>",
-            "link_label": "Shop Now",
-            "link": "shopify://collections/lips"
-          }
-        },
-        "column_Qt8QPA": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/hands-body.webp",
-            "title": "Hands & Body",
-            "text": "<p>Sub heading copy goes here Sub heading </p>",
-            "link_label": "Shop Now",
-            "link": "shopify://collections/lips"
-          }
-        }
-      },
-      "block_order": [
-        "column_VBxmpa",
-        "column_HDEzTC",
-        "column_Qt8QPA"
-      ],
-      "disabled": true,
-      "settings": {
-        "title": "Shop By Category",
-        "heading_size": "hs",
-        "image_width": "full",
-        "image_ratio": "adapt",
-        "columns_desktop": 3,
-        "column_alignment": "left",
-        "background_style": "primary",
-        "button_label": "",
-        "button_link": "",
-        "color_scheme": "scheme-2",
-        "columns_mobile": "1",
-        "swipe_on_mobile": true,
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
     "rich_text_3y7a76": {
       "type": "rich-text",
       "blocks": {
@@ -290,6 +233,54 @@
         "full_width": true,
         "padding_top": 40,
         "padding_bottom": 52
+      }
+    },
+    "image_banner_rxCeJC": {
+      "type": "image-banner",
+      "blocks": {
+        "heading_hVPN7C": {
+          "type": "heading",
+          "settings": {
+            "heading": "Image banner",
+            "heading_size": "h1"
+          }
+        },
+        "text_wLF9ki": {
+          "type": "text",
+          "settings": {
+            "text": "Give customers details about the banner image(s) or content on the template.",
+            "text_style": "body"
+          }
+        },
+        "buttons_TUwM6H": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "Button label",
+            "button_link_1": "",
+            "button_style_secondary_1": false,
+            "button_label_2": "Button label",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_hVPN7C",
+        "text_wLF9ki",
+        "buttons_TUwM6H"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/SWIRL.png",
+        "image_overlay_opacity": 0,
+        "image_height": "medium",
+        "desktop_content_position": "middle-center",
+        "show_text_box": false,
+        "desktop_content_alignment": "center",
+        "color_scheme": "scheme-2",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": false
       }
     },
     "multicolumn_gqYkVh": {
@@ -343,8 +334,8 @@
     "featured_collection",
     "image_with_text_WkDiJU",
     "collection_list_aGyhDV",
-    "multicolumn_qzFe7j",
     "rich_text_3y7a76",
+    "image_banner_rxCeJC",
     "multicolumn_gqYkVh"
   ]
 }
