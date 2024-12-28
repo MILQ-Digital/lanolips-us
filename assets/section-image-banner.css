@@ -358,7 +358,7 @@
     padding: 4rem 3.5rem;
   }
 
-  .banner--desktop-transparent .banner__box {
+  .banner--desktop-transparent .banner__box:not(.slideshow__text) {
     padding: 4rem 0;
     background: transparent;
     max-width: var(--page-width);
