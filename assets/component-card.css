@@ -162,6 +162,7 @@
 
 .collection-list .card__information p {
   display: none;
+  color: #fff;
 }
 
 .collection-list .card-wrapper:hover .card__information p {
