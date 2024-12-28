@@ -257,6 +257,11 @@ body {
   transition: all 0.35s ease;  
 }
 
+.text_link a:hover {
+  text-decoration-thickness: 0;
+  text-decoration: none;
+}
+
 /* base */
 
 .page-width {
