@@ -1366,6 +1366,7 @@ button.shopify-payment-button__button--unbranded {
   box-shadow: var(--color-background-bg); 
 }
 
+/*
 .button:before,
 .shopify-challenge__button:before,
 .customer button:before,
@@ -1426,6 +1427,7 @@ button.shopify-payment-button__button--unbranded {
 .button--secondary:after {
   --border-opacity: var(--buttons-border-opacity);
 }
+*/
 
 .button:focus-visible,
 .button:focus,
