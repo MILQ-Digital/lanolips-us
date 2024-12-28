@@ -209,13 +209,6 @@
             "heading_size": "hm"
           }
         },
-        "text_QCHyki": {
-          "type": "text",
-          "settings": {
-            "text": "",
-            "text_style": "body"
-          }
-        },
         "checkbox_LMyxQA": {
           "type": "checkbox",
           "settings": {
@@ -228,7 +221,6 @@
       "block_order": [
         "icon_YQkFzD",
         "heading_hVPN7C",
-        "text_QCHyki",
         "checkbox_LMyxQA"
       ],
       "settings": {
