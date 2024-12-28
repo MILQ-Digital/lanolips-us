@@ -27,6 +27,10 @@
   #Banner-{{ section.id }}::after {
     opacity: {{ section.settings.image_overlay_opacity | divided_by: 100.0 }};
   }
+
+  #Banner-{{ section.id }} {
+    background-color: {{ section.settings.colour_background }}
+  }
 {%- endstyle -%}
 
 {%- liquid
