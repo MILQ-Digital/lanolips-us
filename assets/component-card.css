@@ -157,6 +157,18 @@
   padding-bottom: 0;
   padding-left: 10px!important;
   padding-right: 10px!important;
+  align-items: center;
+}
+
+.collection-list .card__information p {
+  display: none;
+}
+
+.collection-list .card-wrapper:hover .card__information p {
+  display: block;
+  -webkit-transition: all 0.35s ease;
+  -moz-transition: all 0.35s ease;
+  transition: all 0.35s ease;  
 }
 
 .collection-list .card__information button {
