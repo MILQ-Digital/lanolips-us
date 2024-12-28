@@ -210,6 +210,12 @@
   transform: translateY(-40%);  
 }
 
+@media screen and (min-width: 1200px) {
+  .collection-list .card.card--standard {
+    height: 620px;
+  }
+}
+
 @media screen and (min-width: 1650px) {
   .collection-list .card.card--standard {
     height: 780px;
