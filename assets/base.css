@@ -52,6 +52,10 @@ body {
   font-style: normal;
 }
 
+.banner__heading em {
+  font-size: 58px;
+}
+
 .heading {
   font-style: normal;
   font-weight: 500;
