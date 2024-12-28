@@ -91,7 +91,6 @@
 
 .multicolumn-card__info > :nth-child(2) {
   margin-top: 1rem;
-  font-size: var(--body-lg);
 }
 
 .multicolumn-list__item.center .media--adapt,
