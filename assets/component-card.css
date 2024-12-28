@@ -155,6 +155,8 @@
   overflow: hidden;
   margin-bottom: 0;
   padding-bottom: 0;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .collection-list .card__information button {
@@ -163,8 +165,9 @@
 }
 
 .collection-list .card__caption_bottom {
-  margin-top: -10px;
   margin-bottom: 0;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .collection-list .card__inner .card__media  .media{
