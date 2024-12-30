@@ -264,7 +264,7 @@
       </div>
     </div>
     <div class="footer__content-bottom-wrapper page-width{% if section.settings.enable_country_selector == false and section.settings.enable_language_selector == false %} footer__content-bottom-wrapper--center{% endif %}">
-      <div class="footer__copyright caption">
+      
         <div class="logofooter__content">
           {%- if section.settings.footer_image -%}
           <img srcset="{{ section.settings.footer_image | image_url: width: section.settings.image_width }}, {{ section.settings.footer_image | image_url: width: image_size_2x }} 2x"
@@ -317,7 +317,6 @@
           &copy; {{ 'now' | date: '%Y' }}, {{ shop.name | link_to: routes.root_url -}}
         </div>
 
-      </div>
     </div>
   </div>
 </footer>
