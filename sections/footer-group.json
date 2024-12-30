@@ -52,19 +52,11 @@
             "heading": "",
             "menu": "main-menu"
           }
-        },
-        "text_AftH8r": {
-          "type": "text",
-          "settings": {
-            "heading": "Heading",
-            "subtext": "<p>Share contact information, store details, and brand content with your customers.</p>"
-          }
         }
       },
       "block_order": [
         "brand_information_M9ttf4",
-        "link_list_gxJjzR",
-        "text_AftH8r"
+        "link_list_gxJjzR"
       ],
       "settings": {
         "seo_footer": "Lanolips is the home of “The World’s Best Lip Balms”. Hydrating lip and skincare that’s simple + powerful, clean & cruelty free.",
