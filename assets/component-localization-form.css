@@ -79,9 +79,9 @@
 .localization-form__select .icon-caret {
   position: absolute;
   content: '';
-  height: 0.6rem;
-  right: calc(var(--inputs-border-width) + 1.5rem);
-  top: calc(50% - 0.2rem);
+  height: 8px;
+  right: 10px;
+  top: 17px;
 }
 
 .localization-selector.link {
