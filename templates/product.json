@@ -12,16 +12,16 @@
     "main": {
       "type": "main-product",
       "blocks": {
+        "price": {
+          "type": "price",
+          "settings": {}
+        },
         "title": {
           "type": "title",
           "settings": {}
         },
         "description": {
           "type": "description",
-          "settings": {}
-        },
-        "price": {
-          "type": "price",
           "settings": {}
         },
         "variant_picker": {
@@ -57,9 +57,9 @@
         }
       },
       "block_order": [
+        "price",
         "title",
         "description",
-        "price",
         "variant_picker",
         "quantity_selector",
         "buy_buttons",
