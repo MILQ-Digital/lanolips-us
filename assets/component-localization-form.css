@@ -116,9 +116,9 @@
   align-items: center;
   cursor: pointer;
   display: flex;
-  height: 4rem;
-  padding: 0 1.5rem 0 1.5rem;
-  font-size: 1.3rem;
+  height: 38px;
+  padding: 0 1rem 0 1rem;
+  font-size: var(--body-sm);
   background-color: transparent;
 }
 
