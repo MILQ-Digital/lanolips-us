@@ -248,6 +248,7 @@
     {% endif %}
   >
     <div class="footer__content-bottom-wrapper page-width">
+      <div class="seo_footer">{{ section.settings.seo_footer }}</div>
       <div class="footer__column footer__column--info">
         {%- if section.settings.payment_enable -%}
           <div class="footer__payment">
@@ -288,9 +289,6 @@
 
         {%- if section.settings.show_policy or section.settings.policy_menu != blank -%}
           <div class="policies__content">
-
-            <div class="seo_footer">{{ section.settings.seo_footer }}</div>
-
             <ul class="policies list-unstyled">
 
               {%- if section.settings.show_policy -%}

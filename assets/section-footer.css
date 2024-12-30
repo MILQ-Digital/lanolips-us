@@ -484,6 +484,7 @@
   flex-direction: column;
   text-align: center;
   justify-content: space-between;
+  gap: 30px;
 }
 
 .logofooter__content {
