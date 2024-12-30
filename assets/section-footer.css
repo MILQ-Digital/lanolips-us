@@ -467,11 +467,26 @@
 
 .copyright__content {
   font-size: var(--body-xs);
+  width: 20%;
 }
 
 .copyright__content a {
   color: currentColor;
   text-decoration: none;
+}
+
+.policies__content {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: space-between;
+}
+
+.logofooter__content {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  width: 20%;
 }
 
 .policies {
