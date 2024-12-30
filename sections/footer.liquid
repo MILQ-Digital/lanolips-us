@@ -288,6 +288,9 @@
 
         {%- if section.settings.show_policy or section.settings.policy_menu != blank -%}
           <div class="policies__content">
+
+            <div class="seo_footer">{{ section.settings.seo_footer }}</div>
+
             <ul class="policies list-unstyled">
 
               {%- if section.settings.show_policy -%}
@@ -421,6 +424,11 @@
     }
   ],
   "settings": [
+    {
+      "type": "inline_richtext",
+      "id": "seo_footer",
+      "label": "SEO Content"
+    },    
     {
       "type": "image_picker",
       "id": "footer_image",
