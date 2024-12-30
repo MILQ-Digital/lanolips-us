@@ -67,6 +67,7 @@
         "text_AftH8r"
       ],
       "settings": {
+        "footer_image": "shopify://shop_images/footer-logo.png",
         "footer_secondimage": "shopify://shop_images/Leaping_Bunny.png",
         "color_scheme": "scheme-1",
         "newsletter_enable": false,
