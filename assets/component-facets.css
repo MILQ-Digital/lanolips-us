@@ -159,6 +159,7 @@
 .facets {
   display: block;
   grid-column-start: span 2;
+  order: 3;
 }
 
 .facets__form {
@@ -758,6 +759,7 @@ a.active-facets__button.focused .active-facets__button-inner {
 .mobile-facets__wrapper {
   margin-left: 0;
   display: flex;
+  order: 2;
 }
 
 .mobile-facets__wrapper .disclosure-has-popup[open] > summary::before {
@@ -1098,6 +1100,8 @@ input.mobile-facets__checkbox {
   align-self: center;
   position: relative;
   text-align: right;
+  order: 1;
+  flex-grow: 1;
 }
 
 .product-count__text {
@@ -1227,10 +1231,6 @@ input.mobile-facets__checkbox {
   .facets-container-drawer .mobile-facets__wrapper {
     margin-right: 2rem;
     flex-grow: 1;
-  }
-
-  .facets-container-drawer .product-count {
-    margin: 0 0 0.5rem 3.5rem;
   }
 
   .facets-container-drawer .facets-pill {
