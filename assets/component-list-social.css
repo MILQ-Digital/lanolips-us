@@ -10,7 +10,8 @@
   }
 }
 
-.list-social__item .icon {
+.list-social__item .icon,
+.list-social__item .svg-wrapper {
   height: 38px;
   width: 38px;
 }
