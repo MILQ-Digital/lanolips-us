@@ -45,7 +45,7 @@
 }
 
 .localization-form__currency {
-  opacity: 0;
+  opacity: 1;
   transition: opacity 0.15s cubic-bezier(0.25, 0.46, 0.45, 0.94);
   white-space: nowrap;
   padding-right: 1.7rem;
