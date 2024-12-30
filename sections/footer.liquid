@@ -112,7 +112,7 @@
                   {%- endif -%}
                 </div>
                 {%- if form.posted_successfully? -%}
-                  <h3
+                  <h4
                     class="newsletter-form__message newsletter-form__message--success form__message"
                     id="ContactFooter-success"
                     tabindex="-1"
@@ -122,7 +122,7 @@
                       {{- 'icon-success.svg' | inline_asset_content -}}
                     </span>
                     {{- 'newsletter.success' | t }}
-                  </h3>
+                  </h4>
                 {%- endif -%}
               {%- endform -%}
             </div>
@@ -155,7 +155,7 @@
                 {% endif %}
               >
                 {%- if block.settings.heading != blank -%}
-                  <h2 class="footer-block__heading inline-richtext">{{- block.settings.heading -}}</h2>
+                  <h4 class="footer-block__heading inline-richtext heading-2xs">{{- block.settings.heading -}}</h4>
                 {%- endif -%}
 
                 {%- case block.type -%}
