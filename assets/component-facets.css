@@ -1099,7 +1099,7 @@ input.mobile-facets__checkbox {
 .product-count {
   align-self: center;
   position: relative;
-  text-align: right;
+  text-align: left;
   order: 1;
   flex-grow: 1;
 }
@@ -1230,7 +1230,7 @@ input.mobile-facets__checkbox {
 
   .facets-container-drawer .mobile-facets__wrapper {
     margin-right: 2rem;
-    flex-grow: 1;
+    flex-grow: 0;
   }
 
   .facets-container-drawer .facets-pill {
