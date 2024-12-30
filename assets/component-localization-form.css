@@ -141,7 +141,7 @@
 .disclosure__list {
   position: relative;
   overflow-y: auto;
-  font-size: 1.4rem;
+  font-size: var(--body-sm);
   padding-bottom: 0.5rem;
   padding-top: 0.5rem;
   scroll-padding: 0.5rem 0;
@@ -308,12 +308,12 @@
 .disclosure__link {
   display: grid;
   grid-template-columns: auto 1fr auto;
-  gap: 0.5rem;
-  padding: 0.9rem 1.5rem;
+  gap: 0;
+  padding: 5px;
   text-decoration: none;
-  line-height: calc(1 + 0.8 / var(--font-body-scale));
-  color: rgba(var(--color-foreground), 0.75);
+  color: rgba(var(--color-foreground));
   word-break: break-word;
+  letter-spacing: 0;
 }
 
 .disclosure__link:hover {
