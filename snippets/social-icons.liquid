@@ -10,16 +10,17 @@
 {% endcomment %}
 
 <ul class="list-unstyled list-social{% if class %} {{ class}}{% endif %}" role="list">
-  {%- if settings.social_facebook_link != blank -%}
+  {%- if settings.social_tiktok_link != blank -%}
     <li class="list-social__item">
-      <a href="{{ settings.social_facebook_link }}" class="link list-social__link">
+      <a href="{{ settings.social_tiktok_link }}" class="link list-social__link">
         <span class="svg-wrapper">
-          {{- 'icon-facebook.svg' | inline_asset_content -}}
+          {{- 'icon-tiktok.svg' | inline_asset_content -}}
         </span>
-        <span class="visually-hidden">{{ 'general.social.links.facebook' | t }}</span>
+        <span class="visually-hidden">{{ 'general.social.links.tiktok' | t }}</span>
       </a>
     </li>
   {%- endif -%}
+
   {%- if settings.social_instagram_link != blank -%}
     <li class="list-social__item">
       <a href="{{ settings.social_instagram_link }}" class="link list-social__link">
@@ -30,6 +31,18 @@
       </a>
     </li>
   {%- endif -%}
+    
+  {%- if settings.social_facebook_link != blank -%}
+    <li class="list-social__item">
+      <a href="{{ settings.social_facebook_link }}" class="link list-social__link">
+        <span class="svg-wrapper">
+          {{- 'icon-facebook.svg' | inline_asset_content -}}
+        </span>
+        <span class="visually-hidden">{{ 'general.social.links.facebook' | t }}</span>
+      </a>
+    </li>
+  {%- endif -%}
+
   {%- if settings.social_youtube_link != blank -%}
     <li class="list-social__item">
       <a href="{{ settings.social_youtube_link }}" class="link list-social__link">
@@ -37,16 +50,6 @@
           {{- 'icon-youtube.svg' | inline_asset_content -}}
         </span>
         <span class="visually-hidden">{{ 'general.social.links.youtube' | t }}</span>
-      </a>
-    </li>
-  {%- endif -%}
-  {%- if settings.social_tiktok_link != blank -%}
-    <li class="list-social__item">
-      <a href="{{ settings.social_tiktok_link }}" class="link list-social__link">
-        <span class="svg-wrapper">
-          {{- 'icon-tiktok.svg' | inline_asset_content -}}
-        </span>
-        <span class="visually-hidden">{{ 'general.social.links.tiktok' | t }}</span>
       </a>
     </li>
   {%- endif -%}
