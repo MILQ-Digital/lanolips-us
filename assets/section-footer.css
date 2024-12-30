@@ -503,7 +503,8 @@
 }
 
 .policies {
-  display: inline;
+  display: flex;
+  gap: 25px;
 }
 
 .policies li {
