@@ -14,11 +14,11 @@
     "newsletter_VcfCeL": {
       "type": "newsletter",
       "blocks": {
-        "heading_tJBng4": {
+        "heading_TCWRNm": {
           "type": "heading",
           "settings": {
             "heading": "Sign up to the newsletter and get 10% off your first order",
-            "heading_size": "h2"
+            "heading_size": "heading-2xs"
           }
         },
         "email_form_RrmAap": {
@@ -27,7 +27,7 @@
         }
       },
       "block_order": [
-        "heading_tJBng4",
+        "heading_TCWRNm",
         "email_form_RrmAap"
       ],
       "settings": {
