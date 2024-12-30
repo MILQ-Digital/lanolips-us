@@ -269,17 +269,21 @@
           >&copy; {{ 'now' | date: '%Y' }}, {{ shop.name | link_to: routes.root_url -}}
         </small>
         <small class="copyright__content">{{ powered_by_link }}</small>
-        {%- if section.settings.show_policy -%}
+        {%- if section.settings.show_policy or block.settings.policy_menu != blank -%}
           <ul class="policies list-unstyled">
-            {%- for policy in shop.policies -%}
-              {%- if policy != blank -%}
-                <li>
-                  <small class="copyright__content"
-                    ><a href="{{ policy.url }}">{{ policy.title | escape }}</a></small
-                  >
-                </li>
-              {%- endif -%}
-            {%- endfor -%}
+
+            {%- if section.settings.show_policy -%}
+              {%- for policy in shop.policies -%}
+                {%- if policy != blank -%}
+                  <li>
+                    <small class="copyright__content"
+                      ><a href="{{ policy.url }}">{{ policy.title | escape }}</a></small
+                    >
+                  </li>
+                {%- endif -%}
+              {%- endfor -%}
+            {%- endif -%}
+
             {%- if block.settings.policy_menu != blank -%}
               {%- for link in block.settings.policy_menu.links -%}
                 <li>
@@ -290,7 +294,7 @@
               {%- endfor -%}  
             {%- endif -%}          
           </ul>
-        {%- endif -%}
+        {%- endif -%}   
       </div>
     </div>
   </div>
