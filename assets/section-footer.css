@@ -485,6 +485,7 @@
   text-align: center;
   justify-content: flex-end;
   gap: 30px;
+  font-size: var(--body-xs);
 }
 
 .seo_footer {
@@ -509,11 +510,6 @@
   display: inline-flex;
   justify-content: center;
   align-items: center;
-}
-
-.policies li::before {
-  content: '\00B7';
-  padding: 0 0.8rem;
 }
 
 .policies li a {
