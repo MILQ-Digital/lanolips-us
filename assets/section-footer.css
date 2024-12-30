@@ -515,6 +515,7 @@
 .policies li a {
   padding: 0.6rem 0;
   display: block;
+  font-size: var(--body-xs);
 }
 
 @media screen and (min-width: 750px) {
