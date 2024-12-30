@@ -131,11 +131,9 @@
   bottom: 100%;
   transform: translateY(-1rem);
   z-index: 2;
-  background-color: rgb(var(--color-background));
-  border-radius: var(--popup-corner-radius);
-  box-shadow: var(--popup-shadow-horizontal-offset) var(--popup-shadow-vertical-offset) var(--popup-shadow-blur-radius)
-    rgba(var(--color-shadow), var(--popup-shadow-opacity));
   max-height: 27.5rem;
+  background-color: #fff;
+  border-radius: 6px;
 }
 
 .disclosure__list {
@@ -155,8 +153,6 @@
   padding-bottom: 0.95rem;
   padding-top: 0;
   width: auto;
-  background-color: #fff;
-  border-radius: 6px;
 }
 
 .country-selector__close-button {
