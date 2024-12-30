@@ -40,17 +40,17 @@
     "footer": {
       "type": "footer",
       "blocks": {
+        "brand_information_M9ttf4": {
+          "type": "brand_information",
+          "settings": {
+            "show_social": true
+          }
+        },
         "link_list_gxJjzR": {
           "type": "link_list",
           "settings": {
             "heading": "",
             "menu": "main-menu"
-          }
-        },
-        "brand_information_M9ttf4": {
-          "type": "brand_information",
-          "settings": {
-            "show_social": true
           }
         },
         "text_AftH8r": {
@@ -62,8 +62,8 @@
         }
       },
       "block_order": [
-        "link_list_gxJjzR",
         "brand_information_M9ttf4",
+        "link_list_gxJjzR",
         "text_AftH8r"
       ],
       "settings": {
