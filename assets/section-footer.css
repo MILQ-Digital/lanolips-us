@@ -46,6 +46,10 @@
   background-color: #fff;
 }
 
+.shopify-section-group-footer-group {
+  border-top: solid 1px rgba(203, 210, 223, 1);
+}
+
 .footer__content-bottom:only-child {
   border-top: 0;
 }
