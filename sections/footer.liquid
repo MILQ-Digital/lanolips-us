@@ -265,33 +265,41 @@
     </div>
     <div class="footer__content-bottom-wrapper page-width{% if section.settings.enable_country_selector == false and section.settings.enable_language_selector == false %} footer__content-bottom-wrapper--center{% endif %}">
       <div class="footer__copyright caption">
-        <small class="copyright__content"
-          >&copy; {{ 'now' | date: '%Y' }}, {{ shop.name | link_to: routes.root_url -}}
-        </small>
+        <div class="logofooter__content">
+          
+        </div>
+
         {%- if section.settings.show_policy or section.settings.policy_menu != blank -%}
-          <ul class="policies list-unstyled">
+          <div class="policies__content">
+            <ul class="policies list-unstyled">
 
-            {%- if section.settings.show_policy -%}
-              {%- for policy in shop.policies -%}
-                {%- if policy != blank -%}
+              {%- if section.settings.show_policy -%}
+                {%- for policy in shop.policies -%}
+                  {%- if policy != blank -%}
+                    <li>
+                      <a href="{{ policy.url }}" class="link link--text list-menu__item list-menu__item--link{% if link.active %} list-menu__item--active{% endif %}">{{ policy.title | escape }}</a>
+                    </li>
+                  {%- endif -%}
+                {%- endfor -%}
+              {%- endif -%}
+
+              {%- if section.settings.policy_menu != blank -%}
+                {%- for link in section.settings.policy_menu.links -%}
                   <li>
-                    <a href="{{ policy.url }}" class="link link--text list-menu__item list-menu__item--link{% if link.active %} list-menu__item--active{% endif %}">{{ policy.title | escape }}</a>
+                    <a href="{{ link.url }}" class="link link--text list-menu__item list-menu__item--link{% if link.active %} list-menu__item--active{% endif %}">
+                      {{ link.title | escape }}
+                    </a>
                   </li>
-                {%- endif -%}
-              {%- endfor -%}
-            {%- endif -%}
-
-            {%- if section.settings.policy_menu != blank -%}
-              {%- for link in section.settings.policy_menu.links -%}
-                <li>
-                  <a href="{{ link.url }}" class="link link--text list-menu__item list-menu__item--link{% if link.active %} list-menu__item--active{% endif %}">
-                    {{ link.title | escape }}
-                  </a>
-                </li>
-              {%- endfor -%}  
-            {%- endif -%}          
-          </ul>
+                {%- endfor -%}  
+              {%- endif -%}          
+            </ul>
+          </div>
         {%- endif -%}   
+
+        <div class="copyright__content">
+          &copy; {{ 'now' | date: '%Y' }}, {{ shop.name | link_to: routes.root_url -}}
+        </div>
+
       </div>
     </div>
   </div>
@@ -397,6 +405,16 @@
     }
   ],
   "settings": [
+    {
+      "type": "image_picker",
+      "id": "footer_image",
+      "label": "Logo"
+    },  
+    {
+      "type": "image_picker",
+      "id": "footer_secondimage",
+      "label": "Second Logo"
+    },        
     {
       "type": "color_scheme",
       "id": "color_scheme",
