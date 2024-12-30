@@ -266,22 +266,24 @@
     <div class="footer__content-bottom-wrapper page-width{% if section.settings.enable_country_selector == false and section.settings.enable_language_selector == false %} footer__content-bottom-wrapper--center{% endif %}">
       <div class="footer__copyright caption">
         <div class="logofooter__content">
-                                  <img
-                            srcset="{{ section.settings.footer_image | image_url: width: section.settings.image_width }}, {{ section.settings.footer_image | image_url: width: image_size_2x }} 2x"
-                            src="{{ section.settings.footer_image | image_url: width: 760 }}"
-                            alt="{{ section.settings.footer_image.alt | escape }}"
-                            loading="lazy"
-                            width="{{ section.settings.footer_image.width }}"
-                            height="{{ section.settings.footer_image.height }}"
-                          >  
-                          <img
-                            srcset="{{ section.settings.footer_secondimage | image_url: width: section.settings.image_width }}, {{ section.settings.footer_secondimage | image_url: width: image_size_2x }} 2x"
-                            src="{{ section.settings.footer_secondimage | image_url: width: 760 }}"
-                            alt="{{ section.settings.footer_secondimage.alt | escape }}"
-                            loading="lazy"
-                            width="{{ section.settings.footer_secondimage.width }}"
-                            height="{{ section.settings.footer_secondimage.height }}"
-                          >          
+          {%- if section.settings.footer_image -%}
+          <img srcset="{{ section.settings.footer_image | image_url: width: section.settings.image_width }}, {{ section.settings.footer_image | image_url: width: image_size_2x }} 2x"
+              src="{{ section.settings.footer_image | image_url: width: 760 }}"
+              alt="{{ section.settings.footer_image.alt | escape }}"
+              loading="lazy"
+              width="{{ section.settings.footer_image.width }}"
+              height="{{ section.settings.footer_image.height }}">  
+          {%- endif -%}
+
+          {%- if section.settings.footer_secondimage -%}
+           <img srcset="{{ section.settings.footer_secondimage | image_url: width: section.settings.image_width }}, {{ section.settings.footer_secondimage | image_url: width: image_size_2x }} 2x"
+              src="{{ section.settings.footer_secondimage | image_url: width: 760 }}"
+              alt="{{ section.settings.footer_secondimage.alt | escape }}"
+              loading="lazy"
+              width="{{ section.settings.footer_secondimage.width }}"
+              height="{{ section.settings.footer_secondimage.height }}">          
+          {%- endif -%}
+
         </div>
 
         {%- if section.settings.show_policy or section.settings.policy_menu != blank -%}
