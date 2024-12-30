@@ -1,3 +1,7 @@
+.footer {
+  font-size: var(--body-sm)
+}
+
 .footer:not(.color-scheme-1) {
   border-top: none;
 }
@@ -128,6 +132,8 @@
 
   .footer-block--menu {
     display: flex;
+    align-items: center;
+    gap: 10px;
   }
 
   .footer-block--menu li {
