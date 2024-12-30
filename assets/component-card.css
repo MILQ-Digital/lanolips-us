@@ -157,6 +157,7 @@
   padding-left: 10px!important;
   padding-right: 10px!important;
   align-items: center;
+  gap: 20px;
 }
 
 .collection-list .card__information p {
