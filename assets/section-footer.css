@@ -129,7 +129,11 @@
   .footer-block--menu {
     display: flex;
   }
-    
+
+  .footer-block--menu li {
+    display: inline-block;
+  }
+
 }
 
 .footer-block:empty {
