@@ -156,10 +156,6 @@
   padding-top: 0;
 }
 
-.country-selector__list--with-multiple-currencies {
-  width: 25.5rem;
-}
-
 .country-selector__close-button {
   display: none;
 }
