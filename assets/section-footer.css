@@ -483,8 +483,15 @@
   display: flex;
   flex-direction: column;
   text-align: center;
-  justify-content: space-between;
+  justify-content: flex-end;
   gap: 30px;
+}
+
+.seo_footer {
+  text-align: center;
+  width: 100%;
+  padding-bottom: 30px;
+  font-size: var(--body-lg);
 }
 
 .logofooter__content {
