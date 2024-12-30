@@ -42,6 +42,33 @@
             "show_gift_card_recipient": true
           }
         },
+        "collapsible_tab_UKpPTB": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Details",
+            "icon": "none",
+            "content": "",
+            "page": ""
+          }
+        },
+        "collapsible_tab_xBK7PF": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Ingredients",
+            "icon": "none",
+            "content": "",
+            "page": ""
+          }
+        },
+        "collapsible_tab_L8cyBQ": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "How to use",
+            "icon": "none",
+            "content": "",
+            "page": ""
+          }
+        },
         "complementary_349zD4": {
           "type": "complementary",
           "settings": {
@@ -63,6 +90,9 @@
         "variant_picker",
         "quantity_selector",
         "buy_buttons",
+        "collapsible_tab_UKpPTB",
+        "collapsible_tab_xBK7PF",
+        "collapsible_tab_L8cyBQ",
         "complementary_349zD4"
       ],
       "settings": {
