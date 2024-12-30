@@ -37,6 +37,10 @@
     row-gap: 6rem;
     margin-bottom: 0;
   }
+
+  .footer-block--menu {
+    display: flex;
+  }
 }
 
 .footer__content-bottom {
