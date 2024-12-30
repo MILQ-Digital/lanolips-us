@@ -1,5 +1,4 @@
 .quick-add {
-  position: relative;
   grid-row-start: 4;
   margin: 0 0 1rem;
   z-index: 1;
@@ -358,6 +357,7 @@ quick-add-modal .product-form__buttons {
   padding: 0.8rem;
   min-width: 100%;
   box-sizing: border-box;
+  border: 1px solid;
 }
 
 quick-add-modal .product-media-container.constrain-height {
