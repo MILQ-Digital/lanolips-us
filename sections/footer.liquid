@@ -257,7 +257,7 @@
                 <li class="list-payment__item">
                   {{ type | payment_type_svg_tag: class: 'icon icon--full-color' }}
                 </li>
-              {%- endfor -%}
+              {%- endfor -%}              
             </ul>
           </div>
         {%- endif -%}
@@ -280,6 +280,15 @@
                 </li>
               {%- endif -%}
             {%- endfor -%}
+            {%- if block.settings.policy_menu != blank -%}
+              {%- for link in block.settings.policy_menu.links -%}
+                <li>
+                  <a href="{{ link.url }}" class="link link--text list-menu__item list-menu__item--link{% if link.active %} list-menu__item--active{% endif %}">
+                    {{ link.title | escape }}
+                  </a>
+                </li>
+              {%- endfor -%}  
+            {%- endif -%}          
           </ul>
         {%- endif -%}
       </div>
