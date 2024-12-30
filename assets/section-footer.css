@@ -38,9 +38,6 @@
     margin-bottom: 0;
   }
 
-  .footer-block--menu {
-    display: flex;
-  }
 }
 
 .footer__content-bottom {
@@ -128,6 +125,11 @@
     display: block;
     margin-top: 0;
   }
+
+  .footer-block--menu {
+    display: flex;
+  }
+    
 }
 
 .footer-block:empty {
