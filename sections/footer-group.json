@@ -67,6 +67,8 @@
         "text_AftH8r"
       ],
       "settings": {
+        "footer_image": "shopify://shop_images/footer-logo.png",
+        "footer_secondimage": "shopify://shop_images/Leaping_Bunny.png",
         "color_scheme": "scheme-1",
         "newsletter_enable": false,
         "newsletter_heading": "Sign up to the newsletter and get 10% off your first order",
