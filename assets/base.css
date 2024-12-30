@@ -103,7 +103,7 @@ body {
 .heading-2xs {
   font-size: var(--heading-2xs);
   line-height: 130%; /* 33.6px */
-  font-weight: 500;
+  font-weight: 500; 
 }
 
 .subheading,
