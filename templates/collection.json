@@ -24,7 +24,6 @@
           "type": "promo-banner",
           "settings": {
             "banner_image": "shopify://shop_images/lano-cake.webp",
-            "alt_text": "test 1",
             "promotion_position": 1
           }
         },
@@ -32,7 +31,6 @@
           "type": "promo-banner",
           "settings": {
             "banner_image": "shopify://shop_images/bundles.webp",
-            "alt_text": "Test 2",
             "promotion_position": 6
           }
         }
@@ -58,10 +56,51 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "collection_list_XqRgVR": {
+      "type": "collection-list",
+      "blocks": {
+        "featured_collection_6FH9ta": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": ""
+          }
+        },
+        "featured_collection_wQEked": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": ""
+          }
+        },
+        "featured_collection_pE8E6W": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": ""
+          }
+        }
+      },
+      "block_order": [
+        "featured_collection_6FH9ta",
+        "featured_collection_wQEked",
+        "featured_collection_pE8E6W"
+      ],
+      "settings": {
+        "title": "Collections",
+        "heading_size": "hm",
+        "image_ratio": "square",
+        "columns_desktop": 3,
+        "color_scheme": "",
+        "show_view_all": false,
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
     "banner",
-    "product-grid"
+    "product-grid",
+    "collection_list_XqRgVR"
   ]
 }
