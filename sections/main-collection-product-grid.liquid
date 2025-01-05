@@ -6,8 +6,6 @@
   {{ 'mask-blobs.css' | asset_url | stylesheet_tag }}
 {%- endif -%}
 
-{%- assign blocks_featured_image = section.blocks | where: "type", "featured_image" -%}
-
 {%- unless section.settings.quick_add == 'none' -%}
   {{ 'quick-add.css' | asset_url | stylesheet_tag }}
 {%- endunless -%}
@@ -40,30 +38,6 @@
 
 <div class="section-{{ section.id }}-padding gradient color-{{ section.settings.color_scheme }}">
   {%- paginate collection.products by section.settings.products_per_page -%}
-
-  {%- assign featured_images_array = '' -%}
-
-  {%- if paginate.current_page == 1 -%}
-    {%- for block in section.blocks -%}
-      {%- capture current_featured_image -%}
-        {%- liquid
-          assign featured_image = block.settings.featured_image
-          assign featured_image_position = block.settings.position
-          assign featured_image_order = featured_image_position | append: '-' | append: forloop.index
-
-          if featured_image_position < 10
-            assign featured_image_order = featured_image_order | prepend: '0'
-          endif
-        -%}
-        {%- render 'collection-featured-image' block: block -%}
-      {%- endcapture -%}
-
-      {%- assign featured_images_array = featured_images_array | append: featured_image_order | append: '#featured_image_position#' | append: featured_image_position | append: '#featured_image_html#' | append: current_featured_image | append: '#featured_image#' | append: featured_image | append: '@@' -%}
-    {%- endfor -%}
-
-    {%- assign featured_images_array = featured_images_array | split: '@@' | sort -%}
-  {%- endif -%}
-    
     {% comment %} Sort is the first tabbable element when filter type is vertical {% endcomment %}
     {%- if section.settings.enable_sorting and section.settings.filter_type == 'vertical' -%}
       <facet-filters-form class="facets facets-vertical-sort page-width small-hide">
@@ -178,46 +152,6 @@
                 {% if section.settings.quick_add == 'bulk' %} collection-quick-add-bulk{% endif %}
               "
             >
-{%- if collection.products_count > 0 -%}
-            {%- if featured_images_array.size > 0 -%}
-              {%- liquid
-                assign counter_grid = 1
-                assign counter_delay = 0
-                assign added_images_index = ''
-                assign items_on_row_remaining = columns_desktop
-
-                for product in collection.products
-                  for featured_image in featured_images_array
-                    if featured_image == ''
-                      continue
-                    endif
-
-                    assign featured_image_index = forloop.index
-                    assign featured_image_position = featured_image | split: '#featured_image_position#' | last | split: '#featured_image_html#' | first | times: 1
-                    assign featured_image_markup = featured_image | split: '#featured_image_html#' | last | split: '#featured_image#' | first
-                    assign featured_image_index_tag = '@' | append: featured_image_index | append: '@'
-
-                    if featured_image_position <= counter_grid
-                      unless added_images_index contains featured_image_index_tag
-                        assign counter_grid = counter_grid | plus: 1
-                        assign added_images_index = added_images_index | append: '@' | append: featured_image_index | append: '@#'
-
-                        echo featured_image_markup
-                      endunless
-                    endif
-                  endfor
-
-                  assign counter_delay = counter_delay | plus: 1
-                  assign counter_grid = counter_grid | plus: 1
-                  assign items_on_row_remaining = items_on_row_remaining | minus: 1
-
-                  if collection
-                    render 'product-grid-item', product: product, index: forloop.index, sizes: image_sizes
-                  endif
-                endfor
-              -%}
-
-            {%- else -%}            
               {% assign skip_card_product_styles = false %}
               {%- for product in collection.products -%}
                 {% assign lazy_load = false %}
@@ -246,7 +180,6 @@
                 </li>
                 {%- assign skip_card_product_styles = true -%}
               {%- endfor -%}
-            {%- endif -%}
             </ul>
 
             {%- if paginate.pages > 1 -%}

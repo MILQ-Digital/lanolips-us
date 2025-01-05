@@ -19,6 +19,31 @@
     },
     "product-grid": {
       "type": "main-collection-product-grid",
+      "blocks": {
+        "featured_image_azAkBB": {
+          "type": "featured_image",
+          "settings": {
+            "featured_image": "shopify://shop_images/lano-cake.webp",
+            "position": 1,
+            "featured_heading": "Featured link",
+            "heading_font_size": "heading-large",
+            "featured_text": "<p>Promote products or collections</p>",
+            "featured_button_text": "Learn more",
+            "featured_button_link": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--text",
+            "show_arrow": false,
+            "featured_color_text": "#ffffff",
+            "featured_color_overlay": "#222222",
+            "featured_overlay_opacity": 10,
+            "heading_tag": "automatic"
+          }
+        }
+      },
+      "block_order": [
+        "featured_image_azAkBB"
+      ],
       "settings": {
         "products_per_page": 16,
         "columns_desktop": 4,
