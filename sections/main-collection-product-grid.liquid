@@ -412,6 +412,163 @@
       "label": "t:sections.all.padding.padding_bottom",
       "default": 36
     }
-  ]
+  ],
+"blocks": [
+      {
+        "type": "featured_image",
+        "limit": 3,
+        "name": "Featured image",
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "featured_image",
+            "label": "Image"
+          },
+          {
+            "type": "range",
+            "id": "position",
+            "label": "Image position",
+            "min": 1,
+            "max": 24,
+            "step": 1,
+            "default": 1
+          },
+          {
+            "type": "header",
+            "content": "Typography"
+          },
+          {
+            "type": "text",
+            "id": "featured_heading",
+            "label": "Heading",
+            "default": "Featured link"
+          },
+          {
+            "type": "select",
+            "id": "heading_font_size",
+            "label": "Heading size",
+            "default": "heading-large",
+            "options": [
+              {"value": "heading-mini", "label": "Mini"},
+              {"value": "heading-x-small", "label": "Extra small"},
+              {"value": "heading-small", "label": "Small"},
+              {"value": "heading-medium", "label": "Medium"},
+              {"value": "heading-large", "label": "Large"},
+              {"value": "heading-x-large", "label": "Extra large"}
+            ]
+          },
+          {
+            "type": "richtext",
+            "id": "featured_text",
+            "label": "Text",
+            "default":"<p>Promote products or collections</p>"
+          },
+          {
+            "type": "header",
+            "content": "Button"
+          },
+          {
+            "type": "text",
+            "id": "featured_button_text",
+            "label": "Label",
+            "default":"Learn more"
+          },
+          {
+            "type": "url",
+            "id": "featured_button_link",
+            "label": "Link"
+          },
+          {
+            "type": "select",
+            "id": "button_type",
+            "label": "Color",
+            "default": "btn--primary",
+            "options": [
+              { "value": "btn--black", "label": "Black" },
+              { "value": "btn--white", "label": "White" },
+              { "value": "btn--primary", "label": "Primary" },
+              { "value": "btn--secondary", "label": "Secondary" }
+            ]
+          },
+          {
+            "type": "select",
+            "id": "button_size",
+            "label": "Size",
+            "default": "",
+            "options": [
+              { "label": "Small", "value": "btn--small" },
+              { "label": "Medium", "value": "" },
+              { "label": "Large", "value": "btn--large" }
+            ]
+          },
+          {
+            "type": "select",
+            "id": "button_style",
+            "label": "Style",
+            "default": "btn--outline",
+            "options": [
+              { "label": "Solid", "value": "btn--solid" },
+              { "label": "Outline", "value": "btn--outline" },
+              { "label": "Text", "value": "btn--text" }
+            ]
+          },
+          {
+            "type": "checkbox",
+            "id": "show_arrow",
+            "label": "Show button arrow",
+            "default": false
+          },
+          {
+            "type": "header",
+            "content": "Colors"
+          },
+          {
+            "type": "paragraph",
+            "content": "Overrides color scheme. Set to Transparent to revert back to using color schemes."
+          },
+          {
+            "type": "color",
+            "id": "featured_color_text",
+            "label": "Text",
+            "default": "#ffffff"
+          },
+          {
+            "type": "color",
+            "id": "featured_color_overlay",
+            "label": "Overlay",
+            "default": "#222222"
+          },
+          {
+            "type": "range",
+            "id": "featured_overlay_opacity",
+            "label": "Overlay opacity",
+            "step": 5,
+            "max": 100,
+            "min": 0,
+            "unit": "%",
+            "default": 10
+          },
+          {
+            "type": "header",
+            "content": "Advanced"
+          },
+          {
+            "type": "select",
+            "id": "heading_tag",
+            "label": "Heading SEO tag",
+            "default": "automatic",
+            "options": [
+              {"value": "automatic", "label": "Automatic"},
+              {"value": "h1", "label": "H1"},
+              {"value": "h2", "label": "H2"},
+              {"value": "h3", "label": "H3"},
+              {"value": "h4", "label": "H4"},
+              {"value": "h5", "label": "H5"},
+              {"value": "h6", "label": "H6"}
+            ]
+          }
+        ]
+      }
+    ]  
 }
 {% endschema %}
