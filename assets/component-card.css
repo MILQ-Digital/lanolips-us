@@ -521,7 +521,7 @@
     text-underline-offset: 0.3rem;
   }
 
-  .promo_banner {
+  .promo_banner.grid__item {
     width: calc(50% - var(--grid-desktop-horizontal-spacing)* 2 / 3);
     max-width: calc(50% - var(--grid-desktop-horizontal-spacing)* 2 / 3);
   }
