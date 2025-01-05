@@ -511,8 +511,9 @@
 }
 
 .promo_banner.grid__item .media img {
-  height: auto;
-  width: 100%;
+  height: auto!Important;
+  width: 100%!Important;
+  mix-blend-mode: unset;
 }
 
 @media screen and (min-width: 990px) {
