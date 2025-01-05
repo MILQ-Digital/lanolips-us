@@ -143,7 +143,7 @@
             class="collection{% if section.settings.filter_type != 'vertical' %} page-width{% endif %}"
           >
             <div class="loading-overlay gradient"></div>
-            <ul
+<ul
   id="product-grid"
   data-id="{{ section.id }}"
   class="
@@ -154,6 +154,8 @@
 >
   {% assign skip_card_product_styles = false %}
   {% assign promo_positions = section.blocks | where: 'type', 'promo-banner' %}
+
+  {% assign promo_positions_by_index = promo_positions | map: 'settings.position' %}
 
   {%- for product in collection.products -%}
     {% assign lazy_load = false %}
@@ -182,8 +184,10 @@
       %}
     </li>
 
-    {% for block in promo_positions %}
-      {% if block.settings.position == forloop.index %}
+    {% assign promo_index = promo_positions_by_index | index: forloop.index %}
+    {% if promo_index != blank %}
+      {% assign promo_block = promo_positions | where: 'settings.position', forloop.index | first %}
+      {% if promo_block %}
         <li
           class="promo_banner grid__item{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
           {% if settings.animations_reveal_on_scroll %}
@@ -191,14 +195,15 @@
             style="--animation-order: {{ forloop.index }};"
           {% endif %}
         >
-          <img src="{{ block.settings.banner_image | image_url: '600x400' }}" alt="{{ block.settings.alt_text }}">
+          <img src="{{ promo_block.settings.banner_image | image_url: '600x400' }}" alt="{{ promo_block.settings.alt_text }}">
         </li>
       {% endif %}
-    {% endfor %}
+    {% endif %}
 
     {% assign skip_card_product_styles = true %}
   {%- endfor -%}
 </ul>
+
 
 
             {%- if paginate.pages > 1 -%}
