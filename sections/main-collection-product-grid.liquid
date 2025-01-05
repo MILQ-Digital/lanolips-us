@@ -155,8 +155,6 @@
   {% assign skip_card_product_styles = false %}
   {% assign promo_positions = section.blocks | where: 'type', 'promo-banner' %}
 
-  {% assign promo_positions_by_index = promo_positions | map: 'settings.position' %}
-
   {%- for product in collection.products -%}
     {% assign lazy_load = false %}
     {% if forloop.index > 2 %}
@@ -184,20 +182,17 @@
       %}
     </li>
 
-    {% assign promo_index = promo_positions_by_index | index: forloop.index %}
-    {% if promo_index != blank %}
-      {% assign promo_block = promo_positions | where: 'settings.position', forloop.index | first %}
-      {% if promo_block %}
-        <li
-          class="promo_banner grid__item{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
-          {% if settings.animations_reveal_on_scroll %}
-            data-cascade
-            style="--animation-order: {{ forloop.index }};"
-          {% endif %}
-        >
-          <img src="{{ promo_block.settings.banner_image | image_url: '600x400' }}" alt="{{ promo_block.settings.alt_text }}">
-        </li>
-      {% endif %}
+    {%- assign promo_block = promo_positions | where: 'settings.position', forloop.index | first -%}
+    {% if promo_block %}
+      <li
+        class="promo_banner grid__item{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
+        {% if settings.animations_reveal_on_scroll %}
+          data-cascade
+          style="--animation-order: {{ forloop.index }};"
+        {% endif %}
+      >
+        <img src="{{ promo_block.settings.banner_image | image_url: '600x400' }}" alt="{{ promo_block.settings.alt_text }}">
+      </li>
     {% endif %}
 
     {% assign skip_card_product_styles = true %}
