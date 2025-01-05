@@ -227,7 +227,8 @@
   }
 }
 
-.collection-list .card-wrapper:hover .card.card--standard > .card__content {
+.collection-list .card-wrapper:hover .card.card--standard > .card__content,
+.promo_banner .card-wrapper:hover .card.card--standard > .card__content {
   background: rgb(255,255,255);
   background: -moz-linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(0,0,0,0.14889705882352944) 100%);
   background: -webkit-linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(0,0,0,0.14889705882352944) 100%);
