@@ -162,12 +162,12 @@
 
     {%- assign product_loop = forloop -%}
     {%- for block in section.blocks -%}
-									{%- liquid
-										assign display_promotion = false
-										if product_loop.index == block.settings.promotion_position
-											assign display_promotion = true
-										endif
-									-%}
+			{%- liquid
+				assign display_promotion = false
+				if product_loop.index == block.settings.promotion_position
+					assign display_promotion = true
+				endif
+			-%}
       {% if display_promotion %}
         <li
           class="promo_banner grid__item{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
@@ -176,11 +176,11 @@
             style="--animation-order: {{ forloop.index }};"
           {% endif %}
         >
-          <img src="{{ promo_block.settings.banner_image | image_url: '600x400' }}" alt="{{ promo_block.settings.alt_text }}">
+          {% render 'collection-promo-banner', block: block %}
         </li>
       {% endif %}
     {%- endfor -%}
-    
+
     <li
       class="grid__item{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
       {% if settings.animations_reveal_on_scroll %}
@@ -450,11 +450,6 @@
           "label": "Banner image"
         },
         {
-          "type": "text",
-          "id": "alt_text",
-          "label": "Alt text"
-        },
-        {
           "type": "range",
           "id": "promotion_position",
           "label": "Banner Position",
@@ -462,7 +457,80 @@
           "max": 24,
           "step": 1,          
           "default": 3
-        }
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title"
+        },
+        {
+          "id": "link_label",
+          "type": "text",
+          "label": "Button label",
+          "default": "Shop Now",
+					"info": "Leave the label blank to hide the button."
+        },
+        {
+          "id": "link",
+           "type": "url",
+          "label": "Button link"
+        },
+        {
+          "type": "color_scheme",
+          "id": "color_scheme",
+          "label": "t:sections.all.colors.label",
+          "info": "t:sections.all.colors.has_cards_info",
+          "default": "scheme-1"
+        },
+        {
+          "type": "select",
+          "id": "heading_size",
+          "options": [
+                {
+                  "value": "hs",
+                  "label": "t:sections.all.heading_size.options__1.label"
+                },
+                {
+                  "value": "hm",
+                  "label": "t:sections.all.heading_size.options__2.label"
+                },
+                {
+                  "value": "hl",
+                  "label": "t:sections.all.heading_size.options__3.label"
+                },
+                {
+                  "value": "hxl",
+                  "label": "t:sections.all.heading_size.options__4.label"
+                },
+                {
+                  "value": "hxxl",
+                  "label": "t:sections.all.heading_size.options__5.label"
+                }
+          ],
+          "default": "hm",
+          "label": "t:sections.all.heading_size.label"
+        },
+        {
+          "type": "select",
+          "id": "image_ratio",
+          "options": [
+            {
+              "value": "adapt",
+              "label": "t:sections.collection-list.settings.image_ratio.options__1.label"
+            },
+            {
+              "value": "portrait",
+              "label": "t:sections.collection-list.settings.image_ratio.options__2.label"
+            },
+            {
+              "value": "square",
+              "label": "t:sections.collection-list.settings.image_ratio.options__3.label"
+            }
+          ],
+          "default": "square",
+          "label": "t:sections.collection-list.settings.image_ratio.label",
+          "info": "t:sections.collection-list.settings.image_ratio.info"
+        }                                               
       ]
     }
   ]  
