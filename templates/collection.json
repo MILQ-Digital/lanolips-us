@@ -24,13 +24,22 @@
           "type": "promo-banner",
           "settings": {
             "banner_image": "shopify://shop_images/lano-cake.webp",
-            "alt_text": "test 2",
+            "alt_text": "test 1",
             "position": 1
+          }
+        },
+        "promo_banner_CMXKXz": {
+          "type": "promo-banner",
+          "settings": {
+            "banner_image": "shopify://shop_images/bundles.webp",
+            "alt_text": "Test 2",
+            "position": 6
           }
         }
       },
       "block_order": [
-        "promo_banner_wRK8yM"
+        "promo_banner_wRK8yM",
+        "promo_banner_CMXKXz"
       ],
       "settings": {
         "products_per_page": 16,
