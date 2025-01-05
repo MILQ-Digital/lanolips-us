@@ -182,19 +182,21 @@
       %}
     </li>
 
-    {%- assign promo_block = promo_positions | where: 'settings.position', forloop.index | first -%}
-    {% if promo_block %}
-      <li
-        class="promo_banner grid__item{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
-        {% if settings.animations_reveal_on_scroll %}
-          data-cascade
-          style="--animation-order: {{ forloop.index }};"
-        {% endif %}
-      >
-        <img src="{{ promo_block.settings.banner_image | image_url: '600x400' }}" alt="{{ promo_block.settings.alt_text }}">
-      </li>
-    {% endif %}
-
+    {%- for block in section.blocks -%}
+      {%- assign promo_block = promo_positions | where: 'settings.position', forloop.index | first -%}
+      {% if promo_block %}
+        <li
+          class="promo_banner grid__item{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
+          {% if settings.animations_reveal_on_scroll %}
+            data-cascade
+            style="--animation-order: {{ forloop.index }};"
+          {% endif %}
+        >
+          <img src="{{ promo_block.settings.banner_image | image_url: '600x400' }}" alt="{{ promo_block.settings.alt_text }}">
+        </li>
+      {% endif %}
+    {%- endfor -%}
+    
     {% assign skip_card_product_styles = true %}
   {%- endfor -%}
 </ul>
