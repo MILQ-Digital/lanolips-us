@@ -24,14 +24,24 @@
           "type": "promo-banner",
           "settings": {
             "banner_image": "shopify://shop_images/lano-cake.webp",
-            "promotion_position": 1
+            "promotion_position": 1,
+            "title": "Test 1",
+            "link_label": "Shop Now",
+            "link": "",
+            "color_scheme": "",
+            "image_ratio": "square"
           }
         },
         "promo_banner_CMXKXz": {
           "type": "promo-banner",
           "settings": {
             "banner_image": "shopify://shop_images/bundles.webp",
-            "promotion_position": 6
+            "promotion_position": 6,
+            "title": "Test 2",
+            "link_label": "Shop Now",
+            "link": "",
+            "color_scheme": "",
+            "image_ratio": "square"
           }
         }
       },
