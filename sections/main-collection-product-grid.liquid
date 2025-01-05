@@ -212,7 +212,7 @@
                   assign items_on_row_remaining = items_on_row_remaining | minus: 1
 
                   if collection
-                    render 'product-grid-item', product: product, index: forloop.index, sizes: image_sizes
+                    render 'card-product', card_product: product, index: forloop.index, sizes: image_sizes
                   endif
                 endfor
               -%}
