@@ -500,7 +500,7 @@
 }
   */
 
-.promo_banner.grid__item  {
+.promo_banner.grid__item .card  {
   border-radius: 22px;
    overflow: hidden;
 }
