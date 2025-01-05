@@ -27,7 +27,7 @@
             "promotion_position": 1,
             "title": "Test 1",
             "link_label": "Shop Now",
-            "link": "",
+            "link": "shopify://collections/face",
             "color_scheme": "",
             "image_ratio": "square"
           }
@@ -39,7 +39,7 @@
             "promotion_position": 6,
             "title": "Test 2",
             "link_label": "Shop Now",
-            "link": "",
+            "link": "shopify://collections/lips",
             "color_scheme": "",
             "image_ratio": "square"
           }
