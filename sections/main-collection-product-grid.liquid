@@ -6,8 +6,6 @@
   {{ 'mask-blobs.css' | asset_url | stylesheet_tag }}
 {%- endif -%}
 
-{%- assign blocks_featured_image = section.blocks | where: "type", "featured_image" -%}
-
 {%- unless section.settings.quick_add == 'none' -%}
   {{ 'quick-add.css' | asset_url | stylesheet_tag }}
 {%- endunless -%}
@@ -40,30 +38,6 @@
 
 <div class="section-{{ section.id }}-padding gradient color-{{ section.settings.color_scheme }}">
   {%- paginate collection.products by section.settings.products_per_page -%}
-
-  {%- assign featured_images_array = '' -%}
-
-  {%- if paginate.current_page == 1 -%}
-    {%- for block in section.blocks -%}
-      {%- capture current_featured_image -%}
-        {%- liquid
-          assign featured_image = block.settings.featured_image
-          assign featured_image_position = block.settings.position
-          assign featured_image_order = featured_image_position | append: '-' | append: forloop.index
-
-          if featured_image_position < 10
-            assign featured_image_order = featured_image_order | prepend: '0'
-          endif
-        -%}
-        {%- render 'collection-featured-image' block: block -%}
-      {%- endcapture -%}
-
-      {%- assign featured_images_array = featured_images_array | append: featured_image_order | append: '#featured_image_position#' | append: featured_image_position | append: '#featured_image_html#' | append: current_featured_image | append: '#featured_image#' | append: featured_image | append: '@@' -%}
-    {%- endfor -%}
-
-    {%- assign featured_images_array = featured_images_array | split: '@@' | sort -%}
-  {%- endif -%}
-    
     {% comment %} Sort is the first tabbable element when filter type is vertical {% endcomment %}
     {%- if section.settings.enable_sorting and section.settings.filter_type == 'vertical' -%}
       <facet-filters-form class="facets facets-vertical-sort page-width small-hide">
@@ -246,7 +220,6 @@
                 </li>
                 {%- assign skip_card_product_styles = true -%}
               {%- endfor -%}
-            {%- endif -%}
             </ul>
 
             {%- if paginate.pages > 1 -%}
