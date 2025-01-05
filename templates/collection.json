@@ -28,7 +28,7 @@
             "title": "Test 1",
             "link_label": "Shop Now",
             "link": "shopify://collections/face",
-            "color_scheme": "scheme-3",
+            "color_scheme": "scheme-1",
             "image_ratio": "portrait"
           }
         },
