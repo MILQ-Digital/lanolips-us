@@ -510,7 +510,8 @@
   padding: 0;
 }
 
-.promo_banner.grid__item .card .card__inner .card__media {
+.promo_banner.grid__item .card .card__inner .card__media,
+.promo_banner.grid__item .card .card__inner {
   border-radius: 0;
 }
 
