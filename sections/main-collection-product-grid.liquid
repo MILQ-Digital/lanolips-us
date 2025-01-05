@@ -152,7 +152,7 @@
                 {% if section.settings.quick_add == 'bulk' %} collection-quick-add-bulk{% endif %}
               "
             >
-{%- if collection.products_count > 0 -%}
+          {%- if collection.products_count > 0 -%}
             {%- if featured_images_array.size > 0 -%}
               {%- liquid
                 assign counter_grid = 1
@@ -220,6 +220,8 @@
                 </li>
                 {%- assign skip_card_product_styles = true -%}
               {%- endfor -%}
+            {%- endif -%}
+          {%- endif -%}
             </ul>
 
             {%- if paginate.pages > 1 -%}
