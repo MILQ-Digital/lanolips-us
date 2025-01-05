@@ -181,8 +181,8 @@
       %}
     </li>
 
-    {%- assign product_loop = forloop -%}
-    {%- for block in section.blocks -%}
+      {%- assign product_loop = forloop -%}
+      {%- for block in section.blocks -%}
 									{%- liquid
 										assign display_promotion = false
 										if product_loop.index == block.settings.promotion_position
@@ -197,8 +197,6 @@
 											endif
 										endif
 									-%}
-									{%- if display_promotion -%}    
-
       {% if display_promotion %}
         <li
           class="promo_banner grid__item{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
@@ -210,7 +208,7 @@
           <img src="{{ promo_block.settings.banner_image | image_url: '600x400' }}" alt="{{ promo_block.settings.alt_text }}">
         </li>
       {% endif %}
-      
+
     {%- endfor -%}
 
     {% assign skip_card_product_styles = true %}
