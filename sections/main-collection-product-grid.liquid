@@ -153,7 +153,6 @@
   "
 >
   {% assign skip_card_product_styles = false %}
-  {% assign promo_positions = section.blocks | where: 'type', 'promo-banner' %}
 
   {%- for product in collection.products -%}
     {% assign lazy_load = false %}
@@ -182,9 +181,25 @@
       %}
     </li>
 
+    {%- assign product_loop = forloop -%}
     {%- for block in section.blocks -%}
-      {%- assign promo_block = promo_positions | where: 'settings.position', forloop.index | first -%}
-      {% if promo_block %}
+									{%- liquid
+										assign display_promotion = false
+										if product_loop.index == block.settings.promotion_position
+											assign display_promotion = true
+										endif
+
+										if block.settings.promotion_collection != blank
+											if collection.handle == block.settings.promotion_collection.handle and product_loop.index == block.settings.promotion_position
+												assign display_promotion = true
+											else
+												assign display_promotion = false
+											endif
+										endif
+									-%}
+									{%- if display_promotion -%}    
+
+      {% if display_promotion %}
         <li
           class="promo_banner grid__item{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
           {% if settings.animations_reveal_on_scroll %}
@@ -195,8 +210,9 @@
           <img src="{{ promo_block.settings.banner_image | image_url: '600x400' }}" alt="{{ promo_block.settings.alt_text }}">
         </li>
       {% endif %}
+      
     {%- endfor -%}
-    
+
     {% assign skip_card_product_styles = true %}
   {%- endfor -%}
 </ul>
@@ -451,7 +467,7 @@
         },
         {
           "type": "range",
-          "id": "position",
+          "id": "promotion_position",
           "label": "Banner Position",
           "min": 1,
           "max": 24,
