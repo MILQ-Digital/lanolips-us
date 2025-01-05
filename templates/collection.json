@@ -24,7 +24,7 @@
           "type": "featured_image",
           "settings": {
             "featured_image": "shopify://shop_images/lano-cake.webp",
-            "position": 3,
+            "position": 1,
             "featured_heading": "Featured link",
             "heading_font_size": "heading-large",
             "featured_text": "<p>Promote products or collections</p>",
