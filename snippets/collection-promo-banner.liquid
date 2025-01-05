@@ -12,7 +12,7 @@
 -%}
 
 <div class="card-wrapper animate-arrow collection-card-wrapper">
-  <a href="{{ card_collection.url }}" class="full-unstyled-link">
+  <a href="{{ block.settings.link }}" class="full-unstyled-link">
     <div class="card card--standard card--media color-{{ card_color_scheme }} gradient" style="style="--ratio-percent: {{ 1 | divided_by: ratio | times: 100 }}%;">
         <div class="card__inner color-{{ card_color_scheme }} gradient ratio" style="--ratio-percent: {{ 1 | divided_by: ratio | times: 100 }}%;">
             <div class="card__media">
@@ -37,6 +37,22 @@
                     width="{{ block.settings.banner_image.width }}"
                     loading="lazy"
                     class="motion-reduce">
+                </div>
+            </div>
+            <div class="card__content">
+                <div class="card__information">
+                    <div class="card__details">
+                        <h3 class="card__heading_hs hs">{{- block.settings.title | escape -}}</h3>
+                        <p>
+                        Explore The Range
+                        <span class="icon-wrap">
+                            {{- 'icon-arrow.svg' | inline_asset_content -}}
+                        </span>            
+                        </p>
+                    </div>
+                    {%- if block.settings.link_label != blank -%}
+                        <button class="button button--bright-pink ">{{- block.settings.link_label -}}</button>
+                    {%- endif -%}
                 </div>
             </div>
         </div>
