@@ -188,14 +188,6 @@
 										if product_loop.index == block.settings.promotion_position
 											assign display_promotion = true
 										endif
-
-										if block.settings.promotion_collection != blank
-											if collection.handle == block.settings.promotion_collection.handle and product_loop.index == block.settings.promotion_position
-												assign display_promotion = true
-											else
-												assign display_promotion = false
-											endif
-										endif
 									-%}
       {% if display_promotion %}
         <li
