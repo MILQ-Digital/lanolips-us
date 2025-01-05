@@ -29,7 +29,7 @@
             "link_label": "Shop Now",
             "link": "shopify://collections/face",
             "color_scheme": "scheme-1",
-            "image_ratio": "portrait"
+            "image_ratio": "adapt"
           }
         },
         "promo_banner_CMXKXz": {
@@ -41,7 +41,7 @@
             "link_label": "Shop Now",
             "link": "shopify://collections/lips",
             "color_scheme": "scheme-1",
-            "image_ratio": "square"
+            "image_ratio": "adapt"
           }
         }
       },
