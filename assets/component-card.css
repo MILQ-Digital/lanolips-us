@@ -501,6 +501,20 @@
 }
   */
 
+.promo_banner.grid__item  {
+  border-radius: 22px;
+   overflow: hidden;
+}
+
+.promo_banner.grid__item .media {
+  padding: 0;
+}
+
+.promo_banner.grid__item .media img {
+  height: auto;
+  width: 100%;
+}
+
 @media screen and (min-width: 990px) {
   .card .media.media--hover-effect > img:only-child,
   .card-wrapper .media.media--hover-effect > img:only-child {
