@@ -36,7 +36,7 @@
           "type": "promo-banner",
           "settings": {
             "banner_image": "shopify://shop_images/bundles.webp",
-            "promotion_position": 12,
+            "promotion_position": 13,
             "title": "Test 2",
             "link_label": "Shop Now",
             "link": "shopify://collections/lips",
