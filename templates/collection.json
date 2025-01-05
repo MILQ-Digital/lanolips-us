@@ -25,7 +25,7 @@
           "settings": {
             "banner_image": "shopify://shop_images/lano-cake.webp",
             "alt_text": "test 1",
-            "position": 1
+            "promotion_position": 1
           }
         },
         "promo_banner_CMXKXz": {
@@ -33,7 +33,7 @@
           "settings": {
             "banner_image": "shopify://shop_images/bundles.webp",
             "alt_text": "Test 2",
-            "position": 6
+            "promotion_position": 3
           }
         }
       },
