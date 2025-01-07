@@ -71,7 +71,11 @@
   }
 
   .collection-hero__description {
-    margin-bottom: 15px;
+    margin-bottom: 20px;
+  }
+
+  .collection-hero--with-image .collection-hero__title {
+    margin-top: 20px;
   }
 }
 
