@@ -830,7 +830,11 @@
                 <option value="" disabled selected>Sort</option>
                 {%- for option in results.sort_options -%}
                   <option
-                    value="{{ option.value | escape }}">
+                    value="{{ option.value | escape }}"
+                    {% if option.value == sort_by %}
+                      class="selected"
+                    {% endif %}
+                  >
                     {{ option.name | escape }}
                   </option>
                 {%- endfor -%}
