@@ -44,7 +44,7 @@
     "main": {
       "type": "main-blog",
       "settings": {
-        "layout": "grid",
+        "layout": "collage",
         "show_image": true,
         "image_height": "large",
         "show_date": true,
