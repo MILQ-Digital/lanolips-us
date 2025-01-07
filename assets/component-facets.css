@@ -114,6 +114,8 @@
   padding-right: 1.75rem;
   line-height: 20px;
   font-weight: 500;
+  padding-top: 6px;
+  padding-bottom: 6px;
 }
 
 .facet-filters__sort + .icon-caret {
