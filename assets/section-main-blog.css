@@ -50,6 +50,12 @@
   .blog-articles .article:nth-child(3),
   .blog-articles .article:nth-child(5),
   .blog-articles .article:nth-child(6) {width: 47%}
+  .blog-articles .article:nth-child(7),
+  .blog-articles .article:nth-child(8),
+  .blog-articles .article:nth-child(9),
+  .blog-articles .article:nth-child(12),
+  .blog-articles .article:nth-child(13),
+  .blog-articles .article:nth-child(14) {width: 33%}
   
 }
 
