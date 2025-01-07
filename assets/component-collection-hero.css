@@ -30,7 +30,7 @@
 
   .collection-hero__inner {
     align-items: center;
-    flex-direction: colum;
+    flex-direction: column;
     padding-bottom: 0;
   }
 }
@@ -85,14 +85,10 @@
 
 @media screen and (min-width: 750px) {
   .collection-hero--with-image .collection-hero__text-wrapper {
-    padding: 4rem 2rem 4rem 0;
-    flex-basis: 50%;
+    padding: 4rem 0 4rem 0;
   }
 
   .collection-hero__image-container {
-    align-self: stretch;
-    flex: 1 0 50%;
-    margin-left: 3rem;
     min-height: 20rem;
   }
 }
