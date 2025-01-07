@@ -11,7 +11,7 @@
 
 @media screen and (min-width: 750px) {
   .blog-articles {
-    grid-template-columns:1fr 1fr;
+    grid-template-columns:none;
     column-gap: var(--grid-desktop-horizontal-spacing);
     row-gap: var(--grid-desktop-vertical-spacing);
   }
@@ -51,7 +51,7 @@
 
   .blog-articles--collage > *:nth-child(1),
   .blog-articles--collage > *:nth-child(4) {
-    grid-column: span 2;
+    grid-column: span 3;
   }
   
   .blog-articles--collage > *:nth-child(7),
