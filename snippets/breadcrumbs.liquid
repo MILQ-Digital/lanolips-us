@@ -1,10 +1,17 @@
+{%- style -%}
+    .breadcrumbs {
+        padding-top: 25px;
+        padding-top: 25px;
+    }
+{%- endstyle -%}
+
 {% assign breadcrumbs_modifier = breadcrumbs_modifier | default: '' %}
 
 {% capture divider_html %}
   <span class="breadcrumbs__arrow">&#47;</span>
 {% endcapture %} 
 
-<nav class="breadcrumbs {{ breadcrumbs_modifier }}">
+<nav class="breadcrumbs body-xs {{ breadcrumbs_modifier }}">
   <a href="{{ routes.root_url }}">Home</a>
 
   {{ divider_html }}
