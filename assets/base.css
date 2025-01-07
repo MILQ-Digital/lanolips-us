@@ -866,23 +866,29 @@ summary::-webkit-details-marker {
 /* base-focus */
 /*
   Focus ring - default (with offset)
-*/
+
 
 *:focus {
   outline: 0;
   box-shadow: none;
 }
 
-/* Fallback - for browsers that don't support :focus-visible, a fallback is set for :focus */
-.focused {
+*:focus-visible {
   outline: var(--focused-base-outline);
   outline-offset: var(--focused-base-outline-offset);
   box-shadow: var(--focused-base-box-shadow);
 }
+*/
+/* Fallback - for browsers that don't support :focus-visible, a fallback is set for :focus 
+.focused {
+  outline: var(--focused-base-outline);
+  outline-offset: var(--focused-base-outline-offset);
+  box-shadow: var(--focused-base-box-shadow);
+}*/
 
 /*
   Focus ring - inset
-*/
+
 
 .focus-inset:focus-visible {
   outline: 0.2rem solid rgba(var(--color-foreground), 0.5);
@@ -894,13 +900,13 @@ summary::-webkit-details-marker {
   outline: 0.2rem solid rgba(var(--color-foreground), 0.5);
   outline-offset: -0.2rem;
   box-shadow: 0 0 0.2rem 0 rgba(var(--color-foreground), 0.3);
-}
+}*/
 
 /*
   Focus ring - none
 */
 
-/* Dangerous for a11y - Use with care */
+/* Dangerous for a11y - Use with care 
 .focus-none {
   box-shadow: none !important;
   outline: 0 !important;
@@ -917,6 +923,7 @@ summary::-webkit-details-marker {
   outline-offset: 1rem;
   box-shadow: 0 0 0 1rem rgb(var(--color-background)), 0 0 0.2rem 1.2rem rgba(var(--color-foreground), 0.3);
 }
+  */
 
 /* component-title */
 .title,
