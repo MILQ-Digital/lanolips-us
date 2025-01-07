@@ -16,10 +16,10 @@
     row-gap: var(--grid-desktop-vertical-spacing);
   }
 
-  .blog-articles--collage > *:nth-child(3n + 1){
+  /*.blog-articles--collage > *:nth-child(3n + 1){
     grid-column: span 3;
     text-align: left;
-  }
+  }*/
 
 
   .blog-articles--collage > *:nth-child(3n + 1) .card,
@@ -48,6 +48,12 @@
     display: flex;
     align-items: flex-end;
   }
+
+  .blog-articles--collage > *:nth-child(1),
+  .blog-articles--collage > *:nth-child(4) {
+    grid-column: span 3;
+  }
+  
   .blog-articles--collage > *:nth-child(7),
   .blog-articles--collage > *:nth-child(8),
   .blog-articles--collage > *:nth-child(9),
