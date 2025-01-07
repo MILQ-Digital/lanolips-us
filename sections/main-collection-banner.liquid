@@ -35,12 +35,7 @@
  
     <div class="collection-hero__text-wrapper page-width">
 
-      <nav class="breadcrumb" aria-label="breadcrumb">
-        <ul>
-          <li><a href="{{ routes.root_url }}">Home</a></li>
-          <li>{{ collection.title }}</li>
-        </ul>
-      </nav>
+      {%- render 'breadcrumbs' -%}
 
       <h1 class="collection-hero__title heading-md">
         <span class="visually-hidden">{{ 'sections.collection_template.title' | t }}: </span>
