@@ -23,7 +23,7 @@
             {%- if banner_image and banner_image.width >= 750 -%}{{ banner_image | image_url: width: 750 }} 750w,{%- endif -%}
             {%- if banner_image and banner_image.width >= 1070 -%}{{ banner_image | image_url: width: 1070 }} 1070w,{%- endif -%}
             {%- if banner_image and banner_image.width >= 1500 -%}{{ banner_image | image_url: width: 1500 }} 1500w,{%- endif -%}
-            {{ banner_image | image_url }} {{ banner_image.width | default: collection.image.width }}w
+            {{ banner_image | image_url }} {{ banner_image.width | default: collection.image.width }}
           "
           src="{{ banner_image | image_url: width: 750 | default: collection.image | image_url: width: 750 }}"
           sizes="(min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 100 | divided_by: 2 }}px, (min-width: 750px) calc(50vw - 130px), calc(50vw - 55px)"
