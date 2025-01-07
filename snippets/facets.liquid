@@ -822,23 +822,23 @@
             <div class="select">
               <button type="button" class="facet-filters__sort-button caption-large" id="sortButton" aria-label="Sort by">Sort</button>
               {%- assign sort_by = results.sort_by | default: results.default_sort_by -%}
-              <ul
+              <select
                 name="sort_by"
                 class="facet-filters__sort select__select caption-large"
                 id="SortBy"
                 aria-describedby="a11y-refresh-page-message"
               >
                 {%- for option in results.sort_options -%}
-                  <li
+                  <option
                     value="{{ option.value | escape }}"
                     {% if option.value == sort_by %}
                       selected="selected"
                     {% endif %}
                   >
                     {{ option.name | escape }}
-                  </li>
+                  </option>
                 {%- endfor -%}
-              </ul>
+              </select>
             </div>
           </div>
         </div>
@@ -921,9 +921,3 @@
     </facet-filters-form>
   {%- endif -%}
 </div>
-
-<script>
-  document.getElementById('sortButton').addEventListener('click', function() {
-    document.getElementById('SortBy').dispatchEvent(new Event('change'));
-  });
-</script>
