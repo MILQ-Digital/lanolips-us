@@ -921,3 +921,9 @@
     </facet-filters-form>
   {%- endif -%}
 </div>
+
+<script>
+  document.getElementById('sortButton').addEventListener('click', function() {
+    document.getElementById('SortBy').dispatchEvent(new Event('change'));
+  });
+</script>
