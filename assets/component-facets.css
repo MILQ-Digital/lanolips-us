@@ -105,14 +105,15 @@
 
 .facet-filters__sort {
   background-color: transparent;
-  border: 0;
-  border-radius: 0;
-  font-size: 1.4rem;
+  border: 1px solid;
+  border-radius: 3px;
+  font-size: 16px;
   height: auto;
-  line-height: calc(1 + 0.5 / var(--font-body-scale));
   margin: 0;
-  padding-left: 0;
+  padding-left: 15px;
   padding-right: 1.75rem;
+  line-height: 20px;
+  font-weight: 500;
 }
 
 .facet-filters__sort + .icon-caret {
