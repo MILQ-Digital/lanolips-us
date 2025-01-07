@@ -832,11 +832,15 @@ a.active-facets__button.focused .active-facets__button-inner {
 .mobile-facets__open {
   text-align: left;
   width: 100%;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
   display: flex;
   align-items: center;
-  color: rgba(var(--color-link), var(--alpha-link));
+  color: rgba(var(--color-foreground));
+  border: 1px solid;
+  border-radius: 3px;
+  padding: 6px 15px;
+  line-height: 20px;
+  font-weight: 500;
+  font-size: 16px;
 }
 
 .mobile-facets__open:hover {
