@@ -116,6 +116,9 @@
   font-weight: 500;
   padding-top: 6px;
   padding-bottom: 6px;
+  appearance: none; /* For most modern browsers */
+  -webkit-appearance: none; /* For Safari */
+  -moz-appearance: none; /* For Firefox */
 }
 
 .facet-filters__sort + .icon-caret {
