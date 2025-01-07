@@ -851,16 +851,6 @@ a.active-facets__button.focused .active-facets__button-inner {
   stroke: rgb(var(--color-link));
 }
 
-.mobile-facets__open-label {
-  transition: text-decoration var(--duration-short) ease;
-}
-
-.mobile-facets__open:hover .mobile-facets__open-label {
-  text-decoration: underline;
-  text-underline-offset: 0.3rem;
-}
-
-
 .mobile-facets__open .svg-wrapper {
   width: 2rem;
 }
