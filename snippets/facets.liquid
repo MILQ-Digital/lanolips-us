@@ -819,8 +819,7 @@
       <form id="FacetSortDrawerForm" class="facets__form">
         <div class="facet-filters sorting caption small-hide">
           <div class="facet-filters__field">
-            <div class="select">
-              <button type="button" class="facet-filters__sort-button caption-large" id="sortButton" aria-label="Sort by">Sort</button>
+            <div class="select">              
               {%- assign sort_by = results.sort_by | default: results.default_sort_by -%}
               <select
                 name="sort_by"
