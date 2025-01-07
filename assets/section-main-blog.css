@@ -42,7 +42,7 @@
     padding-bottom: 66rem;
   }
 
-  .blog-articles--collage > *:nth-child(1) {
+  .blog-articles--collage > *:nth-child(1) .card {
     flex-direction: row;
     display: flex;
     align-items: flex-end;
