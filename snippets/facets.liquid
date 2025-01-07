@@ -396,8 +396,6 @@
                     id="SortBy"
                     aria-describedby="a11y-refresh-page-message"
                   >
-                    <option value="" disabled selected>Sort</option>
-
                     {%- for option in results.sort_options -%}
                       <option
                         value="{{ option.value | escape }}"
@@ -835,8 +833,6 @@
                 id="SortBy"
                 aria-describedby="a11y-refresh-page-message"
               >
-                <option value="" disabled selected>Sort</option>
-
                 {%- for option in results.sort_options -%}
                   <option
                     value="{{ option.value | escape }}"
