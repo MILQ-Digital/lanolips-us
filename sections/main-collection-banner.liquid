@@ -16,20 +16,22 @@
       <div class="collection-hero__image-container media gradient">
         <img
           srcset="
-            {%- if collection.image.width >= 165 -%}{{ collection.image | image_url: width: 165 }} 165w,{%- endif -%}
-            {%- if collection.image.width >= 360 -%}{{ collection.image | image_url: width: 360 }} 360w,{%- endif -%}
-            {%- if collection.image.width >= 535 -%}{{ collection.image | image_url: width: 535 }} 535w,{%- endif -%}
-            {%- if collection.image.width >= 750 -%}{{ collection.image | image_url: width: 750 }} 750w,{%- endif -%}
-            {%- if collection.image.width >= 1070 -%}{{ collection.image | image_url: width: 1070 }} 1070w,{%- endif -%}
-            {%- if collection.image.width >= 1500 -%}{{ collection.image | image_url: width: 1500 }} 1500w,{%- endif -%}
-            {{ collection.image | image_url }} {{ collection.image.width }}w
+            {%- assign banner_image = collection.metafields.custom.collection_banner -%}
+            {%- if banner_image and banner_image.width >= 165 -%}{{ banner_image | image_url: width: 165 }} 165w,{%- endif -%}
+            {%- if banner_image and banner_image.width >= 360 -%}{{ banner_image | image_url: width: 360 }} 360w,{%- endif -%}
+            {%- if banner_image and banner_image.width >= 535 -%}{{ banner_image | image_url: width: 535 }} 535w,{%- endif -%}
+            {%- if banner_image and banner_image.width >= 750 -%}{{ banner_image | image_url: width: 750 }} 750w,{%- endif -%}
+            {%- if banner_image and banner_image.width >= 1070 -%}{{ banner_image | image_url: width: 1070 }} 1070w,{%- endif -%}
+            {%- if banner_image and banner_image.width >= 1500 -%}{{ banner_image | image_url: width: 1500 }} 1500w,{%- endif -%}
+            {{ banner_image | image_url }} {{ banner_image.width | default: collection.image.width }}w
           "
-          src="{{ collection.image | image_url: width: 750 }}"
+          src="{{ banner_image | image_url: width: 750 | default: collection.image | image_url: width: 750 }}"
           sizes="(min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 100 | divided_by: 2 }}px, (min-width: 750px) calc(50vw - 130px), calc(50vw - 55px)"
-          alt="{{ collection.image.alt | escape }}"
-          width="{{ collection.image.width }}"
-          height="{{ collection.image.height }}"
+          alt="{{ banner_image.alt | escape | default: collection.image.alt | escape }}"
+          width="{{ banner_image.width | default: collection.image.width }}"
+          height="{{ banner_image.height | default: collection.image.height }}"
         >
+
       </div>
     {%- endif -%}
  
