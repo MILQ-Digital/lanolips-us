@@ -131,7 +131,8 @@
   width: 63px;
 }
 
-.facet-filters__sort .selected {
+.facet-filters__sort .selected,
+.facet-filters__sort option:hover {
   background-color: var(--Lano-Blue);
   color: #fff;
 }
