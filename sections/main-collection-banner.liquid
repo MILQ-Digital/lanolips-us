@@ -55,6 +55,10 @@
           {{- collection.title | escape -}}
         </h1>
 
+      {%- if section.settings.show_collection_description -%}
+        <div class="collection-hero__description rte body-lg mobile_only">{{ collection.description }}</div>
+      {%- endif -%}              
+
         {% if collection.metafields.custom.sub_collections %}
           <div class="sub-collections">
             <div class="sub-collections-grid">
@@ -74,7 +78,7 @@
       </div>
 
       {%- if section.settings.show_collection_description -%}
-        <div class="collection-hero__description rte body-lg">{{ collection.description }}</div>
+        <div class="collection-hero__description rte body-lg desktop_only">{{ collection.description }}</div>
       {%- endif -%}      
 
     </div>
