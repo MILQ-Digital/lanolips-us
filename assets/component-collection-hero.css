@@ -47,8 +47,6 @@
 
 @media screen and (min-width: 750px) {
   .collection-hero__title + .collection-hero__description {
-    margin-top: 2rem;
-    margin-bottom: 2rem;
     width: 50%;
   }
 }
