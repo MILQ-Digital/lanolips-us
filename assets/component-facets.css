@@ -103,6 +103,15 @@
   margin-left: 2.5rem;
 }
 
+.facet-filters__sort-button {
+  background-color: transparent;
+  border: none;
+  font-size: 16px;
+  padding: 10px;
+  cursor: pointer;
+  margin-right: 10px; /* Adjust space between button and select */
+}
+
 .facet-filters__sort {
   background-color: transparent;
   border: 1px solid;
