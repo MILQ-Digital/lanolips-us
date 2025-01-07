@@ -46,6 +46,10 @@
 
   .blog-articles .article:nth-child(1),
   .blog-articles .article:nth-child(4) {width: 100%}
+  .blog-articles .article:nth-child(2),
+  .blog-articles .article:nth-child(3),
+  .blog-articles .article:nth-child(5),
+  .blog-articles .article:nth-child(6) {width: 47%}
   
 }
 
