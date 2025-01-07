@@ -89,7 +89,7 @@
 
 .facet-filters__field .select__select,
 .mobile-facets__sort .select__select {
-  border-radius: 0;
+  border-radius: 3px;
   min-width: auto;
   min-height: auto;
   transition: none;
