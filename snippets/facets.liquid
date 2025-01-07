@@ -822,23 +822,23 @@
             <div class="select">
               <button type="button" class="facet-filters__sort-button caption-large" id="sortButton" aria-label="Sort by">Sort</button>
               {%- assign sort_by = results.sort_by | default: results.default_sort_by -%}
-              <select
+              <ul
                 name="sort_by"
                 class="facet-filters__sort select__select caption-large"
                 id="SortBy"
                 aria-describedby="a11y-refresh-page-message"
               >
                 {%- for option in results.sort_options -%}
-                  <option
+                  <li
                     value="{{ option.value | escape }}"
                     {% if option.value == sort_by %}
                       selected="selected"
                     {% endif %}
                   >
                     {{ option.name | escape }}
-                  </option>
+                  </li>
                 {%- endfor -%}
-              </select>
+              </ul>
             </div>
           </div>
         </div>
