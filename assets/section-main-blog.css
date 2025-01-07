@@ -51,7 +51,7 @@
 
   .blog-articles--collage > *:nth-child(1),
   .blog-articles--collage > *:nth-child(4) {
-    grid-column: span 3;
+    grid-column: span 2;
   }
   
   .blog-articles--collage > *:nth-child(7),
