@@ -388,9 +388,6 @@
           {%- if enable_sorting -%}
             <div class="facet-filters sorting caption">
               <div class="facet-filters__field">
-                <h4 class="facet-filters__label caption-large text-body">
-                  <label for="SortBy">{{ 'products.facets.sort_by_label' | t }}</label>
-                </h4>
                 <div class="select">
                   {%- assign sort_by = results.sort_by | default: results.default_sort_by -%}
                   <select
@@ -399,6 +396,8 @@
                     id="SortBy"
                     aria-describedby="a11y-refresh-page-message"
                   >
+                    <option value="" disabled selected hidden>Sort</option>
+
                     {%- for option in results.sort_options -%}
                       <option
                         value="{{ option.value | escape }}"
