@@ -790,7 +790,7 @@ a.active-facets__button.focused .active-facets__button-inner {
 }
 
 .js .disclosure-has-popup:not(.menu-opening) .mobile-facets__inner {
-  transform: translateX(105vw);
+  transform: translateX(-105vw);
 }
 
 .mobile-facets__header {
