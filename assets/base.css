@@ -131,25 +131,25 @@ body {
 .body-lg,
 .subtitle {
   font-size: var(--body-lg);
-  line-height: 150%; /* 27px */
+  line-height: 150%; 
 }
 
 .body-md,
 .subtitle--medium {
   font-size: var(--body-md);
-  line-height: 120%; /* 57.6px */
+  line-height: 160%; 
 }
 
 .body-sm,
 .subtitle--small {
   font-size: var(--body-sm);
-  line-height: 120%; /* 43.2px */
+  line-height: 160%; 
 }
 
 .body-xs,
 .subtitle--xsmall {
   font-size: var(--body-xs);
-  line-height: 120%; /* 33.6px */
+  line-height: 150%; 
 }
 
 .button.button--bright-pink {
