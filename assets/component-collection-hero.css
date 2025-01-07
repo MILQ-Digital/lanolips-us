@@ -56,7 +56,7 @@
 }
 
 .collection-hero--with-image .collection-hero__title {
-  margin: 0;
+  margin: 0 0 15px;
 }
 
 @media screen and (max-width: 749px) {
@@ -84,6 +84,8 @@
 .sub_collection_image {
   width: 78px;
   height: 99px;
+  border-radius: 5.77px;
+  overflow: hidden;
 }
 
 .sub_collection_image img {
@@ -91,4 +93,8 @@
   object-fit: cover;
   object-position: center center;
   width: 100%;
+}
+
+.sub-collection-item a {
+  text-decoration: none;
 }
