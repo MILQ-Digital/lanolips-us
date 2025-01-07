@@ -27,6 +27,12 @@
     padding: 0;
   }
 
+  .collection-hero__text-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
   .collection-hero__inner {
     align-items: center;
     flex-direction: column;
@@ -43,11 +49,13 @@
   .collection-hero__title + .collection-hero__description {
     margin-top: 2rem;
     margin-bottom: 2rem;
+    width: 50%;
   }
 }
 
 .collection-hero--with-image .collection-hero__title {
   margin: 0;
+  width: 48%;
 }
 
 @media screen and (max-width: 749px) {
