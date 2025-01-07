@@ -61,7 +61,9 @@
               {% for sub_collection in collection.metafields.custom.sub_collections.value %}
                 <div class="sub-collection-item">
                   <a href="{{ sub_collection.url }}">
-                    <img src="{{ sub_collection.image | img_url: '300x300' }}" alt="{{ sub_collection.title }}">
+                    <div class="sub_collection_image">
+                      <img src="{{ sub_collection.image | img_url: '300x300' }}" alt="{{ sub_collection.title }}">
+                    </div>
                     <h3>{{ sub_collection.title }}</h3>
                   </a>
                 </div>

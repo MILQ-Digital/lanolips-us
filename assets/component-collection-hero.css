@@ -80,3 +80,15 @@
   grid-template-columns: repeat(auto-fill, minmax(78px, 1fr));
   grid-gap: 16px;
 }
+
+.sub_collection_image {
+  width: 78px;
+  height: 99px;
+}
+
+.sub_collection_image img {
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
+  width: 100%;
+}
