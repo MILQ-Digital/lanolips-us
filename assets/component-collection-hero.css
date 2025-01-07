@@ -53,6 +53,9 @@
 
 .collection-hero--with-image .collection-hero__title {
   margin: 0;
+}
+
+.collection_left {
   width: 48%;
 }
 

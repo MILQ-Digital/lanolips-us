@@ -49,29 +49,31 @@
 
       {%- render 'breadcrumbs' -%}
 
-      <h1 class="collection-hero__title heading-md">
-        <span class="visually-hidden">{{ 'sections.collection_template.title' | t }}: </span>
-        {{- collection.title | escape -}}
-      </h1>
+      <div class="collection_left">
+        <h1 class="collection-hero__title heading-md">
+          <span class="visually-hidden">{{ 'sections.collection_template.title' | t }}: </span>
+          {{- collection.title | escape -}}
+        </h1>
+
+        {% if collection.metafields.custom.sub_collections %}
+          <div class="sub-collections">
+            <div class="sub-collections-grid">
+              {% for sub_collection in collection.metafields.custom.sub_collections.value %}
+                <div class="sub-collection-item">
+                  <a href="{{ sub_collection.url }}">
+                    <img src="{{ sub_collection.image | img_url: '300x300' }}" alt="{{ sub_collection.title }}">
+                    <h3>{{ sub_collection.title }}</h3>
+                  </a>
+                </div>
+              {% endfor %}
+            </div>
+          </div>
+        {% endif %}      
+      </div>
 
       {%- if section.settings.show_collection_description -%}
         <div class="collection-hero__description rte body-lg">{{ collection.description }}</div>
       {%- endif -%}      
-
-      {% if collection.metafields.custom.sub_collections %}
-        <div class="sub-collections">
-          <div class="sub-collections-grid">
-            {% for sub_collection in collection.metafields.custom.sub_collections.value %}
-              <div class="sub-collection-item">
-                <a href="{{ sub_collection.url }}">
-                  <img src="{{ sub_collection.image | img_url: '300x300' }}" alt="{{ sub_collection.title }}">
-                  <h3>{{ sub_collection.title }}</h3>
-                </a>
-              </div>
-            {% endfor %}
-          </div>
-        </div>
-      {% endif %}
 
     </div>
   </div>
