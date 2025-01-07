@@ -505,6 +505,10 @@
    overflow: hidden;
 }
 
+.promo_banner.grid__item a {
+  height: 100%;;
+}
+
 .promo_banner.grid__item .media {
   padding: 0;
 }
