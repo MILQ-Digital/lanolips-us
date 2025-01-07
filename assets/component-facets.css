@@ -131,6 +131,10 @@
   width: 63px;
 }
 
+.facet-filters__sort .selected {
+  background-color: var(--Lano-Blue);
+}
+
 .facet-filters__sort + .icon-caret {
   right: 0;
 }
