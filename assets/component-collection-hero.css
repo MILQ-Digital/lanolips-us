@@ -79,7 +79,8 @@
 
 @media screen and (max-width: 749px) {
   .collection-hero__image-container {
-    height: 20rem;
+    height: 665px;
+    width: 100%;
   }
 }
 
