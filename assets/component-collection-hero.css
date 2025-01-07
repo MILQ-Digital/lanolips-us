@@ -46,17 +46,17 @@
 
 
 @media screen and (min-width: 750px) {
-  .collection-hero__title + .collection-hero__description {
+  .collection_left {
+    width: 48%;
+  }
+  
+  .collection-hero__description {
     width: 50%;
   }
 }
 
 .collection-hero--with-image .collection-hero__title {
   margin: 0;
-}
-
-.collection_left {
-  width: 48%;
 }
 
 @media screen and (max-width: 749px) {
