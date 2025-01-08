@@ -654,7 +654,7 @@
                       </details>
                     {% when 'price_range' %}
                       <details
-                        id="Details-Mobile-{{ filter.param_name | escape }}-{{ section.id }}"
+                        id="__Details-Mobile-{{ filter.param_name | escape }}-{{ section.id }}"
                         class="mobile-facets__details js-filter"
                         data-index="mobile-{{ forloop.index }}"
                       >
@@ -667,7 +667,7 @@
                           </div>
                         </summary>
                         <div
-                          id="FacetMobile-{{ forloop.index }}-{{ section.id }}"
+                          id="__FacetMobile-{{ forloop.index }}-{{ section.id }}"
                           class="mobile-facets__submenu gradient"
                         >
                           <button
