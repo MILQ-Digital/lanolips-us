@@ -135,9 +135,9 @@
     "show_cart_note": false,
     "enable_freeshipping": true,
     "shipping_message": "Add ||amount|| more for FREE shipping!",
+    "qualified_shipping_message": "Congratulations! Your order qualifies for free shipping",
     "cart_drawer_collection": "",
     "cart_color_scheme": "scheme-2",
-    "qualified_shipping_message": "Add ||amount|| more for FREE shipping!",
     "message": "Add ||amount|| more for FREE shipping!",
     "sections": {
       "main-password-header": {
