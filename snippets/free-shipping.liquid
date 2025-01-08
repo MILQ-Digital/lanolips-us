@@ -1,7 +1,7 @@
 {%- liquid
   assign free_shipping_limit = settings.free_shipping_limit
   assign show_message = false
-  if message != blank
+  if settings.qualified_shipping_message != blank
     assign show_message = true
   endif
 
