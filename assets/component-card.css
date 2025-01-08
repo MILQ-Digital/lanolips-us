@@ -226,10 +226,6 @@
   transform: translateY(-30%);  
 }
 
-.promo_banner.grid__item .card-wrapper:hover a {
-  height: 91%;
-}
-
 @media screen and (min-width: 1200px) {
   .collection-list .card.card--standard {
     height: 620px;
