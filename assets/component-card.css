@@ -197,7 +197,8 @@
 }
 
 .promo_banner .card-wrapper .card__inner .card__media .media,
-.promo_banner .card-wrapper .card__information {
+.promo_banner .card-wrapper .card__information,
+.promo_banner .card-wrapper .card__content {
   -webkit-transition: all 0.35s ease;
   -moz-transition: all 0.35s ease;
   transition: all 0.35s ease;  
