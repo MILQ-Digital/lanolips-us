@@ -11,6 +11,7 @@
   "sections": {
     "main": {
       "type": "main-404",
+      "disabled": true,
       "settings": {}
     },
     "rich_text_4M3mRB": {
