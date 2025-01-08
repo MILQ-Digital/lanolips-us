@@ -53,7 +53,8 @@
     "cart": {
       "view": "View cart ({{ count }})",
       "view_empty_cart": "View cart",
-      "item_added": "Item added to your cart"
+      "item_added": "Item added to your bag",
+      "qualified_shipping_message": "Congratulations! Your order qualifies for free shipping"
     },
     "share": {
       "close": "Close share",
@@ -292,16 +293,16 @@
       }
     },
     "cart": {
-      "title": "Your cart",
-      "caption": "Cart items",
+      "title": "Your Bag",
+      "caption": "Bag items",
       "remove_title": "Remove {{ title }}",
       "estimated_total": "Estimated total",
       "new_estimated_total": "New estimated total",
       "note": "Order special instructions",
-      "checkout": "Check out",
-      "empty": "Your cart is empty",
-      "cart_error": "There was an error while updating your cart. Please try again.",
-      "cart_quantity_error_html": "You can only add {{ quantity }} of this item to your cart.",
+      "checkout": "Checkout",
+      "empty": "Your bag is empty",
+      "cart_error": "There was an error while updating your bag. Please try again.",
+      "cart_quantity_error_html": "You can only add {{ quantity }} of this item to your bag.",
       "duties_and_taxes_included_shipping_at_checkout_with_policy_html": "Duties and taxes included. Discounts and <a href=\"{{ link }}\">shipping</a> calculated at checkout.",
       "duties_and_taxes_included_shipping_at_checkout_without_policy": "Duties and taxes included. Discounts and shipping calculated at checkout.",
       "taxes_included_shipping_at_checkout_with_policy_html": "Taxes included. Discounts and <a href=\"{{ link }}\">shipping</a> calculated at checkout.",
@@ -375,8 +376,8 @@
       },
       "product_variants": "Product variants",
       "total_items": "Total items",
-      "remove_all_single_item_confirmation": "Remove 1 item from your cart?",
-      "remove_all_items_confirmation": "Remove all {{ quantity }} items from your cart?",
+      "remove_all_single_item_confirmation": "Remove 1 item from your bag?",
+      "remove_all_items_confirmation": "Remove all {{ quantity }} items from your bag?",
       "remove_all": "Remove all",
       "cancel": "Cancel",
       "min_error": "This item has a minimum of {{ min }}",
@@ -534,6 +535,28 @@
       "max_characters": "{{ max_chars }} characters max",
       "send_on": "YYYY-MM-DD",
       "send_on_label": "Send on (optional)"
+    }
+  },
+  "shopify": {
+    "checkout": {
+      "general": {
+        "cart": "Bag",
+        "back_to_cart": "Return to bag"
+      },
+      "stock": {
+        "removed_from_cart_notice": "Removed from bag",
+        "remove_from_cart_button_label": "Remove from bag",
+        "go_back_to_cart_button_label": "Go back to my bag",
+        "empty_cart_label": "Your Bag is empty"
+      },
+      "throttle": {
+        "cart_summary_heading": "Your Bag",
+        "inventory": {
+          "sold_out": {
+            "heading": "Your bag is sold out"
+          }
+        }
+      }
     }
   }
 }
