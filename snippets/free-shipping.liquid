@@ -1,7 +1,7 @@
 {%- liquid
-  
+  assign message = settings.shipping_message 
   assign show_message = false
-  if settings.qualified_shipping_message != blank
+  if message != blank
     assign show_message = true
   endif
 
