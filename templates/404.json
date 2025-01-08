@@ -1,1 +1,73 @@
-{"sections":{"main":{"type":"main-404","settings":{}}},"order":["main"]}
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-404",
+      "disabled": true,
+      "settings": {}
+    },
+    "rich_text_4M3mRB": {
+      "type": "rich-text",
+      "blocks": {
+        "caption_VVFpce": {
+          "type": "caption",
+          "settings": {
+            "caption": "Error 404",
+            "text_style": "caption-with-letter-spacing",
+            "text_size": "medium"
+          }
+        },
+        "heading_gFjHfy": {
+          "type": "heading",
+          "settings": {
+            "heading": "Page Not Found",
+            "heading_size": "h1"
+          }
+        },
+        "text_eCrDdG": {
+          "type": "text",
+          "settings": {
+            "text": "<p>The page you are looking for doesn’t exist<br/><br/></p>"
+          }
+        },
+        "button_XKdciq": {
+          "type": "button",
+          "settings": {
+            "button_label": "Back To Homepage",
+            "button_link": "/",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "caption_VVFpce",
+        "heading_gFjHfy",
+        "text_eCrDdG",
+        "button_XKdciq"
+      ],
+      "settings": {
+        "desktop_content_position": "left",
+        "content_alignment": "left",
+        "color_scheme": "scheme-2",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    }
+  },
+  "order": [
+    "main",
+    "rich_text_4M3mRB"
+  ]
+}
