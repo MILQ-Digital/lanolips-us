@@ -977,8 +977,8 @@ a.product__text {
 @media screen and (min-width: 750px) {
   .product__column-sticky {
     display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
+    flex-direction: row;
+    flex-wrap: wrap;
   }
 
   .product__media-wrapper .slider-mobile-gutter {
@@ -1020,7 +1020,7 @@ a.product__text {
 
 @media screen and (min-width: 900px) {
   .product--small .thumbnail-list.slider--tablet-up .thumbnail-list__item.slider__slide {
-    width: calc(25% - 0.8rem);
+    width: 100%;
   }
 
   .thumbnail-list.slider--tablet-up .thumbnail-list__item.slider__slide {
