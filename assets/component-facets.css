@@ -815,6 +815,7 @@ a.active-facets__button.focused .active-facets__button-inner {
 
 .mobile-facets__heading {
   margin: 0;
+  font-weight: 500;
 }
 
 .mobile-facets__count {
