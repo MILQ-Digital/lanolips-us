@@ -430,3 +430,41 @@ cart-drawer-items::-webkit-scrollbar-track-piece {
   margin-top: 5px;
   overflow: hidden;
 }
+
+.free-shipping__progress-bar::-webkit-progress-bar{
+  width:100%;
+  background:var(--progress-bg);
+  border-radius:6px
+}
+
+.free-shipping__progress-bar::-webkit-progress-value{
+  background:var(--progress-value-bg);
+  border-radius:4px;
+  -webkit-transition:width 1s ease-in-out,transform 1s ease-in-out .5s;
+  transition:width 1s ease-in-out,transform 1s ease-in-out .5s;
+  transform-origin:center left
+}
+
+.free-shipping__progress-bar::-webkit-progress-value{
+  transform:scaleX(0)
+}
+  
+.free-shipping__progress-bar::-webkit-progress-value{
+  transform:scaleX(1)
+}
+  
+@-moz-document url-prefix(){
+  .free-shipping__progress-bar::-moz-progress-bar{
+    background:var(--progress-value-bg);
+    border-radius:4px;
+    -moz-transition: width 1s ease-in-out,transform 1s ease-in-out .5s;
+    transition:width 1s ease-in-out,transform 1s ease-in-out .5s;
+    transform-origin:center left
+  }
+  .free-shipping__progress-bar::-moz-progress-bar{
+    transform:scaleX(0)
+  }
+  .free-shipping__progress-bar::-moz-progress-bar{
+    transform:scaleX(1)
+  }
+}
