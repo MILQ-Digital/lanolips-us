@@ -1038,7 +1038,8 @@ input.mobile-facets__checkbox {
   display: block;
 }
 
-.mobile-facets__arrow .icon-caret {
+.mobile-facets__arrow .icon-caret,
+.mobile-facets__summary .icon-caret {
   position: relative;
   right: auto;
   top: calc(50%);
