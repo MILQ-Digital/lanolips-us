@@ -53,14 +53,6 @@
       style="{{ style }}"
     {% endif %}
   >
-    {%- if show_wheel -%}
-      <div class="free-shipping__graph" data-progress-graph style="--stroke-dashoffset: 87.96459430051421;">
-        <svg height="18" width="18" viewBox="0 0 18 18">
-          <circle r="7" cx="9" cy="9" />
-          <circle class="free-shipping__graph-progress" stroke-dasharray="87.96459430051421 87.96459430051421" r="7" cx="9" cy="9" />
-        </svg>
-      </div>
-    {%- endif -%}
 
     {%- if qualified_shipping_message != blank -%}
       <span class="free-shipping__success-message">{{ qualified_shipping_message }}</span>
@@ -70,8 +62,7 @@
       {{ message }}
     </span>
 
-    {%- if show_progress_bar -%}
-      <progress class="free-shipping__progress-bar" data-progress-bar value="{{ percent }}" max="100"></progress>
-    {%- endif -%}
+    <progress class="free-shipping__progress-bar" data-progress-bar value="{{ percent }}" max="100"></progress>
+
   </div>
 {%- endif -%}
