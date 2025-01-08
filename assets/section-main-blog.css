@@ -59,6 +59,7 @@
   .blog-articles .article:nth-child(12),
   .blog-articles .article:nth-child(13),
   .blog-articles .article:nth-child(14) {flex-basis: calc(33.33% - 20px);}
+  .blog-articles .article:nth-child(1) .card ,.blog-articles .article:nth-child(4) .card { flex-direction: row; align-items: flex-end; column-gap: 20px; }
   
 }
 
