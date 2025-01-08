@@ -211,7 +211,7 @@
 }
  
 .collection-list .card-wrapper:hover .card__information,
-.promo_banner .card-wrapper:hover .card__information {
+.promo_banner .card-wrapper:hover .card__content {
   max-height: 100%;
   -moz-transform: translateY(-40%);
   -ms-transform: translateY(-40%);
@@ -500,6 +500,10 @@
 }
   */
 
+.promo_banner.grid__item .card__inner {
+  --ratio-percent: 65.0787037037037%!important;
+}
+
 .promo_banner.grid__item .card  {
   border-radius: 22px;
    overflow: hidden;
@@ -519,8 +523,8 @@
 }
 
 .promo_banner.grid__item .media img {
-  height: auto!Important;
-  width: 100%!Important;
+  height: 100% !important;
+  width: 100% !important;
   mix-blend-mode: unset;
 }
 
