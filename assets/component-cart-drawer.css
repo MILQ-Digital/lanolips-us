@@ -415,3 +415,18 @@ cart-drawer-items::-webkit-scrollbar-track-piece {
 .is-success .free-shipping__success-message~.free-shipping__default-message {
   display: none;
 }
+
+.free-shipping__progress-bar {
+  --progress-bg: transparent;
+  --progress-value-bg: linear-gradient(to right, var(--Lano-Bright-pink) 0%, var(--Lano-light-pink) 100%);
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  display: block;
+  width: 100%;
+  height: 8px;
+  background: var(--bg-accent);
+  border-radius: 4px;
+  margin-top: 5px;
+  overflow: hidden;
+}
