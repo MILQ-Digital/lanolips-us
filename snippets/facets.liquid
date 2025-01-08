@@ -454,17 +454,17 @@
               {{ 'products.facets.filter_button' | t }}
             {%- endif -%}
           </span>
+                                  <facet-remove class="mobile-facets__clear-wrapper">
+                  <a href="{{ results_url }}" class="mobile-facets__clear underlined-link">
+                    {{- 'products.facets.clear_all' | t -}}
+                  </a>
+                </facet-remove>
         </span>
         <span tabindex="0" class="mobile-facets__close">
           <span class="svg-wrapper">
             {{- 'icon-close.svg' | inline_asset_content -}}
           </span>
         </span>
-                        <facet-remove class="mobile-facets__clear-wrapper">
-                  <a href="{{ results_url }}" class="mobile-facets__clear underlined-link">
-                    {{- 'products.facets.clear_all' | t -}}
-                  </a>
-                </facet-remove>
       </summary>
       <facet-filters-form>
         <form id="FacetFiltersFormMobile" class="mobile-facets">
