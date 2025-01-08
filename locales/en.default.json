@@ -293,7 +293,7 @@
       }
     },
     "cart": {
-      "title": "Your bag",
+      "title": "Your Bag",
       "caption": "Bag items",
       "remove_title": "Remove {{ title }}",
       "estimated_total": "Estimated total",
@@ -547,7 +547,7 @@
         "removed_from_cart_notice": "Removed from bag",
         "remove_from_cart_button_label": "Remove from bag",
         "go_back_to_cart_button_label": "Go back to my bag",
-        "empty_cart_label": "Your Bag is emptu"
+        "empty_cart_label": "Your Bag is empty"
       },
       "throttle": {
         "cart_summary_heading": "Your Bag",
