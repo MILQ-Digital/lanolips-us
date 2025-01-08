@@ -1048,8 +1048,7 @@ input.mobile-facets__checkbox {
 }
 
 .mobile-facets__footer {
-  border-top: 0.1rem solid rgba(var(--color-foreground), 0.08);
-  padding: 2rem;
+  padding: 30px;
   bottom: 0;
   position: sticky;
   display: flex;
@@ -1064,7 +1063,7 @@ input.mobile-facets__checkbox {
 }
 
 .mobile-facets__footer > * {
-  width: 50%;
+  width: 100%;
 }
 
 .mobile-facets__sort {
