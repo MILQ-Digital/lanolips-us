@@ -9,6 +9,8 @@
   width: 100%;
 }
 
+.read-more {text-decoration: underline; text-underline-offset: .3rem;}
+
 @media screen and (min-width: 750px) {
   .blog-articles {
     /*grid-template-columns: 1fr 1fr;*/
