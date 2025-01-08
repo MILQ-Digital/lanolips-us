@@ -466,6 +466,19 @@
           <div class="mobile-facets__inner gradient">
             <div class="mobile-facets__header">
               <div class="mobile-facets__header-inner">
+                          <button
+                            class="mobile-facets__close-button link link--text focus-inset"
+                            aria-expanded="true"
+                            type="button"
+                          >
+                            {{- 'icon-arrow.svg' | inline_asset_content -}}
+                            <span>{{ filter.label | escape }}</span>
+                            {%- if filter.operator == 'AND' -%}
+                              <span class="facets__and-helptext">
+                                {{ 'products.facets.filter_and_operator_subtitle' | t }}
+                              </span>
+                            {%- endif -%}
+                          </button>              
                 <h4 class="mobile-facets__heading medium-hide large-up-hide">
                   {%- if enable_filtering and enable_sorting -%}
                     {{ 'products.facets.filter_and_sort' | t }}
@@ -493,7 +506,7 @@
                   {%- endif -%}
                 </p>
 
-                <facet-remove class="mobile-facets__clear-wrapper">
+              <facet-remove class="mobile-facets__clear-wrapper">
                   <a href="{{ results_url }}" class="mobile-facets__clear underlined-link">
                     {{- 'products.facets.clear_all' | t -}}
                   </a>
