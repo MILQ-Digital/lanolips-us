@@ -196,6 +196,13 @@
   transition: all 0.35s ease;  
 }
 
+.promo_banner .card-wrapper .card__inner .card__media .media,
+.promo_banner .card-wrapper .card__information {
+  -webkit-transition: all 0.35s ease;
+  -moz-transition: all 0.35s ease;
+  transition: all 0.35s ease;  
+}
+
 .collection-list .card-wrapper:hover .card__inner .card__media .media,
 .collection-list .card-wrapper:hover .card__information,
 .promo_banner .card-wrapper:hover .card__inner .card__media .media,
