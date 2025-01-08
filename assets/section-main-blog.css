@@ -61,7 +61,7 @@
   .blog-articles .article:nth-child(1) .card__information, .blog-articles .article:nth-child(4) .card__information {padding-right: 160px;}
   .blog-articles .article:nth-child(1) .card__inner, .blog-articles .article:nth-child(4) .card__inner {min-height: 80vh;}
   .blog-articles .article:nth-child(n+5):nth-child(-n+6) .card__inner, .blog-articles .article:nth-child(n+10):nth-child(-n+11) .card__inner {min-height: 70vh;}
-  .blog-articles .article:nth-child(n+7):nth-child(-n+9) .card__inner,  .blog-articles .article:nth-child(n+12):nth-child(-n+14) .card__inner {min-height: 60vh;}
+  .blog-articles .article:nth-child(n+7):nth-child(-n+9) .card__inner,  .blog-articles .article:nth-child(n+12):nth-child(-n+14) .card__inner {min-height: 53vh;}
   
 }
 
