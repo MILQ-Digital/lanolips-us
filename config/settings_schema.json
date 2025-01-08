@@ -1478,11 +1478,6 @@
         "id": "enable_freeshipping",
         "label": "Enable Free Shipping Bar",
         "default": false
-      },  
-      {
-        "type": "color_background",
-        "id": "free_shipping_gradient",
-        "label": "Custom progress bar gradient"
       },         
       {
         "type": "textarea",

@@ -74,6 +74,11 @@
           </span>
         </button>
       </div>
+
+      {%- if settings.enable_freeshipping -%}
+        {%- render 'free-shipping' %}
+      {%- endif -%}
+
       <cart-drawer-items
         {% if cart == empty %}
           class=" is-empty"
