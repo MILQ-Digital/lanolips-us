@@ -512,8 +512,8 @@
                   {% case filter.type %}
                     {% when 'boolean', 'list' %}
                       <details
-                        id="__Details-Mobile-{{ filter.param_name | escape }}-{{ section.id }}"
-                        class="mobile-facets__details"
+                        id="Details-Mobile-{{ filter.param_name | escape }}-{{ section.id }}"
+                        class="mobile-facets__details js-filter"
                         data-index="mobile-{{ forloop.index }}"
                       >
                         <summary class="mobile-facets__summary focus-inset">
@@ -525,7 +525,7 @@
                           </div>
                         </summary>
                         <div
-                          id="__FacetMobile-{{ forloop.index }}-{{ section.id }}"
+                          id="FacetMobile-{{ forloop.index }}-{{ section.id }}"
                           class="mobile-facets__submenu gradient"
                         >
                           <button
@@ -654,8 +654,8 @@
                       </details>
                     {% when 'price_range' %}
                       <details
-                        id="__Details-Mobile-{{ filter.param_name | escape }}-{{ section.id }}"
-                        class="mobile-facets__details"
+                        id="Details-Mobile-{{ filter.param_name | escape }}-{{ section.id }}"
+                        class="mobile-facets__details js-filter"
                         data-index="mobile-{{ forloop.index }}"
                       >
                         <summary class="mobile-facets__summary focus-inset">
@@ -667,7 +667,7 @@
                           </div>
                         </summary>
                         <div
-                          id="__FacetMobile-{{ forloop.index }}-{{ section.id }}"
+                          id="FacetMobile-{{ forloop.index }}-{{ section.id }}"
                           class="mobile-facets__submenu gradient"
                         >
                           <button

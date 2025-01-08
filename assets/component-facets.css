@@ -956,34 +956,34 @@ details.menu-opening .mobile-facets__close .svg-wrapper {
 }
 
 .js .mobile-facets__submenu {
-  position: absolute;
+  position: relative;
   top: 0;
   width: 100%;
   bottom: 0;
   left: 0;
   z-index: 3;
-  transform: translateX(100%);
+  transform: unset;
   visibility: hidden;
   display: flex;
   flex-direction: column;
+  max-height: 0;
+  transition: max-height 0.5s ease;
 }
 
 .js details[open] > .mobile-facets__submenu {
-  transition: transform 0.4s cubic-bezier(0.29, 0.63, 0.44, 1), visibility 0.4s cubic-bezier(0.29, 0.63, 0.44, 1);
+  transition: max-height 0.5s ease;
 }
 
 .js details[open].menu-opening > .mobile-facets__submenu {
-  transform: translateX(0);
+  transform: unset;
   visibility: visible;
+  max-height: 100%;
 }
 
 .js .menu-drawer__submenu .mobile-facets__submenu {
   overflow-y: auto;
 }
 
-.js .mobile-facets .submenu-open {
-  visibility: hidden; /* hide menus from screen readers when hidden by submenu */
-}
 
 .mobile-facets__item {
   position: relative;
