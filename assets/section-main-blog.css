@@ -6,6 +6,8 @@
   row-gap: 80px;
 }
 
+  .main-blog .title--primary {display: none;}
+
 .blog-articles .card-wrapper {
   width: 100%;
 }
