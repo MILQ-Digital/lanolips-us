@@ -226,7 +226,7 @@
   transform: translateY(-40%);  
 }
 
-.promo_banner .card-wrapper .card__content {
+.promo_banner .card-wrapper .card__content .card__information {
   padding: 20px 30px; 
 }
 
