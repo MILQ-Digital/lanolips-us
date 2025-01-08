@@ -1474,6 +1474,24 @@
         "content": "t:settings_schema.cart.settings.cart_drawer.header"
       },
       {
+        "type": "checkbox",
+        "id": "enable_freeshipping",
+        "label": "Enable Free Shipping Bar",
+        "default": false
+      },  
+      {
+        "type": "color_background",
+        "id": "free_shipping_gradient",
+        "label": "Custom progress bar gradient"
+      },         
+      {
+        "type": "free-shipping",
+        "settings": {
+          "message": "You are ||amount|| away from free shipping.",
+          "free_shipping_gradient": ""
+        }
+      },       
+      {
         "type": "text",
         "id": "free_shipping_limit",
         "label": "Minimum spend for free shipping",
