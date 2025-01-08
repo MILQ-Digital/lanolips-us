@@ -1474,6 +1474,13 @@
         "content": "t:settings_schema.cart.settings.cart_drawer.header"
       },
       {
+        "type": "text",
+        "id": "free_shipping_limit",
+        "label": "Minimum spend for free shipping",
+        "default": "100",
+        "info": "Use round numbers. Exclude currency, symbols, and letters. [More info](https://help.shopify.com/en/manual/shipping/setting-up-and-managing-your-shipping/free-shipping-rates#free-shipping-over-a-certain-value)"
+      },      
+      {
         "type": "collection",
         "id": "cart_drawer_collection",
         "label": "t:settings_schema.cart.settings.cart_drawer.collection.label",
