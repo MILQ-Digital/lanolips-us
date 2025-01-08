@@ -227,7 +227,11 @@
 }
 
 .promo_banner .card-wrapper .card__content .card__information {
-  padding: 20px 30px; 
+  padding: 20px 30px!important; 
+}
+
+.promo_banner .card__information button {
+  margin-top: 0;
 }
 
 .promo_banner .card-wrapper:hover .card__content {
