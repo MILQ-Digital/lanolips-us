@@ -134,9 +134,10 @@
     "show_vendor": false,
     "show_cart_note": false,
     "enable_freeshipping": true,
-    "message": "Add ||amount|| more for FREE shipping!",
+    "qualified_shipping_message": "Add ||amount|| more for FREE shipping!",
     "cart_drawer_collection": "",
     "cart_color_scheme": "scheme-2",
+    "message": "Add ||amount|| more for FREE shipping!",
     "sections": {
       "main-password-header": {
         "type": "main-password-header",
