@@ -975,7 +975,7 @@ a.product__text {
 }
 
 @media screen and (min-width: 750px) {
-  .product__column-sticky {
+  media-gallery.product__column-sticky {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
