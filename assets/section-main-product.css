@@ -975,16 +975,28 @@ a.product__text {
 }
 
 @media screen and (min-width: 750px) {
+  .product__media-wrapper .slider-mobile-gutter {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    order: 2;
+  }
+
   .product--thumbnail_slider .thumbnail-slider {
     display: flex;
     align-items: center;
+    width: 20%;
+    flex-direction: column;
+    order: 1;
   }
 
   .thumbnail-slider .thumbnail-list.slider--tablet-up {
     display: flex;
-    padding: 0.5rem;
+    padding: .5rem;
     flex: 1;
-    scroll-padding-left: 0.5rem;
+    scroll-padding-left: .5rem;
+    flex-direction: column;
+    width: 100%;
   }
 
   .product__media-wrapper .slider-mobile-gutter .slider-button {
