@@ -1045,6 +1045,11 @@ input.mobile-facets__checkbox {
   top: calc(50%);
   width: 14px;
   margin-left: 10px;
+  height: 7.5px;
+}
+
+.mobile-facets__summary {
+  margin-left: 10px;
 }
 
 .mobile-facets__footer {
