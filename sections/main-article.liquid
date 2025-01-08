@@ -52,7 +52,7 @@
             {{ article.title | escape }}
           </h1>
           {%- if block.settings.blog_show_date -%}
-            <span class="circle-divider caption-with-letter-spacing">
+            <span class="circle-divider caption-with-letter-spacing hidden">
               {{- article.published_at | time_tag: format: 'date' -}}
             </span>
           {%- endif -%}
