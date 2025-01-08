@@ -409,7 +409,7 @@ cart-drawer-items::-webkit-scrollbar-track-piece {
 }
 
 .free-shipping__success-message {
-  display: none;
+  display: none; 
 }
 
 .is-success .free-shipping__success-message {
