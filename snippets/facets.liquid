@@ -477,7 +477,7 @@
                     </a>
                 </facet-remove>                
               </div>
-  <div class="active-facets active-facets-mobile medium-hide large-up-hide">
+  <div class="active-facets active-facets-mobile">
     {%- for filter in results.filters -%}
       {%- for value in filter.active_values -%}
         <facet-remove>
@@ -797,6 +797,8 @@
     </h4>
     {%- render 'loading-spinner' -%}
   </div>
+
+  {% comment %}
   {%- if filter_type == 'drawer' -%}
     <facet-filters-form class="facets facets-pill small-hide">
       <form id="FacetFiltersPillsForm" class="facets__form">
@@ -843,4 +845,6 @@
       </form>
     </facet-filters-form>
   {%- endif -%}
+  {% endcomment %}
+
 </div>
