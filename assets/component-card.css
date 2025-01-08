@@ -210,13 +210,24 @@
   transition: all 0.35s ease;
 }
  
-.collection-list .card-wrapper:hover .card__information,
-.promo_banner .card-wrapper:hover .card__content {
+.collection-list .card-wrapper:hover .card__information {
   max-height: 100%;
   -moz-transform: translateY(-40%);
   -ms-transform: translateY(-40%);
   -o-transform: translateY(-40%);
   transform: translateY(-40%);  
+}
+
+.promo_banner .card-wrapper:hover .card__content {
+  max-height: 100%;
+  -moz-transform: translateY(-30%);
+  -ms-transform: translateY(-30%);
+  -o-transform: translateY(-30%);
+  transform: translateY(-30%);  
+}
+
+.promo_banner.grid__item .card-wrapper:hover a {
+  height: 91%;
 }
 
 @media screen and (min-width: 1200px) {
