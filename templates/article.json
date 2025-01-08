@@ -50,7 +50,7 @@
       "settings": {
         "heading": "Read More",
         "heading_size": "h1",
-        "blog": "",
+        "blog": "news",
         "post_limit": 3,
         "columns_desktop": 3,
         "color_scheme": "scheme-2",
