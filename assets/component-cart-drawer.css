@@ -404,6 +404,10 @@ cart-drawer-items::-webkit-scrollbar-track-piece {
   }
 }
 
+.free-shipping {
+  text-align: center;
+}
+
 .free-shipping__success-message {
   display: none; 
 }
@@ -417,8 +421,8 @@ cart-drawer-items::-webkit-scrollbar-track-piece {
 }
 
 .free-shipping__progress-bar {
-  --progress-bg: transparent;
-  --progress-value-bg: linear-gradient(to right, var(--Lano-Bright-pink) 0%, var(--Lano-light-pink) 100%);
+  --progress-bg: var(--Lano-light-pink);
+  --progress-value-bg: var(--Lano-Bright-pink);
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
