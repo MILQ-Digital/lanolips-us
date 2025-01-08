@@ -425,7 +425,7 @@ cart-drawer-items::-webkit-scrollbar-track-piece {
   display: block;
   width: 100%;
   height: 8px;
-  background: var(--bg-accent);
+  background: var(--Lano-light-pink);
   border-radius: 4px;
   margin-top: 5px;
   overflow: hidden;
