@@ -77,7 +77,7 @@
           <div class="card__information">
             <div class="article-card__info caption-with-letter-spacing h5">
               {%- if show_date -%}
-                <span class="circle-divider">{{ article.published_at | date: "%B %Y" }}</span>
+                 <span class="circle-divider">{{ article.published_at | date: "%B %Y" }}</span>
               {%- endif -%}
               {%- if show_author -%}
                 <span>{{ article.author }}</span>
@@ -116,7 +116,7 @@
         <div class="card__information">
           <div class="article-card__info caption-with-letter-spacing h5">
             {%- if show_date -%}
-              <span class="circle-divider">{{ article.published_at | time_tag: format: 'date' }}</span>
+              <span class="circle-divider">{{ article.published_at | date: "%B %Y" }}</span>
             {%- endif -%}
             {%- if show_author -%}
               <span>{{ article.author }}</span>
