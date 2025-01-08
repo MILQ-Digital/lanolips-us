@@ -27,7 +27,7 @@
     endcapture
 
     assign message = message | replace: '||amount||', left_to_spend
-    assign qualified_shipping_message = 'cart.general.qualified_shipping_message'
+    assign qualified_shipping_message = cart.general.qualified_shipping_message
 
     capture free_shipping_classes
       if is_cart_drawer
