@@ -1485,7 +1485,13 @@
         "label": "Message",
         "info": "Use ||amount|| to display progress towards free shipping.",
         "default": "You are ||amount|| away from free shipping."
-      },       
+      },   
+      {
+        "type": "textarea",
+        "id": "qualified_shipping_message",
+        "label": "Success Message",
+        "default": "Congratulations! Your order qualifies for free shipping"
+      },           
       {
         "type": "text",
         "id": "free_shipping_limit",
