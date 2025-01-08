@@ -16,6 +16,7 @@
     row-gap: var(--grid-desktop-vertical-spacing);
     display: flex;
     flex-wrap: wrap;
+    row-gap: 100px;
   }
 
   .blog-articles--collage > *:nth-child(3n + 1),
