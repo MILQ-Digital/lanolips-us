@@ -403,3 +403,15 @@ cart-drawer-items::-webkit-scrollbar-track-piece {
     margin-left: 0;
   }
 }
+
+.free-shipping__success-message {
+  display: none;
+}
+
+.is-success .free-shipping__success-message {
+  display: inline;
+}
+
+.is-success .free-shipping__success-message~.free-shipping__default-message {
+  display: none;
+}
