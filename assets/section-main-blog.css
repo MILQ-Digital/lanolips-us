@@ -5,8 +5,8 @@
   /*row-gap: var(--grid-mobile-vertical-spacing);*/
   row-gap: 80px;
 }
-
-  .main-blog .title--primary {display: none;}
+.article-card__info {padding-bottom: 1rem}
+.main-blog .title--primary {display: none;}
 
 .blog-articles .card-wrapper {
   width: 100%;
