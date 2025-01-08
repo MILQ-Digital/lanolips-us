@@ -975,6 +975,12 @@ a.product__text {
 }
 
 @media screen and (min-width: 750px) {
+  .product__column-sticky {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+
   .product__media-wrapper .slider-mobile-gutter {
     width: 80%;
     display: flex;
