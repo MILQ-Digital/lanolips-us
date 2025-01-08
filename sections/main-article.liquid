@@ -43,7 +43,7 @@
 
       {%- when 'title' -%}
         <header
-          class="page-width page-width--narrow hey{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--fade-in{% endif %}"
+          class="page-width {% if settings.animations_reveal_on_scroll %} scroll-trigger animate--fade-in{% endif %}"
           {{ block.shopify_attributes }}
         >
           <h1
