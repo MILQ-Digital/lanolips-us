@@ -807,6 +807,8 @@ a.active-facets__button.focused .active-facets__button-inner {
 .mobile-facets__header-inner {
   flex-grow: 1;
   position: relative;
+  display: flex;
+  justify-content: space-between;
 }
 
 .mobile-facets__info {
@@ -816,6 +818,7 @@ a.active-facets__button.focused .active-facets__button-inner {
 .mobile-facets__heading {
   margin: 0;
   font-weight: 500;
+  padding-left: 20px;
 }
 
 .mobile-facets__count {
@@ -866,7 +869,7 @@ a.active-facets__button.focused .active-facets__button-inner {
   align-items: center;
   justify-content: center;
   position: fixed;
-  top: 14px;
+  top: 19px;
   left: 1rem;
   width: 4.4rem;
   height: 4.4rem;
