@@ -930,7 +930,6 @@ details.menu-opening .mobile-facets__close .svg-wrapper {
   right: 0px;
   bottom: 0px;
   display: block;
-  background-color: rgba(var(--color-foreground), 0.04);
   opacity: 0;
   visibility: hidden;
 }
@@ -1014,6 +1013,8 @@ input.mobile-facets__checkbox {
   z-index: 2;
   margin-right: 1.2rem;
   flex-shrink: 0;
+  visibility: hidden;
+  display: none;
 }
 
 .mobile-facets__label .icon-checkmark {
@@ -1033,6 +1034,14 @@ input.mobile-facets__checkbox {
 .mobile-facets__summary .icon-caret {
   margin-left: auto;
   display: block;
+}
+
+.mobile-facets__arrow .icon-caret {
+  position: relative;
+  right: auto;
+  top: calc(50%);
+  width: 14px;
+  margin-left: 10px;
 }
 
 .mobile-facets__footer {
