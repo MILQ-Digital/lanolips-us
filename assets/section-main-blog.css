@@ -7,7 +7,7 @@
 }
 .article-card__info {padding-bottom: 1rem}
 .main-blog .title--primary {display: none;}
-
+.article-card__excerpt {margin: 0 auto 3rem;}
 .blog-articles .card-wrapper {
   width: 100%;
 }
