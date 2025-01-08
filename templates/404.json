@@ -80,7 +80,7 @@
         "mobile_content_alignment": "center",
         "stack_images_on_mobile": true,
         "show_text_below": true,
-        "padding_top": 36,
+        "padding_top": 100,
         "padding_bottom": 0
       }
     }
