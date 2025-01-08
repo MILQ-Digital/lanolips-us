@@ -57,7 +57,7 @@
         "button_XKdciq"
       ],
       "custom_css": [
-        ".button {--border-offset: none; border-bottom: 2px solid; border-radius: 0; padding: 0; }"
+        ".button, .button:hover {--border-offset: none; border-bottom: 2px solid; border-radius: 0; padding: 0;}"
       ],
       "settings": {
         "desktop_content_position": "left",
