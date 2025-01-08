@@ -1485,11 +1485,11 @@
         "label": "Custom progress bar gradient"
       },         
       {
-        "type": "free-shipping",
-        "settings": {
-          "message": "You are ||amount|| away from free shipping.",
-          "free_shipping_gradient": ""
-        }
+        "type": "textarea",
+        "id": "message",
+        "label": "Message",
+        "info": "Use ||amount|| to display progress towards free shipping.",
+        "default": "You are ||amount|| away from free shipping."
       },       
       {
         "type": "text",
