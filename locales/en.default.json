@@ -53,7 +53,8 @@
     "cart": {
       "view": "View cart ({{ count }})",
       "view_empty_cart": "View cart",
-      "item_added": "Item added to your cart"
+      "item_added": "Item added to your cart",
+      "qualified_shipping_message": "Congratulations! Your order qualifies for free shipping"
     },
     "share": {
       "close": "Close share",
