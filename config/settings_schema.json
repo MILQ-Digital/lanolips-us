@@ -1481,7 +1481,7 @@
       },         
       {
         "type": "textarea",
-        "id": "message",
+        "id": "qualified_shipping_message",
         "label": "Message",
         "info": "Use ||amount|| to display progress towards free shipping.",
         "default": "You are ||amount|| away from free shipping."
