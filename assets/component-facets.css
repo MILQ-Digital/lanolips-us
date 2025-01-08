@@ -591,9 +591,9 @@ button.facets__button {
 
 span.active-facets__button-inner {
   color: rgb(var(--color-foreground));
-  box-shadow: 0 0 0 0.1rem rgb(var(--color-foreground));
-  border-radius: 2.6rem;
-  font-size: 1rem;
+  border: 1px solid rgb(var(--color-foreground));
+  border-radius: 24px;
+  font-size: 14px;
   min-height: 0;
   min-width: 0;
   padding: 0.25rem 1.25rem;
@@ -619,12 +619,12 @@ span.active-facets__button-inner:after {
 
 @media screen and (min-width: 990px) {
   .active-facets__button {
-    margin-right: 1.5rem;
+    margin-right: 5px;
   }
 
   .active-facets__button-wrapper *,
   span.active-facets__button-inner {
-    font-size: 1.4rem;
+    font-size: 14px;
   }
 }
 
@@ -648,18 +648,6 @@ span.active-facets__button-inner:after {
     padding-top: 0;
     margin-left: 1.2rem;
   }
-}
-
-.active-facets__button:hover .active-facets__button-inner {
-  box-shadow: 0 0 0 0.2rem rgb(var(--color-foreground));
-}
-
-.active-facets__button--light .active-facets__button-inner {
-  box-shadow: 0 0 0 0.1rem rgba(var(--color-foreground), 0.2);
-}
-
-.active-facets__button--light:hover .active-facets__button-inner {
-  box-shadow: 0 0 0 0.2rem rgba(var(--color-foreground), 0.4);
 }
 
 a.active-facets__button:focus-visible {
