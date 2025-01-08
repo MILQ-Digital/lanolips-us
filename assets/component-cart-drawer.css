@@ -404,10 +404,6 @@ cart-drawer-items::-webkit-scrollbar-track-piece {
   }
 }
 
-.free-shipping {
-  text-align: center;
-}
-
 .free-shipping__success-message {
   display: none; 
 }
@@ -421,16 +417,16 @@ cart-drawer-items::-webkit-scrollbar-track-piece {
 }
 
 .free-shipping__progress-bar {
-  --progress-bg: var(--Lano-light-pink);
-  --progress-value-bg: var(--Lano-Bright-pink);
+  --progress-bg: transparent;
+  --progress-value-bg: linear-gradient(to right, var(--Lano-Bright-pink) 0%, var(--Lano-light-pink) 100%);
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
   display: block;
   width: 100%;
-  height: 5px;
+  height: 8px;
   background: var(--Lano-light-pink);
-  border-radius: 2px;
+  border-radius: 4px;
   margin-top: 5px;
   overflow: hidden;
 }
