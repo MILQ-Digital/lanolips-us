@@ -1000,11 +1000,13 @@ input.mobile-facets__checkbox {
 }
 
 .mobile-facets__label {
-  padding: 1.5rem 2rem 1.5rem 2.5rem;
+  padding: 5px 30px;
   width: 100%;
   transition: background-color 0.2s ease;
   word-break: break-word;
   display: flex;
+  font-size: 16px;
+  line-height: 25px;
 }
 
 .mobile-facets__label > svg {
