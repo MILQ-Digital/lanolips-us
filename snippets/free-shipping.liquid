@@ -1,5 +1,5 @@
 {%- liquid
-  assign free_shipping_limit = settings.free_shipping_limit
+  
   assign show_message = false
   if settings.qualified_shipping_message != blank
     assign show_message = true
@@ -9,6 +9,7 @@
 
 {%- if show_message -%}
   {%- liquid
+    assign free_shipping_limit = settings.free_shipping_limit
     assign limit = free_shipping_limit | plus: 0
     assign limit_currency = limit | times: 100
     assign subtotal_without_currency = cart.total_price | plus: 0 | divided_by: 100
