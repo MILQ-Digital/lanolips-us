@@ -59,7 +59,8 @@
       "custom_css": [
         ".button {--border-offset: none; border-bottom: 2px solid; border-radius: 0; padding: 0;}",
         ".button:hover:after {--border-offset: none; border-radius: 0; background: transparent;}",
-        ".rich-text__buttons {margin-top: 0;}"
+        ".rich-text__buttons {margin-top: 0;}",
+        ".rich-text__text p br {display: none;}"
       ],
       "settings": {
         "desktop_content_position": "left",
