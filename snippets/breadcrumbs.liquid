@@ -26,12 +26,38 @@
   {{ divider_html }}
 
   {% if template contains 'product' %}
-    {%- if collection -%}
-      {{ collection.title | link_to: collection.url }}
 
-      {{ divider_html }}
-    {%- endif -%}
-    <span>{{- page_title -}}</span>
+      {% assign category = '' %}
+      {% assign subcategory = '' %}
+
+      {%- for tag in product.tags -%}
+          {%- if tag contains 'maincategory:' -%}
+              {% assign category = tag | remove: 'maincategory:' | strip %}
+          {%- elsif tag contains 'subcategory:' -%}
+              {% assign subcategory = tag | remove: 'subcategory:' | strip %}
+          {%- endif -%}
+      {%- endfor -%}
+
+      {% assign category_collection = '' %}
+      {% assign subcategory_collection = '' %}
+
+      <!-- Loop through all collections -->
+      {% for collection in collections %}
+        {% if collection.title == category %}
+          {% assign category_collection = collection %}
+        {% elsif collection.title == subcategory %}
+          {% assign subcategory_collection = collection %}
+        {% endif %}
+      {% endfor %}
+
+      {% if category_collection %}
+        <a class="cat" href="{{ category_collection.url }}">{{ category_collection.title }}</a>
+      {% endif %}
+
+      {% if subcategory_collection %}
+          {{ divider_html }} <a class="sub" href="{{ subcategory_collection.url }}">{{ subcategory_collection.title }}</a>
+      {% endif %}
+
   {%- elsif template.name == 'article' -%}
     {{ blog.title | link_to: blog.url }}
 
