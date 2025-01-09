@@ -1529,3 +1529,9 @@ a.product__text {
     border-radius: 14px;    
   }
 }
+
+.thumbnail {
+  overflow: hidden;
+  border: 1.5px solid transparent;
+  border-radius: 14px;   
+}
