@@ -1519,9 +1519,13 @@ a.product__text {
     position: relative;
     padding-left: 100px;
   }
-  
+
   .thumbnail-list.slider--tablet-up li.thumbnail-list__item.slider__slide {
     transform: rotate(-90deg);
-    width: calc(16.8% - .8rem); /* decrease percentage and it will increase items */
+    width: calc(20% - .7rem);
+    height: 113px;
+    overflow: hidden;
+    border: 1.5px solid transparent;
+    border-radius: 14px;    
   }
 }
