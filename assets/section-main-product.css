@@ -1497,8 +1497,13 @@ a.product__text {
 @media only screen and (min-width:900px) { 
   .product--small .thumbnail-list.slider--tablet-up li.thumbnail-list__item.slider__slide {
     transform: rotate(-90deg);
-    width: calc(20% - .8rem);
+    width: calc(20% - .7rem);
+    height: 113px;
+    overflow: hidden;
+    border: 1.5px solid transparent;
+    border-radius: 14px;
   }
+
   .grid__item.product__media-wrapper slider-component.thumbnail-slider {
     position: absolute;
     top: 0;
@@ -1509,10 +1514,12 @@ a.product__text {
     height: 100px;
     overflow: hidden;
   }
+
   .grid__item.product__media-wrapper {
     position: relative;
     padding-left: 100px;
   }
+  
   .thumbnail-list.slider--tablet-up li.thumbnail-list__item.slider__slide {
     transform: rotate(-90deg);
     width: calc(16.8% - .8rem); /* decrease percentage and it will increase items */
