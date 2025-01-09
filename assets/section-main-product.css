@@ -1537,3 +1537,7 @@ a.product__text {
   border: 1.5px solid transparent;
   border-radius: 14px;   
 }
+
+.slider-button {
+  color: rgba(var(--color-foreground), 1);
+}
