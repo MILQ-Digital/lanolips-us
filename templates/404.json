@@ -57,7 +57,7 @@
         "button_XKdciq"
       ],
       "custom_css": [
-        ".button {--border-offset: none; border-bottom: 2px solid; border-radius: 0; padding: 0;}",
+        ".button {--border-offset: none; border-bottom: 2px solid; border-radius: 0; padding: 0; line-height: 1.7em; align-items: end;}",
         ".button:hover:after {--border-offset: none; border-radius: 0; background: transparent;}",
         ".rich-text__buttons {margin-top: 0;}",
         ".rich-text__text p br {display: none;}"
