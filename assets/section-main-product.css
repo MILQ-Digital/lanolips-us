@@ -1501,6 +1501,7 @@ a.product__text {
     overflow: hidden;
     border: 1.5px solid transparent;
     border-radius: 14px;
+    margin: 0 10px;
   }
 
   .grid__item.product__media-wrapper slider-component.thumbnail-slider {
@@ -1525,7 +1526,8 @@ a.product__text {
     height: 113px;
     overflow: hidden;
     border: 1.5px solid transparent;
-    border-radius: 14px;    
+    border-radius: 14px; 
+    margin: 0 10px;   
   }
 }
 
