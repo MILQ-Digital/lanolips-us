@@ -3766,3 +3766,24 @@ details-disclosure > details {
     transform: translateX(100%) scaleX(0);
   }
 }
+
+.error-404 .rich-text .button {
+  --border-offset: none;
+  border-bottom: 2px solid;
+  border-radius: 0;
+  padding: 0;
+  line-height: 1.7em;
+  align-items: end;
+}
+
+.error-404 .rich-text .button:hover:after {
+  --border-offset: none;
+  border-radius: 0;
+  background: transparent;
+}
+.error-404 .rich-text .rich-text__buttons {
+  margin-top: 0;
+}
+.error-404 .rich-text .rich-text__text p br {
+  display: none;
+}
