@@ -35,15 +35,10 @@
             "heading": "Send Us An Enquiry",
             "heading_size": "hm"
           }
-        },
-        "contact_form_CtLaUc": {
-          "type": "contact_form",
-          "settings": {}
         }
       },
       "block_order": [
-        "heading_BbxH7D",
-        "contact_form_CtLaUc"
+        "heading_BbxH7D"
       ],
       "settings": {
         "image": "shopify://shop_images/Image_5.jpg",
