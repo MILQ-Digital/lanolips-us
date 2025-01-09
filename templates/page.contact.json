@@ -35,27 +35,10 @@
             "heading": "Send Us An Enquiry",
             "heading_size": "hm"
           }
-        },
-        "text_yhy9QU": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
-            "text_style": "body"
-          }
-        },
-        "button_gDPBUg": {
-          "type": "button",
-          "settings": {
-            "button_label": "Button label",
-            "button_link": "",
-            "button_style_secondary": false
-          }
         }
       },
       "block_order": [
-        "heading_BbxH7D",
-        "text_yhy9QU",
-        "button_gDPBUg"
+        "heading_BbxH7D"
       ],
       "settings": {
         "image": "shopify://shop_images/Image_5.jpg",
