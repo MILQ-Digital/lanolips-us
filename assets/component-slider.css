@@ -402,6 +402,7 @@ slider-component.slider-component-full-width {
 
 .slider-button .icon {
   height: 9px;
+  width: 13.9px;
 }
 
 .slider-button[disabled] .icon {
