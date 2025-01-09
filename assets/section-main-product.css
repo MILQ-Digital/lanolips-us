@@ -1304,6 +1304,8 @@ a.product__text {
   --constrained-height: max(var(--constrained-min-height), calc(100vh - var(--viewport-offset)));
   margin-right: auto;
   margin-left: auto;
+  border: 0;
+  background-color: var(--Lano-light-pink);
 }
 
 .product-media-container.constrain-height.media-fit-contain {
