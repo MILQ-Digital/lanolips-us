@@ -975,34 +975,16 @@ a.product__text {
 }
 
 @media screen and (min-width: 750px) {
-  media-gallery.product__column-sticky {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-
-  .product__media-wrapper .slider-mobile-gutter {
-    width: 80%;
-    display: flex;
-    flex-direction: column;
-    order: 2;
-  }
-
   .product--thumbnail_slider .thumbnail-slider {
     display: flex;
     align-items: center;
-    width: 20%;
-    flex-direction: column;
-    order: 1;
   }
 
   .thumbnail-slider .thumbnail-list.slider--tablet-up {
     display: flex;
-    padding: .5rem;
+    padding: 0.5rem;
     flex: 1;
-    scroll-padding-left: .5rem;
-    flex-direction: column;
-    width: 100%;
+    scroll-padding-left: 0.5rem;
   }
 
   .product__media-wrapper .slider-mobile-gutter .slider-button {
@@ -1010,7 +992,7 @@ a.product__text {
   }
 
   .thumbnail-list.slider--tablet-up .thumbnail-list__item.slider__slide {
-    width: 100%;
+    width: calc(25% - 0.8rem);
   }
 
   .product--thumbnail_slider .slider-mobile-gutter .slider-button {
@@ -1020,11 +1002,11 @@ a.product__text {
 
 @media screen and (min-width: 900px) {
   .product--small .thumbnail-list.slider--tablet-up .thumbnail-list__item.slider__slide {
-    width: 100%;
+    width: calc(25% - 0.8rem);
   }
 
   .thumbnail-list.slider--tablet-up .thumbnail-list__item.slider__slide {
-    width: 100%;
+    width: calc(20% - 0.8rem);
   }
 }
 
@@ -1508,5 +1490,31 @@ a.product__text {
 
   .recipient-form > input[type='checkbox']:checked + label .icon-checkmark {
     border: none;
+  }
+}
+
+
+@media only screen and (min-width:900px) { 
+  .product--small .thumbnail-list.slider--tablet-up li.thumbnail-list__item.slider__slide {
+    transform: rotate(-90deg);
+    width: calc(20% - .8rem);
+  }
+  .grid__item.product__media-wrapper slider-component.thumbnail-slider {
+    position: absolute;
+    top: 0;
+    transform: rotate(90deg);
+    width: 602px; /* manage width of small image */
+    left: 0;
+    transform-origin: left top;
+    height: 100px;
+    overflow: hidden;
+  }
+  .grid__item.product__media-wrapper {
+    position: relative;
+    padding-left: 100px;
+  }
+  .thumbnail-list.slider--tablet-up li.thumbnail-list__item.slider__slide {
+    transform: rotate(-90deg);
+    width: calc(16.8% - .8rem); /* decrease percentage and it will increase items */
   }
 }
