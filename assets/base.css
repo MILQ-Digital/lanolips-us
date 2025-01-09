@@ -3787,3 +3787,7 @@ details-disclosure > details {
 .error-404 .rich-text .rich-text__text p br {
   display: none;
 }
+
+@media screen and (max-width: 750px) {
+  .error-404 .page-width {padding: 0;}
+}
