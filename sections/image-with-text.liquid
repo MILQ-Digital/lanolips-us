@@ -101,16 +101,16 @@
                 {% when 'contact_form' %}
                   <div class="contact-form-block">
                     {% form 'contact' %}
-                      <div>
+                      <div class="client_name">
                         <label for="contact_first_name">First Name</label>
                         <input type="text" id="contact_first_name" name="contact[first_name]" placeholder="First Name" required>
-                      </div>
-                      <div>
                         <label for="contact_last_name">Last Name</label>
                         <input type="text" id="contact_last_name" name="contact[last_name]" placeholder="Last Name" required>
                       </div>
+                       <div class="client_email">
                       <label for="contact_form_email">Email</label>
                       <input type="email" id="contact_form_email" name="contact[email]" placeholder="Your Email">
+                       </div>
                        <div>
                         <label for="contact_phone">Phone Number</label>
                         <input type="tel" id="contact_phone" name="contact[phone]" placeholder="Your Phone Number" required>
