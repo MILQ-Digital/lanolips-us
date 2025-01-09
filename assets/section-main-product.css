@@ -1342,8 +1342,8 @@ a.product__text {
   }
 
   .product-media-container.constrain-height {
-    --viewport-offset: 0;
-    --constrained-min-height: 906px;
+    --viewport-offset: 0px;
+    --constrained-min-height: 500px;
   }
 
   .product-media-container.media-fit-cover,
