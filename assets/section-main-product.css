@@ -1496,7 +1496,7 @@ a.product__text {
 @media only screen and (min-width:900px) { 
   .product--small .thumbnail-list.slider--tablet-up li.thumbnail-list__item.slider__slide {
     transform: rotate(-90deg);
-    width: calc(20% - 1.18rem);
+    width: calc(27.1% - 1.18rem);
     height: 113px;
     overflow: hidden;
     border: 1.5px solid transparent;
@@ -1508,7 +1508,7 @@ a.product__text {
     position: absolute;
     top: 0;
     transform: rotate(90deg);
-    width: 602px; /* manage width of small image */
+    width: 470px; /* manage width of small image */
     left: 0;
     transform-origin: left top;
     height: 100px;
@@ -1522,7 +1522,7 @@ a.product__text {
 
   .thumbnail-list.slider--tablet-up li.thumbnail-list__item.slider__slide {
     transform: rotate(-90deg);
-    width: calc(20% - 1.18rem);
+    width: calc(27.1% - 1.18rem);
     height: 113px;
     overflow: hidden;
     border: 1.5px solid transparent;
