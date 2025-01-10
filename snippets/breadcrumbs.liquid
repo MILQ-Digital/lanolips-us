@@ -84,3 +84,69 @@
   {% endif %}
 
 </nav>
+
+<!-- SEO JSON-LD Structured Data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "{{ routes.root_url }}"
+    }
+    {% if template contains 'product' %}
+      ,{
+        "@type": "ListItem",
+        "position": 2,
+        "name": "{{ category_collection.title }}",
+        "item": "{{ category_collection.url }}"
+      }
+      {% if subcategory_collection %}
+        ,{
+          "@type": "ListItem",
+          "position": 3,
+          "name": "{{ subcategory }}",
+          "item": "{{ tag_url }}"
+        }
+      {% endif %}
+      ,{
+        "@type": "ListItem",
+        "position": {% if subcategory_collection %}4{% else %}3{% endif %},
+        "name": "{{ product.title }}",
+        "item": "{{ product.url }}"
+      }
+    {% elsif template contains 'collection' %}
+      ,{
+        "@type": "ListItem",
+        "position": 2,
+        "name": "{{ collection.title }}",
+        "item": "{{ collection.url }}"
+      }
+      {% if current_tags.size > 0 %}
+        ,{
+          "@type": "ListItem",
+          "position": 3,
+          "name": "{{ tag_title | capitalize }}",
+          "item": "{{ collection.url | append: '?q=' | append: tag_title }}"
+        }
+      {% endif %}
+    {% elsif template.name == 'article' %}
+      ,{
+        "@type": "ListItem",
+        "position": 2,
+        "name": "{{ blog.title }}",
+        "item": "{{ blog.url }}"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "{{ page_title }}",
+        "item": "{{ canonical_url }}"
+      }
+    {% endif %}
+  ]
+}
+</script>
