@@ -8,6 +8,10 @@
     if product_created_timestamp > check_date_timestamp
         assign badge_new = 'New'
     endif
+
+  assign compare_at_price = target.compare_at_price
+  assign price = target.price | default: 1999
+  assign available = target.available | default: false    
 -%}      
 
 <div class="badges
