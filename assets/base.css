@@ -3094,7 +3094,7 @@ details-disclosure > details {
   border-radius: 20px;
   display: inline-block;
   font-size: 12px;
-  letter-spacing: 12%;
+  letter-spacing: 1.44px;
   line-height: 135%;
   padding: 7px 16px;
   text-align: center;
