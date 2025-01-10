@@ -12,12 +12,12 @@
     "main": {
       "type": "main-product",
       "blocks": {
-        "price": {
-          "type": "price",
-          "settings": {}
-        },
         "title": {
           "type": "title",
+          "settings": {}
+        },
+        "price": {
+          "type": "price",
           "settings": {}
         },
         "description": {
@@ -84,8 +84,8 @@
         }
       },
       "block_order": [
-        "price",
         "title",
+        "price",
         "description",
         "variant_picker",
         "quantity_selector",
@@ -166,7 +166,7 @@
         "products_to_show": 4,
         "columns_desktop": 4,
         "color_scheme": "scheme-2",
-        "image_ratio": "square",
+        "image_ratio": "portrait",
         "image_shape": "default",
         "show_secondary_image": true,
         "show_vendor": false,
