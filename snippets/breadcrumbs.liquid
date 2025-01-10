@@ -60,7 +60,7 @@
 {% endif %}
 
 {% if subcategory_collection %}
-    {% assign tag_url = category_collection.url | append: '?q=' | append: subcategory %}
+    {% assign tag_url = category_collection.url | append: '/' | append: subcategory %}
     {{ divider_html }} <a class="sub" href="{{ tag_url }}">{{ subcategory }}</a>
   {% endif %}
 
