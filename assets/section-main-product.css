@@ -1311,6 +1311,7 @@ a.product__text {
 .product-media-container.constrain-height.media-fit-contain {
   --contained-width: calc(var(--constrained-height) * var(--aspect-ratio));
   width: min(var(--contained-width), 100%);
+  max-width: 668px;
 }
 
 .product-media-container .media {
@@ -1499,7 +1500,7 @@ a.product__text {
 @media only screen and (min-width:900px) { 
   .product--small .thumbnail-list.slider--tablet-up li.thumbnail-list__item.slider__slide {
     transform: rotate(-90deg);
-    width: calc(27.1% - .98rem);
+    width: 91px;
     height: 115px;
     overflow: hidden;
     border: 1.5px solid transparent;
@@ -1525,7 +1526,7 @@ a.product__text {
 
   .thumbnail-list.slider--tablet-up li.thumbnail-list__item.slider__slide {
     transform: rotate(-90deg);
-    width: calc(27.1% - .98rem);
+    width: 91px;
     height: 115px;
     overflow: hidden;
     border: 1.5px solid transparent;
