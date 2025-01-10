@@ -85,7 +85,7 @@
         >
 
           {%- render 'breadcrumbs' -%} 
-          {%- render 'badges' -%}
+          {%- render 'badges', product:product -%}
           {%- assign product_form_id = 'product-form-' | append: section.id -%}
 
           {%- for block in section.blocks -%}

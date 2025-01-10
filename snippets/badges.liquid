@@ -10,12 +10,14 @@
     endif
 -%}      
 
-{%- if badge_new != '' -%}
-    <span class="badge-box"
-      data-aos="fade"
-      data-aos-delay="{{ aos_delay }}"
-      data-aos-duration="{{ aos_duration }}"
-      data-aos-anchor="{{ aos_anchor }}">
-        {{ badge_new }}
-    </span>
-{%- endif -%}
+<div class="badges">
+    {%- if badge_new != '' -%}
+        <span class="badge-box"
+        data-aos="fade"
+        data-aos-delay="{{ aos_delay }}"
+        data-aos-duration="{{ aos_duration }}"
+        data-aos-anchor="{{ aos_anchor }}">
+            {{ badge_new }}
+        </span>
+    {%- endif -%}
+</div>
