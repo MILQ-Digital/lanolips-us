@@ -85,7 +85,7 @@
         >
 
           {%- render 'breadcrumbs' -%} 
-          {%- render 'badges', product:product, show_badges: true, price_class: 'price--large' -%}
+          {%- render 'badges', product:product, show_badges: true, price_class: 'price--large', use_variant: true -%}
           {%- assign product_form_id = 'product-form-' | append: section.id -%}
 
           {%- for block in section.blocks -%}
