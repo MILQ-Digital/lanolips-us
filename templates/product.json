@@ -170,8 +170,10 @@
         "image_shape": "default",
         "show_secondary_image": true,
         "show_vendor": false,
+        "quick_add": "standard",
         "show_rating": false,
         "columns_mobile": "2",
+        "swipe_on_mobile": true,
         "padding_top": 36,
         "padding_bottom": 28
       }
