@@ -165,7 +165,7 @@
         "heading_size": "hs",
         "products_to_show": 4,
         "columns_desktop": 4,
-        "full_width": true,
+        "full_width": false,
         "color_scheme": "scheme-2",
         "image_ratio": "portrait",
         "image_shape": "default",
