@@ -58,13 +58,6 @@
 
         {%- if gift_card_recipient_feature_active -%}
           {%- render 'gift-card-recipient-form', product: product, form: form, section: section -%}
-          
-                  {%- render 'price',
-                    product: product,
-                    use_variant: true,
-                    show_badges: true,
-                    price_class: 'price--large'
-                  -%}
         {%- endif -%}
 
         <div class="product-form__buttons">
@@ -100,6 +93,12 @@
             </span>
             {%- render 'loading-spinner' -%}
             {% render 'price-button', product: product, price_class: '', show_compare_at_price: true %}
+                              {%- render 'price',
+                    product: product,
+                    use_variant: true,
+                    show_badges: true,
+                    price_class: 'price--large'
+                  -%}
           </button>
           {%- if show_dynamic_checkout -%}
             {{ form | payment_button }}
