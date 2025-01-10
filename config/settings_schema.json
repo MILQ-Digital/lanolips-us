@@ -1271,7 +1271,23 @@
         "id": "sold_out_badge_color_scheme",
         "label": "t:settings_schema.badges.settings.sold_out_badge_color_scheme.label",
         "default": "scheme-3"
-      }
+      },
+      {
+        "type": "color_scheme",
+        "id": "new_badge_color_scheme",
+        "label": "New item badge",
+        "default": "scheme-5"
+      },
+      {
+        "type": "range",
+        "id": "badge_new_date_limit",
+        "label": "Date limit",
+        "min": 0,
+        "max": 20,
+        "step": 1,
+        "default": 5,
+        "info": "Badge appears if product was created within this many days"
+      }          
     ]
   },
   {
