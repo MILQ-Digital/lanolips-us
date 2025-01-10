@@ -67,7 +67,7 @@
         >
           {% assign skip_card_product_styles = false %}
           {% for recommendation in recommendations.products %}
-            <li class="grid__item {% if show_mobile_slider %} slider__slide{% endif %}">
+            <li id="Slide-{{ section.id }}-{{ forloop.index }}" class="grid__item {% if show_mobile_slider %} slider__slide{% endif %}">
               {% render 'card-product',
                 card_product: recommendation,
                 media_aspect_ratio: section.settings.image_ratio,
