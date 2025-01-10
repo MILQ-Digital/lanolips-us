@@ -59,9 +59,11 @@
         <a class="cat" href="{{ category_collection.url }}">{{ category_collection.title }}</a>
       {% endif %}
 
-      {% if subcategory_collection %}
-          {{ divider_html }} <a class="sub" href="{{ subcategory_collection.url }}">{{ subcategory_collection.title }}</a>
-      {% endif %}
+{% if subcategory_collection %}
+  {% assign tag_url = subcategory_collection.url | append: '?filter_by=' | append: subcategory_collection.handle %}
+  {{ divider_html }} <a class="sub" href="{{ tag_url }}">{{ subcategory_collection.title }}</a>
+{% endif %}
+
 
   {%- elsif template.name == 'article' -%}
     {{ blog.title | link_to: blog.url }}
