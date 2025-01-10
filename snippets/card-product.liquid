@@ -133,6 +133,22 @@
                 {{- 'products.product.on_sale' | t -}}
               </span>
             {%- endif -%}
+          {%- liquid      
+            assign badge_new = ''
+            assign product_created_timestamp = card_product.created_at | date: '%s' | plus: 0
+            assign days_in_seconds = settings.badge_new_date_limit | times: 24 | times: 60 | times: 60
+            assign current_date_timestamp = "now" | date: '%s'
+            assign check_date_timestamp = current_date_timestamp | minus: days_in_seconds
+
+            if product_created_timestamp > check_date_timestamp
+                assign badge_new = 'New'
+            endif
+          -%} 
+          {%- if badge_new != '' -%}
+              <span class="badge price__badge-new color-{{ settings.new_badge_color_scheme }}">
+                  {{ badge_new }}
+              </span>
+          {%- endif -%}               
           </div>
         </div>
         {% if quick_add == 'standard' %}
