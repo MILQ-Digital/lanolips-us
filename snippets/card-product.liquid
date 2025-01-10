@@ -634,6 +634,7 @@
           {% endif %}
         {% endif %}
         <div class="card__badge {{ settings.badge_position }}">
+          {%- render 'badges', product:card_product, show_badges: true, price_class: 'price--large', use_variant: true -%}
           {%- if card_product.available == false -%}
             <span
               id="Badge-{{ section_id }}-{{ card_product.id }}"

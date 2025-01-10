@@ -3089,6 +3089,11 @@ details-disclosure > details {
   }
 }
 
+.badges {
+  display: flex;
+  gap: 5px;
+}
+
 .badge {
   border: 0;
   border-radius: 20px;
