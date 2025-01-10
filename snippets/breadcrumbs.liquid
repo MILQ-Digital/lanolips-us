@@ -74,12 +74,16 @@
     {% endif %}  
 
   {%- elsif template.name == 'article' -%}
+
     {{ blog.title | link_to: blog.url }}
 
     {{ divider_html }}
     <span>{{- page_title -}}</span>
+
   {% else %}
+
     <span>{{- page_title -}}</span>
+    
   {% endif %}
 
 </nav>
