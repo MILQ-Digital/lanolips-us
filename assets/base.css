@@ -3090,7 +3090,7 @@ details-disclosure > details {
 }
 
 .badge {
-  border: 1px solid transparent;
+  border: 0;
   border-radius: 20px;
   display: inline-block;
   font-size: 12px;
