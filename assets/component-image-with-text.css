@@ -14,6 +14,7 @@
 .contact-page .image-with-text__content form .field:after {
   border: none;  
 }
+.contact-page .image-with-text__content form .field {display: block}
 
 @media screen and (min-width: 750px) {
   .image-with-text__grid--reverse {
