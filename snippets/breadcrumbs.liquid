@@ -67,11 +67,11 @@
   {%- elsif template contains 'collection' -%}
 
     {{ divider_html }}
-    <span>{{- collection.title -}}</span>
+    <span class="c">{{- collection.title -}}</span>
 
     {% if current_tags.size > 0 %}
       {% assign tag_title = current_tags[0] %}
-      <span>{{ tag_title | capitalize }}</span>
+      <span class="t">{{ tag_title | capitalize }}</span>
     {% endif %}  
 
   {%- elsif template.name == 'article' -%}
@@ -79,7 +79,7 @@
     {{ blog.title | link_to: blog.url }}
 
     {{ divider_html }}
-    <span>{{- page_title -}}</span>
+    <span class="a">{{- page_title -}}</span>
 
   {% endif %}
 
