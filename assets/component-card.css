@@ -422,8 +422,8 @@
 
 .grid:not(.collection-list) .card__media .media img:first-child {
   height: 90%;
-  left: auto;
-  right: auto;
+  left: 0;
+  right: 0;
   top: auto;
   margin: 0 auto;
   width: 80%;

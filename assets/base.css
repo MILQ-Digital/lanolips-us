@@ -3091,17 +3091,18 @@ details-disclosure > details {
 
 .badge {
   border: 1px solid transparent;
-  border-radius: var(--badge-corner-radius);
+  border-radius: 20px;
   display: inline-block;
   font-size: 12px;
-  letter-spacing: 0.1rem;
-  line-height: 1;
-  padding: 0.5rem 1.3rem 0.6rem 1.3rem;
+  letter-spacing: 12%;
+  line-height: 135%;
+  padding: 7px 16px;
   text-align: center;
   background-color: rgb(var(--color-button));
   border-color: rgb(var(--color-button));
   color: rgb(var(--color-button-text));
   word-break: break-word;
+  text-transform: uppercase;
 }
 
 .gradient:not(body) {
