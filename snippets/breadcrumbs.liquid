@@ -46,25 +46,32 @@
       {% assign category_collection = '' %}
       {% assign subcategory_collection = '' %}
 
-<!-- Loop through all collections -->
-{% for collection in collections %}
-  {% if collection.title == category %}
-    {% assign category_collection = collection %}
-  {% elsif collection.title == subcategory %}
-    {% assign subcategory_collection = collection %}
-  {% endif %}
-{% endfor %}
+      <!-- Loop through all collections -->
+      {% for collection in collections %}
+        {% if collection.title == category %}
+          {% assign category_collection = collection %}
+        {% elsif collection.title == subcategory %}
+          {% assign subcategory_collection = collection %}
+        {% endif %}
+      {% endfor %}
 
-{% if category_collection %}
-  <a class="cat" href="{{ category_collection.url }}">{{ category_collection.title }}</a>
-{% endif %}
+      {% if category_collection %}
+        <a class="cat" href="{{ category_collection.url }}">{{ category_collection.title }}</a>
+      {% endif %}
 
-{% if subcategory_collection %}
-    {% assign tag_url = category_collection.url | append: '/' | append: subcategory %}
-    {{ divider_html }} <a class="sub" href="{{ tag_url }}">{{ subcategory }}</a>
-  {% endif %}
+      {% if subcategory_collection %}
+        {% assign tag_url = category_collection.url | append: '/' | append: subcategory %}
+        {{ divider_html }} <a class="sub" href="{{ tag_url }}">{{ subcategory }}</a>
+      {% endif %}
 
+  {%- elsif template.name == 'collection' -%}
+    {{ divider_html }}
+    <span>{{- page_title -}}</span>
 
+    {% if current_tags.size > 0 %}
+      {% assign tag_title = current_tags[0] %}
+      <span>{{ tag_title | capitalize }}</span>
+    {% endif %}  
 
   {%- elsif template.name == 'article' -%}
     {{ blog.title | link_to: blog.url }}
