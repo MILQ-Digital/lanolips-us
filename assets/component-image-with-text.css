@@ -16,6 +16,7 @@
 }
 .contact-page .image-with-text__content form .field, .contact-page .image-with-text__content form .field > label {display: block}
 .contact-page .image-with-text__content .contact__fields {display: flex; column-gap: 20px;}
+.contact-page .image-with-text__content .contact__fields input {border: 1px solid}
 
 @media screen and (min-width: 750px) {
   .image-with-text__grid--reverse {
