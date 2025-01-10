@@ -55,10 +55,10 @@
     data-product-id="{{ product.id }}"
   >
     {% if recommendations.performed and recommendations.products_count > 0 %}
-      <h2 class="related-products__heading inline-richtext {{ section.settings.heading_size }}">
+      <h2 class="related-products__heading page-width inline-richtext {{ section.settings.heading_size }}">
         {{ section.settings.heading }}
       </h2>
-      <slider-component class="slider-mobile-gutter {% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
+      <slider-component class="slider-mobile-gutter {% if section.settings.full_width %} slider-component-full-width{% endif %}{% if show_mobile_slider == false %} page-width{% endif %} {% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
         <ul
           id="Slider-{{ section.id }}"
           data-id="{{ section.id }}"
@@ -179,6 +179,12 @@
       "default": 4,
       "label": "t:sections.related-products.settings.columns_desktop.label"
     },
+    {
+      "type": "checkbox",
+      "id": "full_width",
+      "label": "t:sections.featured-collection.settings.full_width.label",
+      "default": false
+    },    
     {
       "type": "color_scheme",
       "id": "color_scheme",
