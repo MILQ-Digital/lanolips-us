@@ -651,7 +651,7 @@
           {%- endif -%}
           {%- liquid      
             assign badge_new = ''
-            assign product_created_timestamp = product.created_at | date: '%s' | plus: 0
+            assign product_created_timestamp = card_product.created_at | date: '%s' | plus: 0
             assign days_in_seconds = settings.badge_new_date_limit | times: 24 | times: 60 | times: 60
             assign current_date_timestamp = "now" | date: '%s'
             assign check_date_timestamp = current_date_timestamp | minus: days_in_seconds
