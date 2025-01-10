@@ -82,33 +82,7 @@
             </li>
             {%- assign skip_card_product_styles = true -%}
           {% endfor %}
-        </ul>
-        {%- if show_mobile_slider  -%}
-          <div class="slider-buttons">
-            <button
-              type="button"
-              class="slider-button slider-button--prev"
-              name="previous"
-              aria-label="{{ 'general.slider.previous_slide' | t }}"
-              aria-controls="Slider-{{ section.id }}"
-            >
-              <span class="svg-wrapper">
-                {{- 'icon-arrow-left.svg' | inline_asset_content -}}
-              </span>
-            </button>
-            <button
-              type="button"
-              class="slider-button slider-button--next"
-              name="next"
-              aria-label="{{ 'general.slider.next_slide' | t }}"
-              aria-controls="Slider-{{ section.id }}"
-            >
-              <span class="svg-wrapper">
-                {{- 'icon-arrow-right.svg' | inline_asset_content -}}
-              </span>
-            </button>
-          </div>
-        {%- endif -%}      
+        </ul>     
       </slider-component>
     {% endif %}
   </product-recommendations>
