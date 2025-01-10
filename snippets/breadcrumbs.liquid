@@ -64,7 +64,7 @@
         {{ divider_html }} <a class="sub" href="{{ tag_url }}">{{ subcategory }}</a>
       {% endif %}
 
-  {%- elsif contains == 'collection' -%}
+  {%- elsif contains 'collection' -%}
     {{ divider_html }}
     <span>{{- page_title -}}</span>
 
