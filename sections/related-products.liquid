@@ -49,13 +49,13 @@
 
 <div class="color-{{ section.settings.color_scheme }} gradient">
   <product-recommendations
-    class="related-products page-width section-{{ section.id }}-padding isolate{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %} {% if show_mobile_slider %} title-wrapper--self-padded-tablet-down{% endif %}"
+    class="related-products {% unless section.settings.full_width %} page-width {% endunless %} section-{{ section.id }}-padding isolate{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %} {% if show_mobile_slider %} title-wrapper--self-padded-tablet-down{% endif %}"
     data-url="{{ routes.product_recommendations_url }}?limit={{ section.settings.products_to_show }}"
     data-section-id="{{ section.id }}"
     data-product-id="{{ product.id }}"
   >
     {% if recommendations.performed and recommendations.products_count > 0 %}
-      <h2 class="related-products__heading page-width inline-richtext {{ section.settings.heading_size }}">
+      <h2 class="related-products__heading {% unless section.settings.full_width %} page-width {% endunless %}  inline-richtext {{ section.settings.heading_size }}">
         {{ section.settings.heading }}
       </h2>
       <slider-component class="slider-mobile-gutter {% if section.settings.full_width %} slider-component-full-width{% endif %}{% if show_mobile_slider == false %} page-width{% endif %} {% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
