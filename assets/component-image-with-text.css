@@ -11,6 +11,10 @@
   position: relative;
 }
 
+.contact-page .image-with-text__content form .field {
+  border: none;  
+}
+
 @media screen and (min-width: 750px) {
   .image-with-text__grid--reverse {
     flex-direction: row-reverse;
