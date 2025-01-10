@@ -49,7 +49,7 @@
         >
           {% assign skip_card_product_styles = false %}
           {% for recommendation in recommendations.products %}
-            <li class="grid__item">
+            <li class="grid__item {% if show_mobile_slider %} slider__slide{% endif %}">
               {% render 'card-product',
                 card_product: recommendation,
                 media_aspect_ratio: section.settings.image_ratio,
@@ -57,7 +57,8 @@
                 show_secondary_image: section.settings.show_secondary_image,
                 show_vendor: section.settings.show_vendor,
                 show_rating: section.settings.show_rating,
-                skip_styles: skip_card_product_styles
+                skip_styles: skip_card_product_styles,
+                quick_add: section.settings.quick_add
               %}
             </li>
             {%- assign skip_card_product_styles = true -%}
