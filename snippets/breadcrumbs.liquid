@@ -130,7 +130,7 @@
           "@type": "ListItem",
           "position": 3,
           "name": "{{ tag_title | capitalize }}",
-          "item": "{{ collection.url | append: '?q=' | append: tag_title }}"
+          "item": "{{ collection.url | append: '/' | append: tag_title }}"
         }
       {% endif %}
     {% elsif template.name == 'article' %}
