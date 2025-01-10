@@ -32,11 +32,7 @@
       {%- if show_badges %} price--show-badge{% endif -%}
     ">
     {%- if badge_new != '' -%}
-        <span class="badge price__badge-new color-{{ settings.new_badge_color_scheme }}"
-        data-aos="fade"
-        data-aos-delay="{{ aos_delay }}"
-        data-aos-duration="{{ aos_duration }}"
-        data-aos-anchor="{{ aos_anchor }}">
+        <span class="badge price__badge-new color-{{ settings.new_badge_color_scheme }}">
             {{ badge_new }}
         </span>
     {%- endif -%}
