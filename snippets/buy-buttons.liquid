@@ -92,7 +92,7 @@
               {%- endif -%}
             </span>
             {%- render 'loading-spinner' -%}
-            {% render 'price-button', product: product, price_class: '', show_compare_at_price: true %}
+            {% render 'price-button' %}
           </button>
           {%- if show_dynamic_checkout -%}
             {{ form | payment_button }}
