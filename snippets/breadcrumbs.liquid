@@ -70,6 +70,7 @@
     <span class="c">{{- collection.title -}}</span>
 
     {% if current_tags.size > 0 %}
+      {{ divider_html }}
       {% assign tag_title = current_tags[0] %}
       <span class="t">{{ tag_title | capitalize }}</span>
     {% endif %}  
