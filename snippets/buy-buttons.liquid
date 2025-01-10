@@ -93,12 +93,6 @@
             </span>
             {%- render 'loading-spinner' -%}
             {% render 'price-button', product: product, use_variant: true, show_compare_at_price: true, price_class: 'price--large' %}
-                              {%- render 'price',
-                    product: product,
-                    use_variant: true,
-                    show_badges: true,
-                    price_class: 'price--large'
-                  -%}
           </button>
           {%- if show_dynamic_checkout -%}
             {{ form | payment_button }}
