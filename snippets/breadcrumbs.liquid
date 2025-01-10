@@ -46,23 +46,24 @@
       {% assign category_collection = '' %}
       {% assign subcategory_collection = '' %}
 
-      <!-- Loop through all collections -->
-      {% for collection in collections %}
-        {% if collection.title == category %}
-          {% assign category_collection = collection %}
-        {% elsif collection.title == subcategory %}
-          {% assign subcategory_collection = collection %}
-        {% endif %}
-      {% endfor %}
+<!-- Loop through all collections -->
+{% for collection in collections %}
+  {% if collection.title == category %}
+    {% assign category_collection = collection %}
+  {% elsif collection.title == subcategory %}
+    {% assign subcategory_collection = collection %}
+  {% endif %}
+{% endfor %}
 
-      {% if category_collection %}
-        <a class="cat" href="{{ category_collection.url }}">{{ category_collection.title }}</a>
-      {% endif %}
+{% if category_collection %}
+  <a class="cat" href="{{ category_collection.url }}">{{ category_collection.title }}</a>
+{% endif %}
 
 {% if subcategory_collection %}
-  {% assign tag_url = subcategory_collection.url | append: '?filter_by=' | append: subcategory_collection.handle %}
+  {% assign tag_url = category_collection.url | append: '/tag-' | append: subcategory_collection.handle %}
   {{ divider_html }} <a class="sub" href="{{ tag_url }}">{{ subcategory_collection.title }}</a>
 {% endif %}
+
 
 
   {%- elsif template.name == 'article' -%}
