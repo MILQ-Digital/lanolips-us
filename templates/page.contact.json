@@ -72,7 +72,7 @@
         "image_behavior": "none",
         "mobile_content_alignment": "left",
         "padding_top": 36,
-        "padding_bottom": 36
+        "padding_bottom": 40
       }
     },
     "multicolumn_kfGeWA": {
@@ -114,7 +114,7 @@
         "color_scheme": "scheme-2",
         "columns_mobile": "1",
         "swipe_on_mobile": false,
-        "padding_top": 36,
+        "padding_top": 52,
         "padding_bottom": 36,
         "section_class": "contact_info"
       }
