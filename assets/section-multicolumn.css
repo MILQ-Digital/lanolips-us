@@ -31,6 +31,7 @@
 
 .contact_info .multicolumn-card h3.inline-richtext {
    font-size: 38px;
+    line-height: normal;
 }
 
 @media screen and (max-width: 749px) {
