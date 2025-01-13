@@ -91,7 +91,7 @@
           "type": "column",
           "settings": {
             "title": "Press Enquiries",
-            "text": "<p>Australia: Sha PR</p><p>lanolips@shapr.com.au</p><p></p><p>Australia: Sha PR</p><p>lanolips@shapr.com.au<br/><br/></p>",
+            "text": "<p>Australia: Sha PR</p><p><a href=\"mailto:lanolips@shapr.com.au\" title=\"mailto:lanolips@shapr.com.au\">lanolips@shapr.com.au</a></p><p></p><p>Australia: Sha PR</p><p>lanolips@shapr.com.au<br/><br/></p>",
             "link_label": "",
             "link": ""
           }
