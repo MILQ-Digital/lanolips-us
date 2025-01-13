@@ -18,6 +18,17 @@
   font-size: var(--body-lg);
 }
 
+.contact_info .multicolumn-card .rte p a::before {
+  content: '';
+  display: inline-block;
+  width: 16px; /* Width of the icon */
+  height: 16px; /* Height of the icon */
+  margin-right: 8px; /* Space between the icon and text */
+  background-image: url('https://cdn.shopify.com/s/files/1/0730/5589/5811/files/mail_icon_34982b15-5819-4c3c-b9a6-f4fb0a2882eb.svg'); /* Path to your SVG file */
+  background-repeat: no-repeat;
+  background-size: contain; /* Maintain aspect ratio */
+}
+
 .contact_info .multicolumn-card h3.inline-richtext {
    font-size: 38px;
 }
