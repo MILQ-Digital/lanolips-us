@@ -12,6 +12,7 @@
 
 .contact_info .multicolumn-card .rte p {
   font-size: 20px;
+  margin-bottom: 25px;
 }
 .contact_info .multicolumn-card .rte p a {
   font-size: var(--body-lg);
