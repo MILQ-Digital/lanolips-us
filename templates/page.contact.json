@@ -82,7 +82,7 @@
           "type": "column",
           "settings": {
             "title": "Consumer and Wholesale Enquiries",
-            "text": "<p>Lanolips Pty Ltd </p><p>(Australia)hello@lanolips.com</p>",
+            "text": "<p>Lanolips Pty Ltd (Australia)<br/><a href=\"mailto:lanolips@shapr.com.au\" title=\"mailto:lanolips@shapr.com.au\">lanolips@shapr.com.au</a></p>",
             "link_label": "",
             "link": ""
           }
