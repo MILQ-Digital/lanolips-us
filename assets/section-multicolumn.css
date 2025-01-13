@@ -13,6 +13,9 @@
 .contact_info .multicolumn-card .rte p {
   font-size: 20px;
 }
+.contact_info .multicolumn-card .rte p a {
+  font-size: var(--body-lg);
+}
 
 @media screen and (max-width: 749px) {
   .multicolumn .title-wrapper-with-link {
