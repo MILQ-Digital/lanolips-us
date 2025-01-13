@@ -117,11 +117,63 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "collapsible_content_rj8FYa": {
+      "type": "collapsible-content",
+      "blocks": {
+        "collapsible_row_Db8ekf": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Collapsible row",
+            "icon": "none",
+            "row_content": "",
+            "page": ""
+          }
+        },
+        "collapsible_row_GQJqti": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Collapsible row",
+            "icon": "none",
+            "row_content": "",
+            "page": ""
+          }
+        },
+        "collapsible_row_a3Fehn": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Collapsible row",
+            "icon": "none",
+            "row_content": "",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "collapsible_row_Db8ekf",
+        "collapsible_row_GQJqti",
+        "collapsible_row_a3Fehn"
+      ],
+      "settings": {
+        "caption": "",
+        "heading": "Wholesales",
+        "heading_size": "h1",
+        "heading_alignment": "left",
+        "layout": "none",
+        "color_scheme": "scheme-2",
+        "container_color_scheme": "scheme-3",
+        "open_first_collapsible_row": false,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
     "main",
     "collapsible_content_LtPmTr",
-    "collapsible_content_MBe3V7"
+    "collapsible_content_MBe3V7",
+    "collapsible_content_rj8FYa"
   ]
 }
