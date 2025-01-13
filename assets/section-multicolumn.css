@@ -18,6 +18,10 @@
   font-size: var(--body-lg);
 }
 
+.contact_info .multicolumn-card h3.inline-richtext {
+   font-size: 38px;
+}
+
 @media screen and (max-width: 749px) {
   .multicolumn .title-wrapper-with-link {
     margin-bottom: 3rem;
