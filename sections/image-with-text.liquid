@@ -175,7 +175,6 @@
                       value="{% if form.phone %}{{ form.phone }}{% elsif customer %}{{ customer.phone }}{% endif %}"
                       placeholder="{{ 'templates.contact.form.phone' | t }}"
                     >
-                    
                   </div>
                   <div class="field">
                     <label for="contact_reason">Enquiry Type</label>
@@ -186,6 +185,7 @@
                     </select>
                   </div>  
                   <div class="field">
+                    <label for="ContactForm-body">Enquiry Type</label>
                     <textarea
                       rows="10"
                       id="ContactForm-body"
@@ -195,9 +195,6 @@
                     >
                       {{- form.body -}}
                     </textarea>
-                    <label class="form__label field__label" for="ContactForm-body">
-                      {{- 'templates.contact.form.comment' | t -}}
-                    </label>
                   </div>
                   <div class="contact__button">
                     <button type="submit" class="button">
