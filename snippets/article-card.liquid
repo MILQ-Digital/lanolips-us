@@ -136,9 +136,14 @@
                   {{ article.content | strip_html | truncatewords: 30 }}
                 {%- endif -%}
               </p>
-              <a href="{{ article.url }}" class="full-unstyled-link read-more">
-                Read Article
-              </a>
+              <div class="text_link">
+                <a href="{{ article.url }}" class="full-unstyled-link read-more">
+                  Read Article
+                  <span class="icon-wrap">
+                    {{- 'icon-arrow.svg' | inline_asset_content -}}
+                  </span>
+                </a>
+              </div>
             {%- endif -%}
             <div class="article-card__footer">
               {%- if article.comments_count > 0 and blog.comments_enabled? -%}
