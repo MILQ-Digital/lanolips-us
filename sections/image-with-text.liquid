@@ -98,6 +98,110 @@
                       {{ block.settings.button_label | escape }}
                     </a>
                   {%- endif -%}
+                {% when 'contact_form' %}
+                  {%- form 'contact', id: 'ContactForm', class: contact_form_class -%}
+                  {%- if form.posted_successfully? -%}
+                    <h2 class="form-status form-status-list form__message" tabindex="-1" autofocus>
+                      {{- 'icon-success.svg' | inline_asset_content -}}
+                      {{ 'templates.contact.form.post_success' | t }}
+                    </h2>
+                  {%- elsif form.errors -%}
+                    <div class="form__message">
+                      <h2 class="form-status caption-large text-body" role="alert" tabindex="-1" autofocus>
+                        {{- 'icon-error.svg' | inline_asset_content -}}
+                        {{ 'templates.contact.form.error_heading' | t }}
+                      </h2>
+                    </div>
+                    <ul class="form-status-list caption-large" role="list">
+                      <li>
+                        <a href="#ContactForm-email" class="link">
+                          {{ form.errors.translated_fields.email | capitalize }}
+                          {{ form.errors.messages.email }}
+                        </a>
+                      </li>
+                    </ul>
+                  {%- endif -%}
+                  <div class="contact__fields">
+                    <div class="field">
+                      <label for="contact_first_name">First Name</label>
+                      <input type="text" id="contact_first_name" name="contact[first_name]" placeholder="Your First Name" class="field__input">
+                    </div>
+                    <div class="field">
+                      <label for="contact_last_name">Last Name</label>
+                      <input type="text" id="contact_last_name" name="contact[last_name]" placeholder="Your Last Name" class="field__input">
+                    </div>
+                   </div> 
+                    <div class="field field--with-error">
+                     <label for="ContactForm-email">Email address</label>
+                      <input
+                        autocomplete="email"
+                        type="email"
+                        id="ContactForm-email"
+                        class="field__input"
+                        name="contact[email]"
+                        spellcheck="false"
+                        autocapitalize="off"
+                        value="{% if form.email %}{{ form.email }}{% elsif customer %}{{ customer.email }}{% endif %}"
+                        aria-required="true"
+                        {% if form.errors contains 'email' %}
+                          aria-invalid="true"
+                          aria-describedby="ContactForm-email-error"
+                        {% endif %}
+                        placeholder="{{ 'templates.contact.form.email' | t }}">
+                      
+                      {%- if form.errors contains 'email' -%}
+                        <small class="contact__field-error" id="ContactForm-email-error">
+                          <span class="visually-hidden">{{ 'accessibility.error' | t }}</span>
+                          <span class="form__message">
+                            <span class="svg-wrapper">
+                              {{- 'icon-error.svg' | inline_asset_content -}}
+                            </span>
+                            {{- form.errors.translated_fields.email | capitalize }}
+                            {{ form.errors.messages.email -}}
+                          </span>
+                        </small>
+                      {%- endif -%}
+                    </div>
+                  
+                  <div class="field">
+                    <label for="ContactForm-phone">Phone number (optional)</label>
+                    <input
+                      type="tel"
+                      id="ContactForm-phone"
+                      class="field__input"
+                      autocomplete="tel"
+                      name="contact[{{ 'templates.contact.form.phone' | t }}]"
+                      pattern="[0-9\-]*"
+                      value="{% if form.phone %}{{ form.phone }}{% elsif customer %}{{ customer.phone }}{% endif %}"
+                      placeholder="{{ 'templates.contact.form.phone' | t | default: 'Enter your phone number' }}"
+                    >
+                  </div>
+                  <div class="field">
+                    <label for="contact_reason">Enquiry Type</label>
+                    <select id="contact_reason" name="contact[reason]" class="field__input field__select">
+                      <option value="General Inquiry">General Inquiry</option>
+                      <option value="Support">Support</option>
+                      <option value="Sales">Sales</option>
+                    </select>
+                  </div>  
+                  <div class="field">
+                    <label for="ContactForm-body">Enquiry</label>
+                    <textarea
+                      rows="10"
+                      id="ContactForm-body"
+                      class="text-area field__input"
+                      name="contact[{{ 'templates.contact.form.comment' | t }}]"
+                      placeholder="{{ 'templates.contact.form.comment' | t }}"
+                    >
+                      {{- form.body -}}
+                    </textarea>
+                  </div>
+                  <div class="contact__button">
+                    <button type="submit" class="button">
+                      Submit Enquiry
+                    </button>
+                  </div>
+                {%- endform -%}
               {%- endcase -%}
             {%- endfor -%}
           </div>
@@ -467,6 +571,11 @@
           "label": "t:sections.image-with-text.blocks.button.settings.outline_button.label"
         }
       ]
+    },
+    {
+      "type": "contact_form",
+      "name": "Contact Form",
+      "settings": [] 
     }
   ],
   "presets": [
@@ -481,6 +590,9 @@
         },
         {
           "type": "button"
+        },
+        {
+          "type": "contact_form"
         }
       ]
     }

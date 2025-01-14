@@ -10,6 +10,32 @@
   margin-top: 0;
 }
 
+.contact_info .multicolumn-card .rte p {
+  font-size: 20px;
+  margin-bottom: 25px;
+}
+.contact_info .multicolumn-card .rte p a {
+  font-size: var(--body-lg);
+}
+
+.contact_info .multicolumn-card .rte p a::before {
+  content: '';
+  display: inline-block;
+  width: 17px; 
+  height: 13px;
+  margin-right: 8px; 
+  background-image: url('https://cdn.shopify.com/s/files/1/0730/5589/5811/files/mail_icon_1b2045aa-fc8d-43d6-921a-9f76104a1c94.svg'); 
+  background-repeat: no-repeat;
+  background-size: contain; 
+}
+
+.contact_info .multicolumn-card .rte {margin-top: 3rem;}
+
+.contact_info .multicolumn-card h3.inline-richtext {
+   font-size: 38px;
+    line-height: normal;
+}
+
 @media screen and (max-width: 749px) {
   .multicolumn .title-wrapper-with-link {
     margin-bottom: 3rem;

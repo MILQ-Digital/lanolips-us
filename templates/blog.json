@@ -1,11 +1,52 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
+    "rich_text_VXkRFE": {
+      "type": "rich-text",
+      "blocks": {
+        "caption_QYXVL6": {
+          "type": "caption",
+          "settings": {
+            "caption": "{{ blog.title }}",
+            "text_style": "caption-with-letter-spacing",
+            "text_size": "medium"
+          }
+        },
+        "heading_89kQDb": {
+          "type": "heading",
+          "settings": {
+            "heading": "Launches & Beauty Hacks",
+            "heading_size": "hxxl"
+          }
+        }
+      },
+      "block_order": [
+        "caption_QYXVL6",
+        "heading_89kQDb"
+      ],
+      "settings": {
+        "desktop_content_position": "left",
+        "content_alignment": "left",
+        "color_scheme": "scheme-2",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
     "main": {
       "type": "main-blog",
       "settings": {
-        "layout": "collage",
+        "layout": "grid",
         "show_image": true,
-        "image_height": "medium",
+        "image_height": "large",
         "show_date": true,
         "show_author": false,
         "padding_top": 36,
@@ -14,6 +55,7 @@
     }
   },
   "order": [
+    "rich_text_VXkRFE",
     "main"
   ]
 }
