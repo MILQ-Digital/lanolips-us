@@ -1,7 +1,7 @@
 {{ 'section-blog-post.css' | asset_url | stylesheet_tag }}
 
 <article class="article-template">
-  <div class="page-width">{%- render 'breadcrumbs' -%}</div>
+  <div class="page-width _breadcrumb">{%- render 'breadcrumbs' -%}</div>
   {%- for block in section.blocks -%}
     {%- case block.type -%}
       {%- when '@app' -%}
