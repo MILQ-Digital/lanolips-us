@@ -251,6 +251,10 @@ body {
   gap: 8px;
 }
 
+.text_link .read-more {
+  justify-content: flex-start;
+}
+
 .text_link a span {
   width: 0px;
   overflow: hidden;
