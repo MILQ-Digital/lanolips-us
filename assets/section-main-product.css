@@ -170,6 +170,8 @@ product-info {
   height: auto;
   min-height: auto;
   gap: 0;
+  width: auto;
+  min-width: auto;
 }
 
 .product__info-container .product_button_price .badge {
