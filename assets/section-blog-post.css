@@ -72,10 +72,10 @@
     max-width: 1188px;
   }
 
-  .article-template__content p:nth-child(1) {
+  .article-template__content p:first-of-type:not(:has(img)) {
     max-width: 811px;
   }
-
+  
 }
 
 .article-template__title {
