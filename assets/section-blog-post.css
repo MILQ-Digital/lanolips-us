@@ -63,6 +63,19 @@
   line-height: calc(0.8 / var(--font-body-scale));
 }
 
+.article-template__content h2 {
+  font-size: var(--header-md);
+  line-height: 120%;
+  font-weight: 500;
+}
+
+.article-template__content h3 {
+  font-size: var(--header-sm);
+  line-height: 120%;
+  font-weight: 500;
+}
+
+
 @media screen and (min-width: 750px) {
   .article-template header {
     margin-top: 5rem;
@@ -82,6 +95,8 @@
     max-width: 1131px;
     overflow: hidden;
     border-radius: 22px;
+    margin-left: calc(-1* var(--outer));
+    margin-top: 5rem;
   }  
   
 }
