@@ -66,6 +66,9 @@
 @media screen and (min-width: 750px) {
   .article-template header {
     margin-top: 5rem;
+  }
+
+  .article-template header .article-template__title {
     max-width: 1188px;
   }
 }
