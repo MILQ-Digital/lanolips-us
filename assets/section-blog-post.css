@@ -64,13 +64,13 @@
 }
 
 .article-template__content h2 {
-  font-size: var(--header-md);
+  font-size: var(--heading-md);
   line-height: 120%;
   font-weight: 500;
 }
 
 .article-template__content h3 {
-  font-size: var(--header-sm);
+  font-size: var(--heading-sm);
   line-height: 120%;
   font-weight: 500;
 }
