@@ -738,6 +738,22 @@
   </div>
 </product-info>
 
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const button = document.querySelector('.product_button_price');
+  
+  if (button) {
+    button.addEventListener('click', function() {
+      const form = button.closest('.product-form');
+      
+      if (form) {
+        form.submit();
+      }
+    });
+  }
+});
+</script>
+
 {% schema %}
 {
   "name": "t:sections.main-product.name",
