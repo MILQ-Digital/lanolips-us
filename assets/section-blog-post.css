@@ -122,7 +122,8 @@
     margin-top: 5rem;
   }  
 
-  .article-template__content div:has(img):nth-of-type(3) img {
+  .article-template__content div:has(img):nth-of-type(3) img,
+  .article-template__content div:has(img):nth-of-type(2) img {
     display: block;
     width: 100%;
     margin: 0;
