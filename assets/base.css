@@ -2682,12 +2682,6 @@ input[type='checkbox'] {
   vertical-align: middle;
 }
 
-.header__icon,
-.header__icon--cart .icon {
-  height: auto;
-  width: auto;
-  padding: 0;
-}
 
 .header__icon--cart {
   position: relative;
