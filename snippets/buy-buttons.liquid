@@ -81,7 +81,7 @@
             %}
               disabled
             {% endif %}
-            {% if product.price_varies == false and product.compare_at_price_varies %} .price--on-sale {% endif %}
+            {% if product.price_varies == false and product.compare_at_price_varies %} price--on-sale {% endif %}
           >
             <span>
               {%- if product.selected_or_first_available_variant == null -%}
