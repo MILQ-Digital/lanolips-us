@@ -154,12 +154,21 @@ product-info {
 }
 
 .product__info-container .product_button_price {
-  width: calc(100% - 150px);
-  padding-left: 20px;
+  width: calc(100% - 163px);
+  margin-left: 20px !important;
+  display: inline-flex;
+}
+
+.product__info-container .product-form {
+  margin: 0!important;
 }
 
 .product__info-container .product_button_price button {
   background: transparent;
+  margin: 0;
+  padding: 0;
+  height: auto;
+  min-height: auto;
 }
 
 .product__info-container .product_button_price .badge {
