@@ -742,6 +742,9 @@ document.querySelector('variant-selects select').addEventListener('change', func
   }
 });
 </script>
+<!-- Debugging output -->
+Selected variant: {{ product.selected_or_first_available_variant | json }}
+
 
 {% schema %}
 {
