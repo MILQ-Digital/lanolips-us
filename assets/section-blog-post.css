@@ -86,13 +86,12 @@
   }
 
   .article-template__content p:first-of-type:not(:has(img)),
-  .article-template__content div:has(img):first-of-type ~ *:nth-of-type(2),
-  .article-template__content img:first-of-type ~ *:nth-of-type(2) {
+  .article-template__content div:has(img):first-of-type ~ *,
+  .article-template__content img:first-of-type ~ * {
     max-width: 811px;
     margin-left: auto;
     margin-right: 10rem;
   }
-  
 
   .article-template__content img:first-of-type,
   .article-template__content div:has(img):first-of-type {
@@ -105,11 +104,11 @@
   
   .article-template__content img:nth-of-type(2),
   .article-template__content img:nth-of-type(3),
-  .article-template__content div:nth-of-type(2):has(img),
-  .article-template__content div:nth-of-type(3):has(img) {
+  .article-template__content div:has(img):nth-of-type(2),
+  .article-template__content div:has(img):nth-of-type(3){
     max-width: var(--page-width);
     margin: 0 auto;
-  }
+  }  
 }
 
 .article-template__title {
