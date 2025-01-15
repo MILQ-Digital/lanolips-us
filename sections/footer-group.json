@@ -50,7 +50,7 @@
           "type": "link_list",
           "settings": {
             "heading": "",
-            "menu": "main-menu"
+            "menu": "footer"
           }
         }
       },
