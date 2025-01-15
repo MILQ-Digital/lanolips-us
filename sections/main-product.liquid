@@ -729,18 +729,24 @@
 </product-info>
 
 <script>
-document.querySelector('variant-selects select').addEventListener('change', function (event) {
-  const selectedVariantId = event.target.value;
-  
-  // Fetch the selected variant's details (e.g., price, compare_at_price)
-  const selectedVariant = window.productVariants.find(variant => variant.id == selectedVariantId);
+document.querySelector('.select__select').addEventListener('change', function (event) {
+  const selectedValue = event.target.value; // Get the selected option value
+  const selectedVariant = window.productVariants.find(variant => variant.option1 == selectedValue);
 
   if (selectedVariant) {
-    // Update the price display
+    // Update the sale price
     document.querySelector('.price-item--sale').innerText = Shopify.formatMoney(selectedVariant.price, window.theme.moneyFormat);
-    document.querySelector('.price-item--regular').innerText = Shopify.formatMoney(selectedVariant.compare_at_price, window.theme.moneyFormat);
+
+    // Update the compare at price if it exists
+    if (selectedVariant.compare_at_price && selectedVariant.compare_at_price > selectedVariant.price) {
+      document.querySelector('.price-item--regular').innerText = Shopify.formatMoney(selectedVariant.compare_at_price, window.theme.moneyFormat);
+      document.querySelector('.price-item--regular').style.display = 'inline';
+    } else {
+      document.querySelector('.price-item--regular').style.display = 'none';
+    }
   }
 });
+
 </script>
 <!-- Debugging output -->
 Selected variant: {{ product.selected_or_first_available_variant | json }}
