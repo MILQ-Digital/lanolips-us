@@ -729,7 +729,7 @@
 </product-info>
 
 <script>
-document.querySelector('.product-form__variants').addEventListener('change', function (event) {
+document.querySelector('variant-selects select').addEventListener('change', function (event) {
   const selectedVariantId = event.target.value;
   
   // Fetch the selected variant's details (e.g., price, compare_at_price)
