@@ -62,7 +62,12 @@
         <a class="sub" href="{{ tag_url }}">{{ subcategory }}</a>
       {% else %}
          {{ divider_html }}
-         <span class="sub">{{ product.title }}</span>
+        {% if product.collections.size > 0 %}
+          {% assign first_collection = product.collections.first %}
+          <a href="{{ first_collection.url }}">{{ first_collection.title }}</a>
+        {% else %}
+          <span class="sub">{{ product.title }}</span>
+        {% endif %}         
       {% endif %}
 
 
