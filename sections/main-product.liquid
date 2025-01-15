@@ -741,9 +741,15 @@
 <script>
 document.addEventListener('DOMContentLoaded', function() {
   const button = document.querySelector('.product_button_price');
+  const priceElement = document.querySelector('.price'); // Assuming the price is in an element with class 'price'
   
   if (button) {
     button.addEventListener('click', function() {
+      // Add opacity to the price when the button is clicked
+      if (priceElement) {
+        priceElement.style.opacity = '0.5'; // Adjust opacity as needed
+      }
+
       const form = button.querySelector('.product-form');
       
       if (form) {
@@ -757,11 +763,26 @@ document.addEventListener('DOMContentLoaded', function() {
       } else {
         console.error('.product-form not found inside the .product_button_price element');
       }
+      
+      // Simulate add-to-cart action (replace with actual add-to-cart logic)
+      addToCart();
     });
   } else {
     console.error('.product_button_price not found');
   }
+
+  // Simulating add-to-cart logic (replace with actual code that triggers after successful cart addition)
+  function addToCart() {
+    // Simulate an AJAX request or successful add-to-cart
+    setTimeout(function() {
+      // After successfully adding to the cart, remove the opacity
+      if (priceElement) {
+        priceElement.style.opacity = '1'; // Reset opacity to full
+      }
+    }, 1000); // Adjust the timeout as necessary for your actual add-to-cart action
+  }
 });
+
 </script>
 
 {% schema %}
