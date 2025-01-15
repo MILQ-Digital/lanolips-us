@@ -85,7 +85,9 @@
     max-width: 1188px;
   }
 
-  .article-template__content p:first-of-type:not(:has(img)) {
+  .article-template__content p:first-of-type:not(:has(img)),
+  .article-template__content div:has(img):first-of-type ~ *,
+  .article-template__content img:first-of-type ~ * {
     max-width: 811px;
     margin: 0 10rem 0 auto;
   }
