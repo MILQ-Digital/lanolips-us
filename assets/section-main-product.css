@@ -158,6 +158,14 @@ product-info {
   padding-left: 20px;
 }
 
+.product__info-container .product_button_price button {
+  background: transparent;
+}
+
+.product__info-container .product_button_price .badge {
+  display: none;
+}
+
 .product-form {
   display: block;
 }
