@@ -745,14 +745,24 @@ document.addEventListener('DOMContentLoaded', function() {
   if (button) {
     button.addEventListener('click', function() {
       const form = button.closest('.product-form');
-      const submitButton = form.querySelector('[type="submit"]');
       
-      if (submitButton) {
-        submitButton.click(); // Trigger the submit button's click event
+      if (form) {
+        const submitButton = form.querySelector('button[type="submit"]');
+        
+        if (submitButton) {
+          submitButton.click(); // Trigger click on the submit button
+        } else {
+          console.error('Submit button not found inside the product form');
+        }
+      } else {
+        console.error('.product-form not found');
       }
     });
+  } else {
+    console.error('.product_button_price not found');
   }
 });
+
 </script>
 
 {% schema %}
