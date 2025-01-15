@@ -71,6 +71,11 @@
   .article-template header .article-template__title {
     max-width: 1188px;
   }
+
+  .article-template__content p:nth-child(1) {
+    max-width: 811px;
+  }
+
 }
 
 .article-template__title {
