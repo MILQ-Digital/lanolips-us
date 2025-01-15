@@ -114,10 +114,20 @@
   .article-template__content div:has(img):nth-of-type(3){
     max-width: var(--page-width);
     margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    overflow: hidden;
+    padding-right: 10rem;
+    gap: 20px;
   }  
 
   .article-template__content div:has(img):nth-of-type(3) img {
     display: block;
+    width: 100%;
+    margin: 0;
+    border-radius: 22px;
+    overflow: hidden;
+    padding: 0;
   }
 }
 
