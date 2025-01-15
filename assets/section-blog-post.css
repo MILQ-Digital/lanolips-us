@@ -119,6 +119,7 @@
     overflow: hidden;
     padding-right: 10rem;
     gap: 20px;
+    margin-top: 5rem;
   }  
 
   .article-template__content div:has(img):nth-of-type(3) img {
