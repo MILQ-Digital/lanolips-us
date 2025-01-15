@@ -53,30 +53,13 @@
         {% endif %}
       {% endfor %}
 
-{% if category_collection and subcategory_collection %}
+{% if category_collection != blank and subcategory_collection != blank %}
   {{ divider_html }}
   <a class="cat" href="{{ category_collection.url }}">{{ category_collection.title }}</a>
 
   {% assign tag_url = category_collection.url | append: '/' | append: subcategory %}
   {{ divider_html }}
   <a class="sub" href="{{ tag_url }}">{{ subcategory }}</a>
-{% endif %}
-
-<!-- Debugging category and subcategory -->
-<p>Category: {{ category }}</p>
-<p>Subcategory: {{ subcategory }}</p>
-
-<!-- Debugging collections -->
-{% if category_collection %}
-  <p>Category Collection: {{ category_collection.title }}</p>
-{% else %}
-  <p>No matching category collection found.</p>
-{% endif %}
-
-{% if subcategory_collection %}
-  <p>Subcategory Collection: {{ subcategory_collection.title }}</p>
-{% else %}
-  <p>No matching subcategory collection found.</p>
 {% endif %}
 
 
