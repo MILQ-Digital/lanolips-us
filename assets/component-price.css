@@ -74,9 +74,10 @@
 }
 
 .price--on-sale .price__sale {
-  display: initial;
+  display: inline-flex;
   flex-direction: row;
   flex-wrap: wrap;
+  gap: 10px;
 }
 
 .price--center {
