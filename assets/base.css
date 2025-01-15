@@ -1490,6 +1490,7 @@ shopify-accelerated-checkout-cart {
 .button--full-width {
   display: flex;
   width: 100%;
+  gap: 5px;
 }
 
 .button.loading {
