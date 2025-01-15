@@ -53,12 +53,12 @@
         {% endif %}
       {% endfor %}
 
-      {% if collection.title == category %}
+      {% if category %}
         {{ divider_html }}
         <a class="cat" href="{{ category_collection.url }}">{{ category_collection.title }}</a>
       {% endif %}
 
-      {% if collection.title == subcategory %}
+      {% if subcategory %}
         {% assign tag_url = category_collection.url | append: '/' | append: subcategory %}
         {{ divider_html }} <a class="sub" href="{{ tag_url }}">{{ subcategory }}</a>
       {% endif %}
