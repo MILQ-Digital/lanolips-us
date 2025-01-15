@@ -146,6 +146,12 @@ product-info {
 
 /* Product form */
 
+.product-form__quantity,
+.product-form {
+  flex: 1 1 auto; /* Makes them take equal width */
+  max-width: 50%; /* Ensures they each take up half the width */
+}
+
 .product-form {
   display: block;
 }
