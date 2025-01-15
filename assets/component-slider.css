@@ -362,6 +362,15 @@ slider-component.slider-component-full-width {
   .slider-buttons .slider-button--next {
     right: -20px;
   }
+
+  .slider-buttons {
+    max-width: 1650px;
+    margin: 0 auto;
+    position: absolute;
+    top: 35%;
+    left: 0;
+    right: 0px;
+  }
 }
 
 

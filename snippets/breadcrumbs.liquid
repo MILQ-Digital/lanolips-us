@@ -28,8 +28,6 @@
 <nav class="breadcrumbs body-xs {{ breadcrumbs_modifier }}">
   <a href="{{ routes.root_url }}">Home</a>
 
-  {{ divider_html }}
-
   {% if template contains 'product' %}
 
       {% assign category = '' %}
@@ -56,6 +54,7 @@
       {% endfor %}
 
       {% if category_collection %}
+        {{ divider_html }}
         <a class="cat" href="{{ category_collection.url }}">{{ category_collection.title }}</a>
       {% endif %}
 
@@ -75,7 +74,7 @@
     {% endif %}  
 
   {%- elsif template.name == 'article' -%}
-
+    {{ divider_html }}
     {{ blog.title | link_to: blog.url }}
 
     {{ divider_html }}
