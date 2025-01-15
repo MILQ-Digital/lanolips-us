@@ -62,6 +62,22 @@
   <a class="sub" href="{{ tag_url }}">{{ subcategory }}</a>
 {% endif %}
 
+<!-- Debugging category and subcategory -->
+<p>Category: {{ category }}</p>
+<p>Subcategory: {{ subcategory }}</p>
+
+<!-- Debugging collections -->
+{% if category_collection %}
+  <p>Category Collection: {{ category_collection.title }}</p>
+{% else %}
+  <p>No matching category collection found.</p>
+{% endif %}
+
+{% if subcategory_collection %}
+  <p>Subcategory Collection: {{ subcategory_collection.title }}</p>
+{% else %}
+  <p>No matching subcategory collection found.</p>
+{% endif %}
 
 
   {%- elsif template contains 'collection' -%}
