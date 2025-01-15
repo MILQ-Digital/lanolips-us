@@ -745,9 +745,10 @@ document.addEventListener('DOMContentLoaded', function() {
   if (button) {
     button.addEventListener('click', function() {
       const form = button.closest('.product-form');
+      const submitButton = form.querySelector('[type="submit"]');
       
-      if (form) {
-        form.submit();
+      if (submitButton) {
+        submitButton.click(); // Trigger the submit button's click event
       }
     });
   }
