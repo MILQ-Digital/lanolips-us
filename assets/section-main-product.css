@@ -147,7 +147,7 @@ product-info {
 /* Product form */
 
 .product__info-container .product-form__quantity,
-.product__info-container .product-form {
+.product__info-container .product_button_price {
   display: inline-block;
   vertical-align: top;
   margin: 0 !important;
