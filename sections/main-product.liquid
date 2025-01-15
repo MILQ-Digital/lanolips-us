@@ -475,6 +475,14 @@
                   show_pickup_availability: true,
                   use_variant: true
                 -%}
+                <div id="price-{{ section.id }}" role="status" {{ block.shopify_attributes }}>
+                  {%- render 'price',
+                    product: product,
+                    use_variant: true,
+                    show_badges: true,
+                    price_class: 'price--large'
+                  -%}
+                </div>                
               {%- when 'rating' -%}
                 {%- if product.metafields.reviews.rating.value != blank -%}
                   <div class="rating-wrapper">
@@ -728,26 +736,6 @@
   </div>
 </product-info>
 
-<script>
-document.querySelector('.select__select').addEventListener('change', function (event) {
-  const selectedValue = event.target.value; // Get the selected option value
-  const selectedVariant = window.productVariants.find(variant => variant.option1 == selectedValue);
-
-  if (selectedVariant) {
-    // Update the sale price
-    document.querySelector('.price-item--sale').innerText = Shopify.formatMoney(selectedVariant.price, window.theme.moneyFormat);
-
-    // Update the compare at price if it exists
-    if (selectedVariant.compare_at_price && selectedVariant.compare_at_price > selectedVariant.price) {
-      document.querySelector('.price-item--regular').innerText = Shopify.formatMoney(selectedVariant.compare_at_price, window.theme.moneyFormat);
-      document.querySelector('.price-item--regular').style.display = 'inline';
-    } else {
-      document.querySelector('.price-item--regular').style.display = 'none';
-    }
-  } 
-});
-
-</script>
 {% schema %}
 {
   "name": "t:sections.main-product.name",
