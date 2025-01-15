@@ -57,9 +57,10 @@
         {{ divider_html }}
         <a class="cat" href="{{ category_collection.url }}">{{ category_collection.title }}</a>
 
-        {% assign tag_url = category_collection.url | append: '/' | append: subcategory | replace: ' ', '_' %}
+        {% assign tag_url = category_collection.url | append: '/' | append: subcategory | replace: ' ', '%20' %}
         {{ divider_html }}
         <a class="sub" href="{{ tag_url }}">{{ subcategory }}</a>
+
 
       {% else %}
          {{ divider_html }}
