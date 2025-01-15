@@ -728,6 +728,21 @@
   </div>
 </product-info>
 
+<script>
+document.querySelector('.product-form__variants').addEventListener('change', function (event) {
+  const selectedVariantId = event.target.value;
+  
+  // Fetch the selected variant's details (e.g., price, compare_at_price)
+  const selectedVariant = window.productVariants.find(variant => variant.id == selectedVariantId);
+
+  if (selectedVariant) {
+    // Update the price display
+    document.querySelector('.price-item--sale').innerText = Shopify.formatMoney(selectedVariant.price, window.theme.moneyFormat);
+    document.querySelector('.price-item--regular').innerText = Shopify.formatMoney(selectedVariant.compare_at_price, window.theme.moneyFormat);
+  }
+});
+</script>
+
 {% schema %}
 {
   "name": "t:sections.main-product.name",
