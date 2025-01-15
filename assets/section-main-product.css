@@ -148,8 +148,13 @@ product-info {
 
 .product__info-container .product-form__quantity,
 .product__info-container .product-form {
-  flex: 1 1 auto; /* Makes them take equal width */
-  max-width: 50%; /* Ensures they each take up half the width */
+  display: inline-block;
+  vertical-align: top;
+  margin: 0 !important;
+}
+
+.product__info-container .product-form {
+  width: calc(100% - 150px);
 }
 
 .product-form {

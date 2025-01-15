@@ -2015,8 +2015,12 @@ input[type='checkbox'] {
   display: flex;
   border-radius: var(--inputs-radius);
   min-height: calc((var(--inputs-border-width) * 2) + 4.5rem);
+  background: #fff;
+  overflow: hidden;
+  border: 1px solid;
 }
 
+/*
 .quantity:after {
   pointer-events: none;
   content: '';
@@ -2046,6 +2050,7 @@ input[type='checkbox'] {
     var(--inputs-shadow-blur-radius) rgba(var(--color-shadow), var(--inputs-shadow-opacity));
   z-index: -1;
 }
+*/
 
 .quantity__input {
   color: currentColor;
