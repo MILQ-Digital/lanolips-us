@@ -1727,6 +1727,7 @@ details[open] > .share-button__fallback {
   position: relative;
   border: 0;
   background-color: #fff;
+  font-size: inherit;
 }
 
 .field:before,
