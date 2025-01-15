@@ -169,6 +169,7 @@ product-info {
   padding: 0;
   height: auto;
   min-height: auto;
+  gap: 0;
 }
 
 .product__info-container .product_button_price .badge {
