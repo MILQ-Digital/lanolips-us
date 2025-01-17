@@ -49,6 +49,18 @@
             "metaobject_features": true
           }
         },
+        "icon_with_text_jLqfjX": {
+          "type": "icon-with-text",
+          "settings": {
+            "layout": "vertical",
+            "icon_1": "none",
+            "heading_1": "<strong>See Me In Action</strong>",
+            "icon_2": "none",
+            "heading_2": "",
+            "icon_3": "none",
+            "heading_3": ""
+          }
+        },
         "collapsible_tab_UKpPTB": {
           "type": "collapsible_tab",
           "settings": {
@@ -98,6 +110,7 @@
         "quantity_selector",
         "buy_buttons",
         "metaobject_images_CETKk7",
+        "icon_with_text_jLqfjX",
         "collapsible_tab_UKpPTB",
         "collapsible_tab_xBK7PF",
         "collapsible_tab_L8cyBQ",
