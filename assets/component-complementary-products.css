@@ -196,3 +196,7 @@ product-recommendations.is-accordion + .accordion {
 .complementary-slide.grid__item .card__media .media img {
   height: auto!important;
 } 
+
+.complementary-products__container .card--standard>.card__content {
+  padding: 20px;
+}
