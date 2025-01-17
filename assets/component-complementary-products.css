@@ -194,5 +194,5 @@ product-recommendations.is-accordion + .accordion {
 }
 
 .complementary-slide.grid__item .card__media .media img {
-  height: auto;
+  height: auto!important;
 } 
