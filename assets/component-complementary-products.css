@@ -179,7 +179,7 @@ product-recommendations.is-accordion + .accordion {
   align-items: center;
 }
 
-.complementary-products__container .card__heading  {
+.complementary-products__container .card.card--horizontal .card__heading  {
   font-size: var(--heading-3xs);
   font-weight: 500;
 }
