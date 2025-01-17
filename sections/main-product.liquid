@@ -674,6 +674,17 @@
                 </product-recommendations>
               {%- when 'icon-with-text' -%}
                 {% render 'icon-with-text', block: block %}
+              {%- when 'metaobject_images' -%}
+                {%- if block.settings.metaobject_features == true -%}
+                  <div class="product_features_icons">
+                    {%- assign features_metaobject_references = product.metafields.custom.features_icons -%}
+                    {%- for metaobject_reference in award_metaobject_references.value -%}
+                      {% assign features_metaobject = metaobject_reference | metaobject %}
+                      <img src="{{ features_metaobject.icon }}" width="" height="" alt="{{ features_metaobject.title }}" />
+                    {% endfor %}
+                  </div>
+                {%- endif -%}
+
             {%- endcase -%}
           {%- endfor -%}
           <a href="{{ product.url }}" class="link product__view-details animate-arrow">
@@ -2122,6 +2133,7 @@ document.addEventListener('DOMContentLoaded', function() {
         {
           "id": "metaobject_features",
           "type": "checkbox",
+          "default": false,
           "label": "Enable Features Icons"
         }
       ]
