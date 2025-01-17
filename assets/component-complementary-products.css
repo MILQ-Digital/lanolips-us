@@ -165,3 +165,8 @@ product-recommendations.is-accordion + .accordion {
     font-size: 1.3rem;
   }
 }
+
+.complementary-products__container .card--card.gradient, 
+.complementary-products__container .card__inner.gradient {
+  border-radius: 0;
+}
