@@ -170,3 +170,7 @@ product-recommendations.is-accordion + .accordion {
 .complementary-products__container .card__inner.gradient {
   border-radius: 0;
 }
+
+.complementary-products__container .card-information .price {
+  display: none;
+}
