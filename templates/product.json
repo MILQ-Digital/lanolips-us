@@ -84,7 +84,7 @@
           "settings": {
             "heading": "How to use",
             "icon": "none",
-            "content": "",
+            "content": "<p>{{ product.metafields.custom.how_to_use | metafield_tag }}</p>",
             "page": ""
           }
         },
