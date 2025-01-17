@@ -193,6 +193,6 @@ product-recommendations.is-accordion + .accordion {
   padding-bottom: 15px;
 }
 
-.complementary-slide.grid__item.grid:not(.collection-list):not(.blog__posts) .card__media .media img:first-child {
+.complementary-slide.grid__item .card__media .media img {
   height: auto;
 } 
