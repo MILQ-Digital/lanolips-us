@@ -1569,3 +1569,7 @@ a.product__text {
   border: 1.5px solid transparent;
   border-radius: 14px;   
 }
+
+.product_features_icons {
+  margin: 2.5rem 0;
+}
