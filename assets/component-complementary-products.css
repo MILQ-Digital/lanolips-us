@@ -181,4 +181,5 @@ product-recommendations.is-accordion + .accordion {
 
 .complementary-products__container .card__heading  {
   font-size: var(--heading-3xs);
+  font-weight: 500;
 }
