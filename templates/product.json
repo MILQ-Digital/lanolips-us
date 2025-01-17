@@ -94,7 +94,7 @@
             "block_heading": "Pair it with",
             "make_collapsible_row": true,
             "icon": "none",
-            "product_list_limit": 1,
+            "product_list_limit": 2,
             "products_per_page": 1,
             "pagination_style": "counter",
             "image_ratio": "portrait",
