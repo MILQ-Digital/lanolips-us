@@ -56,6 +56,12 @@
             "heading_3": "Heading"
           }
         },
+        "metaobject_images_CETKk7": {
+          "type": "metaobject_images",
+          "settings": {
+            "metaobject_features": true
+          }
+        },
         "collapsible_tab_UKpPTB": {
           "type": "collapsible_tab",
           "settings": {
@@ -105,6 +111,7 @@
         "quantity_selector",
         "buy_buttons",
         "icon_with_text_iFFYzG",
+        "metaobject_images_CETKk7",
         "collapsible_tab_UKpPTB",
         "collapsible_tab_xBK7PF",
         "collapsible_tab_L8cyBQ",
