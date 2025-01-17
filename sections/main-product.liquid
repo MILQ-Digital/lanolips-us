@@ -195,9 +195,9 @@
                   {%- endif -%}
                 </p>
               {%- when 'description' -%}
-                {%- if product.metafields.custom.short_descriptions != blank -%}
+                {%- if product.metafields.custom.short_descriptions_1 != blank -%}
                   <div class="product__description rte quick-add-hidden body-lg" {{ block.shopify_attributes }}>
-                    {{ product.metafields.custom.short_descriptions }}
+                    {{ product.metafields.custom.short_descriptions_1 }}
                   </div>
                 {%- endif -%}
               {%- when 'sku' -%}
