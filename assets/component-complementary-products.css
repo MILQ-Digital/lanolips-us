@@ -114,8 +114,12 @@ product-recommendations.is-accordion + .accordion {
 }
 
 .complementary-products__container .quick-add__submit {
-  padding: 1.5rem 0;
+  padding: 10px 15px;
   min-height: inherit;
+  color: var(--Lano-Blue);
+  border-radius: 6px;
+  font-weight: 500;
+  font-size: 14px;
 }
 
 .complementary-products__container .quick-add__submit .icon-plus {
@@ -124,6 +128,7 @@ product-recommendations.is-accordion + .accordion {
 
 .complementary-products__container .icon-wrap {
   display: flex;
+  display: none;
 }
 
 .complementary-products .sold-out-message:not(.hidden) + .icon-wrap {
@@ -155,6 +160,7 @@ product-recommendations.is-accordion + .accordion {
 .complementary-products__container .card--horizontal .quick-add.quick-add-media {
   display: none;
 }
+
 
 .product--no-media .complementary-products__container .price {
   text-align: var(--text-alignment);
