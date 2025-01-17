@@ -682,7 +682,7 @@
                       {%- for metaobject_reference in features_metaobject_references.value -%}
                         {% assign features_metaobject = metaobject_reference | metaobject %}
                         {% if features_metaobject and features_metaobject.icon %}
-                          <img src="{{ features_metaobject.icon | image_url }}"  width="100%" height="auto" alt="{{ features_metaobject.title | escape }}" />
+                          <img src="{{ features_metaobject.icon | image_url }}"  width="100%" height="auto" alt="{{ features_metaobject.name | escape }}" />
                         {% endif %}
                       {% endfor %}
                     </div>
