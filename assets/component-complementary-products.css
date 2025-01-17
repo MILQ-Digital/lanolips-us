@@ -179,7 +179,20 @@ product-recommendations.is-accordion + .accordion {
   align-items: center;
 }
 
+.complementary-slide .card-wrapper {
+  background-color: var(--Lano-light-pink);
+  border: 1px solid var(--Lano-Light-Grey)
+}
+
 .complementary-products__container .card.card--horizontal .card__heading  {
   font-size: var(--heading-3xs);
   font-weight: 500;
 }
+
+.complementary-slide.grid__item {
+  padding-bottom: 15px;
+}
+
+.complementary-slide.grid__item.grid:not(.collection-list):not(.blog__posts) .card__media .media img:first-child {
+  height: auto;
+} 
