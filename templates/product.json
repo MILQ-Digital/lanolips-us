@@ -243,7 +243,8 @@
           "settings": {
             "button_label": "View full ingredient list",
             "button_link": "shopify://collections",
-            "button_style_secondary": true
+            "button_style_secondary": true,
+            "use_ingredients": true
           }
         }
       },
