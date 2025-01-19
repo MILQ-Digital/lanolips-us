@@ -3825,3 +3825,11 @@ details-disclosure > details {
   flex-direction: row;
   gap: 20px;  
 }
+
+.ingredient_item_content {
+  width: calc(100% - 100px);
+}
+
+.ingredient_item_icon {
+  width: 100px;
+}
