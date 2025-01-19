@@ -301,6 +301,7 @@ body {
 
 .text_link .underline_link {
   text-decoration: underline;
+  text-underline-offset: 4px;
 }
 
 /* base */
