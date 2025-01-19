@@ -137,11 +137,20 @@
                       </div>
                       <script>
                         document.addEventListener('DOMContentLoaded', function() {
-                          document.getElementById("buttonModal").addEventListener("click", function () {
-                              document.querySelector(".ingredientsModal").classList.toggle("show");
-                          });
+                            const modal = document.querySelector(".ingredientsModal");
+                            const openButton = document.getElementById("buttonModal");
+                            const closeButton = document.getElementById("closeModal");
+
+                            openButton.addEventListener("click", function () {
+                                modal.classList.toggle("show");
+                            });
+
+                            closeButton.addEventListener("click", function () {
+                                modal.classList.remove("show");
+                            });
                         });
-                      </script>   
+                      </script>
+ 
                     {%- endif -%} 
 
                   {%- endif -%}
