@@ -85,6 +85,29 @@
                     {{ block.settings.text }}
                   </div>
                 {%- when 'button' -%}
+                  {%- if section.settings.use_ingredients -%}
+                    {%- assign features_metaobject_references = product.metafields.custom.ingredients_icons -%}
+                    {% if features_metaobject_references.value != blank %}
+                      <div class="ingredients_section">
+                        {%- for metaobject_reference in features_metaobject_references.value -%}
+                          {% assign features_metaobject = metaobject_reference | metaobject %}
+                          <div class="ingredient_item">
+                            {% if features_metaobject and features_metaobject.icon %}
+                              <div class="ingredient_item_icon">
+                                <img src="{{ features_metaobject.icon | image_url }}"  width="100%" height="auto" alt="{{ features_metaobject.name | escape }}" />
+                              </div>
+                            {% endif %}
+                            <div class="ingredient_item_content">
+                                <h3 class="heading-xs">{{ features_metaobject.name | escape }}</h3>                
+                              {% if features_metaobject and features_metaobject.content %}
+                                {{ features_metaobject.content }}
+                              {% endif %}
+                            </div>
+                          </div>
+                        {% endfor %}
+                      </div>
+                    {% endif %}
+                  {%- endif -%}                  
                   {%- if block.settings.button_label != blank -%}
                     <a
                       {% if block.settings.button_link == blank %}
@@ -204,30 +227,6 @@
                 {%- endform -%}
               {%- endcase -%}
             {%- endfor -%}
-
-                {%- if section.settings.use_ingredients -%}
-                  {%- assign features_metaobject_references = product.metafields.custom.ingredients_icons -%}
-                  {% if features_metaobject_references.value != blank %}
-                    <div class="ingredients_section">
-                      {%- for metaobject_reference in features_metaobject_references.value -%}
-                        {% assign features_metaobject = metaobject_reference | metaobject %}
-                        <div class="ingredient_item">
-                          {% if features_metaobject and features_metaobject.icon %}
-                            <div class="ingredient_item_icon">
-                              <img src="{{ features_metaobject.icon | image_url }}"  width="100%" height="auto" alt="{{ features_metaobject.name | escape }}" />
-                            </div>
-                          {% endif %}
-                          <div class="ingredient_item_content">
-                              <h3 class="heading-xs">{{ features_metaobject.name | escape }}</h3>                
-                            {% if features_metaobject and features_metaobject.content %}
-                              {{ features_metaobject.content }}
-                            {% endif %}
-                          </div>
-                        </div>
-                      {% endfor %}
-                    </div>
-                  {% endif %}
-                {%- endif -%}            
           </div>
         </div>
       </div>
