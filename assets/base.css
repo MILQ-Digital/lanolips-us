@@ -84,32 +84,37 @@ body {
 }
 
 .heading-md,
-.hm {
+.hm,
+.multirow .rte h1 {
   font-size: var(--heading-md);
   line-height: 120%; /* 57.6px */
   font-weight: 500;
 }
 
 .heading-sm,
-.hs {
+.hs,
+.multirow .rte h2 {
   font-size: var(--heading-sm);
   line-height: 120%; /* 43.2px */
   font-weight: 500;
 }
 
-.heading-xs {
+.heading-xs,
+.multirow .rte h3 {
   font-size: var(--heading-xs);
   line-height: 120%; /* 33.6px */
   font-weight: 500;
 }
 
-.heading-2xs {
+.heading-2xs,
+.multirow .rte h4 {
   font-size: var(--heading-2xs);
   line-height: 130%; /* 33.6px */
   font-weight: 500; 
 }
 
-.heading-3xs {
+.heading-3xs,
+.multirow .rte h5 {
   font-size: var(--heading-3xs);
   line-height: 22px;
   font-weight: 500; 
