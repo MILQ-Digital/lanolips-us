@@ -18,7 +18,23 @@
   }
 
   .ingredientsModal.show {
-      display: block; 
+    display: block; 
+    position: fixed;
+    z-index: 6000;
+    width: 100vw;
+    height: 100%;
+    max-width: 100vw;
+    max-height: 100%;
+    padding: 0;
+    background: none;
+    border: 0;
+    margin: 0;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,.2);
   }  
 {%- endstyle -%}
 
@@ -131,45 +147,42 @@
 
                     {%- if section.settings.use_ingredients -%}
                       <script>
-document.addEventListener("DOMContentLoaded", function () {
-  window.productMetafields = {
-    ingredients_text: {{ product.metafields.custom.ingredients_text | strip_newlines | replace: '"', '\"' | replace: "\n", "<br>" | json }}
-  };  
-    const openButton = document.getElementById("buttonModal");
+                          document.addEventListener("DOMContentLoaded", function () {
+                            window.productMetafields = {
+                              ingredients_text: {{ product.metafields.custom.ingredients_text | strip_newlines | replace: '"', '\"' | replace: "\n", "<br>" | json }}
+                            };  
+                              const openButton = document.getElementById("buttonModal");
 
-    openButton.addEventListener("click", function () {
-        // Check if modal already exists
-        if (!document.querySelector(".ingredientsModal")) {
-            const modalHTML = `
-                <div class="ingredientsModal">
-                    <h3>Ingredients</h3>
-                    <p>${window.productMetafields.ingredients_text || "No ingredients available"}</p>
-                    <button class="closeModal button--secondary button--bordered">Close</button>
-                </div>
-            `;
+                              openButton.addEventListener("click", function () {
+                                  // Check if modal already exists
+                                  if (!document.querySelector(".ingredientsModal")) {
+                                      const modalHTML = `
+                                          <div class="ingredientsModal">
+                                              <h3>Ingredients</h3>
+                                              <p>${window.productMetafields.ingredients_text || "No ingredients available"}</p>
+                                              <button class="closeModal button--secondary button--bordered">Close</button>
+                                          </div>
+                                      `;
 
-            // Inject modal before </body>
-            document.body.insertAdjacentHTML("beforeend", modalHTML);
+                                      // Inject modal before </body>
+                                      document.body.insertAdjacentHTML("beforeend", modalHTML);
 
-            const modal = document.querySelector(".ingredientsModal");
-            const closeButton = modal.querySelector(".closeModal");
+                                      const modal = document.querySelector(".ingredientsModal");
+                                      const closeButton = modal.querySelector(".closeModal");
 
-            // Show the modal
-            modal.classList.add("show");
+                                      // Show the modal
+                                      modal.classList.add("show");
 
-            // Hide modal on close button click
-            closeButton.addEventListener("click", function () {
-                modal.classList.remove("show");
-            });
-        } else {
-            // If modal exists, just show it
-            document.querySelector(".ingredientsModal").classList.add("show");
-        }
-    });
-});
-
-
-
+                                      // Hide modal on close button click
+                                      closeButton.addEventListener("click", function () {
+                                          modal.classList.remove("show");
+                                      });
+                                  } else {
+                                      // If modal exists, just show it
+                                      document.querySelector(".ingredientsModal").classList.add("show");
+                                  }
+                              });
+                          });
                       </script>
  
                     {%- endif -%} 
