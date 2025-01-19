@@ -78,7 +78,7 @@ body {
 .heading-lg,
 .hxl,
 .hl,
-.rich-text__text .rte h1 {
+.rich-text__text.rte h1 {
   font-size: var(--heading-lg);
   line-height: 120%; /* 76.8px */
   font-weight: 500;
@@ -87,7 +87,7 @@ body {
 .heading-md,
 .hm,
 .multirow .rte h1,
-.rich-text__text .rte h2 {
+.rich-text__text.rte h2 {
   font-size: var(--heading-md);
   line-height: 120%; /* 57.6px */
   font-weight: 500;
@@ -96,7 +96,7 @@ body {
 .heading-sm,
 .hs,
 .multirow .rte h2,
-.rich-text__text .rte h3 {
+.rich-text__text.rte h3 {
   font-size: var(--heading-sm);
   line-height: 120%; /* 43.2px */
   font-weight: 500;
