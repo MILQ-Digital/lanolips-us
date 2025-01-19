@@ -303,6 +303,12 @@
     "image_with_text_AL7pCG": {
       "type": "image-with-text",
       "blocks": {
+        "image_picker_k7KxyT": {
+          "type": "image_picker",
+          "settings": {
+            "image_icon": "shopify://shop_images/Vector.svg"
+          }
+        },
         "heading_PEU8jG": {
           "type": "heading",
           "settings": {
@@ -328,6 +334,7 @@
         }
       },
       "block_order": [
+        "image_picker_k7KxyT",
         "heading_PEU8jG",
         "text_b8h9GQ",
         "button_maJHVc"
