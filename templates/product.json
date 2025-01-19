@@ -243,8 +243,7 @@
           "settings": {
             "button_label": "View full ingredient list",
             "button_link": "shopify://collections",
-            "button_style_secondary": true,
-            "use_ingredients": true
+            "button_style_secondary": true
           }
         }
       },
@@ -262,6 +261,7 @@
         "content_layout": "no-overlap",
         "section_color_scheme": "scheme-1",
         "color_scheme": "scheme-1",
+        "use_ingredients": true,
         "image_behavior": "none",
         "mobile_content_alignment": "left",
         "padding_top": 36,
