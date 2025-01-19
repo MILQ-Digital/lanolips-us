@@ -771,7 +771,15 @@
       "type": "image_block",
       "name": "image_icon",
       "limit": 1,
-      "label": "t:sections.image-with-text.settings.image.label"
+      "label": "t:sections.image-with-text.settings.image.label",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image_icon",  // Unique id for the image in the block
+          "label": "Image for this block",
+          "limit": 1  // Limit to one image per block
+        }
+      ]      
     }    
   ],
   "presets": [
