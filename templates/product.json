@@ -234,7 +234,8 @@
           "settings": {
             "caption": "Made With",
             "text_style": "caption-with-letter-spacing",
-            "text_size": "medium"
+            "text_size": "medium",
+            "text_alignment": "text-center"
           }
         },
         "heading_EPkpmW": {
