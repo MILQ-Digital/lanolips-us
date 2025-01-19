@@ -3824,10 +3824,16 @@ details-disclosure > details {
   display: flex;
   flex-direction: row;
   gap: 20px;  
+  text-align: left;
+  align-items: flex-start;
 }
 
 .ingredient_item_content {
   width: calc(100% - 100px);
+}
+
+.ingredient_item_content h3 {
+  margin-top: 0;
 }
 
 .ingredient_item_icon {
