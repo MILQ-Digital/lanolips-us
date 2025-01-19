@@ -185,6 +185,7 @@
                     {% endif %}
                   {%- endif -%}                  
                   {%- if block.settings.button_label != blank -%}
+                    {% if block.settings.button_style_underline %}<div class="text_link">{% endif %}
                     <a
                       {% if block.settings.button_link == blank %}
                         role="link" aria-disabled="true"
@@ -195,7 +196,13 @@
                       {{ block.shopify_attributes }}
                     >
                       {{ block.settings.button_label | escape }}
+                      {% if block.settings.button_style_underline %}
+                        <span class="icon-wrap">
+                          {{- 'icon-arrow.svg' | inline_asset_content -}}
+                        </span>                      
+                      {% endif %}
                     </a>
+                    {% if block.settings.button_style_underline %}</div>>{% endif %}
 
                     {%- if section.settings.use_ingredients -%}
                       <script>
