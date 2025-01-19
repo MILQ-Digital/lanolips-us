@@ -226,6 +226,36 @@
         "section_class": ""
       }
     },
+    "rich_text_qVEiKy": {
+      "type": "rich-text",
+      "blocks": {
+        "text_3mwk6C": {
+          "type": "text",
+          "settings": {
+            "text": "<p>No petroleum <br/>No paraben<br/>No artificial fragance<br/>No mineral oil <br/>No sulfates. <br/>No PEG’s <br/>No phthalates</p>"
+          }
+        },
+        "heading_VM7xA3": {
+          "type": "heading",
+          "settings": {
+            "heading": "No more dry skin",
+            "heading_size": "h1"
+          }
+        }
+      },
+      "block_order": [
+        "text_3mwk6C",
+        "heading_VM7xA3"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": false,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
     "image_with_text_9nJtjb": {
       "type": "image-with-text",
       "blocks": {
@@ -294,6 +324,7 @@
     "main",
     "multirow_HV497Y",
     "multicolumn_kzBAVh",
+    "rich_text_qVEiKy",
     "image_with_text_9nJtjb",
     "related-products"
   ]
