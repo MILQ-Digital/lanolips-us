@@ -130,9 +130,11 @@
                     </a>
 
                     {%- if section.settings.use_ingredients -%}
-
                       <script>
 document.addEventListener("DOMContentLoaded", function () {
+  window.productMetafields = {
+    ingredients_text: {{ product.metafields.custom.ingredients_text | default: "" | json }}
+  };  
     const openButton = document.getElementById("buttonModal");
 
     openButton.addEventListener("click", function () {
@@ -141,7 +143,7 @@ document.addEventListener("DOMContentLoaded", function () {
             const modalHTML = `
                 <div class="ingredientsModal">
                     <h3>Ingredients</h3>
-                    <p>${window.product.metafields.custom.ingredients_text || "No ingredients available"}</p>
+                    <p>${window.productMetafields.ingredients_text || "No ingredients available"}</p>
                     <button class="closeModal button--secondary button--bordered">Close</button>
                 </div>
             `;
