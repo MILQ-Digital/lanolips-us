@@ -37,18 +37,26 @@
     padding: 60px;
   }
 
-  .multirow h1:not(first-child), 
-  .multirow h2:not(first-child), 
-  .multirow h3:not(first-child), 
-  .multirow h4:not(first-child), 
-  .multirow h5:not(first-child), 
-  .multirow h6:not(first-child) {
+  .multirow h1:not(:first-of-type), 
+  .multirow h2:not(:first-of-type), 
+  .multirow h3:not(:first-of-type), 
+  .multirow h4:not(:first-of-type), 
+  .multirow h5:not(:first-of-type), 
+  .multirow h6:not(:first-of-type) {
     margin-bottom: 10px;
     padding-top: 15px;
     border-top: 1px solid var(--Lano-Light-Grey);
     margin-top: 15px;
   }
 
+  .multirow h1:first-of-type, 
+  .multirow h2:first-of-type, 
+  .multirow h3:first-of-type, 
+  .multirow h4:first-of-type, 
+  .multirow h5:first-of-type, 
+  .multirow h6:first-of-type {
+    border-top: none;
+  }
 
 
 {%- endstyle -%}
