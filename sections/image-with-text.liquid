@@ -121,7 +121,7 @@
                       {% if block.settings.button_link == blank %}
                         role="link" aria-disabled="true"
                       {% else %}
-                        {% if section.settings.use_ingredients %} id="buttonModal" href="#" {% else %} href="{{ block.settings.button_link }}" {% endif %}
+                        {% if section.settings.use_ingredients %} id="buttonModal" {% else %} href="{{ block.settings.button_link }}" {% endif %}
                       {% endif %}
                       class="button{% if block.settings.button_style_secondary %} button--secondary button--bordered{% else %} button--primary{% endif %}"
                       {{ block.shopify_attributes }}
@@ -130,25 +130,34 @@
                     </a>
 
                     {%- if section.settings.use_ingredients -%}
-                      <div class="ingredientsModal">
-                        <h3>Ingredients</h3>
-                        {{ product.metafields.custom.ingredients_text }}
-                        <button class="closeModal" class="button--secondary button--bordered">Close</button>
-                      </div>
                       <script>
-                        document.addEventListener('DOMContentLoaded', function() {
-                            const modal = document.querySelector(".ingredientsModal");
-                            const openButton = document.getElementById("buttonModal");
-                            const closeButton = document.getElementById("closeModal");
+document.addEventListener('DOMContentLoaded', function() {
+    const modalHTML = `
+        <div class="ingredientsModal">
+            <h3>Ingredients</h3>
+            ${window.productMetafields ? window.productMetafields.custom.ingredients_text : ''}
+            <button class="closeModal button--secondary button--bordered">Close</button>
+        </div>
+    `;
 
-                            openButton.addEventListener("click", function () {
-                                modal.classList.toggle("show");
-                            });
+    // Inject modal before </body>
+    document.body.insertAdjacentHTML("beforeend", modalHTML);
 
-                            closeButton.addEventListener("click", function () {
-                                modal.classList.remove("show");
-                            });
-                        });
+    const modal = document.querySelector(".ingredientsModal");
+    const openButton = document.getElementById("buttonModal");
+    const closeButton = modal.querySelector(".closeModal");
+
+    // Toggle modal visibility
+    openButton.addEventListener("click", function () {
+        modal.classList.toggle("show");
+    });
+
+    // Hide modal on close button click
+    closeButton.addEventListener("click", function () {
+        modal.classList.remove("show");
+    });
+});
+
                       </script>
  
                     {%- endif -%} 
