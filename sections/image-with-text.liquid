@@ -218,9 +218,7 @@
                             </div>
                           {% endif %}
                           <div class="ingredient_item_content">
-                            {% if features_metaobject and features_metaobject.name %}
-                              {{ features_icons.name }}
-                            {% endif %}                        
+                              <h3 class="heading-xs">{{ features_metaobject.name | escape }}</h3>                
                             {% if features_metaobject and features_metaobject.content %}
                               {{ features_icons.content }}
                             {% endif %}
