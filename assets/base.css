@@ -257,7 +257,8 @@ body {
 }
 
 .text-center {
-  text-align: center;
+  text-align: center!important;
+  align-self: center !important;
 }
 
 .text-right {
