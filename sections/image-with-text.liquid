@@ -230,12 +230,10 @@
                                       document.body.insertAdjacentHTML("beforeend", modalHTML);
 
                                       const modal = document.querySelector(".ingredientsModal");
-                                      const closeButton = modal.querySelector(".closeModal");
+                                      const closeButton = modal.querySelector(".closeModal", ".closeX");
 
-                                      // Show the modal
                                       modal.classList.add("show");
 
-                                      // Hide modal on close button click
                                       closeButton.addEventListener("click", function () {
                                           modal.classList.remove("show");
                                       });
