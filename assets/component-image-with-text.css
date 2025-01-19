@@ -431,3 +431,8 @@
     row-gap: var(--grid-desktop-vertical-spacing);
   }
 }
+
+.color-scheme-2 .image-with-text .grid__item {
+  border-radius: 20px;
+  overflow: hidden;
+}
