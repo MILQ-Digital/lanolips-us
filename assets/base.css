@@ -1378,6 +1378,10 @@ button.shopify-payment-button__button--unbranded {
   box-shadow: var(--color-background-bg); 
 }
 
+.button--bordered {
+  border: 1px solid;
+}
+
 /*
 .button:before,
 .shopify-challenge__button:before,
