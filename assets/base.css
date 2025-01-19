@@ -3813,3 +3813,15 @@ details-disclosure > details {
 @media screen and (max-width: 750px) {
   .error-404 .page-width {padding: 0;}
 }
+
+.ingredients_section {
+  display: flex;
+  flex-direction: column;
+  column-gap: 20px;
+}
+
+.ingredient_item {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;  
+}
