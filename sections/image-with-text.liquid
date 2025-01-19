@@ -79,6 +79,15 @@
   #buttonModal {
     cursor: pointer;
   } 
+
+  .modal_text {
+    margin-bottom: 30px;
+  }
+
+  .modal_body .button {
+    width: 100%;
+    background: transparent;
+  }
 {%- endstyle -%}
 
 {%- liquid
@@ -210,7 +219,7 @@
                                                   </svg>
                                                 </button>
                                                 <h3 class="heading-xs text-center">Ingredients</h3>
-                                                <div class="body-lg">${window.productMetafields.ingredients_text || "No ingredients available"}</div>
+                                                <div class="body-lg modal_text">${window.productMetafields.ingredients_text || "No ingredients available"}</div>
                                                 <button class="closeModal button button--secondary button--bordered">Close</button>
                                               </div>
                                             </div>
