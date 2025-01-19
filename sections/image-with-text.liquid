@@ -12,6 +12,14 @@
       padding-bottom: {{ section.settings.padding_bottom }}px;
     }
   }
+
+  .ingrendientsModal {
+      display: none; 
+  }
+
+  .ingrendientsModal.show {
+      display: block; 
+  }  
 {%- endstyle -%}
 
 {%- liquid
@@ -106,6 +114,14 @@
                           </div>
                         {% endfor %}
                       </div>
+                      <div class="ingredientsModal">
+
+                      </div>
+                      <script>
+                        document.getElementById("buttonModal").addEventListener("click", function () {
+                            document.querySelector(".ingredientsModal").classList.toggle("show");
+                        });
+                      </script>
                     {% endif %}
                   {%- endif -%}                  
                   {%- if block.settings.button_label != blank -%}
