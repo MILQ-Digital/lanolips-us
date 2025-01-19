@@ -132,51 +132,60 @@
         "padding_bottom": 12
       }
     },
-    "image_with_text_e3CYUC": {
-      "type": "image-with-text",
+    "multirow_HV497Y": {
+      "type": "multirow",
       "blocks": {
-        "heading_89bUP3": {
-          "type": "heading",
+        "row_6chNdY": {
+          "type": "row",
           "settings": {
-            "heading": "Image with text",
-            "heading_size": "hm"
-          }
-        },
-        "text_P7CqKP": {
-          "type": "text",
-          "settings": {
+            "image": "shopify://shop_images/Rectangle_93_1.webp",
+            "caption": "",
+            "heading": "Ultra hydrating, For better morning lips.",
             "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
-            "text_style": "body"
+            "button_label": "",
+            "button_link": ""
           }
         },
-        "button_HtFDaW": {
-          "type": "button",
+        "row_Rxra9Y": {
+          "type": "row",
           "settings": {
+            "caption": "Caption",
+            "heading": "Row",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
             "button_label": "Button label",
-            "button_link": "",
-            "button_style_secondary": false
+            "button_link": ""
+          }
+        },
+        "row_ynQ78c": {
+          "type": "row",
+          "settings": {
+            "caption": "Caption",
+            "heading": "Row",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "button_label": "Button label",
+            "button_link": ""
           }
         }
       },
       "block_order": [
-        "heading_89bUP3",
-        "text_P7CqKP",
-        "button_HtFDaW"
+        "row_6chNdY",
+        "row_Rxra9Y",
+        "row_ynQ78c"
       ],
       "settings": {
-        "image": "shopify://shop_images/lano-cake.webp",
-        "height": "adapt",
+        "image_height": "adapt",
         "desktop_image_width": "medium",
-        "layout": "text_first",
-        "desktop_content_position": "top",
+        "heading_size": "h1",
+        "text_style": "body",
+        "button_style": "secondary",
+        "desktop_content_position": "bottom",
         "desktop_content_alignment": "left",
-        "content_layout": "no-overlap",
-        "section_color_scheme": "",
-        "color_scheme": "",
-        "image_behavior": "none",
+        "image_layout": "align-right",
+        "section_color_scheme": "scheme-2",
+        "row_color_scheme": "scheme-1",
         "mobile_content_alignment": "left",
-        "padding_top": 36,
-        "padding_bottom": 36
+        "padding_top": 52,
+        "padding_bottom": 52
       }
     },
     "related-products": {
@@ -203,7 +212,7 @@
   },
   "order": [
     "main",
-    "image_with_text_e3CYUC",
+    "multirow_HV497Y",
     "related-products"
   ]
 }
