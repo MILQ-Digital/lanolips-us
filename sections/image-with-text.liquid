@@ -135,12 +135,12 @@ document.addEventListener("DOMContentLoaded", function () {
     const openButton = document.getElementById("buttonModal");
 
     openButton.addEventListener("click", function () {
-        // Check if the modal already exists to prevent duplication
+        // Check if modal already exists
         if (!document.querySelector(".ingredientsModal")) {
             const modalHTML = `
                 <div class="ingredientsModal">
                     <h3>Ingredients</h3>
-                    ${window.productMetafields ? window.productMetafields.custom.ingredients_text : ''}
+                    <p>${window.productMetafields.ingredients_text || "No ingredients available"}</p>
                     <button class="closeModal button--secondary button--bordered">Close</button>
                 </div>
             `;
@@ -164,6 +164,7 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 });
+
 
 
                       </script>
