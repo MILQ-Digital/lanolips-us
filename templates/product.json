@@ -253,8 +253,8 @@
         "content_alignment": "center",
         "color_scheme": "scheme-f0b80d15-f0fa-461b-b588-95b62c0b760a",
         "full_width": false,
-        "padding_top": 40,
-        "padding_bottom": 52
+        "padding_top": 100,
+        "padding_bottom": 100
       }
     },
     "image_with_text_9nJtjb": {
