@@ -274,7 +274,8 @@
           "settings": {
             "button_label": "View full ingredient list",
             "button_link": "shopify://collections",
-            "button_style_secondary": true
+            "button_style_secondary": false,
+            "button_style_bordered": true
           }
         }
       },
@@ -321,7 +322,8 @@
           "settings": {
             "button_label": "Learn More",
             "button_link": "shopify://collections/automated-collection",
-            "button_style_secondary": true
+            "button_style_secondary": true,
+            "button_style_bordered": false
           }
         }
       },
