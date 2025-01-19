@@ -113,7 +113,7 @@
                       {% if block.settings.button_link == blank %}
                         role="link" aria-disabled="true"
                       {% else %}
-                        {% unless section.settings.use_ingredients %} href="{{ block.settings.button_link }}" {% endunless %}
+                        {% if section.settings.use_ingredients %} id="buttonModal" {% else %} href="{{ block.settings.button_link }}" {% endunless %}
                       {% endif %}
                       class="button{% if block.settings.button_style_secondary %} button--secondary button--bordered{% else %} button--primary{% endif %}"
                       {{ block.shopify_attributes }}
