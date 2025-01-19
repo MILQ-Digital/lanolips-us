@@ -354,6 +354,12 @@
                     </button>
                   </div>
                 {%- endform -%}
+
+                {%- when 'image' -%}
+                  <div class="image_icon">
+                    <img src="{{ block.settings.image_icon | img_url: 'medium' }}" alt="" />
+                  </div>
+
               {%- endcase -%}
             {%- endfor -%}
           </div>
@@ -760,7 +766,12 @@
       "type": "contact_form",
       "name": "Contact Form",
       "settings": [] 
-    }
+    },
+    {
+      "type": "image_picker",
+      "id": "image_icon",
+      "label": "t:sections.image-with-text.settings.image.label"
+    }    
   ],
   "presets": [
     {
