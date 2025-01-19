@@ -1382,6 +1382,10 @@ button.shopify-payment-button__button--unbranded {
   border: 1px solid;
 }
 
+.button--bordered:hover {
+  background-color: #0003;
+}
+
 /*
 .button:before,
 .shopify-challenge__button:before,
