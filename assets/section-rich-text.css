@@ -1,5 +1,6 @@
 .rich-text {
   z-index: 1;
+  border-radius: 20px; 
 }
 
 .rich-text__wrapper {
