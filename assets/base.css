@@ -3817,7 +3817,7 @@ details-disclosure > details {
 .ingredients_section {
   display: flex;
   flex-direction: column;
-  column-gap: 20px;
+  gap: 40px;
 }
 
 .ingredient_item {
@@ -3834,6 +3834,7 @@ details-disclosure > details {
 
 .ingredient_item_content h3 {
   margin-top: 0;
+  margin-bottom: 10px;
 }
 
 .ingredient_item_icon {
