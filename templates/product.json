@@ -176,7 +176,7 @@
         "image_height": "adapt",
         "desktop_image_width": "large",
         "heading_size": "h1",
-        "text_style": "body",
+        "text_style": "subtitle",
         "button_style": "secondary",
         "desktop_content_position": "bottom",
         "desktop_content_alignment": "left",
