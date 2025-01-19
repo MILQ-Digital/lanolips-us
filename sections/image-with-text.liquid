@@ -50,8 +50,18 @@
     flex-flow: row wrap;
     justify-content: center;
     align-items: center;
-    padding: 30px;
+    padding: 0;
     pointer-events: none;  
+  }
+
+  .modal_body {
+    overflow-x: hidden;
+    overflow-y: auto;
+    position: relative;
+    background-color: #fff;
+    padding: 30px;
+    pointer-events: auto;
+    max-height: 100%;
     border-radius: 20px;
   }
 
@@ -181,10 +191,12 @@
                                       const modalHTML = `
                                           <div class="ingredientsModal">
                                             <div class="modal_content">
-                                              <button class="closeModal">x</button>
-                                              <h3>Ingredients</h3>
-                                              <p>${window.productMetafields.ingredients_text || "No ingredients available"}</p>
-                                              <button class="closeModal button--secondary button--bordered">Close</button>
+                                              <div class="modal_body">
+                                                <button class="closeModal">x</button>
+                                                <h3>Ingredients</h3>
+                                                <p>${window.productMetafields.ingredients_text || "No ingredients available"}</p>
+                                                <button class="closeModal button--secondary button--bordered">Close</button>
+                                              </div>
                                             </div>
                                           </div>
                                       `;
