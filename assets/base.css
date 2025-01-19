@@ -256,6 +256,14 @@ body {
   --shadow-visible: var(--media-shadow-visible);
 }
 
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
 .text_link a {
   display: flex;
   align-items: center;
