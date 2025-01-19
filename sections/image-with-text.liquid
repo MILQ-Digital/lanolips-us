@@ -191,7 +191,7 @@
                       {% else %}
                         {% if section.settings.use_ingredients %} id="buttonModal" {% else %} href="{{ block.settings.button_link }}" {% endif %}
                       {% endif %}
-                      class="button{% if block.settings.button_style_secondary %} button--secondary {% elsif block.settings.button_style_bordered %} button--bordered {% else %} button--primary{% endif %}"
+                      class="{% if block.settings.button_style_secondary %} button--secondary {% elsif block.settings.button_style_bordered %} button button--bordered {% else %} button button--primary{% endif %}"
                       {{ block.shopify_attributes }}
                     >
                       {{ block.settings.button_label | escape }}
