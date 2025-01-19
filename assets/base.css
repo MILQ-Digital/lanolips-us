@@ -299,6 +299,10 @@ body {
   text-decoration: none;
 }
 
+.text_link .underline_link {
+  text-decoration: underline;
+}
+
 /* base */
 
 .page-width {
