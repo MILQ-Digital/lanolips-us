@@ -239,7 +239,7 @@
           "type": "heading",
           "settings": {
             "heading": "No more dry skin",
-            "heading_size": "h1",
+            "heading_size": "hm",
             "enable_script": true
           }
         }
