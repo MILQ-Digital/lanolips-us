@@ -133,7 +133,7 @@
                       <script>
 document.addEventListener("DOMContentLoaded", function () {
   window.productMetafields = {
-    ingredients_text: {{ product.metafields.custom.ingredients_text }}
+    ingredients_text: {{ product.metafields.custom.ingredients_text | strip_newlines | replace: '"', '\"' | replace: "\n", "<br>" | json }}
   };  
     const openButton = document.getElementById("buttonModal");
 
