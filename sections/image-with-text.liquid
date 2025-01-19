@@ -204,9 +204,7 @@
                               ingredients_text: {{ product.metafields.custom.ingredients_text | strip_newlines | replace: '"', '\"' | replace: "\n", "<br>" | json }}
                             };  
                               const openButton = document.getElementById("buttonModal");
-
                               openButton.addEventListener("click", function () {
-                                  // Check if modal already exists
                                   if (!document.querySelector(".ingredientsModal")) {
                                       const modalHTML = `
                                           <div class="ingredientsModal">
@@ -225,20 +223,17 @@
                                             </div>
                                           </div>
                                       `;
-
                                       // Inject modal before </body>
                                       document.body.insertAdjacentHTML("beforeend", modalHTML);
-
                                       const modal = document.querySelector(".ingredientsModal");
-                                      const closeButton = modal.querySelector(".closeModal", ".closeX");
-
                                       modal.classList.add("show");
-
-                                      closeButton.addEventListener("click", function () {
-                                          modal.classList.remove("show");
+                                      const closeButtons = modal.querySelectorAll(".closeModal, .closeX");
+                                      closeButtons.forEach(button => {
+                                          button.addEventListener("click", function () {
+                                              modal.classList.remove("show");
+                                          });
                                       });
                                   } else {
-                                      // If modal exists, just show it
                                       document.querySelector(".ingredientsModal").classList.add("show");
                                   }
                               });
