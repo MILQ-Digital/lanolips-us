@@ -192,7 +192,7 @@ product-recommendations.is-accordion + .accordion {
 
 .complementary-slide .card-wrapper {
   background-color: var(--Lano-light-pink);
-  border: 1px solid var(--Lano-Light-Grey)
+  border: 0px solid var(--Lano-Light-Grey)
 }
 
 .complementary-products__container .card.card--horizontal .card__heading  {
