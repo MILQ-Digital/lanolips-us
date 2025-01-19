@@ -162,9 +162,12 @@
                                   if (!document.querySelector(".ingredientsModal")) {
                                       const modalHTML = `
                                           <div class="ingredientsModal">
+                                            <div class="modal_content">
+                                              <button class="closeModal">x</button>
                                               <h3>Ingredients</h3>
                                               <p>${window.productMetafields.ingredients_text || "No ingredients available"}</p>
                                               <button class="closeModal button--secondary button--bordered">Close</button>
+                                            </div>
                                           </div>
                                       `;
 
