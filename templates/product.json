@@ -178,6 +178,54 @@
         "padding_bottom": 52
       }
     },
+    "multicolumn_kzBAVh": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_KJWMef": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Rectangle_93_1.webp",
+            "title": "Before",
+            "text": "",
+            "link_label": "",
+            "link": "",
+            "button_style_secondary": false
+          }
+        },
+        "column_aAdR9K": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Rectangle_93_1.webp",
+            "title": "After",
+            "text": "",
+            "link_label": "",
+            "link": "",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "column_KJWMef",
+        "column_aAdR9K"
+      ],
+      "settings": {
+        "title": "Incredible results",
+        "heading_size": "hm",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 2,
+        "column_alignment": "left",
+        "background_style": "none",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "scheme-2",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "section_class": ""
+      }
+    },
     "related-products": {
       "type": "related-products",
       "settings": {
@@ -203,6 +251,7 @@
   "order": [
     "main",
     "multirow_HV497Y",
+    "multicolumn_kzBAVh",
     "related-products"
   ]
 }
