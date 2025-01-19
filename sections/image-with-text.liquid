@@ -115,7 +115,9 @@
                         {% endfor %}
                       </div>
                       <div class="ingredientsModal">
+                        <h3>Ingredients</h3>
                         {{ product.metafields.custom.ingredients_text }}
+                        <button class="closeModal" class="button--secondary button--bordered">Close</button>
                       </div>
                       <script>
                         document.getElementById("buttonModal").addEventListener("click", function () {
