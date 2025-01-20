@@ -358,50 +358,6 @@
     },
     "collapsible_content_GiNw6Y": {
       "type": "collapsible-content",
-      "blocks": {
-        "collapsible_row_iAdYCX": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "Collapsible row",
-            "icon": "none",
-            "row_content": "",
-            "page": ""
-          }
-        },
-        "collapsible_row_L8ndPN": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "Collapsible row",
-            "icon": "check_mark",
-            "row_content": "",
-            "page": ""
-          }
-        },
-        "collapsible_row_QtVNpq": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "Collapsible row",
-            "icon": "check_mark",
-            "row_content": "",
-            "page": ""
-          }
-        },
-        "collapsible_row_CbMxGB": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "Collapsible row",
-            "icon": "check_mark",
-            "row_content": "",
-            "page": ""
-          }
-        }
-      },
-      "block_order": [
-        "collapsible_row_iAdYCX",
-        "collapsible_row_L8ndPN",
-        "collapsible_row_QtVNpq",
-        "collapsible_row_CbMxGB"
-      ],
       "settings": {
         "caption": "",
         "heading": "FAQS",
