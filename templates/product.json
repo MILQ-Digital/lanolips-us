@@ -403,9 +403,9 @@
         "collapsible_row_CbMxGB"
       ],
       "settings": {
-        "caption": "FAQS",
-        "heading": "",
-        "heading_size": "h1",
+        "caption": "",
+        "heading": "FAQS",
+        "heading_size": "h2",
         "heading_alignment": "left",
         "layout": "none",
         "color_scheme": "",
