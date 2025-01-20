@@ -8,6 +8,8 @@
 
 .accordion summary .accordion_icons {
   width: 24px;
+  height: 24px;
+  display: flex;
 }
 
 .accordion summary[aria-expanded="false"] .accordion_icons .icon-minus,
