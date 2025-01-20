@@ -100,10 +100,6 @@
   padding-top: 0;
 }
 
-.collapsible-content summary:hover .accordion__title {
-  text-decoration: underline;
-  text-underline-offset: 0.3rem;
-}
 
 .collapsible-content summary .accordion__title {
   font-size: 30px;
