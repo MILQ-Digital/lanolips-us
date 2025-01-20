@@ -83,6 +83,10 @@
       <span class="t">{{ tag_title | capitalize }}</span>
     {% endif %}  
 
+  {%- elsif template.name == 'search' -%}
+    {{ divider_html }}
+     <span class="t">Search</span>
+
   {%- elsif template.name == 'article' -%}
     {{ divider_html }}
     {{ blog.title | link_to: blog.url }}
