@@ -69,8 +69,7 @@
     <div class="template-search__header page-width{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--fade-in{% endif %}">
       {%- render 'breadcrumbs' -%}
 
-      <h1 class="heading-md">Search Results For "{{ search.terms }}"
-      </h1>
+      <h1 class="heading-md">Search Results For "{{ search.terms | capitalize  }}"</h1>
       
       {%- if search.performed -%}
         {%- unless section.settings.enable_filtering or section.settings.enable_sorting -%}
