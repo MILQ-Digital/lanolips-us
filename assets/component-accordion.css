@@ -51,6 +51,8 @@
   margin: 0;
   word-break: break-word;
   align-items: center;
+  font-size: 30px;
+  line-height: 130%;
 }
 
 .accordion .svg-wrapper {
