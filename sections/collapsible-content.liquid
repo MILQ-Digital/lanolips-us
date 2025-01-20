@@ -70,7 +70,7 @@
           {% endif %}
           <div class="grid__item">
           
-            {%- if block.settings.use_metaobject_faq -%}
+            {%- if section.settings.use_metaobject_faq -%}
               {%- assign faqs_metaobject_references = product.metafields.custom.faqs -%}
               {% if faqs_metaobject_references.value != blank %}
                 {%- for metaobject_reference in faqs_metaobject_references.value -%}
