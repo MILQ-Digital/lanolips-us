@@ -69,6 +69,42 @@
             </div>
           {% endif %}
           <div class="grid__item">
+          
+            {%- if block.settings.use_metaobject_faq -%}
+              {%- assign faqs_metaobject_references = product.metafields.custom.faqs -%}
+              {% if faqs_metaobject_references.value != blank %}
+                {%- for metaobject_reference in faqs_metaobject_references.value -%}
+                  {% assign faq_metaobject = metaobject_reference | metaobject %}
+                  <div
+                    class="accordion{% if section.settings.layout == 'row' %} content-container color-{{ section.settings.container_color_scheme }} gradient{% endif %}"
+                    {{ block.shopify_attributes }}
+                  >
+                    <details
+                    id="Details-{{ metaobject_reference.id }}-{{ section.id }}"
+                    {% if section.settings.open_first_collapsible_row and forloop.first %}
+                      open
+                    {% endif %}>
+                      <summary id="Summary-{{ metaobject_reference.id }}-{{ section.id }}">
+                        {% render 'icon-accordion', icon: block.settings.icon %}
+                        <h3 class="accordion__title inline-richtext h4">
+                          {{ faq_metaobject.question | default: block.settings.page.title | escape }}
+                        </h3>
+                        {{- 'icon-caret.svg' | inline_asset_content -}}
+                      </summary>
+                      <div
+                        class="accordion__content rte"
+                        id="CollapsibleAccordion-{{ metaobject_reference.id }}-{{ section.id }}"
+                        role="region"
+                        aria-labelledby="Summary-{{ metaobject_reference.id }}-{{ section.id }}"
+                      >  
+                        {{ faq_metaobject.answer }}
+                      </div>
+                    </details>
+                  </div>
+                {% endfor %}
+              {% endif %}
+            {%- endif -%}  
+
             {%- for block in section.blocks -%}
               <div
                 class="accordion{% if section.settings.layout == 'row' %} content-container color-{{ section.settings.container_color_scheme }} gradient{% endif %}"
