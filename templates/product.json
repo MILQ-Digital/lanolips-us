@@ -405,7 +405,7 @@
       "settings": {
         "caption": "",
         "heading": "FAQS",
-        "heading_size": "h2",
+        "heading_size": "_2xs",
         "heading_alignment": "left",
         "layout": "none",
         "color_scheme": "",
