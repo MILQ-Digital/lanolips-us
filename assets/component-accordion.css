@@ -3,6 +3,17 @@
   position: relative;
   line-height: 1;
   padding: 1.5rem 0;
+  justify-content: space-between;
+}
+
+.accordion summary [aria-expanded="false"] .accordion_icons .icon-minus,
+.accordion summary [aria-expanded="true"] .accordion_icons .icon-plus{
+  display: none;
+}
+
+.accordion summary [aria-expanded="true"] .accordion_icons .icon-minus,
+.accordion summary [aria-expanded="false"] .accordion_icons .icon-plus{
+  display: block;
 }
 
 .accordion .summary__title {
