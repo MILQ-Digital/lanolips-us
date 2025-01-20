@@ -103,6 +103,7 @@ body {
 }
 
 .heading-xs,
+.xs,
 .multirow .rte h3 {
   font-size: var(--heading-xs);
   line-height: 120%; /* 33.6px */
@@ -110,6 +111,7 @@ body {
 }
 
 .heading-2xs,
+._2xs, 
 .multirow .rte h4 {
   font-size: var(--heading-2xs);
   line-height: 130%; /* 33.6px */
