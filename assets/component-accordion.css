@@ -6,6 +6,10 @@
   justify-content: space-between;
 }
 
+.accordion summary .accordion_icons {
+  width: 24px;
+}
+
 .accordion summary[aria-expanded="false"] .accordion_icons .icon-minus,
 .accordion summary[aria-expanded="true"] .accordion_icons .icon-plus{
   display: none;
