@@ -6,13 +6,13 @@
   justify-content: space-between;
 }
 
-.accordion summary [aria-expanded="false"] .accordion_icons .icon-minus,
-.accordion summary [aria-expanded="true"] .accordion_icons .icon-plus{
+.accordion summary[aria-expanded="false"] .accordion_icons .icon-minus,
+.accordion summary[aria-expanded="true"] .accordion_icons .icon-plus{
   display: none;
 }
 
-.accordion summary [aria-expanded="true"] .accordion_icons .icon-minus,
-.accordion summary [aria-expanded="false"] .accordion_icons .icon-plus{
+.accordion summary[aria-expanded="true"] .accordion_icons .icon-minus,
+.accordion summary[aria-expanded="false"] .accordion_icons .icon-plus{
   display: block;
 }
 
