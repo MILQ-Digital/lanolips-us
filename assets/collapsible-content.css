@@ -104,6 +104,10 @@
   padding: 0;
 }
 
+.collapsible-content .accordion:last-child {
+  border-bottom: 0;
+}
+
 .collapsible-row-layout .accordion .accordion__content {
   padding-top: 0;
 }
