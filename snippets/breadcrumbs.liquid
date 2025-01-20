@@ -74,7 +74,7 @@
 
 
   {%- elsif template contains 'collection' -%}
-
+    {{ divider_html }}
     <a href="{{ collection.url }}">{{ collection.title }}</a>
 
     {% if current_tags.size > 0 %}
