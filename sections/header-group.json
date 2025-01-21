@@ -44,10 +44,21 @@
           "settings": {
             "position": "1"
           }
+        },
+        "image_UPCC3m": {
+          "type": "image",
+          "settings": {
+            "position": "1",
+            "image": "shopify://shop_images/Lanolips_Collection_Image.jpg",
+            "title": "Test",
+            "link_text": "text",
+            "link": "shopify://collections"
+          }
         }
       },
       "block_order": [
-        "megamenu_bL8xeU"
+        "megamenu_bL8xeU",
+        "image_UPCC3m"
       ],
       "settings": {
         "logo_position": "top-center",
