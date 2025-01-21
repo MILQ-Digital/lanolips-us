@@ -48,7 +48,7 @@
         "image_UPCC3m": {
           "type": "image",
           "settings": {
-            "position": "2",
+            "position": "1",
             "image": "shopify://shop_images/Lanolips_Collection_Image.jpg",
             "title": "Test",
             "link_text": "text",
