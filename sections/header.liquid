@@ -688,7 +688,55 @@
 		      ]
 				}
 			]
-		}    
+		},
+{
+      "type": "image",
+      "name": "Image",
+      "settings": [
+        {
+          "type": "select",
+          "id": "position",
+          "label": "Link position in main menu",
+          "default": "1",
+          "options": [
+            { "value": "1", "label": "Item 1" },
+            { "value": "2", "label": "Item 2" },
+            { "value": "3", "label": "Item 3" },
+            { "value": "4", "label": "Item 4" },
+            { "value": "5", "label": "Item 5" },
+            { "value": "6", "label": "Item 6" },
+            { "value": "7", "label": "Item 7" },
+            { "value": "8", "label": "Item 8" },
+            { "value": "9", "label": "Item 9" },
+            { "value": "10", "label": "Item 10" }
+          ]
+        },
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        },
+        {
+          "type": "header",
+          "content": "Typography"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Heading"
+        },
+        {
+          "type": "text",
+          "id": "link_text",
+          "label": "Text"
+        },
+        {
+          "type": "url",
+          "id": "link",
+          "label": "Link"
+        }
+      ]
+    }        
   ]
 }
 {% endschema %}
