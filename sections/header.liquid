@@ -147,7 +147,7 @@
         if section.settings.menu_type_desktop == 'dropdown'
           render 'header-dropdown-menu'
         elsif section.settings.menu_type_desktop != 'drawer'
-          render 'header-mega-menu', blocks: section.blocks
+          render 'header-mega-menu', blocks: section.blocks | default: ""
         endif
       endif
     %}
@@ -403,11 +403,7 @@
     "url": {{ request.origin | append: page.url | json }}
   }
 </script>
-{% for block in blocks %}
-  <script>
-    console.log("Mega Menu Block Type:", "{{ block.type }}");
-  </script>
-{% endfor %}
+
 
 {%- if request.page_type == 'index' -%}
   {% assign potential_action_target = request.origin | append: routes.search_url | append: "?q={search_term_string}" %}

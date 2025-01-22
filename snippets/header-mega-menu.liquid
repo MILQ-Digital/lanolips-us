@@ -79,6 +79,8 @@
   </ul>
 </nav>
 
-<script>
-  console.log("Mega Menu Blocks:", {{ blocks | json }});
-</script>
+{% for block in blocks %}
+  <script>
+    console.log("Mega Menu Block Type:", "{{ block.type }}");
+  </script>
+{% endfor %}
