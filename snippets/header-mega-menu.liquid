@@ -1,6 +1,6 @@
-<nav class="header__inline-menu">
-  <ul class="list-menu list-menu--inline" role="list">
-    {%- for link in menu.links -%}
+<full-menu-horizontal class="full-menu-horizontal">
+  <ul class="thb-full-menu" role="menubar">
+    {%- for link in section.settings.menu.links -%}
       {%- liquid
         assign parent_index = forloop.index
         assign has_sub_menu = false
@@ -214,4 +214,5 @@
       </li>
     {%- endfor -%}
   </ul>
-</nav>
+  <div class="full-menu--cc"></div>
+</full-menu-horizontal>
