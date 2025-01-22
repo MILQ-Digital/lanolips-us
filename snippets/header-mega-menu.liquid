@@ -104,7 +104,7 @@
                         <a href="{{ image_link }}" title="{{ heading | escape }}">
                       {%- endif -%}
                       <div class="full-menu--image-image">
-                        {%- render 'responsive-image', image: image_block, sizes: '1200x800' -%}
+                        <img src="{{ block.settings.image | image_url: 'medium' }}" alt="{{ block.settings.title | escape }}">
                       </div>
                       {%- if heading -%}
                         <div class="full-menu--image-cover">
@@ -164,7 +164,7 @@
                           <a href="{{ image_link }}" title="{{ heading | escape }}">
                         {%- endif -%}
                         <div class="mega_image_wrapper">
-                          {%- render 'responsive-image', image: megaimage, sizes: '1900x450' -%}
+                         <img src="{{ block.settings.mega_image | image_url: 'medium' }}" alt="{{ heading | escape }}">
                         </div>
                         {%- if heading -%}
                           <div class="full-menu--image-cover">
@@ -196,7 +196,7 @@
                         <a href="{{ image_link }}" title="{{ heading | escape }}">
                       {%- endif -%}
                       <div class="full-menu--image-image">
-                        {%- render 'responsive-image', image: image_block, sizes: '1200x800' -%}
+                         <img src="{{ block.settings.image | image_url: 'medium' }}" alt="{{ block.settings.title | escape }}">
                       </div>
                       {%- if heading -%}
                         <div class="full-menu--image-cover">
