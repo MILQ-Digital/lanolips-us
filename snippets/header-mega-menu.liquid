@@ -44,7 +44,7 @@
                       {%- endif -%}
 
                       {%- for block in blocks -%}
-                        {%- if block.type == "image" and block.settings.position == forloop.parentloop.index -%}
+                        {%- if block.type == "image" -%}
                           <div class="mega-menu-image">
                             {%- if block.settings.image -%}
                               <img src="{{ block.settings.image | image_url: 'medium' }}" alt="{{ block.settings.title }}">
