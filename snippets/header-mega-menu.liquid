@@ -65,8 +65,8 @@
                         </ul>
                       {%- endif -%}
 
-{%- for block in section.blocks -%}
-  {%- if block.type == "image" and block.settings.position == index -%}
+{%- for block in blocks -%}
+  {%- if block.type == "image" and block.settings.position == forloop.index -%}
     <div class="mega-menu-image">
       {%- if block.settings.image -%}
         <img src="{{ block.settings.image | image_url: 'medium' }}" alt="{{ block.settings.title }}">
@@ -80,6 +80,7 @@
     </div>
   {%- endif -%}
 {%- endfor -%}
+
 
 
                     </li>
