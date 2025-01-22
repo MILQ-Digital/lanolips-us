@@ -196,7 +196,7 @@
                         {%- assign position = block.settings.position | plus: 0 -%}
                         {%- if position == parent_index -%}
                           {%- liquid
-                            assign image_block = block.settings.image_block
+                            assign image_block = block.settings.image_block | file_img_url: 'medium'
                             assign image_link = block.settings.image_link
                             assign heading = block.settings.image_title | default: ''
                           -%}
@@ -206,7 +206,7 @@
                               <a href="{{ image_link }}" title="{{ heading | escape }}">
                             {%- endif -%}
                             <div class="full-menu--image-image">
-                              {{ image_block }}
+                              <img src="{{ image_block }}" alt="{{ block.settings.title | escape }}">
                             </div>
                             {%- if heading -%}
                               <div class="full-menu--image-cover">
