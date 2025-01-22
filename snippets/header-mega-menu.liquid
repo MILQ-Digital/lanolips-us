@@ -42,7 +42,9 @@
                           {%- endfor -%}
                         </ul>
                       {%- endif -%}
-
+                    </li>
+                  {%- endfor -%}
+                </ul>
                       {%- for block in blocks -%}
                         {%- if block.type == "image" -%}
                           <div class="mega-menu-image">
@@ -57,11 +59,7 @@
                             {%- endif -%}
                           </div>
                         {%- endif -%}
-                      {%- endfor -%}
-
-                    </li>
-                  {%- endfor -%}
-                </ul>
+                      {%- endfor -%}                
               </div>
             </details>
           </header-menu>
