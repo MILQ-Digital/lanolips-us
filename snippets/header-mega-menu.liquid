@@ -107,7 +107,7 @@
                       {%- assign position = block.settings.position | plus: 0 -%}
                       {%- if position == parent_index -%}
                         {%- liquid
-                          assign image_block = block.settings.image_block | img_url
+                          assign image_block = block.settings.image_block | img_url: 'large'
                           assign image_link = block.settings.image_link
                           assign heading = block.settings.image_title | default: ''
                         -%}
@@ -166,7 +166,7 @@
 
                           {%- if block.type == 'megamenu' and block.settings.mega_image != blank -%}
                             {%- liquid
-                              assign megaimage = block.settings.mega_image | img_url
+                              assign megaimage = block.settings.mega_image | img_url: 'large'
                               assign image_link = block.settings.image_link
                               assign heading = block.settings.image_title | default: ''
                             -%}
@@ -196,7 +196,7 @@
                         {%- assign position = block.settings.position | plus: 0 -%}
                         {%- if position == parent_index -%}
                           {%- liquid
-                            assign image_block = block.settings.image_block | img_url
+                            assign image_block = block.settings.image_block | img_url: 'large'
                             assign image_link = block.settings.image_link
                             assign heading = block.settings.image_title | default: ''
                           -%}
