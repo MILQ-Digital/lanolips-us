@@ -147,7 +147,7 @@
         if section.settings.menu_type_desktop == 'dropdown'
           render 'header-dropdown-menu'
         elsif section.settings.menu_type_desktop != 'drawer'
-          render 'header-mega-menu', blocks: section.blocks, header_settings: section.settings
+          render 'header-mega-menu', blocks: section.blocks, header_settings: section.settings,  mega_sub_menu: block_settings.mega_sub_menu, megaimage: block_settings.mega_image 
         endif
       endif
     %}
