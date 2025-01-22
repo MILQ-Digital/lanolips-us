@@ -107,7 +107,7 @@
                       {%- assign position = block.settings.position | plus: 0 -%}
                       {%- if position == parent_index -%}
                         {%- liquid
-                          assign image_block = block.settings.image_block | file_img_url: 'medium'
+                          assign image_block = block.settings.image_block | img_url: 'medium'
                           assign image_link = block.settings.image_link
                           assign heading = block.settings.image_title | default: ''
                         -%}
@@ -196,7 +196,7 @@
                         {%- assign position = block.settings.position | plus: 0 -%}
                         {%- if position == parent_index -%}
                           {%- liquid
-                            assign image_block = block.settings.image_block | file_img_url: 'medium'
+                            assign image_block = block.settings.image_block | img_url: 'medium'
                             assign image_link = block.settings.image_link
                             assign heading = block.settings.image_title | default: ''
                           -%}
