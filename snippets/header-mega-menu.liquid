@@ -1,21 +1,22 @@
-{% comment %}
-  Renders a megamenu for the header.
-
-  Usage:
-  {% render 'header-mega-menu', blocks: section.blocks, header_settings: section.settings %}
-{% endcomment %}
-
-<nav class="header__inline-menu">
-  <ul class="list-menu list-menu--inline" role="list">
-    {%- for link in section.settings.menu.links -%}
+<full-menu-horizontal class="full-menu-horizontal">
+  <ul class="thb-full-menu" role="menubar">
+    {%- for link in menu.links -%}
       {%- liquid
         assign parent_index = forloop.index
-        assign has_mega_menu = false   
+        assign has_sub_menu = false
+        assign has_mega_menu = false
+        assign has_promotion = false
+        assign promotion_block_index = false
+        assign promotion_blocks = blocks | where: 'type', 'promotion'
         assign mega_menu_block_index = false
         assign mega_menu_blocks = blocks | where: 'type', 'megamenu'
         assign image_block_index = false
         assign has_image = false
-        assign image_blocks = blocks | where: 'type', 'image_picker'    
+        assign image_blocks = blocks | where: 'type', 'image_picker'
+
+        if link.links.size > 0
+          assign has_sub_menu = true
+        endif
 
         for block in mega_menu_blocks
           assign position = block.settings.position | plus: 0
@@ -32,84 +33,186 @@
             assign image_block_index = forloop.index0
           endif
         endfor
-    -%}
-      <li class="{% if has_mega_menu and has_image %}with_megamenu_image {% endif %} {% if has_mega_menu or has_image %} menu-item-has-children{% endif %}{% if has_mega_menu %} menu-item-has-megamenu{% endif %}{% if link.active %} active{% endif %}">
-        {%- if link.links != blank -%}
-          <header-menu>
-            <details id="Details-HeaderMenu-{{ forloop.index }}" class="mega-menu">
-              <summary id="HeaderMenu-{{ link.handle }}" class="header__menu-item list-menu__item link focus-inset">
-                <span {% if link.child_active %} class="header__active-menu-item" {% endif %}>
-                  {{- link.title | escape -}}
-                </span>
-                {{- 'icon-caret.svg' | inline_asset_content -}}
-              </summary>
-              <div id="MegaMenu-Content-{{ forloop.index }}" class="mega-menu__content">
-                <ul class="mega-menu__list page-width" role="list">
-                  {%- for childlink in link.links -%}
-                    <li>
-                      <a id="HeaderMenu-{{ link.handle }}-{{ childlink.handle }}" href="{{ childlink.url }}"
-                        class="mega-menu__link mega-menu__link--level-2 link"
-                      >
-                        {{ childlink.title | escape }}
-                      </a>
+      -%}
+      <li
+        role="menuitem"
+        class="{{ link.title | handle }} {% if link.title contains 'Sale' %}link-sale{% endif %} {% if has_mega_menu and has_image %}with_megamenu_image {% endif %} {% if has_sub_menu or has_mega_menu or has_image %} menu-item-has-children{% endif %}{% if has_mega_menu %} menu-item-has-megamenu{% endif %}{% if link.active %} active{% endif %}"
+        {% if has_sub_menu %}
+          data-item-title="{{ link.title | escape }}"
+        {% endif %}
+      >
+        <a
+          href="{{ link.url }}"
+          {%- if link.active %}
+            aria-current="page"
+          {% endif -%}
+        >
+          {{- link.title -}}
+        </a>
 
-                      {%- if childlink.links != blank -%}
-                        <ul class="list-unstyled" role="list">
-                          {%- for grandchildlink in childlink.links -%}
-                            <li>
-                              <a id="HeaderMenu-{{ link.handle }}-{{ childlink.handle }}-{{ grandchildlink.handle }}" 
-                                href="{{ grandchildlink.url }}"
-                                class="mega-menu__link link"
-                              >
-                                {{ grandchildlink.title | escape }}
-                              </a>
-                            </li>
-                          {%- endfor -%}
-                        </ul>
+        {%- if has_sub_menu == true and has_mega_menu == false and has_image == false -%}
+          {%- liquid
+            assign image_blockz = image_blocks[image_block_index]
+          -%}
+          <div class="sub-menu withsub {%- if has_promotion %} sub-menu--has-promotion{%- endif -%}" tabindex="-1">
+            <ul class="sub-menu sub-menu--static">
+              {%- for l in link.links -%}
+                {%- liquid
+                  assign has_sub_menu = false
+                  assign has_mega_menu = false
+                  if l.links.size > 0
+                    assign has_sub_menu = true
+                  endif
+                -%}
+                <li
+                  class="{%- if l.active %}active{% endif %}{% if has_sub_menu %} menu-item-has-children{%- endif -%}"
+                  role="none"
+                  {% if has_sub_menu %}
+                    data-item-title="{{ l.title | escape }}"
+                  {% endif %}
+                >
+                  <a href="{{ l.url }}" role="menuitem">
+                    {{- l.title -}}
+                    {%- if has_sub_menu -%}{%- render 'svg-icons' with 'thb-dropdown-right' -%}{%- endif -%}
+                  </a>
+                  {%- if has_sub_menu -%}
+                    <ul class="sub-menu" role="menu">
+                      {%- for sub_link in l.links -%}
+                        <li class="{%- if sub_link.active %} active{% endif %}" role="none">
+                          <a href="{{ sub_link.url }}" role="menuitem">{{- sub_link.title -}}</a>
+                        </li>
+                      {%- endfor -%}
+                    </ul>
+                  {%- endif -%}
+                </li>
+              {%- endfor -%}
+            </ul>
+            
+            {%- if has_image -%}
+              <div class="menu-image-grid">
+                {%- for block in image_blocks -%}
+                  {%- assign position = block.settings.position | plus: 0 -%}
+                  {%- if position == parent_index -%}
+                    {%- liquid
+                      assign image_block = block.settings.image_block
+                      assign image_link = block.settings.image_link
+                      assign heading = block.settings.image_title | default: ''
+                    -%}
+
+                    <div class="full-menu--image">
+                      {%- if image_link != null -%}
+                        <a href="{{ image_link }}" title="{{ heading | escape }}">
                       {%- endif -%}
-                    </li>
-                  {%- endfor -%}
-                </ul>
-                      {%- for block in blocks -%}
-                        {%- if block.type == "image" -%}
-                          <div class="mega-menu-image">
-                            {%- if block.settings.image -%}
-                              <img src="{{ block.settings.image | image_url: 'medium' }}" alt="{{ block.settings.title }}">
+                      <div class="full-menu--image-image">
+                        {%- render 'responsive-image', image: image_block, sizes: '1200x800' -%}
+                      </div>
+                      {%- if heading -%}
+                        <div class="full-menu--image-cover">
+                          <p>{{ heading }}</p>
+                        </div>
+                      {%- endif -%}
+                      {%- if image_link != null -%}</a>{%- endif -%}
+                    </div>
+                  {%- endif -%}
+                {%- endfor -%}
+              </div>
+            {%- endif -%}
+          </div>
+
+        {%- elsif has_sub_menu == true or has_mega_menu == true or has_image == true or has_promotion == true -%}
+          {%- liquid
+            assign mega_menu_block = blocks[mega_menu_block_index]
+            assign image_blockz = image_blocks[image_block_index]
+            assign megamenu = block.settings.mega_menu_blocks
+          -%}
+          <div class="sub-menu mega-menu-container" tabindex="-1">
+            {%- if has_mega_menu -%}
+              <div class="mega-menu-wrapper with_mimage">
+                {%- for block in mega_menu_blocks -%}
+                  {%- assign position = block.settings.position | plus: 0 -%}
+                  {%- if position == parent_index -%}
+                    {%- if block.type == 'megamenu' and block.settings.mega_sub_menu != blank -%}
+                      {%- assign mega_sub_menu = block.settings.mega_sub_menu -%}
+
+                      <ul class="mega-menu-columns" tabindex="-1">
+                        {%- for l in mega_sub_menu.links -%}
+                          <li class="{% if l.active %} active{% endif %}" role="none">
+                            <a href="{{ l.url }}" class="mega-menu-columns__heading" role="menuitem">{{ l.title }}</a>
+                            {%- if l.links.size > 0 -%}
+                              <ul role="menu">
+                                {%- for sub_link in l.links -%}
+                                  <li class="{% if sub_link.active %} active{% endif %}" role="none">
+                                    <a href="{{ sub_link.url }}" role="menuitem">{{ sub_link.title }}</a>
+                                  </li>
+                                {%- endfor -%}
+                              </ul>
                             {%- endif -%}
-                            {%- if block.settings.title != blank -%}
-                              <h3>{{ block.settings.title }}</h3>
-                            {%- endif -%}
-                            {%- if block.settings.link_text != blank -%}
-                              <a href="{{ block.settings.link }}" class="mega-menu-link">{{ block.settings.link_text }}</a>
-                            {%- endif -%}
+                          </li>
+                        {%- endfor -%}
+                      </ul>
+                    {%- endif -%}
+
+                    {%- if block.type == 'megamenu' and block.settings.mega_image != blank -%}
+                      {%- liquid
+                        assign megaimage = block.settings.mega_image
+                        assign image_link = block.settings.image_link
+                        assign heading = block.settings.image_title | default: ''
+                      -%}
+
+                      <div class="mega_image_container">
+                        {%- if image_link != null -%}
+                          <a href="{{ image_link }}" title="{{ heading | escape }}">
+                        {%- endif -%}
+                        <div class="mega_image_wrapper">
+                          {%- render 'responsive-image', image: megaimage, sizes: '1900x450' -%}
+                        </div>
+                        {%- if heading -%}
+                          <div class="full-menu--image-cover">
+                            <p>{{ heading }}</p>
                           </div>
                         {%- endif -%}
-                      {%- endfor -%}                
+                        {%- if image_link != null -%}</a>{%- endif -%}
+                      </div>
+                    {%- endif -%}
+                  {%- endif -%}
+                {%- endfor -%}
+
               </div>
-            </details>
-          </header-menu>
-        {%- else -%}
-          <a id="HeaderMenu-{{ link.handle }}" href="{{ link.url }}"
-            class="header__menu-item list-menu__item link link--text focus-inset"
-          >
-            <span {% if link.current %} class="header__active-menu-item" {% endif %}>
-              {{- link.title | escape -}}
-            </span>
-          </a>
+            {%- endif -%}
+
+            {%- if has_image -%}
+              <div class="menu-image-grid">
+                {%- for block in image_blocks -%}
+                  {%- assign position = block.settings.position | plus: 0 -%}
+                  {%- if position == parent_index -%}
+                    {%- liquid
+                      assign image_block = block.settings.image_block
+                      assign image_link = block.settings.image_link
+                      assign heading = block.settings.image_title | default: ''
+                    -%}
+
+                    <div class="full-menu--image">
+                      {%- if image_link != null -%}
+                        <a href="{{ image_link }}" title="{{ heading | escape }}">
+                      {%- endif -%}
+                      <div class="full-menu--image-image">
+                        {%- render 'responsive-image', image: image_block, sizes: '1200x800' -%}
+                      </div>
+                      {%- if heading -%}
+                        <div class="full-menu--image-cover">
+                          <p>{{ heading }}</p>
+                        </div>
+                      {%- endif -%}
+                      {%- if image_link != null -%}</a>{%- endif -%}
+                    </div>
+                  {%- endif -%}
+                {%- endfor -%}
+              </div>
+            {%- endif -%}
+          </div>
         {%- endif -%}
       </li>
     {%- endfor -%}
   </ul>
-</nav>
-
-{%- for block in blocks -%}
-  <script>
-    console.log("Mega Menu Block:", {
-      type: "{{ block.type }}",
-      position: "{{ block.settings.position }}",
-      title: "{{ block.settings.title }}",
-      image: "{{ block.settings.image | json }}",
-      link: "{{ block.settings.link }}"
-    });
-  </script>
-{%- endfor -%}
+  <div class="full-menu--cc"></div>
+</full-menu-horizontal>
