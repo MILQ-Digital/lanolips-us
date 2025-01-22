@@ -41,7 +41,7 @@
           data-item-title="{{ link.title | escape }}"
         {% endif %}
       >
-       {%- if link.links != blank -%}
+       {%- if link.links != blank or  has_mega_menu -%}
           <header-menu>
             <details id="Details-HeaderMenu-{{ forloop.index }}" class="mega-menu">
               <summary
