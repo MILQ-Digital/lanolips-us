@@ -633,6 +633,23 @@
 					"content": "Mega menu block only works on horizontal style navigation"
 				},
 				{
+					"type": "image_picker",
+					"id": "mega_image",
+					"label": "Image",
+							"info": "1920 x 400 px .webp recommended."
+				},	
+				{
+					"type": "text",
+					"id": "image_title",
+					"default": "heading",
+					"label": "Heading"
+				},
+				{
+					"type": "url",
+					"id": "image_link",
+					"label": "Link"
+				},							
+				{
 					"type": "select",
 					"id": "position",
 					"label": "Link position in main menu",
@@ -687,57 +704,94 @@
 		          "label": "Item 12"
 		        }
 		      ]
-				}
+				},
+				{
+					"type": "link_list",
+					"id": "mega_sub_menu",
+					"label": "Menu Item"
+				}				
 			]
 		},
-{
-      "type": "image",
-      "name": "Image",
-      "settings": [
-        {
-          "type": "select",
-          "id": "position",
-          "label": "Link position in main menu",
-          "default": "1",
-          "options": [
-            { "value": "1", "label": "Item 1" },
-            { "value": "2", "label": "Item 2" },
-            { "value": "3", "label": "Item 3" },
-            { "value": "4", "label": "Item 4" },
-            { "value": "5", "label": "Item 5" },
-            { "value": "6", "label": "Item 6" },
-            { "value": "7", "label": "Item 7" },
-            { "value": "8", "label": "Item 8" },
-            { "value": "9", "label": "Item 9" },
-            { "value": "10", "label": "Item 10" }
-          ]
-        },
-        {
-          "type": "image_picker",
-          "id": "image",
-          "label": "Image"
-        },
-        {
-          "type": "header",
-          "content": "Typography"
-        },
-        {
-          "type": "text",
-          "id": "title",
-          "label": "Heading"
-        },
-        {
-          "type": "text",
-          "id": "link_text",
-          "label": "Text"
-        },
-        {
-          "type": "url",
-          "id": "link",
-          "label": "Link"
-        }
-      ]
-    }        
+		{
+			"type": "image_picker",
+			"name": "Image Block",
+			"limit": 50,
+			"settings": [
+				{
+					"type": "select",
+					"id": "position",
+					"label": "Link position in main menu",
+					"default": "1",
+					"options": [
+						{
+						"value": "1",
+						"label": "Item 1"
+						},
+								{
+						"value": "2",
+						"label": "Item 2"
+						},
+								{
+						"value": "3",
+						"label": "Item 3"
+						},
+								{
+						"value": "4",
+						"label": "Item 4"
+						},
+								{
+						"value": "5",
+						"label": "Item 5"
+						},
+								{
+						"value": "6",
+						"label": "Item 6"
+						},
+								{
+						"value": "7",
+						"label": "Item 7"
+						},
+								{
+						"value": "8",
+						"label": "Item 8"
+						},
+								{
+						"value": "9",
+						"label": "Item 9"
+						},
+								{
+						"value": "10",
+						"label": "Item 10"
+						},
+								{
+						"value": "11",
+						"label": "Item 11"
+						},
+								{
+						"value": "12",
+						"label": "Item 12"
+						}
+					]
+				},				
+				{
+					"type": "image_picker",
+					"id": "image_block",
+					"label": "Image",
+						"info": "1200 x 800px .webp recommended."
+				},
+				{
+					"type": "text",
+					"id": "image_title",
+					"default": "heading",
+					"label": "Heading"
+				},
+				{
+					"type": "url",
+					"id": "image_link",
+					"label": "Link"
+				}
+			]
+		}     
   ]
 }
 {% endschema %}
