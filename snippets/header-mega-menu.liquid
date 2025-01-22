@@ -1,5 +1,5 @@
-<full-menu-horizontal class="full-menu-horizontal">
-  <ul class="thb-full-menu" role="menubar">
+<nav class="header__inline-menu">
+  <ul class="list-menu list-menu--inline" role="list">
     {%- for link in menu.links -%}
       {%- liquid
         assign parent_index = forloop.index
@@ -214,5 +214,4 @@
       </li>
     {%- endfor -%}
   </ul>
-  <div class="full-menu--cc"></div>
-</full-menu-horizontal>
+</nav>
