@@ -117,7 +117,7 @@
                             <a href="{{ image_link }}" title="{{ heading | escape }}">
                           {%- endif -%}
                           <div class="full-menu--image-image">
-                            <img src="{{ block.settings.image | image_url: 'medium' }}" alt="{{ block.settings.title | escape }}">
+                            <img src="{{ image_block | image_url: 'medium' }}" alt="{{ heading | escape }}">
                           </div>
                           {%- if heading -%}
                             <div class="full-menu--image-cover">
@@ -176,7 +176,7 @@
                                 <a href="{{ image_link }}" title="{{ heading | escape }}">
                               {%- endif -%}
                               <div class="mega_image_wrapper">
-                              <img src="{{ block.settings.mega_image | image_url: 'medium' }}" alt="{{ heading | escape }}">
+                              <img src="{{ megaimage | image_url: 'medium' }}" alt="{{ heading | escape }}">
                               </div>
                               {%- if heading -%}
                                 <div class="full-menu--image-cover">
@@ -206,7 +206,7 @@
                               <a href="{{ image_link }}" title="{{ heading | escape }}">
                             {%- endif -%}
                             <div class="full-menu--image-image">
-                              <img src="{{ block.settings.image | image_url: 'medium' }}" alt="{{ block.settings.title | escape }}">
+                              <img src="{{ image_block | image_url: 'medium' }}" alt="{{ heading | escape }}">
                             </div>
                             {%- if heading -%}
                               <div class="full-menu--image-cover">
