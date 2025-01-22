@@ -54,11 +54,22 @@
             "link_text": "text",
             "link": "shopify://collections"
           }
+        },
+        "image_PXqHaq": {
+          "type": "image",
+          "settings": {
+            "position": "2",
+            "image": "shopify://shop_images/Lano_Lips_Landing_Hero_Image_1.webp",
+            "title": "image 2",
+            "link_text": "",
+            "link": ""
+          }
         }
       },
       "block_order": [
         "megamenu_bL8xeU",
-        "image_UPCC3m"
+        "image_UPCC3m",
+        "image_PXqHaq"
       ],
       "settings": {
         "logo_position": "top-center",
