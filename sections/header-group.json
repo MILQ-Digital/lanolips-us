@@ -42,10 +42,10 @@
         "megamenu_bL8xeU": {
           "type": "megamenu",
           "settings": {
-            "image_title": "heading",
+            "image_title": "",
             "image_link": "",
             "position": "1",
-            "mega_sub_menu": ""
+            "mega_sub_menu": "lips"
           }
         },
         "image_picker_xEJ8td": {
