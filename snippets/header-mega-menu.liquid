@@ -7,7 +7,8 @@
 
 <nav class="header__inline-menu">
   <ul class="list-menu list-menu--inline" role="list">
-    {%- for link in section.settings.menu.links 
+    {%- for link in section.settings.menu.links -%}
+      {%- liquid
         assign parent_index = forloop.index
         assign has_mega_menu = false   
         assign mega_menu_block_index = false
@@ -31,7 +32,6 @@
             assign image_block_index = forloop.index0
           endif
         endfor
-
     -%}
       <li class="{% if has_mega_menu and has_image %}with_megamenu_image {% endif %} {% if has_mega_menu or has_image %} menu-item-has-children{% endif %}{% if has_mega_menu %} menu-item-has-megamenu{% endif %}{% if link.active %} active{% endif %}">
         {%- if link.links != blank -%}
