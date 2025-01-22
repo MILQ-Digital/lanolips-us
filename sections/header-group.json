@@ -57,11 +57,21 @@
             "image_title": "heading",
             "image_link": ""
           }
+        },
+        "image_picker_nbbXJR": {
+          "type": "image_picker",
+          "settings": {
+            "position": "3",
+            "image_block": "shopify://shop_images/Rectangle_93_1.png",
+            "image_title": "heading",
+            "image_link": ""
+          }
         }
       },
       "block_order": [
         "megamenu_bL8xeU",
-        "image_picker_xEJ8td"
+        "image_picker_xEJ8td",
+        "image_picker_nbbXJR"
       ],
       "settings": {
         "logo_position": "top-center",
