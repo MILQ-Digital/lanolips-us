@@ -403,6 +403,11 @@
     "url": {{ request.origin | append: page.url | json }}
   }
 </script>
+{% for block in blocks %}
+  <script>
+    console.log("Mega Menu Block Type:", "{{ block.type }}");
+  </script>
+{% endfor %}
 
 {%- if request.page_type == 'index' -%}
   {% assign potential_action_target = request.origin | append: routes.search_url | append: "?q={search_term_string}" %}
