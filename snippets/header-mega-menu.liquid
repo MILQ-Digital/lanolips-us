@@ -117,7 +117,7 @@
                             <a href="{{ image_link }}" title="{{ heading | escape }}">
                           {%- endif -%}
                           <div class="full-menu--image-image">
-                            <img src="{{ image_block | image_url: 'medium' }}" alt="{{ heading | escape }}">
+                            {{ image_block }}
                           </div>
                           {%- if heading -%}
                             <div class="full-menu--image-cover">
@@ -176,7 +176,7 @@
                                 <a href="{{ image_link }}" title="{{ heading | escape }}">
                               {%- endif -%}
                               <div class="mega_image_wrapper">
-                              <img src="{{ megaimage | image_url: 'medium' }}" alt="{{ heading | escape }}">
+                                {{ megaimage }}
                               </div>
                               {%- if heading -%}
                                 <div class="full-menu--image-cover">
@@ -206,7 +206,7 @@
                               <a href="{{ image_link }}" title="{{ heading | escape }}">
                             {%- endif -%}
                             <div class="full-menu--image-image">
-                              <img src="{{ image_block | image_url: 'medium' }}" alt="{{ heading | escape }}">
+                              {{ image_block }}
                             </div>
                             {%- if heading -%}
                               <div class="full-menu--image-cover">
