@@ -79,8 +79,14 @@
   </ul>
 </nav>
 
-{% for block in blocks %}
+{%- for block in section.blocks -%}
   <script>
-    console.log("Mega Menu Block Type:", "{{ block.type }}");
+    console.log("Mega Menu Block:", {
+      type: "{{ block.type }}",
+      position: "{{ block.settings.position }}",
+      title: "{{ block.settings.title }}",
+      image: "{{ block.settings.image | json }}",
+      link: "{{ block.settings.link }}"
+    });
   </script>
-{% endfor %}
+{%- endfor -%}
