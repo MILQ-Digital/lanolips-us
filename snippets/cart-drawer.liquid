@@ -59,51 +59,6 @@
   .drawer {
     visibility: hidden;
   }
-
-.cart-upsell {
-    margin-top: 20px;
-    text-align: center;
-}
-
-.upsell-carousel {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    overflow: hidden;
-    max-width: 300px;
-    margin: auto;
-}
-
-.upsell-track {
-    overflow: hidden;
-    width: 200px;
-}
-
-.upsell-items {
-    display: flex;
-    gap: 10px;
-    transition: transform 0.4s ease-in-out;
-}
-
-.upsell-item {
-    min-width: 100px;
-    text-align: center;
-}
-
-.upsell-item img {
-    width: 100px;
-    height: 100px;
-    object-fit: cover;
-    border-radius: 8px;
-}
-
-.prev-btn, .next-btn {
-    background: none;
-    border: none;
-    font-size: 24px;
-    cursor: pointer;
-}  
 </style>
 
 <cart-drawer class="drawer{% if cart == empty %} is-empty{% endif %}">
@@ -541,12 +496,20 @@
 
 <div class="cart-upsell">
   <h3>Recommended for You</h3>
-  <div class="cart-upsell-carousel upsell-carousel">
-    <button class="prev-btn">❮</button>
-    <div class="upsell-track">
+  <slider-component class="cart-upsell-carousel upsell-carousel">
+    <ul id="Slider-{{ section.id }}"
+        data-id="{{ section.id }}"
+        class="grid product-grid contains-card contains-card--product{% if settings.card_style == 'standard' %} contains-card--standard{% endif %} grid--{{ section.settings.columns_desktop }}-col-desktop{% if section.settings.collection == blank %} grid--2-col-tablet-down{% else %} grid--{{ section.settings.columns_mobile }}-col-tablet-down{% endif %}{% if show_mobile_slider or show_desktop_slider %} slider{% if show_desktop_slider %} slider--desktop{% endif %}{% if show_mobile_slider %} slider--tablet grid--peek{% endif %}{% endif %}"
+        role="list"
+        aria-label="{{ 'general.slider.name' | t }}">
       {% for product in upsell_products %}
         {% assign product_form_id = 'quick-add-' | append: section_id | append: product.id %}
-        <div class="cart-upsell-item upsell-item">
+        <li id="Slide-{{ section.id }}-{{ forloop.index }}"
+            class="cart-upsell-item upsell-item grid__item{% if show_mobile_slider or show_desktop_slider %} slider__slide{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
+            {% if settings.animations_reveal_on_scroll %}
+              data-cascade
+              style="--animation-order: {{ forloop.index }};"
+            {% endif %}">
           <a href="{{ product.url }}">
             <img src="{{ product.featured_image | img_url: '150x150' }}" alt="{{ product.title }}">
           </a>
@@ -575,11 +538,34 @@
             <input type="hidden" name="product-id" value="{{ product.id }}">
           </form>
 
-        </div>
+        </li>
       {% endfor %}
-    </div>
-    <button class="next-btn">❯</button>
-  </div>
+    </ul>
+        <div class="slider-buttons">
+          <button
+            type="button"
+            class="slider-button slider-button--prev"
+            name="previous"
+            aria-label="{{ 'general.slider.previous_slide' | t }}"
+            aria-controls="Slider-{{ section.id }}"
+          >
+            <span class="svg-wrapper">
+              {{- 'icon-arrow-left.svg' | inline_asset_content -}}
+            </span>
+          </button>
+          <button
+            type="button"
+            class="slider-button slider-button--next"
+            name="next"
+            aria-label="{{ 'general.slider.next_slide' | t }}"
+            aria-controls="Slider-{{ section.id }}"
+          >
+            <span class="svg-wrapper">
+              {{- 'icon-arrow-right.svg' | inline_asset_content -}}
+            </span>
+          </button>
+        </div>
+  </slider-component>
 </div>
 
 
