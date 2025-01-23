@@ -11,6 +11,8 @@
 <script src="{{ 'cart.js' | asset_url }}" defer="defer"></script>
 <script src="{{ 'quantity-popover.js' | asset_url }}" defer="defer"></script>
 
+{{ 'component-slider.css' | asset_url | stylesheet_tag }}
+<script src="{{ 'quick-add.js' | asset_url }}" defer="defer"></script>
 <script>
     document.addEventListener('DOMContentLoaded', function () {
         document.querySelectorAll('.cart-upsell .form').forEach((form) => {
@@ -53,6 +55,56 @@
     }
 </script>
 
+<style>
+  .drawer {
+    visibility: hidden;
+  }
+
+.cart-upsell {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.upsell-carousel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    max-width: 300px;
+    margin: auto;
+}
+
+.upsell-track {
+    overflow: hidden;
+    width: 200px;
+}
+
+.upsell-items {
+    display: flex;
+    gap: 10px;
+    transition: transform 0.4s ease-in-out;
+}
+
+.upsell-item {
+    min-width: 100px;
+    text-align: center;
+}
+
+.upsell-item img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.prev-btn, .next-btn {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+}  
+</style>
 
 <cart-drawer class="drawer{% if cart == empty %} is-empty{% endif %}">
   <div id="CartDrawer" class="cart-drawer">
