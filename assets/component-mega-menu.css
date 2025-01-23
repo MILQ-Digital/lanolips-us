@@ -89,7 +89,7 @@
 }
 
 .menu-item-has-children .sub-menu {
-  padding: none;
+  padding: 10px;
   margin: 0;
   list-style: none;
-}
+} 
