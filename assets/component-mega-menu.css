@@ -103,8 +103,46 @@ li.menu-item-has-children.menu-item-has-megamenu {
   position: static;
 }
 
-@media only screen and (min-width: 1068px) {
+.sub-menu {
+  position: absolute;
+  top: calc(100% - 1px);
+  left: -11px;
+  line-height: 1;
+  padding: 17px 26px;
+  border: 1px solid var(--color-border);
+  background: var(--color-header-bg, var(--bg-body));
+  list-style: none;
+  margin: 0;
+  text-align: left;
+  white-space: nowrap;
+  line-height: 1.1;
+  min-width: 190px;
+  opacity: 0;
+  z-index: 2;
+  visibility: hidden;
+  transition: all .5s cubic-bezier(.19,1,.22,1);
+}
 
+.thb-full-menu .sub-menu.mega-menu-container {
+  padding: 35px 40px;
+  display: flex;
+  gap: 20px;
+  border: 0;
+  border-top: 1px solid var(--color-border);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.header5 .with_megamenu_image .sub-menu.mega-menu-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.thb-full-menu li.menu-item-has-children.menu-item-has-megamenu .sub-menu {
+  left: 0;
+  right: 0;
+}
+
+@media only screen and (min-width: 1068px) {
   .menu-image-grid {
       display: grid;
       gap: 20px;
