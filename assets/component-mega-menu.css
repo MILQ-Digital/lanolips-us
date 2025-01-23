@@ -24,18 +24,6 @@
   border-top: 0;
 }
 
-.js .mega-menu__content {
-  opacity: 0;
-  transform: translateY(-1.5rem);
-}
-
-.mega-menu[open] .mega-menu__content,
-.menu-item-has-children:hover .mega-menu__content,
-.js .menu-item-has-children:hover .mega-menu__content {
-  opacity: 1;
-  transform: translateY(0);
-}
-
 .mega-menu__list {
   display: grid;
   gap: 1.8rem 4rem;
