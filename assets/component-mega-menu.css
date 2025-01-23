@@ -35,7 +35,10 @@
 }
 
 .sub-menu.withsub {
-  
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  padding: 15px;
 }
 
 .menu-item-has-children:hover > .mega-menu-container,
@@ -45,7 +48,7 @@
   pointer-events: auto;
   transition-delay: 0s;
   display: block;
-  height: 100%;
+  height: auto;
 }
 
 
@@ -73,3 +76,9 @@
   flex: var(2, 1);
 }
 
+
+.menu-item-has-children a {
+  font-size:var(--body-sm);
+  line-height: 160%;
+  text-decoration: none;
+}
