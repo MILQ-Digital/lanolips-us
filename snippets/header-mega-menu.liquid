@@ -220,6 +220,16 @@
                     </div>
                   {%- endif -%}
 
+                  {%- if has_sub_menu -%}
+                    <ul class="sub-menu" role="menu">
+                      {%- for sub_link in l.links -%}
+                        <li class="{%- if sub_link.active %} active{% endif %}" role="none">
+                          <a href="{{ sub_link.url }}" role="menuitem">{{- sub_link.title -}}</a>
+                        </li>
+                      {%- endfor -%}
+                    </ul>
+                  {%- endif -%}                  
+
                 {%- endif -%}
 
               </div>
