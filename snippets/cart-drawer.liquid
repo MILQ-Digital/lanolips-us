@@ -491,14 +491,9 @@
 
 <div class="cart-upsell">
   <h3>Recommended for You</h3>
-  <slider-component class="cart-upsell-carousel upsell-carousel slider-mobile-gutter slider-component-full-width slider-component-desktop scroll-trigger animate--slide-in">
-    <ul
-        id="Slider-{{ section.id }}"
-        data-id="{{ section.id }}"
-        class="grid product-grid contains-card contains-card--product{% if settings.card_style == 'standard' %} contains-card--standard{% endif %} grid--{{ section.settings.columns_desktop }}-col-desktop{% if section.settings.collection == blank %} grid--2-col-tablet-down{% else %} grid--{{ section.settings.columns_mobile }}-col-tablet-down{% endif %}{% if show_mobile_slider or show_desktop_slider %} slider{% if show_desktop_slider %} slider--desktop{% endif %}{% if show_mobile_slider %} slider--tablet grid--peek{% endif %}{% endif %}"
-        role="list"
-        aria-label="{{ 'general.slider.name' | t }}"
-      >
+  <div class="cart-upsell-carousel upsell-carousel">
+    <button class="prev-btn">❮</button>
+    <div class="upsell-track">
       {% for product in upsell_products %}
         {% assign product_form_id = 'quick-add-' | append: section_id | append: product.id %}
         <div class="cart-upsell-item upsell-item">
@@ -532,32 +527,9 @@
 
         </div>
       {% endfor %}
-    </ul>
-        <div class="slider-buttons">
-          <button
-            type="button"
-            class="slider-button slider-button--prev"
-            name="previous"
-            aria-label="{{ 'general.slider.previous_slide' | t }}"
-            aria-controls="Slider-{{ section.id }}"
-          >
-            <span class="svg-wrapper">
-              {{- 'icon-arrow-left.svg' | inline_asset_content -}}
-            </span>
-          </button>
-          <button
-            type="button"
-            class="slider-button slider-button--next"
-            name="next"
-            aria-label="{{ 'general.slider.next_slide' | t }}"
-            aria-controls="Slider-{{ section.id }}"
-          >
-            <span class="svg-wrapper">
-              {{- 'icon-arrow-right.svg' | inline_asset_content -}}
-            </span>
-          </button>
-        </div>
-  </slider-component>
+    </div>
+    <button class="next-btn">❯</button>
+  </div>
 </div>
 
 
