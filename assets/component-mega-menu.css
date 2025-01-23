@@ -26,7 +26,20 @@
   max-width: 100vw;
 }
 
-.mega-menu-wrapper {
+.grandparent .header__dropdown__inner {
   display: flex;
   justify-content: space-between;
+}
+
+.mega-menu-wrapper {
+  flex: 3;
+  display: grid;
+  grid-row-gap: 1.5em;
+  position: relative;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.grandparent .menu__blocks {
+  display: flex;
+  flex: var(2, 1);
 }
