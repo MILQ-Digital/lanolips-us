@@ -433,6 +433,39 @@
         </form>
       </cart-drawer-items>
       <div class="drawer__footer">
+
+        {% assign cart_contains_trigger_product = false %}
+
+        {% for item in cart.items %}
+          {% if item.product.collections contains 'trigger-collection-handle' %}
+            {% assign cart_contains_trigger_product = true %}
+          {% endif %}
+        {% endfor %}
+
+        {% if cart_contains_trigger_product %}
+          {% assign upsell_collection = collections['alternate-upsell-collection'] %}
+        {% else %}
+          {% assign upsell_collection = collections['default-upsell-collection'] %}
+        {% endif %}
+
+        {% assign upsell_products = upsell_collection.products | limit: 6 %}
+
+        <div class="cart-upsell"> 
+          <h3>Recommended for You</h3>
+          <div class="cart-upsell-carousel">
+            {% for product in upsell_products %}
+              <div class="cart-upsell-item">
+                <a href="{{ product.url }}">
+                  <img src="{{ product.featured_image | img_url: '150x150' }}" alt="{{ product.title }}">
+                </a>
+                <p>{{ product.title }}</p>
+                <p>{{ product.price | money }}</p>
+                <button class="add-to-cart" data-id="{{ product.variants.first.id }}">Add to Cart</button>
+              </div>
+            {% endfor %}
+          </div>
+        </div>
+
         {%- if settings.show_cart_note -%}
           <details id="Details-CartDrawer">
             <summary>
