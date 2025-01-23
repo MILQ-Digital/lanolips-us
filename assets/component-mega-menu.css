@@ -77,7 +77,16 @@
 
 .menu-item-has-children .menu-image-grid {
   display: flex;
-  flex: var(2, 1);
+}
+
+.menu-image-grid .full-menu--image .full-menu--image-image {
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+}
+
+.full-menu--image-image > img {
+  object-fit: cover;
 }
 
  
