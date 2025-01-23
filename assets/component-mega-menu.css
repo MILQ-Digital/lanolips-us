@@ -67,7 +67,7 @@
   justify-content: space-between;
 }
 
-.mega-menu-wrapper {
+.mega-menu-wrapper .mega-menu-columns {
   flex: 3;
   display: grid;
   grid-row-gap: 1.5em;
