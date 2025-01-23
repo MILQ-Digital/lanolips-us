@@ -91,14 +91,14 @@
   padding: 0;
 }
 
-.mega-menu-columns li:first-child a {
+.mega-menu-columns > li:first-child a {
   font-size: var(--heading-2xs);
   font-weight: 500;
   line-height: 130%;
 }
 
-.mega-menu-columns li:first-child,
-.mega-menu-columns li:first-child ul {
+.mega-menu-columns > li:first-child,
+.mega-menu-columns > li:first-child ul {
   display: flex;
   flex-direction: column;
   gap: 16px;
