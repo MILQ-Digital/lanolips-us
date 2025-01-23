@@ -38,14 +38,6 @@
   height: 0;
 }
 
-.sub-menu.withsub,
-.sub-menu--static {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  padding: 15px;
-}
-
 .menu-item-has-children:hover > .mega-menu-container,
 .menu-item-has-children:hover > .sub-menu.withsub {
   opacity: 1;
@@ -95,6 +87,14 @@
   margin: 0;
   list-style: none;
 } 
+
+.sub-menu.withsub,
+.sub-menu--static {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  padding: 15px;
+}
 
 .menu-item-has-children .mega-menu-columns ul,
 .menu-item-has-children .mega-menu-columns,
