@@ -1,10 +1,15 @@
-.list-menu--inline > li a {
+.list-menu--inline > li > a {
   padding: 11px 0 0;
   text-decoration: none;
   color: rgba(var(--color-foreground), 1);
   font-weight: 500;
   display: flex;
   align-items: center;
+}
+
+.list-menu--inline > li:hover > a {
+  text-decoration: underline;
+  text-underline-offset: 2px;
 }
 
 .mega-menu-container {
