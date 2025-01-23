@@ -12,6 +12,10 @@
   text-underline-offset: 2px;
 }
 
+.list-menu--inline ::marker {
+  display: none;
+}
+
 .menu-item-has-children .mega-menu-container,
 .sub-menu.withsub {
   color: rgba(var(--color-foreground), 1);
