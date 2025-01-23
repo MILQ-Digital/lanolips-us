@@ -11,49 +11,6 @@
 <script src="{{ 'cart.js' | asset_url }}" defer="defer"></script>
 <script src="{{ 'quantity-popover.js' | asset_url }}" defer="defer"></script>
 
-{{ 'component-slider.css' | asset_url | stylesheet_tag }}
-<script src="{{ 'quick-add.js' | asset_url }}" defer="defer"></script>
-<script>
-    document.addEventListener('DOMContentLoaded', function () {
-        document.querySelectorAll('.cart-upsell .form').forEach((form) => {
-            form.addEventListener('submit', function (event) {
-                event.preventDefault(); // Prevent the default form submission
-
-                let formData = new FormData(form);
-                let productId = form.querySelector('.product-variant-id').value;
-
-                fetch('/cart/add.js', {
-                    method: 'POST',
-                    body: formData
-                })
-                .then(response => response.json())
-                .then(data => {
-                    console.log('Product added:', data);
-                    updateCartDrawer(); // Refresh the cart drawer
-                })
-                .catch(error => console.error('Error adding to cart:', error));
-            });
-        });
-    });
-
-    function updateCartDrawer() {
-        fetch('/cart.js')
-        .then(response => response.json())
-        .then(cart => {
-            let cartDrawer = document.querySelector('cart-drawer'); // Adjust selector as needed
-            if (cartDrawer) {
-                fetch('/cart')
-                    .then(response => response.text())
-                    .then(html => {
-                        let parser = new DOMParser();
-                        let doc = parser.parseFromString(html, 'text/html');
-                        let newCartContent = doc.querySelector('cart-drawer').innerHTML;
-                        cartDrawer.innerHTML = newCartContent;
-                    });
-            }
-        });
-    }
-</script>
 
 
 <cart-drawer class="drawer{% if cart == empty %} is-empty{% endif %}">
