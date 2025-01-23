@@ -82,16 +82,15 @@
   overflow: hidden;
 }
 
-.menu-item-has-children .sub-menu:not(.sub-menu--static) {
+.menu-item-has-children .sub-menu {
   padding: 40px;
   margin: 0;
   list-style: none;
+  margin-top: -10px;
 } 
 
 .sub-menu.withsub,
 .sub-menu--static {
-  margin: 0;
-  padding: 0;
   list-style: none;
   padding: 15px;
 }
