@@ -517,7 +517,7 @@ function updateCartDrawer() {
           <p>{{ product.title }}</p>
           <p>{{ product.price | money }}</p>
           
-          <form method="post" action="/cart/add" accept-charset="UTF-8" class="form" enctype="multipart/form-data" novalidate="novalidate" data-type="add-to-cart-form">
+          <form method="post" action="/cart/add" accept-charset="UTF-8" class="form" enctype="multipart/form-data" novalidate="novalidate" data-type="add-to-cart-form" data-no-redirect="true">
             <input type="hidden" name="form_type" value="product">
             <input type="hidden" name="utf8" value="✓">
             <input type="hidden" name="id" value="{{ product.variants.first.id }}" class="product-variant-id">
