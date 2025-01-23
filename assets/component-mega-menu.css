@@ -20,6 +20,13 @@
   transition: opacity .2s cubic-bezier(.215,.61,.355,1), visibility 0s .2s;
 }
 
+.menu-item-has-children:hover > .mega-menu-container {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+  transition-delay: 0s;
+}
+
 .menu-item-has-children .mega-menu-container {
   width: 100%;
   left: 0;
@@ -49,3 +56,4 @@
   display: flex;
   flex: var(2, 1);
 }
+
