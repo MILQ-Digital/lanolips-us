@@ -90,6 +90,12 @@
   overflow: hidden;
 }
 
+.menu-item-has-children .sub-menu {
+  padding: 40px;
+  margin: 0;
+  list-style: none;
+} 
+
 .mega-menu-columns ul,
 .mega-menu-columns,
 .sub-menu--static ul {
@@ -148,8 +154,3 @@
   font-weight: 400;
 }
 
-.menu-item-has-children .sub-menu {
-  padding: 40px;
-  margin: 0;
-  list-style: none;
-} 
