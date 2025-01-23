@@ -12,7 +12,8 @@
   text-underline-offset: 2px;
 }
 
-.menu-item-has-children .mega-menu-container {
+.menu-item-has-children .mega-menu-container,
+.sub-menu.withsub {
   color: rgba(var(--color-foreground), 1);
   position: absolute;
   top: 100%;
@@ -33,7 +34,12 @@
   height: 0;
 }
 
-.menu-item-has-children:hover > .mega-menu-container {
+.sub-menu.withsub {
+  
+}
+
+.menu-item-has-children:hover > .mega-menu-container,
+.menu-item-has-children:hover > .sub-menu.withsub {
   opacity: 1;
   visibility: visible;
   pointer-events: auto;
