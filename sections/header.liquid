@@ -8,6 +8,7 @@
 {%- endif -%}
 
 {%- if section.settings.menu_type_desktop == 'mega' -%}
+  <link rel="preload" href="{{ 'component-mega-menu.css' | asset_url }}" as="style">
   <link rel="stylesheet" href="{{ 'component-mega-menu.css' | asset_url }}" media="print" onload="this.media='all'">
 {%- endif -%}
  
