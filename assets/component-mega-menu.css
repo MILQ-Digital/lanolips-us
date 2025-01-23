@@ -77,6 +77,7 @@
   grid-row-gap: 1.5em;
   position: relative;
   grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
 }
 
 .mega_image_container {
