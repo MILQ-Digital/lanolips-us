@@ -23,7 +23,7 @@
   visibility: hidden;
   display: none;
   pointer-events: none;
-  transition: opacity .2s cubic-bezier(.215,.61,.355,1), visibility 0s .2s;
+  
 }
 
 .menu-item-has-children:hover > .mega-menu-container {
