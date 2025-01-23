@@ -82,6 +82,12 @@
   padding: 0;
 }
 
+.mega-menu-columns ul:first-child li {
+  font-size: var(--heading-2xs);
+  font-weight: 500;
+  line-height: 130%;
+}
+
 .menu-item-has-children .menu-image-grid {
   display: flex;
   gap: 20px
