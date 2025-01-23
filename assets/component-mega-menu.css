@@ -26,7 +26,12 @@
   max-width: 100vw;
 }
 
-.grandparent .header__dropdown__inner {
+.menu-item-has-children .header__dropdown__wrapper {
+  max-width: calc(860px +(var(--outer)* 2));
+  margin: 0 auto;
+}
+
+.menu-item-has-children .header__dropdown__inner {
   display: flex;
   justify-content: space-between;
 }
@@ -39,7 +44,7 @@
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
-.grandparent .menu__blocks {
+.menu-item-has-children .menu-image-grid {
   display: flex;
   flex: var(2, 1);
 }
