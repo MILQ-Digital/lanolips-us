@@ -15,7 +15,7 @@
         "slide_VULtDz": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/Lanolips_hero_f9877320-08cc-4403-8b4a-f49e2f0ff9c4.webp",
+            "image": "shopify://shop_images/Lanolips_hero.webp",
             "subheading": "Freshly Baked",
             "subheading_script": "Freshly Baked",
             "heading": "The new Lanolips 101 Delicious 123 bla collection for us",
@@ -36,7 +36,6 @@
           "type": "slide",
           "disabled": true,
           "settings": {
-            "image": "shopify://shop_images/lano-cake.webp",
             "subheading": "Serie",
             "subheading_script": "Freshly Baked",
             "heading": "The new Lanolips 101 Delicious collection",
@@ -105,7 +104,8 @@
           "settings": {
             "caption": "Delicious",
             "text_style": "caption-with-letter-spacing",
-            "text_size": "large"
+            "text_size": "large",
+            "text_alignment": "text-left"
           }
         },
         "heading_Db9tcb": {
@@ -127,7 +127,8 @@
           "settings": {
             "button_label": "Shop Delicious",
             "button_link": "shopify://collections",
-            "button_style_secondary": false
+            "button_style_secondary": false,
+            "button_style_underline": false
           }
         }
       },
@@ -138,7 +139,6 @@
         "button_AxwgMt"
       ],
       "settings": {
-        "image": "shopify://shop_images/meet-lanolips.webp",
         "height": "adapt",
         "desktop_image_width": "medium",
         "layout": "text_first",
@@ -147,6 +147,7 @@
         "content_layout": "no-overlap",
         "section_color_scheme": "scheme-1",
         "color_scheme": "",
+        "use_ingredients": false,
         "image_behavior": "none",
         "mobile_content_alignment": "left",
         "padding_top": 0,
@@ -198,9 +199,7 @@
       "blocks": {
         "icon_YQkFzD": {
           "type": "icon",
-          "settings": {
-            "image_icon": "shopify://shop_images/lano-icon.png"
-          }
+          "settings": {}
         },
         "heading_hVPN7C": {
           "type": "heading",
@@ -224,7 +223,6 @@
         "checkbox_LMyxQA"
       ],
       "settings": {
-        "image": "shopify://shop_images/SWIRL.png",
         "image_overlay_opacity": 0,
         "image_height": "adapt",
         "desktop_content_position": "middle-center",
@@ -246,7 +244,6 @@
         "column_mGc7n6": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/bundles.webp",
             "title": "Engaging headline about bundles",
             "text": "<p>Lorem ipsum dolor sit amet</p>",
             "link_label": "Shop Now",
@@ -257,7 +254,6 @@
         "column_nBnMPt": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/gifting.webp",
             "title": "Something about gifting",
             "text": "<p>Lorem ipsum dolor sit amet</p>",
             "link_label": "Shop Now",
@@ -284,7 +280,8 @@
         "columns_mobile": "1",
         "swipe_on_mobile": false,
         "padding_top": 44,
-        "padding_bottom": 44
+        "padding_bottom": 44,
+        "section_class": ""
       }
     }
   },
