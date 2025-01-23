@@ -93,6 +93,15 @@ li.menu-item-has-children.menu-item-has-megamenu .sub-menu {
   right: 0;
 }
 
+.list-menu > li {
+  display: inline-flex;
+  padding: 3px 10px;
+  align-items: center;
+}
+
+li.menu-item-has-children.menu-item-has-megamenu {
+  position: static;
+}
 
 @media only screen and (min-width: 1068px) {
 
