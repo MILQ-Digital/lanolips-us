@@ -29,7 +29,8 @@
   transform: translateY(-1.5rem);
 }
 
-.mega-menu[open] .mega-menu__content {
+.mega-menu[open] .mega-menu__content,
+.menu-item-has-children:hover .mega-menu__content {
   opacity: 1;
   transform: translateY(0);
 }
