@@ -80,7 +80,7 @@
   flex: var(2, 1);
 }
 
-
+ 
 .menu-item-has-children a {
   font-size:var(--body-sm);
   line-height: 160%;
