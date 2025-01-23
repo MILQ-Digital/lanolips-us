@@ -90,7 +90,7 @@
   overflow: hidden;
 }
 
-.menu-item-has-children .sub-menu {
+.menu-item-has-children .sub-menu:not(.sub-menu--static) {
   padding: 40px;
   margin: 0;
   list-style: none;
