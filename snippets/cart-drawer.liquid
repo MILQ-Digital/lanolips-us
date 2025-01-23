@@ -452,40 +452,44 @@
 
 <div class="cart-upsell">
   <h3>Recommended for You</h3>
-  <div class="cart-upsell-carousel">
-    {% for product in upsell_products %}
-      {% assign product_form_id = 'quick-add-' | append: section_id | append: product.id %}
-      <div class="cart-upsell-item">
-        <a href="{{ product.url }}">
-          <img src="{{ product.featured_image | img_url: '150x150' }}" alt="{{ product.title }}">
-        </a>
-        <p>{{ product.title }}</p>
-        <p>{{ product.price | money }}</p>
-        
-        <form method="post" action="/cart/add" accept-charset="UTF-8" class="form" enctype="multipart/form-data" novalidate="novalidate" data-type="add-to-cart-form">
-          <input type="hidden" name="form_type" value="product">
-          <input type="hidden" name="utf8" value="✓">
-          <input type="hidden" name="id" value="{{ product.variants.first.id }}" class="product-variant-id">
-          <button 
-            id="{{ product_form_id }}-submit"
-            type="submit" name="add" class="quick-add__submit button button--full-width button--bright-pink button--secondary" aria-haspopup="dialog"
-            aria-labelledby="{{ product_form_id }}-submit title-{{ section_id }}-{{ product.id }}"
-            data-product-url="{{ product.url }}"
-            data-ajax-add
-          >
-            <span>Add To Bag</span>
-            <span class="sold-out-message hidden">Sold out</span>
-            <div class="loading__spinner hidden">
-              <svg xmlns="http://www.w3.org/2000/svg" class="spinner" viewBox="0 0 66 66">
-                <circle stroke-width="6" cx="33" cy="33" r="30" fill="none" class="path"></circle>
-              </svg>
-            </div>
-          </button>
-          <input type="hidden" name="product-id" value="{{ product.id }}">
-        </form>
+  <div class="cart-upsell-carousel upsell-carousel">
+    <button class="prev-btn">❮</button>
+    <div class="upsell-track">
+      {% for product in upsell_products %}
+        {% assign product_form_id = 'quick-add-' | append: section_id | append: product.id %}
+        <div class="cart-upsell-item upsell-item">
+          <a href="{{ product.url }}">
+            <img src="{{ product.featured_image | img_url: '150x150' }}" alt="{{ product.title }}">
+          </a>
+          <p>{{ product.title }}</p>
+          <p>{{ product.price | money }}</p>
+          
+          <form method="post" action="/cart/add" accept-charset="UTF-8" class="form" enctype="multipart/form-data" novalidate="novalidate" data-type="add-to-cart-form">
+            <input type="hidden" name="form_type" value="product">
+            <input type="hidden" name="utf8" value="✓">
+            <input type="hidden" name="id" value="{{ product.variants.first.id }}" class="product-variant-id">
+            <button 
+              id="{{ product_form_id }}-submit"
+              type="submit" name="add" class="quick-add__submit button button--full-width button--bright-pink button--secondary" aria-haspopup="dialog"
+              aria-labelledby="{{ product_form_id }}-submit title-{{ section_id }}-{{ product.id }}"
+              data-product-url="{{ product.url }}"
+              data-ajax-add
+            >
+              <span>Add To Bag</span>
+              <span class="sold-out-message hidden">Sold out</span>
+              <div class="loading__spinner hidden">
+                <svg xmlns="http://www.w3.org/2000/svg" class="spinner" viewBox="0 0 66 66">
+                  <circle stroke-width="6" cx="33" cy="33" r="30" fill="none" class="path"></circle>
+                </svg>
+              </div>
+            </button>
+            <input type="hidden" name="product-id" value="{{ product.id }}">
+          </form>
 
-      </div>
-    {% endfor %}
+        </div>
+      {% endfor %}
+    </div>
+    <button class="next-btn">❯</button>
   </div>
 </div>
 
