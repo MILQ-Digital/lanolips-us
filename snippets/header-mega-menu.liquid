@@ -46,8 +46,8 @@
         </a> 
 
             {%- if has_sub_menu == true and has_mega_menu == false and has_image == false -%}
-              <div class="sub-menu withsub {%- if has_promotion %} sub-menu--has-promotion{%- endif -%}" tabindex="-1">
-                <ul class="sub-menu--static">
+              <div class="sub-menu sub-menu--static withsub {%- if has_promotion %} sub-menu--has-promotion{%- endif -%}" tabindex="-1">
+                <ul class="sub-menu--static--">
                   {%- for l in link.links -%}
                     {%- liquid
                       assign has_sub_menu = false
