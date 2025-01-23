@@ -100,38 +100,8 @@
                     </li>
                   {%- endfor -%}
                 </ul>
-              
-                {%- if has_image -%}
-                  <div class="menu-image-grid">
-                    {%- for block in image_blocks -%}
-                      {%- assign position = block.settings.position | plus: 0 -%}
-                      {%- if position == parent_index -%}
-                        {%- liquid
-                          assign image_block = block.settings.image_block | img_url: 'large'
-                          assign image_link = block.settings.image_link
-                          assign heading = block.settings.image_title | default: ''
-                        -%}
 
-                        <div class="full-menu--image">
-                          {%- if image_link != null -%}
-                            <a href="{{ image_link }}" title="{{ heading | escape }}">
-                          {%- endif -%}
-                          <div class="full-menu--image-image">
-                            <img src="{{ image_block }}" alt="{{ heading | escape }}">
-                          </div>
-                          {%- if heading -%}
-                            <div class="full-menu--image-cover">
-                              <p>{{ heading }}</p>
-                            </div>
-                          {%- endif -%}
-                          {%- if image_link != null -%}</a>{%- endif -%}
-                        </div>
-                      {%- endif -%}
-                    {%- endfor -%}
-                  </div>
-                {%- endif -%}
-
-              {%- elsif has_sub_menu == true or has_mega_menu == true or has_image == true -%}
+              {%- elsif has_sub_menu == true and has_mega_menu == true and has_image == true -%}
                 {%- liquid
                   assign mega_menu_block = blocks[mega_menu_block_index]
                   assign image_blockz = image_blocks[image_block_index]
