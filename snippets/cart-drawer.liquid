@@ -60,6 +60,15 @@ function updateCartDrawer() {
   .drawer {
     visibility: hidden;
   }
+
+  #Slider-Upsell {
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    scroll-padding-left: 1.5rem;
+    -webkit-overflow-scrolling: touch;
+    margin-bottom: 1rem;
+  }
+  
 </style>
 
 <cart-drawer class="drawer{% if cart == empty %} is-empty{% endif %}">
