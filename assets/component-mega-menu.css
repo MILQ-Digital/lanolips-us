@@ -149,6 +149,9 @@ li.menu-item-has-children:hover>.sub-menu {
   background-color: #fff;
 }
 
+.sub-menu--static{position:static;padding:0;border:0;opacity:1;visibility:visible}
+.sub-menu .sub-menu{top:-17px;left:calc(100% + 35px)}
+
 @media only screen and (min-width: 1068px) {
   .menu-image-grid {
       display: grid;
