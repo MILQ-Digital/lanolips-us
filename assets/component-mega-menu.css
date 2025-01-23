@@ -38,7 +38,8 @@
   height: 0;
 }
 
-.sub-menu.withsub {
+.sub-menu.withsub,
+.sub-menu--static {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -90,7 +91,8 @@
 }
 
 .mega-menu-columns ul,
-.mega-menu-columns {
+.mega-menu-columns,
+.sub-menu--static ul {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -151,7 +153,3 @@
   margin: 0;
   list-style: none;
 } 
-
-.menu-image-grid p {
-
-}
