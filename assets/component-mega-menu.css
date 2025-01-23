@@ -77,13 +77,24 @@
 
 .menu-item-has-children .menu-image-grid {
   display: flex;
+  gap: 20px
+}
+
+.menu-image-grid .full-menu--image {
+  flex: 1;
+}
+
+.menu-image-grid:has(.full-menu--image:only-child) {
+  display: block; 
 }
 
 .menu-image-grid .full-menu--image .full-menu--image-image {
   width: 200px;
   height: 200px; 
   overflow: hidden;
+  border-radius: 10px;
 }
+
 
 .full-menu--image-image > img {
   object-fit: cover;
