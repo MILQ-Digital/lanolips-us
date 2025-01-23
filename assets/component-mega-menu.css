@@ -21,6 +21,7 @@
   border-bottom: 1px solid transparent;
   border-top: 1px solid transparent;
   visibility: hidden;
+  display: none;
   pointer-events: none;
   transition: opacity .2s cubic-bezier(.215,.61,.355,1), visibility 0s .2s;
 }
@@ -30,6 +31,7 @@
   visibility: visible;
   pointer-events: auto;
   transition-delay: 0s;
+  display: block;
 }
 
 .menu-item-has-children .mega-menu-container {
