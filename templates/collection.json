@@ -24,7 +24,7 @@
           "type": "promo-banner",
           "settings": {
             "banner_image": "shopify://shop_images/lano-cake.webp",
-            "promotion_position": 5,
+            "promotion_position": 6,
             "title": "Test 1",
             "link_label": "Shop Now",
             "link": "shopify://collections/face",

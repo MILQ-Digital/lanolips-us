@@ -105,7 +105,8 @@
           "settings": {
             "caption": "Delicious",
             "text_style": "caption-with-letter-spacing",
-            "text_size": "large"
+            "text_size": "large",
+            "text_alignment": "text-left"
           }
         },
         "heading_Db9tcb": {
@@ -127,7 +128,8 @@
           "settings": {
             "button_label": "Shop Delicious",
             "button_link": "shopify://collections",
-            "button_style_secondary": false
+            "button_style_secondary": false,
+            "button_style_underline": false
           }
         }
       },
@@ -147,6 +149,7 @@
         "content_layout": "no-overlap",
         "section_color_scheme": "scheme-1",
         "color_scheme": "",
+        "use_ingredients": false,
         "image_behavior": "none",
         "mobile_content_alignment": "left",
         "padding_top": 0,
@@ -159,7 +162,7 @@
         "featured_collection_PE3zqw": {
           "type": "featured_collection",
           "settings": {
-            "collection": "lips"
+            "collection": "hydrogen"
           }
         },
         "featured_collection_hBDbwN": {
@@ -284,7 +287,8 @@
         "columns_mobile": "1",
         "swipe_on_mobile": false,
         "padding_top": 44,
-        "padding_bottom": 44
+        "padding_bottom": 44,
+        "section_class": ""
       }
     }
   },
