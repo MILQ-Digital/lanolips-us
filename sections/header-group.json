@@ -83,6 +83,16 @@
             "position": "2",
             "mega_sub_menu": "face"
           }
+        },
+        "megamenu_8LQYc7": {
+          "type": "megamenu",
+          "settings": {
+            "mega_image": "shopify://shop_images/Image_4.jpg",
+            "image_title": "Heading OneTwoThree",
+            "image_link": "#",
+            "position": "4",
+            "mega_sub_menu": ""
+          }
         }
       },
       "block_order": [
@@ -90,7 +100,8 @@
         "image_picker_xEJ8td",
         "image_picker_nbbXJR",
         "image_picker_94KHPD",
-        "megamenu_xnUpNk"
+        "megamenu_xnUpNk",
+        "megamenu_8LQYc7"
       ],
       "settings": {
         "logo_position": "top-center",
