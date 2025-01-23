@@ -82,7 +82,7 @@
   padding: 0;
 }
 
-.mega-menu-columns ul:first-child li {
+.mega-menu-columns li:first-child ul li {
   font-size: var(--heading-2xs);
   font-weight: 500;
   line-height: 130%;
