@@ -106,7 +106,7 @@
   gap: 16px;
 }
 
-.mega-menu-columns > li > ul {
+.mega-menu-columns > li:not(:first-child) > ul {
   padding-top: 12px;
   display: flex;
   flex-direction: column;
