@@ -75,13 +75,23 @@
             "image_title": "heading",
             "image_link": ""
           }
+        },
+        "megamenu_xnUpNk": {
+          "type": "megamenu",
+          "settings": {
+            "image_title": "",
+            "image_link": "",
+            "position": "1",
+            "mega_sub_menu": "lips"
+          }
         }
       },
       "block_order": [
         "megamenu_bL8xeU",
         "image_picker_xEJ8td",
         "image_picker_nbbXJR",
-        "image_picker_94KHPD"
+        "image_picker_94KHPD",
+        "megamenu_xnUpNk"
       ],
       "settings": {
         "logo_position": "top-center",
