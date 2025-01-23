@@ -497,14 +497,14 @@
 <div class="cart-upsell">
   <h3>Recommended for You</h3>
   <slider-component class="cart-upsell-carousel upsell-carousel slider-mobile-gutter slider-component-full-width slider-component-desktop scroll-trigger animate--slide-in">
-    <ul id="Slider-{{ section.id }}"
-        data-id="{{ section.id }}"
-        class="grid product-grid contains-card contains-card--product{% if settings.card_style == 'standard' %} contains-card--standard{% endif %} grid--{{ section.settings.columns_desktop }}-col-desktop{% if section.settings.collection == blank %} grid--2-col-tablet-down{% else %} grid--{{ section.settings.columns_mobile }}-col-tablet-down{% endif %}{% if show_mobile_slider or show_desktop_slider %} slider{% if show_desktop_slider %} slider--desktop{% endif %}{% if show_mobile_slider %} slider--tablet grid--peek{% endif %}{% endif %}"
+    <ul id="Slider-Upsell"
+        data-id="Slider-Upsell"
+        class="grid product-grid contains-card contains-card--product contains-card--standard grid--1-col-desktop grid--1-col-tablet-down slider slider--desktop slider--tablet grid--peek"
         role="list"
         aria-label="{{ 'general.slider.name' | t }}">
       {% for product in upsell_products %}
         {% assign product_form_id = 'quick-add-' | append: section_id | append: product.id %}
-        <li id="Slide-{{ section.id }}-{{ forloop.index }}"
+        <li id="Slide-Upsell-{{ forloop.index }}"
             class="cart-upsell-item upsell-item grid__item{% if show_mobile_slider or show_desktop_slider %} slider__slide{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
             {% if settings.animations_reveal_on_scroll %}
               data-cascade
