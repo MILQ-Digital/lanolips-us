@@ -454,6 +454,7 @@
   <h3>Recommended for You</h3>
   <div class="cart-upsell-carousel">
     {% for product in upsell_products %}
+      {% assign product_form_id = 'quick-add-' | append: section_id | append: product.id %}
       <div class="cart-upsell-item">
         <a href="{{ product.url }}">
           <img src="{{ product.featured_image | img_url: '150x150' }}" alt="{{ product.title }}">
@@ -465,7 +466,12 @@
           <input type="hidden" name="form_type" value="product">
           <input type="hidden" name="utf8" value="✓">
           <input type="hidden" name="id" value="{{ product.variants.first.id }}" class="product-variant-id">
-          <button type="submit" name="add" class="quick-add__submit button button--full-width button--bright-pink button--secondary" aria-haspopup="dialog">
+          <button 
+            id="{{ product_form_id }}-submit"
+            type="submit" name="add" class="quick-add__submit button button--full-width button--bright-pink button--secondary" aria-haspopup="dialog"
+            aria-labelledby="{{ product_form_id }}-submit title-{{ section_id }}-{{ product.id }}"
+            data-product-url="{{ product.url }}"
+          >
             <span>Add To Bag</span>
             <span class="sold-out-message hidden">Sold out</span>
             <div class="loading__spinner hidden">
