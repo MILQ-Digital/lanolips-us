@@ -434,37 +434,54 @@
       </cart-drawer-items>
       <div class="drawer__footer">
 
-        {% assign cart_contains_trigger_product = false %}
+{% assign cart_contains_trigger_product = false %}
 
-        {% for item in cart.items %}
-          {% if item.product.collections contains 'trigger-collection-handle' %}
-            {% assign cart_contains_trigger_product = true %}
-          {% endif %}
-        {% endfor %}
+{% for item in cart.items %}
+  {% if item.product.collections contains 'trigger-collection-handle' %}
+    {% assign cart_contains_trigger_product = true %}
+  {% endif %}
+{% endfor %}
 
-        {% if cart_contains_trigger_product %}
-          {% assign upsell_collection = collections['alternate-upsell-collection'] %}
-        {% else %}
-          {% assign upsell_collection = collections['default-upsell-collection'] %}
-        {% endif %}
+{% if cart_contains_trigger_product %}
+  {% assign upsell_collection = collections['alternate-upsell-collection'] %}
+{% else %}
+  {% assign upsell_collection = collections['default-upsell-collection'] %}
+{% endif %}
 
-        {% assign upsell_products = upsell_collection.products | limit: 6 %}
+{% assign upsell_products = upsell_collection.products | limit: 6 %}
 
-        <div class="cart-upsell"> 
-          <h3>Recommended for You</h3>
-          <div class="cart-upsell-carousel">
-            {% for product in upsell_products %}
-              <div class="cart-upsell-item">
-                <a href="{{ product.url }}">
-                  <img src="{{ product.featured_image | img_url: '150x150' }}" alt="{{ product.title }}">
-                </a>
-                <p>{{ product.title }}</p>
-                <p>{{ product.price | money }}</p>
-                <button class="add-to-cart" data-id="{{ product.variants.first.id }}">Add to Cart</button>
-              </div>
-            {% endfor %}
-          </div>
-        </div>
+<div class="cart-upsell">
+  <h3>Recommended for You</h3>
+  <div class="cart-upsell-carousel">
+    {% for product in upsell_products %}
+      <div class="cart-upsell-item">
+        <a href="{{ product.url }}">
+          <img src="{{ product.featured_image | img_url: '150x150' }}" alt="{{ product.title }}">
+        </a>
+        <p>{{ product.title }}</p>
+        <p>{{ product.price | money }}</p>
+        
+        <form method="post" action="/cart/add" accept-charset="UTF-8" class="form" enctype="multipart/form-data" novalidate="novalidate" data-type="add-to-cart-form">
+          <input type="hidden" name="form_type" value="product">
+          <input type="hidden" name="utf8" value="✓">
+          <input type="hidden" name="id" value="{{ product.variants.first.id }}" class="product-variant-id">
+          <button type="submit" name="add" class="quick-add__submit button button--full-width button--bright-pink button--secondary" aria-haspopup="dialog">
+            <span>Add To Bag</span>
+            <span class="sold-out-message hidden">Sold out</span>
+            <div class="loading__spinner hidden">
+              <svg xmlns="http://www.w3.org/2000/svg" class="spinner" viewBox="0 0 66 66">
+                <circle stroke-width="6" cx="33" cy="33" r="30" fill="none" class="path"></circle>
+              </svg>
+            </div>
+          </button>
+          <input type="hidden" name="product-id" value="{{ product.id }}">
+        </form>
+
+      </div>
+    {% endfor %}
+  </div>
+</div>
+
 
         {%- if settings.show_cart_note -%}
           <details id="Details-CartDrawer">
