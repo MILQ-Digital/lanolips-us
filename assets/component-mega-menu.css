@@ -123,7 +123,7 @@ li.menu-item-has-children.menu-item-has-megamenu {
   transition: all .5s cubic-bezier(.19,1,.22,1);
 }
 
-.thb-full-menu .sub-menu.mega-menu-container {
+.sub-menu.mega-menu-container {
   padding: 35px 40px;
   display: flex;
   gap: 20px;
@@ -132,14 +132,19 @@ li.menu-item-has-children.menu-item-has-megamenu {
   border-bottom: 1px solid var(--color-border);
 }
 
-.header5 .with_megamenu_image .sub-menu.mega-menu-container {
+.with_megamenu_image .sub-menu.mega-menu-container {
   display: flex;
   flex-direction: column;
 }
 
-.thb-full-menu li.menu-item-has-children.menu-item-has-megamenu .sub-menu {
+li.menu-item-has-children.menu-item-has-megamenu .sub-menu {
   left: 0;
   right: 0;
+}
+
+li.menu-item-has-children:hover>.sub-menu {
+  visibility: visible;
+  opacity: 1;
 }
 
 @media only screen and (min-width: 1068px) {
