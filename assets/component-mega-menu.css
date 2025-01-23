@@ -85,4 +85,11 @@
   font-size:var(--body-sm);
   line-height: 160%;
   text-decoration: none;
+  color: inherit;
+}
+
+.menu-item-has-children .sub-menu {
+  padding: none;
+  margin: 0;
+  list-style: none;
 }
