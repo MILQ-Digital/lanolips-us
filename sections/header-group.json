@@ -61,7 +61,7 @@
         "image_picker_nbbXJR": {
           "type": "image_picker",
           "settings": {
-            "position": "3",
+            "position": "1",
             "image_block": "shopify://shop_images/Rectangle_93_1.png",
             "image_title": "heading",
             "image_link": ""
