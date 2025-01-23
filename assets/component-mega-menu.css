@@ -146,7 +146,7 @@ li.menu-item-has-children:hover>.sub-menu {
   visibility: visible;
   opacity: 1;
   opacity: 1;
-  background-color: #fff;a
+  background-color: #fff;
 }
 
 @media only screen and (min-width: 1068px) {
@@ -180,9 +180,9 @@ li.menu-item-has-children:hover>.sub-menu {
   }
   .list-menu li.menu-item-has-children.menu-item-has-megamenu > .sub-menu,
   .list-menu li.menu-item-has-children > .sub-menu:not(.withsub) {
-      left: auto;
-      right: auto;
-      transform: 0;
+      left: 0;
+      right: 0;
+      transform: unset;
       min-width: 100vw;
       max-width: 100vw;
   
