@@ -75,6 +75,15 @@
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
+.mega_image_container {
+  margin-top: 20px;
+}
+
+.mega_image_wrapper {
+  border-radius: 20px;
+  overflow: hidden;
+}
+
 .mega-menu-columns ul,
 .mega-menu-columns {
   list-style: none;
