@@ -42,8 +42,7 @@
         "megamenu_bL8xeU": {
           "type": "megamenu",
           "settings": {
-            "mega_image": "shopify://shop_images/Lano_Lips_Landing_Hero_Image_1.webp",
-            "image_title": "Mega with image",
+            "image_title": "",
             "image_link": "shopify://collections/all",
             "position": "1",
             "mega_sub_menu": "lips"
@@ -82,7 +81,7 @@
             "image_title": "",
             "image_link": "",
             "position": "2",
-            "mega_sub_menu": "lips"
+            "mega_sub_menu": "face"
           }
         }
       },
