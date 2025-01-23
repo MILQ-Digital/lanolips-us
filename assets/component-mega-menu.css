@@ -27,8 +27,9 @@
 }
 
 .menu-item-has-children .header__dropdown__wrapper {
-  max-width: calc(860px +(var(--outer)* 2));
+  max-width: 1085px;
   margin: 0 auto;
+  overflow-y: auto;
 }
 
 .menu-item-has-children .header__dropdown__inner {
