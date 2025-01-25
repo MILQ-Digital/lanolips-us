@@ -14,7 +14,10 @@
       "settings": {
         "padding_top": 52,
         "padding_bottom": 60
-      }
+      },
+      "blocks": [
+        { "type": "richtext" }
+      ]
     },
     "collapsible_content_LtPmTr": {
       "type": "collapsible-content",
