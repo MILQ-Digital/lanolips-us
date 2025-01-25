@@ -564,14 +564,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
 {% assign free_gift_limit = settings.free_gift_limit | times: 100 %}
 {% if cart.total_price >= free_gift_limit  %}
-{% assign free_gift_products = settings.freegift_product_list %}
-<pre>{{ settings.freegift_product_list | inspect }}</pre>
+{% assign freegift_product_list = settings.freegift_product_list %}
 
-{% if free_gift_products.size > 0 %}
+{% if freegift_product_list.size > 0 %}
   <div class="free-gift-products">
     <h3>Choose your free gift</h3>
     <ul>
-      {% for product in free_gift_products %}
+      {% for product_handle in freegift_product_list.products %}
+        {% assign product = all_products[product_handle] %}
         {% if product %}
           <li>
             <a href="{{ product.url }}">
@@ -601,7 +601,6 @@ document.addEventListener('DOMContentLoaded', () => {
 {% else %}
   <p>No free gift products available.</p>
 {% endif %}
-
 
 
 {% else %}
