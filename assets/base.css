@@ -279,7 +279,7 @@ body {
 
 .faq-group-links a:hover {
   text-underline-offset: .3rem;
-  text-decoration-thickness: 2px;
+  text-decoration-thickness: 2px!important;
   transition: text-decoration-thickness var(--duration-short) ease;
 }
 
