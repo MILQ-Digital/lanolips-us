@@ -274,7 +274,7 @@ body {
 }
 
 .faq-group-links a {
-  text-decoration-thickness: 0;
+  text-decoration-thickness: 0px!important;
 }
 
 .faq-group-links a:hover {
