@@ -25,9 +25,9 @@
   </h1>
   <div class="rte{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
 
-    {% unless settings.disable_content %}
+    {% if settings.disable_content == 'false' %}
       {{ page.content }}
-    {% endunless %}
+    {% endif %}
 
     {%- if section.settings.use_metaobject_faq -%}
       {%- assign faqs_metaobject_references = shop.metaobjects.faqs.values -%}
