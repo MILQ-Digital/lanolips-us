@@ -118,10 +118,10 @@
         "button_J7awhr": {
           "type": "button",
           "settings": {
-            "button_label": "Button label",
+            "button_label": "Learn More",
             "button_link": "",
             "button_style_secondary": false,
-            "button_style_underline": false
+            "button_style_underline": true
           }
         }
       },
