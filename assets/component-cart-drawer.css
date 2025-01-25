@@ -435,6 +435,11 @@ cart-drawer-items::-webkit-scrollbar-track-piece {
   overflow: hidden;
 }
 
+.free-shipping__progress-bar.free-gift__progress-bar {
+  --progress-bg: var(--Lano-Light-Grey);
+  --progress-value-bg: var(--Lano-Blue-Light); 
+}
+
 .free-shipping__progress-bar::-webkit-progress-bar{
   width:100%;
   background:var(--progress-bg);
