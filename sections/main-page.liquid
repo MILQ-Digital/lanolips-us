@@ -24,7 +24,10 @@
     {{ page.title | escape }}
   </h1>
   <div class="rte{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
-    {{ page.content }}
+  
+    {% unless settings.disable_content %}
+      {{ page.content }}
+    {% endunless %}
 
     {%- if section.settings.use_metaobject_faq -%}
       {%- assign faqs_metaobject_references = shop.metaobjects.faqs.values -%}
@@ -247,6 +250,12 @@
       "label": "t:sections.all.padding.padding_bottom",
       "default": 36
     },
+    {
+      "type": "checkbox",
+      "id": "disable_content",
+      "default": false,
+      "label": "Hide Content"
+    },    
     {
       "type": "header",
       "content": "Collapsible Settings"
