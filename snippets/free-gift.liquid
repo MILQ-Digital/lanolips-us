@@ -54,7 +54,7 @@
     endcapture
 
     assign message = message | replace: '||amount||', left_to_spend
-    assign qualified_shipping_message = settings.qualified_freegift_message
+    assign qualified_shipping_message = settings.qualified_freegift_message 
 
     capture free_gift_classes
       if is_cart_drawer
