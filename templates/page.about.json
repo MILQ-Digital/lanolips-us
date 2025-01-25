@@ -69,6 +69,7 @@
     "image_with_text_VUg6Qt": {
       "type": "image-with-text",
       "settings": {
+        "image": "shopify://shop_images/Lanolips_products_image.webp",
         "height": "adapt",
         "desktop_image_width": "medium",
         "layout": "image_first",
