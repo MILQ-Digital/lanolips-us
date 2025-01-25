@@ -679,7 +679,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 data-cascade
                 style="--animation-order: {{ forloop.index }};"
               {% endif %}">
-
+              
+            {% assign quick_add = 'standard' %}
             {% render 'card-product',
                                         card_product: product,
                                         media_aspect_ratio: block.settings.image_ratio,
