@@ -16,7 +16,7 @@
         "padding_bottom": 60
       },
       "blocks": [
-        { "type": "richtext" }
+        { "type": "richtext" } 
       ]
     },
     "collapsible_content_LtPmTr": {
