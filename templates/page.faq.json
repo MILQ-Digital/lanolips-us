@@ -20,19 +20,39 @@
             "row_content": "<p>answer</p>",
             "page": ""
           }
+        },
+        "collapsible_row_ithfnQ": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Collapsible row",
+            "icon": "check_mark",
+            "row_content": "",
+            "page": ""
+          }
+        },
+        "collapsible_row_KrpEpP": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Collapsible row",
+            "icon": "check_mark",
+            "row_content": "",
+            "page": ""
+          }
         }
       },
       "block_order": [
-        "collapsible_row_Ud994N"
+        "collapsible_row_Ud994N",
+        "collapsible_row_ithfnQ",
+        "collapsible_row_KrpEpP"
       ],
       "settings": {
         "padding_top": 52,
         "padding_bottom": 60,
         "layout": "none",
-        "color_scheme": "",
+        "color_scheme": "scheme-2",
         "container_color_scheme": "",
         "open_first_collapsible_row": true,
-        "use_metaobject_faq": true,
+        "use_metaobject_faq": false,
         "image": "shopify://shop_images/Rectangle_93_1.png",
         "image_ratio": "adapt",
         "desktop_layout": "image_second"
