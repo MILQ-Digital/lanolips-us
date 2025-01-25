@@ -25,6 +25,24 @@
   </h1>
   <div class="rte{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
     {{ page.content }}
+
+    {%- if section.settings.use_metaobject_faq -%}
+      {%- assign faqs_metaobject_references = shop.metaobjects.faqs.values -%}
+      {% if faqs_metaobject_references != blank %}
+        {%- assign sorted_faqs = faqs_metaobject_references | sort: "group" -%}
+        {%- assign current_group = "" -%}
+
+        <div class="faq-group-links">
+          {%- for faq_metaobject in sorted_faqs -%}
+            {% if faq_metaobject.group != current_group %}
+              <div class="group-link"><a href="#{{ faq_metaobject.group }}" rel="nofollow">{{ faq_metaobject.group }}</a></div>
+            {% endif %}    
+
+          {% endfor %}
+        </div>
+      {% endif %}
+    {%- endif -%}          
+        
   </div>
 
   <div class="color-{{ section.settings.color_scheme }} gradient">
