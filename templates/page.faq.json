@@ -11,9 +11,27 @@
   "sections": {
     "main": {
       "type": "main-page",
+      "blocks": {
+        "collapsible_row_Ud994N": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Collapsible row",
+            "icon": "check_mark",
+            "row_content": "<p>answer</p>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "collapsible_row_Ud994N"
+      ],
       "settings": {
         "padding_top": 52,
-        "padding_bottom": 60
+        "padding_bottom": 60,
+        "use_metaobject_faq": true,
+        "image": "shopify://shop_images/Rectangle_93_1.png",
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second"
       }
     },
     "collapsible_content_LtPmTr": {
