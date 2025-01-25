@@ -680,7 +680,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 style="--animation-order: {{ forloop.index }};"
               {% endif %}">
 
-            {% assign quick_add = 'standard' %}
+            {% assign quick_add == 'standard' %}
             {% assign image_ratio = 'portrait' %}
             {% render 'card-product',
                                         card_product: product,
