@@ -569,9 +569,7 @@ document.addEventListener('DOMContentLoaded', () => {
 -%}
 
 {% if cart.total_price >= free_gift_limit  %}
-{% assign freegift_product_list = settings.freegift_product_list %}
 
-{% if freegift_product_list.size > 0 %}
   <div class="free-gift-products">
     <h3>Choose your free gift</h3>
     <ul>
@@ -600,10 +598,6 @@ document.addEventListener('DOMContentLoaded', () => {
       {%- endfor -%}
     </ul>
   </div>
-{% else %}
-  <p>No free gift products available.</p>
-{% endif %}
-
 
 {% else %}
   {% assign upsell_collection = collections['default-upsell-collection'] %}  <!-- Default upsell collection -->
