@@ -562,19 +562,26 @@ document.addEventListener('DOMContentLoaded', () => {
       </cart-drawer-items>
       <div class="drawer__footer">
 
-{% assign free_gift_limit = settings.free_gift_limit | times: 100 %}
-{% assign freegift_product_list = settings.freegift_product_list %}
-{% assign freegift_product_list_size = freegift_product_list | map: 'handle' | join: ',' | split: ',' | uniq | size | at_most: 5 | at_least: 4 %}
+{%- liquid
+  assign free_gift_limit = settings.free_gift_limit | times: 100
+  assign freegift_product_list = settings.freegift_product_list
+  assign freegift_product_list_size = freegift_product_list | map: 'handle' | join: ',' | split: ',' | uniq | size | at_most: 5 | at_least: 4
 
-{% assign free_gift_in_cart = false %}
+  # Check if cart already contains a free gift product
+  assign free_gift_in_cart = false
+  assign free_gift_found_in_cart = false
+  for item in cart.items
+    if item.product.tags contains 'free_gift'
+      assign free_gift_in_cart = true
+    end
+    if freegift_product_list contains item.product.handle
+      assign free_gift_found_in_cart = true
+    end
+  endfor
+-%}
 
-{%- for item in cart.items -%}
-  {%- if item.product.tags contains 'free_gift' -%}
-    {% assign free_gift_in_cart = true %}
-  {% endif %}
-{%- endfor %}
-
-{% if cart.total_price >= free_gift_limit and free_gift_in_cart == false %}
+{% if cart.total_price >= free_gift_limit and not free_gift_in_cart and free_gift_found_in_cart %}
+  
 
   <div class="free-gift-products cart-upsell">
     <h3>Choose your free gift</h3>
