@@ -12,8 +12,8 @@
     "main": {
       "type": "main-page",
       "settings": {
-        "padding_top": 28,
-        "padding_bottom": 28
+        "padding_top": 52,
+        "padding_bottom": 60
       }
     },
     "collapsible_content_LtPmTr": {
@@ -61,6 +61,7 @@
         "color_scheme": "scheme-2",
         "container_color_scheme": "scheme-3",
         "open_first_collapsible_row": false,
+        "use_metaobject_faq": false,
         "image_ratio": "adapt",
         "desktop_layout": "image_second",
         "padding_top": 36,
@@ -112,6 +113,7 @@
         "color_scheme": "scheme-2",
         "container_color_scheme": "scheme-3",
         "open_first_collapsible_row": false,
+        "use_metaobject_faq": false,
         "image_ratio": "adapt",
         "desktop_layout": "image_second",
         "padding_top": 36,
@@ -163,6 +165,7 @@
         "color_scheme": "scheme-2",
         "container_color_scheme": "scheme-3",
         "open_first_collapsible_row": false,
+        "use_metaobject_faq": false,
         "image_ratio": "adapt",
         "desktop_layout": "image_second",
         "padding_top": 36,
