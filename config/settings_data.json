@@ -124,7 +124,7 @@
     "predictive_search_enabled": true,
     "predictive_search_show_vendor": false,
     "predictive_search_show_price": true,
-    "empty_search_menu": "popular-searches",
+    "empty_search_menu": "wcc-popular-searches",
     "empty_search_product_list": [
       "101-dry-skin-super-cream-multipurpose-for-face-body",
       "101-ointment-multi-balm-banana-cream-pie",
