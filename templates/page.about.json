@@ -104,15 +104,15 @@
         "heading_aeyDXF": {
           "type": "heading",
           "settings": {
-            "heading": "Image with text",
+            "heading": "made with love & lanolin",
             "heading_size": "hm"
           }
         },
         "text_NCe7iF": {
           "type": "text",
           "settings": {
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
-            "text_style": "body"
+            "text": "<p>Lanolips Lip Scrub caps are made with 100% PCR material, boxes are printed using soy-bean and vegetable-based inks. Lanolips’ goal is to transition all packaging to more eco-friendly material over the next 12-24 months</p>",
+            "text_style": "subtitle"
           }
         },
         "button_J7awhr": {
@@ -131,6 +131,7 @@
         "button_J7awhr"
       ],
       "settings": {
+        "image": "shopify://shop_images/made_with_love_and_lanolin.jpg",
         "height": "adapt",
         "desktop_image_width": "medium",
         "layout": "image_first",
