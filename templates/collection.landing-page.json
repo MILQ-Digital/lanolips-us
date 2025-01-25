@@ -11,6 +11,7 @@
   "sections": {
     "banner": {
       "type": "main-collection-banner",
+      "disabled": true,
       "settings": {
         "show_collection_description": true,
         "show_collection_image": true,
@@ -23,7 +24,6 @@
         "promo_banner_wRK8yM": {
           "type": "promo-banner",
           "settings": {
-            "banner_image": "shopify://shop_images/lano-cake.webp",
             "promotion_position": 5,
             "title": "Test 1",
             "link_label": "Shop Now",
@@ -35,7 +35,6 @@
         "promo_banner_CMXKXz": {
           "type": "promo-banner",
           "settings": {
-            "banner_image": "shopify://shop_images/bundles.webp",
             "promotion_position": 13,
             "title": "Test 2",
             "link_label": "Shop Now",
@@ -49,6 +48,7 @@
         "promo_banner_wRK8yM",
         "promo_banner_CMXKXz"
       ],
+      "disabled": true,
       "settings": {
         "products_per_page": 16,
         "columns_desktop": 4,
@@ -66,10 +66,49 @@
         "padding_top": 52,
         "padding_bottom": 36
       }
+    },
+    "slideshow_KkyEwz": {
+      "type": "slideshow",
+      "blocks": {
+        "slide_CBVA3J": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/Lanolips_hero.webp",
+            "subheading": "",
+            "subheading_script": "Freshly Baked",
+            "heading": "The new Lanolips 101 Delicious Collection",
+            "heading_size": "hxxl",
+            "subcontent": "<p>Discover our new range of mouth watering falvours</p>",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "bottom-left",
+            "show_text_box": true,
+            "text_alignment": "left",
+            "image_overlay_opacity": 0,
+            "color_scheme": "scheme-3",
+            "text_alignment_mobile": "center"
+          }
+        }
+      },
+      "block_order": [
+        "slide_CBVA3J"
+      ],
+      "settings": {
+        "layout": "full_bleed",
+        "slide_height": "large",
+        "slider_visual": "dots",
+        "auto_rotate": true,
+        "change_slides_speed": 5,
+        "image_behavior": "none",
+        "show_text_below": true,
+        "accessibility_info": "Slideshow about Lanolips"
+      }
     }
   },
   "order": [
     "banner",
-    "product-grid"
+    "product-grid",
+    "slideshow_KkyEwz"
   ]
 }
