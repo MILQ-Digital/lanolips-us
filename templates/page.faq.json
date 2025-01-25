@@ -14,16 +14,6 @@
       "settings": {
         "padding_top": 52,
         "padding_bottom": 60
-      },
-      "blocks": {
-        "block_1": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "FAQ Question 1",
-            "icon": "question_mark",
-            "row_content": "<p>This is the answer to the question.</p>"
-          }
-        }
       }
     },
     "collapsible_content_LtPmTr": {
