@@ -22,6 +22,7 @@
   --heading-lg: 64px;
   --heading-md: 48px;
   --heading-sm: 36px;
+  --heading-xxs: 30px;
   --heading-xs: 28px;
   --heading-2xs: 20px;
   --heading-3xs: 16px;
@@ -100,6 +101,12 @@ body {
   font-size: var(--heading-sm);
   line-height: 120%; /* 43.2px */
   font-weight: 500;
+}
+
+.heading-xxs {
+  font-size: var(--heading-xxs);
+  line-height: 120%; 
+  font-weight: 500; 
 }
 
 .heading-xs,
