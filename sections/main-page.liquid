@@ -30,14 +30,9 @@
       {%- assign faqs_metaobject_references = shop.metaobjects.faqs.values -%}
       {% if faqs_metaobject_references != blank %}
         {%- assign sorted_faqs = faqs_metaobject_references | sort: "group" -%}
-        {%- assign current_group = "" -%}
-
         <div class="faq-group-links">
           {%- for faq_metaobject in sorted_faqs -%}
-            {% if faq_metaobject.group != current_group %}
-              <div class="group-link"><a href="#{{ faq_metaobject.group }}" rel="nofollow">{{ faq_metaobject.group }}</a></div>
-            {% endif %}    
-
+              <div class="group-link"><a href="#{{ faq_metaobject.group }}" rel="nofollow">{{ faq_metaobject.group }}</a></div>  
           {% endfor %}
         </div>
       {% endif %}
