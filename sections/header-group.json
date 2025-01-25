@@ -132,7 +132,7 @@
         "image_picker_WfNLdw": {
           "type": "image_picker",
           "settings": {
-            "position": "3",
+            "position": "5",
             "image_block": "shopify://shop_images/Shop_Delicious_balms.webp",
             "image_title": "Best Natural Lip Balm for Dry Lips",
             "image_link": "shopify://blogs/blog/best-natural-lip-balm-for-dry-lips"
@@ -141,7 +141,7 @@
         "image_picker_ddxb77": {
           "type": "image_picker",
           "settings": {
-            "position": "3",
+            "position": "5",
             "image_block": "shopify://shop_images/Shop_Golden_Dry_Skin_Miracle_Salve.webp",
             "image_title": "Hot Off The Press!",
             "image_link": "shopify://blogs/blog/hot-off-the-press"
