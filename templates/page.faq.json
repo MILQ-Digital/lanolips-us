@@ -14,7 +14,7 @@
       "settings": {
         "padding_top": 28,
         "padding_bottom": 28,
-        "disable_content": true,
+        "disable_content": false,
         "layout": "none",
         "color_scheme": "scheme-2",
         "container_color_scheme": "",
