@@ -14,7 +14,6 @@
       "blocks": {
         "heading_RKxdrY": {
           "type": "heading",
-          "disabled": true,
           "settings": {
             "heading": "Orders",
             "heading_size": "hm",
@@ -23,7 +22,15 @@
         },
         "collapsible_row_Ud994N": {
           "type": "collapsible_row",
-          "disabled": true,
+          "settings": {
+            "heading": "Collapsible row",
+            "icon": "none",
+            "row_content": "<p>answer</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_9tHnTF": {
+          "type": "collapsible_row",
           "settings": {
             "heading": "Collapsible row",
             "icon": "none",
@@ -34,7 +41,8 @@
       },
       "block_order": [
         "heading_RKxdrY",
-        "collapsible_row_Ud994N"
+        "collapsible_row_Ud994N",
+        "collapsible_row_9tHnTF"
       ],
       "settings": {
         "padding_top": 52,
@@ -44,6 +52,7 @@
         "container_color_scheme": "",
         "open_first_collapsible_row": true,
         "use_metaobject_faq": false,
+        "image": "shopify://shop_images/Rectangle_93_1.webp",
         "image_ratio": "adapt",
         "desktop_layout": "image_second"
       }
@@ -84,6 +93,7 @@
         "collapsible_row_VX8ha3",
         "collapsible_row_Fk3e8b"
       ],
+      "disabled": true,
       "settings": {
         "caption": "",
         "heading": "Orders",
@@ -137,6 +147,7 @@
         "collapsible_row_4ja3gt",
         "collapsible_row_TWUMWd"
       ],
+      "disabled": true,
       "settings": {
         "caption": "",
         "heading": "Product",
@@ -189,6 +200,7 @@
         "collapsible_row_GQJqti",
         "collapsible_row_a3Fehn"
       ],
+      "disabled": true,
       "settings": {
         "caption": "",
         "heading": "Wholesales",
