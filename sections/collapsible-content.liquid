@@ -99,7 +99,7 @@
                         role="region"
                         aria-labelledby="Summary-{{ metaobject_reference.id }}-{{ section.id }}"
                       >  
-                        {{ faq_metaobject.answer }}
+                        {{ faq_metaobject.richanswers | metafield_tag }}
                       </div>
                     </details>
                   </div>
