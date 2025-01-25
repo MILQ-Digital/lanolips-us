@@ -14,7 +14,6 @@
       "blocks": {
         "heading_RKxdrY": {
           "type": "heading",
-          "disabled": true,
           "settings": {
             "heading": "Orders",
             "heading_size": "hs",
