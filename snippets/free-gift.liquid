@@ -10,21 +10,9 @@
   assign half_limit = free_shipping_limit | divided_by: 2
   assign subtotal_without_currency = cart.total_price | plus: 0 | divided_by: 100
 
-  # Debugging output to check values
-  assign debug_subtotal = subtotal_without_currency
-  assign debug_half_limit = half_limit
-
-  # Determine if the cart amount is halfway to the free gift limit
+  # Ensure show_halfway_message condition works correctly
   assign show_halfway_message = subtotal_without_currency >= half_limit
-
-  # Debugging output to check if condition is met
-  assign debug_show_halfway_message = show_halfway_message
 -%}
-
-<!-- Debugging output -->
-<p>Debugging Subtotal: {{ debug_subtotal }}</p>
-<p>Debugging Half Limit: {{ debug_half_limit }}</p>
-<p>Debugging Show Halfway Message: {{ debug_show_halfway_message }}</p>
 
 {%- if show_message and show_halfway_message -%}
   {%- liquid
