@@ -93,7 +93,7 @@
                     >
                       <summary id="Summary-{{ block.id }}-{{ section.id }}">
                         
-                        <h3 class="accordion__title inline-richtext h4">
+                        <h3 class="accordion__title inline-richtext heading-2xs">
                           {% render 'icon-accordion', icon: block.settings.icon %}
                           {{ block.settings.heading | default: block.settings.page.title | escape }}
                         </h3>
@@ -146,7 +146,7 @@
           {% endif %}
         >
           <summary id="Summary-{{ faq_metaobject.id }}-{{ section.id }}">
-            <h3 class="accordion__title inline-richtext h4">
+            <h3 class="accordion__title inline-richtext heading-2xs">
               {{ faq_metaobject.question | default: block.settings.page.title | escape }}
             </h3>
             <div class="accordion_icons">
