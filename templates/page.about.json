@@ -85,40 +85,6 @@
         "padding_bottom": 36
       }
     },
-    "multirow_WTcFzx": {
-      "type": "multirow",
-      "blocks": {
-        "row_968LQ7": {
-          "type": "row",
-          "settings": {
-            "image": "shopify://shop_images/Lanolips_products_image.webp",
-            "caption": "",
-            "heading": "",
-            "text": "",
-            "button_label": "",
-            "button_link": ""
-          }
-        }
-      },
-      "block_order": [
-        "row_968LQ7"
-      ],
-      "settings": {
-        "image_height": "adapt",
-        "desktop_image_width": "medium",
-        "heading_size": "hm",
-        "text_style": "body",
-        "button_style": "secondary",
-        "desktop_content_position": "middle",
-        "desktop_content_alignment": "left",
-        "image_layout": "align-left",
-        "section_color_scheme": "scheme-3",
-        "row_color_scheme": "scheme-3",
-        "mobile_content_alignment": "left",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
     "multirow_TffBAK": {
       "type": "multirow",
       "blocks": {
@@ -374,7 +340,6 @@
     "main",
     "rich_text_DRnPTK",
     "image_with_text_VUg6Qt",
-    "multirow_WTcFzx",
     "multirow_TffBAK",
     "image_with_text_TRx8WY",
     "image_with_text_xFPdxK",
