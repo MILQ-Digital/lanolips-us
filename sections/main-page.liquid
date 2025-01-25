@@ -25,7 +25,8 @@
   </h1>
   <div class="rte{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
 
-    {% if settings.hidepage_content == false %}
+    {% if settings.hidepage_content %}
+    {% else %}
       {{ page.content }}
     {% endif %}
 
@@ -254,7 +255,7 @@
     {
       "type": "checkbox",
       "id": "hidepage_content",
-      "default": true,
+      "default": false,
       "label": "Hide Content"
     },      
     {
