@@ -53,7 +53,7 @@
         <div class="collapsible-content-wrapper">          
           <div class="grid grid--1-col grid--2-col-tablet collapsible-content__grid{% if section.settings.desktop_layout == 'image_second' %} collapsible-content__grid--reverse{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
             {%- if section.settings.image != blank -%}
-              <div class="grid__item collapsible-content__grid-item">
+              <div class="grid__item collapsible-content__grid-item collapsible-content__image">
                 <div
                   class="collapsible-content__media collapsible-content__media--{{ section.settings.image_ratio }} media global-media-settings gradient"
                   {% if section.settings.image_ratio == 'adapt' %}
@@ -218,6 +218,21 @@
       });
     });
   });
+  document.addEventListener('DOMContentLoaded', function () {
+      function updateStickyPosition() {
+          const stickyHeader = document.querySelector('sticky-header');
+          const collapsibleImage = document.querySelector('.collapsible-content__image');
+
+          if (stickyHeader && collapsibleImage) {
+              const headerHeight = stickyHeader.offsetHeight;
+              collapsibleImage.style.top = `${headerHeight}px`;
+          }
+      }
+      updateStickyPosition();
+
+      window.addEventListener('resize', updateStickyPosition);
+  });
+
 </script>
 
 
