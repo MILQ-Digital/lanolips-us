@@ -567,10 +567,12 @@ document.addEventListener('DOMContentLoaded', () => {
   assign freegift_product_list = settings.freegift_product_list
   assign freegift_product_list_size = freegift_product_list | map: 'handle' | join: ',' | split: ',' | uniq | size | at_most: 5 | at_least: 4
 
+  assign freegift_product_list_active = settings.freegift_product_list | split: ','
+
   # Check if cart already contains a free gift product
   assign free_gift_found_in_cart = false
   for item in cart.items
-    if freegift_product_list contains item.product.handle
+    if freegift_product_list_active contains item.product.handle
       assign free_gift_found_in_cart = true
       break 
     endif
