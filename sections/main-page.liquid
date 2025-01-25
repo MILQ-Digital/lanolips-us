@@ -25,10 +25,9 @@
   </h1>
   <div class="rte{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
 
-  {% if settings.hidepage_content == false %}
-    {{ page.content }}
-  {% endif %}
-
+    {% if section.settings.hidepage_content == false %}
+      {{ page.content }}
+    {% endif %}
 
 
     {%- if section.settings.use_metaobject_faq -%}
@@ -255,9 +254,9 @@
     {
       "type": "checkbox",
       "id": "hidepage_content",
-      "default": true,
+      "default": false,
       "label": "Hide Content"
-    },    
+    },      
     {
       "type": "header",
       "content": "Collapsible Settings"
