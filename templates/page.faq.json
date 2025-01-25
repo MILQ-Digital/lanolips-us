@@ -57,7 +57,7 @@
         "heading": "Orders",
         "heading_size": "h1",
         "heading_alignment": "left",
-        "layout": "row",
+        "layout": "section",
         "color_scheme": "scheme-2",
         "container_color_scheme": "scheme-3",
         "open_first_collapsible_row": false,
