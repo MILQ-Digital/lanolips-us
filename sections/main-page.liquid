@@ -181,8 +181,6 @@
                           aria-labelledby="Summary-{{ faq_metaobject.id }}-{{ section.id }}"
                         >  
                           {{ faq_metaobject.answer }}
-                          {{ faq_metaobject.richanswers | escape }}
-                          <hr>
                           {{ faq_metaobject.richanswers | metafield_tag }}
                         </div>
                       </details>
