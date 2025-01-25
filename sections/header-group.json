@@ -92,6 +92,33 @@
             "image_title": "Lanolin Everywhere Cream",
             "image_link": "shopify://products/lano-everywhere-multi-cream"
           }
+        },
+        "megamenu_NaggUE": {
+          "type": "megamenu",
+          "settings": {
+            "image_title": "heading",
+            "image_link": "",
+            "position": "3",
+            "mega_sub_menu": "wcc-hands-body"
+          }
+        },
+        "image_picker_DGeEfg": {
+          "type": "image_picker",
+          "settings": {
+            "position": "3",
+            "image_block": "shopify://shop_images/Shop_Delicious_balms.webp",
+            "image_title": "Shop [Product]",
+            "image_link": "shopify://products/101-dry-skin-super-cream-multipurpose-for-face-body"
+          }
+        },
+        "image_picker_DET4Eb": {
+          "type": "image_picker",
+          "settings": {
+            "position": "3",
+            "image_block": "shopify://shop_images/Shop_Golden_Dry_Skin_Miracle_Salve.webp",
+            "image_title": "Lanolin Everywhere Cream",
+            "image_link": "shopify://products/lano-everywhere-multi-cream"
+          }
         }
       },
       "block_order": [
@@ -100,7 +127,10 @@
         "image_picker_nbbXJR",
         "megamenu_eAHRng",
         "image_picker_V6VQVT",
-        "image_picker_Axyq9F"
+        "image_picker_Axyq9F",
+        "megamenu_NaggUE",
+        "image_picker_DGeEfg",
+        "image_picker_DET4Eb"
       ],
       "settings": {
         "logo_position": "top-center",
