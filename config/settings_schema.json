@@ -1532,7 +1532,7 @@
         "type": "textarea",
         "id": "qualified_freegift_message",
         "label": "Success Message",
-        "default": "Congratulations! Your order qualifies for free shipping"
+        "default": "Congratulations! Your order qualifies for free gift."
       },           
       {
         "type": "text",
