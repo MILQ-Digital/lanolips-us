@@ -382,6 +382,21 @@
   customElements.define('sticky-header', StickyHeader);
 {% endjavascript %}
 
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const disclosureButton = document.querySelector('.header-localization localization_top_left .disclosure__button');
+  const countrySelector = document.querySelector('.header-localization localization_top_left .country-selector');
+  
+  disclosureButton.addEventListener('click', function() {
+    if (countrySelector.hasAttribute('hidden')) {
+      countrySelector.removeAttribute('hidden'); // Remove the hidden attribute
+    } else {
+      countrySelector.setAttribute('hidden', 'true'); // Optionally hide again
+    }
+  });
+});
+</script>
+
 <script type="application/ld+json">
   {
     "@context": "http://schema.org",
