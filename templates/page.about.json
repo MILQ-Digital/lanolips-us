@@ -23,9 +23,32 @@
         "image_ratio": "adapt",
         "desktop_layout": "image_second"
       }
+    },
+    "rich_text_DRnPTK": {
+      "type": "rich-text",
+      "blocks": {
+        "text_jUrepC": {
+          "type": "text",
+          "settings": {
+            "text": "<p>As with anything, it’s important to read the ingredient list before purchasing or trying new cosmetics like lip balms, moisturisers and hand lotions. Being vigilant about avoiding harsh chemicals and other irritants is the key to keeping your skin hydrated and nourished all year long.<br/>At the same time, there are also ingredients that you want to look for in your skincare and beauty products. Namely, lanolin! Read on to learn more about this all-natural ingredient and why it’s amazing for your skin.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_jUrepC"
+      ],
+      "settings": {
+        "desktop_content_position": "right",
+        "content_alignment": "left",
+        "color_scheme": "scheme-3",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "rich_text_DRnPTK"
   ]
 }
