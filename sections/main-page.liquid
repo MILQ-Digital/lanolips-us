@@ -24,7 +24,7 @@
     {{ page.title | escape }}
   </h1>
   <div class="rte{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
-  
+
     {% unless settings.disable_content %}
       {{ page.content }}
     {% endunless %}
@@ -253,7 +253,7 @@
     {
       "type": "checkbox",
       "id": "disable_content",
-      "default": false,
+      "default": true,
       "label": "Hide Content"
     },    
     {
