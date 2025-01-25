@@ -131,7 +131,7 @@
         
         <!-- Start a new group -->
         <div class="faq-group">
-          <h2 class="faq-group-title rich-text__heading rte inline-richtext  hs scroll-trigger animate--slide-in">{{ faq_metaobject.group }}</h2>
+          <h2 id="{{ faq_metaobject.group }}" class="faq-group-title rich-text__heading rte inline-richtext  hs scroll-trigger animate--slide-in">{{ faq_metaobject.group }}</h2>
           {%- assign current_group = faq_metaobject.group -%}
       {% endif %}
 
