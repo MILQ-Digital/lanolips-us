@@ -90,7 +90,7 @@
         "color_scheme": "scheme-2",
         "container_color_scheme": "",
         "open_first_collapsible_row": true,
-        "use_metaobject_faq": false,
+        "use_metaobject_faq": true,
         "image": "shopify://shop_images/Rectangle_93_1.webp",
         "image_ratio": "adapt",
         "desktop_layout": "image_second"
