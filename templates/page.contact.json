@@ -13,7 +13,15 @@
       "type": "main-page",
       "settings": {
         "padding_top": 36,
-        "padding_bottom": 0
+        "padding_bottom": 0,
+        "hidepage_content": true,
+        "layout": "none",
+        "color_scheme": "",
+        "container_color_scheme": "",
+        "open_first_collapsible_row": false,
+        "use_metaobject_faq": false,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second"
       }
     },
     "rich_text_zXaJEw": {
@@ -23,7 +31,8 @@
           "type": "heading",
           "settings": {
             "heading": "{{ page.title }}",
-            "heading_size": "hxxl"
+            "heading_size": "hxxl",
+            "enable_script": false
           }
         }
       },
@@ -60,7 +69,7 @@
         "contact_form_NEqNGw"
       ],
       "settings": {
-        "image": "shopify://shop_images/Image_5.jpg",
+        "image": "shopify://shop_images/Contact_image.jpg",
         "height": "adapt",
         "desktop_image_width": "medium",
         "layout": "text_first",
@@ -69,6 +78,7 @@
         "content_layout": "no-overlap",
         "section_color_scheme": "",
         "color_scheme": "",
+        "use_ingredients": false,
         "image_behavior": "none",
         "mobile_content_alignment": "left",
         "padding_top": 0,
