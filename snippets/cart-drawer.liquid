@@ -565,6 +565,7 @@ document.addEventListener('DOMContentLoaded', () => {
 {% assign free_gift_limit = settings.free_gift_limit | times: 100 %}
 {% if cart.total_price >= free_gift_limit  %}
 {% assign free_gift_products = settings.freegift_product_list %}
+<pre>{{ settings.freegift_product_list | inspect }}</pre>
 
 {% if free_gift_products.size > 0 %}
   <div class="free-gift-products">
