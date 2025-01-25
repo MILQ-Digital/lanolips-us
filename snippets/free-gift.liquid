@@ -1,0 +1,68 @@
+{%- liquid
+  assign message = settings.freegift_message 
+  assign show_message = false
+  if message != blank
+    assign show_message = true
+  endif
+
+-%}
+
+{%- if show_message -%}
+  {%- liquid
+    assign free_shipping_limit = settings.free_gift_limit
+    assign limit = free_shipping_limit | plus: 0
+    assign limit_currency = limit | times: 100
+    assign subtotal_without_currency = cart.total_price | plus: 0 | divided_by: 100
+    assign percent = limit | minus: subtotal_without_currency | times: 100 | divided_by: limit
+    assign percent = 100 | minus: percent
+
+    if settings.currency_code_enable
+      assign limit_currency = limit_currency | minus: cart.total_price | money_with_currency
+    else
+      assign limit_currency = limit_currency | minus: cart.total_price | money_without_trailing_zeros
+    endif
+
+    capture left_to_spend
+      echo '<span data-left-to-spend>' | append: limit_currency | append: '</span>'
+    endcapture
+
+    assign message = message | replace: '||amount||', left_to_spend
+    assign qualified_shipping_message = settings.qualified_freegift_message
+
+    capture free_gift_classes
+      if is_cart_drawer
+        echo 'drawer__message '
+      endif
+
+      if template.name == 'cart'
+        echo 'cart__message '
+      endif
+
+      echo 'free-gift'
+
+      if subtotal_without_currency >= limit and qualified_shipping_message != blank
+        echo ' is-success'
+      endif
+    endcapture
+  -%}
+
+  <div class="{{ free_gift_classes }}"
+    data-free-shipping="{% if qualified_shipping_message != blank %}true{% else %}false{% endif %}"
+    data-free-shipping-limit="{{ limit }}"
+    {% if style != blank %}
+      style="{{ style }}"
+    {% endif %}
+  >
+
+    {%- if qualified_shipping_message != blank -%}
+      <span class="free-shipping__success-message">{{ qualified_shipping_message }}</span>
+    {%- endif -%}
+
+    <span class="free-shipping__default-message">
+      {{ message }}
+    </span>
+
+    <progress class="free-shipping__progress-bar" data-progress-bar value="{{ percent }}" max="100"></progress>
+
+  </div>
+{%- endif -%}

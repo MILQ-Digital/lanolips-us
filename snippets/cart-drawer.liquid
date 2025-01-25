@@ -203,6 +203,10 @@ document.addEventListener('DOMContentLoaded', () => {
         {%- render 'free-shipping' -%}
       {%- endif -%}
 
+      {%- if settings.enable_freegift -%}
+        {%- render 'free-gift' -%}
+      {%- endif -%}      
+
       <cart-drawer-items
         {% if cart == empty %}
           class=" is-empty"
@@ -575,7 +579,7 @@ document.addEventListener('DOMContentLoaded', () => {
 {% assign upsell_products = upsell_collection.products | limit: 6 %}
 
 <div class="cart-upsell">
-  <h3>Recommended for You</h3>
+  <h3>Complete your routine</h3>
   <slider-component class="cart-upsell-carousel upsell-carousel slider-mobile-gutter slider-component-full-width slider-component-desktop scroll-trigger animate--slide-in">
     <ul id="Slider-Upsell"
         data-id="Slider-Upsell"
