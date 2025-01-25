@@ -268,6 +268,25 @@ body {
   --shadow-visible: var(--media-shadow-visible);
 }
 
+.faq-group-links {
+  display: flex;
+  gap: 25px;
+}
+
+.faq-group-links a,
+.rte .faq-group-links a {
+  text-decoration-thickness: 0px!important;
+  text-decoration: none;
+}
+
+.faq-group-links a:hover,
+.rte .faq-group-links a:hover  {
+  text-decoration: underline;
+  text-underline-offset: 5px;
+  text-decoration-thickness: 2px!important;
+  transition: text-decoration-thickness var(--duration-short) ease;
+}
+
 .text-center {
   text-align: center!important;
   align-self: center !important;
