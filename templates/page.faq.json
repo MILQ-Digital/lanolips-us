@@ -28,6 +28,10 @@
       "settings": {
         "padding_top": 52,
         "padding_bottom": 60,
+        "layout": "none",
+        "color_scheme": "",
+        "container_color_scheme": "",
+        "open_first_collapsible_row": true,
         "use_metaobject_faq": true,
         "image": "shopify://shop_images/Rectangle_93_1.png",
         "image_ratio": "adapt",
