@@ -440,6 +440,10 @@ cart-drawer-items::-webkit-scrollbar-track-piece {
   --progress-value-bg: var(--Lano-Blue-Light); 
 }
 
+.free-gift {
+  margin-top: 20px;
+}
+
 .free-shipping__progress-bar::-webkit-progress-bar{
   width:100%;
   background:var(--progress-bg);
