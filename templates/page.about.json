@@ -202,6 +202,37 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "rich_text_VXBwy4": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_CmRwrV": {
+          "type": "heading",
+          "settings": {
+            "heading": "What Is Lanoline?",
+            "heading_size": "hm",
+            "enable_script": false
+          }
+        },
+        "text_wXDFd8": {
+          "type": "text",
+          "settings": {
+            "text": "<p>In its raw form, lanolin is a deeply moisturising oil naturally occurring in sheep’s wool. It’s essential for conditioning and protecting sheep’s wool from the elements but is also extremely close to our skin’s own natural oil, making lanolin effective at hydrating skin, which is why we call it “Nature’s Wonder Moisturiser”. <br/>Lanolin moisturisers, ointments and lip balms are excellent for softening the look and feel of dry, flaky skin and allowing it to moisturise from within. That’s why lanolin is the hero ingredient in all our LANO products.<br/><br/></p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_CmRwrV",
+        "text_wXDFd8"
+      ],
+      "settings": {
+        "desktop_content_position": "right",
+        "content_alignment": "left",
+        "color_scheme": "scheme-3",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
     }
   },
   "order": [
@@ -210,6 +241,7 @@
     "image_with_text_VUg6Qt",
     "multirow_TffBAK",
     "image_with_text_TRx8WY",
-    "image_with_text_xFPdxK"
+    "image_with_text_xFPdxK",
+    "rich_text_VXBwy4"
   ]
 }
