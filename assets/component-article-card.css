@@ -50,6 +50,10 @@
   margin-bottom: 0.6rem;
 }
 
+.article-card .card__heading > a {
+  font-size: var(--heading-sm)
+}
+
 .blog-articles .article-card .card__information,
 .blog__posts .article-card .card__information {
   padding-left: 2rem;
