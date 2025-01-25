@@ -12,38 +12,29 @@
     "main": {
       "type": "main-page",
       "blocks": {
+        "heading_RKxdrY": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "heading": "Orders",
+            "heading_size": "hm",
+            "enable_script": false
+          }
+        },
         "collapsible_row_Ud994N": {
           "type": "collapsible_row",
+          "disabled": true,
           "settings": {
             "heading": "Collapsible row",
-            "icon": "check_mark",
+            "icon": "none",
             "row_content": "<p>answer</p>",
-            "page": ""
-          }
-        },
-        "collapsible_row_ithfnQ": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "Collapsible row",
-            "icon": "check_mark",
-            "row_content": "",
-            "page": ""
-          }
-        },
-        "collapsible_row_KrpEpP": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "Collapsible row",
-            "icon": "check_mark",
-            "row_content": "",
             "page": ""
           }
         }
       },
       "block_order": [
-        "collapsible_row_Ud994N",
-        "collapsible_row_ithfnQ",
-        "collapsible_row_KrpEpP"
+        "heading_RKxdrY",
+        "collapsible_row_Ud994N"
       ],
       "settings": {
         "padding_top": 52,
@@ -53,7 +44,6 @@
         "container_color_scheme": "",
         "open_first_collapsible_row": true,
         "use_metaobject_faq": false,
-        "image": "shopify://shop_images/DayandNightLipMinisLifestyleShot.jpg",
         "image_ratio": "adapt",
         "desktop_layout": "image_second"
       }
