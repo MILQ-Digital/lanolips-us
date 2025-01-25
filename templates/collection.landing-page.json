@@ -154,14 +154,14 @@
         "text_QgyLYU": {
           "type": "text",
           "settings": {
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "text": "",
             "text_style": "body"
           }
         },
         "button_a4w8gk": {
           "type": "button",
           "settings": {
-            "button_label": "Button label",
+            "button_label": "View Full Ingredients List",
             "button_link": "",
             "button_style_secondary": true,
             "button_style_underline": false
