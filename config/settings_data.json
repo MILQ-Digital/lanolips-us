@@ -137,6 +137,7 @@
     "enable_freeshipping": true,
     "shipping_message": "Add ||amount|| more for FREE shipping!",
     "qualified_shipping_message": "Congratulations! Your order qualifies for free shipping",
+    "enable_freegift": true,
     "cart_drawer_collection": "",
     "cart_color_scheme": "scheme-2",
     "message": "Add ||amount|| more for FREE shipping!",
