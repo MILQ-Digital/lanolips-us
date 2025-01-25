@@ -571,17 +571,13 @@ document.addEventListener('DOMContentLoaded', () => {
   assign free_gift_in_cart = false
   assign free_gift_found_in_cart = false
   for item in cart.items
-    if item.product.tags contains 'free_gift'
-      assign free_gift_in_cart = true
-    end
-    if freegift_product_list contains item.product.handle
+    if freegift_product_list contains item.product.id
       assign free_gift_found_in_cart = true
     end
-  endfor
+  endfor  
 -%}
 
-{% if cart.total_price >= free_gift_limit and not free_gift_in_cart and free_gift_found_in_cart %}
-  
+{% if cart.total_price >= free_gift_limit and not free_gift_in_cart and free_gift_found_in_cart  %}
 
   <div class="free-gift-products cart-upsell">
     <h3>Choose your free gift</h3>
