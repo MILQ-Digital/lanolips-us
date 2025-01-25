@@ -62,6 +62,7 @@
         "container_color_scheme": "scheme-3",
         "open_first_collapsible_row": false,
         "use_metaobject_faq": false,
+        "image": "shopify://shop_images/Lanolips_Collection_Image.jpg",
         "image_ratio": "adapt",
         "desktop_layout": "image_second",
         "padding_top": 0,
