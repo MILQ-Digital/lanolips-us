@@ -74,8 +74,8 @@
   -%}
 
   <div class="{{ free_gift_classes }}"
-    data-free-shipping="{% if qualified_shipping_message != blank %}true{% else %}false{% endif %}"
-    data-free-shipping-limit="{{ limit }}"
+    data-free-gift="{% if qualified_shipping_message != blank %}true{% else %}false{% endif %}"
+    data-free-gift-limit="{{ limit }}"
     {% if style != blank %} style="{{ style }}" {% endif %}
   >
     {%- if qualified_shipping_message != blank -%}
