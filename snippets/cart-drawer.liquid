@@ -572,6 +572,7 @@ document.addEventListener('DOMContentLoaded', () => {
   for item in cart.items
     if freegift_product_list contains item.product.handle
       assign free_gift_found_in_cart = true
+      break 
     endif
   endfor  
 -%}
