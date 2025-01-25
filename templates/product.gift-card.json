@@ -51,6 +51,7 @@
         },
         "icon_with_text_jLqfjX": {
           "type": "icon-with-text",
+          "disabled": true,
           "settings": {
             "layout": "vertical",
             "icon_1": "none",
