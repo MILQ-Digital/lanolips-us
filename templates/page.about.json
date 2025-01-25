@@ -101,6 +101,12 @@
     "image_with_text_TRx8WY": {
       "type": "image-with-text",
       "blocks": {
+        "image_picker_xEjfnh": {
+          "type": "image_picker",
+          "settings": {
+            "image_icon": "shopify://shop_images/Vector.svg"
+          }
+        },
         "heading_aeyDXF": {
           "type": "heading",
           "settings": {
@@ -126,6 +132,7 @@
         }
       },
       "block_order": [
+        "image_picker_xEjfnh",
         "heading_aeyDXF",
         "text_NCe7iF",
         "button_J7awhr"
