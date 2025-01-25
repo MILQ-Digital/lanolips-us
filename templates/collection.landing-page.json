@@ -104,11 +104,51 @@
         "show_text_below": true,
         "accessibility_info": "Slideshow about Lanolips"
       }
+    },
+    "image_with_text_MiJYgh": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_fWn6DV": {
+          "type": "heading",
+          "settings": {
+            "heading": "Emotive benefit headline for this collection or product",
+            "heading_size": "hm"
+          }
+        },
+        "text_8G9R3m": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "heading_fWn6DV",
+        "text_8G9R3m"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/image.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "use_ingredients": false,
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
     "banner",
     "product-grid",
-    "slideshow_KkyEwz"
+    "slideshow_KkyEwz",
+    "image_with_text_MiJYgh"
   ]
 }
