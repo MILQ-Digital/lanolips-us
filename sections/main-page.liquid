@@ -183,7 +183,7 @@
                           {{ faq_metaobject.answer }}
                           {{ faq_metaobject.richanswers | escape }}
                           <hr>
-                          {{ faq_metaobject.richanswers | richtext }}
+                          {{ faq_metaobject.richanswers | richtext | strip_html }}
                         </div>
                       </details>
                     </div>
