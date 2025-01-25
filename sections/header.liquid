@@ -89,7 +89,7 @@
       endif
     -%}  
     <div class="header__icons--localization header-localization localization_top_left">
-      <localization-form class="small-hide medium-hide">
+      <div class="small-hide medium-hide">
         
           <div class="disclosure">
             <button type="button" class="disclosure__button localization-form__select localization-selector link link--text caption-large" aria-expanded="false" aria-controls="AnnouncementCountry-country-results" aria-describedby="AnnouncementCountryLabel">
@@ -110,7 +110,7 @@
             </div>
           </div>   
 
-      </localization-form>
+      </div>
     </div>
 
     {%- if section.settings.logo_position != 'middle-center' -%}
@@ -422,14 +422,6 @@
     }
   </script>
 {%- endif -%}
-
-<script>
-document.querySelectorAll('.header-localization localization_top_left .locations a').forEach(function(link) {
-  link.addEventListener('click', function(event) {
-
-  });
-});
-</script>
 
 {% schema %}
 {
