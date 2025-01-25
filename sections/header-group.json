@@ -119,6 +119,15 @@
             "image_title": "Lanolin Everywhere Cream",
             "image_link": "shopify://products/lano-everywhere-multi-cream"
           }
+        },
+        "megamenu_FexHtw": {
+          "type": "megamenu",
+          "settings": {
+            "image_title": "",
+            "image_link": "",
+            "position": "5",
+            "mega_sub_menu": "wcc-discover"
+          }
         }
       },
       "block_order": [
@@ -130,7 +139,8 @@
         "image_picker_Axyq9F",
         "megamenu_NaggUE",
         "image_picker_DGeEfg",
-        "image_picker_DET4Eb"
+        "image_picker_DET4Eb",
+        "megamenu_FexHtw"
       ],
       "settings": {
         "logo_position": "top-center",
