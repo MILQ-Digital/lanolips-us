@@ -384,8 +384,8 @@
 
 <script>
 document.addEventListener('DOMContentLoaded', function() {
-  const disclosureButton = document.querySelector('.header-localization localization_top_left .disclosure__button');
-  const countrySelector = document.querySelector('.header-localization localization_top_left .country-selector');
+  const disclosureButton = document.querySelector('.header-localization.localization_top_left .disclosure__button');
+  const countrySelector = document.querySelector('.header-localization.localization_top_left .country-selector');
   
   disclosureButton.addEventListener('click', function() {
     if (countrySelector.hasAttribute('hidden')) {
