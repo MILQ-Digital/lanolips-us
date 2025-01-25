@@ -79,13 +79,13 @@
     {% if style != blank %} style="{{ style }}" {% endif %}
   >
     {%- if qualified_shipping_message != blank -%}
-      <span class="free-shipping__success-message">{{ qualified_shipping_message }}</span>
+      <span class="free-shipping__success-message free-gift__success-message">{{ qualified_shipping_message }}</span>
     {%- endif -%}
 
-    <span class="free-shipping__default-message">
+    <span class="free-shipping__default-message free-gift__default-message">
       {{ message }}
     </span>
 
-    <progress class="free-shipping__progress-bar" data-progress-bar value="{{ percent }}" max="100"></progress>
+    <progress class="free-shipping__progress-bar free-gift__progress-bar" data-progress-bar value="{{ percent }}" max="100"></progress>
   </div>
 {%- endif -%}
