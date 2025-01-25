@@ -273,11 +273,13 @@ body {
   gap: 25px;
 }
 
-.faq-group-links a {
+.faq-group-links a,
+.rte .faq-group-links a {
   text-decoration-thickness: 0px!important;
 }
 
-.faq-group-links a:hover {
+.faq-group-links a:hover,
+.rte .faq-group-links a:hover  {
   text-underline-offset: .3rem;
   text-decoration-thickness: 2px!important;
   transition: text-decoration-thickness var(--duration-short) ease;
