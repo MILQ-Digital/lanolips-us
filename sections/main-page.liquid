@@ -25,9 +25,10 @@
   </h1>
   <div class="rte{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
 
-    {% unless  settings.hidepage_content %}
-      {{ page.content }}
-    {% endunless %}
+  {% if settings.hidepage_content == false %}
+    {{ page.content }}
+  {% endif %}
+
 
 
     {%- if section.settings.use_metaobject_faq -%}
