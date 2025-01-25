@@ -181,23 +181,7 @@
                           aria-labelledby="Summary-{{ faq_metaobject.id }}-{{ section.id }}"
                         >  
                           {{ faq_metaobject.answer }}
-
-                          {% assign richtext = faq_metaobject.richanswers | parse_json %}
-
-                          {% for block in richtext.children %}
-                            {% if block.type == "paragraph" %}
-                              <p>
-                                {% for child in block.children %}
-                                  {% if child.type == "text" %}
-                                    {{ child.value }}
-                                  {% elsif child.type == "link" %}
-                                    <a href="{{ child.url }}" target="{{ child.target }}">{{ child.children[0].value }}</a>
-                                  {% endif %}
-                                {% endfor %}
-                              </p>
-                            {% endif %}
-                          {% endfor %}
-
+                          {{ faq_metaobject.richanswers | escape }}
                         </div>
                       </details>
                     </div>
