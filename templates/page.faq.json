@@ -14,12 +14,13 @@
       "settings": {
         "padding_top": 28,
         "padding_bottom": 28,
-        "disable_content": false,
+        "disable_content": true,
         "layout": "none",
         "color_scheme": "scheme-2",
         "container_color_scheme": "",
         "open_first_collapsible_row": true,
         "use_metaobject_faq": true,
+        "image": "shopify://shop_images/Shop_Delicious_balms.webp",
         "image_ratio": "adapt",
         "desktop_layout": "image_second"
       }
