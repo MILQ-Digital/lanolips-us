@@ -14,6 +14,7 @@
       "blocks": {
         "heading_RKxdrY": {
           "type": "heading",
+          "disabled": true,
           "settings": {
             "heading": "Orders",
             "heading_size": "hs",
@@ -22,6 +23,7 @@
         },
         "collapsible_row_Ud994N": {
           "type": "collapsible_row",
+          "disabled": true,
           "settings": {
             "heading": "Collapsible row",
             "icon": "none",
@@ -31,6 +33,7 @@
         },
         "collapsible_row_9tHnTF": {
           "type": "collapsible_row",
+          "disabled": true,
           "settings": {
             "heading": "Collapsible row",
             "icon": "none",
@@ -40,6 +43,7 @@
         },
         "collapsible_row_fgTWhK": {
           "type": "collapsible_row",
+          "disabled": true,
           "settings": {
             "heading": "Collapsible row",
             "icon": "none",
@@ -49,6 +53,7 @@
         },
         "heading_q4agzn": {
           "type": "heading",
+          "disabled": true,
           "settings": {
             "heading": "Product",
             "heading_size": "hs",
@@ -57,6 +62,7 @@
         },
         "collapsible_row_9zFReH": {
           "type": "collapsible_row",
+          "disabled": true,
           "settings": {
             "heading": "Collapsible row",
             "icon": "none",
@@ -66,6 +72,7 @@
         },
         "collapsible_row_r7PbkT": {
           "type": "collapsible_row",
+          "disabled": true,
           "settings": {
             "heading": "Collapsible row",
             "icon": "none",
