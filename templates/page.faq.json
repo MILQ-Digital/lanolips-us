@@ -20,6 +20,7 @@
         "container_color_scheme": "",
         "open_first_collapsible_row": true,
         "use_metaobject_faq": true,
+        "image": "shopify://shop_images/Shop_Delicious_balms.webp",
         "image_ratio": "adapt",
         "desktop_layout": "image_second"
       }
