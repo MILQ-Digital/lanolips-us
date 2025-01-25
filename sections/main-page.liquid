@@ -14,7 +14,7 @@
       padding-bottom: {{ section.settings.padding_bottom }}px;
     }
 
-    .collapsible-content__image {
+    .collapsible-content__image .collapsible-content__media {
       position: sticky;
     }
   }
@@ -225,7 +225,7 @@
   document.addEventListener('DOMContentLoaded', function () {
       function updateStickyPosition() {
           const stickyHeader = document.querySelector('sticky-header');
-          const collapsibleImage = document.querySelector('.collapsible-content__image');
+          const collapsibleImage = document.querySelector('.collapsible-content__media');
 
           if (stickyHeader && collapsibleImage) {
               const headerHeight = stickyHeader.offsetHeight;
