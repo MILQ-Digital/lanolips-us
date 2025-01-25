@@ -576,7 +576,7 @@ document.addEventListener('DOMContentLoaded', () => {
   endfor  
 -%}
 
-{% if cart.total_price >= free_gift_limit and free_gift_found_in_cart == true  %}
+{% if cart.total_price >= free_gift_limit and free_gift_found_in_cart == false  %}
 
   <div class="free-gift-products cart-upsell">
     <h3>Choose your free gift</h3>
