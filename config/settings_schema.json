@@ -1514,7 +1514,39 @@
         "label": "Minimum spend for free shipping",
         "default": "100",
         "info": "Use round numbers. Exclude currency, symbols, and letters. [More info](https://help.shopify.com/en/manual/shipping/setting-up-and-managing-your-shipping/free-shipping-rates#free-shipping-over-a-certain-value)"
-      },      
+      },  
+      {
+        "type": "checkbox",
+        "id": "enable_freegift",
+        "label": "Enable Free Gift Bar",
+        "default": false
+      },         
+      {
+        "type": "textarea",
+        "id": "freegift_message",
+        "label": "Message",
+        "info": "Use ||amount|| to display progress towards free gift.",
+        "default": "You're ||amount|| away from a FREE gift."
+      },   
+      {
+        "type": "textarea",
+        "id": "qualified_freegift_message",
+        "label": "Success Message",
+        "default": "Congratulations! Your order qualifies for free gift."
+      },           
+      {
+        "type": "text",
+        "id": "free_gift_limit",
+        "label": "Minimum spend for free gift",
+        "default": "400",
+        "info": "Use round numbers. Exclude currency, symbols, and letters. [More info](https://help.shopify.com/en/manual/shipping/setting-up-and-managing-your-shipping/free-shipping-rates#free-shipping-over-a-certain-value)"
+      },
+      {
+        "type": "product_list",
+        "id": "freegift_product_list",
+        "label": "Products",
+        "limit": 4
+      },                      
       {
         "type": "collection",
         "id": "cart_drawer_collection",

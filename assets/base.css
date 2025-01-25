@@ -9,6 +9,7 @@
   --focused-base-outline-offset: 0.3rem;
   --focused-base-box-shadow: 0 0 0 0.3rem rgb(var(--color-background)), 0 0 0.5rem 0.4rem rgba(var(--color-foreground), 0.3);
   --Lano-Blue: #2B4676;
+  --Lano-Blue-Light: #6081BD;
   --Lano-Cream: #FDF7EC; 
   --Lano-Pink: #F3E5EF;
   --Lano-light-pink: #F8F2F6; 
@@ -330,6 +331,12 @@ body {
 .text_link .underline_link {
   text-decoration: underline;
   text-underline-offset: 6px;
+}
+
+.underline_link {
+  text-decoration: underline;
+  text-underline-offset: 6px; 
+  color: inherit
 }
 
 /* base */

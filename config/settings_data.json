@@ -136,7 +136,15 @@
     "show_cart_note": false,
     "enable_freeshipping": true,
     "shipping_message": "Add ||amount|| more for FREE shipping!",
-    "qualified_shipping_message": "Congratulations! Your order qualifies for free shipping",
+    "qualified_shipping_message": "FREE Standard shipping included",
+    "enable_freegift": true,
+    "qualified_freegift_message": "FREE gift added to your cart",
+    "freegift_product_list": [
+      "lanolips-dry-body-brush",
+      "101-strawberry-lip-balm-phone-holder",
+      "hydrate-glow-duo",
+      "hyaluronic-lip-oil-raspberry"
+    ],
     "cart_drawer_collection": "",
     "cart_color_scheme": "scheme-2",
     "message": "Add ||amount|| more for FREE shipping!",
@@ -155,18 +163,6 @@
       }
     },
     "content_for_index": [],
-    "blocks": {
-      "855628211100114053": {
-        "type": "shopify://apps/klaviyo-email-marketing-sms/blocks/klaviyo-onsite-embed/2632fe16-c075-4321-a88b-50b567f42507",
-        "disabled": false,
-        "settings": {}
-      },
-      "7570552984445421165": {
-        "type": "shopify://apps/yotpo-product-reviews/blocks/settings/eb7dfd7d-db44-4334-bc49-c893b51b36cf",
-        "disabled": true,
-        "settings": {}
-      }
-    },
     "color_schemes": {
       "scheme-1": {
         "settings": {
