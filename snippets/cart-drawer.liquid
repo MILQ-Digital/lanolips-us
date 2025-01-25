@@ -562,38 +562,15 @@ document.addEventListener('DOMContentLoaded', () => {
       </cart-drawer-items>
       <div class="drawer__footer">
 
-{% assign upsell_collection = collections['default-upsell-collection'] %}  <!-- Default upsell collection -->
-
-{% for item in cart.items %}
-  {% for collection in item.product.collections %}
-    {% if collection.handle %}
-      {% assign upsell_collection = collections[collection.handle] %}
-      {% break %}
-    {% endif %}
-  {% endfor %}
-  {% if upsell_collection != collections['default-upsell-collection'] %}
-    {% break %}
-  {% endif %}
-{% endfor %}
-
-{% assign upsell_products = upsell_collection.products | limit: 6 %}
-
-<div class="cart-upsell">
-  <h3>Complete your routine</h3>
-  <slider-component class="cart-upsell-carousel upsell-carousel slider-mobile-gutter slider-component-full-width slider-component-desktop scroll-trigger animate--slide-in">
-    <ul id="Slider-Upsell"
-        data-id="Slider-Upsell"
-        class="grid product-grid contains-card contains-card--product contains-card--standard grid--1-col-desktop grid--1-col-tablet-down slider slider--desktop slider--tablet grid--peek"
-        role="list"
-        aria-label="{{ 'general.slider.name' | t }}">
-      {% for product in upsell_products %}
-        {% assign product_form_id = 'quick-add-' | append: section_id | append: product.id %}
-        <li id="Slide-Upsell-{{ forloop.index }}"
-            class="cart-upsell-item upsell-item grid__item{% if show_mobile_slider or show_desktop_slider %} slider__slide{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
-            {% if settings.animations_reveal_on_scroll %}
-              data-cascade
-              style="--animation-order: {{ forloop.index }};"
-            {% endif %}">
+{% if cart.total_price >= settings.free_gift_limit %}
+  <!-- Display Free Gift Products if Cart Total is Greater than or Equal to Free Gift Limit -->
+  {% assign free_gift_products = collections['freegift_product_list'].products | limit: 4 %}
+  
+  <div class="free-gift-products">
+    <h3>Your Free Gift</h3>
+    <ul>
+      {% for product in free_gift_products %}
+        <li>
           <a href="{{ product.url }}">
             <img src="{{ product.featured_image | img_url: '150x150' }}" alt="{{ product.title }}">
           </a>
@@ -605,52 +582,112 @@ document.addEventListener('DOMContentLoaded', () => {
             <input type="hidden" name="utf8" value="✓">
             <input type="hidden" name="id" value="{{ product.variants.first.id }}" class="product-variant-id">
             <button 
-              id="{{ product_form_id }}-submit"
               type="submit" name="add" class="quick-add__submit button button--full-width button--bright-pink button--secondary" aria-haspopup="dialog"
-              aria-labelledby="{{ product_form_id }}-submit title-{{ section_id }}-{{ product.id }}"
+              aria-labelledby="free-gift-submit-{{ product.id }}"
               data-product-url="{{ product.url }}"
               data-ajax-add
             >
-              <span>Add To Bag</span>
-              <span class="sold-out-message hidden">Sold out</span>
-              <div class="loading__spinner hidden">
-                <svg xmlns="http://www.w3.org/2000/svg" class="spinner" viewBox="0 0 66 66">
-                  <circle stroke-width="6" cx="33" cy="33" r="30" fill="none" class="path"></circle>
-                </svg>
-              </div>
+              <span>Add Free Gift</span>
             </button>
-            <input type="hidden" name="product-id" value="{{ product.id }}">
           </form>
-
         </li>
       {% endfor %}
     </ul>
-        <div class="slider-buttons">
-          <button
-            type="button"
-            class="slider-button slider-button--prev"
-            name="previous"
-            aria-label="{{ 'general.slider.previous_slide' | t }}"
-            aria-controls="Slider-{{ section.id }}"
-          >
-            <span class="svg-wrapper">
-              {{- 'icon-arrow-left.svg' | inline_asset_content -}}
-            </span>
-          </button>
-          <button
-            type="button"
-            class="slider-button slider-button--next"
-            name="next"
-            aria-label="{{ 'general.slider.next_slide' | t }}"
-            aria-controls="Slider-{{ section.id }}"
-          >
-            <span class="svg-wrapper">
-              {{- 'icon-arrow-right.svg' | inline_asset_content -}}
-            </span>
-          </button>
-        </div>
-  </slider-component>
-</div>
+  </div>
+{% else %}
+  {% assign upsell_collection = collections['default-upsell-collection'] %}  <!-- Default upsell collection -->
+
+  {% for item in cart.items %}
+    {% for collection in item.product.collections %}
+      {% if collection.handle %}
+        {% assign upsell_collection = collections[collection.handle] %}
+        {% break %}
+      {% endif %}
+    {% endfor %}
+    {% if upsell_collection != collections['default-upsell-collection'] %}
+      {% break %}
+    {% endif %}
+  {% endfor %}
+
+  {% assign upsell_products = upsell_collection.products | limit: 6 %}
+
+  <div class="cart-upsell">
+    <h3>Complete your routine</h3>
+    <slider-component class="cart-upsell-carousel upsell-carousel slider-mobile-gutter slider-component-full-width slider-component-desktop scroll-trigger animate--slide-in">
+      <ul id="Slider-Upsell"
+          data-id="Slider-Upsell"
+          class="grid product-grid contains-card contains-card--product contains-card--standard grid--1-col-desktop grid--1-col-tablet-down slider slider--desktop slider--tablet grid--peek"
+          role="list"
+          aria-label="{{ 'general.slider.name' | t }}">
+
+        {% for product in upsell_products %}
+          {% assign product_form_id = 'quick-add-' | append: section_id | append: product.id %}
+          <li id="Slide-Upsell-{{ forloop.index }}"
+              class="cart-upsell-item upsell-item grid__item{% if show_mobile_slider or show_desktop_slider %} slider__slide{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
+              {% if settings.animations_reveal_on_scroll %}
+                data-cascade
+                style="--animation-order: {{ forloop.index }};"
+              {% endif %}">
+
+            <a href="{{ product.url }}">
+              <img src="{{ product.featured_image | img_url: '150x150' }}" alt="{{ product.title }}">
+            </a>
+            <p>{{ product.title }}</p>
+            <p>{{ product.price | money }}</p>
+            
+            <form method="post" action="/cart/add" accept-charset="UTF-8" class="form" enctype="multipart/form-data" novalidate="novalidate" data-type="add-to-cart-form" data-no-redirect="true">
+              <input type="hidden" name="form_type" value="product">
+              <input type="hidden" name="utf8" value="✓">
+              <input type="hidden" name="id" value="{{ product.variants.first.id }}" class="product-variant-id">
+              <button 
+                id="{{ product_form_id }}-submit"
+                type="submit" name="add" class="quick-add__submit button button--full-width button--bright-pink button--secondary" aria-haspopup="dialog"
+                aria-labelledby="{{ product_form_id }}-submit title-{{ section_id }}-{{ product.id }}"
+                data-product-url="{{ product.url }}"
+                data-ajax-add
+              >
+                <span>Add To Bag</span>
+                <span class="sold-out-message hidden">Sold out</span>
+                <div class="loading__spinner hidden">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="spinner" viewBox="0 0 66 66">
+                    <circle stroke-width="6" cx="33" cy="33" r="30" fill="none" class="path"></circle>
+                  </svg>
+                </div>
+              </button>
+              <input type="hidden" name="product-id" value="{{ product.id }}">
+            </form>
+
+          </li>
+        {% endfor %}
+      </ul>
+      <div class="slider-buttons">
+        <button
+          type="button"
+          class="slider-button slider-button--prev"
+          name="previous"
+          aria-label="{{ 'general.slider.previous_slide' | t }}"
+          aria-controls="Slider-{{ section.id }}"
+        >
+          <span class="svg-wrapper">
+            {{- 'icon-arrow-left.svg' | inline_asset_content -}}
+          </span>
+        </button>
+        <button
+          type="button"
+          class="slider-button slider-button--next"
+          name="next"
+          aria-label="{{ 'general.slider.next_slide' | t }}"
+          aria-controls="Slider-{{ section.id }}"
+        >
+          <span class="svg-wrapper">
+            {{- 'icon-arrow-right.svg' | inline_asset_content -}}
+          </span>
+        </button>
+      </div>
+    </slider-component>
+  </div>
+{% endif %}
+
 
 
         {%- if settings.show_cart_note -%}

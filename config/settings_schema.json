@@ -1540,7 +1540,13 @@
         "label": "Minimum spend for free gift",
         "default": "400",
         "info": "Use round numbers. Exclude currency, symbols, and letters. [More info](https://help.shopify.com/en/manual/shipping/setting-up-and-managing-your-shipping/free-shipping-rates#free-shipping-over-a-certain-value)"
-      },            
+      },
+      {
+        "type": "product_list",
+        "id": "freegift_product_list",
+        "label": "Products",
+        "limit": 4
+      },                      
       {
         "type": "collection",
         "id": "cart_drawer_collection",
