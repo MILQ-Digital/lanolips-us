@@ -335,7 +335,9 @@
       "blocks": {
         "image_picker_k7KxyT": {
           "type": "image_picker",
-          "settings": {}
+          "settings": {
+            "image_icon": "shopify://shop_images/Vector.svg"
+          }
         },
         "heading_PEU8jG": {
           "type": "heading",
