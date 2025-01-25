@@ -680,32 +680,17 @@ document.addEventListener('DOMContentLoaded', () => {
                 style="--animation-order: {{ forloop.index }};"
               {% endif %}">
 
-            <a href="{{ product.url }}">
-              <img src="{{ product.featured_image | img_url: '150x150' }}" alt="{{ product.title }}">
-            </a>
-            <p>{{ product.title }}</p>
-            
-            <form method="post" action="/cart/add" accept-charset="UTF-8" class="form" enctype="multipart/form-data" novalidate="novalidate" data-type="add-to-cart-form" data-no-redirect="true">
-              <input type="hidden" name="form_type" value="product">
-              <input type="hidden" name="utf8" value="✓">
-              <input type="hidden" name="id" value="{{ product.variants.first.id }}" class="product-variant-id">
-              <button 
-                id="{{ product_form_id }}-submit"
-                type="submit" name="add" class="quick-add__submit button button--full-width button--bright-pink button--secondary" aria-haspopup="dialog"
-                aria-labelledby="{{ product_form_id }}-submit title-{{ section_id }}-{{ product.id }}"
-                data-product-url="{{ product.url }}"
-                data-ajax-add
-              >
-                <span>Add To Bag - {{ product.price | money }}</span>
-                <span class="sold-out-message hidden">Sold out</span>
-                <div class="loading__spinner hidden">
-                  <svg xmlns="http://www.w3.org/2000/svg" class="spinner" viewBox="0 0 66 66">
-                    <circle stroke-width="6" cx="33" cy="33" r="30" fill="none" class="path"></circle>
-                  </svg>
-                </div>
-              </button>
-              <input type="hidden" name="product-id" value="{{ product.id }}">
-            </form>
+            {% render 'card-product',
+                                        card_product: product,
+                                        media_aspect_ratio: block.settings.image_ratio,
+                                        show_secondary_image: false,
+                                        lazy_load: false,
+                                        skip_styles: skip_card_product_styles,
+                                        quick_add: quick_add,
+                                        section_id: section.id,
+                                        horizontal_class: true,
+                                        horizontal_quick_add: true
+                                      %}
 
           </li>
         {% endfor %}
