@@ -116,12 +116,6 @@
   padding-top: 0;
 }
 
-
-.collapsible-content summary .accordion__title {
-  font-size: 30px;
-  line-height: 130%;
-}
-
 /* check for flexbox gap in older Safari versions */
 @supports not (inset: 10px) {
   @media screen and (min-width: 750px) {
