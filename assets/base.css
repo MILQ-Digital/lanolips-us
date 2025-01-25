@@ -268,6 +268,11 @@ body {
   --shadow-visible: var(--media-shadow-visible);
 }
 
+.faq-group-links {
+  display: flex;
+  gap: 25px;
+}
+
 .text-center {
   text-align: center!important;
   align-self: center !important;
