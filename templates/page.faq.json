@@ -93,12 +93,13 @@
       "settings": {
         "padding_top": 52,
         "padding_bottom": 60,
+        "hidepage_content": true,
         "layout": "none",
         "color_scheme": "scheme-2",
         "container_color_scheme": "",
         "open_first_collapsible_row": true,
         "use_metaobject_faq": true,
-        "image": "shopify://shop_images/Rectangle_93_1.webp",
+        "image": "shopify://shop_images/Model-holding-Hyaluronic-Lip-Oil-Honey-and-Raspberry.jpg",
         "image_ratio": "adapt",
         "desktop_layout": "image_second"
       }
@@ -150,7 +151,6 @@
         "container_color_scheme": "scheme-3",
         "open_first_collapsible_row": false,
         "use_metaobject_faq": false,
-        "image": "shopify://shop_images/Lanolips_Collection_Image.jpg",
         "image_ratio": "adapt",
         "desktop_layout": "image_second",
         "padding_top": 0,
