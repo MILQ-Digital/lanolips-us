@@ -199,19 +199,13 @@
 
 <script>
   document.addEventListener("DOMContentLoaded", function() {
-    // Adjust offset if you have a fixed header, for example 60px
     var offset = 20;
-
-    // When any anchor link is clicked
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
       anchor.addEventListener("click", function(e) {
-        e.preventDefault(); // Prevent default anchor link behavior
-
-        var targetId = this.getAttribute("href").substring(1); // Get the target ID
-        var targetElement = document.getElementById(targetId); // Get the target element
-
+        e.preventDefault(); 
+        var targetId = this.getAttribute("href").substring(1); 
+        var targetElement = document.getElementById(targetId); 
         if (targetElement) {
-          // Scroll to the target element with the specified offset
           window.scrollTo({
             top: targetElement.offsetTop - offset,
             behavior: "smooth"
