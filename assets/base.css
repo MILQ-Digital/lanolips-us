@@ -276,10 +276,12 @@ body {
 .faq-group-links a,
 .rte .faq-group-links a {
   text-decoration-thickness: 0px!important;
+  text-decoration: none;
 }
 
 .faq-group-links a:hover,
 .rte .faq-group-links a:hover  {
+  text-decoration: underline;
   text-underline-offset: .3rem;
   text-decoration-thickness: 2px!important;
   transition: text-decoration-thickness var(--duration-short) ease;
