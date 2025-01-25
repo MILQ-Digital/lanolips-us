@@ -576,7 +576,6 @@ document.addEventListener('DOMContentLoaded', () => {
     <h3>Choose your free gift</h3>
     <ul>
       {%- for product in freegift_product_list limit: freegift_product_list_size -%}
-        {% if product %}
           <li>
             <a href="{{ product.url }}">
               <img src="{{ product.featured_image | img_url: '150x150' }}" alt="{{ product.title }}">
@@ -598,7 +597,6 @@ document.addEventListener('DOMContentLoaded', () => {
               </button>
             </form>
           </li>
-        {% endif %}
       {%- endfor -%}
     </ul>
   </div>
