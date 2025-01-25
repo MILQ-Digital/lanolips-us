@@ -14,6 +14,7 @@
       "blocks": {
         "heading_RKxdrY": {
           "type": "heading",
+          "disabled": true,
           "settings": {
             "heading": "Orders",
             "heading_size": "hm",
@@ -22,6 +23,7 @@
         },
         "collapsible_row_Ud994N": {
           "type": "collapsible_row",
+          "disabled": true,
           "settings": {
             "heading": "Collapsible row",
             "icon": "none",
