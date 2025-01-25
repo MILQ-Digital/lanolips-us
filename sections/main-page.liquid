@@ -29,14 +29,17 @@
     {%- if section.settings.use_metaobject_faq -%}
       {%- assign faqs_metaobject_references = shop.metaobjects.faqs.values -%}
       {% if faqs_metaobject_references != blank %}
-        {%- assign sorted_faqs = faqs_metaobject_references | sort: "group" -%}
+        {%- assign group_names = faqs_metaobject_references | map: "group" | uniq -%}
         <div class="faq-group-links">
-          {%- for faq_metaobject in sorted_faqs -%}
-              <div class="group-link"><a href="#{{ faq_metaobject.group }}" rel="nofollow">{{ faq_metaobject.group }}</a></div>  
+          {%- for group_name in group_names -%}
+            <div class="group-link">
+              <a href="#{{ group_name | handle }}" rel="nofollow">{{ group_name }}</a>
+            </div>  
           {% endfor %}
         </div>
       {% endif %}
-    {%- endif -%}          
+    {%- endif -%}
+      
         
   </div>
 
