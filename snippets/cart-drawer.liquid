@@ -122,22 +122,22 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   #Slider-Upsell {
-position: relative;
-flex-wrap: inherit;
-overflow-x: auto; 
-scroll-snap-type: x mandatory;
-scroll-behavior: smooth;
-scroll-padding-left: 1.5rem;
--webkit-overflow-scrolling: touch;
-margin-bottom: 1rem;
+    position: relative;
+    flex-wrap: inherit;
+    overflow-x: auto; 
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    scroll-padding-left: 1.5rem;
+    -webkit-overflow-scrolling: touch;
+    margin-bottom: 1rem;
   }
 
-.cursor-grabbing {
-    cursor: grabbing;
-}
-.cursor-grab {
-    cursor: grab;
-}  
+  .cursor-grabbing {
+      cursor: grabbing;
+  }
+  .cursor-grab {
+      cursor: grab;
+  }  
 
 </style>
 
@@ -558,19 +558,19 @@ margin-bottom: 1rem;
       </cart-drawer-items>
       <div class="drawer__footer">
 
-{% assign cart_contains_trigger_product = false %}
+{% assign upsell_collection = collections['default-upsell-collection'] %}  <!-- Default upsell collection -->
 
 {% for item in cart.items %}
-  {% if item.product.collections contains 'trigger-collection-handle' %}
-    {% assign cart_contains_trigger_product = true %}
+  {% for collection in item.product.collections %}
+    {% if collection.handle %}
+      {% assign upsell_collection = collections[collection.handle] %}
+      {% break %}
+    {% endif %}
+  {% endfor %}
+  {% if upsell_collection != collections['default-upsell-collection'] %}
+    {% break %}
   {% endif %}
 {% endfor %}
-
-{% if cart_contains_trigger_product %}
-  {% assign upsell_collection = collections['alternate-upsell-collection'] %}
-{% else %}
-  {% assign upsell_collection = collections['default-upsell-collection'] %}
-{% endif %}
 
 {% assign upsell_products = upsell_collection.products | limit: 6 %}
 
