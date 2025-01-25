@@ -571,7 +571,7 @@ document.addEventListener('DOMContentLoaded', () => {
   assign free_gift_in_cart = false
   assign free_gift_found_in_cart = false
   for item in cart.items
-    if freegift_product_list contains item.product.id
+    if freegift_product_list contains item.product.handle
       assign free_gift_found_in_cart = true
     end
   endfor  
