@@ -384,22 +384,21 @@
         "padding_bottom": 36
       }
     },
-    "collapsible_content_GiNw6Y": {
-      "type": "collapsible-content",
+    "1737799782ee5d4384": {
+      "type": "apps",
+      "blocks": {
+        "yotpo_product_reviews_reviews_carousel_XReKcQ": {
+          "type": "shopify://apps/yotpo-product-reviews/blocks/reviews_carousel/eb7dfd7d-db44-4334-bc49-c893b51b36cf",
+          "settings": {
+            "product": "{{product}}"
+          }
+        }
+      },
+      "block_order": [
+        "yotpo_product_reviews_reviews_carousel_XReKcQ"
+      ],
       "settings": {
-        "caption": "",
-        "heading": "FAQS",
-        "heading_size": "_2xs",
-        "heading_alignment": "left",
-        "layout": "none",
-        "color_scheme": "",
-        "container_color_scheme": "",
-        "open_first_collapsible_row": false,
-        "use_metaobject_faq": true,
-        "image_ratio": "adapt",
-        "desktop_layout": "image_second",
-        "padding_top": 100,
-        "padding_bottom": 100
+        "include_margins": true
       }
     },
     "related-products": {
@@ -422,6 +421,41 @@
         "padding_top": 52,
         "padding_bottom": 28
       }
+    },
+    "collapsible_content_GiNw6Y": {
+      "type": "collapsible-content",
+      "settings": {
+        "caption": "",
+        "heading": "FAQS",
+        "heading_size": "_2xs",
+        "heading_alignment": "left",
+        "layout": "none",
+        "color_scheme": "",
+        "container_color_scheme": "",
+        "open_first_collapsible_row": false,
+        "use_metaobject_faq": true,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "padding_top": 100,
+        "padding_bottom": 100
+      }
+    },
+    "1737799575de0beb22": {
+      "type": "apps",
+      "blocks": {
+        "yotpo_product_reviews_reviews_VQkLck": {
+          "type": "shopify://apps/yotpo-product-reviews/blocks/reviews/eb7dfd7d-db44-4334-bc49-c893b51b36cf",
+          "settings": {
+            "product": "{{product}}"
+          }
+        }
+      },
+      "block_order": [
+        "yotpo_product_reviews_reviews_VQkLck"
+      ],
+      "settings": {
+        "include_margins": true
+      }
     }
   },
   "order": [
@@ -431,7 +465,9 @@
     "rich_text_qVEiKy",
     "image_with_text_9nJtjb",
     "image_with_text_AL7pCG",
+    "1737799782ee5d4384",
+    "related-products",
     "collapsible_content_GiNw6Y",
-    "related-products"
+    "1737799575de0beb22"
   ]
 }
