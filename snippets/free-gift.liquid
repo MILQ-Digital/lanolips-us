@@ -5,14 +5,18 @@
     assign show_message = true
   endif
 
+  assign free_shipping_limit = settings.free_gift_limit
+  assign half_limit = free_shipping_limit | divided_by: 2
+  assign subtotal_without_currency = cart.total_price | plus: 0 | divided_by: 100
+
+  assign show_halfway_message = subtotal_without_currency >= half_limit
+
 -%}
 
-{%- if show_message -%}
+{%- if show_message and show_halfway_message -%}
   {%- liquid
-    assign free_shipping_limit = settings.free_gift_limit
     assign limit = free_shipping_limit | plus: 0
     assign limit_currency = limit | times: 100
-    assign subtotal_without_currency = cart.total_price | plus: 0 | divided_by: 100
     assign percent = limit | minus: subtotal_without_currency | times: 100 | divided_by: limit
     assign percent = 100 | minus: percent
 
@@ -49,11 +53,8 @@
   <div class="{{ free_gift_classes }}"
     data-free-shipping="{% if qualified_shipping_message != blank %}true{% else %}false{% endif %}"
     data-free-shipping-limit="{{ limit }}"
-    {% if style != blank %}
-      style="{{ style }}"
-    {% endif %}
+    {% if style != blank %} style="{{ style }}" {% endif %}
   >
-
     {%- if qualified_shipping_message != blank -%}
       <span class="free-shipping__success-message">{{ qualified_shipping_message }}</span>
     {%- endif -%}
@@ -63,6 +64,5 @@
     </span>
 
     <progress class="free-shipping__progress-bar" data-progress-bar value="{{ percent }}" max="100"></progress>
-
   </div>
 {%- endif -%}
