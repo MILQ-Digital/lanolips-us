@@ -139,6 +139,12 @@
     "qualified_shipping_message": "FREE Standard shipping included",
     "enable_freegift": true,
     "qualified_freegift_message": "FREE gift added to your cart",
+    "freegift_product_list": [
+      "lanolips-dry-body-brush",
+      "101-strawberry-lip-balm-phone-holder",
+      "hydrate-glow-duo",
+      "hyaluronic-lip-oil-raspberry"
+    ],
     "cart_drawer_collection": "",
     "cart_color_scheme": "scheme-2",
     "message": "Add ||amount|| more for FREE shipping!",
