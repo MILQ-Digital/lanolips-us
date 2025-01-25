@@ -66,7 +66,7 @@
             <div class="grid__item">
             
               {%- if section.settings.use_metaobject_faq -%}
-                {%- assign faqs_metaobject_references = product.metafields.custom.faqs -%}
+                {%- assign faqs_metaobject_references = shop.metaobjects.faqs -%}
                 {% if faqs_metaobject_references.value != blank %}
                   {%- for metaobject_reference in faqs_metaobject_references.value -%}
                     {% assign faq_metaobject = metaobject_reference | metaobject %}
