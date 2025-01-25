@@ -19,6 +19,10 @@
 }
 
 .contact_info .multicolumn-card .rte p a:not([href^="tel"])::before {
+   background-image: url('https://cdn.shopify.com/s/files/1/0730/5589/5811/files/mail_icon_1b2045aa-fc8d-43d6-921a-9f76104a1c94.svg'); 
+}
+
+.contact_info .multicolumn-card .rte p a::before {
   content: '';
   display: inline-block;
   width: 17px; 
@@ -27,10 +31,6 @@
   background-repeat: no-repeat;
   background-size: contain; 
   margin-bottom: -2px
-}
-
-.contact_info .multicolumn-card .rte p a::before {
-  background-image: url('https://cdn.shopify.com/s/files/1/0730/5589/5811/files/mail_icon_1b2045aa-fc8d-43d6-921a-9f76104a1c94.svg'); 
 }
 
 .contact_info .multicolumn-card .rte {margin-top: 3rem;}
