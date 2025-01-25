@@ -25,7 +25,7 @@
                 {%- if banner_image.width >= 750 -%}{{ banner_image | image_url: width: 750 }} 750w,{%- endif -%}
                 {%- if banner_image.width >= 1070 -%}{{ banner_image | image_url: width: 1070 }} 1070w,{%- endif -%}
                 {%- if banner_image.width >= 1500 -%}{{ banner_image | image_url: width: 1500 }} 1500w,{%- endif -%}
-                {{ banner_image | image_url }} {{ banner_image.width }}w
+                {{ banner_image | image_url }} {{ banner_image.width }}
               {%- else -%}
                 {%- if collection.image.width >= 165 -%}{{ collection.image | image_url: width: 165 }} 165w,{%- endif -%}
                 {%- if collection.image.width >= 360 -%}{{ collection.image | image_url: width: 360 }} 360w,{%- endif -%}
@@ -33,7 +33,7 @@
                 {%- if collection.image.width >= 750 -%}{{ collection.image | image_url: width: 750 }} 750w,{%- endif -%}
                 {%- if collection.image.width >= 1070 -%}{{ collection.image | image_url: width: 1070 }} 1070w,{%- endif -%}
                 {%- if collection.image.width >= 1500 -%}{{ collection.image | image_url: width: 1500 }} 1500w,{%- endif -%}
-                {{ collection.image | image_url }} {{ collection.image.width }}w
+                {{ collection.image | image_url }} {{ collection.image.width }}
               {%- endif -%}
             "
             src="{% if banner_image and banner_image != blank %}{{ banner_image | image_url: width: 750 }}{% else %}{{ collection.image | image_url: width: 750 }}{% endif %}"
