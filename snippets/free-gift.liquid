@@ -15,8 +15,14 @@
   # Debugging output to check values
   assign debug_subtotal = subtotal_without_currency
   assign debug_half_limit = half_limit
-  # Fix comparison to ensure boolean output
-  assign debug_show_halfway_message = subtotal_without_currency >= half_limit ? true : false
+
+  # Explicitly check if the subtotal is greater than or equal to the half limit
+  if subtotal_without_currency >= half_limit
+    assign debug_show_halfway_message = true
+  else
+    assign debug_show_halfway_message = false
+  endif
+
   # Optional: Check if the values are numbers (force conversion)
   assign debug_is_subtotal_number = subtotal_without_currency | class
   assign debug_is_half_limit_number = half_limit | class
