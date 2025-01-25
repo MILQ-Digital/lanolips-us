@@ -28,12 +28,6 @@
   assign debug_is_half_limit_number = half_limit | class
 -%}
 
-<!-- Debugging output -->
-<p>Debugging Subtotal: {{ debug_subtotal }}</p>
-<p>Debugging Half Limit: {{ debug_half_limit }}</p>
-<p>Debugging Show Halfway Message: {{ debug_show_halfway_message }}</p>
-<p>Is Subtotal a Number? {{ debug_is_subtotal_number }}</p>
-<p>Is Half Limit a Number? {{ debug_is_half_limit_number }}</p>
 
 {%- if show_message and debug_show_halfway_message -%}
   {%- liquid
