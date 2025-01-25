@@ -15,7 +15,7 @@
         "slide_VULtDz": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/Lanolips_hero_f9877320-08cc-4403-8b4a-f49e2f0ff9c4.webp",
+            "image": "shopify://shop_images/Lanolips_hero.webp",
             "subheading": "Freshly Baked",
             "subheading_script": "Freshly Baked",
             "heading": "The new Lanolips 101 Delicious 123 bla collection for us",
@@ -36,7 +36,6 @@
           "type": "slide",
           "disabled": true,
           "settings": {
-            "image": "shopify://shop_images/lano-cake.webp",
             "subheading": "Serie",
             "subheading_script": "Freshly Baked",
             "heading": "The new Lanolips 101 Delicious collection",
@@ -140,7 +139,7 @@
         "button_AxwgMt"
       ],
       "settings": {
-        "image": "shopify://shop_images/meet-lanolips.webp",
+        "image": "shopify://shop_images/Rectangle_93_1.jpg",
         "height": "adapt",
         "desktop_image_width": "medium",
         "layout": "text_first",
@@ -249,7 +248,7 @@
         "column_mGc7n6": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/bundles.webp",
+            "image": "shopify://shop_images/Rectangle_290_1.jpg",
             "title": "Engaging headline about bundles",
             "text": "<p>Lorem ipsum dolor sit amet</p>",
             "link_label": "Shop Now",
@@ -260,7 +259,7 @@
         "column_nBnMPt": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/gifting.webp",
+            "image": "shopify://shop_images/Rectangle_290.jpg",
             "title": "Something about gifting",
             "text": "<p>Lorem ipsum dolor sit amet</p>",
             "link_label": "Shop Now",
