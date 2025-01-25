@@ -563,7 +563,7 @@ document.addEventListener('DOMContentLoaded', () => {
       <div class="drawer__footer">
 
 {% assign free_gift_limit = settings.free_gift_limit | times: 100 %}
-{% if cart.total_price >= settings.free_gift_limit %}
+{% if cart.total_price >= free_gift_limit  %}
   <!-- Display Free Gift Products if Cart Total is Greater than or Equal to Free Gift Limit -->
   {% assign free_gift_products = collections['freegift_product_list'].products | limit: 4 %}
   
