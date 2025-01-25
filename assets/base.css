@@ -273,6 +273,16 @@ body {
   gap: 25px;
 }
 
+.faq-group-links a {
+  text-decoration: none;
+}
+
+.faq-group-links a:hover {
+  text-underline-offset: .3rem;
+  text-decoration-thickness: .1rem;
+  transition: text-decoration-thickness var(--duration-short) ease;
+}
+
 .text-center {
   text-align: center!important;
   align-self: center !important;
