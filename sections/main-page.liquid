@@ -34,7 +34,7 @@
       {%- assign faqs_metaobject_references = shop.metaobjects.faqs.values -%}
       {% if faqs_metaobject_references != blank %}
         {%- assign group_names = faqs_metaobject_references | map: "group" | uniq -%}
-        <div class="faq-group-links">
+        <div class="faq-group-links heading-2xs">
           {%- for group_name in group_names -%}
             <div class="group-link">
               <a href="#{{ group_name | handle }}" rel="nofollow">{{ group_name }}</a>
