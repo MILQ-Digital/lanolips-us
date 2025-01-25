@@ -143,7 +143,7 @@
       "settings": {
         "caption": "",
         "heading": "Orders",
-        "heading_size": "h1",
+        "heading_size": "hxl",
         "heading_alignment": "left",
         "layout": "none",
         "color_scheme": "scheme-2",
