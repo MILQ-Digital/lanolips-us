@@ -18,7 +18,7 @@
   font-size: var(--body-lg);
 }
 
-.contact_info .multicolumn-card .rte p a::before {
+.contact_info .multicolumn-card .rte p a:not([href^="tel"])::before {
   content: '';
   display: inline-block;
   width: 17px; 
