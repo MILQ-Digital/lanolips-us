@@ -83,8 +83,8 @@
         "row_EfGypg"
       ],
       "settings": {
-        "image_height": "adapt",
-        "desktop_image_width": "large",
+        "image_height": "medium",
+        "desktop_image_width": "medium",
         "heading_size": "hm",
         "text_style": "subtitle",
         "button_style": "secondary",
