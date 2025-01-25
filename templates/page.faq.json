@@ -16,7 +16,7 @@
           "type": "heading",
           "settings": {
             "heading": "Orders",
-            "heading_size": "hm",
+            "heading_size": "hs",
             "enable_script": false
           }
         },
@@ -37,12 +37,51 @@
             "row_content": "<p>answer</p>",
             "page": ""
           }
+        },
+        "collapsible_row_fgTWhK": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Collapsible row",
+            "icon": "none",
+            "row_content": "<p>answer</p>",
+            "page": ""
+          }
+        },
+        "heading_q4agzn": {
+          "type": "heading",
+          "settings": {
+            "heading": "Product",
+            "heading_size": "hs",
+            "enable_script": false
+          }
+        },
+        "collapsible_row_9zFReH": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Collapsible row",
+            "icon": "none",
+            "row_content": "<p>answer</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_r7PbkT": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Collapsible row",
+            "icon": "none",
+            "row_content": "<p>answer</p>",
+            "page": ""
+          }
         }
       },
       "block_order": [
         "heading_RKxdrY",
         "collapsible_row_Ud994N",
-        "collapsible_row_9tHnTF"
+        "collapsible_row_9tHnTF",
+        "collapsible_row_fgTWhK",
+        "heading_q4agzn",
+        "collapsible_row_9zFReH",
+        "collapsible_row_r7PbkT"
       ],
       "settings": {
         "padding_top": 52,
