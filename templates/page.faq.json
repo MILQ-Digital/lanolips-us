@@ -11,9 +11,96 @@
   "sections": {
     "main": {
       "type": "main-page",
+      "blocks": {
+        "heading_RKxdrY": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "heading": "Orders",
+            "heading_size": "hs",
+            "enable_script": false
+          }
+        },
+        "collapsible_row_Ud994N": {
+          "type": "collapsible_row",
+          "disabled": true,
+          "settings": {
+            "heading": "Collapsible row",
+            "icon": "none",
+            "row_content": "<p>answer</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_9tHnTF": {
+          "type": "collapsible_row",
+          "disabled": true,
+          "settings": {
+            "heading": "Collapsible row",
+            "icon": "none",
+            "row_content": "<p>answer</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_fgTWhK": {
+          "type": "collapsible_row",
+          "disabled": true,
+          "settings": {
+            "heading": "Collapsible row",
+            "icon": "none",
+            "row_content": "<p>answer</p>",
+            "page": ""
+          }
+        },
+        "heading_q4agzn": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "heading": "Product",
+            "heading_size": "hs",
+            "enable_script": false
+          }
+        },
+        "collapsible_row_9zFReH": {
+          "type": "collapsible_row",
+          "disabled": true,
+          "settings": {
+            "heading": "Collapsible row",
+            "icon": "none",
+            "row_content": "<p>answer</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_r7PbkT": {
+          "type": "collapsible_row",
+          "disabled": true,
+          "settings": {
+            "heading": "Collapsible row",
+            "icon": "none",
+            "row_content": "<p>answer</p>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "heading_RKxdrY",
+        "collapsible_row_Ud994N",
+        "collapsible_row_9tHnTF",
+        "collapsible_row_fgTWhK",
+        "heading_q4agzn",
+        "collapsible_row_9zFReH",
+        "collapsible_row_r7PbkT"
+      ],
       "settings": {
-        "padding_top": 28,
-        "padding_bottom": 28
+        "padding_top": 52,
+        "padding_bottom": 60,
+        "layout": "none",
+        "color_scheme": "scheme-2",
+        "container_color_scheme": "",
+        "open_first_collapsible_row": true,
+        "use_metaobject_faq": true,
+        "image": "shopify://shop_images/Rectangle_93_1.webp",
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second"
       }
     },
     "collapsible_content_LtPmTr": {
@@ -52,18 +139,21 @@
         "collapsible_row_VX8ha3",
         "collapsible_row_Fk3e8b"
       ],
+      "disabled": true,
       "settings": {
         "caption": "",
         "heading": "Orders",
-        "heading_size": "h1",
+        "heading_size": "hxl",
         "heading_alignment": "left",
         "layout": "none",
         "color_scheme": "scheme-2",
         "container_color_scheme": "scheme-3",
         "open_first_collapsible_row": false,
+        "use_metaobject_faq": false,
+        "image": "shopify://shop_images/Lanolips_Collection_Image.jpg",
         "image_ratio": "adapt",
         "desktop_layout": "image_second",
-        "padding_top": 36,
+        "padding_top": 0,
         "padding_bottom": 36
       }
     },
@@ -103,6 +193,7 @@
         "collapsible_row_4ja3gt",
         "collapsible_row_TWUMWd"
       ],
+      "disabled": true,
       "settings": {
         "caption": "",
         "heading": "Product",
@@ -112,6 +203,7 @@
         "color_scheme": "scheme-2",
         "container_color_scheme": "scheme-3",
         "open_first_collapsible_row": false,
+        "use_metaobject_faq": false,
         "image_ratio": "adapt",
         "desktop_layout": "image_second",
         "padding_top": 36,
@@ -154,6 +246,7 @@
         "collapsible_row_GQJqti",
         "collapsible_row_a3Fehn"
       ],
+      "disabled": true,
       "settings": {
         "caption": "",
         "heading": "Wholesales",
@@ -163,6 +256,7 @@
         "color_scheme": "scheme-2",
         "container_color_scheme": "scheme-3",
         "open_first_collapsible_row": false,
+        "use_metaobject_faq": false,
         "image_ratio": "adapt",
         "desktop_layout": "image_second",
         "padding_top": 36,
