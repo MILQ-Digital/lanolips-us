@@ -520,3 +520,14 @@ cart-drawer-items::-webkit-scrollbar-track-piece {
       width: calc((100% - var(--desktop-margin-left-first-item)) - var(--grid-desktop-horizontal-spacing)* 4);
   }
 }
+
+.cart-upsell  .slider-buttons {
+  display: none;
+}
+
+@media screen and (max-width: 1649px) {
+  .cart-upsell slider-component.slider-component-full-width {
+      padding-left: 0 !important;
+      padding-right: 0 !important;
+  }
+}
