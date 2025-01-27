@@ -365,3 +365,11 @@ cart-remove-button .icon-remove {
     padding-left: 0;
   }
 }
+
+.cart-item .quantity__input {
+  opacity: 1;;
+}
+
+.cart-item  .quantity__button {
+  width: 40px;
+}
