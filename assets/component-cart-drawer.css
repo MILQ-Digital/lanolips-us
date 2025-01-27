@@ -19,7 +19,7 @@
   height: 100%;
   width: 576px;
   max-width: calc(100vw - 3rem);
-  padding: 0 1.5rem;
+  padding: 0;
   border: 0.1rem solid rgba(var(--color-foreground), 0.2);
   border-right: 0;
   overflow: hidden;
@@ -70,7 +70,7 @@ cart-drawer:not(.is-empty) .cart-drawer__collection {
 
 .drawer__header {
   position: relative;
-  padding: 1.5rem 0;
+  padding: 60px 20px 40px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -87,8 +87,8 @@ cart-drawer:not(.is-empty) .cart-drawer__collection {
   min-height: 4.4rem;
   box-shadow: 0 0 0 0.2rem rgba(var(--color-button), 0);
   position: absolute;
-  top: 10px;
-  right: -10px;
+  top: 55px;
+  right: 10px;
   color: rgb(var(--color-foreground));
   background-color: transparent;
   border: none;
@@ -100,8 +100,8 @@ cart-drawer:not(.is-empty) .cart-drawer__collection {
 }
 
 .drawer__close .svg-wrapper {
-  height: 2rem;
-  width: 2rem;
+  height: 24px;
+  width: 24px;
 }
 
 .drawer__contents {
@@ -112,7 +112,8 @@ cart-drawer:not(.is-empty) .cart-drawer__collection {
 
 .drawer__footer {
   border-top: 0.1rem solid rgba(var(--color-foreground), 0.2);
-  padding: 1.5rem 0;
+  padding: 20px;
+  background-color: var(--Lano-Pink);
 }
 
 cart-drawer-items.is-empty + .drawer__footer {
@@ -185,6 +186,9 @@ cart-drawer {
 }
 
 cart-drawer-items {
+  padding-top: 40px;
+  padding-left: 20px;
+  padding-right: 20px;
   overflow: auto;
   flex: 1;
 }
@@ -203,7 +207,14 @@ cart-drawer-items {
   display: grid;
   grid-template: repeat(2, auto) / repeat(4, 1fr);
   gap: 1rem;
-  margin-bottom: 0;
+  margin-bottom: 20px;
+  border-bottom: 1px solid var(--Lano-Light-Grey);
+  padding-bottom: 15px;
+}
+
+.cart-drawer .cart-item .quantity {
+  min-height: calc((var(--inputs-border-width)* 2) + 32px);
+  width: calc(112px / var(--font-body-scale) + var(--inputs-border-width)* 2);
 }
 
 .cart-drawer .cart-item:last-child {
@@ -252,7 +263,7 @@ cart-drawer-items {
 }
 
 .cart-drawer .cart-items td {
-  padding-top: 1.7rem;
+  padding-top: 0;
 }
 
 .cart-drawer .cart-item > td + td {
@@ -406,6 +417,8 @@ cart-drawer-items::-webkit-scrollbar-track-piece {
 
 .free-shipping {
   text-align: center;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .free-shipping__success-message {
