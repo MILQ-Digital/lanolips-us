@@ -271,7 +271,7 @@ document.addEventListener('DOMContentLoaded', () => {
                               {{ item.original_price | money }}
                             </div>
                           {%- endif -%}
-                          
+
 {%- if item.variant.compare_at_price > item.final_price -%}
   <div class="cart-item__discounted-prices">
     <span class="visually-hidden">
@@ -286,6 +286,8 @@ document.addEventListener('DOMContentLoaded', () => {
     <strong class="cart-item__final-price product-option">
       {{ item.final_price | money }}
     </strong>
+    <input type="hidden" name="properties[Price]" value="{{ item.variant.compare_at_price | money }}">
+    <input type="hidden" name="properties[Sale Price]" value="{{ item.final_price | money }}">    
   </div>
 {%- else -%}
   <div class="product-option">
