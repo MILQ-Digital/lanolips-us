@@ -408,6 +408,8 @@ cart-drawer-items::-webkit-scrollbar-track-piece {
 
 .free-shipping {
   text-align: center;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .free-shipping__success-message {
