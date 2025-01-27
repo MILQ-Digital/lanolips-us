@@ -69,7 +69,7 @@ cart-items .title-wrapper-with-link {
   background-color: #f5eff1;
 }
 
-.cart-item__media {
+.cart-item__media img {
   mix-blend-mode: multiply;
   border-radius: calc(var(--border-radius) - var(--border-width) - var(--image-padding));
   overflow: hidden;
