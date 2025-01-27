@@ -187,6 +187,20 @@
     },
     "collapsible_content_GiNw6Y": {
       "type": "collapsible-content",
+      "blocks": {
+        "collapsible_row_JyGM9W": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "How does the Lanolips 12 hour balm works?",
+            "icon": "none",
+            "row_content": "",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "collapsible_row_JyGM9W"
+      ],
       "settings": {
         "caption": "",
         "heading": "FAQS",
