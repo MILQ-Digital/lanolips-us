@@ -323,6 +323,7 @@ cart-drawer-items {
 .cart-drawer .tax-note {
   margin: 1.2rem 0 2rem auto;
   text-align: left;
+  font-weight: 400;
 }
 
 .cart-drawer .product-option dd {
