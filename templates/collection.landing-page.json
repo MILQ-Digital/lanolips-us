@@ -133,7 +133,7 @@
           "type": "button",
           "settings": {
             "button_label": "View Full Ingredients List",
-            "button_link": "",
+            "button_link": "#",
             "button_style_secondary": true,
             "button_style_underline": false
           }
@@ -150,7 +150,7 @@
         "desktop_image_width": "medium",
         "layout": "text_first",
         "desktop_content_position": "middle",
-        "desktop_content_alignment": "left",
+        "desktop_content_alignment": "center",
         "content_layout": "no-overlap",
         "section_color_scheme": "",
         "color_scheme": "",
