@@ -112,7 +112,7 @@ cart-items .title-wrapper-with-link {
 
 .cart-item__discounted-prices .cart-item__old-price {
   font-size: var(--heading-3xs);
-  color: var(Lano-Bright-pink);
+  color: var(--Lano-Bright-pink);
   line-height: 20px;
 }
 
