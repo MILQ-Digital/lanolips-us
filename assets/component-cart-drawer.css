@@ -527,6 +527,10 @@ cart-drawer-items::-webkit-scrollbar-track-piece {
   padding: 8px 5px;
 }
 
+.cart-upsell .card.card--horizontal {
+  align-items: stretch;
+}
+
 .cart-upsell .quick-add-media,
 .cart-upsell .card-information {
   display: none;
