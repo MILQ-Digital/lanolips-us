@@ -207,7 +207,14 @@ cart-drawer-items {
   display: grid;
   grid-template: repeat(2, auto) / repeat(4, 1fr);
   gap: 1rem;
-  margin-bottom: 0;
+  margin-bottom: 20px;
+  border-bottom: 1px solid var(--Lano-Light-Grey);
+  padding-bottom: 15px;
+}
+
+.cart-drawer .cart-item .quantity {
+  min-height: calc((var(--inputs-border-width)* 2) + 32px);
+  width: calc(112px / var(--font-body-scale) + var(--inputs-border-width)* 2);
 }
 
 .cart-drawer .cart-item:last-child {

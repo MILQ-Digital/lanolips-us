@@ -17,6 +17,7 @@ cart-items .title-wrapper-with-link {
 
 .cart-item__quantity-wrapper {
   display: flex;
+  justify-content: space-between;
 }
 
 .cart-item__totals {
@@ -80,7 +81,9 @@ cart-items .title-wrapper-with-link {
   text-decoration: none;
   display: block;
   font-weight: 500;
+  font-size: var(--body-sm);
 }
+
 
 .cart-item__name:hover {
   text-decoration: underline;

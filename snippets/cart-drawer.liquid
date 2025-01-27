@@ -444,7 +444,8 @@ document.addEventListener('DOMContentLoaded', () => {
                                   data-variant-id="{{ item.variant.id }}"
                                 >
                                   <span class="svg-wrapper">
-                                    {{- 'icon-remove.svg' | inline_asset_content -}}
+                                    {% comment %}{{- 'icon-remove.svg' | inline_asset_content -}}{% endcomment %}
+                                    Remove
                                   </span>
                                 </button>
                               </cart-remove-button>
