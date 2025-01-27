@@ -9,12 +9,13 @@
 }
 
 .totals__total {
-  margin-top: .5rem;
+  margin-top: 0;
 }
 
 
 .cart__ctas + .totals {
-  margin-top: 2rem;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 @media all and (min-width: 750px) {
