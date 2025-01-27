@@ -501,3 +501,15 @@ cart-drawer-items::-webkit-scrollbar-track-piece {
   margin-top: 0;
   text-align: center;;
 }
+
+.cart-upsell .card--card.gradient, 
+.cart-upsell .card__inner.gradient {
+  border-radius: 0;
+  overflow: hidden;
+  height: 92px;
+  width: 105px;
+}
+
+.cart-upsell .card__media {
+  width: 100%;
+}
