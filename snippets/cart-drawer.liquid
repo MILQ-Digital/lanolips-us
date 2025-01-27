@@ -249,13 +249,13 @@ document.addEventListener('DOMContentLoaded', () => {
                             {{- item.product.title | escape -}}
                           </a>
 
-                          {%- if item.original_price != item.final_price -%}
+                          {%- if item.variant.compare_at_price > item.final_price -%}
                             <div class="cart-item__discounted-prices">
                               <span class="visually-hidden">
                                 {{ 'products.product.price.regular_price' | t }}
                               </span>
                               <s class="cart-item__old-price product-option">
-                                {{- item.original_price | money -}}
+                                {{ item.variant.compare_at_price | money }}
                               </s>
                               <span class="visually-hidden">
                                 {{ 'products.product.price.sale_price' | t }}
@@ -263,37 +263,14 @@ document.addEventListener('DOMContentLoaded', () => {
                               <strong class="cart-item__final-price product-option">
                                 {{ item.final_price | money }}
                               </strong>
-                              <input type="hidden" name="properties[Price]" value="{{ item.original_price | money }}">
-                              <input type="hidden" name="properties[Sale Price]" value="{{ item.final_price | money }}">
+                              <input type="hidden" name="properties[Price]" value="{{ item.variant.compare_at_price | money }}">
+                              <input type="hidden" name="properties[Sale Price]" value="{{ item.final_price | money }}">    
                             </div>
                           {%- else -%}
                             <div class="product-option">
-                              {{ item.original_price | money }}
+                              {{ item.final_price | money }}
                             </div>
                           {%- endif -%}
-
-{%- if item.variant.compare_at_price > item.final_price -%}
-  <div class="cart-item__discounted-prices">
-    <span class="visually-hidden">
-      {{ 'products.product.price.regular_price' | t }}
-    </span>
-    <s class="cart-item__old-price product-option">
-      {{ item.variant.compare_at_price | money }}
-    </s>
-    <span class="visually-hidden">
-      {{ 'products.product.price.sale_price' | t }}
-    </span>
-    <strong class="cart-item__final-price product-option">
-      {{ item.final_price | money }}
-    </strong>
-    <input type="hidden" name="properties[Price]" value="{{ item.variant.compare_at_price | money }}">
-    <input type="hidden" name="properties[Sale Price]" value="{{ item.final_price | money }}">    
-  </div>
-{%- else -%}
-  <div class="product-option">
-    {{ item.final_price | money }}
-  </div>
-{%- endif -%}
 
 
                           {%- if item.product.has_only_default_variant == false
