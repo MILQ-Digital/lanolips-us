@@ -187,6 +187,8 @@ cart-drawer {
 
 cart-drawer-items {
   padding-top: 40px;
+  padding-left: 20px;
+  padding-right: 20px;
   overflow: auto;
   flex: 1;
 }
