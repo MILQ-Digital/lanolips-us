@@ -92,37 +92,8 @@
     },
     "product-grid": {
       "type": "main-collection-product-grid",
-      "blocks": {
-        "promo_banner_wRK8yM": {
-          "type": "promo-banner",
-          "settings": {
-            "promotion_position": 5,
-            "title": "Test 1",
-            "link_label": "Shop Now",
-            "link": "shopify://collections/face",
-            "color_scheme": "scheme-1",
-            "image_ratio": "adapt"
-          }
-        },
-        "promo_banner_CMXKXz": {
-          "type": "promo-banner",
-          "settings": {
-            "promotion_position": 13,
-            "title": "Test 2",
-            "link_label": "Shop Now",
-            "link": "shopify://collections/lips",
-            "color_scheme": "scheme-1",
-            "image_ratio": "adapt"
-          }
-        }
-      },
-      "block_order": [
-        "promo_banner_wRK8yM",
-        "promo_banner_CMXKXz"
-      ],
-      "disabled": true,
       "settings": {
-        "products_per_page": 16,
+        "products_per_page": 12,
         "columns_desktop": 4,
         "color_scheme": "scheme-2",
         "image_ratio": "portrait",
