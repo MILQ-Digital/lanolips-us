@@ -442,11 +442,13 @@ document.addEventListener('DOMContentLoaded', () => {
                                   class="button button--tertiary cart-remove-button"
                                   aria-label="{{ 'sections.cart.remove_title' | t: title: item.title | escape }}"
                                   data-variant-id="{{ item.variant.id }}"
-                                >
+                                > 
+                                  {% comment %}
                                   <span class="svg-wrapper">
-                                    {% comment %}{{- 'icon-remove.svg' | inline_asset_content -}}{% endcomment %}
-                                    Remove
+                                    {{- 'icon-remove.svg' | inline_asset_content -}}
                                   </span>
+                                  {% endcomment %}
+                                  Remove
                                 </button>
                               </cart-remove-button>
                             </div>
