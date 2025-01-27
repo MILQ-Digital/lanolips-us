@@ -494,3 +494,8 @@ cart-drawer-items::-webkit-scrollbar-track-piece {
     transform:scaleX(1)
   }
 }
+
+.cart-upsell h3 {
+  margin-top: 0;
+  text-align: center;;
+}
