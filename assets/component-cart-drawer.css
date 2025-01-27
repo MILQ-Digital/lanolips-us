@@ -112,8 +112,14 @@ cart-drawer:not(.is-empty) .cart-drawer__collection {
 
 .drawer__footer {
   border-top: 0.1rem solid rgba(var(--color-foreground), 0.2);
-  padding: 20px;
+  padding: 20px 0 20px 20px;
   background-color: var(--Lano-Pink);
+}
+
+.cart-upsell h2,
+.cart-drawer__footer,
+.cart__ctas {
+  padding-right: 20px;
 }
 
 cart-drawer-items.is-empty + .drawer__footer {
