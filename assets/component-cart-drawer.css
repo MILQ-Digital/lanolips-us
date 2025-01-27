@@ -534,15 +534,26 @@ cart-drawer-items::-webkit-scrollbar-track-piece {
 
 .cart-upsell .quick-add-mobile {
   display: block;
+  margin-bottom: 0;
 }
 
 .cart-upsell .card__information {
-  padding-top: 0;
+  padding-top: 0!important;
 }
 
 .cart-upsell .quick-add__submit {
   font-size: 14px;
   padding: 5px;
+  max-width: 95%;
+  min-width: auto;
+  min-height: 40px;
+  gap: 0;
+}
+
+.cart-upsell .card--standard>.card__content { 
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 @media screen and (min-width: 990px) {
