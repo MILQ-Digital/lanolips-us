@@ -263,8 +263,8 @@ document.addEventListener('DOMContentLoaded', () => {
                               <strong class="cart-item__final-price product-option">
                                 {{ item.final_price | money }}
                               </strong>
-                              <input type="hidden" name="properties[Price]" value="{{ item.original_price }}">
-                              <input type="hidden" name="properties[Sale Price]" value="{{ item.final_price }}">
+                              <input type="hidden" name="properties[Price]" value="{{ item.original_price | money }}">
+                              <input type="hidden" name="properties[Sale Price]" value="{{ item.final_price | money }}">
                             </div>
                           {%- else -%}
                             <div class="product-option">
@@ -347,8 +347,8 @@ document.addEventListener('DOMContentLoaded', () => {
                                 <span class="price price--end">
                                   {{ item.final_line_price | money }}
                                 </span>
-                              <input type="hidden" name="properties[Price]" value="{{ item.original_line_price }}">
-                              <input type="hidden" name="properties[Sale Price]" value="{{ item.final_line_price }}">
+                              <input type="hidden" name="properties[Price]" value="{{ item.original_line_price | money }}">
+                              <input type="hidden" name="properties[Sale Price]" value="{{ item.final_line_price | money }}">
                               </div>
                             {%- else -%}
                               <span class="price price--end">
