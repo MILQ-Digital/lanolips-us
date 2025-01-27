@@ -579,7 +579,7 @@ document.addEventListener('DOMContentLoaded', () => {
 {% if cart.total_price >= free_gift_limit  %}
 
   <div class="free-gift-products cart-upsell">
-    <h3 class="heading-2xs">Choose your free gift</h3>
+    <h2 class="heading-2xs">Choose your free gift</h2>
     <slider-component class="cart-upsell-carousel upsell-carousel slider-mobile-gutter slider-component-full-width slider-component-desktop scroll-trigger animate--slide-in">
       <ul id="Slider-Upsell"
           data-id="Slider-Upsell"
@@ -658,7 +658,7 @@ document.addEventListener('DOMContentLoaded', () => {
   {% assign upsell_products = upsell_collection.products | limit: 6 %}
 
   <div class="cart-upsell">
-    <h3 class="heading-2xs">Complete your routine</h3>
+    <h2 class="heading-2xs">Complete your routine</h2>
     <slider-component class="cart-upsell-carousel upsell-carousel slider-mobile-gutter slider-component-full-width slider-component-desktop scroll-trigger animate--slide-in">
       <ul id="Slider-Upsell"
           data-id="Slider-Upsell"
