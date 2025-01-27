@@ -64,6 +64,15 @@ cart-items .title-wrapper-with-link {
 
 .cart-item__media {
   position: relative;
+  border-radius: calc(var(--border-radius) - var(--border-width) - var(--image-padding));
+  overflow: hidden;
+  background-color: #f5eff1;
+}
+
+.cart-item__media {
+  mix-blend-mode: multiply;
+  border-radius: calc(var(--border-radius) - var(--border-width) - var(--image-padding));
+  overflow: hidden;
 }
 
 .cart-item__link {
@@ -307,7 +316,9 @@ cart-remove-button .icon-remove {
   }
 
   .cart-item__media {
-    width: 10rem;
+    width: 74px;
+    height: 104px;
+    padding: 0!Important;
   }
 
   .cart-item__price-wrapper > *:only-child:not(.cart-item__discounted-prices) {
