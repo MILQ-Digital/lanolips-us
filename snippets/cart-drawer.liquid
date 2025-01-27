@@ -252,17 +252,17 @@ document.addEventListener('DOMContentLoaded', () => {
                           {%- if item.variant.compare_at_price > item.final_price -%}
                             <div class="cart-item__discounted-prices">
                               <span class="visually-hidden">
-                                {{ 'products.product.price.regular_price' | t }}
-                              </span>
-                              <s class="cart-item__old-price product-option">
-                                {{ item.variant.compare_at_price | money }}
-                              </s>
-                              <span class="visually-hidden">
                                 {{ 'products.product.price.sale_price' | t }}
                               </span>
                               <strong class="cart-item__final-price product-option">
                                 {{ item.final_price | money }}
                               </strong>
+                              <span class="visually-hidden">
+                                {{ 'products.product.price.regular_price' | t }}
+                              </span>
+                              <s class="cart-item__old-price product-option">
+                                {{ item.variant.compare_at_price | money }}
+                              </s>                              
                               <input type="hidden" name="properties[Price]" value="{{ item.variant.compare_at_price | money }}">
                               <input type="hidden" name="properties[Sale Price]" value="{{ item.final_price | money }}">    
                             </div>
