@@ -524,20 +524,30 @@ cart-drawer-items::-webkit-scrollbar-track-piece {
   border-radius: 6px;
   overflow: hidden;
   background: #fff;
-  padding: 5px;
+  padding: 8px 5px;
 }
 
 .cart-upsell .quick-add-media,
 .cart-upsell .card-information {
   display: none;
 }
+
 .cart-upsell .quick-add-mobile {
   display: block;
 }
 
+.cart-upsell .card__information {
+  padding-top: 0;
+}
+
+.cart-upsell .quick-add__submit {
+  font-size: 14px;
+  padding: 5px;
+}
+
 @media screen and (min-width: 990px) {
   .cart-upsell .slider--desktop.grid--1-col-desktop .grid__item {
-      width: calc((100% - var(--desktop-margin-left-first-item)) - var(--grid-desktop-horizontal-spacing)* 10);
+      width: calc((100% - var(--desktop-margin-left-first-item)) - var(--grid-desktop-horizontal-spacing)* 11.297);
   }
 }
 
