@@ -263,6 +263,8 @@ document.addEventListener('DOMContentLoaded', () => {
                               <strong class="cart-item__final-price product-option">
                                 {{ item.final_price | money }}
                               </strong>
+                              <input type="hidden" name="properties[Price]" value="{{ item.original_price }}">
+                              <input type="hidden" name="properties[Sale Price]" value="{{ item.final_price }}">
                             </div>
                           {%- else -%}
                             <div class="product-option">
