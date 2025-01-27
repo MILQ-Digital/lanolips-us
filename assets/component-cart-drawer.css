@@ -263,7 +263,7 @@ cart-drawer-items {
 }
 
 .cart-drawer .cart-items td {
-  padding-top: 1.7rem;
+  padding-top: 0;
 }
 
 .cart-drawer .cart-item > td + td {
