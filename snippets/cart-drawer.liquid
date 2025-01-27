@@ -263,8 +263,8 @@ document.addEventListener('DOMContentLoaded', () => {
                               <s class="cart-item__old-price product-option">
                                 {{ item.variant.compare_at_price | money }}
                               </s>                              
-                              <input name="properties[Price]" value="{{ item.variant.compare_at_price | money }}">
-                              <input name="properties[Sale Price]" value="{{ item.final_price | money }}">    
+                              <input type="hidden" name="properties[Price]" value="{{ item.variant.compare_at_price | money }}">
+                              <input type="hidden" name="properties[Sale Price]" value="{{ item.final_price | money }}">    
                             </div>
                           {%- else -%}
                             <div class="product-option">
