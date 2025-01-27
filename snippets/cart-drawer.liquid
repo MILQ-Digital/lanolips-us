@@ -14,6 +14,7 @@
 {{ 'component-slider.css' | asset_url | stylesheet_tag }}
 <script src="{{ 'quick-add.js' | asset_url }}" defer="defer"></script>
 <script>
+
   document.addEventListener('DOMContentLoaded', function () {
     document.querySelectorAll('.cart-upsell .form').forEach((form) => {
         form.addEventListener('submit', function (event) {
@@ -112,7 +113,13 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
-
+document.addEventListener('DOMContentLoaded', function () {
+  document.querySelectorAll(".cart-upsell .quick-add__submit > span").forEach(span => {
+    if (span.textContent.trim() === "Add To Bag") {
+      span.textContent = "Add";
+    }
+  });
+});
 
 </script>
 
@@ -130,6 +137,7 @@ document.addEventListener('DOMContentLoaded', () => {
     scroll-padding-left: 1.5rem;
     -webkit-overflow-scrolling: touch;
     margin-bottom: 1rem;
+    gap: 10px;
   }
 
   .cursor-grabbing {
@@ -186,7 +194,7 @@ document.addEventListener('DOMContentLoaded', () => {
         </div>
       {%- endif -%}
       <div class="drawer__header">
-        <h2 class="drawer__heading">{{ 'sections.cart.title' | t }} (<span id="cart-item-count">{{ cart.item_count }}</span>)</h2>
+        <h2 class="drawer__heading">{{ 'sections.cart.title' | t }} <span id="cart-item-count" class="body-sm">{{ cart.item_count }}</span></h2>
         <button
           class="drawer__close"
           type="button"
@@ -249,51 +257,28 @@ document.addEventListener('DOMContentLoaded', () => {
                             {{- item.product.title | escape -}}
                           </a>
 
-                          {%- if item.original_price != item.final_price -%}
+                          {%- if item.variant.compare_at_price > item.final_price -%}
                             <div class="cart-item__discounted-prices">
-                              <span class="visually-hidden">
-                                {{ 'products.product.price.regular_price' | t }}
-                              </span>
-                              <s class="cart-item__old-price product-option">
-                                {{- item.original_price | money -}}
-                              </s>
                               <span class="visually-hidden">
                                 {{ 'products.product.price.sale_price' | t }}
                               </span>
                               <strong class="cart-item__final-price product-option">
                                 {{ item.final_price | money }}
                               </strong>
-                              <input type="hidden" name="properties[Price]" value="{{ item.original_price | money }}">
-                              <input type="hidden" name="properties[Sale Price]" value="{{ item.final_price | money }}">
+                              <span class="visually-hidden">
+                                {{ 'products.product.price.regular_price' | t }}
+                              </span>
+                              <s class="cart-item__old-price product-option">
+                                {{ item.variant.compare_at_price | money }}
+                              </s>                              
+                              <input type="hidden" name="properties[Price]" value="{{ item.variant.compare_at_price | money }}">
+                              <input type="hidden" name="properties[Sale Price]" value="{{ item.final_price | money }}">    
                             </div>
                           {%- else -%}
                             <div class="product-option">
-                              {{ item.original_price | money }}
+                              {{ item.final_price | money }}
                             </div>
                           {%- endif -%}
-
-{%- if item.variant.compare_at_price > item.final_price -%}
-  <div class="cart-item__discounted-prices">
-    <span class="visually-hidden">
-      {{ 'products.product.price.regular_price' | t }}
-    </span>
-    <s class="cart-item__old-price product-option">
-      {{ item.variant.compare_at_price | money }}
-    </s>
-    <span class="visually-hidden">
-      {{ 'products.product.price.sale_price' | t }}
-    </span>
-    <strong class="cart-item__final-price product-option">
-      {{ item.final_price | money }}
-    </strong>
-    <input type="hidden" name="properties[Price]" value="{{ item.variant.compare_at_price | money }}">
-    <input type="hidden" name="properties[Sale Price]" value="{{ item.final_price | money }}">    
-  </div>
-{%- else -%}
-  <div class="product-option">
-    {{ item.final_price | money }}
-  </div>
-{%- endif -%}
 
 
                           {%- if item.product.has_only_default_variant == false
@@ -602,7 +587,7 @@ document.addEventListener('DOMContentLoaded', () => {
 {% if cart.total_price >= free_gift_limit  %}
 
   <div class="free-gift-products cart-upsell">
-    <h3>Choose your free gift</h3>
+    <h2 class="heading-2xs">Choose your free gift</h2>
     <slider-component class="cart-upsell-carousel upsell-carousel slider-mobile-gutter slider-component-full-width slider-component-desktop scroll-trigger animate--slide-in">
       <ul id="Slider-Upsell"
           data-id="Slider-Upsell"
@@ -681,7 +666,7 @@ document.addEventListener('DOMContentLoaded', () => {
   {% assign upsell_products = upsell_collection.products | limit: 6 %}
 
   <div class="cart-upsell">
-    <h3>Complete your routine</h3>
+    <h2 class="heading-2xs">Complete your routine</h2>
     <slider-component class="cart-upsell-carousel upsell-carousel slider-mobile-gutter slider-component-full-width slider-component-desktop scroll-trigger animate--slide-in">
       <ul id="Slider-Upsell"
           data-id="Slider-Upsell"
@@ -788,11 +773,11 @@ document.addEventListener('DOMContentLoaded', () => {
           </div>
 
           <div class="totals" role="status">
-            <h2 class="totals__total">Subtotal</h2>
-            <p class="totals__total-value">{{ cart.total_price | money_with_currency }}</p>
+            <h2 class="totals__total heading-2xs">Subtotal</h2>
+            <p class="totals__total-value heading-2xs">{{ cart.total_price | money_with_currency }}</p>
           </div>
 
-          <small class="tax-note caption-large rte">
+          <small class="tax-note caption-large rte body-sm">
             {%- if cart.duties_included and cart.taxes_included -%}
               {%- if shop.shipping_policy.body == blank -%}
                 {{ 'sections.cart.duties_and_taxes_included_shipping_at_checkout_without_policy' | t }}
