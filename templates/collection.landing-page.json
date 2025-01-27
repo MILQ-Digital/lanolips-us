@@ -125,7 +125,7 @@
         "text_QgyLYU": {
           "type": "text",
           "settings": {
-            "text": "",
+            "text": "<h3>Ultra pure Lanolin</h3><p>Our superstar-hero-ingredient. The molecular structure of lanolin mimics human oils The molecular structure of lanolin mimics human oils</p><h3>Hyaluronic Acid</h3><p>Our superstar-hero-ingredient. The molecular structure of lanolin mimics human oils</p>",
             "text_style": "body"
           }
         },
@@ -150,7 +150,7 @@
         "desktop_image_width": "medium",
         "layout": "text_first",
         "desktop_content_position": "middle",
-        "desktop_content_alignment": "center",
+        "desktop_content_alignment": "left",
         "content_layout": "no-overlap",
         "section_color_scheme": "",
         "color_scheme": "",
