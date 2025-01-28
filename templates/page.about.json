@@ -300,7 +300,7 @@
         "swipe_on_mobile": false,
         "padding_top": 36,
         "padding_bottom": 36,
-        "section_class": ""
+        "section_class": "narrow-img"
       }
     },
     "rich_text_AzzEtY": {
