@@ -1571,10 +1571,11 @@ a.product__text {
 .product_features_icons {
   margin: 2.5rem 0;
   display: flex;
+  align-items: end;
 }
 
 .product_features_icons img {
   width: 100%;
-  max-width: 65px;
+  max-width: 100px;
   height: fit-content;
 }
