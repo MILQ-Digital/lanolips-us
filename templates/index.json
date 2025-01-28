@@ -24,7 +24,7 @@
             "button_label": "Shop Now",
             "link": "shopify://collections/all",
             "button_style_secondary": false,
-            "box_align": "top-left",
+            "box_align": "bottom-left",
             "show_text_box": false,
             "text_alignment": "left",
             "image_overlay_opacity": 0,
