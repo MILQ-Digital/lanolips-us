@@ -32,23 +32,12 @@
             "image_ratio": "adapt"
           }
         },
-        "promo_banner_zhbhPp": {
-          "type": "promo-banner",
-          "settings": {
-            "banner_image": "shopify://shop_images/product_grid_1.jpg",
-            "promotion_position": 3,
-            "title": "",
-            "link_label": "Shop Now",
-            "link": "",
-            "color_scheme": "scheme-1",
-            "image_ratio": "square"
-          }
-        },
         "promo_banner_CMXKXz": {
           "type": "promo-banner",
           "settings": {
+            "banner_image": "shopify://shop_images/product_grid_1.jpg",
             "promotion_position": 13,
-            "title": "Test 2",
+            "title": "Bundle It And Save",
             "link_label": "Shop Now",
             "link": "shopify://collections/lips",
             "color_scheme": "scheme-1",
@@ -58,7 +47,6 @@
       },
       "block_order": [
         "promo_banner_wRK8yM",
-        "promo_banner_zhbhPp",
         "promo_banner_CMXKXz"
       ],
       "settings": {
