@@ -243,7 +243,7 @@
         "column_aAdR9K"
       ],
       "custom_css": [
-        ".title {text-align: center}"
+        ".title {margin: 0 auto;}"
       ],
       "settings": {
         "title": "Incredible results",
