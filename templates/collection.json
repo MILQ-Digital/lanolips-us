@@ -32,6 +32,18 @@
             "image_ratio": "adapt"
           }
         },
+        "promo_banner_zhbhPp": {
+          "type": "promo-banner",
+          "settings": {
+            "banner_image": "shopify://shop_images/product_grid_1.jpg",
+            "promotion_position": 3,
+            "title": "",
+            "link_label": "Shop Now",
+            "link": "",
+            "color_scheme": "scheme-1",
+            "image_ratio": "square"
+          }
+        },
         "promo_banner_CMXKXz": {
           "type": "promo-banner",
           "settings": {
@@ -46,6 +58,7 @@
       },
       "block_order": [
         "promo_banner_wRK8yM",
+        "promo_banner_zhbhPp",
         "promo_banner_CMXKXz"
       ],
       "settings": {
