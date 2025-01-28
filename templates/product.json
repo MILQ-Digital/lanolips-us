@@ -242,6 +242,9 @@
         "column_KJWMef",
         "column_aAdR9K"
       ],
+      "custom_css": [
+        ".title {text-align: center}"
+      ],
       "settings": {
         "title": "Incredible results",
         "heading_size": "hm",
