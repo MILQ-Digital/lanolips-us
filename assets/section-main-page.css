@@ -8,7 +8,13 @@
 
 @media screen and (min-width: 750px) {
   .main-page-title {
-    margin-bottom: 4rem;
+    margin-bottom: 5rem;
+  }
+}
+
+@media screen and (min-width: 990px) {
+  .main-page-title {
+  max-width: 50%;
   }
 }
 
