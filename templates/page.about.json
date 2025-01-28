@@ -289,7 +289,7 @@
         "title": "",
         "heading_size": "hm",
         "image_width": "full",
-        "image_ratio": "square",
+        "image_ratio": "portrait",
         "columns_desktop": 2,
         "column_alignment": "center",
         "background_style": "none",
