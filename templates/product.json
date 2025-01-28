@@ -182,6 +182,7 @@
         },
         "row_Rxra9Y": {
           "type": "row",
+          "disabled": true,
           "settings": {
             "caption": "",
             "heading": "12 hour overnight lip mask",
@@ -217,6 +218,7 @@
         "column_KJWMef": {
           "type": "column",
           "settings": {
+            "image": "shopify://shop_images/before-after-img.jpg",
             "title": "Before",
             "text": "",
             "link_label": "",
@@ -227,6 +229,7 @@
         "column_aAdR9K": {
           "type": "column",
           "settings": {
+            "image": "shopify://shop_images/before-after-img.jpg",
             "title": "After",
             "text": "",
             "link_label": "",
