@@ -428,8 +428,8 @@
         "show_rating": false,
         "columns_mobile": "1",
         "swipe_on_mobile": true,
-        "padding_top": 52,
-        "padding_bottom": 28
+        "padding_top": 100,
+        "padding_bottom": 100
       }
     },
     "collapsible_content_GiNw6Y": {
