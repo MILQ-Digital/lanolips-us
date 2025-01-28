@@ -44,7 +44,7 @@
           "settings": {
             "heading": "UK",
             "icon": "none",
-            "row_content": "<p><a href=\"https://www.anthropologie.com/en-gb/brands/lano\" target=\"_blank\">Anthropologie</a><a href=\"https://www.boots.com/brands/lanolips\" target=\"_blank\">Boots</a><a href=\"https://www.cultbeauty.co.uk/lanolips\" target=\"_blank\">Cult Beauty</a><a href=\"https://www.lookfantastic.com/brands/lanolips.list\" target=\"_blank\">Look Fantastic</a><a href=\"https://www.selfridges.com/GB/en/cat/lano/\" target=\"_blank\">Selfridges<br/></a><a href=\"https://www.sephora.co.uk/brands/lanolips?q=LANOLIPS&q_typ=f\">Sephora</a><a href=\"https://www.superdrug.com/search/lanolips\" title=\"Superdrug\">Superdrug</a><a href=\"http://www.waitrose.com/shop/HeaderSearchCmd?searchTerm=lanolips&defaultSearch=None\" target=\"_blank\">Waitrose</a></p>",
+            "row_content": "<p><a href=\"https://www.anthropologie.com/en-gb/brands/lano\" target=\"_blank\">Anthropologie</a><a href=\"https://www.boots.com/brands/lanolips\" target=\"_blank\"><br/>Boots</a><a href=\"https://www.cultbeauty.co.uk/lanolips\" target=\"_blank\"><br/>Cult Beauty</a><a href=\"https://www.lookfantastic.com/brands/lanolips.list\" target=\"_blank\"><br/>Look Fantastic</a><a href=\"https://www.selfridges.com/GB/en/cat/lano/\" target=\"_blank\"><br/>Selfridges<br/></a><a href=\"https://www.sephora.co.uk/brands/lanolips?q=LANOLIPS&q_typ=f\">Sephora</a><a href=\"https://www.superdrug.com/search/lanolips\" title=\"Superdrug\"><br/>Superdrug<br/></a><a href=\"http://www.waitrose.com/shop/HeaderSearchCmd?searchTerm=lanolips&defaultSearch=None\" target=\"_blank\">Waitrose</a></p>",
             "page": ""
           }
         },
@@ -53,7 +53,7 @@
           "settings": {
             "heading": "Europe",
             "icon": "none",
-            "row_content": "<p><a href=\"https://www.adorebeauty.com.au/lanolips.html\" target=\"_blank\">Adore Beauty<br/></a><a href=\"https://www.davidjones.com/brand/lanolips\" target=\"_blank\">David Jones<br/></a><a href=\"https://www.mecca.com.au/lanolips/\" target=\"_blank\">Mecca Maxima<br/></a><a href=\"https://www.priceline.com.au/brand/lanolips\" target=\"_blank\">Priceline Pharmacy</a><a href=\"https://www.sephora.com.au/brands/lanolips\" target=\"_blank\"><br/>Sephora</a></p>",
+            "row_content": "<p><a href=\"https://www.sephora.fr/recherche?q=LANOLIPS\" target=\"_blank\">Sephora</a></p>",
             "page": ""
           }
         },
@@ -62,7 +62,7 @@
           "settings": {
             "heading": "Hong-Kong",
             "icon": "none",
-            "row_content": "<p><a href=\"https://www.adorebeauty.com.au/lanolips.html\" target=\"_blank\">Adore Beauty<br/></a><a href=\"https://www.davidjones.com/brand/lanolips\" target=\"_blank\">David Jones<br/></a><a href=\"https://www.mecca.com.au/lanolips/\" target=\"_blank\">Mecca Maxima<br/></a><a href=\"https://www.priceline.com.au/brand/lanolips\" target=\"_blank\">Priceline Pharmacy</a><a href=\"https://www.sephora.com.au/brands/lanolips\" target=\"_blank\"><br/>Sephora</a></p>",
+            "row_content": "<p><a href=\"https://www.sephora.hk/brands/lanolips\" target=\"_blank\">Sephora</a></p>",
             "page": ""
           }
         },
@@ -71,7 +71,7 @@
           "settings": {
             "heading": "Middle East",
             "icon": "none",
-            "row_content": "<p><a href=\"https://www.adorebeauty.com.au/lanolips.html\" target=\"_blank\">Adore Beauty<br/></a><a href=\"https://www.davidjones.com/brand/lanolips\" target=\"_blank\">David Jones<br/></a><a href=\"https://www.mecca.com.au/lanolips/\" target=\"_blank\">Mecca Maxima<br/></a><a href=\"https://www.priceline.com.au/brand/lanolips\" target=\"_blank\">Priceline Pharmacy</a><a href=\"https://www.sephora.com.au/brands/lanolips\" target=\"_blank\"><br/>Sephora</a></p>",
+            "row_content": "<p><a href=\"https://www.sephora.ae/en/LANOL-HubPage.html\" target=\"_blank\">Sephora</a></p>",
             "page": ""
           }
         },
@@ -80,7 +80,7 @@
           "settings": {
             "heading": "New-Zealand",
             "icon": "none",
-            "row_content": "<p><a href=\"https://www.adorebeauty.com.au/lanolips.html\" target=\"_blank\">Adore Beauty<br/></a><a href=\"https://www.davidjones.com/brand/lanolips\" target=\"_blank\">David Jones<br/></a><a href=\"https://www.mecca.com.au/lanolips/\" target=\"_blank\">Mecca Maxima<br/></a><a href=\"https://www.priceline.com.au/brand/lanolips\" target=\"_blank\">Priceline Pharmacy</a><a href=\"https://www.sephora.com.au/brands/lanolips\" target=\"_blank\"><br/>Sephora</a></p>",
+            "row_content": "<p><a href=\"https://www.adorebeauty.co.nz/lanolips.html\" target=\"_blank\" title=\"Adore Beauty NZ\">Adore Beauty</a><a href=\"https://www.meccabeauty.co.nz/lanolips/\" target=\"_blank\"><br/>Mecca Maxima<br/></a><a href=\"https://www.sephora.nz/brands/lanolips\" target=\"_blank\">Sephora</a></p>",
             "page": ""
           }
         }
