@@ -347,11 +347,11 @@ slider-component.slider-component-full-width {
 }
 
 .slider-buttons .slider-button--prev {
-  left: 20px;
+  left: -20px;
 }
 
 .slider-buttons .slider-button--next {
-  right: 20px;
+  right: -20px;
 }
 
 @media screen and (min-width: 1650px) {
