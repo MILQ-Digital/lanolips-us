@@ -1572,3 +1572,9 @@ a.product__text {
   margin: 2.5rem 0;
   display: flex;
 }
+
+.product_features_icons img {
+  width: 100%;
+  max-width: 65px;
+  height: fit-content;
+}
