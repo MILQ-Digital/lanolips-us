@@ -97,7 +97,7 @@
       ],
       "settings": {
         "padding_top": 28,
-        "padding_bottom": 28,
+        "padding_bottom": 100,
         "hidepage_content": true,
         "layout": "none",
         "color_scheme": "scheme-2",
