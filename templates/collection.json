@@ -23,9 +23,9 @@
         "promo_banner_wRK8yM": {
           "type": "promo-banner",
           "settings": {
-            "banner_image": "shopify://shop_images/lano-cake.webp",
-            "promotion_position": 6,
-            "title": "Test 1",
+            "banner_image": "shopify://shop_images/product_grid_1.jpg",
+            "promotion_position": 5,
+            "title": "Bundle It And Save",
             "link_label": "Shop Now",
             "link": "shopify://collections/face",
             "color_scheme": "scheme-1",
@@ -35,7 +35,6 @@
         "promo_banner_CMXKXz": {
           "type": "promo-banner",
           "settings": {
-            "banner_image": "shopify://shop_images/bundles.webp",
             "promotion_position": 13,
             "title": "Test 2",
             "link_label": "Shop Now",
