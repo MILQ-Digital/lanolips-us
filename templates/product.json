@@ -432,40 +432,6 @@
     },
     "collapsible_content_GiNw6Y": {
       "type": "collapsible-content",
-      "blocks": {
-        "collapsible_row_Bm93M3": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "How does the Lanolips 12 hour balm work?",
-            "icon": "none",
-            "row_content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>",
-            "page": ""
-          }
-        },
-        "collapsible_row_d84fWA": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "When will my order be shipped to me?",
-            "icon": "none",
-            "row_content": "<p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>",
-            "page": ""
-          }
-        },
-        "collapsible_row_gb7Rpz": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "When will my order be shipped to me?",
-            "icon": "none",
-            "row_content": "<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>",
-            "page": ""
-          }
-        }
-      },
-      "block_order": [
-        "collapsible_row_Bm93M3",
-        "collapsible_row_d84fWA",
-        "collapsible_row_gb7Rpz"
-      ],
       "settings": {
         "caption": "",
         "heading": "FAQS",
