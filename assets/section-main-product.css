@@ -1570,4 +1570,5 @@ a.product__text {
 
 .product_features_icons {
   margin: 2.5rem 0;
+  display: flex;
 }
