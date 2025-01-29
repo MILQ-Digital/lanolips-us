@@ -86,6 +86,7 @@
     {%- liquid
       if section.settings.menu != blank
         render 'header-drawer'
+        render 'header-search', input_id: 'Search-In-Modal-1'
       endif
     -%}  
     <div class="header__icons--localization header-localization localization_top_left">
