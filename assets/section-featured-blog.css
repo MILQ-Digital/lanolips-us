@@ -26,6 +26,13 @@
   scroll-snap-align: start;
 }
 
+@media screen and (max-width: 990px) {
+  .feat-posts .blog__posts.grid {flex-direction: column; align-items: center;}
+  .feat-posts .slider-buttons {display: none}
+  .feat-posts .grid--peek.slider .grid__item:first-of-type {margin-left: 0;} 
+  .feat-posts .grid--peek.slider .grid__item {margin-bottom: 50px}
+}
+
 @media screen and (max-width: 749px) {
   .blog__post.article {
     width: calc(100% - 3rem - var(--grid-mobile-horizontal-spacing));
