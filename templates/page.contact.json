@@ -33,8 +33,6 @@
             "heading": "{{ page.title }}",
             "heading_size": "hxxl",
             "enable_script": false
-            "heading_size": "hxxl",
-            "enable_script": false
           }
         }
       },
@@ -81,9 +79,9 @@
         "section_color_scheme": "",
         "color_scheme": "",
         "use_ingredients": false,
-        "use_ingredients": false,
         "image_behavior": "none",
         "mobile_content_alignment": "left",
+        "mobile_img_visibility": true,
         "padding_top": 0,
         "padding_bottom": 40
       }
