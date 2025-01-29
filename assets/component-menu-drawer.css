@@ -135,7 +135,7 @@ details[open].menu-opening > .menu-drawer__submenu {
   width: 48%;
 }
 
-.js .menu-drawer__menu li {
+.js nav > .menu-drawer__menu > li {
   margin-bottom: 5px;
   padding-bottom: 5px;
   border-bottom: 1px solid var(--Lano-Light-Grey);
@@ -180,7 +180,7 @@ details[open].menu-opening > .menu-drawer__submenu {
 .menu-drawer__menu-item > .svg-wrapper {
   width: 18px;
   position: absolute;
-  right: 3rem;
+  right: 0;
   top: 50%;
   transform: translateY(-50%);
   display: flex;
