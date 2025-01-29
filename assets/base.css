@@ -396,7 +396,7 @@ body:has(.section-header .drawer-menu) .announcement-bar-section .page-width {
   }
 
   .header > .header__search {
-    display: none;
+    display: none!important;
   }
 
   .page-width--narrow {
