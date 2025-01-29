@@ -3872,6 +3872,12 @@ details-disclosure > details {
   display: none;
 }
 
+/**Blog**/
+@media screen and (max-width: 990px) {
+  .feat-posts .blog__posts.grid {flex-direction: column; align-items: center;}
+  .feat-posts .slider-buttons {display: none}
+}
+
 @media screen and (max-width: 750px) {
   /*.error-404 .page-width {padding: 0;}*/
   footer .list-menu__item {display: block}
