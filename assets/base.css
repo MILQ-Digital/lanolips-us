@@ -2916,7 +2916,7 @@ details[open] .modal-overlay::after {
   }
 }
 
-@media screen and (max-width: 749px) {
+@media screen and (max-width: 989px) {
   .header > .header__search {
     display: block!important;
     margin-left: 10px;
@@ -2926,6 +2926,7 @@ details[open] .modal-overlay::after {
     display: none!important;
   }
 }
+
 /* Header menu drawer */
 .header__icon--menu .icon {
   display: block;
