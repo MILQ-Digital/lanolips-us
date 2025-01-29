@@ -23,18 +23,21 @@
             <ul class="menu-drawer__menu has-submenu list-menu" role="list">
               {%- for link in section.settings.menu.links -%}
                 <li>
-                  {%- assign collection = collections[link.handle] -%} 
-                  
-                  {%- if collection != blank and collection.image != blank -%}
-                    <img src="{{ collection.image | image_url: width: 100 }}" alt="{{ collection.title | escape }}" class="menu-collection-image">
-                  {%- endif -%}    
-
                   {%- if link.links != blank -%}
                     <details id="Details-menu-drawer-menu-item-{{ forloop.index }}">
                       <summary
                         id="HeaderDrawer-{{ link.handle }}"
                         class="menu-drawer__menu-item list-menu__item link link--text focus-inset{% if link.child_active %} menu-drawer__menu-item--active{% endif %}"
                       >
+
+                      {%- assign collection = collections[link.handle] -%} 
+                      
+                      {%- if collection != blank and collection.image != blank -%}
+                        <div class="menu-image-icon">
+                          <img src="{{ collection.image | image_url: width: 100 }}" alt="{{ collection.title | escape }}" class="menu-collection-image">
+                        </div>
+                      {%- endif -%}   
+
                         {{ link.title | escape }}
                         <span class="svg-wrapper">
                           {{- 'icon-arrow.svg' | inline_asset_content -}}
