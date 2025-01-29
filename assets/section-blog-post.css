@@ -78,7 +78,7 @@
 .article-template__content img:first-of-type,
   .article-template__content div:has(img):first-of-type,
   .article-template__content p:has(img):first-of-type {
-    max-width: 1131px;
+    max-width: fit-content;
     overflow: hidden;
     border-radius: 22px;
     margin-left: calc(-1* var(--outer));
