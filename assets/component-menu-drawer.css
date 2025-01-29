@@ -319,8 +319,7 @@ details[open].menu-opening > .menu-drawer__submenu {
   }
 
   .menu-image-grid .full-menu--image .full-menu--image-image {
-    width: 172px;
-    height: 172px;
+    width: 100%!important;
     overflow: hidden;
     border-radius: 10px;
   }
