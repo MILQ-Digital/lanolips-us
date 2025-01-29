@@ -39,12 +39,12 @@ menu-drawer > details[open] > summary::before {
   transition: opacity var(--duration-default) ease, visibility var(--duration-default) ease;
 }
 
-details .icon-plus,
-details[open] .icon-minus {
+.has-submenu  details .icon-plus,
+.has-submenu  details[open] .icon-minus {
   display: block;
 }
 
-details[open] .icon-plus {
+.has-submenu  details[open] .icon-plus {
   display: none;
 }
 
