@@ -7,13 +7,13 @@
   height: 48px;
   border-radius: 4px;
   overflow: hidden;
+  margin-right: 10px;
 }
 
 .menu-image-icon > img {
   object-fit: cover;
   width: 100%;
   height: 100%;
-  margin-right: 10px;
 }
 
 .js menu-drawer > details > summary::before,
@@ -68,13 +68,10 @@ menu-drawer > details[open] > summary::before {
 
 .js details[open].menu-opening > .menu-drawer,
 details[open].menu-opening > .menu-drawer__submenu {
-  transform: translateX(0);
+  transform: translateY(0);
   visibility: visible;
 }
 
-.js .menu-drawer__navigation .submenu-open {
-  visibility: hidden; /* hide menus from screen readers when hidden by submenu */
-}
 
 @media screen and (min-width: 750px) {
   .menu-drawer {
@@ -148,14 +145,14 @@ details[open].menu-opening > .menu-drawer__submenu {
 }
 
 .js .menu-drawer__submenu {
-  position: absolute;
-  top: 0;
+  position: relative;
+  top: auto;
   width: 100%;
-  bottom: 0;
+  bottom: auto;
   left: 0;
   background-color: rgb(var(--color-background));
   z-index: 1;
-  transform: translateX(100%);
+  transform: translateY(100%);
   visibility: hidden;
 }
 
