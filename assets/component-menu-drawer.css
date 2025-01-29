@@ -44,7 +44,8 @@ menu-drawer > details[open] > summary::before {
   display: block;
 }
 
-.has-submenu  details[open] .icon-plus {
+.has-submenu  details[open] .icon-plus,
+.has-submenu  details .icon-minus  {
   display: none;
 }
 
