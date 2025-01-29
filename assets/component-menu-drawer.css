@@ -311,3 +311,29 @@ details[open].menu-opening > .menu-drawer__submenu {
   width: auto;
   left: auto;
 }
+
+.menu-image-grid {
+  display: flex;
+  gap: 20px;
+}
+
+.menu-image-grid .full-menu--image .full-menu--image-image {
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.full-menu--image-image>img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.menu-item-has-children a, .menu-image-grid p {
+  font-size: var(--body-sm);
+  line-height: 160%;
+  text-decoration: none;
+  color: inherit;
+  font-weight: 400;
+}
