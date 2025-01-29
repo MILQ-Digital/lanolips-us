@@ -103,7 +103,6 @@ details[open].menu-opening > .menu-drawer__submenu {
 }
 
 .menu-drawer__navigation-container {
-  display: grid;
   grid-template-rows: 1fr auto;
   align-content: space-between;
   overflow-y: auto;
@@ -200,7 +199,6 @@ details[open].menu-opening > .menu-drawer__submenu {
 
 .menu-drawer__utility-links {
   padding: 0;
-  background-color: rgba(var(--color-foreground), 0.03);
   position: relative;
 }
 
@@ -225,7 +223,7 @@ details[open].menu-opening > .menu-drawer__submenu {
   align-items: center;
   text-decoration: none;
   padding: 1rem 0;
-  font-size: 1.4rem;
+  font-size: 16px;
   color: rgb(var(--color-foreground));
   margin-bottom: 0;
 }
@@ -235,9 +233,14 @@ details[open].menu-opening > .menu-drawer__submenu {
 }
 
 .menu-drawer__account account-icon > .svg-wrapper {
-  height: 2rem;
-  width: 2rem;
+  height: 18px;
+  width: 18px;
   margin-right: 1rem;
+}
+
+.menu-drawer__account account-icon > .svg-wrapper svg {
+  stroke: currentColor;
+  stroke-width: 1px;
 }
 
 .menu-drawer__account shop-user-avatar {
