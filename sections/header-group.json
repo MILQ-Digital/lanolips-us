@@ -128,6 +128,24 @@
             "position": "5",
             "mega_sub_menu": "wcc-discover"
           }
+        },
+        "image_picker_imiVLx": {
+          "type": "image_picker",
+          "settings": {
+            "position": "5",
+            "image_block": "shopify://shop_images/Shop_Delicious_balms.webp",
+            "image_title": "heading",
+            "image_link": ""
+          }
+        },
+        "image_picker_LTWatE": {
+          "type": "image_picker",
+          "settings": {
+            "position": "5",
+            "image_block": "shopify://shop_images/Model-close-up-shot-applying-12-Hour-Overnight-Lip-Mask_ebdc2689-e294-48f6-9f62-204b7486d3f2.jpg",
+            "image_title": "heading",
+            "image_link": ""
+          }
         }
       },
       "block_order": [
@@ -140,7 +158,9 @@
         "megamenu_HtYLfX",
         "image_picker_77dFeD",
         "image_picker_PtpCX7",
-        "megamenu_FLRRw3"
+        "megamenu_FLRRw3",
+        "image_picker_imiVLx",
+        "image_picker_LTWatE"
       ],
       "settings": {
         "logo_position": "top-center",
