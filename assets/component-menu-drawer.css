@@ -137,8 +137,8 @@ details[open].menu-opening > .menu-drawer__submenu {
   margin-bottom: 0.2rem;
 }
 
-.js .menu-drawer__menu li > a,
-.js .menu-drawer__menu li > details > summary {
+.js .menu-drawer__menu > li > a,
+.js .menu-drawer__menu > li > details > summary {
   font-size: 20px;
 }
 
