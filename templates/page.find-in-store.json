@@ -104,6 +104,7 @@
         "container_color_scheme": "",
         "open_first_collapsible_row": true,
         "use_metaobject_faq": false,
+        "mobile_img_visibility": false,
         "image": "shopify://shop_images/our_stores.jpg",
         "image_ratio": "adapt",
         "desktop_layout": "image_second"
