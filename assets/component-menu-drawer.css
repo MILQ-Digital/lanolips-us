@@ -39,12 +39,11 @@ menu-drawer > details[open] > summary::before {
   transition: opacity var(--duration-default) ease, visibility var(--duration-default) ease;
 }
 
-details[open] .icon-minus,
-details .icon-plus {
+details .icon-plus,
+details[open] .icon-minus {
   display: block;
 }
- 
-details .icon-minus,
+
 details[open] .icon-plus {
   display: none;
 }
