@@ -81,11 +81,6 @@
     justify-content: center;
   }
 
-  .logofooter__content {
-    width: 100%;
-    gap: 20px;
-  }
-
   .footer__content-bottom.scroll-trigger.animate--slide-in {
     animation: none;
     opacity: 1;
@@ -563,4 +558,8 @@
 
 @media screen and (max-width: 749px) {
    .copyright__content {width: auto;}
+   .logofooter__content {
+    width: 100%;
+    gap: 20px;
+  }
 }
