@@ -85,6 +85,8 @@
     opacity: 1;
     transform: inherit;
   }
+
+  .copyright__content {width: auto;}
 }
 
 .footer__localization:empty + .footer__column--info {
