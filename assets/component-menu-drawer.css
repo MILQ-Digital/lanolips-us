@@ -252,3 +252,10 @@ details[open].menu-opening > .menu-drawer__submenu {
     transition: none !important;
   }
 }
+
+.menu-drawer__localization.localization_top_left .country-selector {
+  height: auto;
+  bottom: 5.3rem;
+  width: auto;
+  left: auto;
+}
