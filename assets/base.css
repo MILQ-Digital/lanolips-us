@@ -3856,9 +3856,10 @@ details-disclosure > details {
 
 @media screen and (max-width: 750px) {
   .error-404 .page-width {padding: 0;}
+  footer .list-menu__item {display: block}
 }
 
-@media screen and (min-width: 750px) {
+@media screen and (min-width: 990px) {
   .grid--2-col-desktop.narrow-img .grid__item  {
     width: calc(40% - var(--grid-desktop-horizontal-spacing) / 2);
     max-width: calc(40% - var(--grid-desktop-horizontal-spacing) / 2);
