@@ -2919,6 +2919,7 @@ details[open] .modal-overlay::after {
 @media screen and (max-width: 749px) {
   .header > .header__search {
     display: block!important;
+    margin-left: 10px;
   }
 
   .header__icons > .header__search {
