@@ -37,6 +37,7 @@
   .blog__post.article {
     width: calc(100% - 3rem - var(--grid-mobile-horizontal-spacing));
   }
+  .feat-posts .grid--peek.slider .grid__item {width: auto}
 }
 
 .background-secondary .blog-placeholder__content {
