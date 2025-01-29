@@ -123,12 +123,23 @@ details[open].menu-opening > .menu-drawer__submenu {
   width: 100%;
 }
 
+.menu-drawer__inner-submenu > .list-menu {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
 .menu-drawer__inner-submenu > .list-menu > li {
-  width: 50%;
+  width: 48%;
 }
 
 .js .menu-drawer__menu li {
   margin-bottom: 0.2rem;
+}
+
+.js .menu-drawer__menu li > a,
+.js .menu-drawer__menu li > details > summary {
+  font-size: 20px;
 }
 
 .menu-drawer__menu-item {
