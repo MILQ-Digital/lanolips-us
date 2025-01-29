@@ -2916,6 +2916,15 @@ details[open] .modal-overlay::after {
   }
 }
 
+@media screen and (max-width: 749px) {
+  .header > .header__search {
+    display: block!important;
+  }
+
+  .header__icons > .header__search {
+    display: none!important;
+  }
+}
 /* Header menu drawer */
 .header__icon--menu .icon {
   display: block;
