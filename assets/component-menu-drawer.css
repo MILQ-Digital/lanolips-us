@@ -115,18 +115,22 @@ details[open].menu-opening > .menu-drawer__submenu {
   overflow-y: auto;
 }
 
+.menu-drawer__inner-submenu > .list-menu > li:first-child a {
+  text-decoration: underline;
+}
+
 .js .menu-drawer__menu li {
   margin-bottom: 0.2rem;
 }
 
 .menu-drawer__menu-item {
-  padding: 1.1rem 3rem;
+  padding: 5px 16px;
   text-decoration: none;
-  font-size: 1.8rem;
+  font-size: 16px;
 }
 
 .menu-drawer summary.menu-drawer__menu-item {
-  padding-right: 5.2rem;
+  padding-right: 16px;
 }
 
 .menu-drawer__menu-item--active,
@@ -135,7 +139,6 @@ details[open].menu-opening > .menu-drawer__submenu {
 .menu-drawer__menu-item:hover,
 .menu-drawer__close-button:hover {
   color: rgb(var(--color-foreground));
-  background-color: rgba(var(--color-foreground), 0.04);
 }
 
 .menu-drawer__menu-item--active:hover {
@@ -147,7 +150,7 @@ details[open].menu-opening > .menu-drawer__submenu {
 }
 
 .menu-drawer__menu-item > .svg-wrapper {
-  width: 24px;
+  width: 18px;
   position: absolute;
   right: 3rem;
   top: 50%;
