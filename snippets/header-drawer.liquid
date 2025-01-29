@@ -41,8 +41,6 @@
                         <span>{{ link.title | escape }}</span>
                         <span class="svg-wrapper">
                           {{- 'icon-plus.svg' | inline_asset_content -}}
-                        </span>
-                        <span class="svg-wrapper">
                           {{- 'icon-minus.svg' | inline_asset_content -}}
                         </span>
                       </summary>
@@ -52,12 +50,6 @@
                         tabindex="-1"
                       >
                         <div class="menu-drawer__inner-submenu">
-                          <button class="menu-drawer__close-button link link--text focus-inset" aria-expanded="true">
-                            <span class="svg-wrapper">
-                              {{- 'icon-arrow.svg' | inline_asset_content -}}
-                            </span>
-                            {{ link.title | escape }}
-                          </button>
                           <ul class="menu-drawer__menu list-menu" role="list" tabindex="-1">
                             {%- for childlink in link.links -%}
                               <li>
