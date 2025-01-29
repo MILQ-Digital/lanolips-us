@@ -82,6 +82,11 @@ menu-drawer > details[open] > summary::before {
   visibility: visible;
 }
 
+details[open].menu-opening > .menu-drawer__submenu {
+  transition: transform var(--duration-default) ease, visibility var(--duration-default) ease;
+  visibility: visible;
+}
+
 
 @media screen and (min-width: 750px) {
   .menu-drawer {
