@@ -123,6 +123,10 @@ details[open].menu-opening > .menu-drawer__submenu {
   width: 100%;
 }
 
+.menu-drawer__inner-submenu > .list-menu > li {
+  width: 50%;
+}
+
 .js .menu-drawer__menu li {
   margin-bottom: 0.2rem;
 }
