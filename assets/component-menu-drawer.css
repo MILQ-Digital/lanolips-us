@@ -79,7 +79,7 @@ menu-drawer > details[open] > summary::before {
 
 .js details[open].menu-opening > .menu-drawer,
 details[open].menu-opening > .menu-drawer__submenu {
-  transform: translateY(0);
+  transition: transform var(--duration-default) ease, visibility var(--duration-default) ease;
   visibility: visible;
 }
 
@@ -167,7 +167,7 @@ details[open].menu-opening > .menu-drawer__submenu {
   left: 0;
   background-color: rgb(var(--color-background));
   z-index: 1;
-  transform: translateY(100%);
+  transition: transform var(--duration-default) ease, visibility var(--duration-default) ease;
   visibility: hidden;
 }
 
