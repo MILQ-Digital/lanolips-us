@@ -3873,12 +3873,7 @@ details-disclosure > details {
 }
 
 /**Blog**/
-@media screen and (max-width: 990px) {
-  .feat-posts .blog__posts.grid {flex-direction: column; align-items: center;}
-  .feat-posts .slider-buttons {display: none}
-  .feat-posts .grid--peek.slider .grid__item:first-of-type {margin-left: 0;} 
-  .feat-posts .grid--peek.slider .grid__item {margin-bottom: 40px}
-}
+
 
 @media screen and (max-width: 750px) {
   /*.error-404 .page-width {padding: 0;}*/
