@@ -149,7 +149,7 @@ details[open].menu-opening > .menu-drawer__submenu {
   font-weight: 500;
 }
 
-.menu-drawer__inner-submenu > .list-menu > li a {
+.menu-drawer__inner-submenu > .list-menu > li li a {
   font-weight: 400;
 }
 
