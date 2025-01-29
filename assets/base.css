@@ -3857,6 +3857,7 @@ details-disclosure > details {
 @media screen and (max-width: 750px) {
   /*.error-404 .page-width {padding: 0;}*/
   footer .list-menu__item {display: block}
+  .error-404 .rich-text__wrapper {width: unset}
 }
 
 @media screen and (min-width: 990px) {
