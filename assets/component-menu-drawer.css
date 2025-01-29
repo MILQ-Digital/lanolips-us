@@ -2,6 +2,11 @@
   position: initial;
 }
 
+.menu-image-icon {
+  width: 48px;
+  height: 48px;
+}
+
 .js menu-drawer > details > summary::before,
 .js menu-drawer > details[open]:not(.menu-opening) > summary::before {
   content: '';
