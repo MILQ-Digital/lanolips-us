@@ -72,6 +72,7 @@
     padding-left: 0;
     padding-right: 0;
     row-gap: 1.5rem;
+    padding-bottom: 20px;
   }
 
   .footer__content-bottom-wrapper {
