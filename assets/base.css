@@ -2752,8 +2752,8 @@ input[type='checkbox'] {
 }
 
 .header__icon .icon {
-  height: 2rem;
-  width: 2rem;
+  height: 24px;
+  width: 24px;
   fill: none;
   vertical-align: middle;
 }
