@@ -102,7 +102,7 @@
 @media screen and (max-width: 749px) {
   .blog-articles .article:nth-child(1), 
   .blog-articles .article:nth-child(4)  {
-    margin-left: 30px;
+    margin-left: -30px;
   }   
 
    .blog-articles .article:nth-child(1) .card__content {padding-left: 23px;}
