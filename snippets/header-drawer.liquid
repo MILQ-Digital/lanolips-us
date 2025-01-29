@@ -23,6 +23,12 @@
             <ul class="menu-drawer__menu has-submenu list-menu" role="list">
               {%- for link in section.settings.menu.links -%}
                 <li>
+                  {%- assign collection = collections[link.handle] -%} {# Check if the link corresponds to a collection #}
+                  
+                  {%- if collection != blank and collection.image != blank -%}
+                    <img src="{{ collection.image | image_url: width: 100 }}" alt="{{ collection.title | escape }}" class="menu-collection-image">
+                  {%- endif -%}    
+                              
                   {%- if link.links != blank -%}
                     <details id="Details-menu-drawer-menu-item-{{ forloop.index }}">
                       <summary
