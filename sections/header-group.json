@@ -46,6 +46,7 @@
             "image_link": "shopify://collections/all",
             "position": "1",
             "mega_sub_menu": "wcc-lips-mega-menu"
+            "mega_sub_menu": "wcc-lips-mega-menu"
           }
         },
         "image_picker_xEJ8td": {
@@ -73,6 +74,7 @@
             "image_link": "",
             "position": "2",
             "mega_sub_menu": "wcc-face"
+            "mega_sub_menu": "wcc-face"
           }
         },
         "image_picker_V6VQVT": {
@@ -99,6 +101,7 @@
             "image_title": "heading",
             "image_link": "",
             "position": "3",
+            "mega_sub_menu": "wcc-hands-body"
             "mega_sub_menu": "wcc-hands-body"
           }
         },
@@ -164,6 +167,7 @@
       ],
       "settings": {
         "logo_position": "top-center",
+        "menu": "wcc-mega-menu",
         "menu": "wcc-mega-menu",
         "menu_type_desktop": "mega",
         "sticky_header_type": "always",

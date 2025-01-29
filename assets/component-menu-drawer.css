@@ -2,6 +2,20 @@
   position: initial;
 }
 
+.menu-image-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 4px;
+  overflow: hidden;
+  margin-right: 10px;
+}
+
+.menu-image-icon > img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
 .js menu-drawer > details > summary::before,
 .js menu-drawer > details[open]:not(.menu-opening) > summary::before {
   content: '';
@@ -25,6 +39,17 @@ menu-drawer > details[open] > summary::before {
   transition: opacity var(--duration-default) ease, visibility var(--duration-default) ease;
 }
 
+.has-submenu  details .icon-plus,
+.has-submenu  details[open] .icon-minus {
+  display: block;
+}
+
+.has-submenu  details[open] .icon-plus,
+.has-submenu  details .icon-minus  {
+  display: none;
+}
+
+
 .menu-drawer {
   position: absolute;
   transform: translateX(-100%);
@@ -45,6 +70,8 @@ menu-drawer > details[open] > summary::before {
 .js .menu-drawer {
   height: calc(100vh - 100%);
   height: calc(var(--viewport-height, 100vh) - (var(--header-bottom-position, 100%)));
+  padding-left: 16px;
+  padding-right: 16px;
 }
 
 .js details[open] > .menu-drawer,
@@ -52,15 +79,16 @@ menu-drawer > details[open] > summary::before {
   transition: transform var(--duration-default) ease, visibility var(--duration-default) ease;
 }
 
-.js details[open].menu-opening > .menu-drawer,
-details[open].menu-opening > .menu-drawer__submenu {
-  transform: translateX(0);
+.js details[open].menu-opening > .menu-drawer {
+  transform: translateY(0);
   visibility: visible;
 }
 
-.js .menu-drawer__navigation .submenu-open {
-  visibility: hidden; /* hide menus from screen readers when hidden by submenu */
+details[open].menu-opening > .menu-drawer__submenu {
+  transition: transform var(--duration-default) ease, visibility var(--duration-default) ease;
+  visibility: visible;
 }
+
 
 @media screen and (min-width: 750px) {
   .menu-drawer {
@@ -77,15 +105,10 @@ details[open].menu-opening > .menu-drawer__submenu {
 }
 
 .menu-drawer__navigation-container {
-  display: grid;
   grid-template-rows: 1fr auto;
   align-content: space-between;
   overflow-y: auto;
   height: 100%;
-}
-
-.menu-drawer__navigation {
-  padding: 3rem 0;
 }
 
 .menu-drawer__inner-submenu {
@@ -94,18 +117,52 @@ details[open].menu-opening > .menu-drawer__submenu {
   overflow-y: auto;
 }
 
-.js .menu-drawer__menu li {
-  margin-bottom: 0.2rem;
+.menu-drawer__inner-submenu > .list-menu > li:first-child a {
+  text-decoration: underline;
+}
+
+.menu-drawer__inner-submenu > .list-menu > li:first-child {
+  width: 100%;
+}
+
+.menu-drawer__inner-submenu > .list-menu {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.menu-drawer__inner-submenu > .list-menu > li {
+  width: 48%;
+}
+
+.js nav > .menu-drawer__menu > li {
+  margin-bottom: 5px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid var(--Lano-Light-Grey);
+}
+
+.js nav > .menu-drawer__menu > li > a,
+.js nav > .menu-drawer__menu > li > details > summary {
+  font-size: 20px;
 }
 
 .menu-drawer__menu-item {
-  padding: 1.1rem 3rem;
+  padding: 6px 0;
   text-decoration: none;
-  font-size: 1.8rem;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.menu-drawer__menu-item:hover {
+  text-decoration: none;
+}
+
+.menu-drawer__inner-submenu > .list-menu > li li a {
+  font-weight: 400;
 }
 
 .menu-drawer summary.menu-drawer__menu-item {
-  padding-right: 5.2rem;
+  padding-right: 0;
 }
 
 .menu-drawer__menu-item--active,
@@ -114,7 +171,6 @@ details[open].menu-opening > .menu-drawer__submenu {
 .menu-drawer__menu-item:hover,
 .menu-drawer__close-button:hover {
   color: rgb(var(--color-foreground));
-  background-color: rgba(var(--color-foreground), 0.04);
 }
 
 .menu-drawer__menu-item--active:hover {
@@ -126,22 +182,25 @@ details[open].menu-opening > .menu-drawer__submenu {
 }
 
 .menu-drawer__menu-item > .svg-wrapper {
-  width: 15px;
+  width: 18px;
   position: absolute;
-  right: 3rem;
+  right: 0;
   top: 50%;
   transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
 }
 
+
+
 .js .menu-drawer__submenu {
-  position: absolute;
-  top: 0;
+  position: relative;
+  top: auto;
   width: 100%;
-  bottom: 0;
+  bottom: auto;
   left: 0;
   background-color: rgb(var(--color-background));
   z-index: 1;
-  transform: translateX(100%);
   visibility: hidden;
 }
 
@@ -171,23 +230,22 @@ details[open].menu-opening > .menu-drawer__submenu {
 
 .menu-drawer__utility-links {
   padding: 0;
-  background-color: rgba(var(--color-foreground), 0.03);
   position: relative;
 }
 
 .header--has-social .menu-drawer__utility-links {
-  padding: 2rem 3rem;
+  padding: 0 0 2rem 0;
 }
 
 @media screen and (max-width: 749px) {
   .header--has-account:where(:not(.header--has-social):not(.header--has-localizations)) .menu-drawer__utility-links {
-    padding: 2rem 3rem;
+    padding: 10px 16px;
   }
 }
 
 @media screen and (max-width: 989px) {
   .header--has-localizations:where(:not(.header--has-social)) .menu-drawer__utility-links {
-    padding: 2rem 3rem;
+    padding: 10px 16px;
   }
 }
 
@@ -196,7 +254,7 @@ details[open].menu-opening > .menu-drawer__submenu {
   align-items: center;
   text-decoration: none;
   padding: 1rem 0;
-  font-size: 1.4rem;
+  font-size: 16px;
   color: rgb(var(--color-foreground));
   margin-bottom: 0;
 }
@@ -206,9 +264,14 @@ details[open].menu-opening > .menu-drawer__submenu {
 }
 
 .menu-drawer__account account-icon > .svg-wrapper {
-  height: 2rem;
-  width: 2rem;
+  height: 18px;
+  width: 18px;
   margin-right: 1rem;
+}
+
+.menu-drawer__account account-icon > .svg-wrapper svg {
+  stroke: currentColor;
+  stroke-width: 1px;
 }
 
 .menu-drawer__account shop-user-avatar {
@@ -239,5 +302,41 @@ details[open].menu-opening > .menu-drawer__submenu {
     transform: none !important;
     filter: none !important;
     transition: none !important;
+  }
+}
+
+.menu-drawer__localization.localization_top_left .country-selector {
+  height: auto;
+  bottom: 5.3rem;
+  width: auto;
+  left: auto;
+}
+
+@media screen and (max-width: 989px) {
+  .menu-image-grid {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .menu-image-grid .full-menu--image .full-menu--image-image {
+    width: 100%!important;
+    height: 172px!important;
+    overflow: hidden;
+    border-radius: 10px;
+  }
+
+  .full-menu--image-image>img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+
+  .menu-item-has-children a, .menu-image-grid p {
+    font-size: var(--body-sm);
+    line-height: 160%;
+    text-decoration: none;
+    color: inherit;
+    font-weight: 400;
   }
 }
