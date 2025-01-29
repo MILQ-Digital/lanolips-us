@@ -3879,7 +3879,7 @@ details-disclosure > details {
   /*.error-404 .page-width {padding: 0;}*/
   footer .list-menu__item {display: block}
   .error-404 .rich-text__wrapper {width: unset}
-  #Slider-Upsell .slider--tablet.grid--peek.grid--1-col-tablet-down .grid__item {
+  #Slider-Upsell.slider--tablet.grid--peek.grid--1-col-tablet-down .grid__item {
       width: calc(90% - var(--grid-mobile-horizontal-spacing) - 3rem);
     }
   } 
