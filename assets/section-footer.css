@@ -561,5 +561,6 @@
    .logofooter__content {
     width: 100%;
     gap: 20px;
+    justify-content: center;
   }
 }
