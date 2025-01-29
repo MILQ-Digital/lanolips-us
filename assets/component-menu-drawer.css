@@ -39,6 +39,17 @@ menu-drawer > details[open] > summary::before {
   transition: opacity var(--duration-default) ease, visibility var(--duration-default) ease;
 }
 
+.js menu-drawer > details[open] .icon-minus,
+.js menu-drawer > details .icon-plus {
+  display: block;
+}
+
+.js menu-drawer > details .icon-minus,
+.js menu-drawer > details[open] .icon-plus {
+  display: none;
+}
+
+
 .menu-drawer {
   position: absolute;
   transform: translateX(-100%);
@@ -137,12 +148,16 @@ details[open].menu-opening > .menu-drawer__submenu {
 }
 
 .menu-drawer__menu-item > .svg-wrapper {
-  width: 15px;
+  width: 24px;
   position: absolute;
   right: 3rem;
   top: 50%;
   transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
 }
+
+
 
 .js .menu-drawer__submenu {
   position: relative;
