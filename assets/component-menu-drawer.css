@@ -146,6 +146,11 @@ details[open].menu-opening > .menu-drawer__submenu {
   padding: 5px 16px;
   text-decoration: none;
   font-size: 16px;
+  font-weight: 500;
+}
+
+.menu-drawer__inner-submenu > .list-menu > li a {
+  font-weight: 400;
 }
 
 .menu-drawer summary.menu-drawer__menu-item {
