@@ -109,10 +109,6 @@ details[open].menu-opening > .menu-drawer__submenu {
   height: 100%;
 }
 
-.menu-drawer__navigation {
-  padding: 3rem 0;
-}
-
 .menu-drawer__inner-submenu {
   height: 100%;
   overflow-x: hidden;
@@ -203,18 +199,18 @@ details[open].menu-opening > .menu-drawer__submenu {
 }
 
 .header--has-social .menu-drawer__utility-links {
-  padding: 2rem 3rem;
+  padding: 0 16px 2rem 16px;
 }
 
 @media screen and (max-width: 749px) {
   .header--has-account:where(:not(.header--has-social):not(.header--has-localizations)) .menu-drawer__utility-links {
-    padding: 2rem 3rem;
+    padding: 10px 16px;
   }
 }
 
 @media screen and (max-width: 989px) {
   .header--has-localizations:where(:not(.header--has-social)) .menu-drawer__utility-links {
-    padding: 2rem 3rem;
+    padding: 10px 16px;
   }
 }
 
