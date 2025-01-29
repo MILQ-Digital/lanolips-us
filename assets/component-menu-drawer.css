@@ -70,6 +70,8 @@ menu-drawer > details[open] > summary::before {
 .js .menu-drawer {
   height: calc(100vh - 100%);
   height: calc(var(--viewport-height, 100vh) - (var(--header-bottom-position, 100%)));
+  padding-left: 16px;
+  padding-right: 16px;
 }
 
 .js details[open] > .menu-drawer,
@@ -134,7 +136,9 @@ details[open].menu-opening > .menu-drawer__submenu {
 }
 
 .js .menu-drawer__menu li {
-  margin-bottom: 0.2rem;
+  margin-bottom: 5px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid var(--Lano-Light-Grey);
 }
 
 .js nav > .menu-drawer__menu > li > a,
@@ -143,7 +147,7 @@ details[open].menu-opening > .menu-drawer__submenu {
 }
 
 .menu-drawer__menu-item {
-  padding: 5px 16px;
+  padding: 5px 0;
   text-decoration: none;
   font-size: 16px;
   font-weight: 500;
@@ -154,7 +158,7 @@ details[open].menu-opening > .menu-drawer__submenu {
 }
 
 .menu-drawer summary.menu-drawer__menu-item {
-  padding-right: 16px;
+  padding-right: 0;
 }
 
 .menu-drawer__menu-item--active,
