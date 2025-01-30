@@ -22,7 +22,7 @@
         "use_metaobject_faq": true,
         "mobile_img_visibility": true,
         "image": "shopify://shop_images/FAQ_image.jpg",
-        "image_ratio": "large",
+        "image_ratio": "adapt",
         "desktop_layout": "image_second"
       }
     }
