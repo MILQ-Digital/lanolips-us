@@ -173,6 +173,7 @@
   }
   .disable-img--mobile-true {display: none}
   .page-width-padding-true {padding: 0;}
+  .page-width-padding-true .image-with-text {border-radius: 0}
 }
 
 .image-with-text__content--mobile-right > * {
