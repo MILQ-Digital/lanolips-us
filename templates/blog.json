@@ -23,8 +23,9 @@
         "heading_89kQDb": {
           "type": "heading",
           "settings": {
-            "heading": "Launches & Beauty Hacks",
-            "heading_size": "hxxl"
+            "heading": "Launches & Beauty Hacks!",
+            "heading_size": "hxxl",
+            "enable_script": false
           }
         }
       },
