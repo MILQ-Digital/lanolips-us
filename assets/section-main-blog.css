@@ -18,7 +18,7 @@
 
 .read-more {
   text-decoration: underline; 
-  text-underline-offset: .3rem;
+  text-underline-offset: .5rem;
 }
 
 @media screen and (min-width: 750px) {
