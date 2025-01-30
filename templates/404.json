@@ -28,7 +28,8 @@
           "type": "heading",
           "settings": {
             "heading": "Page Not Found",
-            "heading_size": "hxxl"
+            "heading_size": "hxxl",
+            "enable_script": false
           }
         },
         "text_eCrDdG": {
@@ -62,7 +63,7 @@
         "color_scheme": "scheme-2",
         "full_width": true,
         "padding_top": 40,
-        "padding_bottom": 52
+        "padding_bottom": 100
       }
     },
     "image_banner_qwWypG": {
