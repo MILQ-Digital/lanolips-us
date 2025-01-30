@@ -49,6 +49,7 @@
         "text_9H6Fbx",
         "button_KhTjEL"
       ],
+      "disabled": true,
       "settings": {
         "image": "shopify://shop_images/signin.jpg",
         "height": "adapt",
