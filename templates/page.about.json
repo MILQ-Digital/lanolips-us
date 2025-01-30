@@ -11,6 +11,7 @@
   "sections": {
     "image_banner_3xkwVM": {
       "type": "image-banner",
+      "disabled": true,
       "settings": {
         "image": "shopify://shop_images/about_hero_banner.jpg",
         "image_overlay_opacity": 0,
