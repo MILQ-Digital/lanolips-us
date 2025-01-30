@@ -11,7 +11,6 @@
   "sections": {
     "image_banner_3xkwVM": {
       "type": "image-banner",
-      "disabled": true,
       "settings": {
         "image": "shopify://shop_images/about_hero_banner.jpg",
         "image_overlay_opacity": 0,
@@ -40,6 +39,7 @@
         "container_color_scheme": "",
         "open_first_collapsible_row": false,
         "use_metaobject_faq": false,
+        "mobile_img_visibility": false,
         "image_ratio": "adapt",
         "desktop_layout": "image_second"
       }
@@ -81,6 +81,7 @@
         "use_ingredients": false,
         "image_behavior": "none",
         "mobile_content_alignment": "left",
+        "mobile_img_visibility": false,
         "padding_top": 36,
         "padding_bottom": 36
       }
@@ -171,6 +172,7 @@
         "use_ingredients": false,
         "image_behavior": "none",
         "mobile_content_alignment": "left",
+        "mobile_img_visibility": false,
         "padding_top": 36,
         "padding_bottom": 100
       }
@@ -220,6 +222,7 @@
         "use_ingredients": false,
         "image_behavior": "none",
         "mobile_content_alignment": "left",
+        "mobile_img_visibility": false,
         "padding_top": 100,
         "padding_bottom": 100
       }
