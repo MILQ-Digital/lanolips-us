@@ -20,6 +20,7 @@
         "container_color_scheme": "",
         "open_first_collapsible_row": false,
         "use_metaobject_faq": false,
+        "mobile_img_visibility": false,
         "image_ratio": "adapt",
         "desktop_layout": "image_second"
       }
@@ -81,6 +82,7 @@
         "use_ingredients": false,
         "image_behavior": "none",
         "mobile_content_alignment": "left",
+        "mobile_page_padding": true,
         "mobile_img_visibility": true,
         "padding_top": 0,
         "padding_bottom": 40
