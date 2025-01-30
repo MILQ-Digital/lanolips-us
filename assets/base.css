@@ -40,6 +40,12 @@
   --grid-desktop-vertical-spacing: 20px;
 }
 
+@media screen and (max-width: 749px) {
+  --heading-xl: 48px;
+  --heading-sm: 28px;
+  --heading-2xs: 16px;
+}
+
 body {
   font-family: var(--default-font);
   font-style: normal;
