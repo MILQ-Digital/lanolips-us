@@ -33,6 +33,7 @@
 
         {%- for part in paginate.parts -%}
           <li>
+            {%- if forloop.first -%}Page {% endif %} 
             {%- if part.is_link -%}
               <a
                 href="{{ part.url }}{{ anchor }}"
