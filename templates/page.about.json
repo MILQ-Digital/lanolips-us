@@ -34,6 +34,7 @@
       "settings": {
         "padding_top": 28,
         "padding_bottom": 28,
+        "custom_page_title": "About Lano Lips",
         "hidepage_content": true,
         "layout": "none",
         "color_scheme": "scheme-2",
@@ -82,6 +83,7 @@
         "use_ingredients": false,
         "image_behavior": "none",
         "mobile_content_alignment": "left",
+        "mobile_page_padding": false,
         "mobile_img_visibility": false,
         "padding_top": 36,
         "padding_bottom": 36
@@ -173,6 +175,7 @@
         "use_ingredients": false,
         "image_behavior": "none",
         "mobile_content_alignment": "left",
+        "mobile_page_padding": false,
         "mobile_img_visibility": false,
         "padding_top": 36,
         "padding_bottom": 100
@@ -223,6 +226,7 @@
         "use_ingredients": false,
         "image_behavior": "none",
         "mobile_content_alignment": "left",
+        "mobile_page_padding": false,
         "mobile_img_visibility": false,
         "padding_top": 100,
         "padding_bottom": 100
