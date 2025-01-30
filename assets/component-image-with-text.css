@@ -435,7 +435,8 @@
   }
 }
 
-.color-scheme-2.image-with-text .grid__item.image-with-text__media-item {
+.color-scheme-2.image-with-text .grid__item.image-with-text__media-item,
+.color-scheme-3.image-with-text .grid__item.image-with-text__media-item{
   border-radius: 20px;
   overflow: hidden;
 }
