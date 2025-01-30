@@ -3918,3 +3918,5 @@ details-disclosure > details {
 .ingredient_item_icon {
   width: 100px;
 }
+
+.article-template .article-template__back {display: none}
