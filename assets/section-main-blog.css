@@ -103,6 +103,7 @@
   .blog-articles .article:nth-child(1), 
   .blog-articles .article:nth-child(4)  {
     margin-left: -30px;
+    margin-bottom: 50px;
   }   
   .blog-articles .article:nth-child(1) .card__content,
   .blog-articles .article:nth-child(4) .card__content{padding-left: 30px;}
