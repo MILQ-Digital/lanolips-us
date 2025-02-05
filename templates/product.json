@@ -219,7 +219,7 @@
         "column_KJWMef": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/before-after-img.jpg",
+            "image": "{{ product.metafields.custom.before_image.value }}",
             "title": "Before",
             "text": "",
             "link_label": "",
@@ -230,7 +230,7 @@
         "column_aAdR9K": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/before-after-img.jpg",
+            "image": "{{ product.metafields.custom.after_image.value }}",
             "title": "After",
             "text": "",
             "link_label": "",
