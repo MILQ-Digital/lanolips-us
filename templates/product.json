@@ -174,7 +174,7 @@
           "type": "row",
           "settings": {
             "image": "shopify://shop_images/Model-close-up-shot-applying-12-Hour-Overnight-Lip-Mask_ebdc2689-e294-48f6-9f62-204b7486d3f2.jpg",
-            "caption": "x",
+            "caption": "",
             "heading": "{{ product.metafields.custom.product_highlights_title.value }}",
             "text": "{{ product.metafields.custom.product_highlight_content | metafield_tag }}",
             "button_label": "",
