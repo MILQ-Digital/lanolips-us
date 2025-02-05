@@ -3864,8 +3864,9 @@ details-disclosure > details {
   border-bottom: 2px solid;
   border-radius: 0;
   padding: 0;
-  line-height: 1.7em;
+  line-height: 22px;
   align-items: end;
+  font-weight: 400;
 }
 
 .error-404 .rich-text .button:hover:after {
