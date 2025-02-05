@@ -110,7 +110,7 @@
 
 .collapsible-content .accordion details[open] .accordion__content  {
   /*padding-bottom: 4rem;;*/ 
-  padding-bottom: 0;
+  padding-bottom: 1.2rem;
 }
 
 .collapsible-content .accordion:last-child {
