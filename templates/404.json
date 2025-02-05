@@ -56,7 +56,9 @@
         "text_eCrDdG",
         "button_XKdciq"
       ],
-      "custom_css": [],
+      "custom_css": [
+        ".rich-text__text p {font-size: 18px; line-height: 27px}"
+      ],
       "settings": {
         "desktop_content_position": "left",
         "content_alignment": "left",
