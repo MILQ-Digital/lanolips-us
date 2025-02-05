@@ -14,6 +14,7 @@
       "settings": {
         "padding_top": 36,
         "padding_bottom": 16,
+        "custom_page_title": "",
         "hidepage_content": true,
         "layout": "none",
         "color_scheme": "",
@@ -77,7 +78,7 @@
         "desktop_content_position": "top",
         "desktop_content_alignment": "left",
         "content_layout": "no-overlap",
-        "section_color_scheme": "",
+        "section_color_scheme": "scheme-1",
         "color_scheme": "",
         "use_ingredients": false,
         "image_behavior": "none",
