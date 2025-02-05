@@ -22,6 +22,7 @@
 .accordion summary[aria-expanded="false"] .accordion_icons .icon-plus{
   display: block;
   height: 14.4px;
+  width: 14.4px;
 }
 
 .accordion .summary__title {
