@@ -24,11 +24,11 @@
           "type": "promo-banner",
           "settings": {
             "banner_image": "shopify://shop_images/product_grid_1.jpg",
-            "promotion_position": 5,
+            "promotion_position": 7,
             "title": "Bundle It And Save",
             "link_label": "Shop Now",
             "link": "shopify://collections/face",
-            "color_scheme": "scheme-1",
+            "color_scheme": "scheme-2",
             "image_ratio": "adapt"
           }
         },

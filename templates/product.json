@@ -334,6 +334,8 @@
         "use_ingredients": true,
         "image_behavior": "none",
         "mobile_content_alignment": "left",
+        "mobile_page_padding": false,
+        "mobile_img_visibility": false,
         "padding_top": 36,
         "padding_bottom": 36
       }
@@ -390,6 +392,8 @@
         "use_ingredients": false,
         "image_behavior": "none",
         "mobile_content_alignment": "left",
+        "mobile_page_padding": false,
+        "mobile_img_visibility": false,
         "padding_top": 36,
         "padding_bottom": 36
       }
@@ -434,6 +438,31 @@
     },
     "collapsible_content_GiNw6Y": {
       "type": "collapsible-content",
+      "blocks": {
+        "collapsible_row_dEDXpt": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "101 Ointment Common Questions",
+            "icon": "check_mark",
+            "row_content": "",
+            "page": ""
+          }
+        },
+        "collapsible_row_8Grf4Q": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Collapsible row",
+            "icon": "check_mark",
+            "row_content": "",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "collapsible_row_dEDXpt",
+        "collapsible_row_8Grf4Q"
+      ],
+      "disabled": true,
       "settings": {
         "caption": "",
         "heading": "FAQS",

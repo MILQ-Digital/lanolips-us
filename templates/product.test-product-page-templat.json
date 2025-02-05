@@ -175,7 +175,7 @@
           "settings": {
             "image": "shopify://shop_images/Model-close-up-shot-applying-12-Hour-Overnight-Lip-Mask_ebdc2689-e294-48f6-9f62-204b7486d3f2.jpg",
             "caption": "",
-            "heading": "Ultra Hydrating, For Better Morning Lips.",
+            "heading": "TEST",
             "text": "<h3>Feels Like:</h3><p>Rich, buttery that melts onto lips</p><h3>Smells Like:</h3><p>A light hint of vanilla and honey</p><h3>Why We Love It:</h3><p>Soften, strengthen  and replenish your lips while you sleep.</p>",
             "button_label": "",
             "button_link": ""
@@ -243,6 +243,7 @@
         "column_KJWMef",
         "column_aAdR9K"
       ],
+      "disabled": true,
       "custom_css": [
         ".title {margin: 0 auto;}"
       ],
@@ -321,6 +322,7 @@
         "caption_XmXXfB",
         "button_hwfChE"
       ],
+      "disabled": true,
       "settings": {
         "image": "shopify://shop_images/Rectangle_93_1a6f4fa9-9178-403d-9541-010c43bd0923.jpg",
         "height": "adapt",
@@ -379,6 +381,7 @@
         "text_b8h9GQ",
         "button_maJHVc"
       ],
+      "disabled": true,
       "settings": {
         "image": "shopify://shop_images/sustainable_packaging.jpg",
         "height": "adapt",
