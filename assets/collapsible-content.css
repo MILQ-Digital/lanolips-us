@@ -104,6 +104,10 @@
   padding: 0;
 }
 
+.collapsible-content .accordion__content p {
+  margin-top: 0;
+}
+
 .collapsible-content .accordion details[open] .accordion__content  {
   /*padding-bottom: 4rem;;*/ 
   padding-bottom: 0;
