@@ -450,7 +450,8 @@ slider-component.slider-component-full-width {
     padding-right: 0!important;
   }
 
-  .collection .slider-buttons{
+  .collection .slider-buttons,
+  .collection-list-wrapper .slider-buttons{
     display: none;
   }
 }
