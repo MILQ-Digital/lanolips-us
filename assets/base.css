@@ -38,6 +38,8 @@
   --inputs-radius: 6px;
   --grid-desktop-horizontal-spacing: 20px;
   --grid-desktop-vertical-spacing: 20px;
+  --grid-mobile-horizontal-spacing: 20px;
+  --grid-mobile-vertical-spacing: 20px;
 }
 
 body {
