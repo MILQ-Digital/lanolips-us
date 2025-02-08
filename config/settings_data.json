@@ -12,6 +12,11 @@
     "logo": "shopify://shop_images/Lanolips-Logo.svg",
     "logo_width": 190,
     "favicon": "shopify://shop_images/Lanolips-Logo.svg",
+    "enable_season": true,
+    "season_logo": "shopify://shop_images/season_logo.svg",
+    "season_logo_width": 195,
+    "season_favicon": "shopify://shop_images/season_logo.svg",
+    "season_color_scheme": "scheme-1ee0be7b-eba0-4080-9dcf-bc07de4e1d9b",
     "type_header_font": "assistant_n4",
     "heading_scale": 100,
     "type_body_font": "assistant_n4",
@@ -230,23 +235,12 @@
           "shadow": "rgba(0,0,0,0)"
         }
       },
-      "scheme-f25cc2f3-d219-4322-8f01-5e82557b035f": {
+      "scheme-1ee0be7b-eba0-4080-9dcf-bc07de4e1d9b": {
         "settings": {
-          "background": "#fae8ed",
+          "background": "rgba(0,0,0,0)",
           "background_gradient": "",
           "text": "#2b4676",
-          "button": "#fb558e",
-          "button_label": "#ffffff",
-          "secondary_button_label": "#2b4676",
-          "shadow": "rgba(0,0,0,0)"
-        }
-      },
-      "scheme-d5318ffc-bc5c-488a-857c-d56b094f9f8b": {
-        "settings": {
-          "background": "#fae8ed",
-          "background_gradient": "",
-          "text": "#2b4676",
-          "button": "#fb558e",
+          "button": "#2b4676",
           "button_label": "#ffffff",
           "secondary_button_label": "#2b4676",
           "shadow": "rgba(0,0,0,0)"

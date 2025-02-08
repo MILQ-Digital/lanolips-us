@@ -20,10 +20,18 @@
             "text": "Shipping Worldwide",
             "link": ""
           }
+        },
+        "announcement_BKzrci": {
+          "type": "announcement",
+          "settings": {
+            "text": "Welcome to our store",
+            "link": ""
+          }
         }
       },
       "block_order": [
-        "announcement_6yfKbX"
+        "announcement_6yfKbX",
+        "announcement_BKzrci"
       ],
       "settings": {
         "color_scheme": "scheme-f25cc2f3-d219-4322-8f01-5e82557b035f",
@@ -129,7 +137,7 @@
             "image_title": "",
             "image_link": "",
             "position": "5",
-            "mega_sub_menu": "wcc-discover"
+            "mega_sub_menu": ""
           }
         },
         "image_picker_WfNLdw": {
