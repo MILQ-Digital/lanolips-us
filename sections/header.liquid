@@ -440,20 +440,32 @@
 
 <script>
   document.addEventListener('DOMContentLoaded', function() {
-    const disclosureButton = document.querySelector('.header-localization.localization_top_left .disclosure__button');
-    const countrySelector = document.querySelector('.header-localization.localization_top_left .country-selector');
-    disclosureButton.addEventListener('click', function(event) {
-      event.stopPropagation();
-      if (countrySelector.hasAttribute('hidden')) {
-        countrySelector.removeAttribute('hidden');
-      } else {
-        countrySelector.setAttribute('hidden', 'true');
-      }
-    });
-    document.body.addEventListener('click', function() {
-      if (!countrySelector.contains(event.target) && !disclosureButton.contains(event.target)) {
-        countrySelector.setAttribute('hidden', 'true');
-      }
+    document.querySelectorAll('.header-localization.localization_top_left').forEach((localization) => {
+      const disclosureButton = localization.querySelector('.disclosure__button');
+      const countrySelector = localization.querySelector('.country-selector');
+
+      if (!disclosureButton || !countrySelector) return;
+
+      disclosureButton.addEventListener('click', function(event) {
+        event.stopPropagation();
+        document.querySelectorAll('.country-selector').forEach((selector) => {
+          if (selector !== countrySelector) {
+            selector.setAttribute('hidden', 'true'); // Hide other dropdowns
+          }
+        });
+
+        if (countrySelector.hasAttribute('hidden')) {
+          countrySelector.removeAttribute('hidden');
+        } else {
+          countrySelector.setAttribute('hidden', 'true');
+        }
+      });
+
+      document.body.addEventListener('click', function(event) {
+        if (!localization.contains(event.target)) {
+          countrySelector.setAttribute('hidden', 'true');
+        }
+      });
     });
   });
 </script>
