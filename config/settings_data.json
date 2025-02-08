@@ -16,6 +16,7 @@
     "season_logo": "shopify://shop_images/season_logo.svg",
     "season_logo_width": 195,
     "season_favicon": "shopify://shop_images/season_logo.svg",
+    "season_color_scheme": "scheme-1ee0be7b-eba0-4080-9dcf-bc07de4e1d9b",
     "type_header_font": "assistant_n4",
     "heading_scale": 100,
     "type_body_font": "assistant_n4",
@@ -229,6 +230,17 @@
           "background_gradient": "",
           "text": "#2b4676",
           "button": "#fb558e",
+          "button_label": "#ffffff",
+          "secondary_button_label": "#2b4676",
+          "shadow": "rgba(0,0,0,0)"
+        }
+      },
+      "scheme-1ee0be7b-eba0-4080-9dcf-bc07de4e1d9b": {
+        "settings": {
+          "background": "rgba(0,0,0,0)",
+          "background_gradient": "",
+          "text": "#2b4676",
+          "button": "#2b4676",
           "button_label": "#ffffff",
           "secondary_button_label": "#2b4676",
           "shadow": "rgba(0,0,0,0)"
