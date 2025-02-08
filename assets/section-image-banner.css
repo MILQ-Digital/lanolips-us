@@ -504,4 +504,10 @@
   .banner--mobile-bottom .slideshow__text-wrapper {
     flex-grow: 0;
   }
+
+  .banner--large.banner--mobile-bottom:not(.banner--adapt) .banner__media, 
+  .banner--large.banner--stacked:not(.banner--mobile-bottom):not(.banner--adapt)>.banner__media {
+    height: auto;
+    min-height: 340px;
+  }
 }
