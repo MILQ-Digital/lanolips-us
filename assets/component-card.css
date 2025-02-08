@@ -798,4 +798,9 @@
   .card--standard>.card__content .card__information {
     min-height: 80px;
   }
+
+  slider-component .collection-list .card__inner {
+    min-height: 247px;
+    max-height: 247px;
+  }
 }
