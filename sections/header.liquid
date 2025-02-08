@@ -104,19 +104,19 @@
 <ul role="list" class="locations list-unstyled countries">
   <li class="location__us">
     <a href="{{ settings.location_us }}" data-location="united-states" 
-      {% if settings.location_us == "https://" | append: request.host | append: request.path %}class="local-active"{% endif %}>US</a>
+      {% if settings.location_us == "https://" | append: request.host %}class="local-active"{% endif %}>US</a>
   </li>
   <li class="location__uk">
     <a href="{{ settings.location_uk }}" data-location="uk" 
-      {% if settings.location_uk == "https://" | append: request.host | append: request.path %}class="local-active"{% endif %}>UK</a>
+      {% if settings.location_uk == "https://" | append: request.host  %}class="local-active"{% endif %}>UK</a>
   </li>
   <li class="location__eu">
     <a href="{{ settings.location_eu }}" data-location="europe" 
-      {% if settings.location_eu == "https://" | append: request.host | append: request.path %}class="local-active"{% endif %}>EU</a>
+      {% if settings.location_eu == "https://" | append: request.host %}class="local-active"{% endif %}>EU</a>
   </li>
   <li class="location__aus">
     <a href="{{ settings.location_au }}" data-location="australia" 
-      {% if settings.location_au == "https://" | append: request.host | append: request.path %}class="local-active"{% endif %}>AU</a>
+      {% if settings.location_au == "https://" | append: request.host %}class="local-active"{% endif %}>AU</a>
   </li>
 </ul>
 
