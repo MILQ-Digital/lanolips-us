@@ -396,7 +396,7 @@ body:has(.section-header .drawer-menu) .announcement-bar-section .page-width {
   }
 
   .header:not(.drawer-menu).page-width {
-    margin-top: calc(var(--header-height) - 154px);
+    margin-top: calc(-1 *  (var(--header-height) - 154px));
   }
 
   .header > .header__search {
