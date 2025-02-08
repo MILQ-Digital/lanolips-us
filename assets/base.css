@@ -200,6 +200,12 @@ body {
   .heading-xl, .hxxl {
     font-size: calc(var(--heading-xl) - 44px);
   }
+
+  .heading-md, .hm, 
+  .multirow .rte h1, 
+  .rich-text__text.rte h2 {
+    font-size: calc(var(--heading-md) - 22px);
+  }  
 }
 
 .button.button--bright-pink {
