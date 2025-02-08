@@ -442,7 +442,7 @@ slider-component.slider-component-full-width {
 
 @media screen and (max-width: 960px) {
   .slider--desktop.grid--5-col-desktop .grid__item {
-      width: 33.3334%;
+    width: 33.3334%;
   }
 
   .collection slider-component.slider-component-full-width {
@@ -452,5 +452,11 @@ slider-component.slider-component-full-width {
 
   .collection .slider-buttons{
     display: none;
+  }
+}
+
+@media screen and (max-width: 749px) {
+  .slider--desktop.grid--5-col-desktop .grid__item {
+    width: calc(90% - var(--grid-mobile-horizontal-spacing) - 3rem);
   }
 }
