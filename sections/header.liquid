@@ -101,7 +101,7 @@
             </button>
             <div class="disclosure__list-wrapper country-selector" hidden="true">
               <div class="disclosure__list country-selector__list country-selector__list--with-multiple-currencies" id="AnnouncementCountry-country-results">
-                {% assign current_url = "https://" | append: request.host | append: request.path %}
+                {% assign current_url = "https://" | append: request.host %}
                 <ul role="list" class="locations list-unstyled countries">
                   <li class="location__us">
                     <a href="{{ settings.location_us }}" data-location="united-states" 
