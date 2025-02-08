@@ -34,6 +34,38 @@
     ]
   },
   {
+    "name": "Season Settings",
+    "settings": [
+      {
+        "type": "image_picker",
+        "id": "season_logo",
+        "label": "t:settings_schema.logo.settings.logo_image.label"
+      },
+      {
+        "type": "range",
+        "id": "logo_width",
+        "min": 90,
+        "max": 500,
+        "step": 5,
+        "default": 100,
+        "unit": "px",
+        "label": "t:settings_schema.logo.settings.logo_width.label"
+      },
+      {
+        "type": "image_picker",
+        "id": "favicon",
+        "label": "t:settings_schema.logo.settings.favicon.label",
+        "info": "t:settings_schema.logo.settings.favicon.info"
+      },
+      {
+        "type": "color_scheme",
+        "id": "season_color_scheme",
+        "label": "t:sections.all.colors.label",
+        "default": "scheme-1"
+      }      
+    ]
+  },  
+  {
     "name": "t:settings_schema.colors.name",
     "settings": [
       {
