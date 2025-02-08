@@ -1097,6 +1097,12 @@ summary::-webkit-details-marker {
   margin-top: 0;
 }
 
+@media screen and (max-width: 749px) {
+  .title-wrapper-with-link {
+    padding: 0 16px;
+  }
+}
+
 
 /* component-grid */
 .grid {
