@@ -178,6 +178,12 @@ body {
   line-height: 150%; 
 }
 
+@media only screen and (min-width: 1200px) {
+  .heading-xl, .hxxl {
+    font-size: calc(var(--heading-xl) - 4px);
+  }
+}
+
 .button.button--bright-pink {
   background-color: var(--Lano-Bright-pink);
   border-color: var(--Lano-Bright-pink);
