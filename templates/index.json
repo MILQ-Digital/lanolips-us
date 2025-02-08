@@ -7,7 +7,7 @@
  * made to this file may be overwritten.
  * ------------------------------------------------------------
  */
- {
+{
   "sections": {
     "slideshow_dJncwY": {
       "type": "slideshow",
@@ -17,14 +17,14 @@
           "settings": {
             "image": "shopify://shop_images/Lanolips_hero.webp",
             "subheading": "Freshly Baked",
-            "subheading_script": "",
+            "subheading_script": "Freshly Baked",
             "heading": "The new Lanolips 101 Delicious 123 bla collection for us",
             "heading_size": "hxxl",
             "subcontent": "<p>Discover our new range of mouth watering flavours Discover our new range of mouth watering flavours Discover our new range of mouth watering flavours Discover our new  </p>",
             "button_label": "Shop Now",
             "link": "shopify://collections/all",
             "button_style_secondary": false,
-            "box_align": "bottom-left",
+            "box_align": "middle-left",
             "show_text_box": false,
             "text_alignment": "left",
             "image_overlay_opacity": 0,
@@ -36,6 +36,7 @@
           "type": "slide",
           "disabled": true,
           "settings": {
+            "image": "shopify://shop_images/Lano_Lips_Landing_Hero_Image_1.webp",
             "subheading": "Serie",
             "subheading_script": "Freshly Baked",
             "heading": "The new Lanolips 101 Delicious collection",
@@ -139,7 +140,6 @@
         "button_AxwgMt"
       ],
       "settings": {
-        "image": "shopify://shop_images/Rectangle_93_1.jpg",
         "height": "adapt",
         "desktop_image_width": "medium",
         "layout": "text_first",
@@ -151,8 +151,6 @@
         "use_ingredients": false,
         "image_behavior": "none",
         "mobile_content_alignment": "left",
-        "mobile_page_padding": false,
-        "mobile_img_visibility": false,
         "padding_top": 0,
         "padding_bottom": 0
       }
@@ -163,7 +161,7 @@
         "featured_collection_PE3zqw": {
           "type": "featured_collection",
           "settings": {
-            "collection": "lips"
+            "collection": "hydrogen"
           }
         },
         "featured_collection_hBDbwN": {
@@ -203,13 +201,13 @@
         "icon_YQkFzD": {
           "type": "icon",
           "settings": {
-            "image_icon": "shopify://shop_images/lano_icon_6eb27fbf-d05e-4cdb-adbe-af3ba14393bb.png"
+            "image_icon": "shopify://shop_images/lano-icon.png"
           }
         },
         "heading_hVPN7C": {
           "type": "heading",
           "settings": {
-            "heading": "Lanolin - the <em><strong>most natural </strong></em>answer to dry skin",
+            "heading": "Lanolin - the <em>most natural </em>answer to dry skin",
             "heading_size": "hm"
           }
         },
@@ -250,7 +248,6 @@
         "column_mGc7n6": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/Rectangle_290_1.jpg",
             "title": "Engaging headline about bundles",
             "text": "<p>Lorem ipsum dolor sit amet</p>",
             "link_label": "Shop Now",
@@ -261,7 +258,6 @@
         "column_nBnMPt": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/Rectangle_290.jpg",
             "title": "Something about gifting",
             "text": "<p>Lorem ipsum dolor sit amet</p>",
             "link_label": "Shop Now",

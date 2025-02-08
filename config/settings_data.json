@@ -7,7 +7,7 @@
  * made to this file may be overwritten.
  * ------------------------------------------------------------
  */
- {
+{
   "current": {
     "location_us": "https://lanolips.com",
     "location_au": "https://lanolips.com.au",
@@ -16,7 +16,7 @@
     "logo": "shopify://shop_images/Lanolips-Logo.svg",
     "logo_width": 190,
     "favicon": "shopify://shop_images/Lanolips-Logo.svg",
-    "enable_season": false,
+    "enable_season": true,
     "season_logo": "shopify://shop_images/season_logo.svg",
     "season_logo_width": 195,
     "season_favicon": "shopify://shop_images/season_logo.svg",
@@ -113,7 +113,7 @@
     "drawer_shadow_horizontal_offset": 0,
     "drawer_shadow_vertical_offset": 4,
     "drawer_shadow_blur": 5,
-    "badge_position": "top left",
+    "badge_position": "top right",
     "badge_corner_radius": 40,
     "sale_badge_color_scheme": "scheme-3",
     "sold_out_badge_color_scheme": "scheme-3",
