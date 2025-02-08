@@ -189,6 +189,10 @@
   margin-top: 10px;
 }
 
+.collection-list .card__inner {
+  min-height: 665px;
+}
+
 .collection-list .card__inner .card__media  .media{
   border-radius: 22px;
   -webkit-transition: all 0.35s ease;
