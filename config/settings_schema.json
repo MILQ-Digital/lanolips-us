@@ -37,6 +37,12 @@
     "name": "Season Settings",
     "settings": [
       {
+        "type": "checkbox",
+        "id": "enable_season",
+        "label": "Enable Season Settings",
+        "default": false
+      },      
+      {
         "type": "image_picker",
         "id": "season_logo",
         "label": "t:settings_schema.logo.settings.logo_image.label"
