@@ -395,6 +395,10 @@ body:has(.section-header .drawer-menu) .announcement-bar-section .page-width {
     padding-right: var(--outer);
   }
 
+  .header:not(.drawer-menu).page-width {
+    margin-top: calc(var(--header-height) - 154px);
+  }
+
   .header > .header__search {
     display: none!important;
   }
