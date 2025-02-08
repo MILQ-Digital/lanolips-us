@@ -439,6 +439,7 @@
   font-size: var(--body-sm);
   color: var(--Lano-Blue);
   line-height: 20px;
+  font-weight: 500;
 }
 
 .card__heading_hs {
@@ -792,5 +793,9 @@
 
   .quick-add-media {
     display: none;
+  }
+
+  .card__heading {
+    font-weight: 500;
   }
 }
