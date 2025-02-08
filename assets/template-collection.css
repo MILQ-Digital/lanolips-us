@@ -100,6 +100,6 @@
 
 @media screen and (max-width: 749px) {
   .collection .slider--tablet.product-grid {
-    scroll-padding-left: 4.5rem;
+    scroll-padding-left: 8.5rem;
   }
 }
