@@ -442,6 +442,6 @@ slider-component.slider-component-full-width {
 
 @media screen and (min-width: 749px) {
   .slider--desktop.grid--5-col-desktop .grid__item {
-      width: 50%;
+      width: 33.3334%;
   }
 }
