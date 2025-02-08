@@ -395,7 +395,7 @@ body:has(.section-header .drawer-menu) .announcement-bar-section .page-width {
     padding-right: var(--outer);
   }
 
-  .header:not(.drawer-menu).page-width {
+  .header__heading-logo-wrapper {
     margin-top: calc(-1 *  (var(--header-height) - 154px));
   }
 
