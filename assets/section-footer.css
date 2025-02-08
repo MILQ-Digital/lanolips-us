@@ -553,3 +553,19 @@
     }
   }
 }
+
+@media screen and (max-width: 750px) {
+  .logofooter__content,
+  .copyright__content {
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .policies {
+    display: inline-flex;
+    gap: 0 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
