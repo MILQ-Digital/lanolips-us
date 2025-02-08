@@ -186,19 +186,19 @@ body {
   .heading-sm, .hs, 
   .multirow .rte h2, 
   .rich-text__text.rte h3 {
-    font-size:  calc(var(--heading-sm) - 4px);
+    font-size:  calc(var(--heading-sm) - 8px);
+  }
+
+  .heading-md, .hm, 
+  .multirow .rte h1, 
+  .rich-text__text.rte h2 {
+    font-size: calc(var(--heading-md) - 8px);
   }
 }
 
 @media only screen and (max-width: 960px) {
   .heading-xl, .hxxl {
     font-size: calc(var(--heading-xl) - 44px);
-  }
-
-  .heading-sm, .hs, 
-  .multirow .rte h2, 
-  .rich-text__text.rte h3 {
-    font-size:  calc(var(--heading-sm) - 8px);
   }
 }
 
