@@ -440,7 +440,7 @@ slider-component.slider-component-full-width {
   transform: rotate(90deg) scale(1.1);
 }
 
-@media screen and (min-width: 749px) {
+@media screen and (max-width: 960px) {
   .slider--desktop.grid--5-col-desktop .grid__item {
       width: 33.3334%;
   }
