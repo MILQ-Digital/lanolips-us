@@ -500,4 +500,8 @@
   .banner__media {
     position: relative;
   }
+
+  .banner--mobile-bottom .slideshow__text-wrapper {
+    flex-grow: 0;
+  }
 }
