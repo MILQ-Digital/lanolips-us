@@ -249,6 +249,7 @@
         "column_mGc7n6": {
           "type": "column",
           "settings": {
+            "image": "shopify://shop_images/Rectangle_290_1.jpg",
             "title": "Engaging headline about bundles",
             "text": "<p>Lorem ipsum dolor sit amet</p>",
             "link_label": "Shop Now",
@@ -259,6 +260,7 @@
         "column_nBnMPt": {
           "type": "column",
           "settings": {
+            "image": "shopify://shop_images/Rectangle_290.jpg",
             "title": "Something about gifting",
             "text": "<p>Lorem ipsum dolor sit amet</p>",
             "link_label": "Shop Now",
