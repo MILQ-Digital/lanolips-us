@@ -445,8 +445,12 @@ slider-component.slider-component-full-width {
       width: 33.3334%;
   }
 
-  slider-component.slider-component-full-width {
+  .collection slider-component.slider-component-full-width {
     padding-left: 0!important;
     padding-right: 0!important;
+  }
+
+  .collection .slider-buttons .slider-button--next {
+    display: none;
   }
 }
