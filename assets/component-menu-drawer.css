@@ -307,7 +307,7 @@ details[open].menu-opening > .menu-drawer__submenu {
 
 .menu-drawer__localization.localization_top_left .country-selector {
   height: auto;
-  bottom: 5.3rem;
+  bottom: auto;
   width: auto;
   left: auto;
 }
