@@ -64,7 +64,7 @@
         "default": "scheme-1"
       }      
     ]
-  },  
+  }, 
   {
     "name": "t:settings_schema.colors.name",
     "settings": [
