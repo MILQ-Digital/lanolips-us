@@ -180,7 +180,13 @@ body {
 
 @media only screen and (max-width: 1200px) {
   .heading-xl, .hxxl {
-    font-size: calc(var(--heading-xl) - 4px);
+    font-size: calc(var(--heading-xl) - 50%);
+  }
+
+  .heading-sm, .hs, 
+  .multirow .rte h2, 
+  .rich-text__text.rte h3 {
+    font-size:  calc(var(--heading-sm)- 8px);
   }
 }
 
