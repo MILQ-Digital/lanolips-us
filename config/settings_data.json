@@ -9,10 +9,10 @@
  */
 {
   "current": {
-    "location_us": "https://lanolips.com/",
-    "location_au": "https://lanolips.com.au/#",
-    "location_uk": "https://lanolips.co.uk/",
-    "location_eu": "https://lanolips.eu/",
+    "location_us": "https://lanolips.com",
+    "location_au": "https://lanolips.com.au",
+    "location_uk": "https://lanolips.co.uk",
+    "location_eu": "https://lanolips.eu",
     "logo": "shopify://shop_images/Lanolips-Logo.svg",
     "logo_width": 190,
     "favicon": "shopify://shop_images/Lanolips-Logo.svg",
