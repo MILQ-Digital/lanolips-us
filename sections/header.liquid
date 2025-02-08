@@ -102,7 +102,6 @@
             <div class="disclosure__list-wrapper country-selector" hidden="true">
               <div class="disclosure__list country-selector__list country-selector__list--with-multiple-currencies" id="AnnouncementCountry-country-results">
                 {% assign current_url = "https://" | append: request.host %}
-                {{ current_url }}
                 <ul role="list" class="locations list-unstyled countries">
                   <li class="location__us">
                     <a href="{{ settings.location_us }}" data-location="united-states" 
@@ -121,9 +120,6 @@
                       {% if current_url == settings.location_au %}class="local-active"{% endif %}>AU</a>
                   </li>
                 </ul>
-
-
-
               </div> 
             </div>
           </div>   
