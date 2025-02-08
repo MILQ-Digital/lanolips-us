@@ -116,7 +116,7 @@
                   </li>
                   <li class="location__aus">
                     <a href="{{ settings.location_au }}" data-location="australia" 
-                      {% if request.url == settings.location_au %}class="local-active"{% endif %}>AU</a>
+                      {% if request.path == settings.location_au %}class="local-active"{% endif %}>AU</a>
                   </li>
                 </ul>
               </div> 
