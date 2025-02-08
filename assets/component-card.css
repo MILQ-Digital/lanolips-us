@@ -803,4 +803,14 @@
     min-height: 247px;
     max-height: 247px;
   }
+
+  slider-component .collection-list .card--standard>.card__content .card__information {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0;
+  }
+
+  slider-component .collection-list .card:not(.ratio) {
+    gap: 10px;
+  }
 }
