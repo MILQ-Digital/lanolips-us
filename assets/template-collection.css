@@ -97,3 +97,9 @@
 .collection__view-all a:not(.link) {
   margin-top: 1rem;
 }
+
+@media screen and (max-width: 749px) {
+  .collection .slider--tablet.product-grid {
+    scroll-padding-left: 4.5rem;
+  }
+}
