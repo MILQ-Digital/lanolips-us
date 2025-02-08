@@ -221,10 +221,20 @@
             <div class="disclosure__list-wrapper country-selector" hidden="true">
               <div class="disclosure__list country-selector__list country-selector__list--with-multiple-currencies" id="AnnouncementCountry-country-results">
                 <ul role="list" class="locations list-unstyled countries">
-                  <li class="location__us"><a href="https://lanolips.com" data-location="united-states">US</a></li>
-                  <li class="location__uk"><a href="https://lanolips.co.uk" data-location="uk">UK</a></li>
-                  <li class="location__eu"><a href="https://lanolips.eu" data-location="europe">EU</a></li>
-                  <li class="location__aus"><a href="#" data-location="australia" class="local-active">AU</a></li>
+                <ul role="list" class="locations list-unstyled countries">
+                  <li class="location__us">
+                    <a href="{{ settings.location_us }}" data-location="united-states" {% if request.store_id == 'us' %}class="local-active"{% endif %}>US</a>
+                  </li>
+                  <li class="location__uk">
+                    <a href="{{ settings.location_uk }}" data-location="uk" {% if request.store_id == 'uk' %}class="local-active"{% endif %}>UK</a>
+                  </li>
+                  <li class="location__eu">
+                    <a href="{{ settings.location_eu }}" data-location="europe" {% if request.store_id == 'eu' %}class="local-active"{% endif %}>EU</a>
+                  </li>
+                  <li class="location__aus">
+                    <a href="{{ settings.location_au }}" data-location="australia" {% if request.store_id == 'au' %}class="local-active"{% endif %}>AU</a>
+                  </li>
+                </ul>  
                 </ul>      
               </div> 
             </div>
