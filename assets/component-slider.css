@@ -460,5 +460,6 @@ slider-component.slider-component-full-width {
   .slider--tablet.grid--peek.grid--1-col-tablet-down .grid__item, 
   .slider--mobile.grid--peek.grid--1-col-tablet-down .grid__item {
     width: calc(90% - var(--grid-mobile-horizontal-spacing) - 3rem);
+    padding: 0;
   }
 }
