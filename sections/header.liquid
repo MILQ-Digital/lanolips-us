@@ -104,19 +104,19 @@
               <ul role="list" class="locations list-unstyled countries">
                 <li class="location__us">
                   <a href="{{ settings.location_us }}" data-location="united-states" 
-                    {% if request.path == settings.location_us %}class="local-active"{% endif %}>US</a>
+                    {% if request.host == settings.location_us %}class="local-active"{% endif %}>US</a>
                 </li>
                 <li class="location__uk">
                   <a href="{{ settings.location_uk }}" data-location="uk" 
-                    {% if request.path == settings.location_uk %}class="local-active"{% endif %}>UK</a>
+                    {% if request.host == settings.location_uk %}class="local-active"{% endif %}>UK</a>
                 </li>
                 <li class="location__eu">
                   <a href="{{ settings.location_eu }}" data-location="europe" 
-                    {% if request.path == settings.location_eu %}class="local-active"{% endif %}>EU</a>
+                    {% if request.host == settings.location_eu %}class="local-active"{% endif %}>EU</a>
                 </li>
                 <li class="location__aus">
                   <a href="{{ settings.location_au }}" data-location="australia" 
-                    {% if request.path == settings.location_au %}class="local-active"{% endif %}>AU</a>
+                    {% if request.host == settings.location_au %}class="local-active"{% endif %}>AU</a>
                 </li>
               </ul>
 
