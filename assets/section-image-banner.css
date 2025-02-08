@@ -494,3 +494,10 @@
     color: currentColor;
   }
 }
+
+
+@media screen and (max-width: 960px) {
+  .banner__media {
+    position: relative;
+  }
+}
