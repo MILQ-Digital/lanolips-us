@@ -795,7 +795,7 @@
     display: none;
   }
 
-  .card__heading {
-    font-weight: 500;
+  .card--standard>.card__content .card__information {
+    min-height: 80px;
   }
 }
