@@ -496,7 +496,7 @@
 }
 
 
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 749px) {
   .banner__media {
     position: relative;
   }
