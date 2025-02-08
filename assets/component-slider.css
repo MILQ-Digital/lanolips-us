@@ -374,6 +374,7 @@ slider-component.slider-component-full-width {
 
   .announcement-bar-slider.slider-buttons {
     position: relative;
+    top: auto;
   }
 }
 

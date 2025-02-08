@@ -2466,10 +2466,6 @@ input[type='checkbox'] {
   min-height: 42px;
 }
 
-.announcement-bar-slider .announcement-bar__message {
-  padding: 0;
-}
-
 .announcement-bar-slider--fade-in-next .announcement-bar__message,
 .announcement-bar-slider--fade-in-previous .announcement-bar__message,
 .announcement-bar-slider--fade-out-next .announcement-bar__message,
