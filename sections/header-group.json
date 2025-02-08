@@ -20,21 +20,13 @@
             "text": "Shipping Worldwide",
             "link": ""
           }
-        },
-        "announcement_BKzrci": {
-          "type": "announcement",
-          "settings": {
-            "text": "Welcome to our store",
-            "link": ""
-          }
         }
       },
       "block_order": [
-        "announcement_6yfKbX",
-        "announcement_BKzrci"
+        "announcement_6yfKbX"
       ],
       "settings": {
-        "color_scheme": "scheme-f25cc2f3-d219-4322-8f01-5e82557b035f",
+        "color_scheme": "scheme-1",
         "font_style": "body-sm",
         "show_line_separator": true,
         "show_social": false,
@@ -53,7 +45,6 @@
             "image_title": "",
             "image_link": "shopify://collections/all",
             "position": "1",
-            "mega_sub_menu": "wcc-lips-mega-menu"
             "mega_sub_menu": "wcc-lips-mega-menu"
           }
         },
@@ -82,7 +73,6 @@
             "image_link": "",
             "position": "2",
             "mega_sub_menu": "wcc-face"
-            "mega_sub_menu": "wcc-face"
           }
         },
         "image_picker_V6VQVT": {
@@ -110,7 +100,6 @@
             "image_link": "",
             "position": "3",
             "mega_sub_menu": "wcc-hands-body"
-            "mega_sub_menu": "wcc-hands-body"
           }
         },
         "image_picker_DGeEfg": {
@@ -137,7 +126,7 @@
             "image_title": "",
             "image_link": "",
             "position": "5",
-            "mega_sub_menu": ""
+            "mega_sub_menu": "wcc-discover"
           }
         },
         "image_picker_WfNLdw": {
@@ -175,7 +164,6 @@
       ],
       "settings": {
         "logo_position": "top-center",
-        "menu": "wcc-mega-menu",
         "menu": "wcc-mega-menu",
         "menu_type_desktop": "mega",
         "sticky_header_type": "always",
