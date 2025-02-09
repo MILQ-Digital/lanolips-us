@@ -80,3 +80,7 @@ a.pagination__item:hover::after {
 .pagination__item-arrow:hover::after {
   display: none;
 }
+
+.pagination__item-arrow {
+  border: 1px solid;
+}
