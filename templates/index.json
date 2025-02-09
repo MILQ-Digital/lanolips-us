@@ -288,6 +288,7 @@
         "color_scheme": "scheme-3",
         "columns_mobile": "1",
         "swipe_on_mobile": false,
+        "mobile_full": true,
         "padding_top": 44,
         "padding_bottom": 44,
         "section_class": ""
