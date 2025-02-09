@@ -1494,6 +1494,7 @@ button.shopify-payment-button__button--unbranded {
     min-height: 40px;
     font-size: 14px!important;
     line-height: 20px!important;
+    font-weight: 500;
   }
 }
 
