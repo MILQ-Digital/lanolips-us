@@ -16,7 +16,7 @@
 
 .pagination__list > li {
   flex: 1 0 4.4rem;
-  max-width: 4.4rem;
+  max-width: 5rem;
 }
 
 .pagination__list > li:not(:last-child) {
@@ -71,4 +71,5 @@ a.pagination__item:hover::after {
 
 .pagination__item-arrow {
   border: 1px solid;
+  padding: 2px 5px;
 }
