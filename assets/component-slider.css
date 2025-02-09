@@ -463,4 +463,8 @@ slider-component.slider-component-full-width {
     width: calc(73.721% - var(--grid-mobile-horizontal-spacing) - 3rem);
     padding: 0;
   }
+
+  .product media-gallery .slider-buttons {
+    display: none;
+  }
 }
