@@ -455,4 +455,12 @@
     gap: 0;
   }
 
+  .multirow .image-with-text__media-item {
+    border-radius: 20px 20px 0 0;
+  }
+
+  .multirow .image-with-text__text-item {
+    border-radius: 0 0 20px 20px;
+  }
+
 }
