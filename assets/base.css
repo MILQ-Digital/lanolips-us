@@ -46,6 +46,10 @@
   :root {
     --outer: 16px;
     --body-sm: 14px;
+    --grid-desktop-horizontal-spacing: 16px;
+    --grid-desktop-vertical-spacing: 16px;
+    --grid-mobile-horizontal-spacing: 16px;
+    --grid-mobile-vertical-spacing: 16px;
   }
 }
 
