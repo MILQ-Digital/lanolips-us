@@ -3976,3 +3976,19 @@ details-disclosure > details {
 .ingredient_item_icon {
   width: 100px;
 }
+
+@media screen and (max-width: 750px) {
+  .ingredient_item_icon {
+    width: 66px;
+  }
+
+  #buttonModal {
+    cursor: pointer;
+    margin: 2rem auto 0;
+  }
+
+  .modal_body {
+    max-width: 90vw;
+    padding: calc(var(--outer)* 2);
+  }
+}
