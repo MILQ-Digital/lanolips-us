@@ -134,6 +134,12 @@
     padding-left: 1.5rem;
     padding-right: 1.5rem;
   }
+
+  .mobile_full.multicolumn-list:not(.slider) {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
 }
 
 @media screen and (min-width: 750px) and (max-width: 989px) {
