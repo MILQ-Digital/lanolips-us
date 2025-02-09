@@ -826,7 +826,7 @@
   }
 
   .promo_banner .card-wrapper .card__content .card__information {
-    padding: 20px 30px !important;
+    padding: 20px!important;
     flex-direction: column;
     align-items: flex-start;
   }
