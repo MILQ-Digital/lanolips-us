@@ -220,9 +220,6 @@ body {
     font-size: calc(var(--heading-md) - 22px);
   }  
 
-  .heading-xxs {
-    font-size: cacl(var(--heading-xxs) - 10px);
-  }
 }
 
 @media only screen and (max-width: 749px) {
@@ -239,6 +236,11 @@ body {
   .heading-lg, .hxl, .hl, .rich-text__text.rte h1 {
     font-size: calc(var(--heading-lg) - 27px);
   }
+
+  .heading-xxs {
+    font-size: cacl(var(--heading-xxs) - 10px);
+  }
+    
 }
 
 .button.button--bright-pink {
