@@ -497,16 +497,16 @@
 
 
 @media screen and (max-width: 749px) {
-  slideshow-component .banner__media {
+  slideshow-component.mobile-text-below .banner__media {
     position: relative;
   }
 
-  slideshow-component .banner--mobile-bottom .slideshow__text-wrapper {
+  slideshow-component.mobile-text-below .banner--mobile-bottom .slideshow__text-wrapper {
     flex-grow: 0;
   }
 
-  slideshow-component .banner--large.banner--mobile-bottom:not(.banner--adapt) .banner__media, 
-  slideshow-component .banner--large.banner--stacked:not(.banner--mobile-bottom):not(.banner--adapt)>.banner__media {
+  slideshow-component.mobile-text-below .banner--large.banner--mobile-bottom:not(.banner--adapt) .banner__media, 
+  slideshow-component.mobile-text-below .banner--large.banner--stacked:not(.banner--mobile-bottom):not(.banner--adapt)>.banner__media {
     height: auto;
     min-height: 340px;
   }
