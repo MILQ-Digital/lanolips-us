@@ -253,7 +253,7 @@ predictive-search[loading] .predictive-search__results-groups-wrapper ~ .predict
     padding: 0 var(--outer);
     max-height: 100vh;
     overflow: scroll;
-    padding-bottom: 25%;
+    padding-bottom: 20vh;
   }
 
   .predictive-search .grid__item {
