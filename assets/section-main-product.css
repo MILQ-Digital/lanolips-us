@@ -458,6 +458,10 @@ a.product__text {
   .product__info-wrapper .quantity__input:focus {
     background-color: #fff;
   }
+
+  .product__info-container .product_button_price {
+    width: calc(100% - 113px);
+  }
 }
 
 @media screen and (min-width: 750px) {
