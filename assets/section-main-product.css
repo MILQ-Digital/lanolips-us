@@ -1587,3 +1587,10 @@ a.product__text {
 .product_features_icons {
   margin: 2.5rem 0;
 }
+
+@media only screen and (max-width:749px) { 
+  .product_features_icons {
+    grid-template-columns: repeat(4, 4fr);
+    gap: 20px;
+  }
+}
