@@ -210,6 +210,12 @@ body {
   }  
 }
 
+@media only screen and (max-width: 749px) {
+  .heading-xs, .xs, .multirow .rte h3 {
+    font-size: cacl(var(--heading-xs) - 12px);
+  }
+}
+
 .button.button--bright-pink {
   background-color: var(--Lano-Bright-pink);
   border-color: var(--Lano-Bright-pink);
