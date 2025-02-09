@@ -819,4 +819,9 @@
     width: calc(100% - var(--grid-desktop-horizontal-spacing)* 0 / 1);
     max-width: calc(100% - var(--grid-desktop-horizontal-spacing)* 0 / 1);
   }
+
+  .promo_banner.grid__item .card .card__inner .card__media, .promo_banner.grid__item .card .card__inner {
+    border-radius: 0;
+    min-height: auto;
+  }
 }
