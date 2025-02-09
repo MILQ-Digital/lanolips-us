@@ -5,3 +5,9 @@
 .related-products__heading {
   margin: 0 0 3rem;
 }
+
+@media only screen and (max-width: 1200px) {
+  .related-products__heading {
+    padding: 0;
+  }
+}
