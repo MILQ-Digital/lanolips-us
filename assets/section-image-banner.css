@@ -520,7 +520,9 @@
     line-height: 38px;;
   }
 
-  .banner__box {
+  .banner__box,
+  .banner--mobile-bottom .banner__box {
     padding: 4rem var(--outer);
   }
+
 }
