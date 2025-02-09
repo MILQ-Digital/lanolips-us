@@ -446,4 +446,12 @@
   .image-with-text__content .image-with-text__text+.button {
     margin-top: 0;
   }
+
+  .multirow .image-with-text__content {
+    padding: var(--outer);
+  }
+
+  .multirow .image-with-text__content p {
+    margin-bottom: 0;
+  }
 }
