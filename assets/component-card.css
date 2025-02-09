@@ -838,4 +838,8 @@
     font-size: 16px;
     padding: 5px;
   }
+
+  #product-grid .grid__item > a {
+    height: 100%;
+  }
 }
