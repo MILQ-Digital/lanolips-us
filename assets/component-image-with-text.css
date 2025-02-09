@@ -448,10 +448,11 @@
   }
 
   .multirow .image-with-text__content {
-    padding: var(--outer);
+    padding: calc(var(--outer) * 2) var(--outer);
   }
 
-  .multirow .image-with-text__content p {
-    margin-bottom: 0;
+  .multirow .grid {
+    gap: 0;
   }
+
 }
