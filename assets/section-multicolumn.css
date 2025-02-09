@@ -261,3 +261,9 @@
     display: list-item;
   }
 }
+
+@media screen and (max-width: 749px) {
+  .multicolumn-list .media.media--square {
+    padding-bottom: 100%;
+  }
+}
