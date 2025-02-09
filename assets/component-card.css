@@ -816,7 +816,7 @@
   }
 
   .promo_banner.grid__item {
-    width: calc(100% - var(--grid-desktop-horizontal-spacing)* 2 / 3);
-    max-width: calc(50% - var(--grid-desktop-horizontal-spacing)* 2 / 3);
+    width: calc(100% - var(--grid-desktop-horizontal-spacing)* 0 / 1);
+    max-width: calc(100% - var(--grid-desktop-horizontal-spacing)* 0 / 1);
   }
 }
