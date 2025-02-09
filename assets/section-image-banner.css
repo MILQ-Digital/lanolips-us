@@ -514,4 +514,10 @@
   .banner-mobile-large {
     min-height: 70vh;
   }
+
+  .banner__heading em,
+  .banner__heading hm  {
+    font-size: 38px;
+    line-height: 38px;;
+  }
 }
