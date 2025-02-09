@@ -248,4 +248,19 @@ predictive-search[loading] .predictive-search__results-groups-wrapper ~ .predict
 }
 
 
-/* Basic carousel styles */
+@media screen and (max-width: 749px) {
+  .predictive-search {
+    padding: 0 var(--outer);
+    max-height: 100vh;
+    overflow: scroll;
+    padding-bottom: 25%;
+  }
+
+  .predictive-search .grid__item {
+    width: 50%;
+  }
+
+  .predictive-search__results-list.grid {
+    padding-right: 0;
+  }
+}
