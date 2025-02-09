@@ -46,6 +46,7 @@
   transition-delay: 0s;
   display: block;
   height: auto;
+  transform: unset;
 }
 
 
