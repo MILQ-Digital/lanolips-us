@@ -234,6 +234,8 @@
         "desktop_content_position": "middle-center",
         "show_text_box": false,
         "desktop_content_alignment": "center",
+        "image_height_mobile": "large",
+        "show_text_below_mobile": true,
         "color_scheme": "scheme-2",
         "color_background": "#ffffff",
         "image_behavior": "none",
