@@ -519,4 +519,8 @@
     font-size: 38px;
     line-height: 38px;;
   }
+
+  .banner__box {
+    padding: 4rem var(--outer);
+  }
 }
