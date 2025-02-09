@@ -342,5 +342,6 @@ details[open].menu-opening > .menu-drawer__submenu {
 
   .menu-drawer__inner-submenu a {
     color: inherit;
+    text-decoration: none;
   }
 }
