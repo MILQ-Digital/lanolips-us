@@ -45,6 +45,17 @@
      * This causes the gap to render and look like a big top margin */
     gap: 2rem;
   }
+
+  .predictive-search {
+    padding: 0 var(--outer);
+    max-height: 100vh;
+    overflow: scroll;
+    padding-bottom: 25%;
+  }
+
+  .predictive-search .grid__item {
+    width: 50%;
+  }
 }
 
 @media screen and (min-width: 750px) {
