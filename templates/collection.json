@@ -20,6 +20,18 @@
     "product-grid": {
       "type": "main-collection-product-grid",
       "blocks": {
+        "promo_banner_tfAVHn": {
+          "type": "promo-banner",
+          "settings": {
+            "banner_image": "shopify://shop_images/sustainable_packaging.jpg",
+            "promotion_position": 3,
+            "title": "",
+            "link_label": "Shop Now",
+            "link": "",
+            "color_scheme": "scheme-1",
+            "image_ratio": "square"
+          }
+        },
         "promo_banner_wRK8yM": {
           "type": "promo-banner",
           "settings": {
@@ -45,6 +57,7 @@
         }
       },
       "block_order": [
+        "promo_banner_tfAVHn",
         "promo_banner_wRK8yM",
         "promo_banner_CMXKXz"
       ],
