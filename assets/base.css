@@ -45,6 +45,7 @@
 @media screen and (max-width: 749px) {
   :root {
     --outer: 16px;
+    --body-sm: 14px;
   }
 }
 
