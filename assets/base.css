@@ -42,6 +42,12 @@
   --grid-mobile-vertical-spacing: 20px;
 }
 
+@media screen and (max-width: 749px) {
+  :root {
+    --outer: 16px;
+  }
+}
+
 body {
   font-family: var(--default-font);
   font-style: normal;
