@@ -1490,10 +1490,10 @@ button.shopify-payment-button__button--unbranded {
 
 @media screen and (max-width: 749px) {
   .quick-add__submit {
-    padding: 8px;
+    padding: 8px!important;
     min-height: 40px;
-    font-size: 14px;
-    line-height: 20px;
+    font-size: 14px!important;
+    line-height: 20px!important;
   }
 }
 
