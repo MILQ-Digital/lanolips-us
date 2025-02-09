@@ -510,4 +510,8 @@
     height: auto;
     min-height: 340px;
   }
+
+  .banner-mobile-large {
+    min-height: 70vh;
+  }
 }
