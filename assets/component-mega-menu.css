@@ -32,6 +32,10 @@
   /*transition: opacity .2s cubic-bezier(.215,.61,.355,1), visibility 0s .2s;*/
 }
 
+.list-menu li:hover .sub-menu {
+  transition: opacity .2s cubic-bezier(.215,.61,.355,1), visibility 0s .2s;
+}
+
 .menu-item-has-children .mega-menu-container {
   width: 100%;
   left: 0;
