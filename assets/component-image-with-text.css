@@ -447,7 +447,8 @@
     margin-top: 0;
   }
 
-  .multirow .image-with-text__content {
+  .multirow .image-with-text__content,
+  .image-with-text__content {
     padding: calc(var(--outer) * 2) var(--outer);
   }
 
