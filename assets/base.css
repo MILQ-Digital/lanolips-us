@@ -219,6 +219,10 @@ body {
   .rich-text__text.rte h2 {
     font-size: calc(var(--heading-md) - 22px);
   }  
+
+  .heading-xxs {
+    font-size: cacl(var(--heading-xxs) - 10px);
+  }
 }
 
 @media only screen and (max-width: 749px) {
