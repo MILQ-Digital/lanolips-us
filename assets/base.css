@@ -1488,6 +1488,15 @@ button.shopify-payment-button__button--unbranded {
   background-color: #0003;
 }
 
+@media screen and (max-width: 749px) {
+  .quick-add__submit {
+    padding: 8px;
+    min-height: 40px;
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
+
 /*
 .button:before,
 .shopify-challenge__button:before,
