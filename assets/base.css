@@ -231,6 +231,10 @@ body {
     font-size: cacl(var(--body-lg) - 2px);
     line-height: 25px;
   }
+
+  .heading-lg, .hxl, .hl, .rich-text__text.rte h1 {
+    font-size: calc(var(--heading-lg) - 27px);
+  }
 }
 
 .button.button--bright-pink {
