@@ -1592,5 +1592,6 @@ a.product__text {
   .product_features_icons {
     grid-template-columns: repeat(4, 4fr);
     gap: 20px;
+    display: grid
   }
 }
