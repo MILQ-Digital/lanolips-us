@@ -213,6 +213,12 @@ body {
 @media only screen and (max-width: 749px) {
   .heading-xs, .xs, .multirow .rte h3 {
     font-size: cacl(var(--heading-xs) - 12px);
+    line-height: 20px;
+  }
+
+  .body-lg, .subtitle {
+    font-size: cacl(var(--body-lg) - 2px);
+    line-height: 25px;
   }
 }
 
