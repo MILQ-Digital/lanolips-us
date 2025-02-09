@@ -266,4 +266,8 @@
   .multicolumn-list .media.media--square {
     padding-bottom: 100%;
   }
+
+  .multicolumn-list .media img {
+    border-radius: 0;
+  }
 }
