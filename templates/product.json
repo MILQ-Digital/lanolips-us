@@ -401,6 +401,13 @@
     "1737799782ee5d4384": {
       "type": "apps",
       "blocks": {
+        "yotpo_product_reviews_reviews_JbQ6VR": {
+          "type": "shopify://apps/yotpo-product-reviews/blocks/reviews/eb7dfd7d-db44-4334-bc49-c893b51b36cf",
+          "disabled": true,
+          "settings": {
+            "product": "{{product}}"
+          }
+        },
         "yotpo_product_reviews_reviews_carousel_XReKcQ": {
           "type": "shopify://apps/yotpo-product-reviews/blocks/reviews_carousel/eb7dfd7d-db44-4334-bc49-c893b51b36cf",
           "settings": {
@@ -409,6 +416,7 @@
         }
       },
       "block_order": [
+        "yotpo_product_reviews_reviews_JbQ6VR",
         "yotpo_product_reviews_reviews_carousel_XReKcQ"
       ],
       "settings": {
@@ -450,6 +458,7 @@
         },
         "collapsible_row_8Grf4Q": {
           "type": "collapsible_row",
+          "disabled": true,
           "settings": {
             "heading": "Collapsible row",
             "icon": "check_mark",
@@ -462,7 +471,6 @@
         "collapsible_row_dEDXpt",
         "collapsible_row_8Grf4Q"
       ],
-      "disabled": true,
       "settings": {
         "caption": "",
         "heading": "FAQS",
@@ -484,6 +492,7 @@
       "blocks": {
         "yotpo_product_reviews_reviews_VQkLck": {
           "type": "shopify://apps/yotpo-product-reviews/blocks/reviews/eb7dfd7d-db44-4334-bc49-c893b51b36cf",
+          "disabled": true,
           "settings": {
             "product": "{{product}}"
           }
