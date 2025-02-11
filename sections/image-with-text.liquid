@@ -280,7 +280,7 @@
                     </div>
                     <div class="field">
                       <label for="contact_last_name">Last Name</label>
-                      <input type="text" id="contact_last_name" name="contact[last_name]" placeholder="Your Last Name" class="field__input">
+                      <input type="text" id="contact_last_name" name="contact[last_name]" placeholder="Smith" class="field__input">
                     </div>
                    </div> 
                     <div class="field field--with-error">
@@ -292,6 +292,7 @@
                         class="field__input"
                         name="contact[email]"
                         spellcheck="false"
+                        placeholder="ie: name@email.com"
                         autocapitalize="off"
                         value="{% if form.email %}{{ form.email }}{% elsif customer %}{{ customer.email }}{% endif %}"
                         aria-required="true"
