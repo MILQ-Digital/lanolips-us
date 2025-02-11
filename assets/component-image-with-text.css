@@ -14,6 +14,7 @@
 .contact-page .image-with-text__content form .field:after {
   border: none;  
 }
+.contact-page .image-with-text__content form {width: 86%}
 .contact-page .image-with-text__content form .field, .contact-page .image-with-text__content form .field > label {display: block}
 .contact-page .image-with-text__content .contact__fields {display: flex; column-gap: 20px;}
 .contact-page .image-with-text__content .field__input {border: 1px solid; color: #6081BD}
