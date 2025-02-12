@@ -23,7 +23,8 @@
   margin: 2rem auto 0
 }
 
-.contact-page .image-with-text__heading{
+.contact-page .image-with-text__heading,
+.contact-page .image-with-text__text {
   width: 90.25%; 
   margin: 0 auto;
 }
