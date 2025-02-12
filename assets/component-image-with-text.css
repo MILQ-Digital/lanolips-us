@@ -11,10 +11,23 @@
   position: relative;
 }
 
+.contact-page .image-with-text__content {
+  justify-content: center;
+}
+
 .contact-page .image-with-text__content form .field:after {
   border: none;  
 }
-.contact-page .image-with-text__content form {width: 90.25%; }
+.contact-page .image-with-text__content form {
+  width: 90.25%; 
+  margin: 2rem auto 0
+}
+
+.contact-page .image-with-text__heading{
+  width: 90.25%; 
+  margin: 0 auto;
+}
+
 .contact-page .image-with-text__content form .field, .contact-page .image-with-text__content form .field > label {display: block}
 .contact-page .image-with-text__content .contact__fields {display: flex; column-gap: 20px;}
 .contact-page .image-with-text__content .field__input {border: 1px solid; color: #6081BD; height: 43px}
