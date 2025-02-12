@@ -56,6 +56,21 @@
   display: none;
 }
 
+.contact-page .image-with-text__content .field__input::placeholder {
+  color: #6081BD; /* Change to your desired color */
+  opacity: 1; /* Ensure full visibility */
+}
+
+/* For older browsers */
+.contact-page .image-with-text__content .field__input:-ms-input-placeholder {
+  color: #6081BD;
+}
+
+.contact-page .image-with-text__content .field__input::-ms-input-placeholder {
+  color: #6081BD;
+}
+
+
 .contact-page .image-with-text__content form .field:after {box-shadow: none;}
 .contact-page .image-with-text__text-item {max-width: 794px;}
 
