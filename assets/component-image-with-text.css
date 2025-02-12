@@ -59,6 +59,11 @@
 .contact-page .image-with-text__content form .field:after {box-shadow: none;}
 .contact-page .image-with-text__text-item {max-width: 794px;}
 
+.contact-page .image-with-text__content button {
+  min-width: 178px;
+  height: 44px;
+}
+
 @media screen and (max-width: 812px) {
   .contact-page .image-with-text__content{
     padding: 60px 20px;
