@@ -50,6 +50,12 @@
 
 .before_after {max-width: 1170px; margin: 0 auto;}
 
+@media screen and (max-width: 960px) {
+  .contact_info .multicolumn-card h3.inline-richtext {
+    font-size: 28px;
+ }
+}
+
 @media screen and (max-width: 749px) {
   .multicolumn .title-wrapper-with-link {
     margin-bottom: 3rem;
