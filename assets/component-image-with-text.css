@@ -14,12 +14,12 @@
 .contact-page .image-with-text__content form .field:after {
   border: none;  
 }
-.contact-page .image-with-text__content form {width: 90.25%}
+.contact-page .image-with-text__content form {width: 90.25%; }
 .contact-page .image-with-text__content form .field, .contact-page .image-with-text__content form .field > label {display: block}
 .contact-page .image-with-text__content .contact__fields {display: flex; column-gap: 20px;}
 .contact-page .image-with-text__content .field__input {border: 1px solid; color: #6081BD; height: 43px}
 .contact-page .image-with-text__content form .field {margin-bottom: 25px;}
-.contact-page .image-with-text__content .field__select {padding-top: 8px;}
+.contact-page .image-with-text__content .field__select {padding-top: 8px; padding-bottom: 8px;}
 .contact-page .image-with-text__content form .field:after {box-shadow: none;}
 .contact-page .image-with-text__text-item {max-width: 794px;}
 
