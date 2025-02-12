@@ -33,25 +33,24 @@
 .contact-page .image-with-text__content .field__input {border: 1px solid; color: #6081BD; height: 43px}
 .contact-page .image-with-text__content form .field {margin-bottom: 25px;}
 .contact-page .image-with-text__content .field__select {
-  padding-top: 8px; 
+  padding-top: 8px;
   padding-bottom: 8px;
-}
-
-.contact-page .image-with-text__content .field__select {
-  background-image: linear-gradient(45deg, transparent 50%, #000 50%),
-                    linear-gradient(135deg, #000 50%, transparent 50%);
-  background-position: calc(100% - 20px) 50%, calc(100% - 15px) 50%;
-  background-size: 5px 5px, 5px 5px;
+  padding-right: 40px; /* Space for the arrow */
+  -webkit-appearance: none;
+  appearance: none;
+  position: relative;
+  cursor: pointer;
+  background-image: url('data:image/svg+xml,<svg width="14" height="9" viewBox="0 0 14 9" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M2.21875 0.75L7 5.38563L11.7812 0.75L13.25 2.17713L7 8.25L0.75 2.17713L2.21875 0.75Z" fill="%232B4676"/></svg>');
   background-repeat: no-repeat;
+  background-position: right 15px center;
+  background-size: 14px 9px;
 }
 
-.contact-page .image-with-text__content .field__select::-moz-focus-inner {
-  border: 0;
-}
-
+/* Hide default dropdown arrow in older versions of Edge & IE */
 .contact-page .image-with-text__content .field__select::-ms-expand {
   display: none;
 }
+
 
 .contact-page .image-with-text__content form .field:after {box-shadow: none;}
 .contact-page .image-with-text__text-item {max-width: 794px;}
