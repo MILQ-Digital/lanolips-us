@@ -26,7 +26,11 @@
 .contact-page .image-with-text__heading,
 .contact-page .image-with-text__text {
   width: 90.25%; 
-  margin: 0 auto;
+  margin: 0 auto 0;
+}
+
+.contact-page .image-with-text__text {
+  margin: 15px auto 0;
 }
 
 .contact-page .image-with-text__content form .field, .contact-page .image-with-text__content form .field > label {display: block}
