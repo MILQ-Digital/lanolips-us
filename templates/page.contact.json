@@ -61,6 +61,13 @@
             "heading_size": "hs"
           }
         },
+        "text_eWBYAD": {
+          "type": "text",
+          "settings": {
+            "text": "<p>All fields are mandatory<br/></p>",
+            "text_style": "body"
+          }
+        },
         "contact_form_NEqNGw": {
           "type": "contact_form",
           "settings": {}
@@ -68,6 +75,7 @@
       },
       "block_order": [
         "heading_BbxH7D",
+        "text_eWBYAD",
         "contact_form_NEqNGw"
       ],
       "settings": {
