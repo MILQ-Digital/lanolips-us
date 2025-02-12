@@ -30,7 +30,20 @@
 }
 
 .contact-page .image-with-text__text {
-  margin: 15px auto 0;
+  margin: 25px auto 10px;
+}
+
+@media screen and (max-width: 812px) {
+  .contact-page .image-with-text__content{
+    padding: 60px 20px;
+  }
+
+  .contact-page .image-with-text__content form,
+  .contact-page .image-with-text__heading,
+  .contact-page .image-with-text__text {
+    width: 100%;
+  }
+
 }
 
 .contact-page .image-with-text__content form .field, .contact-page .image-with-text__content form .field > label {display: block}
