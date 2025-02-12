@@ -3934,4 +3934,12 @@ details-disclosure > details {
   width: 100px;
 }
 
-.article-template .article-template__back {display: none}
+.article-template .article-template__back {
+  display: none;
+}
+
+@media screen and (max-width: 812px) {
+  .contact-page .main-page-title {
+    margin-top: 29px;
+  }
+}

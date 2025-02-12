@@ -16,6 +16,8 @@
 }
 .contact_info .multicolumn-card .rte p a {
   font-size: var(--body-lg);
+  align-items: center;
+  display: flex;
 }
 
 .contact_info .multicolumn-card .rte p a:not([href^="tel"])::before {
