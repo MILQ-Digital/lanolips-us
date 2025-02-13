@@ -55,6 +55,12 @@
   align-items: center;
 }
 
+.template--find-in-store .accordion__title  {
+  font-size: var(--heading-sm);
+  line-height: 120%; /* 43.2px */
+  font-weight: 500;
+}
+
 .accordion .svg-wrapper {
   align-self: center;
   fill: rgb(var(--color-foreground));
