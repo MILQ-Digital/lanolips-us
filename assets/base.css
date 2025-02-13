@@ -201,7 +201,7 @@ body {
     font-size: var(--body-sm);
   }
 
-  .multirow .rte h2 {
+  .multirow h2.rte {
     font-size: var(--heading-xs);
   }
 
