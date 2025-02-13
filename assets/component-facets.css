@@ -632,7 +632,7 @@ span.active-facets__button-inner:after {
 
 @media screen and (max-width: 989px) {
   .active-facets {
-    margin: 0 -1.2rem -1.2rem;
+    margin: 10px 0;
   }
 
   .active-facets__button,
