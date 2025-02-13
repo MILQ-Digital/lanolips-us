@@ -61,6 +61,14 @@
   font-weight: 500;
 }
 
+@media screen and (max-width: 749px) {
+  .template--find-in-store .collapsible-content__media  {
+    margin-left: -16px;
+    margin-right: -16px;
+    border-radius: 0;
+  }
+}
+
 .accordion .svg-wrapper {
   align-self: center;
   fill: rgb(var(--color-foreground));
