@@ -7,7 +7,7 @@
   padding-bottom: 40px;
 }
 
-.image-with-text__caption .figcaption {
+.image-with-text__caption figcaption {
   padding: 10px;
   font-size: var(--body-sm);
   line-height: 160%; 
