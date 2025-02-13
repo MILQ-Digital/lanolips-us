@@ -43,6 +43,7 @@
 @media screen and (max-width: 749px) {
  :root { 
   --heading-xl: 48px;
+  --heading-md: 36px;
   --heading-sm: 28px;
   --heading-2xs: 16px;
   --grid-mobile-horizontal-spacing: 16px;
