@@ -846,4 +846,8 @@
   #product-grid .grid__item > a {
     height: 100%;
   }
+
+  .card-information>.price {
+    display: none;
+  }
 }
