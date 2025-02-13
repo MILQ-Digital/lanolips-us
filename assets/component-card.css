@@ -830,9 +830,10 @@
   }
 
   .promo_banner .card-wrapper .card__content .card__information {
-    padding: 15px!important;
+    padding: 20px!important;
     flex-direction: column;
     align-items: flex-start;
+    gap: 10px;
   }
 
   .collection-list .card__information button, 
