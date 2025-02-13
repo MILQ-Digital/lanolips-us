@@ -25,3 +25,8 @@
   width: 52.5rem;
   height: 52.5rem;
 }
+
+.template--about .rich-text__text {
+  font-size: var(--body-lg);
+  line-height: 150%;
+}
