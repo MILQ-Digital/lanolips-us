@@ -197,9 +197,10 @@ body {
 }
 
 @media screen and (max-width: 750px) {
-  .multirow .rte  {
+  .multirow .image-with-text__text  {
     font-size: var(--body-sm);
   }
+
   .multirow .rte h2 {
     font-size: var(--heading-xs);
   }
