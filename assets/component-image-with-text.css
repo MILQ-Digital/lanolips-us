@@ -196,7 +196,7 @@
 
 @media screen and (max-width: 750px) {
   .image-with-text__content {
-    padding: 25px 20px 45px 20px;
+    padding: 25px 0 45px;
   }
 
 }
