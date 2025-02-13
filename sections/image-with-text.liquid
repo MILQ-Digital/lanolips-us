@@ -127,7 +127,7 @@
               {%- endif -%}
               {{
                 section.settings.image
-                | image_url
+                | image_url: width: section.settings.image.width
                 | image_tag: sizes: sizes, widths: widths, fetchpriority: fetch_priority
               }}
             {%- else -%}
