@@ -843,6 +843,10 @@
     padding: 5px;
   }
 
+  .promo_banner .card__heading_hs  {
+    font-size: 20px;
+  }
+
   #product-grid .grid__item > a {
     height: 100%;
   }
