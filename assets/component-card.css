@@ -850,4 +850,8 @@
   .card-information>.price {
     display: none;
   }
+
+  .quick-add__submit {
+    font-size: 14px;
+  }
 }
