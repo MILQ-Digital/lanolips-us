@@ -12,7 +12,7 @@
     "main": {
       "type": "main-page",
       "settings": {
-        "padding_top": 64,
+        "padding_top": 72,
         "padding_bottom": 32,
         "custom_page_title": "",
         "hidepage_content": true,
