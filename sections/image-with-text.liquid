@@ -134,6 +134,10 @@
               {{ 'detailed-apparel-1' | placeholder_svg_tag: 'placeholder-svg' }}
             {%- endif -%}
           </div>
+          {% if media.alt %}
+            <figcaption>{{ section.settings.image.alt }}</figcaption>
+          {% endif %}
+
         </div>
         <div class="image-with-text__text-item grid__item">
           <div
