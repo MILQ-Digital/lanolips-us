@@ -30,3 +30,9 @@
   font-size: var(--body-lg);
   line-height: 150%;
 }
+
+@media screen and (min-width: 1200px) {
+  .template--about .image-with-text--no-overlap  {
+    margin-left: -55px;
+  }
+}
