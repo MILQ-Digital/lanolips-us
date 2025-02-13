@@ -9,6 +9,8 @@
 
 .image-with-text__caption .figcaption {
   padding: 10px;
+  font-size: var(--body-sm);
+  line-height: 160%; 
 }
 
 .image-with-text .grid {
