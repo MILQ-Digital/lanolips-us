@@ -794,4 +794,56 @@
   .quick-add-media {
     display: none;
   }
+
+  .card--standard>.card__content .card__information {
+    min-height: 80px;
+  }
+
+  #Slider-Upsell .card--standard>.card__content .card__information {
+    min-height: auto;
+  }  
+
+  slider-component .collection-list .card__inner {
+    min-height: 247px;
+    max-height: 247px;
+  }
+
+  slider-component .collection-list .card--standard>.card__content .card__information {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0;
+    min-height: auto;
+  }
+
+  slider-component .collection-list .card:not(.ratio) {
+    gap: 10px;
+  }
+
+  .promo_banner.grid__item {
+    width: calc(100% - var(--grid-desktop-horizontal-spacing)* 0 / 1);
+    max-width: calc(100% - var(--grid-desktop-horizontal-spacing)* 0 / 1);
+  }
+
+  .promo_banner.grid__item .card .card__inner .card__media, .promo_banner.grid__item .card .card__inner {
+    border-radius: 0;
+    min-height: auto;
+  }
+
+  .promo_banner .card-wrapper .card__content .card__information {
+    padding: 20px!important;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .collection-list .card__information button, 
+  .promo_banner .card__information button {
+    max-height: 40px;
+    width: 118px;
+    font-size: 16px;
+    padding: 5px;
+  }
+
+  #product-grid .grid__item > a {
+    height: 100%;
+  }
 }
