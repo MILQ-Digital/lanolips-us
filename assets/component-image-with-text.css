@@ -194,6 +194,13 @@
   z-index: 1;
 }
 
+@media screen and (max-width: 750px) {
+  .image-with-text__content {
+    padding: 25px 20px 45px 20px;
+  }
+
+}
+
 .image-with-text .grid__item::after {
   content: '';
   position: absolute;
