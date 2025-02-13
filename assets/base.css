@@ -3226,6 +3226,7 @@ details-disclosure > details {
   color: rgb(var(--color-button-text));
   word-break: break-word;
   text-transform: uppercase;
+  font-weight: 500;
 }
 
 .gradient:not(body) {
