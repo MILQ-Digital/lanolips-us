@@ -854,4 +854,8 @@
   .quick-add__submit {
     font-size: 14px;
   }
+
+  .card__heading {
+    font-size: var(--body-xs);
+  }
 }
