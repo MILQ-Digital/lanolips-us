@@ -507,6 +507,7 @@
 
 .swatch-input-wrapper {
   display: flex;
+  margin-left: 5px;
 }
 
 .facet-checkbox > svg,
