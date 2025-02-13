@@ -120,3 +120,11 @@
 .sub-collection-item:hover img {
   transform: scale(1.1); /* Scale up by 10% on hover */
 }
+
+@media screen and (max-width: 750px) { 
+  .sub_collection_image {
+    width: 68px;
+    height: 86px;
+    border-radius: 5px;
+  }
+}
