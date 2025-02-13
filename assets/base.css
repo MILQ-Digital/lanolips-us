@@ -48,6 +48,16 @@
  }   
 }
 
+/* Disable blue highlight on mobile */
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
+.button, a, input, select, textarea {
+  -webkit-tap-highlight-color: transparent;
+}
+
+
 body {
   font-family: var(--default-font);
   font-style: normal;
