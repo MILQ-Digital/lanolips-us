@@ -71,7 +71,7 @@
     "image_with_text_VUg6Qt": {
       "type": "image-with-text",
       "custom_css": [
-        ".image-with-text {margin-left: calc(-1* var(--outer));}"
+        ".image-with-text {margin-left: calc(-1 * var(--outer));}"
       ],
       "settings": {
         "image": "shopify://shop_images/Lanolips_products_image.webp",
@@ -132,7 +132,7 @@
         "image_picker_xEjfnh": {
           "type": "image_picker",
           "settings": {
-            "image_icon": "shopify://shop_images/Vector.svg"
+            "image_icon": "shopify://shop_images/Vector.png"
           }
         },
         "heading_aeyDXF": {
