@@ -65,7 +65,7 @@
   .template--find-in-store .collapsible-content__media  {
     margin-left: -16px;
     margin-right: -16px;
-    border-radius: 0;
+    border-radius: 0!important;
   }
 }
 
