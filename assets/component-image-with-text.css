@@ -1,6 +1,6 @@
 .image-with-text .image-with-text__media {
-  border-radius: 20px;
-  overflow: hidden;
+  border-radius: 20px!important;
+  overflow: hidden!important;
 }
 
 .image-with-text__caption {
@@ -8,7 +8,7 @@
 }
 
 .image-with-text__caption figcaption {
-  padding: 10px;
+  padding: 10px 20px;
   font-size: var(--body-sm);
   line-height: 160%; 
 }
