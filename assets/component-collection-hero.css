@@ -127,4 +127,9 @@
     height: 86px;
     border-radius: 5px;
   }
+
+  .sub-collection-item h3 {
+    font-size: 12px;
+    line-height:  15.6px;
+  }
 }
