@@ -15,8 +15,9 @@
 }
 
 .pagination__list > li {
-  flex: 1 0 4.4rem;
-  max-width: 4.4rem;
+  flex: unset;
+  max-width: 5rem;
+  min-width: 25px;
 }
 
 .pagination__list > li:not(:last-child) {
@@ -29,10 +30,11 @@
   justify-content: center;
   align-items: center;
   position: relative;
-  height: 4.4rem;
+  height: auto;
   width: 100%;
   padding: 0;
   text-decoration: none;
+  font-weight: 500;
 }
 
 a.pagination__item:hover::after {
@@ -45,18 +47,6 @@ a.pagination__item:hover::after {
 
 .pagination__item--current::after {
   height: 0.1rem;
-}
-
-.pagination__item--current::after,
-.pagination__item:hover::after {
-  content: '';
-  display: block;
-  width: 2rem;
-  position: absolute;
-  bottom: 8px;
-  left: 50%;
-  transform: translateX(-50%);
-  background-color: currentColor;
 }
 
 .pagination__item--next .icon {
@@ -79,4 +69,9 @@ a.pagination__item:hover::after {
 
 .pagination__item-arrow:hover::after {
   display: none;
+}
+
+.pagination__item-arrow {
+  border: 1px solid;
+  padding: 2px 5px;
 }
