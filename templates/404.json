@@ -57,7 +57,8 @@
         "button_XKdciq"
       ],
       "custom_css": [
-        ".rich-text__text p {font-size: 18px; line-height: 27px}"
+        ".rich-text__text p {font-size: 18px; line-height: 27px;}",
+        "@media screen and (max-width: 749px) {.rich-text__text p {font-size: 16px; line-height: 27px; }}"
       ],
       "settings": {
         "desktop_content_position": "left",
