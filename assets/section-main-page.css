@@ -31,8 +31,14 @@
   line-height: 150%;
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 960px) {
   .template--about .image-with-text--no-overlap  {
-    margin-left: -55px;
+    margin-left: -55px!important;
   }
+}
+
+@media screen and (max-width: 749px) { 
+  .template--about .image-with-text--no-overlap  {
+    margin-left: auto!important;
+  } 
 }
