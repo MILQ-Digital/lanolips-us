@@ -853,6 +853,8 @@
 
   .quick-add__submit {
     font-size: 14px;
+    padding: 10px;
+    min-height: 40px;
   }
 
   .card__heading {
