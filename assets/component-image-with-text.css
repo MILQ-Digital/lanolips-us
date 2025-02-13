@@ -3,6 +3,14 @@
   overflow: hidden;
 }
 
+.image-with-text__caption {
+  padding-bottom: 40px;
+}
+
+.image-with-text__caption .figcaption {
+  padding: 10px;
+}
+
 .image-with-text .grid {
   margin-bottom: 0;
 }
