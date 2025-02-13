@@ -94,6 +94,11 @@
     {{ divider_html }}
     <span class="a">{{- page_title -}}</span>
 
+  {%- elsif template == '404' -%}
+
+    {{ divider_html }}
+    <span class="a">{{- page_title -}}</span>  
+
   {% else %}
     {{ divider_html }}
     <span class="a">{{ page.handle }}</span>
