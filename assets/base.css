@@ -43,11 +43,8 @@
 @media screen and (max-width: 749px) {
  :root { 
   --heading-xl: 48px;
-  --heading-md: 28px;
   --heading-sm: 28px;
-  --heading-xs: 20px;
   --heading-2xs: 16px;
-  --body-lg: 16px;
  }   
 }
 
@@ -197,6 +194,19 @@ body {
 .subtitle--xsmall {
   font-size: var(--body-xs);
   line-height: 150%; 
+}
+
+@media screen and (max-width: 750px) {
+  .multirow .rte  {
+    font-size: var(--body-sm);
+  }
+  .multirow .rte h2 {
+    font-size: var(--heading-xs);
+  }
+
+  .multirow .rte h3 {
+    font-size: var(--heading-2xs);
+  }
 }
 
 .button.button--bright-pink {
