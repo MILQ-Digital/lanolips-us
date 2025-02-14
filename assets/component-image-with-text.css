@@ -196,7 +196,9 @@
 
 @media screen and (max-width: 750px) {
   .image-with-text__content {
-    padding: 25px 0 45px;
+    padding: 25px var(--outer) 45px;
+    text-align: center;
+    align-items: center;
   }
 
   .image-with-text__text--caption  {
