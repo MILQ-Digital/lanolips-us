@@ -88,6 +88,10 @@
     {{ divider_html }}
      <span class="t">Search</span>
 
+  {%- elsif template.name == 'blog' -%}
+    {{ divider_html }}
+    <span class="a">{{- page_title -}}</span>  
+
   {%- elsif template.name == 'article' -%}
     {{ divider_html }}
     {{ blog.title | link_to: blog.url }}
