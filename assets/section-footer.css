@@ -556,6 +556,12 @@
   }
 }
 
+@media screen and (max-width: 1200px) {
+  .footer-block__details-content>li:not(:last-child) {
+    margin-right: 10px;
+  }
+}
+
 @media screen and (max-width: 749px) {
    .copyright__content {width: auto;}
    .logofooter__content {
