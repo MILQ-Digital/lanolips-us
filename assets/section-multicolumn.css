@@ -248,8 +248,8 @@
   }
 
   .multicolumn-card__info {
-    padding-left: var(--outer);
-    padding-right: var(--outer);
+    padding-left: var(--outer)!Important;
+    padding-right: var(--outer)!Important;
   }
 }
 
