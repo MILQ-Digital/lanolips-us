@@ -246,6 +246,11 @@
   .multicolumn-list .media img {
     border-radius: 0;
   }
+
+  .multicolumn-card__info {
+    padding-left: var(--outer);
+    padding-right: var(--outer);
+  }
 }
 
 @media screen and (min-width: 750px) {
