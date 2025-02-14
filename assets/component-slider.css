@@ -344,6 +344,12 @@ slider-component.slider-component-full-width {
   top: 35%;
   background-color: #fff;
   border-radius: 100%;
+  border: 1px solid var(--Lano-Pink);
+}
+
+.slider-buttons .slider-button .svg-wrapper {
+  width: 16px;
+  height: 16px;
 }
 
 .slider-buttons .slider-button--prev {
