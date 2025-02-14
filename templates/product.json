@@ -290,7 +290,7 @@
         "heading_VM7xA3"
       ],
       "custom_css": [
-        ".lanoscript span {text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 4px; }"
+        ".lanoscript span {text-decoration: underline !important; text-decoration-thickness: 2px !important; text-underline-offset: 7px !important;}"
       ],
       "settings": {
         "desktop_content_position": "center",
