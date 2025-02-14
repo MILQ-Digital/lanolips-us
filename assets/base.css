@@ -338,6 +338,7 @@ body {
   justify-content: center;
   gap: 8px;
   font-weight: 500;
+  line-height: 22.4px;
 }
 
 .text_link .read-more {

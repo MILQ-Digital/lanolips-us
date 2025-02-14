@@ -5,6 +5,7 @@
   font-weight: 500;
   display: flex;
   align-items: center;
+  line-height: 135%;
 }
 
 .list-menu--inline > li:hover > a {
