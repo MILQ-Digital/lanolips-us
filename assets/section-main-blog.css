@@ -81,7 +81,7 @@
   }
 
   .blog-articles .article:nth-child(1) .card__inner {
-    border-radius: 0 22px 0 22px;
+    border-radius: 0 22px 22px 0;
   }
 
   .blog-articles .article:nth-child(1) .card__content {
