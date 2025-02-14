@@ -291,6 +291,77 @@
         "padding_bottom": 44,
         "section_class": ""
       }
+    },
+    "rich_text_636tak": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_E8CUpz": {
+          "type": "heading",
+          "settings": {
+            "heading": "Shop Customer faves",
+            "heading_size": "hs",
+            "enable_script": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_E8CUpz"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-2",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 40
+      }
+    },
+    "custom_liquid_tjQYeY": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<script src=\"//foursixty.com/media/scripts/fs.slider.v2.6.js\" data-feed-id=\"lanolips\" data-theme=\"slider_v2_6\" data-open-links-in-same-page=\"true\" data-connector-filter=\"58942,58961\" data-always-show-video-detail=\"true\" data-video-gallery=\"reels\" data-cell-size=\"20%\"></script>\n<style>.fs-has-links { display:none; } .fs-video-gallery .fs-entry-container { padding-top:36% !important;width:20% !important;height:auto !important; } .fs-video-gallery.fs-narrow-timeline .fs-entry-container.fs-entry-container { padding-top:calc(50% * 1.7778) !important;width:50% !important;height:auto !important; } .fs-video-gallery.fs-small-timeline .fs-entry-container.fs-entry-container { padding-top:calc(33.3334% * 1.7778) !important;width:33.3334% !important;height:auto !important; } .fs-wrapper div.fs-text-container .fs-entry-title, div.fs-detail-title { font-family:Times New Roman, serif;font-style:normal;font-weight:normal;font-size:14px; } div.fs-text-container .fs-entry-date, div.fs-detail-container .fs-post-info, div.fs-wrapper div.fs-has-links::after, .fs-text-product, .fs-overlink-text { font-family:Helvetica Neue, Helvetica, Arial, sans-serif;font-style:normal;font-weight:normal;font-size:14px; } .fs-wrapper div.fs-text-container * { color:#ffffff; } .fs-wrapper div.fs-text-container { background-color:rgba(0, 0, 0, 0.8);margin:0px; } div.fs-entry-date { display:none; } div.fs-entry-title { display:none; } .fs-slider_v2_6 .fs-wrapper div.fs-timeline-entry { margin:10px; } </style>",
+        "color_scheme": "scheme-2",
+        "padding_top": 0,
+        "padding_bottom": 52
+      }
+    },
+    "173950177361100e1b": {
+      "type": "apps",
+      "blocks": {
+        "foursixty_shoppable_social_ugc_custom_slider_yTcYjG": {
+          "type": "shopify://apps/foursixty-shoppable-social-ugc/blocks/custom_slider/e2616dfe-fbb6-4e7d-874d-d250b973556d",
+          "settings": {
+            "foreground_color": "#ffffff",
+            "background_color": "#f3e5ef",
+            "background_color_alpha": 80,
+            "post_spacing": 10,
+            "hover_margin": 0,
+            "cell_size": "25%",
+            "target_blank": false,
+            "arrows_outside": false,
+            "show_icon": true,
+            "show_text": false,
+            "show_date": false,
+            "call_to_action": "",
+            "shop_type": "none",
+            "body_font_size": 14,
+            "body_font": "helvetica_n4",
+            "accent_font_size": 14,
+            "accent_font": "helvetica_n4",
+            "disable_filter": false,
+            "override_feed_id": "",
+            "arbitrary_attributes": "",
+            "custom_css": "",
+            "custom_js": ""
+          }
+        }
+      },
+      "block_order": [
+        "foursixty_shoppable_social_ugc_custom_slider_yTcYjG"
+      ],
+      "settings": {
+        "include_margins": true
+      }
     }
   },
   "order": [
@@ -299,6 +370,9 @@
     "image_with_text_WkDiJU",
     "collection_list_aGyhDV",
     "image_banner_rxCeJC",
-    "multicolumn_gqYkVh"
+    "multicolumn_gqYkVh",
+    "rich_text_636tak",
+    "custom_liquid_tjQYeY",
+    "173950177361100e1b"
   ]
 }
