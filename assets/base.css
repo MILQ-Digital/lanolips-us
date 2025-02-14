@@ -219,7 +219,7 @@ body {
     font-size: var(--heading-sm);
   }
 
-  .rich-text__heading.rte.h1 {
+  .rich-text__heading.lanoscript  {
     font-size: 37px;
     line-height: 40.7px;
   }
