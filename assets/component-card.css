@@ -846,9 +846,13 @@
     background: transparent;
   }
 
-  .collection-list .card-wrapper:hover .card__information p, 
-  .promo_banner .card-wrapper:hover .card__information p {
+  .collection-list .card-wrapper:hover .card__information p {
     display: none;
+  }
+
+  .collection-list .card-wrapper:hover .card__inner .card__media .media, 
+  .collection-list .card-wrapper:hover .card__information {
+    transform: unset;
   }
 
   slider-component .collection-list .card:not(.ratio) {
