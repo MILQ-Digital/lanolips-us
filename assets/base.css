@@ -3999,6 +3999,7 @@ details-disclosure > details {
 
   .image-with-text #buttonModal {
     margin: 2rem auto 0;
+    font-size: var(--font-size-14);
   }
 
   .ingredient_item_content {
