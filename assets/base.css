@@ -4000,4 +4000,9 @@ details-disclosure > details {
   .image-with-text #buttonModal {
     margin: 2rem auto 0;
   }
+
+  .ingredient_item_content {
+    font-size: var(--font-size-14);
+    line-height: 21px;
+  }
 }
