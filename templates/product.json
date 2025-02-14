@@ -289,6 +289,9 @@
         "text_3mwk6C",
         "heading_VM7xA3"
       ],
+      "custom_css": [
+        ".lanoscript span {text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 4px; }"
+      ],
       "settings": {
         "desktop_content_position": "center",
         "content_alignment": "center",
