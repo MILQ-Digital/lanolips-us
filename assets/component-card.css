@@ -889,4 +889,8 @@
   .blog-articles .article:nth-child(1) .article-card__excerpt {
     font-size: var(--body-lg);
   }
+
+  .article-card .card__inner {
+    min-height: 274px;
+  }
 }
