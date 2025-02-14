@@ -213,3 +213,9 @@ product-recommendations.is-accordion + .accordion {
   padding: 20px;
 }
 
+@media screen and (max-width: 750px) {
+  .complementary-products__container .card--horizontal .card__inner {
+    max-width: 113px;
+    max-height: 135px;
+  }
+}
