@@ -206,6 +206,10 @@
     margin-top: 15px!important;
   }
 
+  .image-with-text__heading.hm {
+    font-size: var(--heading-sm);
+  }
+
 }
 
 .image-with-text .grid__item::after {
