@@ -233,24 +233,20 @@
     margin-bottom: 0rem;
   }
 
-  .multicolumn-list .media.media--square {
+  .template-index .multicolumn-list .media.media--square {
     max-height: max-content;
     padding-bottom: 282px;
   }  
 
-  .multicolumn-list:not(.slider) {
+  .template-index .multicolumn-list:not(.slider) {
     padding-left: 0;
     padding-right: 0;
   }
 
-  .multicolumn-list .media img {
+  .template-index .multicolumn-list .media img {
     border-radius: 0;
   }
 
-  .multicolumn-card__info {
-    padding-left: var(--outer)!Important;
-    padding-right: var(--outer)!Important;
-  }
 }
 
 @media screen and (min-width: 750px) {
