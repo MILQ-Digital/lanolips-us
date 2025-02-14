@@ -232,6 +232,20 @@
   .multicolumn.background-none .slider.slider--mobile {
     margin-bottom: 0rem;
   }
+
+  .multicolumn-list .media.media--square {
+    max-height: max-content;
+    padding-bottom: 100%;
+  }  
+
+  .multicolumn-list:not(.slider) {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .multicolumn-list .media img {
+    border-radius: 0;
+  }
 }
 
 @media screen and (min-width: 750px) {
