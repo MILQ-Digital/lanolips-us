@@ -479,11 +479,18 @@
   margin-top: 2rem;
 }
 
+
+
 @media screen and (max-width: 749px) {
   .banner:not(.slideshow) .rte a,
   .banner:not(.slideshow) .inline-richtext a:hover,
   .banner:not(.slideshow) .rte a:hover {
     color: currentColor;
+  }
+
+  .banner--mobile-bottom .banner__box {
+    padding-left: var(--outer);
+    padding-right: var(--outer);
   }
 }
 
