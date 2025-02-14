@@ -4009,4 +4009,14 @@ details-disclosure > details {
   .ingredient_item {
     gap: 15px;
   }
+
+  .image-with-text .modal_body {
+    max-width: 90vw;
+    padding: 20px 20px 20px;
+  }
+
+  .image-with-text .modal_text {
+    font-size: var(--body-sm);
+    line-height: 21px;
+  }
 }
