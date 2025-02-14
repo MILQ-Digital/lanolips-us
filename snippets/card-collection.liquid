@@ -137,7 +137,7 @@
               {{- card_collection.description | strip_html | truncatewords: 12 -}}
             </p>
           {%- endif -%}   
-      <button class="button button--bright-pink ">Shop Now</button>   
+      <div class="card__content button_mobile"><button class="button button--bright-pink ">Shop Now</button></div>   
     {%- endif -%}
     {%- if card_collection == blank -%}
       <div class="card__content">
