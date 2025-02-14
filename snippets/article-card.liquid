@@ -92,9 +92,9 @@
               {%- if article.excerpt.size > 0 or article.content.size > 0 -%}
                 <p class="article-card__excerpt rte-width body-sm">
                   {%- if article.excerpt.size > 0 -%}
-                    {{ article.excerpt | strip_html | truncate: 260 }}
+                    {{ article.excerpt | strip_html | truncate: 262 }}
                   {%- else -%}
-                    {{ article.content | strip_html | truncate: 260 }}
+                    {{ article.content | strip_html | truncate: 262 }}
                   {%- endif -%}
                 </p>
               {%- endif -%}
@@ -131,9 +131,9 @@
             {%- if article.excerpt.size > 0 or article.content.size > 0 -%}
               <p class="article-card__excerpt rte-width body-sm">
                 {%- if article.excerpt.size > 0 -%}
-                  {{ article.excerpt | strip_html | truncate: 260 }}
+                  {{ article.excerpt | strip_html | truncate: 262 }}
                 {%- else -%}
-                  {{ article.content | strip_html | truncate: 260 }}
+                  {{ article.content | strip_html | truncate: 262 }}
                 {%- endif -%}
               </p>
               <div class="text_link">
