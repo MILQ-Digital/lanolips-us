@@ -93,6 +93,7 @@
   width: 100%;
   padding-right: 3.2rem;
   padding-bottom: 1.5rem;
+  min-width: 93px;
 }
 
 .disclosure .localization-form__select {

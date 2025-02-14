@@ -265,7 +265,7 @@
 
 @media screen and (max-width: 1100px) {
   .collection-list .card.card--standard .card__inner  {
-    min-height: 247px;
+    max-height: 50vh;
   }
 }
 
