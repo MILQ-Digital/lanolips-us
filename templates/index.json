@@ -229,7 +229,7 @@
         "checkbox_LMyxQA"
       ],
       "custom_css": [
-        "@media screen and (max-width: 750px) {.banner__box {min-height: 78vh; margin-bottom: 65px; } .banner__heading {font-size: 38px; } .banner__heading em {font-size: 53px; }}"
+        "@media screen and (max-width: 750px) {.banner__box {min-height: 78vh; } .banner__heading {font-size: 38px; margin-bottom: 40px; } .banner__heading em {font-size: 53px; }}"
       ],
       "settings": {
         "image": "shopify://shop_images/SWIRL.png",
