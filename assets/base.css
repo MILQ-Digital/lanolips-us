@@ -214,6 +214,15 @@ body {
   .multicolumn-list .rte.body-lg {
     font-size: var(--heading-2xs);
   }
+
+  .rich-text__text.rte h2 {
+    font-size: var(--heading-sm);
+  }
+
+  .rich-text__text.rte.h1 {
+    font-size: 37px;
+    line-height: 40.7px;
+  }
 }
 
 .button.button--bright-pink {
