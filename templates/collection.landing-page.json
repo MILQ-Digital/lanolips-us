@@ -157,6 +157,8 @@
         "use_ingredients": false,
         "image_behavior": "none",
         "mobile_content_alignment": "left",
+        "mobile_page_padding": false,
+        "mobile_img_visibility": false,
         "padding_top": 36,
         "padding_bottom": 100
       }

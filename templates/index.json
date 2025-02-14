@@ -291,6 +291,86 @@
         "padding_bottom": 44,
         "section_class": ""
       }
+    },
+    "rich_text_636tak": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_E8CUpz": {
+          "type": "heading",
+          "settings": {
+            "heading": "Shop our IG",
+            "heading_size": "hs",
+            "enable_script": false
+          }
+        },
+        "text_7HMLTg": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Find us on Instagram  @lanolips  #lanolips</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_E8CUpz",
+        "text_7HMLTg"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-2",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 40
+      }
+    },
+    "173950177361100e1b": {
+      "type": "apps",
+      "blocks": {
+        "foursixty_shoppable_social_ugc_custom_slider_yTcYjG": {
+          "type": "shopify://apps/foursixty-shoppable-social-ugc/blocks/custom_slider/e2616dfe-fbb6-4e7d-874d-d250b973556d",
+          "settings": {
+            "foreground_color": "#ffffff",
+            "background_color": "#f3e5ef",
+            "background_color_alpha": 80,
+            "post_spacing": 10,
+            "hover_margin": 0,
+            "cell_size": "25%",
+            "target_blank": false,
+            "arrows_outside": false,
+            "show_icon": true,
+            "show_text": false,
+            "show_date": false,
+            "call_to_action": "",
+            "shop_type": "none",
+            "body_font_size": 14,
+            "body_font": "helvetica_n4",
+            "accent_font_size": 14,
+            "accent_font": "helvetica_n4",
+            "disable_filter": false,
+            "override_feed_id": "lanolips",
+            "arbitrary_attributes": "",
+            "custom_css": "",
+            "custom_js": ""
+          }
+        }
+      },
+      "block_order": [
+        "foursixty_shoppable_social_ugc_custom_slider_yTcYjG"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "rich_text_fbJVJQ": {
+      "type": "rich-text",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-2",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
     }
   },
   "order": [
@@ -299,6 +379,9 @@
     "image_with_text_WkDiJU",
     "collection_list_aGyhDV",
     "image_banner_rxCeJC",
-    "multicolumn_gqYkVh"
+    "multicolumn_gqYkVh",
+    "rich_text_636tak",
+    "173950177361100e1b",
+    "rich_text_fbJVJQ"
   ]
 }
