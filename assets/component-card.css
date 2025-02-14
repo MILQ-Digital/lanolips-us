@@ -876,4 +876,8 @@
   .article-card .card__content {
     padding-top: 40px;
   }
+
+  .article-card .card__heading>a {
+    font-size: var(--heading-md);
+  }
 }
