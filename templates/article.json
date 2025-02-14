@@ -41,7 +41,7 @@
       "type": "featured-blog",
       "settings": {
         "heading": "Read More",
-        "heading_size": "h1",
+        "heading_size": "h2",
         "blog": "blog",
         "post_limit": 3,
         "columns_desktop": 3,
