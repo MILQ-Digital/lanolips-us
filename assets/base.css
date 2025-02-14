@@ -210,7 +210,7 @@ body {
   }
 
   .multirow .rte h3,
-  .multicolumn-list h3,
+  .template-index .multicolumn-list h3,
   .template-index .multicolumn-list .rte.body-lg {
     font-size: var(--heading-2xs);
   }
