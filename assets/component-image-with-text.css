@@ -200,8 +200,8 @@
   }
 
   .image-with-text__text--caption  {
-    margin-bottom: 10px;
-    margin-top: 15px;
+    margin-bottom: 10px!important;
+    margin-top: 15px!important;
   }
 
 }
