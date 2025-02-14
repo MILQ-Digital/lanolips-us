@@ -842,6 +842,15 @@
     line-height: 160%;
   }
 
+  .collection-list .card-wrapper:hover .card.card--standard>.card__content {
+    background: transparent;
+  }
+
+  .collection-list .card-wrapper:hover .card__information p, 
+  .promo_banner .card-wrapper:hover .card__information p {
+    display: none;
+  }
+
   slider-component .collection-list .card:not(.ratio) {
     gap: 10px;
   }
