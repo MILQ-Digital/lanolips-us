@@ -441,8 +441,31 @@ slider-component.slider-component-full-width {
   transform: rotate(90deg) scale(1.1);
 }
 
-@media screen and (max-width: 750px) {
-  .collection  .slider-buttons {
+@media screen and (max-width: 960px) {
+  .slider--desktop.grid--5-col-desktop .grid__item {
+    width: 33.3334%;
+  }
+
+  .collection slider-component.slider-component-full-width {
+    padding-left: 0!important;
+    padding-right: 0!important;
+  }
+
+  .collection .slider-buttons,
+  .collection-list-wrapper .slider-buttons{
+    display: none;
+  }
+}
+
+@media screen and (max-width: 749px) {
+  .slider--desktop.grid--5-col-desktop .grid__item,
+  .slider--tablet.grid--peek.grid--1-col-tablet-down .grid__item, 
+  .slider--mobile.grid--peek.grid--1-col-tablet-down .grid__item {
+    width: calc(73.721% - var(--grid-mobile-horizontal-spacing) - 3rem);
+    padding: 0;
+  }
+
+  .product media-gallery .slider-buttons {
     display: none;
   }
 }
