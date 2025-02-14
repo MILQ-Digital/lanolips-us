@@ -3994,7 +3994,7 @@ details-disclosure > details {
   }
 
   .ingredient_item_content h3 {
-    font-size: 20px;
+    font-size: 20px;   
   }
 
   .image-with-text #buttonModal {
@@ -4011,13 +4011,13 @@ details-disclosure > details {
     gap: 15px;
   }
 
-  .image-with-text .modal_body {
+  .ingredientsModal  .modal_body {
     max-width: 90vw;
     padding: 20px 20px 20px;
   }
 
-  .image-with-text .modal_text {
+  .ingredientsModal .modal_text {
     font-size: var(--body-sm);
     line-height: 21px;
   }
-}
+} 

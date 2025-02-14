@@ -138,3 +138,10 @@
     }
   }
 }
+
+@media screen and (min-width: 750px) {
+  .collapsible-content__heading,
+  .accordion__title {
+    font-size: 20px;
+  }
+} 
