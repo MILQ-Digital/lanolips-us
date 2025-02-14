@@ -877,7 +877,7 @@
     padding-top: 40px;
   }
 
-  .article-card .card__heading>a {
+  .blog-articles .article:nth-child(1) .article-card .card__heading>a {
     font-size: var(--heading-md);
   }
 
@@ -886,7 +886,7 @@
     margin-top:  20px;
   }
 
-  .article-card__excerpt {
+  .blog-articles .article:nth-child(1) .article-card__excerpt {
     font-size: var(--body-lg);
   }
 }
