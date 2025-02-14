@@ -38,7 +38,7 @@
             show_image: section.settings.show_image,
             show_date: section.settings.show_date,
             show_author: section.settings.show_author,
-            show_excerpt: true | strip_html | truncate: 250
+            show_excerpt: article.excerpt | strip_html | truncate: 250
           -%}
         </div>
       {%- endfor -%}
