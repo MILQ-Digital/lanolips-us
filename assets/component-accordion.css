@@ -53,6 +53,7 @@
   margin: 0;
   word-break: break-word;
   align-items: center;
+  font-weight: 400;
 }
 
 .template--find-in-store .accordion__title  {
