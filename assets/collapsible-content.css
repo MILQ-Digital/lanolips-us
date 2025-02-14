@@ -144,4 +144,8 @@
   .accordion__title {
     font-size: 20px;
   }
+
+  .collapsible-content__heading {
+    margin-bottom: 0;
+  }
 } 
