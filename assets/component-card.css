@@ -880,4 +880,12 @@
   .article-card .card__heading>a {
     font-size: var(--heading-md);
   }
+
+  .article-card .card__heading {
+    margin-bottom:  20px;
+  }
+
+  .article-card__excerpt {
+    font-size: var(--body-lg);
+  }
 }
