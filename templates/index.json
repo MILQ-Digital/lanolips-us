@@ -228,6 +228,9 @@
         "heading_hVPN7C",
         "checkbox_LMyxQA"
       ],
+      "custom_css": [
+        "@media screen and (max-width: 750px) {.banner__box {min-height: 78vh; }}"
+      ],
       "settings": {
         "image": "shopify://shop_images/SWIRL.png",
         "image_overlay_opacity": 0,
