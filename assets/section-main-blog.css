@@ -77,7 +77,7 @@
   .blog-articles .article:nth-child(1) .card ,.blog-articles .article:nth-child(4) .card { flex-direction: row; align-items: flex-end; column-gap: 20px; }
   .blog-articles .article:nth-child(1) .card__information, .blog-articles .article:nth-child(4) .card__information {padding-right: 80px;}
   .blog-articles .article:nth-child(1) .card__inner, .blog-articles .article:nth-child(4) .card__inner {
-    min-height: 730px;
+    min-height: 70vh;
   }
   .blog-articles .article:nth-child(1) .card__content,
   .blog-articles .article:nth-child(4) .card__content{
