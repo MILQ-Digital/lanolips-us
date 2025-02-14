@@ -360,6 +360,17 @@
       "settings": {
         "include_margins": true
       }
+    },
+    "rich_text_fbJVJQ": {
+      "type": "rich-text",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-2",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
     }
   },
   "order": [
@@ -370,6 +381,7 @@
     "image_banner_rxCeJC",
     "multicolumn_gqYkVh",
     "rich_text_636tak",
-    "173950177361100e1b"
+    "173950177361100e1b",
+    "rich_text_fbJVJQ"
   ]
 }
