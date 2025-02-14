@@ -868,7 +868,7 @@
     font-size: var(--body-xs);
   }
 
-  .card--standard>.card__content .card__information {
+  .card--standard:not(.article-card)>.card__content .card__information {
     flex-direction: column-reverse;
     display: flex;
   }
