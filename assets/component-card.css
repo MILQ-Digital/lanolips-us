@@ -837,6 +837,11 @@
     padding-right: 0 !important;
   }
 
+  .collection-list .card__caption_bottom {
+    font-size: var(--body-sm);
+    line-height: 160%;
+  }
+
   slider-component .collection-list .card:not(.ratio) {
     gap: 10px;
   }
