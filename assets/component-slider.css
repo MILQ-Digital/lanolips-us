@@ -474,4 +474,12 @@ slider-component.slider-component-full-width {
   .product media-gallery .slider-buttons {
     display: none;
   }
+
+  .collection-list.slider--tablet li .grid__item {
+    width: calc(70.26% - var(--grid-mobile-horizontal-spacing) - 3rem);
+  }
+
+  .collection-list .card.card--standard .card__inner {
+    max-height: 247px;
+  }
 }
