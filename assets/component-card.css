@@ -263,6 +263,12 @@
   }
 }*/
 
+@media screen and (max-width: 1100px) {
+  .collection-list .card.card--standard .card__inner  {
+    min-height: 247px;
+  }
+}
+
 .collection-list .card-wrapper:hover .card.card--standard > .card__content {
   background: rgb(255,255,255);
   background: -moz-linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(0,0,0,0.14889705882352944) 100%);
