@@ -81,7 +81,7 @@
   }
 
   .collection__title.title-wrapper--self-padded-tablet-down {
-    padding: 0 5rem;
+    padding: 0 var(--outer); 
   }
 
   .collection slider-component:not(.page-width-desktop) {
@@ -89,7 +89,7 @@
   }
 
   .collection--full-width slider-component:not(.slider-component-desktop) {
-    padding: 0 1.5rem;
+    padding: 0 var(--outer);
     max-width: none;
   }
 }
