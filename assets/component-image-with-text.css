@@ -199,6 +199,11 @@
     padding: 25px 0 45px;
   }
 
+  .image-with-text__text--caption  {
+    margin-bottom: 10px;
+    margin-top: 15px;
+  }
+
 }
 
 .image-with-text .grid__item::after {

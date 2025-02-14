@@ -3984,4 +3984,20 @@ details-disclosure > details {
   .contact-page .main-page-title {
     margin-top: 29px;
   }
+
+  .ingredient_item_icon {
+    width: 60px;
+  }
+
+  .ingredients_section {
+    padding: 0 16px;
+  }
+
+  .ingredient_item_content h3 {
+    font-size: 20px;
+  }
+
+  .image-with-text #buttonModal {
+    margin: 2rem auto 0;
+  }
 }
