@@ -154,7 +154,7 @@
         "content_layout": "no-overlap",
         "section_color_scheme": "",
         "color_scheme": "",
-        "use_ingredients": false,
+        "use_ingredients": true,
         "image_behavior": "none",
         "mobile_content_alignment": "left",
         "mobile_page_padding": false,
