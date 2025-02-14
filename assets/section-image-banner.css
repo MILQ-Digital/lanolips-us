@@ -492,6 +492,12 @@
     padding-left: var(--outer);
     padding-right: var(--outer);
   }
+
+  .slideshow__text .rte {
+    max-width: 100%;
+    font-size: var(--body-lg);
+    line-height: 150%;
+  }
 }
 
 @media screen and (min-width: 750px) {
