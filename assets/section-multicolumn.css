@@ -235,7 +235,7 @@
 
   .multicolumn-list .media.media--square {
     max-height: max-content;
-    padding-bottom: 100%;
+    padding-bottom: 282px;
   }  
 
   .multicolumn-list:not(.slider) {
