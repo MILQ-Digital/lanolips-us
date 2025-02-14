@@ -210,6 +210,11 @@
     font-size: var(--heading-sm);
   }
 
+  .image-with-text__content .subtitle {
+    font-size: var(--body-sm);
+    line-height: 160%;
+  }
+
 }
 
 .image-with-text .grid__item::after {
