@@ -498,6 +498,10 @@
     font-size: var(--body-lg);
     line-height: 150%;
   }
+
+  .banner__box>*+.banner__buttons {
+    margin-top: 0;
+  }
 }
 
 @media screen and (min-width: 750px) {
