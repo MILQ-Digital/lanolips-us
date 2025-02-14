@@ -218,4 +218,9 @@ product-recommendations.is-accordion + .accordion {
     max-width: 113px;
     max-height: 135px;
   }
+
+  .complementary-products__container .card--standard>.card__content .card__information {
+    min-height: auto;
+    padding-top: 0;
+  }
 }
