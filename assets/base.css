@@ -337,6 +337,7 @@ body {
   align-items: center;
   justify-content: center;
   gap: 8px;
+  font-weight: 500;
 }
 
 .text_link .read-more {
