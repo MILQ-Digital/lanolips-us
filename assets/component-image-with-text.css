@@ -215,6 +215,10 @@
     line-height: 160%;
   }
 
+  .image-with-text__content .image-with-text__text+.button {
+    margin-top: 15px;
+  }
+
 }
 
 .image-with-text .grid__item::after {
