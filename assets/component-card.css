@@ -872,4 +872,8 @@
     flex-direction: column-reverse;
     display: flex;
   }
+
+  .article-card .card__content {
+    padding-top: 40px;
+  }
 }
