@@ -166,7 +166,13 @@
                   </div>
                 {%- when 'button' -%}
                   {%- if section.settings.use_ingredients -%}
-                    {%- assign features_metaobject_references = product.metafields.custom.ingredients_icons -%}
+
+                    {% if template contains 'product' %}
+                      {%- assign features_metaobject_references = product.metafields.custom.ingredients_icons -%}
+                    {% elsif template contains 'collection' %}
+                      {%- assign features_metaobject_references = collection.metafields.custom.ingredients_icons -%}
+                    {% endif %}
+
                     {% if features_metaobject_references.value != blank %}
                       <div class="ingredients_section">
                         {%- for metaobject_reference in features_metaobject_references.value -%}
@@ -211,9 +217,15 @@
                     {%- if section.settings.use_ingredients -%}
                       <script>
                           document.addEventListener("DOMContentLoaded", function () {
-                            window.productMetafields = {
-                              ingredients_text: {{ product.metafields.custom.ingredients_text | strip_newlines | replace: '"', '\"' | replace: "\n", "<br>" | json }}
-                            };  
+                            {% if template contains 'product' %}
+                                window.productMetafields = {
+                                  ingredients_text: {{ product.metafields.custom.ingredients_text | strip_newlines | replace: '"', '\"' | replace: "\n", "<br>" | json }}
+                                };
+                              {% elsif template contains 'collection' %}
+                                window.productMetafields = {
+                                  ingredients_text: {{ collection.metafields.custom.ingredients_text | strip_newlines | replace: '"', '\"' | replace: "\n", "<br>" | json }}
+                                };
+                              {% endif %}
                               const openButton = document.getElementById("buttonModal");
                               openButton.addEventListener("click", function () {
                                   if (!document.querySelector(".ingredientsModal")) {
