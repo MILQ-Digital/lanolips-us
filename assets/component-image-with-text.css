@@ -1,6 +1,16 @@
 .image-with-text {
-  border-radius: 20px;
-  overflow: hidden;
+  border-radius: 20px!important;
+  overflow: hidden!important;
+}
+
+.image-with-text__caption {
+  padding-bottom: 40px;
+}
+
+.image-with-text__caption figcaption {
+  padding: 10px 20px;
+  font-size: var(--body-sm);
+  line-height: 160%; 
 }
 
 .image-with-text .grid {
@@ -11,15 +21,91 @@
   position: relative;
 }
 
+.contact-page .image-with-text__content {
+  justify-content: center;
+}
+
 .contact-page .image-with-text__content form .field:after {
   border: none;  
 }
+.contact-page .image-with-text__content form {
+  width: 90.25%; 
+  margin: 2rem auto 0
+}
+
+.contact-page .image-with-text__heading,
+.contact-page .image-with-text__text {
+  width: 90.25%; 
+  margin: 0 auto 0;
+}
+
+.contact-page .image-with-text__text {
+  margin: 25px auto 10px;
+}
+
 .contact-page .image-with-text__content form .field, .contact-page .image-with-text__content form .field > label {display: block}
 .contact-page .image-with-text__content .contact__fields {display: flex; column-gap: 20px;}
-.contact-page .image-with-text__content .field__input {border: 1px solid}
+.contact-page .image-with-text__content .field__input {border: 1px solid; color: #6081BD; height: 43px}
 .contact-page .image-with-text__content form .field {margin-bottom: 25px;}
-.contact-page .image-with-text__content .field__select {padding-top: 8px;}
+.contact-page .image-with-text__content .field__select {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-right: 40px; /* Space for the arrow */
+  -webkit-appearance: none;
+  appearance: none;
+  position: relative;
+  cursor: pointer;
+  background-image: url('data:image/svg+xml,<svg width="14" height="9" viewBox="0 0 14 9" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M2.21875 0.75L7 5.38563L11.7812 0.75L13.25 2.17713L7 8.25L0.75 2.17713L2.21875 0.75Z" fill="%232B4676"/></svg>');
+  background-repeat: no-repeat;
+  background-position: right 15px center;
+  background-size: 14px 9px;
+}
+
+/* Hide default dropdown arrow in older versions of Edge & IE */
+.contact-page .image-with-text__content .field__select::-ms-expand {
+  display: none;
+}
+
+.contact-page .image-with-text__content .field__input::placeholder {
+  color: #6081BD; /* Change to your desired color */
+  opacity: 1; /* Ensure full visibility */
+}
+
+/* For older browsers */
+.contact-page .image-with-text__content .field__input:-ms-input-placeholder {
+  color: #6081BD;
+}
+
+.contact-page .image-with-text__content .field__input::-ms-input-placeholder {
+  color: #6081BD;
+}
+
+
 .contact-page .image-with-text__content form .field:after {box-shadow: none;}
+.contact-page .image-with-text__text-item {max-width: 794px;}
+
+.contact-page .image-with-text__content button {
+  min-width: 178px;
+  height: 44px;
+}
+
+@media screen and (max-width: 1200px) {
+  .contact-page .image-with-text__content{
+    padding: 60px 20px;
+  }
+}
+
+@media screen and (max-width: 812px) {
+  .contact-page .image-with-text__content form,
+  .contact-page .image-with-text__heading,
+  .contact-page .image-with-text__text {
+    width: 100%;
+  }
+
+  .contact-page .image-with-text__content .contact__fields {
+    flex-direction: column;
+  }
+}
 
 @media screen and (min-width: 750px) {
   .image-with-text__grid--reverse {
@@ -108,6 +194,33 @@
   z-index: 1;
 }
 
+@media screen and (max-width: 750px) {
+  .image-with-text__content {
+    padding: 25px var(--outer) 45px;
+    text-align: center;
+    align-items: center;
+  }
+
+  .image-with-text__text--caption  {
+    margin-bottom: 10px!important;
+    margin-top: 15px!important;
+  }
+
+  .image-with-text__heading.hm {
+    font-size: var(--heading-sm);
+  }
+
+  .image-with-text__content .subtitle {
+    font-size: var(--body-sm);
+    line-height: 160%;
+  }
+
+  .image-with-text__content .image-with-text__text+.button {
+    margin-top: 15px;
+  }
+
+}
+
 .image-with-text .grid__item::after {
   content: '';
   position: absolute;
@@ -171,6 +284,9 @@
   .image-with-text.collapse-borders:not(.image-with-text--overlap) .image-with-text__content {
     border-top: 0;
   }
+  .disable-img--mobile-true {display: none}
+  .page-width-padding-true {padding: 0;}
+  .page-width-padding-true .image-with-text {border-radius: 0}
 }
 
 .image-with-text__content--mobile-right > * {
@@ -432,7 +548,8 @@
   }
 }
 
-.color-scheme-2.image-with-text .grid__item.image-with-text__media-item {
+.color-scheme-2.image-with-text .grid__item.image-with-text__media-item,
+.color-scheme-3.image-with-text .grid__item.image-with-text__media-item{
   border-radius: 20px;
   overflow: hidden;
 }

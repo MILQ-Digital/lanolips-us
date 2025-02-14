@@ -21,6 +21,8 @@
 .accordion summary[aria-expanded="true"] .accordion_icons .icon-minus,
 .accordion summary[aria-expanded="false"] .accordion_icons .icon-plus{
   display: block;
+  height: 14.4px;
+  width: 14.4px;
 }
 
 .accordion .summary__title {
@@ -51,6 +53,21 @@
   margin: 0;
   word-break: break-word;
   align-items: center;
+  font-weight: 400;
+}
+
+.template--find-in-store .accordion__title  {
+  font-size: var(--heading-sm);
+  line-height: 120%; /* 43.2px */
+  font-weight: 500;
+}
+
+@media screen and (max-width: 749px) {
+  .template--find-in-store .collapsible-content__media  {
+    margin-left: -16px;
+    margin-right: -16px;
+    border-radius: 0!important;
+  }
 }
 
 .accordion .svg-wrapper {
@@ -66,7 +83,7 @@
 }
 
 .accordion__content {
-  margin-bottom: 1.5rem;
+  margin-bottom: .5rem;
   word-break: break-word;
   overflow-x: auto;
   padding: 0 0.6rem;

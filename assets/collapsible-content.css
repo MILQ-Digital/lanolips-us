@@ -97,15 +97,20 @@
 }
 
 .collapsible-content .accordion summary {
-  padding: 3rem 0;
+  padding: 2.2rem 0;
 }
 
 .collapsible-content .accordion__content {
   padding: 0;
 }
 
+.collapsible-content .accordion__content p {
+  margin: 0;
+}
+
 .collapsible-content .accordion details[open] .accordion__content  {
-  padding-bottom: 4rem;;
+  /*padding-bottom: 4rem;;*/ 
+  padding-bottom: 1.2rem;
 }
 
 .collapsible-content .accordion:last-child {
@@ -134,6 +139,13 @@
   }
 }
 
-@media screen and (min-width: 960px) {
+@media screen and (max-width: 750px) {
+  .collapsible-content__heading,
+  .accordion__title {
+    font-size: 20px;
+  }
 
-}
+  .collapsible-content__heading {
+    margin-bottom: 0;
+  }
+} 

@@ -35,11 +35,12 @@
   }
 
   @media screen and (max-width: 749px) {
-    .collapsible-content__image,
     .faq-group-links {
       display: none;
       visibility: hidden;
     } 
+    .disable-img--mobile-true {display: none;}
+    .disable-img--mobile-false .media {top: 0!important}
   }
 
 
@@ -50,7 +51,11 @@
 <div class="page-width section-{{ section.id }}-padding">
 
   <h1 class="main-page-title page-title heading-xl {% if settings.animations_reveal_on_scroll %} scroll-trigger animate--fade-in{% endif %}">
-    {{ page.title | escape }}
+    {% if section.settings.custom_page_title != blank %}
+    {{ section.settings.custom_page_title | escape }}
+    {% else %}
+      {{ page.title | escape }}
+    {% endif %}
   </h1>
   <div class="rte{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
 
@@ -82,7 +87,7 @@
         <div class="collapsible-content-wrapper">          
           <div class="grid grid--1-col grid--2-col-tablet collapsible-content__grid{% if section.settings.desktop_layout == 'image_second' %} collapsible-content__grid--reverse{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
             {%- if section.settings.image != blank -%}
-              <div class="grid__item collapsible-content__grid-item collapsible-content__image">
+              <div class="grid__item collapsible-content__grid-item collapsible-content__image disable-img--mobile-{{ section.settings.mobile_img_visibility }}">
                 <div
                   class="collapsible-content__media collapsible-content__media--{{ section.settings.image_ratio }} media global-media-settings gradient"
                   {% if section.settings.image_ratio == 'adapt' %}
@@ -296,6 +301,11 @@
       "default": 36
     },
     {
+      "type": "text",
+      "id": "custom_page_title",
+      "label": "Custom Title"
+    },
+    {
       "type": "checkbox",
       "id": "hidepage_content",
       "default": false,
@@ -349,7 +359,13 @@
       "id": "use_metaobject_faq",
       "default": false,
       "label": "Use dynamic faqs"
-    },    
+    },  
+    {
+      "type": "checkbox",
+      "id": "mobile_img_visibility",
+      "default": false,
+      "label": "Hide image on mobile"
+    },
     {
       "type": "header",
       "content": "t:sections.collapsible_content.settings.header.content"

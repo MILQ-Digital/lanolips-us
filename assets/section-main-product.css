@@ -1585,13 +1585,13 @@ a.product__text {
 }
 
 .product_features_icons {
-  margin: 2.5rem 0;
+  margin: 4rem 0;
+  display: flex;
+  align-items: end;
+  column-gap: 20px;
 }
 
-@media only screen and (max-width:749px) { 
-  .product_features_icons {
-    grid-template-columns: repeat(4, 4fr);
-    gap: 20px;
-    display: grid
-  }
+.product_features_icons img {
+  width: 100%;
+  max-width: 65px;
 }

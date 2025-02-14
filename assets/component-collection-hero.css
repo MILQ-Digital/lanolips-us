@@ -51,7 +51,7 @@
   }
   
   .collection-hero__description {
-    width: 49%;
+    width: 48%;
   }
 }
 
@@ -119,4 +119,21 @@
 
 .sub-collection-item:hover img {
   transform: scale(1.1); /* Scale up by 10% on hover */
+}
+
+@media screen and (max-width: 750px) { 
+  .sub_collection_image {
+    width: 68px;
+    height: 86px;
+    border-radius: 5px;
+  }
+
+  .sub-collection-item h3 {
+    font-size: 12px;
+    line-height:  15.6px;
+  }
+
+  .sub-collections-grid {
+    grid-gap: 10px;
+  }
 }

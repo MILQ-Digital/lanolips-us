@@ -78,6 +78,9 @@
 
   #buttonModal {
     cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 19.6px;
   } 
 
   .modal_text {
@@ -101,10 +104,10 @@
 -%}
 
 <div class="section-{{ section.id }}-padding">
-  <div class="page-width">
+  <div class="page-width page-width-padding-{{ section.settings.mobile_page_padding }}">
     <div class="gradient color-{{ section.settings.section_color_scheme }} image-with-text image-with-text--{{ section.settings.content_layout }} isolate{% if settings.text_boxes_border_thickness > 0 and settings.text_boxes_border_opacity > 0 and settings.media_border_thickness > 0 and settings.media_border_opacity > 0 %} collapse-borders{% endif %}{% unless section.settings.color_scheme == section.settings.section_color_scheme and settings.media_border_thickness > 0 and settings.text_boxes_shadow_opacity == 0 and settings.text_boxes_border_thickness == 0 or settings.text_boxes_border_opacity == 0 %} collapse-corners{% endunless %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
       <div class="image-with-text__grid grid grid--gapless grid--1-col grid--{% if section.settings.desktop_image_width == 'medium' %}2-col-tablet{% else %}3-col-tablet{% endif %}{% if section.settings.layout == 'text_first' %} image-with-text__grid--reverse{% endif %}">
-        <div class="image-with-text__media-item image-with-text__media-item--{{ section.settings.desktop_image_width }} image-with-text__media-item--{{ section.settings.desktop_content_position }} grid__item">
+        <div class="{% if section.settings.image.alt %}image-with-text__caption {% endif %}image-with-text__media-item image-with-text__media-item--{{ section.settings.desktop_image_width }} image-with-text__media-item--{{ section.settings.desktop_content_position }} grid__item disable-img--mobile-{{ section.settings.mobile_img_visibility }}">
           <div
             class="image-with-text__media image-with-text__media--{{ section.settings.height }} global-media-settings{% unless remove_color_classes %} gradient color-{{ section.settings.color_scheme }}{% else %} background-transparent{% endunless %}{% if section.settings.image != blank %} media{% else %} image-with-text__media--placeholder placeholder{% endif %}{% if section.settings.image_behavior != 'none' %} animate--{{ section.settings.image_behavior }}{% endif %}"
             {% if section.settings.height == 'adapt' and section.settings.image != blank %}
@@ -134,6 +137,10 @@
               {{ 'detailed-apparel-1' | placeholder_svg_tag: 'placeholder-svg' }}
             {%- endif -%}
           </div>
+          {% if section.settings.image.alt %}
+            <figcaption>{{ section.settings.image.alt }}</figcaption>
+          {% endif %}
+
         </div>
         <div class="image-with-text__text-item grid__item">
           <div
@@ -162,7 +169,13 @@
                   </div>
                 {%- when 'button' -%}
                   {%- if section.settings.use_ingredients -%}
-                    {%- assign features_metaobject_references = product.metafields.custom.ingredients_icons -%}
+
+                    {% if template contains 'product' %}
+                      {%- assign features_metaobject_references = product.metafields.custom.ingredients_icons -%}
+                    {% elsif template contains 'collection' %}
+                      {%- assign features_metaobject_references = collection.metafields.custom.ingredients_icons -%}
+                    {% endif %}
+
                     {% if features_metaobject_references.value != blank %}
                       <div class="ingredients_section">
                         {%- for metaobject_reference in features_metaobject_references.value -%}
@@ -207,9 +220,15 @@
                     {%- if section.settings.use_ingredients -%}
                       <script>
                           document.addEventListener("DOMContentLoaded", function () {
-                            window.productMetafields = {
-                              ingredients_text: {{ product.metafields.custom.ingredients_text | strip_newlines | replace: '"', '\"' | replace: "\n", "<br>" | json }}
-                            };  
+                            {% if template contains 'product' %}
+                                window.productMetafields = {
+                                  ingredients_text: {{ product.metafields.custom.ingredients_text | strip_newlines | replace: '"', '\"' | replace: "\n", "<br>" | json }}
+                                };
+                              {% elsif template contains 'collection' %}
+                                window.productMetafields = {
+                                  ingredients_text: {{ collection.metafields.custom.ingredients_text | strip_newlines | replace: '"', '\"' | replace: "\n", "<br>" | json }}
+                                };
+                              {% endif %}
                               const openButton = document.getElementById("buttonModal");
                               openButton.addEventListener("click", function () {
                                   if (!document.querySelector(".ingredientsModal")) {
@@ -276,11 +295,11 @@
                   <div class="contact__fields">
                     <div class="field">
                       <label for="contact_first_name">First Name</label>
-                      <input type="text" id="contact_first_name" name="contact[first_name]" placeholder="Your First Name" class="field__input">
+                      <input type="text" id="contact_first_name" name="contact[first_name]" placeholder="John" class="field__input">
                     </div>
                     <div class="field">
                       <label for="contact_last_name">Last Name</label>
-                      <input type="text" id="contact_last_name" name="contact[last_name]" placeholder="Your Last Name" class="field__input">
+                      <input type="text" id="contact_last_name" name="contact[last_name]" placeholder="Smith" class="field__input">
                     </div>
                    </div> 
                     <div class="field field--with-error">
@@ -292,6 +311,7 @@
                         class="field__input"
                         name="contact[email]"
                         spellcheck="false"
+                        placeholder="ie: name@email.com"
                         autocapitalize="off"
                         value="{% if form.email %}{{ form.email }}{% elsif customer %}{{ customer.email }}{% endif %}"
                         aria-required="true"
@@ -320,6 +340,7 @@
                     <input
                       type="tel"
                       id="ContactForm-phone"
+                      placeholder="ie"
                       class="field__input"
                       autocomplete="tel"
                       name="contact[{{ 'templates.contact.form.phone' | t }}]"
@@ -343,7 +364,7 @@
                       id="ContactForm-body"
                       class="text-area field__input"
                       name="contact[{{ 'templates.contact.form.comment' | t }}]"
-                      placeholder="{{ 'templates.contact.form.comment' | t }}"
+                      placeholder="Type your message"
                     >
                       {{- form.body -}}
                     </textarea>
@@ -566,6 +587,23 @@
       "default": "left",
       "label": "t:sections.image-with-text.settings.mobile_content_alignment.label"
     },
+    {
+      "type": "checkbox",
+      "id": "mobile_page_padding",
+      "default": false,
+      "label": "No page padding"
+    },
+
+    {
+      "type": "header",
+      "content": "Mobile Image Visibility"
+    },
+    {
+      "type": "checkbox",
+      "id": "mobile_img_visibility",
+      "default": false,
+      "label": "Disable image"
+    },    
     {
       "type": "header",
       "content": "t:sections.all.padding.section_padding_heading"

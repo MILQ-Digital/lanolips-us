@@ -13,13 +13,15 @@
       "type": "main-page",
       "settings": {
         "padding_top": 36,
-        "padding_bottom": 0,
+        "padding_bottom": 16,
+        "custom_page_title": "",
         "hidepage_content": true,
         "layout": "none",
         "color_scheme": "",
         "container_color_scheme": "",
         "open_first_collapsible_row": false,
         "use_metaobject_faq": false,
+        "mobile_img_visibility": false,
         "image_ratio": "adapt",
         "desktop_layout": "image_second"
       }
@@ -59,6 +61,13 @@
             "heading_size": "hs"
           }
         },
+        "text_eWBYAD": {
+          "type": "text",
+          "settings": {
+            "text": "<p>All fields are mandatory<br/></p>",
+            "text_style": "body"
+          }
+        },
         "contact_form_NEqNGw": {
           "type": "contact_form",
           "settings": {}
@@ -66,20 +75,24 @@
       },
       "block_order": [
         "heading_BbxH7D",
+        "text_eWBYAD",
         "contact_form_NEqNGw"
       ],
       "settings": {
+        "image": "shopify://shop_images/Contact_image.jpg",
         "height": "adapt",
         "desktop_image_width": "medium",
         "layout": "text_first",
         "desktop_content_position": "top",
         "desktop_content_alignment": "left",
         "content_layout": "no-overlap",
-        "section_color_scheme": "",
-        "color_scheme": "",
+        "section_color_scheme": "scheme-d5318ffc-bc5c-488a-857c-d56b094f9f8b",
+        "color_scheme": "scheme-d5318ffc-bc5c-488a-857c-d56b094f9f8b",
         "use_ingredients": false,
         "image_behavior": "none",
         "mobile_content_alignment": "left",
+        "mobile_page_padding": true,
+        "mobile_img_visibility": true,
         "padding_top": 0,
         "padding_bottom": 40
       }
@@ -91,7 +104,7 @@
           "type": "column",
           "settings": {
             "title": "Consumer and Wholesale Enquiries",
-            "text": "<p>Lanolips Pty Ltd (Australia)<br/><a href=\"mailto:lanolips@shapr.com.au\" title=\"mailto:lanolips@shapr.com.au\">lanolips@shapr.com.au</a></p>",
+            "text": "<p>Lanolips Pty Ltd (Australia)<br/><a href=\"mailto:hello@lanolips.com\">hello@lanolips.com</a></p>",
             "link_label": "",
             "link": "",
             "button_style_secondary": false
@@ -101,7 +114,7 @@
           "type": "column",
           "settings": {
             "title": "Press Enquiries",
-            "text": "<p>Australia: Sha PR<br/><a href=\"mailto:lanolips@shapr.com.au\" title=\"mailto:lanolips@shapr.com.au\">lanolips@shapr.com.au</a></p><p>Australia: Sha PR<br/>lanolips@shapr.com.au</p><p>Australia: Sha PR<br/><a href=\"mailto:lanolips@shapr.com.au\" title=\"mailto:lanolips@shapr.com.au\">lanolips@shapr.com.au</a></p><p>Australia: Sha PR<br/><a href=\"mailto:lanolips@shapr.com.au\" title=\"mailto:lanolips@shapr.com.au\">lanolips@shapr.com.au</a></p><p>Australia: Sha PR<br/><a href=\"mailto:lanolips@shapr.com.au\" title=\"mailto:lanolips@shapr.com.au\">lanolips@shapr.com.au</a></p><p>Australia: Sha PR<br/><a href=\"mailto:lanolips@shapr.com.au\" title=\"mailto:lanolips@shapr.com.au\">lanolips@shapr.com.au</a></p><p>Australia: Sha PR<br/><a href=\"mailto:lanolips@shapr.com.au\" title=\"mailto:lanolips@shapr.com.au\">lanolips@shapr.com.au</a></p><p>Australia: Sha PR<br/><a href=\"mailto:lanolips@shapr.com.au\" title=\"mailto:lanolips@shapr.com.au\">lanolips@shapr.com.au</a><br/><br/></p>",
+            "text": "<p>Australia: Sha PR<br/><a href=\"mailto:lanolips@shapr.com.au\">lanolips@shapr.com.au</a></p><p>USA: Alison Brod Marketing + Communications<br/><a href=\"mailto:press@lanolips.com\">press@lanolips.com</a></p><p>CA: Lanolips USA<br/><a href=\"mailto:hellousa@lanolips.com\">hellousa@lanolips.com</a></p><p>UK: Imagination PR<br/><a href=\"mailto:lano@imaginationpr.co.uk\" title=\"mailto:lano@imaginationpr.co.uk\">lano@imaginationpr.co.uk</a></p><p>FR: Nice Work (Paris)<br/><a href=\"mailto:charlotte@nicework.fr\">charlotte@nicework.fr</a></p><p>DE: LOVEMARK Public Relations (Germany)<br/><a href=\"tel:+49 (0)89 74747070\">+49 (0)89 74747070<br/></a><a href=\"mailto:lanolips@lovemark-pr.com\" title=\"mailto:lanolips@lovemark-pr.com\">lanolips@lovemark-pr.com</a></p><p>ME: Red Havas (UAE)<br/><a href=\"mailto:soufia.ramadan@redhavasme.com\" title=\"mailto:soufia.ramadan@redhavasme.com\">soufia.ramadan@redhavasme.com</a><br/></p>",
             "link_label": "",
             "link": "",
             "button_style_secondary": false

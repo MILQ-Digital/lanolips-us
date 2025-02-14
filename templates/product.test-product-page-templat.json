@@ -173,10 +173,10 @@
         "row_6chNdY": {
           "type": "row",
           "settings": {
-            "image": "{{ product.metafields.custom.product_highlights_image.value }}",
+            "image": "shopify://shop_images/Model-close-up-shot-applying-12-Hour-Overnight-Lip-Mask_ebdc2689-e294-48f6-9f62-204b7486d3f2.jpg",
             "caption": "",
-            "heading": "{{ product.metafields.custom.product_highlights_title.value }}",
-            "text": "{{ product.metafields.custom.product_highlight_content | metafield_tag }}",
+            "heading": "TEST",
+            "text": "<h3>Feels Like:</h3><p>Rich, buttery that melts onto lips</p><h3>Smells Like:</h3><p>A light hint of vanilla and honey</p><h3>Why We Love It:</h3><p>Soften, strengthen  and replenish your lips while you sleep.</p>",
             "button_label": "",
             "button_link": ""
           }
@@ -196,9 +196,6 @@
       "block_order": [
         "row_6chNdY",
         "row_Rxra9Y"
-      ],
-      "custom_css": [
-        "@media screen and (max-width: 750px) {.image-with-text__content {text-align: left; align-items: flex-start; }}"
       ],
       "settings": {
         "image_height": "adapt",
@@ -222,7 +219,7 @@
         "column_KJWMef": {
           "type": "column",
           "settings": {
-            "image": "{{ product.metafields.custom.before_image.value }}",
+            "image": "shopify://shop_images/before-after-img.jpg",
             "title": "Before",
             "text": "",
             "link_label": "",
@@ -233,7 +230,7 @@
         "column_aAdR9K": {
           "type": "column",
           "settings": {
-            "image": "{{ product.metafields.custom.after_image.value }}",
+            "image": "shopify://shop_images/before-after-img.jpg",
             "title": "After",
             "text": "",
             "link_label": "",
@@ -246,6 +243,7 @@
         "column_KJWMef",
         "column_aAdR9K"
       ],
+      "disabled": true,
       "custom_css": [
         ".title {margin: 0 auto;}"
       ],
@@ -262,10 +260,9 @@
         "color_scheme": "scheme-2",
         "columns_mobile": "1",
         "swipe_on_mobile": false,
-        "mobile_full": false,
         "padding_top": 36,
         "padding_bottom": 36,
-        "section_class": "before_after"
+        "section_class": ""
       }
     },
     "rich_text_qVEiKy": {
@@ -280,7 +277,7 @@
         "heading_VM7xA3": {
           "type": "heading",
           "settings": {
-            "heading": "<span style=\"text-decoration:underline\">No more dry skin</span>",
+            "heading": "No more dry skin",
             "heading_size": "hl",
             "enable_script": true
           }
@@ -289,9 +286,6 @@
       "block_order": [
         "text_3mwk6C",
         "heading_VM7xA3"
-      ],
-      "custom_css": [
-        ".lanoscript span {text-decoration: underline !important; text-decoration-thickness: 2px !important; text-underline-offset: 7px !important;}"
       ],
       "settings": {
         "desktop_content_position": "center",
@@ -328,8 +322,9 @@
         "caption_XmXXfB",
         "button_hwfChE"
       ],
+      "disabled": true,
       "settings": {
-        "image": "{{ product.metafields.custom.ingredients_section_image.value }}",
+        "image": "shopify://shop_images/Rectangle_93_1a6f4fa9-9178-403d-9541-010c43bd0923.jpg",
         "height": "adapt",
         "desktop_image_width": "medium",
         "layout": "text_first",
@@ -353,7 +348,7 @@
         "image_picker_k7KxyT": {
           "type": "image_picker",
           "settings": {
-            "image_icon": "shopify://shop_images/Vector.png"
+            "image_icon": "shopify://shop_images/Vector.svg"
           }
         },
         "heading_PEU8jG": {
@@ -386,6 +381,7 @@
         "text_b8h9GQ",
         "button_maJHVc"
       ],
+      "disabled": true,
       "settings": {
         "image": "shopify://shop_images/sustainable_packaging.jpg",
         "height": "adapt",
@@ -408,13 +404,6 @@
     "1737799782ee5d4384": {
       "type": "apps",
       "blocks": {
-        "yotpo_product_reviews_reviews_JbQ6VR": {
-          "type": "shopify://apps/yotpo-product-reviews/blocks/reviews/eb7dfd7d-db44-4334-bc49-c893b51b36cf",
-          "disabled": true,
-          "settings": {
-            "product": "{{product}}"
-          }
-        },
         "yotpo_product_reviews_reviews_carousel_XReKcQ": {
           "type": "shopify://apps/yotpo-product-reviews/blocks/reviews_carousel/eb7dfd7d-db44-4334-bc49-c893b51b36cf",
           "settings": {
@@ -423,7 +412,6 @@
         }
       },
       "block_order": [
-        "yotpo_product_reviews_reviews_JbQ6VR",
         "yotpo_product_reviews_reviews_carousel_XReKcQ"
       ],
       "settings": {
@@ -454,9 +442,17 @@
     "collapsible_content_GiNw6Y": {
       "type": "collapsible-content",
       "blocks": {
+        "collapsible_row_dEDXpt": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "101 Ointment Common Questions",
+            "icon": "check_mark",
+            "row_content": "",
+            "page": ""
+          }
+        },
         "collapsible_row_8Grf4Q": {
           "type": "collapsible_row",
-          "disabled": true,
           "settings": {
             "heading": "Collapsible row",
             "icon": "check_mark",
@@ -466,8 +462,10 @@
         }
       },
       "block_order": [
+        "collapsible_row_dEDXpt",
         "collapsible_row_8Grf4Q"
       ],
+      "disabled": true,
       "settings": {
         "caption": "",
         "heading": "FAQS",
@@ -489,7 +487,6 @@
       "blocks": {
         "yotpo_product_reviews_reviews_VQkLck": {
           "type": "shopify://apps/yotpo-product-reviews/blocks/reviews/eb7dfd7d-db44-4334-bc49-c893b51b36cf",
-          "disabled": true,
           "settings": {
             "product": "{{product}}"
           }

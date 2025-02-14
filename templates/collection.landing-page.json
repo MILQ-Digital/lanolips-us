@@ -11,46 +11,89 @@
   "sections": {
     "banner": {
       "type": "main-collection-banner",
+      "disabled": true,
       "settings": {
         "show_collection_description": true,
         "show_collection_image": true,
         "color_scheme": "scheme-2"
       }
     },
-    "product-grid": {
-      "type": "main-collection-product-grid",
+    "slideshow_KkyEwz": {
+      "type": "slideshow",
       "blocks": {
-        "promo_banner_wRK8yM": {
-          "type": "promo-banner",
+        "slide_CBVA3J": {
+          "type": "slide",
           "settings": {
-            "banner_image": "shopify://shop_images/lano-cake.webp",
-            "promotion_position": 5,
-            "title": "Test 1",
-            "link_label": "Shop Now",
-            "link": "shopify://collections/face",
-            "color_scheme": "scheme-1",
-            "image_ratio": "adapt"
-          }
-        },
-        "promo_banner_CMXKXz": {
-          "type": "promo-banner",
-          "settings": {
-            "banner_image": "shopify://shop_images/bundles.webp",
-            "promotion_position": 13,
-            "title": "Test 2",
-            "link_label": "Shop Now",
-            "link": "shopify://collections/lips",
-            "color_scheme": "scheme-1",
-            "image_ratio": "adapt"
+            "image": "{{ collection.metafields.custom.collection_banner.value }}",
+            "subheading": "",
+            "subheading_script": "Freshly Baked",
+            "heading": "The new Lanolips 101 Delicious Collection",
+            "heading_size": "hxxl",
+            "subcontent": "<p>Discover our new range of mouth watering falvours</p>",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "bottom-left",
+            "show_text_box": true,
+            "text_alignment": "left",
+            "image_overlay_opacity": 0,
+            "color_scheme": "scheme-3",
+            "text_alignment_mobile": "center"
           }
         }
       },
       "block_order": [
-        "promo_banner_wRK8yM",
-        "promo_banner_CMXKXz"
+        "slide_CBVA3J"
       ],
       "settings": {
-        "products_per_page": 16,
+        "layout": "full_bleed",
+        "slide_height": "large",
+        "slider_visual": "dots",
+        "auto_rotate": true,
+        "change_slides_speed": 5,
+        "image_behavior": "none",
+        "show_text_below": true,
+        "accessibility_info": "Slideshow about Lanolips"
+      }
+    },
+    "multirow_X8wzae": {
+      "type": "multirow",
+      "blocks": {
+        "row_zXx4Yc": {
+          "type": "row",
+          "settings": {
+            "image": "shopify://shop_images/image.jpg",
+            "caption": "",
+            "heading": "Emotive benefit headline for this collection or product",
+            "text": "<h3>Key Feature:</h3><p>Rich, buttery that melts onto lips</p><h3>Key Feature:</h3><p>A light hint of vanilla and honey</p><h3>Why We Love It:</h3><p>Soften, strengthen  and replenish your lips while you sleep.</p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "row_zXx4Yc"
+      ],
+      "settings": {
+        "image_height": "adapt",
+        "desktop_image_width": "large",
+        "heading_size": "hm",
+        "text_style": "subtitle",
+        "button_style": "secondary",
+        "desktop_content_position": "bottom",
+        "desktop_content_alignment": "left",
+        "image_layout": "align-right",
+        "section_color_scheme": "scheme-2",
+        "row_color_scheme": "scheme-1",
+        "mobile_content_alignment": "left",
+        "padding_top": 40,
+        "padding_bottom": 56
+      }
+    },
+    "product-grid": {
+      "type": "main-collection-product-grid",
+      "settings": {
+        "products_per_page": 12,
         "columns_desktop": 4,
         "color_scheme": "scheme-2",
         "image_ratio": "portrait",
@@ -66,10 +109,111 @@
         "padding_top": 52,
         "padding_bottom": 36
       }
+    },
+    "image_with_text_e8BXVV": {
+      "type": "image-with-text",
+      "blocks": {
+        "caption_3NHYQq": {
+          "type": "caption",
+          "settings": {
+            "caption": "{{ collection.title }} Made with",
+            "text_style": "caption-with-letter-spacing",
+            "text_size": "small",
+            "text_alignment": "text-center"
+          }
+        },
+        "button_a4w8gk": {
+          "type": "button",
+          "settings": {
+            "button_label": "View Full Ingredients List",
+            "button_link": "#",
+            "button_style_secondary": true,
+            "button_style_underline": false
+          }
+        }
+      },
+      "block_order": [
+        "caption_3NHYQq",
+        "button_a4w8gk"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/Rectangle_93_1a6f4fa9-9178-403d-9541-010c43bd0923.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "center",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "use_ingredients": true,
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "mobile_page_padding": false,
+        "mobile_img_visibility": false,
+        "padding_top": 36,
+        "padding_bottom": 100
+      }
+    },
+    "collapsible_content_MFyPHg": {
+      "type": "collapsible-content",
+      "blocks": {
+        "collapsible_row_fDzcz9": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "How does the Lanolips 12  hour balm work?",
+            "icon": "none",
+            "row_content": "<p>Text will go here</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_VwWHQh": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "When will my order be shipped to me?",
+            "icon": "none",
+            "row_content": "<p>Text will go here</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_FMXjbN": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "When will my order be shipped to me?",
+            "icon": "none",
+            "row_content": "<p>Text will go here</p>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "collapsible_row_fDzcz9",
+        "collapsible_row_VwWHQh",
+        "collapsible_row_FMXjbN"
+      ],
+      "settings": {
+        "caption": "",
+        "heading": "FAQs",
+        "heading_size": "_2xs",
+        "heading_alignment": "left",
+        "layout": "none",
+        "color_scheme": "",
+        "container_color_scheme": "",
+        "open_first_collapsible_row": false,
+        "use_metaobject_faq": false,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "padding_top": 100,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
     "banner",
-    "product-grid"
+    "slideshow_KkyEwz",
+    "multirow_X8wzae",
+    "product-grid",
+    "image_with_text_e8BXVV",
+    "collapsible_content_MFyPHg"
   ]
 }

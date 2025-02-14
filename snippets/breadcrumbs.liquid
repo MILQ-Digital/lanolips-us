@@ -2,6 +2,7 @@
     .breadcrumbs {
         padding-top: 25px;
         width: 100%;
+        text-transform: capitalize;
     }
 
      .breadcrumbs a {
@@ -87,6 +88,10 @@
     {{ divider_html }}
      <span class="t">Search</span>
 
+  {%- elsif template.name == 'blog' -%}
+    {{ divider_html }}
+    <span class="a">{{- page_title -}}</span>  
+
   {%- elsif template.name == 'article' -%}
     {{ divider_html }}
     {{ blog.title | link_to: blog.url }}
@@ -94,9 +99,14 @@
     {{ divider_html }}
     <span class="a">{{- page_title -}}</span>
 
+  {%- elsif template == '404' -%}
+
+    {{ divider_html }}
+    <span class="a">{{- page_title -}}</span>  
+
   {% else %}
     {{ divider_html }}
-    <span class="a">{{ page.handle }}</span>
+    <span class="a">{{ page.title }}</span>
   {% endif %}
 
 </nav>

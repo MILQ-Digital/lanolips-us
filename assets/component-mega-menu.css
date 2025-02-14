@@ -5,11 +5,12 @@
   font-weight: 500;
   display: flex;
   align-items: center;
+  line-height: 135%;
 }
 
 .list-menu--inline > li:hover > a {
   text-decoration: underline;
-  text-underline-offset: 2px;
+  text-underline-offset: 5px;
 }
 
 .list-menu--inline ::marker {

@@ -36,8 +36,8 @@
                 {{ collection.image | image_url }} {{ collection.image.width }}
               {%- endif -%}
             "
-            src="{% if banner_image and banner_image != blank %}{{ banner_image | image_url: width: 750 }}{% else %}{{ collection.image | image_url: width: 750 }}{% endif %}"
-            sizes="(min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 100 | divided_by: 2 }}px, (min-width: 750px) calc(50vw - 130px), calc(50vw - 55px)"
+            src="{% if banner_image and banner_image != blank %}{{ banner_image | image_url: width: 1728 }}{% else %}{{ collection.image | image_url: width: 1728 }}{% endif %}"
+            sizes="(min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 100 | divided_by: 2 }}px, (min-width: 1728px) calc(50vw - 130px), calc(50vw - 55px)"
             alt="{% if banner_image and banner_image != blank %}{{ banner_image.alt | escape }}{% else %}{{ collection.image.alt | escape }}{% endif %}"
             width="{% if banner_image and banner_image != blank %}{{ banner_image.width }}{% else %}{{ collection.image.width }}{% endif %}"
             height="{% if banner_image and banner_image != blank %}{{ banner_image.height }}{% else %}{{ collection.image.height }}{% endif %}"

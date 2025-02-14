@@ -129,7 +129,7 @@
               </span>            
             </p>
           </div>
-          <button class="button button--bright-pink small-hide medium-hide">Shop Now</button>
+          <button class="button button--bright-pink button_desktop">Shop Now</button>
         </div>
       </div>
           {%- if card_collection.featured_image and card_collection.description != blank -%}
@@ -137,8 +137,7 @@
               {{- card_collection.description | strip_html | truncatewords: 12 -}}
             </p>
           {%- endif -%}   
-      <button class="button button--bright-pink large-up-hide">Shop Now</button>
-
+      <div class="card__content button_mobile"><div class="card__information"><button class="button button--bright-pink ">Shop Now</button></div>  </div>
     {%- endif -%}
     {%- if card_collection == blank -%}
       <div class="card__content">

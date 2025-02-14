@@ -93,6 +93,7 @@
   width: 100%;
   padding-right: 3.2rem;
   padding-bottom: 1.5rem;
+  min-width: 93px;
 }
 
 .disclosure .localization-form__select {
@@ -120,6 +121,7 @@
   padding: 0 1rem 0 1rem;
   font-size: var(--body-sm);
   background-color: transparent;
+  line-height: 160%;
 }
 
 .disclosure__list-wrapper {

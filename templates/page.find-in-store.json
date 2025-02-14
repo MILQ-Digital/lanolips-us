@@ -1,0 +1,118 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "blocks": {
+        "collapsible_row_iqWfHY": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Australia",
+            "icon": "none",
+            "row_content": "<p><a href=\"https://www.adorebeauty.com.au/lanolips.html\" target=\"_blank\">Adore Beauty<br/></a><a href=\"https://www.davidjones.com/brand/lanolips\" target=\"_blank\">David Jones<br/></a><a href=\"https://www.mecca.com.au/lanolips/\" target=\"_blank\">Mecca Maxima<br/></a><a href=\"https://www.priceline.com.au/brand/lanolips\" target=\"_blank\">Priceline Pharmacy</a><a href=\"https://www.sephora.com.au/brands/lanolips\" target=\"_blank\"><br/>Sephora</a></p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_LNfbNT": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "USA",
+            "icon": "none",
+            "row_content": "<p><a href=\"https://www.anthropologie.com/search?q=lano\" target=\"_blank\">Anthropologie</a><a href=\"https://www.bloomingdales.com/buy/lano\" target=\"_blank\"><br/>Bloomingdale's<br/></a><a href=\"https://www.freepeople.com/brands/lanolips/\" target=\"_blank\">Free People</a><a href=\"https://www.macys.com/shop/featured/lanolips\" target=\"_blank\"><br/>Macys</a><a href=\"https://shop.nordstrom.com/brands/lanolips--14812\" target=\"_blank\"><br/>Nordstrom</a><a href=\"https://www.ulta.com/brand/lano\" target=\"_blank\"><br/>ULTA Beauty</a><a href=\"https://www.urbanoutfitters.com/brands/lano\" target=\"_blank\" title=\"Urban Outfitters\"><br/>Urban Outfitters</a></p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_jTCrJB": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Canada",
+            "icon": "none",
+            "row_content": "<p><a href=\"https://www.anthropologie.com/en-ca/brands/lanolips\" target=\"_blank\">Anthropologie</a></p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_rrb4g9": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "UK",
+            "icon": "none",
+            "row_content": "<p><a href=\"https://www.anthropologie.com/en-gb/brands/lano\" target=\"_blank\">Anthropologie</a><a href=\"https://www.boots.com/brands/lanolips\" target=\"_blank\"><br/>Boots</a><a href=\"https://www.cultbeauty.co.uk/lanolips\" target=\"_blank\"><br/>Cult Beauty</a><a href=\"https://www.lookfantastic.com/brands/lanolips.list\" target=\"_blank\"><br/>Look Fantastic</a><a href=\"https://www.selfridges.com/GB/en/cat/lano/\" target=\"_blank\"><br/>Selfridges<br/></a><a href=\"https://www.sephora.co.uk/brands/lanolips?q=LANOLIPS&q_typ=f\">Sephora</a><a href=\"https://www.superdrug.com/search/lanolips\" title=\"Superdrug\"><br/>Superdrug<br/></a><a href=\"http://www.waitrose.com/shop/HeaderSearchCmd?searchTerm=lanolips&defaultSearch=None\" target=\"_blank\">Waitrose</a></p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_fmaErp": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Europe",
+            "icon": "none",
+            "row_content": "<p><a href=\"https://www.sephora.fr/recherche?q=LANOLIPS\" target=\"_blank\">Sephora</a></p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_8rwTT7": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Hong-Kong",
+            "icon": "none",
+            "row_content": "<p><a href=\"https://www.sephora.hk/brands/lanolips\" target=\"_blank\">Sephora</a></p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_bJUCPL": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Middle East",
+            "icon": "none",
+            "row_content": "<p><a href=\"https://www.sephora.ae/en/LANOL-HubPage.html\" target=\"_blank\">Sephora</a></p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_mQfyWC": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "New-Zealand",
+            "icon": "none",
+            "row_content": "<p><a href=\"https://www.adorebeauty.co.nz/lanolips.html\" target=\"_blank\" title=\"Adore Beauty NZ\">Adore Beauty</a><a href=\"https://www.meccabeauty.co.nz/lanolips/\" target=\"_blank\"><br/>Mecca Maxima<br/></a><a href=\"https://www.sephora.nz/brands/lanolips\" target=\"_blank\">Sephora</a></p>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "collapsible_row_iqWfHY",
+        "collapsible_row_LNfbNT",
+        "collapsible_row_jTCrJB",
+        "collapsible_row_rrb4g9",
+        "collapsible_row_fmaErp",
+        "collapsible_row_8rwTT7",
+        "collapsible_row_bJUCPL",
+        "collapsible_row_mQfyWC"
+      ],
+      "settings": {
+        "padding_top": 52,
+        "padding_bottom": 100,
+        "custom_page_title": "Keeping Lips Soft All Over The World",
+        "hidepage_content": true,
+        "layout": "none",
+        "color_scheme": "scheme-2",
+        "container_color_scheme": "",
+        "open_first_collapsible_row": true,
+        "use_metaobject_faq": false,
+        "mobile_img_visibility": false,
+        "image": "shopify://shop_images/our_stores.jpg",
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second"
+      }
+    }
+  },
+  "order": [
+    "main"
+  ]
+}
