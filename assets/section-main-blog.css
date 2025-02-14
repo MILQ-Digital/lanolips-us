@@ -79,9 +79,11 @@
   .blog-articles .article:nth-child(1) .card__inner, .blog-articles .article:nth-child(4) .card__inner {
     min-height: 730px;
   }
-  .blog-articles .article:nth-child(1) .card__content {
+  .blog-articles .article:nth-child(1) .card__content,
+  .blog-articles .article:nth-child(4) .card__content{
     padding-bottom: 70px;
   }
+
   .blog-articles .article:nth-child(n+2):nth-child(-n+3) .card__inner, .blog-articles .article:nth-child(n+5):nth-child(-n+6) .card__inner, .blog-articles .article:nth-child(n+10):nth-child(-n+11) .card__inner {min-height: 70vh;}
   .blog-articles .article:nth-child(n+7):nth-child(-n+9) .card__inner,  .blog-articles .article:nth-child(n+12):nth-child(-n+14) .card__inner {min-height: 53vh;}
   
