@@ -365,7 +365,7 @@
         "text_b8h9GQ": {
           "type": "text",
           "settings": {
-            "text": "<p>dfdfdf</p>",
+            "text": "<p>{{ product.metafields.custom.sustainable_content_text | metafield_tag }}</p>",
             "text_style": "subtitle"
           }
         },
