@@ -365,7 +365,7 @@
         "text_b8h9GQ": {
           "type": "text",
           "settings": {
-            "text": "<p>{{ product.metafields.custom.sustainable_content_heading.value }}</p>",
+            "text": "<p>dfdfdf</p>",
             "text_style": "subtitle"
           }
         },
@@ -373,7 +373,7 @@
           "type": "button",
           "settings": {
             "button_label": "Learn More",
-            "button_link": "{{ product.metafields.custom.sustainable_content_button_link.value }}",
+            "button_link": "shopify://collections/automated-collection",
             "button_style_secondary": false,
             "button_style_underline": true
           }
