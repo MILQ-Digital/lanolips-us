@@ -273,7 +273,7 @@
         "text_3mwk6C": {
           "type": "text",
           "settings": {
-            "text": "<p>{{ product.metafields.custom.free_from_claims | metafield_tag }}</p>"
+            "text": "<h2>{{ product.metafields.custom.free_from_claims | metafield_tag }}</h2>"
           }
         },
         "heading_VM7xA3": {
