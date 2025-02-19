@@ -358,14 +358,14 @@
         "heading_PEU8jG": {
           "type": "heading",
           "settings": {
-            "heading": "Sustainable packaging project",
+            "heading": "{{ product.metafields.custom.sustainable_content_heading.value }}",
             "heading_size": "hm"
           }
         },
         "text_b8h9GQ": {
           "type": "text",
           "settings": {
-            "text": "<p>Lanolips Lip Scrub caps are made with 100% PCR material, boxes are printed using soy-bean and vegetable-based inks. Lanolips’ goal is to transition all packaging to more eco-friendly material over the next 12-24 months</p>",
+            "text": "<p>{{ product.metafields.custom.sustainable_content_heading.value }}</p>",
             "text_style": "subtitle"
           }
         },
@@ -373,7 +373,7 @@
           "type": "button",
           "settings": {
             "button_label": "Learn More",
-            "button_link": "shopify://collections/automated-collection",
+            "button_link": "{{ product.metafields.custom.sustainable_content_button_link.value }}",
             "button_style_secondary": false,
             "button_style_underline": true
           }
@@ -386,7 +386,7 @@
         "button_maJHVc"
       ],
       "settings": {
-        "image": "shopify://shop_images/sustainable_packaging.jpg",
+        "image": "{{ product.metafields.custom.sustainable_image.value }}",
         "height": "adapt",
         "desktop_image_width": "medium",
         "layout": "image_first",
