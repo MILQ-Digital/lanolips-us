@@ -273,7 +273,7 @@
         "text_3mwk6C": {
           "type": "text",
           "settings": {
-            "text": "<h2>{{ product.metafields.custom.free_from_claims | metafield_tag }}</h2>"
+            "text": "<h2>No petroleum <br/>No paraben<br/>No artificial fragance<br/>No mineral oil <br/>No sulfates. <br/>No PEG’s <br/>No phthalates{{ product.metafields.custom.free_from_claims | metafield_tag }}</h2>"
           }
         },
         "heading_VM7xA3": {
