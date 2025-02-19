@@ -9,47 +9,11 @@
  */
 {
   "sections": {
-    "video_HYYMJh": {
-      "type": "video",
-      "settings": {
-        "heading": "",
-        "heading_size": "h1",
-        "enable_video_looping": false,
-        "video": "shopify://files/videos/Copy of 1920 x 1080 - Content Video - Hyaluronic Lip Oil.mp4",
-        "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
-        "description": "",
-        "full_width": true,
-        "color_scheme": "",
-        "padding_top": 0,
-        "padding_bottom": 36
-      }
-    },
     "slideshow_dJncwY": {
       "type": "slideshow",
       "blocks": {
         "slide_VULtDz": {
           "type": "slide",
-          "settings": {
-            "image": "shopify://shop_images/Lanolips_hero.webp",
-            "subheading": "Freshly Baked",
-            "subheading_script": "",
-            "heading": "The new Lanolips 101 Delicious 123 bla collection for us",
-            "heading_size": "hxxl",
-            "subcontent": "<p>Discover our new range of mouth watering flavours Discover our new range of mouth watering flavours Discover our new range of mouth watering flavours Discover our new  </p>",
-            "button_label": "Shop Now",
-            "link": "shopify://collections/all",
-            "button_style_secondary": false,
-            "box_align": "bottom-left",
-            "show_text_box": false,
-            "text_alignment": "left",
-            "image_overlay_opacity": 0,
-            "color_scheme": "scheme-3",
-            "text_alignment_mobile": "center"
-          }
-        },
-        "slide_f7WpQj": {
-          "type": "slide",
-          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/Lanolips_hero.webp",
             "subheading": "Freshly Baked",
@@ -91,7 +55,6 @@
       },
       "block_order": [
         "slide_VULtDz",
-        "slide_f7WpQj",
         "slide_NAx7bN"
       ],
       "settings": {
@@ -415,7 +378,6 @@
     }
   },
   "order": [
-    "video_HYYMJh",
     "slideshow_dJncwY",
     "featured_collection",
     "image_with_text_WkDiJU",
