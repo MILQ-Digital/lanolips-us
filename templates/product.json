@@ -279,7 +279,7 @@
         "heading_VM7xA3": {
           "type": "heading",
           "settings": {
-            "heading": "<span style=\"text-decoration:underline\">No more dry skin</span>",
+            "heading": "{{ product.metafields.custom.free_from_heading.value }}",
             "heading_size": "hl",
             "enable_script": true
           }
