@@ -11,6 +11,7 @@
   "sections": {
     "video_HYYMJh": {
       "type": "video",
+      "disabled": true,
       "settings": {
         "heading": "",
         "heading_size": "h1",
