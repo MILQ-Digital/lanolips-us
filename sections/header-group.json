@@ -39,15 +39,6 @@
     "header": {
       "type": "header",
       "blocks": {
-        "megamenu_mKBMjk": {
-          "type": "megamenu",
-          "settings": {
-            "image_title": "heading",
-            "image_link": "shopify://collections/shop-all",
-            "position": "1",
-            "mega_sub_menu": ""
-          }
-        },
         "megamenu_bL8xeU": {
           "type": "megamenu",
           "settings": {
@@ -158,7 +149,6 @@
         }
       },
       "block_order": [
-        "megamenu_mKBMjk",
         "megamenu_bL8xeU",
         "image_picker_xEJ8td",
         "image_picker_nbbXJR",
