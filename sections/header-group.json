@@ -51,7 +51,7 @@
         "image_picker_xEJ8td": {
           "type": "image_picker",
           "settings": {
-            "position": "1",
+            "position": "2",
             "image_block": "shopify://shop_images/Shop_Delicious_balms.webp",
             "image_title": "Shop Delicious balms",
             "image_link": "shopify://collections/lips"
@@ -60,7 +60,7 @@
         "image_picker_nbbXJR": {
           "type": "image_picker",
           "settings": {
-            "position": "1",
+            "position": "2",
             "image_block": "shopify://shop_images/Shop_Golden_Dry_Skin_Miracle_Salve.webp",
             "image_title": "Shop Golden Dry Skin Miracle Salve",
             "image_link": "shopify://collections/101-ointment"
@@ -78,7 +78,7 @@
         "image_picker_V6VQVT": {
           "type": "image_picker",
           "settings": {
-            "position": "2",
+            "position": "3",
             "image_block": "shopify://shop_images/Shop_Delicious_balms.webp",
             "image_title": "Shop [Product]",
             "image_link": "shopify://products/101-dry-skin-super-cream-multipurpose-for-face-body"
@@ -87,7 +87,7 @@
         "image_picker_Axyq9F": {
           "type": "image_picker",
           "settings": {
-            "position": "2",
+            "position": "3",
             "image_block": "shopify://shop_images/Shop_Golden_Dry_Skin_Miracle_Salve.webp",
             "image_title": "Lanolin Everywhere Cream",
             "image_link": "shopify://products/lano-everywhere-multi-cream"
@@ -105,7 +105,7 @@
         "image_picker_DGeEfg": {
           "type": "image_picker",
           "settings": {
-            "position": "3",
+            "position": "4",
             "image_block": "shopify://shop_images/Shop_Delicious_balms.webp",
             "image_title": "Shop [Product]",
             "image_link": "shopify://products/101-dry-skin-super-cream-multipurpose-for-face-body"
@@ -114,7 +114,7 @@
         "image_picker_DET4Eb": {
           "type": "image_picker",
           "settings": {
-            "position": "3",
+            "position": "4",
             "image_block": "shopify://shop_images/Shop_Golden_Dry_Skin_Miracle_Salve.webp",
             "image_title": "Lanolin Everywhere Cream",
             "image_link": "shopify://products/lano-everywhere-multi-cream"
@@ -132,7 +132,7 @@
         "image_picker_WfNLdw": {
           "type": "image_picker",
           "settings": {
-            "position": "5",
+            "position": "6",
             "image_block": "shopify://shop_images/Shop_Delicious_balms.webp",
             "image_title": "Best Natural Lip Balm for Dry Lips",
             "image_link": "shopify://blogs/blog/best-natural-lip-balm-for-dry-lips"
@@ -141,7 +141,7 @@
         "image_picker_ddxb77": {
           "type": "image_picker",
           "settings": {
-            "position": "5",
+            "position": "6",
             "image_block": "shopify://shop_images/Shop_Golden_Dry_Skin_Miracle_Salve.webp",
             "image_title": "Hot Off The Press!",
             "image_link": "shopify://blogs/blog/hot-off-the-press"
