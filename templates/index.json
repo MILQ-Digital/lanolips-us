@@ -101,6 +101,7 @@
         "slide_MqcX3L": {
           "type": "slide",
           "settings": {
+            "image": "shopify://shop_images/Lanolips_hero.webp",
             "slide_video_url": "https://www.youtube.com/watch?v=iV91FGEDBi4",
             "subheading": "Freshly Baked",
             "subheading_script": "",
