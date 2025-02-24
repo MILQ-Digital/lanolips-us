@@ -94,6 +94,21 @@
         "color_scheme": "scheme-1"
       }
     },
+    "video_3WWGgD": {
+      "type": "video",
+      "settings": {
+        "heading": "Video",
+        "heading_size": "h1",
+        "enable_video_looping": false,
+        "video": "shopify://files/videos/Copy of 1920 x 1080 - Content Video - Hyaluronic Lip Oil.mp4",
+        "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+        "description": "",
+        "full_width": false,
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "featured_collection": {
       "type": "featured-collection",
       "settings": {
@@ -404,6 +419,7 @@
   },
   "order": [
     "slideshow_dJncwY",
+    "video_3WWGgD",
     "featured_collection",
     "image_with_text_WkDiJU",
     "collection_list_aGyhDV",
