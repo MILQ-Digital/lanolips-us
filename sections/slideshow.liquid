@@ -122,44 +122,42 @@
       >
 
         <div class="slideshow__media banner__media media">
-          {%- if block.settings.slide_video_url != blank -%}
-          
-            {%- if block.settings.slide_video_url contains "youtube.com" or block.settings.slide_video_url contains "youtu.be" -%}
-              <!-- YouTube Embed -->
-              <iframe 
-                class="slideshow__video"
-                src="{{ block.settings.slide_video_url | replace: 'watch?v=', 'embed/' }}?autoplay=1&mute=1&loop=1&playlist={{ block.settings.slide_video_url | slice: -11 }}" 
-                frameborder="0"
-                allow="autoplay; encrypted-media"
-                allowfullscreen
-                width="100%"
-                height="100%">
-              </iframe>
+        {%- if block.settings.slide_video_url != blank -%}
         
-            {%- elsif block.settings.slide_video_url contains "vimeo.com" -%}
-              <!-- Vimeo Embed -->
-              <iframe 
-                class="slideshow__video"
-                src="{{ block.settings.slide_video_url | replace: 'vimeo.com', 'player.vimeo.com/video' }}?autoplay=1&muted=1&loop=1" 
-                frameborder="0"
-                allow="autoplay; fullscreen; picture-in-picture"
-                allowfullscreen
-                width="100%"
-                height="100%">
-              </iframe>
-            {%- endif -%}
-        
-          {%- elsif block.settings.slide_video_file != blank -%}
-            <!-- Shopify MP4 Video Upload -->
-            <video class="slideshow__video" autoplay loop muted playsinline>
-              <source src="{{ block.settings.slide_video_file }}" type="video/mp4">
-            </video>
-        
-          {%- elsif block.settings.image -%}
-            <!-- Fallback Image -->
-            <img src="{{ block.settings.image | image_url: width: 3840 }}" alt="Slide Image">
+          {%- if block.settings.slide_video_url contains "youtube.com" or block.settings.slide_video_url contains "youtu.be" -%}
+            <!-- YouTube Embed -->
+            <iframe 
+              class="slideshow__video"
+              src="{{ block.settings.slide_video_url | replace: 'watch?v=', 'embed/' }}?autoplay=1&mute=1&loop=1&playlist={{ block.settings.slide_video_url | slice: -11 }}" 
+              frameborder="0"
+              allow="autoplay; encrypted-media"
+              allowfullscreen
+              width="100%"
+              height="100%">
+            </iframe>
+      
+          {%- elsif block.settings.slide_video_url contains "vimeo.com" -%}
+            <!-- Vimeo Embed -->
+            <iframe 
+              class="slideshow__video"
+              src="{{ block.settings.slide_video_url | replace: 'vimeo.com', 'player.vimeo.com/video' }}?autoplay=1&muted=1&loop=1" 
+              frameborder="0"
+              allow="autoplay; fullscreen; picture-in-picture"
+              allowfullscreen
+              width="100%"
+              height="100%">
+            </iframe>
           {%- endif -%}
-        </div>
+      
+        {%- elsif block.settings.slide_video_file != blank -%}
+          <!-- Shopify MP4 Video Upload -->
+         {{ block.settings.slide_video_file | video_tag: autoplay: true, loop: true, muted: true, controls: false, class: 'slideshow__video' }}
+      
+        {%- elsif block.settings.image -%}
+          <!-- Fallback Image -->
+          <img src="{{ block.settings.image | image_url: width: 3840 }}" alt="Slide Image">
+        {%- endif -%}
+      </div>
 
 
         
