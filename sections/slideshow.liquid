@@ -120,44 +120,49 @@
         aria-label="{{ forloop.index }} {{ 'general.slider.of' | t }} {{ forloop.length }}"
         tabindex="-1"
       >
-        <div class="slideshow__media banner__media--{{ block.settings.box_align }} banner__media media{% if block.settings.image == blank %} placeholder{% endif %}{% if section.settings.image_behavior != 'none' %} animate--{{ section.settings.image_behavior }}{% endif %}">
-          {%- if block.settings.image -%}
-            {%- liquid
-              assign height = block.settings.image.width | divided_by: block.settings.image.aspect_ratio | round
-              if section.settings.image_behavior == 'ambient'
-                assign sizes = '120vw'
-                assign widths = '450, 660, 900, 1320, 1800, 2136, 2400, 3600, 7680'
-              else
-                assign sizes = '100vw'
-                assign widths = '375, 550, 750, 1100, 1500, 1780, 2000, 3000, 3840'
-              endif
-              assign fetch_priority = 'auto'
-              if section.index == 1
-                assign fetch_priority = 'high'
-              endif
-            -%}
-            {%- if forloop.first %}
-              {{
-                block.settings.image
-                | image_url: width: 3840
-                | image_tag: height: height, sizes: sizes, widths: widths, fetchpriority: fetch_priority
-              }}
-            {%- else -%}
-              {{
-                block.settings.image
-                | image_url: width: 3840
-                | image_tag: loading: 'lazy', height: height, sizes: sizes, widths: widths
-              }}
-            {%- endif -%}
-          {%- else -%}
-            {%- assign placeholder_slide = forloop.index | modulo: 2 -%}
-            {%- if placeholder_slide == 1 -%}
-              {{ 'hero-apparel-2' | placeholder_svg_tag: 'placeholder-svg' }}
-            {%- else -%}
-              {{ 'hero-apparel-1' | placeholder_svg_tag: 'placeholder-svg' }}
-            {%- endif -%}
-          {%- endif -%}
-        </div>
+
+        <div class="slideshow__media banner__media media">
+  {%- if block.settings.slide_video_url != blank -%}
+  
+    {%- if block.settings.slide_video_url contains "youtube.com" or block.settings.slide_video_url contains "youtu.be" -%}
+      <!-- YouTube Embed -->
+      <iframe 
+        class="slideshow__video"
+        src="{{ block.settings.slide_video_url | replace: 'watch?v=', 'embed/' }}?autoplay=1&mute=1&loop=1&playlist={{ block.settings.slide_video_url | slice: -11 }}" 
+        frameborder="0"
+        allow="autoplay; encrypted-media"
+        allowfullscreen
+        width="100%"
+        height="100%">
+      </iframe>
+
+    {%- elsif block.settings.slide_video_url contains "vimeo.com" -%}
+      <!-- Vimeo Embed -->
+      <iframe 
+        class="slideshow__video"
+        src="{{ block.settings.slide_video_url | replace: 'vimeo.com', 'player.vimeo.com/video' }}?autoplay=1&muted=1&loop=1" 
+        frameborder="0"
+        allow="autoplay; fullscreen; picture-in-picture"
+        allowfullscreen
+        width="100%"
+        height="100%">
+      </iframe>
+    {%- endif -%}
+
+  {%- elsif block.settings.slide_video_file != blank -%}
+    <!-- Shopify MP4 Video Upload -->
+    <video class="slideshow__video" autoplay loop muted playsinline>
+      <source src="{{ block.settings.slide_video_file | video_tag }}" type="video/mp4">
+    </video>
+
+  {%- elsif block.settings.image -%}
+    <!-- Fallback Image -->
+    <img src="{{ block.settings.image | image_url: width: 3840 }}" alt="Slide Image">
+  {%- endif -%}
+</div>
+
+
+        
         <div class="slideshow__text-wrapper banner__content banner__content--{{ block.settings.box_align }} page-width{% if block.settings.show_text_box == false %} banner--desktop-transparent{% endif %}{% if settings.animations_reveal_on_scroll and forloop.index == 1 %} scroll-trigger animate--slide-in{% endif %}">
           <div class="slideshow__text banner__box content-container content-container--full-width-mobile color-{{ block.settings.color_scheme }} gradient slideshow__text--{{ block.settings.text_alignment }} slideshow__text-mobile--{{ block.settings.text_alignment_mobile }}">
             {%- if block.settings.subheading != blank -%}
