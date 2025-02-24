@@ -159,7 +159,7 @@
         
         {%- elsif block.settings.slide_video_file != blank -%}
           <!-- Shopify MP4 Video Upload -->
-          {{ block.settings.slide_video_file | video_tag: autoplay: true, loop: true, muted: true, controls: false, class: 'slideshow__video',poster: block.settings.image | image_url: width: 3840 }}
+          {{ block.settings.slide_video_file | video_tag: autoplay: true, loop: true, muted: true, controls: false, class: 'slideshow__video' }}
         
         {%- elsif block.settings.image -%}
           <!-- Fallback Image -->
