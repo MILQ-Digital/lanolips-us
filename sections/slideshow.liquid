@@ -121,68 +121,70 @@
         tabindex="-1"
       >
         <div class="slideshow__media banner__media media">
-          {%- if block.settings.slide_video_url != blank -%}
-            {%- if block.settings.slide_video_url contains "youtube.com" or block.settings.slide_video_url contains "youtu.be" -%}
-              {%- assign video_id = block.settings.slide_video_url 
-                | replace: "https://www.youtube.com/watch?v=", "" 
-                | replace: "https://m.youtube.com/watch?v=", "" 
-                | replace: "https://youtu.be/", "" 
-                | split: "&" | first -%}
-        
-              <!-- Poster Image -->
-              {%- if block.settings.image -%}
-                <img class="video-poster" src="{{ block.settings.image | image_url: width: 3840 }}" alt="Video Poster" onclick="playVideo(this)">
-              {%- endif -%}
-        
-              <!-- YouTube Embed -->
-              <iframe 
-                class="slideshow__video"
-                src="https://www.youtube.com/embed/{{ video_id }}?autoplay=1&mute=1&loop=1&playlist={{ video_id }}" 
-                frameborder="0"
-                allow="autoplay; encrypted-media"
-                allowfullscreen
-                width="100%"
-                height="100%"
-                style="display: none;">
-              </iframe>
-        
-            {%- elsif block.settings.slide_video_url contains "vimeo.com" -%}
-              {%- assign vimeo_id = block.settings.slide_video_url | split: "/" | last -%}
-        
-              <!-- Poster Image -->
-              {%- if block.settings.image -%}
-                <img class="video-poster" src="{{ block.settings.image | image_url: width: 3840 }}" alt="Video Poster" onclick="playVideo(this)">
-              {%- endif -%}
-        
-              <!-- Vimeo Embed -->
-              <iframe 
-                class="slideshow__video"
-                src="https://player.vimeo.com/video/{{ vimeo_id }}?autoplay=1&muted=1&loop=1" 
-                frameborder="0"
-                allow="autoplay; fullscreen; picture-in-picture"
-                allowfullscreen
-                width="100%"
-                height="100%"
-                style="display: none;">
-              </iframe>
-            {%- endif -%}
-          {%- elsif block.settings.slide_video_file != blank -%}
-            <!-- Shopify MP4 Video Upload with Poster -->
-            {{ block.settings.slide_video_file | video_tag: autoplay: true, loop: true, muted: true, controls: false, class: 'slideshow__video', poster: block.settings.image | image_url }}
-        
-          {%- elsif block.settings.image -%}
-            <!-- Fallback Image -->
-            <img src="{{ block.settings.image | image_url: width: 3840 }}" alt="Slide Image">
+      {%- if block.settings.slide_video_url != blank -%}
+        {%- if block.settings.slide_video_url contains "youtube.com" or block.settings.slide_video_url contains "youtu.be" -%}
+          {%- assign video_id = block.settings.slide_video_url 
+            | replace: "https://www.youtube.com/watch?v=", "" 
+            | replace: "https://m.youtube.com/watch?v=", "" 
+            | replace: "https://youtu.be/", "" 
+            | split: "&" | first -%}
+    
+          <!-- Poster Image -->
+          {%- if block.settings.image -%}
+            <img class="video-poster" src="{{ block.settings.image | image_url: width: 3840 }}" alt="Video Poster" onclick="playVideo(this)">
           {%- endif -%}
-        </div>
-        
-        <script>
-          function playVideo(poster) {
-            var video = poster.nextElementSibling;
-            poster.style.display = 'none';
-            video.style.display = 'block';
-          }
-        </script>
+    
+          <!-- YouTube Embed -->
+          <iframe 
+            class="slideshow__video"
+            src="https://www.youtube.com/embed/{{ video_id }}?autoplay=1&mute=1&loop=1&playlist={{ video_id }}" 
+            frameborder="0"
+            allow="autoplay; encrypted-media"
+            allowfullscreen
+            width="100%"
+            height="100%"
+            style="display: none;">
+          </iframe>
+    
+        {%- elsif block.settings.slide_video_url contains "vimeo.com" -%}
+          {%- assign vimeo_id = block.settings.slide_video_url | split: "/" | last -%}
+    
+          <!-- Poster Image -->
+          {%- if block.settings.image -%}
+            <img class="video-poster" src="{{ block.settings.image | image_url: width: 3840 }}" alt="Video Poster" onclick="playVideo(this)">
+          {%- endif -%}
+    
+          <!-- Vimeo Embed -->
+          <iframe 
+            class="slideshow__video"
+            src="https://player.vimeo.com/video/{{ vimeo_id }}?autoplay=1&muted=1&loop=1" 
+            frameborder="0"
+            allow="autoplay; fullscreen; picture-in-picture"
+            allowfullscreen
+            width="100%"
+            height="100%"
+            style="display: none;">
+          </iframe>
+    
+        {%- endif -%}
+    
+      {%- elsif block.settings.slide_video_file != blank -%}
+        <!-- Shopify MP4 Video Upload with Poster -->
+        {{ block.settings.slide_video_file | video_tag: autoplay: true, loop: true, muted: true, controls: false, class: 'slideshow__video', poster: block.settings.image | image_url }}
+    
+      {%- elsif block.settings.image -%}
+        <!-- Fallback Image -->
+        <img src="{{ block.settings.image | image_url: width: 3840 }}" alt="Slide Image">
+      {%- endif -%}
+    </div>
+    
+    <script>
+      function playVideo(poster) {
+        var video = poster.nextElementSibling;
+        poster.style.display = 'none';
+        video.style.display = 'block';
+      }
+    </script>
 
 
 
