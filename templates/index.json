@@ -97,13 +97,35 @@
             "color_scheme": "scheme-3",
             "text_alignment_mobile": "center"
           }
+        },
+        "slide_MqcX3L": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/Lanolips_hero.webp",
+            "slide_video_url": "https://www.youtube.com/watch?v=iV91FGEDBi4",
+            "subheading": "Freshly Baked",
+            "subheading_script": "",
+            "heading": "The new Lanolips 101 Delicious 123 bla collection for us",
+            "heading_size": "hxxl",
+            "subcontent": "<p>Discover our new range of mouth watering flavours Discover our new range of mouth watering flavours Discover our new range of mouth watering flavours Discover our new  </p>",
+            "button_label": "Shop Now",
+            "link": "shopify://collections/all",
+            "button_style_secondary": false,
+            "box_align": "bottom-left",
+            "show_text_box": false,
+            "text_alignment": "left",
+            "image_overlay_opacity": 0,
+            "color_scheme": "scheme-3",
+            "text_alignment_mobile": "center"
+          }
         }
       },
       "block_order": [
         "slide_VULtDz",
         "slide_NAx7bN",
         "slide_BxjGpJ",
-        "slide_p9cQWE"
+        "slide_p9cQWE",
+        "slide_MqcX3L"
       ],
       "settings": {
         "layout": "full_bleed",
