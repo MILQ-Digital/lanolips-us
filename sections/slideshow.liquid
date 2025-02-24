@@ -120,7 +120,7 @@
         aria-label="{{ forloop.index }} {{ 'general.slider.of' | t }} {{ forloop.length }}"
         tabindex="-1"
       >
-        {%- assign poster_image = block.settings.image | image_url: width: 1920 -%}
+        {%- assign poster_image = block.settings.image | image_url -%}
 
         <div class="slideshow__media banner__media media">
           {%- if block.settings.slide_video_url != blank -%}
@@ -133,28 +133,46 @@
         
               <!-- Poster Image -->
               {%- if block.settings.image -%}
-                <div class="video-container">
-                  <img class="video-poster" src="{{ poster_image }}" alt="Video Poster" onclick="playVideo(this, '{{ video_id }}', 'youtube')">
-                  <div class="video-wrapper"></div>
-                </div>
+                <img class="video-poster" src="{{ poster_image }}" alt="Video Poster" onclick="playVideo(this)">
               {%- endif -%}
+        
+              <!-- YouTube Embed -->
+              <iframe 
+                class="slideshow__video"
+                src="https://www.youtube.com/embed/{{ video_id }}?autoplay=1&mute=1&loop=1&playlist={{ video_id }}" 
+                frameborder="0"
+                allow="autoplay; encrypted-media"
+                allowfullscreen
+                width="100%"
+                height="100%"
+                style="display: none;">
+              </iframe>
         
             {%- elsif block.settings.slide_video_url contains "vimeo.com" -%}
               {%- assign vimeo_id = block.settings.slide_video_url | split: "/" | last -%}
         
               <!-- Poster Image -->
               {%- if block.settings.image -%}
-                <div class="video-container">
-                  <img class="video-poster" src="{{ poster_image }}" alt="Video Poster" onclick="playVideo(this, '{{ vimeo_id }}', 'vimeo')">
-                  <div class="video-wrapper"></div>
-                </div>
+                <img class="video-poster" src="{{ poster_image }}" alt="Video Poster" onclick="playVideo(this)">
               {%- endif -%}
+        
+              <!-- Vimeo Embed -->
+              <iframe 
+                class="slideshow__video"
+                src="https://player.vimeo.com/video/{{ vimeo_id }}?autoplay=1&muted=1&loop=1" 
+                frameborder="0"
+                allow="autoplay; fullscreen; picture-in-picture"
+                allowfullscreen
+                width="100%"
+                height="100%"
+                style="display: none;">
+              </iframe>
         
             {%- endif -%}
         
           {%- elsif block.settings.slide_video_file != blank -%}
             <!-- Shopify MP4 Video Upload with Poster -->
-            {{ block.settings.slide_video_file | video_tag: autoplay: false, loop: true, muted: false, controls: true, class: 'slideshow__video', poster: poster_image }}
+            {{ block.settings.slide_video_file | video_tag: autoplay: true, loop: true, muted: true, controls: false, class: 'slideshow__video', poster: poster_image }}
         
           {%- elsif block.settings.image -%}
             <!-- Fallback Image -->
@@ -163,35 +181,12 @@
         </div>
         
         <script>
-          function playVideo(poster, videoId, platform) {
-            var wrapper = poster.nextElementSibling;
-            
-            if (platform === 'youtube') {
-              wrapper.innerHTML = `<iframe 
-                class="slideshow__video"
-                src="https://www.youtube.com/embed/${videoId}?autoplay=1&mute=1&loop=1&playlist=${videoId}" 
-                frameborder="0"
-                allow="autoplay; encrypted-media"
-                allowfullscreen
-                width="100%"
-                height="100%">
-              </iframe>`;
-            } else if (platform === 'vimeo') {
-              wrapper.innerHTML = `<iframe 
-                class="slideshow__video"
-                src="https://player.vimeo.com/video/${videoId}?autoplay=1&muted=1&loop=1" 
-                frameborder="0"
-                allow="autoplay; fullscreen; picture-in-picture"
-                allowfullscreen
-                width="100%"
-                height="100%">
-              </iframe>`;
-            }
-        
-            poster.style.display = 'none'; // Hide poster once clicked
+          function playVideo(poster) {
+            var video = poster.nextElementSibling;
+            poster.style.display = 'none';
+            video.style.display = 'block';
           }
         </script>
-
 
 
 
