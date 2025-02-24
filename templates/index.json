@@ -79,6 +79,7 @@
         },
         "slide_p9cQWE": {
           "type": "slide",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/Lanolips_hero.webp",
             "slide_video_url": "",
