@@ -165,9 +165,7 @@
                 height="100%"
                 style="display: none;">
               </iframe>
-        
             {%- endif -%}
-        
           {%- elsif block.settings.slide_video_file != blank -%}
             <!-- Shopify MP4 Video Upload with Poster -->
             {{ block.settings.slide_video_file | video_tag: autoplay: true, loop: true, muted: true, controls: false, class: 'slideshow__video', poster: block.settings.image | image_url }}
