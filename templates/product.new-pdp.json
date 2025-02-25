@@ -246,6 +246,7 @@
         "column_KJWMef",
         "column_aAdR9K"
       ],
+      "disabled": true,
       "custom_css": [
         ".title {margin: 0 auto;}"
       ],
@@ -262,7 +263,6 @@
         "color_scheme": "scheme-2",
         "columns_mobile": "1",
         "swipe_on_mobile": false,
-        "mobile_full": false,
         "padding_top": 36,
         "padding_bottom": 36,
         "section_class": "before_after"
