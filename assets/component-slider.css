@@ -378,6 +378,10 @@ slider-component.slider-component-full-width {
     right: 0px;
   }
 
+  .slideshow__controls.slider-buttons {
+    top: auto;
+  }
+
   .announcement-bar-slider.slider-buttons {
     position: relative;
     top: auto;
