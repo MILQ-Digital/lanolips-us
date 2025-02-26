@@ -7,7 +7,7 @@
  * made to this file may be overwritten.
  * ------------------------------------------------------------
  */
- {
+{
   "name": "t:sections.header.name",
   "type": "header",
   "sections": {
@@ -80,7 +80,7 @@
           "settings": {
             "position": "3",
             "image_block": "shopify://shop_images/Shop_Delicious_balms.webp",
-            "image_title": "Shop [Product]",
+            "image_title": "Shop",
             "image_link": "shopify://products/101-dry-skin-super-cream-multipurpose-for-face-body"
           }
         },
