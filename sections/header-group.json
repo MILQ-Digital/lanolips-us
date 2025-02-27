@@ -66,6 +66,22 @@
             "mega_sub_menu": "wcc-101-ointment"
           }
         },
+        "image_picker_qRiqMK": {
+          "type": "image_picker",
+          "settings": {
+            "position": "1",
+            "image_title": "heading",
+            "image_link": ""
+          }
+        },
+        "image_picker_XB6FJ3": {
+          "type": "image_picker",
+          "settings": {
+            "position": "1",
+            "image_title": "heading",
+            "image_link": ""
+          }
+        },
         "megamenu_bL8xeU": {
           "type": "megamenu",
           "settings": {
@@ -188,6 +204,8 @@
         "megamenu_T67HVJ",
         "megamenu_eLajWF",
         "megamenu_yK9naV",
+        "image_picker_qRiqMK",
+        "image_picker_XB6FJ3",
         "megamenu_bL8xeU",
         "image_picker_xEJ8td",
         "image_picker_nbbXJR",
