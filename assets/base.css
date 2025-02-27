@@ -4035,3 +4035,6 @@ details-disclosure > details {
     line-height: 21px;
   }
 } 
+
+/***wishlist***/
+.product  #swym-atw-pdp-button {display: none}
