@@ -231,6 +231,7 @@
         "enable_country_selector": false,
         "enable_language_selector": false,
         "enable_customer_avatar": true,
+        "show_wishlist": true,
         "mobile_logo_position": "center",
         "margin_bottom": 0,
         "padding_top": 8,
