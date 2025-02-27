@@ -138,15 +138,6 @@
             "image_link": "shopify://blogs/blog/best-natural-lip-balm-for-dry-lips"
           }
         },
-        "megamenu_MxT4G3": {
-          "type": "megamenu",
-          "settings": {
-            "image_title": "heading",
-            "image_link": "",
-            "position": "1",
-            "mega_sub_menu": "gifts"
-          }
-        },
         "image_picker_ddxb77": {
           "type": "image_picker",
           "settings": {
@@ -154,6 +145,15 @@
             "image_block": "shopify://shop_images/Shop_Golden_Dry_Skin_Miracle_Salve.webp",
             "image_title": "Hot Off The Press!",
             "image_link": "shopify://blogs/blog/hot-off-the-press"
+          }
+        },
+        "megamenu_MxT4G3": {
+          "type": "megamenu",
+          "settings": {
+            "image_title": "heading",
+            "image_link": "",
+            "position": "1",
+            "mega_sub_menu": "gifts"
           }
         }
       },
@@ -169,8 +169,8 @@
         "image_picker_DET4Eb",
         "megamenu_FexHtw",
         "image_picker_WfNLdw",
-        "megamenu_MxT4G3",
-        "image_picker_ddxb77"
+        "image_picker_ddxb77",
+        "megamenu_MxT4G3"
       ],
       "settings": {
         "logo_position": "top-center",
