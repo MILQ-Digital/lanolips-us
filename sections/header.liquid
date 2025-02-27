@@ -264,6 +264,16 @@
         {%- endif -%}
       </div>
 
+      {%- if section.settings.show_wishlist -%}
+        <a href="/pages/wishlist" class="header__icon wishlist-link">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8L12 21l8.8-8.8a5.5 5.5 0 0 0 0-7.8z"/>
+          </svg>
+          <span class="wishlist-count">0</span>
+        </a>
+      {%- endif -%}
+
+
       {%- if shop.customer_accounts_enabled -%}
         <a
           href="{%- if customer -%}{{ routes.account_url }}{%- else -%}{{ routes.account_login_url }}{%- endif -%}"
@@ -654,7 +664,7 @@
     },
     {
       "type": "checkbox",
-      "id": "wishlist_icon",
+      "id": "show_wishlist",
       "default": false,
       "label": "Enable wishlist icon"
     },
