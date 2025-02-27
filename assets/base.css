@@ -4042,5 +4042,5 @@ details-disclosure > details {
 }
 
 .product .swym-atw-btn-wrapper.product_title_right-position {
-  align-items: center;
+  justify-content: space-between;
 }
