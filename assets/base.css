@@ -4052,3 +4052,9 @@ details-disclosure > details {
     top: 15px;
     z-index: 9;
 }
+
+.plp-wish-btn svg {
+  fill: #fff;
+  stroke: #2B4676;
+}
+
