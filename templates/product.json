@@ -41,34 +41,6 @@
             "swym_custom_css": ""
           }
         },
-        "wishlist_plus_engage_myaccount_recently_viewed_online_myhKkD": {
-          "type": "shopify://apps/wishlist-plus/blocks/engage-myaccount-recently-viewed-online/80c3b1fc-3a8f-407e-8367-ffdeebb8b612",
-          "disabled": true,
-          "settings": {
-            "swym_themeapp_container_background_color": "rgba(0,0,0,0)",
-            "swym_themeapp_container_text_color": "#000000",
-            "swym_themeapp_container_title_font_size": 20,
-            "swym_themeapp_container_items_per_row_desktop": 5,
-            "swym_themeapp_container_items_per_row_tablet": 3,
-            "swym_themeapp_container_items_per_row_mobile": 2,
-            "swym_themeapp_container_nav_background_color": "#ffffff",
-            "swym_themeapp_container_nave_arrow_color": "#000000",
-            "swym_themeapp_container_items_show_title": true,
-            "swym_themeapp_container_items_show_price": true,
-            "swym_themeapp_container_items_show_variant": false,
-            "swym_themeapp_container_items_show_vendor": false,
-            "swym_themeapp_container_items_font_size": 16,
-            "swym_themeapp_container_items_compare_price_color": "#ee2e2e",
-            "swym_themeapp_container_items_show_add_to_cart_button": true,
-            "swym_themeapp_container_items_show_view_product_button": false,
-            "swym_themeapp_container_items_button_type": "solid",
-            "swym_themeapp_container_items_button_width": "100%",
-            "swym_themeapp_container_items_button_align": "center",
-            "swym_themeapp_container_items_button_border_radious": 0,
-            "swym_themeapp_container_items_button_background_color": "#434655",
-            "swym_themeapp_container_items_button_text_color": "#ffffff"
-          }
-        },
         "yotpo_product_reviews_star_rating_t3XDVb": {
           "type": "shopify://apps/yotpo-product-reviews/blocks/star-rating/eb7dfd7d-db44-4334-bc49-c893b51b36cf",
           "settings": {
@@ -191,7 +163,6 @@
       "block_order": [
         "title",
         "wishlist_plus_wishlist_pdp_button_kRjrt4",
-        "wishlist_plus_engage_myaccount_recently_viewed_online_myhKkD",
         "yotpo_product_reviews_star_rating_t3XDVb",
         "price",
         "description",
