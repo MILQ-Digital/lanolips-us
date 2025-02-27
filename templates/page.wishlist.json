@@ -9,32 +9,12 @@
  */
 {
   "sections": {
-    "image_banner_3xkwVM": {
-      "type": "image-banner",
-      "disabled": true,
-      "settings": {
-        "image": "shopify://shop_images/about_hero_banner.jpg",
-        "image_overlay_opacity": 0,
-        "image_height": "medium",
-        "desktop_content_position": "middle-center",
-        "show_text_box": true,
-        "desktop_content_alignment": "center",
-        "color_scheme": "",
-        "color_background": "",
-        "image_behavior": "none",
-        "mobile_content_alignment": "center",
-        "stack_images_on_mobile": true,
-        "show_text_below": true,
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
     "main": {
       "type": "main-page",
       "settings": {
         "padding_top": 28,
         "padding_bottom": 28,
-        "custom_page_title": "Emotive Headline About Brand Content",
+        "custom_page_title": "Wishlist",
         "hidepage_content": true,
         "layout": "none",
         "color_scheme": "scheme-2",
@@ -46,312 +26,13 @@
         "desktop_layout": "image_second"
       }
     },
-    "rich_text_DRnPTK": {
-      "type": "rich-text",
-      "blocks": {
-        "text_jUrepC": {
-          "type": "text",
-          "settings": {
-            "text": "<p>As with anything, it’s important to read the ingredient list before purchasing or trying new cosmetics like lip balms, moisturisers and hand lotions. Being vigilant about avoiding harsh chemicals and other irritants is the key to keeping your skin hydrated and nourished all year long.<br/>At the same time, there are also ingredients that you want to look for in your skincare and beauty products. Namely, lanolin! Read on to learn more about this all-natural ingredient and why it’s amazing for your skin.</p>"
-          }
-        }
-      },
-      "block_order": [
-        "text_jUrepC"
-      ],
-      "settings": {
-        "desktop_content_position": "center",
-        "content_alignment": "left",
-        "color_scheme": "scheme-3",
-        "full_width": true,
-        "padding_top": 40,
-        "padding_bottom": 52
-      }
-    },
-    "image_with_text_VUg6Qt": {
-      "type": "image-with-text",
-      "custom_css": [
-        ".image-with-text {margin-left: calc(-1 * var(--outer));}"
-      ],
-      "settings": {
-        "image": "shopify://shop_images/Lanolips_products_image.webp",
-        "height": "adapt",
-        "desktop_image_width": "medium",
-        "layout": "image_first",
-        "desktop_content_position": "top",
-        "desktop_content_alignment": "left",
-        "content_layout": "no-overlap",
-        "section_color_scheme": "scheme-3",
-        "color_scheme": "scheme-3",
-        "use_ingredients": false,
-        "image_behavior": "none",
-        "mobile_content_alignment": "left",
-        "mobile_page_padding": false,
-        "mobile_img_visibility": false,
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
-    "multirow_TffBAK": {
-      "type": "multirow",
-      "blocks": {
-        "row_EfGypg": {
-          "type": "row",
-          "settings": {
-            "image": "shopify://shop_images/signin.jpg",
-            "caption": "",
-            "heading": "Dry skin is our thing",
-            "text": "<h3>Heading</h3><p>We believe in connecting urban with country and rural communities that may be invisible to many. They may be suffering through drought, fire or other hardship.</p><h3>We Believe In</h3><p>We believe in connecting urban with country and rural communities that may be invisible to many. They may be suffering through drought, fire or other hardship.</p><h3>Connecting Urban With Country</h3><p>We believe in connecting urban with country and rural communities that may be invisible to many. They may be suffering through drought, fire or other hardship.</p>",
-            "button_label": "",
-            "button_link": ""
-          }
-        }
-      },
-      "block_order": [
-        "row_EfGypg"
-      ],
-      "settings": {
-        "image_height": "adapt",
-        "desktop_image_width": "large",
-        "heading_size": "hm",
-        "text_style": "subtitle",
-        "button_style": "secondary",
-        "desktop_content_position": "middle",
-        "desktop_content_alignment": "left",
-        "image_layout": "align-right",
-        "section_color_scheme": "scheme-2",
-        "row_color_scheme": "scheme-1",
-        "mobile_content_alignment": "left",
-        "padding_top": 80,
-        "padding_bottom": 64
-      }
-    },
-    "image_with_text_TRx8WY": {
-      "type": "image-with-text",
-      "blocks": {
-        "image_picker_xEjfnh": {
-          "type": "image_picker",
-          "settings": {
-            "image_icon": "shopify://shop_images/Vector.png"
-          }
-        },
-        "heading_aeyDXF": {
-          "type": "heading",
-          "settings": {
-            "heading": "Made With Love & Lanolin",
-            "heading_size": "hm"
-          }
-        },
-        "text_NCe7iF": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Lanolips Lip Scrub caps are made with 100% PCR material, boxes are printed using soy-bean and vegetable-based inks. Lanolips’ goal is to transition all packaging to more eco-friendly material over the next 12-24 months</p>",
-            "text_style": "subtitle"
-          }
-        },
-        "button_J7awhr": {
-          "type": "button",
-          "settings": {
-            "button_label": "Learn More",
-            "button_link": "",
-            "button_style_secondary": false,
-            "button_style_underline": true
-          }
-        }
-      },
-      "block_order": [
-        "image_picker_xEjfnh",
-        "heading_aeyDXF",
-        "text_NCe7iF",
-        "button_J7awhr"
-      ],
-      "settings": {
-        "image": "shopify://shop_images/made_with_love_and_lanolin.jpg",
-        "height": "adapt",
-        "desktop_image_width": "medium",
-        "layout": "image_first",
-        "desktop_content_position": "bottom",
-        "desktop_content_alignment": "left",
-        "content_layout": "no-overlap",
-        "section_color_scheme": "scheme-2",
-        "color_scheme": "scheme-2",
-        "use_ingredients": false,
-        "image_behavior": "none",
-        "mobile_content_alignment": "left",
-        "mobile_page_padding": false,
-        "mobile_img_visibility": false,
-        "padding_top": 36,
-        "padding_bottom": 100
-      }
-    },
-    "image_with_text_xFPdxK": {
-      "type": "image-with-text",
-      "blocks": {
-        "caption_46UTE3": {
-          "type": "caption",
-          "settings": {
-            "caption": "Farming + Love + Lanolin",
-            "text_style": "caption-with-letter-spacing",
-            "text_size": "medium",
-            "text_alignment": "text-left"
-          }
-        },
-        "heading_iJkpEf": {
-          "type": "heading",
-          "settings": {
-            "heading": "100 Years Of Heritage",
-            "heading_size": "hm"
-          }
-        },
-        "text_L89DW8": {
-          "type": "text",
-          "settings": {
-            "text": "<p>One of Founder, Kirsten Carriol’s, fondest memories from childhood is how her grandfather’s calloused hands magically become soft after a day of shearing sheep’s’ wool on the family farm. She learned why from her father, a molecular scientist: wool contains lanolin, which mimics the hydrating oils of human skin. After years of working in beauty, and countless chapped lips & tubes of every balm imaginable, Kirsten knew that when it comes to moisturising & healing skin, you can’t improve on lanolin. She created LANO, a lanolin-based skincare line, using the highest quality lanolin sourced (cruelty-free) from Australian farmers and their sheep - as the most natural answer to dry skin. With lanolin, your skin has literally met its match.</p>",
-            "text_style": "subtitle"
-          }
-        }
-      },
-      "block_order": [
-        "caption_46UTE3",
-        "heading_iJkpEf",
-        "text_L89DW8"
-      ],
-      "settings": {
-        "image": "shopify://shop_images/100_years_of_heritage.jpg",
-        "height": "adapt",
-        "desktop_image_width": "medium",
-        "layout": "text_first",
-        "desktop_content_position": "bottom",
-        "desktop_content_alignment": "left",
-        "content_layout": "no-overlap",
-        "section_color_scheme": "scheme-2",
-        "color_scheme": "scheme-2",
-        "use_ingredients": false,
-        "image_behavior": "none",
-        "mobile_content_alignment": "left",
-        "mobile_page_padding": false,
-        "mobile_img_visibility": false,
-        "padding_top": 100,
-        "padding_bottom": 100
-      }
-    },
-    "rich_text_VXBwy4": {
-      "type": "rich-text",
-      "blocks": {
-        "heading_CmRwrV": {
-          "type": "heading",
-          "settings": {
-            "heading": "What Is Lanoline?",
-            "heading_size": "hm",
-            "enable_script": false
-          }
-        },
-        "text_wXDFd8": {
-          "type": "text",
-          "settings": {
-            "text": "<p>In its raw form, lanolin is a deeply moisturising oil naturally occurring in sheep’s wool. It’s essential for conditioning and protecting sheep’s wool from the elements but is also extremely close to our skin’s own natural oil, making lanolin effective at hydrating skin, which is why we call it “Nature’s Wonder Moisturiser”. <br/>Lanolin moisturisers, ointments and lip balms are excellent for softening the look and feel of dry, flaky skin and allowing it to moisturise from within. That’s why lanolin is the hero ingredient in all our LANO products.<br/><br/></p>"
-          }
-        }
-      },
-      "block_order": [
-        "heading_CmRwrV",
-        "text_wXDFd8"
-      ],
-      "settings": {
-        "desktop_content_position": "right",
-        "content_alignment": "left",
-        "color_scheme": "scheme-3",
-        "full_width": true,
-        "padding_top": 40,
-        "padding_bottom": 72
-      }
-    },
-    "multicolumn_346w8Y": {
-      "type": "multicolumn",
-      "blocks": {
-        "column_j8eegh": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/Lano_Lips_products.jpg",
-            "title": "",
-            "text": "",
-            "link_label": "",
-            "link": "",
-            "button_style_secondary": false
-          }
-        },
-        "column_3mNQUn": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/lano_lips_img.jpg",
-            "title": "",
-            "text": "",
-            "link_label": "",
-            "link": "",
-            "button_style_secondary": false
-          }
-        }
-      },
-      "block_order": [
-        "column_j8eegh",
-        "column_3mNQUn"
-      ],
-      "settings": {
-        "title": "",
-        "heading_size": "hm",
-        "image_width": "full",
-        "image_ratio": "adapt",
-        "columns_desktop": 2,
-        "column_alignment": "left",
-        "background_style": "none",
-        "button_label": "",
-        "button_link": "",
-        "color_scheme": "scheme-2",
-        "columns_mobile": "1",
-        "swipe_on_mobile": false,
-        "padding_top": 36,
-        "padding_bottom": 36,
-        "section_class": "narrow-img"
-      }
-    },
-    "rich_text_AzzEtY": {
-      "type": "rich-text",
-      "blocks": {
-        "heading_NKkJez": {
-          "type": "heading",
-          "settings": {
-            "heading": "Is Lanolin good for your skin?",
-            "heading_size": "hm",
-            "enable_script": false
-          }
-        },
-        "text_VHW6GY": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Of course, just because an ingredient is all-natural doesn’t mean it’s automatically safe for your skin. So, is lanolin good for your skin? Yes!<br/>Lanolin is scientifically proven to mimic lipids in human skin extremely closely, meaning it’s less likely to irritate even the most delicate, sensitive skin. Additionally, lanolin can hold up to 400% of its weight in moisture while still being semi-occlusive which allows your skin to breathe without ever leaving any sticky residue behind.</p>"
-          }
-        }
-      },
-      "block_order": [
-        "heading_NKkJez",
-        "text_VHW6GY"
-      ],
-      "settings": {
-        "desktop_content_position": "right",
-        "content_alignment": "left",
-        "color_scheme": "scheme-3",
-        "full_width": true,
-        "padding_top": 100,
-        "padding_bottom": 100
-      }
-    },
     "174003953814c75100": {
       "type": "apps",
       "blocks": {
         "wishlist_plus_engage_myaccount_wishlisteditems_bNf7pn": {
           "type": "shopify://apps/wishlist-plus/blocks/engage-myaccount-wishlisteditems/80c3b1fc-3a8f-407e-8367-ffdeebb8b612",
           "settings": {
-            "swym_engage_wishlist_items_background_color": "transparent",
+            "swym_engage_wishlist_items_background_color": "rgba(0,0,0,0)",
             "swym_engage_wishlist_items_text_color": "#000000",
             "swym_engage_wishlist_items_background_color_secondary": "#e7e7e7",
             "swym_engage_wishlist_items_highlight_color": "#808080",
@@ -359,14 +40,14 @@
             "swym_engage_wishlist_items_per_row_desktop": 5,
             "swym_engage_wishlist_items_per_row_tablet": 3,
             "swym_engage_wishlist_items_per_row_mobile": 2,
-            "swym_engage_wishlist_items_nav_background_color": "#fff",
-            "swym_engage_wishlist_items_nave_arrow_color": "#000",
+            "swym_engage_wishlist_items_nav_background_color": "#ffffff",
+            "swym_engage_wishlist_items_nave_arrow_color": "#000000",
             "swym_engage_Wishlist_items_show_title": true,
             "swym_engage_Wishlist_items_show_price": true,
             "swym_engage_Wishlist_items_show_variant": false,
             "swym_engage_wishlist_items_show_vendor": false,
             "swym_engage_wishlist_items_font_size": 16,
-            "swym_engage_wishlist_items_compare_price_color": "#EE2E2E",
+            "swym_engage_wishlist_items_compare_price_color": "#ee2e2e",
             "swym_engage_Wishlist_items_show_add_to_cart_button": true,
             "swym_engage_Wishlist_items_show_view_product_button": false,
             "swym_engage_wishlist_items_button_type": "solid",
@@ -374,7 +55,7 @@
             "swym_engage_wishlist_items_button_align": "center",
             "swym_engage_wishlist_items_button_border_radious": 0,
             "swym_engage_wishlist_items_button_background_color": "#434655",
-            "swym_engage_wishlist_items_button_text_color": "#fff",
+            "swym_engage_wishlist_items_button_text_color": "#ffffff",
             "swym_engage_wishlist_show_product_updates": false
           }
         }
@@ -388,16 +69,7 @@
     }
   },
   "order": [
-    "image_banner_3xkwVM",
     "main",
-    "rich_text_DRnPTK",
-    "image_with_text_VUg6Qt",
-    "multirow_TffBAK",
-    "image_with_text_TRx8WY",
-    "image_with_text_xFPdxK",
-    "rich_text_VXBwy4",
-    "multicolumn_346w8Y",
-    "rich_text_AzzEtY",
     "174003953814c75100"
   ]
 }
