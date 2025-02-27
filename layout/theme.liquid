@@ -379,5 +379,16 @@
     {%- if settings.cart_type == 'drawer' -%}
       <script src="{{ 'cart-drawer.js' | asset_url }}" defer="defer"></script>
     {%- endif -%}
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+      if (typeof SwymCallbacks === "undefined") {
+        window.SwymCallbacks = [];
+      }
+      SwymCallbacks.push(function(swat) {
+        console.log("Wishlist initialized");
+        swat.initialize();
+      });
+    });
+</script>
   </body>
 </html>
