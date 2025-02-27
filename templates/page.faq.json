@@ -21,7 +21,7 @@
         "container_color_scheme": "",
         "open_first_collapsible_row": true,
         "use_metaobject_faq": true,
-        "mobile_img_visibility": true,
+        "mobile_img_visibility": false,
         "image": "shopify://shop_images/FAQ_image.jpg",
         "image_ratio": "adapt",
         "desktop_layout": "image_second"
