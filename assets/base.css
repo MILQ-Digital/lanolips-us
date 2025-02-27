@@ -4037,4 +4037,6 @@ details-disclosure > details {
 } 
 
 /***wishlist***/
- 
+.product #swym-atw-pdp-button .atw-button-text {
+  display: none;
+}
