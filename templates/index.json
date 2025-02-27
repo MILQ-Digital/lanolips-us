@@ -129,7 +129,7 @@
         "caption_AcJ3mj": {
           "type": "caption",
           "settings": {
-            "caption": "Delicious",
+            "caption": "",
             "text_style": "caption-with-letter-spacing",
             "text_size": "large",
             "text_alignment": "text-left"
@@ -138,21 +138,21 @@
         "heading_Db9tcb": {
           "type": "heading",
           "settings": {
-            "heading": "Meet the 101 Delicious  Collection",
-            "heading_size": "hm"
+            "heading": "Meet New Hyaluronic Lip Oil",
+            "heading_size": "hs"
           }
         },
         "text_jTzLCJ": {
           "type": "text",
           "settings": {
-            "text": "<p>The least complicated skincare you'll find. Your everyday essentials for hydrated, healthy skin. <br/><br/></p>",
+            "text": "<p>Introducing the New Standard of Lip Oils. The ultimate in lip hydration and shine with Lanolips Hyaluronic Lip Oil<br/><br/></p>",
             "text_style": "subtitle"
           }
         },
         "button_AxwgMt": {
           "type": "button",
           "settings": {
-            "button_label": "Shop Delicious",
+            "button_label": "Shop Lip OIl",
             "button_link": "shopify://collections",
             "button_style_secondary": false,
             "button_style_underline": false
@@ -166,7 +166,7 @@
         "button_AxwgMt"
       ],
       "settings": {
-        "image": "shopify://shop_images/Rectangle_93_1.jpg",
+        "image": "shopify://shop_images/Hyaluronic_Lip_Oil_Product_Honey_and_Raspberry_Image.jpg",
         "height": "adapt",
         "desktop_image_width": "medium",
         "layout": "text_first",
