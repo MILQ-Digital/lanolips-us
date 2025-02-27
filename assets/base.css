@@ -4040,3 +4040,7 @@ details-disclosure > details {
 .product #swym-atw-pdp-button .atw-button-text {
   display: none;
 }
+
+.product .swym-atw-btn-wrapper.product_title_right-position {
+  align-items: center;
+}
