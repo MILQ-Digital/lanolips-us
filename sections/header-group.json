@@ -39,6 +39,15 @@
     "header": {
       "type": "header",
       "blocks": {
+        "megamenu_T67HVJ": {
+          "type": "megamenu",
+          "settings": {
+            "image_title": "heading",
+            "image_link": "shopify://collections/all",
+            "position": "1",
+            "mega_sub_menu": "shop-all"
+          }
+        },
         "megamenu_bL8xeU": {
           "type": "megamenu",
           "settings": {
@@ -55,15 +64,6 @@
             "image_block": "shopify://shop_images/Shop_Delicious_balms.webp",
             "image_title": "Shop Delicious balms",
             "image_link": "shopify://collections/lips"
-          }
-        },
-        "megamenu_T67HVJ": {
-          "type": "megamenu",
-          "settings": {
-            "image_title": "heading",
-            "image_link": "",
-            "position": "1",
-            "mega_sub_menu": "shop-all"
           }
         },
         "image_picker_nbbXJR": {
@@ -165,6 +165,15 @@
             "image_link": "shopify://blogs/blog/hot-off-the-press"
           }
         },
+        "megamenu_eLajWF": {
+          "type": "megamenu",
+          "settings": {
+            "image_title": "heading",
+            "image_link": "",
+            "position": "2",
+            "mega_sub_menu": "wcc-best-sellers"
+          }
+        },
         "megamenu_MxT4G3": {
           "type": "megamenu",
           "settings": {
@@ -176,9 +185,9 @@
         }
       },
       "block_order": [
+        "megamenu_T67HVJ",
         "megamenu_bL8xeU",
         "image_picker_xEJ8td",
-        "megamenu_T67HVJ",
         "image_picker_nbbXJR",
         "megamenu_RfUwC6",
         "megamenu_eAHRng",
@@ -190,6 +199,7 @@
         "megamenu_FexHtw",
         "image_picker_WfNLdw",
         "image_picker_ddxb77",
+        "megamenu_eLajWF",
         "megamenu_MxT4G3"
       ],
       "settings": {
