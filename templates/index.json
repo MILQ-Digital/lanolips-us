@@ -174,7 +174,7 @@
         "button_AxwgMt": {
           "type": "button",
           "settings": {
-            "button_label": "Shop Delicious",
+            "button_label": "Shop Now",
             "button_link": "shopify://collections",
             "button_style_secondary": false,
             "button_style_underline": false
