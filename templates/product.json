@@ -18,7 +18,6 @@
         },
         "wishlist_plus_wishlist_pdp_button_kRjrt4": {
           "type": "shopify://apps/wishlist-plus/blocks/wishlist-pdp-button/80c3b1fc-3a8f-407e-8367-ffdeebb8b612",
-          "disabled": true,
           "settings": {
             "swym_atw_button_icon": "heart",
             "swym_atw_display_btn_text": true,
