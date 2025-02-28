@@ -4112,6 +4112,7 @@ body .otCookiesNotification #cookies-message-context a {
   body .otCookiesNotification .ot-btn-group span[role=button] {
     min-height: 40px;
   }
+  body .otCookies-header-banner {display: block;}
 }
 
 
