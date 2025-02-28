@@ -4090,6 +4090,9 @@ body .otCookiesNotification #cookies-message-context {
   body .otCookiesNotification .otCookies-header-banner {
     width: 100%;
   }
+  body .otCookiesNotification p.cookies-message-context {
+    margin: 5px 0;
+  }
 }
 
 
