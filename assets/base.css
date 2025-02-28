@@ -4062,11 +4062,14 @@ details-disclosure > details {
 body .otCookiesNotification #cookies-wrapper {padding: 20px 40px}
 #cookies-wrapper #ot-cookie-banner  #cst-banner-title {
   font-size: 20px !important;
-  font-weight: 600;
+  font-weight: 500;
 }
 body .otCookiesNotification .otCookies-header-banner {
   row-gap: 8px;
 }
-body #cookies-preferences {
+body .otCookiesNotification #cookies-preferences {
   border: 1px solid;
+   font-weight: 500;
 }
+
+
