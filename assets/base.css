@@ -4087,6 +4087,9 @@ body .otCookiesNotification #cookies-message-context {
   body .otCookiesNotification #cookies-wrapper {
     padding: 20px;
   }
+  body .otCookiesNotification .otCookies-header-banner {
+    width: 100%;
+  }
 }
 
 
