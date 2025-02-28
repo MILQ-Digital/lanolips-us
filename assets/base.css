@@ -4059,7 +4059,7 @@ details-disclosure > details {
 }
 
 /***Cookies***/
-.cookies-wrapper #cst-banner-title {
+.cookies-wrapper #ot-cookie-banner  #cst-banner-title {
   font-size: 20px !important;
   font-weight: 600;
 }
