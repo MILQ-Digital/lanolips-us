@@ -4081,6 +4081,7 @@ body .otCookiesNotification #cookies-preferences {
 
 body .otCookiesNotification #cookies-message-context {
   gap: 5px;
+  text-align: left;
 }
 
 body .otCookiesNotification #cookies-message-context a {
