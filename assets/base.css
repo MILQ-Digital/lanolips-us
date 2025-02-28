@@ -4068,7 +4068,7 @@ body .otCookiesNotification .otCookies-header-banner {
   row-gap: 8px;
 }
 
-body .otCookiesNotification .ot-btn-group {
+body .otCookiesNotification .ot-btn-group span[role="button"] {
   font-weight: 500;
 }
 
