@@ -4035,3 +4035,25 @@ details-disclosure > details {
     line-height: 21px;
   }
 } 
+
+/***wishlist***/
+.product #swym-atw-pdp-button .atw-button-text {
+  display: none;
+}
+
+.product .swym-atw-btn-wrapper.product_title_right-position {
+  justify-content: space-between;
+}
+
+.plp-wish-btn {
+    position: absolute;
+    left: auto;
+    right: 15px;
+    top: 15px;
+    z-index: 9;
+}
+
+.plp-wish-btn svg {
+  fill: #fff;
+  stroke: #2B4676;
+}
