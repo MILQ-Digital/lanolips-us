@@ -4083,6 +4083,10 @@ body .otCookiesNotification #cookies-message-context {
   gap: 5px;
 }
 
+body .otCookiesNotification #cookies-message-context a {
+  color: inherit;
+}
+
 @media screen and (max-width: 900px) {
   body .otCookiesNotification #cookies-wrapper {
     padding: 20px;
