@@ -4095,6 +4095,7 @@ body .otCookiesNotification #cookies-message-context {
   }
   body .otCookiesNotification #cookies-message-context {
     flex-direction: row;
+    width: 100%;
   }
 }
 
