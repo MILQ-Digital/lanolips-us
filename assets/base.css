@@ -4057,3 +4057,9 @@ details-disclosure > details {
   fill: #fff;
   stroke: #2B4676;
 }
+
+/***Cookies***/
+.cookies-wrapper #cst-banner-title {
+  font-size: 20px !important;
+  font-weight: 600;
+}
