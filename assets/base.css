@@ -4083,4 +4083,10 @@ body .otCookiesNotification #cookies-message-context {
   gap: 5px;
 }
 
+@media screen and (max-width: 900px) {
+  body .otCookiesNotification #cookies-wrapper {
+    padding: 20px;
+  }
+}
+
 
