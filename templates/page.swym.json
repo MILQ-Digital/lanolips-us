@@ -14,12 +14,14 @@
       "settings": {
         "padding_top": 28,
         "padding_bottom": 28,
-        "hidepage_content": false,
+        "custom_page_title": "Wishlist",
+        "hidepage_content": true,
         "layout": "none",
         "color_scheme": "",
         "container_color_scheme": "",
         "open_first_collapsible_row": false,
         "use_metaobject_faq": false,
+        "mobile_img_visibility": false,
         "image_ratio": "adapt",
         "desktop_layout": "image_second"
       }
