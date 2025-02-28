@@ -4070,6 +4070,8 @@ body .otCookiesNotification .otCookies-header-banner {
 
 body .otCookiesNotification .ot-btn-group span[role="button"] {
   font-weight: 500;
+  min-width: 140px;
+  min-height: 44px;
 }
 
 body .otCookiesNotification #cookies-preferences {
