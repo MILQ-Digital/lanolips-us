@@ -4067,6 +4067,11 @@ body .otCookiesNotification #cookies-wrapper {padding: 20px 40px}
 body .otCookiesNotification .otCookies-header-banner {
   row-gap: 8px;
 }
+
+body .otCookiesNotification .ot-btn-group {
+  font-weight: 500;
+}
+
 body .otCookiesNotification #cookies-preferences {
   border: 1px solid;
    font-weight: 500;
