@@ -4079,4 +4079,8 @@ body .otCookiesNotification #cookies-preferences {
    font-weight: 500;
 }
 
+body .otCookiesNotification #cookies-message-context {
+  gap: 5px;
+}
+
 
