@@ -141,6 +141,7 @@
         "megamenu_NaggUE": {
           "type": "megamenu",
           "settings": {
+            "mega_image": "shopify://shop_images/Hands-_-Cream-Banner.jpg",
             "image_title": "heading",
             "image_link": "",
             "position": "6",
