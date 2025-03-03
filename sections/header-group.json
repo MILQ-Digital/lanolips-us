@@ -57,24 +57,6 @@
             "mega_sub_menu": "wcc-best-sellers"
           }
         },
-        "image_picker_xEJ8td": {
-          "type": "image_picker",
-          "settings": {
-            "position": "2",
-            "image_block": "shopify://shop_images/101_Ointment_Multipurpose_Superbalm_Tubes.jpg",
-            "image_title": "Shop 101 Ointment",
-            "image_link": "shopify://collections/lips"
-          }
-        },
-        "image_picker_nbbXJR": {
-          "type": "image_picker",
-          "settings": {
-            "position": "2",
-            "image_block": "shopify://shop_images/12_Hour_Overnight_Lip_Mask_Tubes.jpg",
-            "image_title": "Shop Golden Dry Skin Miracle Salve",
-            "image_link": "shopify://collections/101-ointment"
-          }
-        },
         "megamenu_yK9naV": {
           "type": "megamenu",
           "settings": {
@@ -205,8 +187,6 @@
       "block_order": [
         "megamenu_gbPBTT",
         "megamenu_eLajWF",
-        "image_picker_xEJ8td",
-        "image_picker_nbbXJR",
         "megamenu_yK9naV",
         "image_picker_qRiqMK",
         "image_picker_XB6FJ3",
