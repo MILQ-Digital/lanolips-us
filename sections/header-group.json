@@ -133,9 +133,9 @@
           "type": "image_picker",
           "settings": {
             "position": "5",
-            "image_block": "shopify://shop_images/Shop_Delicious_balms.webp",
-            "image_title": "Shop [Product]",
-            "image_link": "shopify://products/101-dry-skin-super-cream-multipurpose-for-face-body"
+            "image_block": "shopify://shop_images/101_Ointment_Multipurpose_Superbalm_Tubes.jpg",
+            "image_title": "101 Ointment Multipurpose Superbalm",
+            "image_link": "shopify://collections/101-ointment"
           }
         },
         "image_picker_Axyq9F": {
