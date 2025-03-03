@@ -281,8 +281,8 @@
           "type": "column",
           "settings": {
             "image": "shopify://shop_images/Artboard_3.jpg",
-            "title": "Engaging headline about bundles",
-            "text": "<p>Lorem ipsum dolor sit amet</p>",
+            "title": "The Original 101 Multipurpose Superbalm",
+            "text": "<p>The Worlds Best Lip Balm</p>",
             "link_label": "Shop Now",
             "link": "shopify://collections/all",
             "button_style_secondary": false
