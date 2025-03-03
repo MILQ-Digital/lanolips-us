@@ -88,8 +88,8 @@
           "type": "image_picker",
           "settings": {
             "position": "2",
-            "image_block": "shopify://shop_images/Shop_Delicious_balms.webp",
-            "image_title": "Shop Delicious balms",
+            "image_block": "shopify://shop_images/101_Ointment_Multipurpose_Superbalm_Tubes.jpg",
+            "image_title": "Shop 101 Ointment",
             "image_link": "shopify://collections/lips"
           }
         },
