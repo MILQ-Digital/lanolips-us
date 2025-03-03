@@ -280,7 +280,7 @@
         "column_mGc7n6": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/Rectangle_290_1.jpg",
+            "image": "shopify://shop_images/Artboard_3.jpg",
             "title": "Engaging headline about bundles",
             "text": "<p>Lorem ipsum dolor sit amet</p>",
             "link_label": "Shop Now",
@@ -291,9 +291,9 @@
         "column_nBnMPt": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/Rectangle_290.jpg",
-            "title": "Something about gifting",
-            "text": "<p>Lorem ipsum dolor sit amet</p>",
+            "image": "shopify://shop_images/Artboard_2_560315b4-7945-409f-8b1e-2bee066c0424.jpg",
+            "title": "12 Hour Overnight Lip Mask",
+            "text": "<p>An intensive blend of hydrating ultra-pure lanolin and powerhouse mega-actives. </p>",
             "link_label": "Shop Now",
             "link": "shopify://collections/all",
             "button_style_secondary": false
