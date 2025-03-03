@@ -39,15 +39,6 @@
     "header": {
       "type": "header",
       "blocks": {
-        "megamenu_T67HVJ": {
-          "type": "megamenu",
-          "settings": {
-            "image_title": "heading",
-            "image_link": "shopify://collections/all",
-            "position": "1",
-            "mega_sub_menu": "shop-all"
-          }
-        },
         "megamenu_eLajWF": {
           "type": "megamenu",
           "settings": {
@@ -198,10 +189,27 @@
             "image_title": "Hot Off The Press!",
             "image_link": "shopify://blogs/blog/hot-off-the-press"
           }
+        },
+        "megamenu_gbPBTT": {
+          "type": "megamenu",
+          "settings": {
+            "image_title": "heading",
+            "image_link": "",
+            "position": "1",
+            "mega_sub_menu": "shop-all"
+          }
+        },
+        "megamenu_T67HVJ": {
+          "type": "megamenu",
+          "settings": {
+            "image_title": "heading",
+            "image_link": "shopify://collections/all",
+            "position": "1",
+            "mega_sub_menu": "shop-all"
+          }
         }
       },
       "block_order": [
-        "megamenu_T67HVJ",
         "megamenu_eLajWF",
         "megamenu_yK9naV",
         "image_picker_qRiqMK",
@@ -218,7 +226,9 @@
         "megamenu_MxT4G3",
         "megamenu_FexHtw",
         "image_picker_WfNLdw",
-        "image_picker_ddxb77"
+        "image_picker_ddxb77",
+        "megamenu_gbPBTT",
+        "megamenu_T67HVJ"
       ],
       "settings": {
         "logo_position": "top-center",
