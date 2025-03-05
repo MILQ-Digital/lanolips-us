@@ -4133,8 +4133,8 @@ body .otCookiesNotification #cookies-message-context a {
 }
 
 .yotpo-reviews-carousel-header {
-  font-size: var(--heading-md);
-  font-family: var(--font-heading-family);
+  font-size: var(--heading-md)!important;
+  font-family: var(--font-heading-family)!important;
 }
 
 .yotpo-reviews-carousel-container {
