@@ -339,4 +339,9 @@ details[open].menu-opening > .menu-drawer__submenu {
     color: inherit;
     font-weight: 400;
   }
+
+  .menu-drawer__inner-submenu a {
+    color: inherit;
+    text-decoration: none;
+  }
 }

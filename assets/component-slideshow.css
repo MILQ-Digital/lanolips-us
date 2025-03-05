@@ -175,7 +175,7 @@ slideshow-component .slideshow__controls {
   bottom: 20px;
   width: 100%;
   justify-content: space-between;
-  padding: 0 42px;
+  padding: 0;
 }
 
 .slideshow__controls--top {

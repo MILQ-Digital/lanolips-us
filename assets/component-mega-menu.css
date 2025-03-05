@@ -29,6 +29,11 @@
   visibility: hidden;
   display: none;
   pointer-events: none;
+  transform: unset;
+  /*transition: opacity .2s cubic-bezier(.215,.61,.355,1), visibility 0s .2s;*/
+}
+
+.list-menu li:hover .sub-menu {
   transition: opacity .2s cubic-bezier(.215,.61,.355,1), visibility 0s .2s;
 }
 
@@ -47,6 +52,7 @@
   transition-delay: 0s;
   display: block;
   height: auto;
+  transform: unset;
 }
 
 

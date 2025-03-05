@@ -511,3 +511,35 @@
     color: currentColor;
   }
 }
+
+
+@media screen and (max-width: 749px) {
+  slideshow-component.mobile-text-below .banner__media {
+    position: relative;
+  }
+
+  slideshow-component.mobile-text-below .banner--mobile-bottom .slideshow__text-wrapper {
+    flex-grow: 0;
+  }
+
+  slideshow-component.mobile-text-below .banner--large.banner--mobile-bottom:not(.banner--adapt) .banner__media, 
+  slideshow-component.mobile-text-below .banner--large.banner--stacked:not(.banner--mobile-bottom):not(.banner--adapt)>.banner__media {
+    height: auto;
+    min-height: 340px;
+  }
+
+  .banner-mobile-large {
+    min-height: 70vh;
+  }
+
+  .banner__heading.hm  {
+    font-size: 38px;
+    line-height: 38px;;
+  }
+
+  .banner__box,
+  .banner--mobile-bottom .banner__box {
+    padding: 4rem var(--outer);
+  }
+
+}

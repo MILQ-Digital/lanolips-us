@@ -20,16 +20,16 @@
     "product-grid": {
       "type": "main-collection-product-grid",
       "blocks": {
-        "promo_banner_wRK8yM": {
+        "promo_banner_tfAVHn": {
           "type": "promo-banner",
           "settings": {
             "banner_image": "shopify://shop_images/product_grid_1.jpg",
             "promotion_position": 7,
             "title": "Bundle It And Save",
             "link_label": "Shop Now",
-            "link": "shopify://collections/face",
+            "link": "",
             "color_scheme": "scheme-1",
-            "image_ratio": "adapt"
+            "image_ratio": "square"
           }
         },
         "promo_banner_CMXKXz": {
@@ -46,7 +46,7 @@
         }
       },
       "block_order": [
-        "promo_banner_wRK8yM",
+        "promo_banner_tfAVHn",
         "promo_banner_CMXKXz"
       ],
       "settings": {

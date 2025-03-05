@@ -440,11 +440,27 @@ a.product__text {
   }
 
   .product__media-list .product__media-item {
-    width: calc(100% - 3rem - var(--grid-mobile-horizontal-spacing));
+    width: calc(100% - 6rem - var(--grid-mobile-horizontal-spacing));
   }
 
   .product--mobile-columns .product__media-item {
     width: calc(50% - 1.5rem - var(--grid-mobile-horizontal-spacing));
+  }
+
+  .product__info-wrapper .quantity {
+    width: calc(9rem / var(--font-body-scale) + var(--inputs-border-width)* 2);
+  }
+
+  .product__info-wrapper .quantity__button {
+    width: calc(2rem / var(--font-body-scale));
+  }
+
+  .product__info-wrapper .quantity__input:focus {
+    background-color: #fff;
+  }
+
+  .product__info-container .product_button_price {
+    width: calc(100% - 113px);
   }
 }
 

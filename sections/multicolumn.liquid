@@ -44,7 +44,7 @@
     {%- endunless -%}
     <slider-component class="slider-mobile-gutter">
       <ul
-        class="multicolumn-list contains-content-container grid grid--{{ section.settings.columns_mobile }}-col-tablet-down grid--{{ section.settings.columns_desktop }}-col-desktop{% if show_mobile_slider %} slider slider--tablet grid--peek{% endif %} {{ section.settings.section_class }}"
+        class="{% if section.settings.mobile_full %} mobile_full {% endif %} multicolumn-list contains-content-container grid grid--{{ section.settings.columns_mobile }}-col-tablet-down grid--{{ section.settings.columns_desktop }}-col-desktop{% if show_mobile_slider %} slider slider--tablet grid--peek{% endif %} {{ section.settings.section_class }}"
         id="Slider-{{ section.id }}"
         role="list"
       >
@@ -358,6 +358,12 @@
       "default": false,
       "label": "t:sections.multicolumn.settings.swipe_on_mobile.label"
     },
+    {
+      "type": "checkbox",
+      "id": "mobile_full",
+      "default": false,
+      "label": "Full width on mobile"
+    },    
     {
       "type": "header",
       "content": "t:sections.all.padding.section_padding_heading"
