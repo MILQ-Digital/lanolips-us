@@ -4198,7 +4198,8 @@ body .glide__arrow--right {
 }
 
 .review-content,
-.review-content span {
+.review-content span,
+.review-product-name {
   font-family: var(--font-heading-family)!important;
   font-size: var(--body-sm)!important;
 }
