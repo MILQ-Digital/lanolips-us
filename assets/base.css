@@ -4182,4 +4182,7 @@ body .glide__arrow--right {
   font-family: var(--font-heading-family)!important;
 }
 
+.reviewer-display-name {
+  font-family: var(--font-heading-family)!important;
+}
 
