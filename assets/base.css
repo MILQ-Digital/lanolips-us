@@ -4149,7 +4149,7 @@ body .otCookiesNotification #cookies-message-context a {
   padding: 0 var(--outer);
   width: auto!important;
   max-width: var(--page-width);
-}
+} 
 
 body .reviews-carousel-card-container {
   border: none;
