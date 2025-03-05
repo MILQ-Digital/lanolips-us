@@ -4131,9 +4131,10 @@ body .otCookiesNotification #cookies-message-context a {
   width: auto!important;
 }
 
-.reviews-carousel-card-container {
+body .reviews-carousel-card-container {
   border: none;
   border-radius: 8px;
   padding: 40px!important;
+  max-width: 380px;
 }
 
