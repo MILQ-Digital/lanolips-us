@@ -4198,6 +4198,7 @@ body .glide__arrow--right {
 
 .review-content {
   font-family: var(--font-heading-family)!important;
+  font-size: --body-sm: 16px;
 }
 
 
