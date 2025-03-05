@@ -4136,6 +4136,7 @@ body .otCookiesNotification #cookies-message-context a {
 .yotpo-reviews-carousel-header {
   font-size: var(--heading-md)!important;
   font-family: var(--font-heading-family)!important;
+  line-height: 1em !important;
 }
 
 .yotpo-reviews-carousel-container {
