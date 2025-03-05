@@ -4177,5 +4177,9 @@ body .glide__arrow--right {
   padding-top: 15px;
 }
 
+.review-title {
+  font-size: var(--heading-sm)!important;
+  font-family: var(--font-heading-family)!important;
+}
 
 
