@@ -4196,3 +4196,8 @@ body .glide__arrow--right {
   padding-bottom: 10px;
 }
 
+.review-content {
+  font-family: var(--font-heading-family)!important;
+}
+
+
