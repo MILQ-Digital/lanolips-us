@@ -4184,5 +4184,6 @@ body .glide__arrow--right {
 
 .reviewer-display-name {
   font-family: var(--font-heading-family)!important;
+  font-weight: 500 !important;
 }
 
