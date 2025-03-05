@@ -4117,7 +4117,7 @@ body .otCookiesNotification #cookies-message-context a {
 
 #yotpo-reviews-carousel-widget {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
 }
 
 .yotpo-reviews-carousel-header-container {
