@@ -4147,7 +4147,10 @@ body .glide__arrow--left {
   left: -20px;
 }
 
-
+body .glide__arrow--right {
+   right: -20px;
+}
+   
 
 
 
