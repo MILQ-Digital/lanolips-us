@@ -4148,6 +4148,7 @@ body .otCookiesNotification #cookies-message-context a {
 .yotpo-reviews-carousel-widget-container.yotpo-reviews-carousel-widget-mobile-mode {
   padding: 0 var(--outer);
   width: auto!important;
+  max-width: var(--page-width);
 }
 
 body .reviews-carousel-card-container {
