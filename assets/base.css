@@ -4199,7 +4199,8 @@ body .glide__arrow--right {
 
 .review-content,
 .review-content span,
-.review-product-name {
+.review-product-name,
+.reviews-bottomline-total-reviews {
   font-family: var(--font-heading-family)!important;
   font-size: var(--body-sm)!important;
   color: inherit!important;
