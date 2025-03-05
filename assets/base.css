@@ -4156,7 +4156,7 @@ body .reviews-carousel-card-container {
   border-radius: 8px;
   padding: 40px!important;
   max-width: 375px;
-  width: 375px;
+  width: 375px!important;
 }
 
 body .yotpo-carousel .glide__slide {
