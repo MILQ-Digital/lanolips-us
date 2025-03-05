@@ -250,14 +250,25 @@
       "block_order": [
         "yotpo_product_reviews_reviews_UyzczP"
       ],
+      "disabled": true,
       "settings": {
         "include_margins": true
+      }
+    },
+    "custom_liquid_4MPxwA": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<div class=\"yotpo-widget-instance\" data-yotpo-instance-id=\"1049541\" data-yotpo-product-id=\"{{product.id}}\" data-yotpo-cart-product-id=\"{{item.product.id}}\"></div>",
+        "color_scheme": "scheme-3",
+        "padding_top": 40,
+        "padding_bottom": 52
       }
     }
   },
   "order": [
     "main",
     "rich_text_qVEiKy",
+    "custom_liquid_4MPxwA",
     "related-products",
     "collapsible_content_GiNw6Y",
     "1737799384d89c7c48"
