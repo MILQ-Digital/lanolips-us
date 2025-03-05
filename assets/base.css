@@ -4170,7 +4170,12 @@ body .glide__arrow--left {
 body .glide__arrow--right {
    right: -20px;
 }
-   
+
+
+.reviews-carousel-card-review-product-container {
+  border-top: 1px solid #FAE8ED;
+  padding-top: 15px;
+}
 
 
 
