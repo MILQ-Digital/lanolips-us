@@ -425,6 +425,15 @@
         "padding_top": 40,
         "padding_bottom": 52
       }
+    },
+    "custom_liquid_PtfDQV": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<div class=\"yotpo-widget-instance\" data-yotpo-instance-id=\"1049541\" data-yotpo-product-id=\"{{product.id}}\" data-yotpo-cart-product-id=\"{{item.product.id}}\"></div>",
+        "color_scheme": "scheme-3",
+        "padding_top": 56,
+        "padding_bottom": 32
+      }
     }
   },
   "order": [
@@ -434,6 +443,7 @@
     "collection_list_aGyhDV",
     "image_banner_rxCeJC",
     "multicolumn_gqYkVh",
+    "custom_liquid_PtfDQV",
     "rich_text_636tak",
     "173950177361100e1b",
     "rich_text_fbJVJQ"
