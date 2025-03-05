@@ -4202,4 +4202,9 @@ body .glide__arrow--right {
   font-size: var(--body-sm)!important;
 }
 
+.review-content span {
+  text-decoration: underline;
+  color: inherit!important;
+}
+
 
