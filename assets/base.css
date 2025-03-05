@@ -4143,3 +4143,11 @@ body .yotpo-carousel .glide__slide {
   margin: 0 10px !important;
 }
 
+body .glide__arrow--left {
+  left: -20px;
+}
+
+
+
+
+
