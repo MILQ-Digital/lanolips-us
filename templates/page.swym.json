@@ -1,0 +1,75 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28,
+        "custom_page_title": "Wishlist",
+        "hidepage_content": true,
+        "layout": "none",
+        "color_scheme": "",
+        "container_color_scheme": "",
+        "open_first_collapsible_row": false,
+        "use_metaobject_faq": false,
+        "mobile_img_visibility": false,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second"
+      }
+    },
+    "1740743302f40f6ec9": {
+      "type": "apps",
+      "blocks": {
+        "wishlist_plus_engage_myaccount_wishlisteditems_Jwq6CW": {
+          "type": "shopify://apps/wishlist-plus/blocks/engage-myaccount-wishlisteditems/80c3b1fc-3a8f-407e-8367-ffdeebb8b612",
+          "settings": {
+            "swym_engage_wishlist_items_background_color": "transparent",
+            "swym_engage_wishlist_items_text_color": "#000000",
+            "swym_engage_wishlist_items_background_color_secondary": "#e7e7e7",
+            "swym_engage_wishlist_items_highlight_color": "#808080",
+            "swym_engage_wishlist_items_title": 20,
+            "swym_engage_wishlist_items_per_row_desktop": 5,
+            "swym_engage_wishlist_items_per_row_tablet": 3,
+            "swym_engage_wishlist_items_per_row_mobile": 2,
+            "swym_engage_wishlist_items_nav_background_color": "#fff",
+            "swym_engage_wishlist_items_nave_arrow_color": "#000",
+            "swym_engage_Wishlist_items_show_title": true,
+            "swym_engage_Wishlist_items_show_price": true,
+            "swym_engage_Wishlist_items_show_variant": false,
+            "swym_engage_wishlist_items_show_vendor": false,
+            "swym_engage_wishlist_items_font_size": 16,
+            "swym_engage_wishlist_items_compare_price_color": "#EE2E2E",
+            "swym_engage_Wishlist_items_show_add_to_cart_button": true,
+            "swym_engage_Wishlist_items_show_view_product_button": false,
+            "swym_engage_wishlist_items_button_type": "solid",
+            "swym_engage_wishlist_items_button_width": "100%",
+            "swym_engage_wishlist_items_button_align": "center",
+            "swym_engage_wishlist_items_button_border_radious": 0,
+            "swym_engage_wishlist_items_button_background_color": "#434655",
+            "swym_engage_wishlist_items_button_text_color": "#fff",
+            "swym_engage_wishlist_show_product_updates": false
+          }
+        }
+      },
+      "block_order": [
+        "wishlist_plus_engage_myaccount_wishlisteditems_Jwq6CW"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    }
+  },
+  "order": [
+    "main",
+    "1740743302f40f6ec9"
+  ]
+}

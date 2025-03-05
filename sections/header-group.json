@@ -39,7 +39,7 @@
     "header": {
       "type": "header",
       "blocks": {
-        "megamenu_bL8xeU": {
+        "megamenu_nKJz4B": {
           "type": "megamenu",
           "settings": {
             "image_title": "",
@@ -149,7 +149,7 @@
         }
       },
       "block_order": [
-        "megamenu_bL8xeU",
+        "megamenu_nKJz4B",
         "image_picker_xEJ8td",
         "image_picker_nbbXJR",
         "megamenu_eAHRng",
@@ -173,6 +173,7 @@
         "enable_country_selector": false,
         "enable_language_selector": false,
         "enable_customer_avatar": true,
+        "show_wishlist": true,
         "mobile_logo_position": "center",
         "margin_bottom": 0,
         "padding_top": 8,
