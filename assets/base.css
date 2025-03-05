@@ -4139,6 +4139,6 @@ body .reviews-carousel-card-container {
 }
 
 body .yotpo-carousel .glide__slide {
-  width: auto;
+  width: auto!important;
 }
 
