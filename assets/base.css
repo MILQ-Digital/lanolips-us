@@ -4125,5 +4125,9 @@ body .otCookiesNotification #cookies-message-context a {
   border-radius: 8px;
 }
 
+.yotpo-reviews-carousel-widget-container.yotpo-reviews-carousel-widget-mobile-mode {
+  margin: 0 auto;
+}
+
 
 
