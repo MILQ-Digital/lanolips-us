@@ -4180,6 +4180,7 @@ body .glide__arrow--right {
 .review-title {
   font-size: var(--heading-sm)!important;
   font-family: var(--font-heading-family)!important;
+  font-weight: 500;
 }
 
 .reviewer-display-name {
