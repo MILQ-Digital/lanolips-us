@@ -431,6 +431,15 @@
         "include_margins": true
       }
     },
+    "custom_liquid_KcwUiT": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<div class=\"yotpo-widget-instance\" data-yotpo-instance-id=\"1049541\" data-yotpo-product-id=\"{{product.id}}\" data-yotpo-cart-product-id=\"{{item.product.id}}\"></div>",
+        "color_scheme": "scheme-3",
+        "padding_top": 56,
+        "padding_bottom": 32
+      }
+    },
     "related-products": {
       "type": "related-products",
       "settings": {
@@ -502,15 +511,6 @@
       "disabled": true,
       "settings": {
         "include_margins": true
-      }
-    },
-    "custom_liquid_KcwUiT": {
-      "type": "custom-liquid",
-      "settings": {
-        "custom_liquid": "<div class=\"yotpo-widget-instance\" data-yotpo-instance-id=\"1049541\" data-yotpo-product-id=\"{{product.id}}\" data-yotpo-cart-product-id=\"{{item.product.id}}\"></div>",
-        "color_scheme": "",
-        "padding_top": 56,
-        "padding_bottom": 32
       }
     }
   },
