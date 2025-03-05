@@ -4202,6 +4202,7 @@ body .glide__arrow--right {
 .review-product-name {
   font-family: var(--font-heading-family)!important;
   font-size: var(--body-sm)!important;
+  color: inherit!important;
 }
 
 .review-content span {
