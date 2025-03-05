@@ -4115,12 +4115,18 @@ body .otCookiesNotification #cookies-message-context a {
   body .otCookies-header-banner {display: block!important;}
 }
 
-.yotpo-reviews-carousel-header-container,
+.yotpo-reviews-carousel-widget {display: flex}
+
+.yotpo-reviews-carousel-header-container {
+  order: 2
+}
+
 .yotpo-reviews-carousel-bottomline-seo {
-  background: #fff;
+  order: 1
 }
 
 .yotpo-reviews-carousel-container {
+  order: 3;
   padding: 40px;
   border-radius: 8px;
   background: #FAE8ED;
