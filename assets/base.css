@@ -4134,5 +4134,6 @@ body .otCookiesNotification #cookies-message-context a {
 .reviews-carousel-card-container {
   border: none;
   border-radius: 8px;
+  padding: 40px!important;
 }
 
