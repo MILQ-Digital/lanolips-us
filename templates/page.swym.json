@@ -26,21 +26,6 @@
         "desktop_layout": "image_second"
       }
     },
-    "17406667649a8bbc2e": {
-      "type": "apps",
-      "blocks": {
-        "wishlist_plus_wishlist_page_section_TeTMGY": {
-          "type": "shopify://apps/wishlist-plus/blocks/wishlist-page-section/80c3b1fc-3a8f-407e-8367-ffdeebb8b612",
-          "settings": {}
-        }
-      },
-      "block_order": [
-        "wishlist_plus_wishlist_page_section_TeTMGY"
-      ],
-      "settings": {
-        "include_margins": true
-      }
-    },
     "17406526960d01e8aa": {
       "type": "apps",
       "blocks": {
@@ -59,7 +44,6 @@
   },
   "order": [
     "main",
-    "17406667649a8bbc2e",
     "17406526960d01e8aa"
   ]
 }
