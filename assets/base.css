@@ -4123,6 +4123,7 @@ body .otCookiesNotification #cookies-message-context a {
 .yotpo-reviews-carousel-container {
   padding: 40px;
   border-radius: 8px;
+  background: #FAE8ED;
 }
 
 .yotpo-reviews-carousel-widget-container.yotpo-reviews-carousel-widget-mobile-mode {
