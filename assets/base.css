@@ -4138,3 +4138,7 @@ body .reviews-carousel-card-container {
   max-width: 380px;
 }
 
+body .yotpo-carousel .glide__slide {
+  width: auto;
+}
+
