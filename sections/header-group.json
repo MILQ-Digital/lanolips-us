@@ -146,7 +146,6 @@
         "megamenu_NaggUE": {
           "type": "megamenu",
           "settings": {
-            "mega_image": "shopify://shop_images/Hands-_-Cream-Banner.jpg",
             "image_title": "heading",
             "image_link": "",
             "position": "6",
@@ -178,6 +177,24 @@
             "image_link": "",
             "position": "7",
             "mega_sub_menu": "gifts"
+          }
+        },
+        "image_picker_Ep9tMf": {
+          "type": "image_picker",
+          "settings": {
+            "position": "7",
+            "image_block": "shopify://shop_images/12_Hour_Overnight_Lip_Mask_Tubes.jpg",
+            "image_title": "",
+            "image_link": ""
+          }
+        },
+        "image_picker_M46JhC": {
+          "type": "image_picker",
+          "settings": {
+            "position": "7",
+            "image_block": "shopify://shop_images/101_Ointment_Multipurpose_Superbalm_Tubes.jpg",
+            "image_title": "",
+            "image_link": ""
           }
         },
         "megamenu_FexHtw": {
@@ -224,6 +241,8 @@
         "image_picker_WfNLdw",
         "image_picker_ddxb77",
         "megamenu_MxT4G3",
+        "image_picker_Ep9tMf",
+        "image_picker_M46JhC",
         "megamenu_FexHtw",
         "image_picker_cVMpbW",
         "image_picker_JdyALT"
