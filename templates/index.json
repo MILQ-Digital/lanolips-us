@@ -98,7 +98,7 @@
     "featured_collection": {
       "type": "featured-collection",
       "settings": {
-        "title": "Lanolips Best Sellers",
+        "title": "Best Sellers",
         "heading_size": "hs",
         "description": "",
         "show_description": false,
@@ -237,7 +237,7 @@
           "type": "heading",
           "settings": {
             "heading": "Lanolin - the <em><strong>most natural </strong></em>answer to dry skin",
-            "heading_size": "hm"
+            "heading_size": "hs"
           }
         },
         "checkbox_LMyxQA": {
