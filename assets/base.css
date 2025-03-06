@@ -4212,7 +4212,7 @@ body .glide__arrow--right {
 }
 
 #yotpo-reviews-main-widget .yotpo-headline {
-  font-size: var(--body-md)!important;
+  font-size: var(--heading-md)!important;
   font-family: var(--font-heading-family)!important;
 }
 
