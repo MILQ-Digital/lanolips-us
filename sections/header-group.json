@@ -188,6 +188,24 @@
             "position": "8",
             "mega_sub_menu": "wcc-discover"
           }
+        },
+        "image_picker_cVMpbW": {
+          "type": "image_picker",
+          "settings": {
+            "position": "8",
+            "image_block": "shopify://shop_images/12_Hour_Overnight_Lip_Mask_Tubes.jpg",
+            "image_title": "",
+            "image_link": ""
+          }
+        },
+        "image_picker_JdyALT": {
+          "type": "image_picker",
+          "settings": {
+            "position": "8",
+            "image_block": "shopify://shop_images/101_Ointment_Multipurpose_Superbalm_Tubes.jpg",
+            "image_title": "",
+            "image_link": ""
+          }
         }
       },
       "block_order": [
@@ -206,7 +224,9 @@
         "image_picker_WfNLdw",
         "image_picker_ddxb77",
         "megamenu_MxT4G3",
-        "megamenu_FexHtw"
+        "megamenu_FexHtw",
+        "image_picker_cVMpbW",
+        "image_picker_JdyALT"
       ],
       "settings": {
         "logo_position": "top-center",
