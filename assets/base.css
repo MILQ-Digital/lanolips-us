@@ -4215,5 +4215,6 @@ body .glide__arrow--right {
   font-size: var(--heading-md)!important;
   font-family: var(--font-heading-family)!important;
   color: var(--primary-color);
+  font-weight: 500 !important;
 }
 
