@@ -4218,3 +4218,7 @@ body .glide__arrow--right {
   font-weight: 500 !important;
 }
 
+#yotpo-reviews-main-widget .yotpo-review-border-smooth {
+  background-image: unset;
+  border-top: 1px solid #FAE8ED;
+}
