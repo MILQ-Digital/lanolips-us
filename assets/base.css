@@ -4211,4 +4211,8 @@ body .glide__arrow--right {
   color: inherit!important;
 }
 
+#yotpo-reviews-main-widget .yotpo-headline {
+  font-size: var(--body-md)!important;
+  font-family: var(--font-heading-family)!important;
+}
 
