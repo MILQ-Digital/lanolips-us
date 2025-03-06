@@ -487,7 +487,9 @@
                       price_class: 'price--large'
                     -%}
                   </div>   
-                </div>             
+                </div>   
+                {% include 'afterpay' %}
+              
               {%- when 'rating' -%}
                 {%- if product.metafields.reviews.rating.value != blank -%}
                   <div class="rating-wrapper">
