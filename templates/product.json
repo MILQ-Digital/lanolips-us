@@ -29,7 +29,7 @@
             "swym_atw_button_icon": "heart",
             "swym_atw_custom_icon": "shopify://shop_images/whishlist-heart.svg",
             "swym_atw_display_btn_text": false,
-            "swym_button_position": "product_title_left",
+            "swym_button_position": "product_title_right",
             "swym_atw_button_vertical_offset": 0,
             "swym_atw_full_width": true,
             "swym_atw_button_alignment": "right",
