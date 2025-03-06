@@ -41,6 +41,7 @@
       "blocks": {
         "megamenu_gbPBTT": {
           "type": "megamenu",
+          "disabled": true,
           "settings": {
             "image_title": "heading",
             "image_link": "",
@@ -50,6 +51,7 @@
         },
         "megamenu_eLajWF": {
           "type": "megamenu",
+          "disabled": true,
           "settings": {
             "image_title": "heading",
             "image_link": "",
@@ -214,7 +216,6 @@
         "enable_country_selector": false,
         "enable_language_selector": false,
         "enable_customer_avatar": true,
-        "show_wishlist": true,
         "show_wishlist": true,
         "mobile_logo_position": "center",
         "margin_bottom": 0,
