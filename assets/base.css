@@ -4181,7 +4181,7 @@ body .glide__arrow--right {
 }
 
 .review-title {
-  font-size: var(--heading-sm)!important;
+  font-size: var(--heading-xs)!important;
   font-family: var(--font-heading-family)!important;
   font-weight: 500; 
   margin: 0 !important;
