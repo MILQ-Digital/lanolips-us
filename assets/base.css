@@ -4133,11 +4133,10 @@ body .otCookiesNotification #cookies-message-context a {
   justify-content: center;
 }
 
-#yotpo-reviews-carousel-widget .yotpo-reviews-carousel-header {
+.yotpo-reviews-carousel-header {
   font-size: var(--heading-md)!important;
   font-family: var(--font-heading-family)!important;
   line-height: 1em !important;
-  font-weight: 500!important; 
 }
 
 .yotpo-reviews-carousel-container {
@@ -4174,15 +4173,15 @@ body .glide__arrow--right {
    right: -20px;
 }
 
+
 .reviews-carousel-card-review-product-container {
   border-top: 1px solid #FAE8ED;
-  padding-top: 15px; 
+  padding-top: 15px;
 }
 
 .review-title {
   font-size: var(--heading-xs)!important;
   font-family: var(--font-heading-family)!important;
-  font-weight: 500; 
   margin: 0 !important;
   padding: 15px 0 20px;
 }
@@ -4218,9 +4217,53 @@ body .glide__arrow--right {
   font-weight: 500 !important;
 }
 
+body .yotpo-sr-vertical-border {display: none!important}
+
+.collection .yotpo-sr-bottom-line-right-panel .yotpo-sr-bottom-line-text--right-panel {
+   color: var(--Lano-Blue)!important;
+}
+
+.yotpo-sr-bottom-line-left-panel,
+.yotpo-sr-bottom-line-right-panel .yotpo-sr-bottom-line-text--right-panel {
+  font-size: var(--body-xs)!important;
+  font-family: var(--font-heading-family)!important;
+  padding-top: 0 !important;
+  margin-top: -1px;
+}
+
+.yotpo-sr-bottom-line-summary > div:first-child {
+  margin-right: 2px!important;
+}
+
+.yotpo-widget-instance .star-container svg {
+  width:14px;
+  height: 14px;
+}
+
 #yotpo-reviews-main-widget .yotpo-review-border-smooth {
   background-image: unset;
   border-top: 1px solid #FAE8ED;
 }
 
 .afterpay-paragraph {text-align: center;}
+
+body .yotpo-widget-clear:has(.yotpo-sr-star-empty) {
+ display: none;
+}
+
+.collection .swym-wishlist-collections-v2-container {
+  opacity: 0;
+}
+
+.collection .grid__item:hover .swym-wishlist-collections-v2-container {
+  opacity: 1
+}
+
+.swym-wishlist-collections-icon-heart-filled, 
+.swym-wishlist-collections-icon-heart-unfilled, 
+.swym-wishlist-collections-icon-star-filled, 
+.swym-wishlist-collections-icon-star-unfilled, 
+.swym-wishlist-collections-icon-bookmark-unfilled, 
+.swym-wishlist-collections-icon-bookmark-filled {
+  fill: var(--Lano-Blue)!important;
+}
