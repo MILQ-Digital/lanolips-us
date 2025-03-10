@@ -102,8 +102,8 @@
           "type": "image_picker",
           "settings": {
             "position": "4",
-            "image_block": "shopify://shop_images/101_Ointment_Multipurpose_Superbalm_Tubes.jpg",
-            "image_title": "101 Ointment Multipurpose Superbalm",
+            "image_block": "shopify://shop_images/Menu_Category_Images_Featured_Image_Lips_1.jpg",
+            "image_title": "",
             "image_link": "shopify://collections/101-ointment"
           }
         },
