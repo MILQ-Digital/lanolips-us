@@ -244,7 +244,7 @@
           "type": "checkbox",
           "settings": {
             "text_text": "Learn More",
-            "text_link": "shopify://collections",
+            "text_link": "shopify://pages/why-lanolin",
             "view_all_style": "link"
           }
         }
