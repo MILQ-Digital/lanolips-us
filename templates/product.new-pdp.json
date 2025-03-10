@@ -263,6 +263,7 @@
         "color_scheme": "scheme-2",
         "columns_mobile": "1",
         "swipe_on_mobile": false,
+        "mobile_full": false,
         "padding_top": 36,
         "padding_bottom": 36,
         "section_class": "before_after"
@@ -386,6 +387,7 @@
         "text_b8h9GQ",
         "button_maJHVc"
       ],
+      "disabled": true,
       "settings": {
         "image": "{{ product.metafields.custom.sustainable_image.value }}",
         "height": "adapt",
@@ -468,6 +470,7 @@
       "block_order": [
         "collapsible_row_8Grf4Q"
       ],
+      "disabled": true,
       "settings": {
         "caption": "",
         "heading": "FAQS",
