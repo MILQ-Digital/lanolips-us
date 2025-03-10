@@ -220,8 +220,8 @@
           "settings": {
             "position": "8",
             "image_block": "shopify://shop_images/Menu_Category_Images_Featured_Image_Discover_3.jpg",
-            "image_title": "",
-            "image_link": ""
+            "image_title": "Our Story",
+            "image_link": "shopify://pages/lano-heritage"
           }
         }
       },
