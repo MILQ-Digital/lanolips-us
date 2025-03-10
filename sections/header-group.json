@@ -111,9 +111,9 @@
           "type": "image_picker",
           "settings": {
             "position": "4",
-            "image_block": "shopify://shop_images/12_Hour_Overnight_Lip_Mask_Tubes.jpg",
-            "image_title": "12 Hour Overnight Lip Mask",
-            "image_link": "shopify://products/12-hour-overnight-lip-mask"
+            "image_block": "shopify://shop_images/Menu_Category_Images_Featured_Image_Lips_2.jpg",
+            "image_title": "",
+            "image_link": "shopify://collections/lip-balm"
           }
         },
         "megamenu_eAHRng": {
