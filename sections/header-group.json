@@ -129,9 +129,9 @@
           "type": "image_picker",
           "settings": {
             "position": "5",
-            "image_block": "shopify://shop_images/101_Ointment_Multipurpose_Superbalm_Tubes.jpg",
-            "image_title": "101 Ointment Multipurpose Superbalm",
-            "image_link": "shopify://collections/101-ointment"
+            "image_block": "shopify://shop_images/Menu_Category_Images_Featured_Image_Face1.jpg",
+            "image_title": "",
+            "image_link": "shopify://products/face-base-vitamin-e-day-cream"
           }
         },
         "image_picker_Axyq9F": {
