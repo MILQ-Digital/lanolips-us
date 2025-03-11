@@ -27,15 +27,15 @@
         "heading_gFjHfy": {
           "type": "heading",
           "settings": {
-            "heading": "Page Not Found",
-            "heading_size": "hxxl",
+            "heading": "<em>Uh-oh! Looks like your lips aren’t the only thing lost in hydration!💧</em>",
+            "heading_size": "hs",
             "enable_script": false
           }
         },
         "text_eCrDdG": {
           "type": "text",
           "settings": {
-            "text": "<p>The page you are looking for doesn’t exist<br/><br/></p>"
+            "text": "<p>The page you’re searching for seems to have disappeared like a tube of your favourite Lanolips lip balm at the bottom of your handbag. </p><p>But don’t worry, even when things get a little chapped, we’ll help you stay soft and hydrated! 😉</p><p>Head back to our homepage to smooth things over!<br/></p><p><br/></p>"
           }
         },
         "button_XKdciq": {
@@ -72,7 +72,7 @@
     "image_banner_qwWypG": {
       "type": "image-banner",
       "settings": {
-        "image": "shopify://shop_images/Lanolips_products_image.webp",
+        "image": "shopify://shop_images/404_Page.jpg",
         "image_overlay_opacity": 0,
         "image_height": "large",
         "desktop_content_position": "top-center",
@@ -82,6 +82,7 @@
         "color_background": "",
         "image_behavior": "none",
         "mobile_content_alignment": "center",
+        "mobile_image_height": "medium",
         "stack_images_on_mobile": true,
         "show_text_below": true,
         "padding_top": 52,
