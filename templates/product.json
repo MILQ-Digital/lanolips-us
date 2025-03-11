@@ -439,6 +439,7 @@
         "text_b8h9GQ",
         "button_maJHVc"
       ],
+      "disabled": true,
       "settings": {
         "image": "{{ product.metafields.custom.sustainable_image.value }}",
         "height": "adapt",
@@ -505,6 +506,7 @@
       "block_order": [
         "collapsible_row_8Grf4Q"
       ],
+      "disabled": true,
       "settings": {
         "caption": "",
         "heading": "FAQS",
