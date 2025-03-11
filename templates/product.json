@@ -343,6 +343,7 @@
         "text_3mwk6C",
         "heading_VM7xA3"
       ],
+      "disabled": true,
       "custom_css": [
         ".lanoscript span {text-decoration: underline !important; text-decoration-thickness: 2px !important; text-underline-offset: 7px !important;}"
       ],
