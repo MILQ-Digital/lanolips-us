@@ -220,6 +220,51 @@
         "padding_bottom": 12
       }
     },
+    "image_with_text_9nJtjb": {
+      "type": "image-with-text",
+      "blocks": {
+        "caption_XmXXfB": {
+          "type": "caption",
+          "settings": {
+            "caption": "Made With",
+            "text_style": "caption-with-letter-spacing",
+            "text_size": "medium",
+            "text_alignment": "text-center"
+          }
+        },
+        "button_hwfChE": {
+          "type": "button",
+          "settings": {
+            "button_label": "View full ingredient list",
+            "button_link": "shopify://collections",
+            "button_style_secondary": true,
+            "button_style_underline": false
+          }
+        }
+      },
+      "block_order": [
+        "caption_XmXXfB",
+        "button_hwfChE"
+      ],
+      "settings": {
+        "image": "{{ product.metafields.custom.ingredients_section_image.value }}",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "center",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "scheme-1",
+        "color_scheme": "scheme-1",
+        "use_ingredients": true,
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "mobile_page_padding": false,
+        "mobile_img_visibility": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "multirow_HV497Y": {
       "type": "multirow",
       "blocks": {
@@ -356,51 +401,6 @@
         "padding_bottom": 100
       }
     },
-    "image_with_text_9nJtjb": {
-      "type": "image-with-text",
-      "blocks": {
-        "caption_XmXXfB": {
-          "type": "caption",
-          "settings": {
-            "caption": "Made With",
-            "text_style": "caption-with-letter-spacing",
-            "text_size": "medium",
-            "text_alignment": "text-center"
-          }
-        },
-        "button_hwfChE": {
-          "type": "button",
-          "settings": {
-            "button_label": "View full ingredient list",
-            "button_link": "shopify://collections",
-            "button_style_secondary": true,
-            "button_style_underline": false
-          }
-        }
-      },
-      "block_order": [
-        "caption_XmXXfB",
-        "button_hwfChE"
-      ],
-      "settings": {
-        "image": "{{ product.metafields.custom.ingredients_section_image.value }}",
-        "height": "adapt",
-        "desktop_image_width": "medium",
-        "layout": "text_first",
-        "desktop_content_position": "middle",
-        "desktop_content_alignment": "center",
-        "content_layout": "no-overlap",
-        "section_color_scheme": "scheme-1",
-        "color_scheme": "scheme-1",
-        "use_ingredients": true,
-        "image_behavior": "none",
-        "mobile_content_alignment": "left",
-        "mobile_page_padding": false,
-        "mobile_img_visibility": false,
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
     "image_with_text_AL7pCG": {
       "type": "image-with-text",
       "blocks": {
@@ -527,10 +527,10 @@
   },
   "order": [
     "main",
+    "image_with_text_9nJtjb",
     "multirow_HV497Y",
     "multicolumn_kzBAVh",
     "rich_text_qVEiKy",
-    "image_with_text_9nJtjb",
     "image_with_text_AL7pCG",
     "custom_liquid_jEJB7q",
     "related-products",
