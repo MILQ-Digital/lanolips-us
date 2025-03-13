@@ -4267,3 +4267,18 @@ body .yotpo-widget-clear:has(.yotpo-sr-star-empty) {
 .swym-wishlist-collections-icon-bookmark-filled {
   fill: var(--Lano-Blue)!important;
 }
+
+/**foursixty**/
+
+.fs-wrapper .fs-entry-container > div {
+  border-radius: 20px;
+}
+
+
+
+
+
+
+
+
+
