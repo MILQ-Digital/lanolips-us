@@ -1600,3 +1600,10 @@ a.product__text {
   display: grid;
   place-items: center;
 }
+
+.product_features_icons .feat-icons span {
+  font-size: 12px;
+}
+
+
+
