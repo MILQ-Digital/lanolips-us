@@ -4280,6 +4280,7 @@ body .yotpo-widget-clear:has(.yotpo-sr-star-empty) {
     min-width: auto;
     top: 50%;
     background: white;
+    border-radius: 50%;
 }
 .fs-slider-next-button svg, .fs-slider-prev-button svg {display: none;}
 
