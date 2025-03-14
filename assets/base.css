@@ -4282,7 +4282,7 @@ body .yotpo-widget-clear:has(.yotpo-sr-star-empty) {
 }
 .fs-slider-next-button svg, .fs-slider-prev-button svg {display: none;}
 
-.fs-slider-prev-button:before {
+.fs-slider-next-button {
   mask-image: url(https://cdn.shopify.com/s/files/1/1630/4379/t/190/assets/arrowleft.svg?v=1741942458)
 }
 
