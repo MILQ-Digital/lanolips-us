@@ -4304,6 +4304,10 @@ body .yotpo-widget-clear:has(.yotpo-sr-star-empty) {
 }
 
 .fs-slider-next-button {
+  left: 85px;
+}
+
+.fs-slider-prev-button {
   right: 85px;
 }
 
