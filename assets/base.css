@@ -4291,7 +4291,7 @@ body .yotpo-widget-clear:has(.yotpo-sr-star-empty) {
 .fs-slider-prev-button:before {
   content: "";
   display: block;
-  image: url(https://cdn.shopify.com/s/files/1/1630/4379/t/190/assets/arrowleft.svg?v=1741942458)
+  image: url(https://cdn.shopify.com/s/files/1/1630/4379/t/190/assets/arrowleft.svg?v=1741942458) 
 }
 
 
