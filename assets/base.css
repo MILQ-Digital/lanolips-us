@@ -4313,7 +4313,9 @@ body .yotpo-widget-clear:has(.yotpo-sr-star-empty) {
 
 .product__info-wrapper .fs-wrapper .fs-entry-container>div {
   border-radius: 10px;
+  margin: 0 10px;
 }
+
 
 
 
