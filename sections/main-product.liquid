@@ -640,12 +640,11 @@
                         {% assign features_metaobject = metaobject_reference | metaobject %}
                         {% if features_metaobject and features_metaobject.icon %}
                           <img src="{{ features_metaobject.icon | image_url }}"  width="100%" height="auto" alt="{{ features_metaobject.name | escape }}" /> 
-                        {% endif %}
-
-                        {% if features_metaobject.content != blank %}
-                          <div class="feat-icon-content">
-                            {{ features_metaobject.content }}
-                          </div>
+                          {% if features_metaobject.content != blank %}
+                              <div class="feat-icon-content">
+                                {{ features_metaobject.content }}
+                              </div>
+                            {% endif %}
                         {% endif %}
                       {% endfor %}
                     </div>
