@@ -4275,10 +4275,11 @@ body .yotpo-widget-clear:has(.yotpo-sr-star-empty) {
 }
 
 .fs-slider-next-button, .fs-slider-prev-button {
-    width: 28px;
-    height: 28px;
+    width: 42px;
+    height: 42px;
     min-width: auto;
     top: 50%;
+    background: white;
 }
 .fs-slider-next-button svg, .fs-slider-prev-button svg {display: none;}
 
