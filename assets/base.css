@@ -4283,6 +4283,26 @@ body .yotpo-widget-clear:has(.yotpo-sr-star-empty) {
 .fs-slider-next-button svg, .fs-slider-prev-button svg {display: none;}
 
 .fs-slider-next-button:before {
+  content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    width: var(--icon-size);
+    height: var(--icon-size);
+    background: var(--COLOR-TEXT);
+    -webkit-mask-size: var(--icon-size);
+    mask-size: var(--icon-size);
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-position: center center;
+    mask-position: center center;
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: var(--RADIUS);
+    background: #fff;
   mask-image: url(https://cdn.shopify.com/s/files/1/1630/4379/t/190/assets/arrowleft.svg?v=1741942458)
 }
 
