@@ -4278,7 +4278,7 @@ body .yotpo-widget-clear:has(.yotpo-sr-star-empty) {
     width: 28px;
     height: 28px;
     min-width: auto;
-    
+    top: 50%;
 }
 
 .fs-slider-prev-button:before {
