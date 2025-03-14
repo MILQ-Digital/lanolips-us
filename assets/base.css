@@ -4316,7 +4316,9 @@ body .yotpo-widget-clear:has(.yotpo-sr-star-empty) {
   margin: 0 10px!important;
 }
 
-.template-product .image-with-text__grid figcaption {
+.template-product .image-with-text__caption {padding-bottom: 0} 
+
+.template-product .image-with-text__caption figcaption {
   display: none;
 }
 
