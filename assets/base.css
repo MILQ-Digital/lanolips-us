@@ -4311,6 +4311,9 @@ body .yotpo-widget-clear:has(.yotpo-sr-star-empty) {
   left: 85px;
 }
 
+.product__info-wrapper .fs-wrapper .fs-entry-container>div {
+  border-radius: 10px;
+}
 
 
 
