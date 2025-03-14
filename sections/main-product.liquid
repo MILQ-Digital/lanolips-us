@@ -636,20 +636,22 @@
                   {%- assign features_metaobject_references = product.metafields.custom.features_icons -%}
                   {% if features_metaobject_references.value != blank %}
                     <div class="product_features_icons">
-                      {%- for metaobject_reference in features_metaobject_references.value -%}
-                        {% assign features_metaobject = metaobject_reference | metaobject %}
-                        {% if features_metaobject and features_metaobject.icon %}
-                          <img src="{{ features_metaobject.icon | image_url }}"  width="100%" height="auto" alt="{{ features_metaobject.name | escape }}" /> 
-                        {% endif %}
+  {%- for metaobject_reference in features_metaobject_references.value -%}
+    {% assign features_metaobject = metaobject_reference | metaobject %}
 
-                        {% assign features_icons = features_metaobject.features_icons | metaobject %}
-                          {% if features_icons and features_icons.content != blank %}
-                            <div class="feat-icon-content">
-                              {{ features_icons.content }}
-                            </div>
-                          {% endif %}
-                      {% endfor %}
-                    </div>
+    {% if features_metaobject and features_metaobject.icon %}
+      <img src="{{ features_metaobject.icon | image_url }}" width="100%" height="auto" alt="{{ features_metaobject.name | escape }}" /> 
+    {% endif %}
+
+    {% assign features_icons = features_metaobject.features_icons | metaobject %}
+    {% if features_icons and features_icons.content != blank %}
+      <div class="feat-icon-content">
+        {{ features_icons.content }}
+      </div>
+    {% endif %}
+  {% endfor %}
+</div>
+
                   {% endif %}
                 {%- endif -%}
 
