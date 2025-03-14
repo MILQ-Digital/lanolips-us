@@ -4285,13 +4285,19 @@ body .yotpo-widget-clear:has(.yotpo-sr-star-empty) {
 .fs-slider-next-button:before {
   content: "";
   display: block;
-  mask-image: url(//au.fortunateone.com/cdn/shop/t/152/assets/fortunate-chevron-right.svg?v=144723700473452137001733180567);
+  mask-image: url(https://cdn.shopify.com/s/files/1/1630/4379/t/190/assets/arrowright.svg?v=1741942458);
+  height: 16px;
+  width: 16px;
+  background: #2B4676;
 }
 
 .fs-slider-prev-button:before {
   content: "";
   display: block;
-  image: url(https://cdn.shopify.com/s/files/1/1630/4379/t/190/assets/arrowleft.svg?v=1741942458)
+  image: url(https://cdn.shopify.com/s/files/1/1630/4379/t/190/assets/arrowleft.svg?v=1741942458);
+  height: 16px;
+  width: 16px;
+  background: #2B4676;
 }
 
 
