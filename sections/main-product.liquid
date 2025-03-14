@@ -641,11 +641,13 @@
                         {% if features_metaobject and features_metaobject.icon %}
                           <img src="{{ features_metaobject.icon | image_url }}"  width="100%" height="auto" alt="{{ features_metaobject.name | escape }}" /> 
                         {% endif %}
-                        {% if features_metaobject.features_icons.content != blank %}
-                          <div class="feat-icon-content">
-                            {{ features_metaobject.features_icons.content }}
-                          </div>
-                        {% endif %}
+
+                        {% assign features_icons = features_metaobject.features_icons | metaobject %}
+                          {% if features_icons and features_icons.content != blank %}
+                            <div class="feat-icon-content">
+                              {{ features_icons.content }}
+                            </div>
+                          {% endif %}
                       {% endfor %}
                     </div>
                   {% endif %}
