@@ -4290,6 +4290,7 @@ body .yotpo-widget-clear:has(.yotpo-sr-star-empty) {
   height: 16px;
   width: 16px;
   background: #2B4676;
+  
 }
 
 .fs-slider-prev-button:before {
@@ -4299,6 +4300,10 @@ body .yotpo-widget-clear:has(.yotpo-sr-star-empty) {
   height: 16px;
   width: 16px;
   background: #2B4676;
+}
+
+.fs-slider-prev-button {
+  right: 85px;
 }
 
 
