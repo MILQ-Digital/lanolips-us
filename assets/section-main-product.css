@@ -1596,7 +1596,7 @@ a.product__text {
   max-width: 65px;
 }
 
-product_features_icons .feat-icons {
+.product_features_icons .feat-icons {
   display: grid;
   place-items: center;
 }
