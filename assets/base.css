@@ -4274,6 +4274,13 @@ body .yotpo-widget-clear:has(.yotpo-sr-star-empty) {
   border-radius: 20px;
 }
 
+.fs-slider-next-button, .fs-slider-prev-button {
+    width: 28px;
+    height: 28px;
+    min-width: auto;
+    
+}
+
 .fs-slider-prev-button:before {
   mask-image: url(https://cdn.shopify.com/s/files/1/1630/4379/t/190/assets/arrowleft.svg?v=1741942458)
 }
