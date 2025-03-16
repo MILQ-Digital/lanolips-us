@@ -30,7 +30,7 @@
             "swym_atw_display_btn_text": false,
             "swym_button_position": "product_title_right",
             "swym_atw_button_vertical_offset": 0,
-            "swym_atw_full_width": true,
+            "swym_atw_full_width": false,
             "swym_atw_button_alignment": "right",
             "swym_add_to_wishlist_color": "#ffffff",
             "swym_added_to_wishlist_color": "#ffffff",
