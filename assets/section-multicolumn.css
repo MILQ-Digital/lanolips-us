@@ -257,6 +257,10 @@
     border-radius: 0;
   }
 
+  .before_after .multicolumn-list .media img {
+    border-radius: 20px;
+  }
+
 }
 
 @media screen and (min-width: 750px) {
