@@ -221,6 +221,10 @@ product-info {
   right: 1.5rem;
 }
 
+.product-form__input .svg-wrapper svg path {
+  stroke: #2b4676;
+}
+
 .product-form__submit {
   margin-bottom: 1rem;
 }
