@@ -3988,8 +3988,9 @@ details-disclosure > details {
 
 .ingredient_item_content p {
   font-family: var(--default-font);
-    font-style: normal;
-    font-weight: 400;
+  font-style: normal;
+  font-weight: 400;
+  font-size: var(--body-xs) !important;
 }
 
 .ingredient_item_icon {
