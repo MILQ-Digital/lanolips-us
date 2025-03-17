@@ -3986,6 +3986,12 @@ details-disclosure > details {
   margin-bottom: 10px;
 }
 
+.ingredient_item_content p {
+  font-family: var(--default-font);
+    font-style: normal;
+    font-weight: 400;
+}
+
 .ingredient_item_icon {
   width: 100px;
 }
