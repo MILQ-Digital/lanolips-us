@@ -388,6 +388,10 @@
   .promo_banner .card--standard:not(.article-card)>.card__content .card__information {
     flex-direction: column;
   }
+
+  .promo_banner .card-wrapper:hover .card__information p {
+    
+  }
 }
 
 .card-information quantity-popover volume-pricing {
