@@ -144,23 +144,12 @@
         "padding_bottom": 36,
         "section_class": "contact_info"
       }
-    },
-    "contact_form_hWhLLq": {
-      "type": "contact-form",
-      "settings": {
-        "heading": "Contact form",
-        "heading_size": "h1",
-        "color_scheme": "",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
     }
   },
   "order": [
     "main",
     "rich_text_zXaJEw",
     "image_with_text_4ajQPY",
-    "multicolumn_kfGeWA",
-    "contact_form_hWhLLq"
+    "multicolumn_kfGeWA"
   ]
 }
