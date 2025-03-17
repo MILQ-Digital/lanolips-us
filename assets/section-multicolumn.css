@@ -143,6 +143,10 @@
   transform: translateX(-50%);
 }
 
+.before_after .multicolumn-list .media img {
+  border-radius: 20px;
+}
+
 @media screen and (max-width: 749px) {
   .multicolumn-list {
     margin: 0;
