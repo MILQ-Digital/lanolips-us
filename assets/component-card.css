@@ -385,6 +385,9 @@
   .grid--2-col-tablet-down .card__content quick-add-bulk .quantity {
     width: auto;
   }
+  .card--standard .card__inner {
+    
+  }
 }
 
 .card-information quantity-popover volume-pricing {
@@ -904,9 +907,9 @@
     min-height: 40px;
   }
 
-  .card__heading {
+  /*.card__heading {
     font-size: var(--body-xs);
-  }
+  }*/
 
   .card--standard:not(.article-card)>.card__content .card__information {
     flex-direction: column-reverse;
