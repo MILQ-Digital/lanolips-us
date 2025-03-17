@@ -467,10 +467,11 @@ slider-component.slider-component-full-width {
     display: none;
   }
 
-  .product-grid .slider-buttons .slider-button--next {
+  .slider-buttons .slider-button--next {
     right: 20px;
   }
-  .product-grid .slider-buttons .slider-button--prev {
+  
+  .slider-buttons .slider-button--prev {
     left: 20px;
   }
 }
