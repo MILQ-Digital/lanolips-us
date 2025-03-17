@@ -219,6 +219,10 @@
     margin-top: 15px;
   }
 
+  #ContactForm label {
+    text-align: left;
+  }
+
 }
 
 .image-with-text .grid__item::after {
