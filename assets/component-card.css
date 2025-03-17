@@ -386,7 +386,7 @@
     width: auto;
   }
   .promo_banner .card--standard:not(.article-card)>.card__content .card__information {
-    flex-direction: unset;
+    flex-direction: column;
   }
 }
 
