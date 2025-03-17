@@ -28,7 +28,7 @@
             "title": "Bundle It And Save",
             "link_label": "Shop Now",
             "link": "",
-            "color_scheme": "scheme-1",
+            "color_scheme": "scheme-d2d64bb4-1602-4f59-ab3f-f35f477ef722",
             "image_ratio": "square"
           }
         },
@@ -40,7 +40,7 @@
             "title": "Bundle It And Save",
             "link_label": "Shop Now",
             "link": "shopify://collections/lips",
-            "color_scheme": "scheme-1",
+            "color_scheme": "scheme-d2d64bb4-1602-4f59-ab3f-f35f477ef722",
             "image_ratio": "adapt"
           }
         }
