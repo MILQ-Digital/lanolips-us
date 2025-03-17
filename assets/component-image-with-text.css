@@ -219,7 +219,8 @@
     margin-top: 15px;
   }
 
-  #ContactForm label {
+  #ContactForm label,
+  #ContactForm .contact__button{
     text-align: left;
   }
 
