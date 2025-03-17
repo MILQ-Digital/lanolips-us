@@ -3991,6 +3991,7 @@ details-disclosure > details {
   font-style: normal;
   font-weight: 400;
   font-size: var(--body-xs) !important;
+  line-height: 150%;
 }
 
 .ingredient_item_icon {
