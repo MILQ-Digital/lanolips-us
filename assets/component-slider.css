@@ -394,6 +394,14 @@ slider-component.slider-component-full-width {
   .slider:not(.slider--everywhere):not(.slider--desktop) + .slider-buttons {
     display: none;
   }
+
+  .slider-buttons .slider-button--next {
+    right: 20px;
+  }
+  
+  .slider-buttons .slider-button--prev {
+    left: 20px;
+  }
   
 }
 
@@ -465,14 +473,6 @@ slider-component.slider-component-full-width {
   .collection .slider-buttons,
   .collection-list-wrapper .slider-buttons{
     display: none;
-  }
-
-  .slider-buttons .slider-button--next {
-    right: 20px;
-  }
-  
-  .slider-buttons .slider-button--prev {
-    left: 20px;
   }
 }
 
