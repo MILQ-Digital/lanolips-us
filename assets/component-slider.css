@@ -397,6 +397,7 @@ slider-component.slider-component-full-width {
   
 }
 
+
 @media screen and (max-width: 989px) {
   .slider--desktop:not(.slider--tablet) + .slider-buttons {
     display: none;
@@ -464,6 +465,13 @@ slider-component.slider-component-full-width {
   .collection .slider-buttons,
   .collection-list-wrapper .slider-buttons{
     display: none;
+  }
+
+  .product-grid .slider-buttons .slider-button--next {
+    right: 20px;
+  }
+  .product-grid .slider-buttons .slider-button--prev {
+    left: 20px;
   }
 }
 
