@@ -148,4 +148,8 @@
   .collapsible-content__heading {
     margin-bottom: 0;
   }
+
+  .template--faqs .accordion__title {
+    font-size: 16px;
+  }
 } 
