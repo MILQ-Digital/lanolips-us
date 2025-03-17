@@ -385,8 +385,8 @@
   .grid--2-col-tablet-down .card__content quick-add-bulk .quantity {
     width: auto;
   }
-  .card--standard .card__inner {
-    
+  .promo_banner .card--standard:not(.article-card)>.card__content .card__information {
+    flex-direction: unset;
   }
 }
 
