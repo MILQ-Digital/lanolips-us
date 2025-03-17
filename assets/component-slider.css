@@ -397,7 +397,7 @@ slider-component.slider-component-full-width {
 
 }
 
-@media screen and (max-width: 1550px) {
+@media screen and (max-width: 1650px) {
 .slider-buttons .slider-button--next {
     right: 20px;
   }
