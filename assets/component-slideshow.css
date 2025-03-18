@@ -226,8 +226,8 @@ slideshow-component:not(.page-width) .slider-buttons {
     right: 1.5rem;
   }
   .slideshow-component .slideshow__controls {
-    justify-content: center!important;
-    bottom: 3px!important;
+    justify-content: center;
+    bottom: 3px;
   }
 }
 
