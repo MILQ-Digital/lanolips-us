@@ -35,11 +35,11 @@
         "promo_banner_CMXKXz": {
           "type": "promo-banner",
           "settings": {
-            "banner_image": "shopify://shop_images/product_grid_1.jpg",
+            "banner_image": "shopify://shop_images/Content_Block_Image_Lip_Oil.jpg",
             "promotion_position": 13,
-            "title": "Bundle It And Save",
+            "title": "Hyaluronic Lip Oil",
             "link_label": "Shop Now",
-            "link": "shopify://collections/lips",
+            "link": "shopify://collections/lip-oil",
             "color_scheme": "scheme-1",
             "image_ratio": "adapt"
           }
