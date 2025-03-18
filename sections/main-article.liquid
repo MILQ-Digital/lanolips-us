@@ -80,6 +80,7 @@
           {% assign share_url = request.origin | append: article.url %}
           {% render 'share-button', block: block, share_link: share_url %}
         </div>
+      {% include 'social-sharing', share_title: article.title, share_permalink: article.url, share_image: article.image %}
     {%- endcase -%}
   {%- endfor -%}
 
