@@ -82,10 +82,11 @@
         "color_background": "",
         "image_behavior": "none",
         "mobile_content_alignment": "center",
+        "mobile_image_height": "medium",
         "stack_images_on_mobile": true,
         "show_text_below": true,
         "padding_top": 52,
-        "padding_bottom": 100
+        "padding_bottom": 0
       }
     }
   },
