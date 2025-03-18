@@ -150,10 +150,10 @@
   }
 
   .template--faqs .accordion__title {
-    font-size: 16px;
+    font-size: var(--body-sm);
   }
 
   .template-product .product__info-wrapper .product__accordion .accordion__title {
-    font-size: 16px;
+    font-size: var(--body-sm);
   }   
 } 
