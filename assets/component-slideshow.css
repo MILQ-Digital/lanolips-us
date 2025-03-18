@@ -322,6 +322,6 @@ slideshow-component .slider-counter__link--active.slider-counter__link--dots .do
     bottom: 3px; 
   }
   .slideshow__autoplay.slider-button {
-    right: auto;
+      display:none;
   }
 }
