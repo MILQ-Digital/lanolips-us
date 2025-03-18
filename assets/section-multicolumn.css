@@ -256,6 +256,7 @@
   .template-index .multicolumn-list .media img {
     border-radius: 0;
   }
+  
 
 }
 
@@ -305,7 +306,7 @@
     padding-bottom: 100%;
   }
 
-  .multicolumn-list .media img {
+  .multicolumn-list .media img:not(.template-page-about) {
     border-radius: 0;
   }
 }
