@@ -82,6 +82,7 @@
         </div>
     {%- endcase -%}
     {% include 'social-sharing', share_title: article.title, share_permalink: article.url, share_image: article.image %}
+    {% render 'social-sharing', block: block, share_link: share_url %}
   {%- endfor -%}
 
   <div class="article-template__back element-margin-top center{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
