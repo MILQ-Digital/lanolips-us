@@ -47,7 +47,11 @@
           <div {{ block.shopify_attributes }}>
             {% form 'customer', class: 'newsletter-form' %}
               <input type="hidden" name="contact[tags]" value="newsletter">
-              <div
+             
+  
+              
+              {%- unless form.posted_successfully? -%}
+                <div
                 class="newsletter-form__field-wrapper{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
                 {% if settings.animations_reveal_on_scroll %}
                   data-cascade
@@ -100,7 +104,7 @@
                   </small>
                 {%- endif -%}
               </div>
-              {%- if form.posted_successfully? -%}
+                
                 <h3
                   class="newsletter-form__message newsletter-form__message--success form__message"
                   id="Newsletter-success--{{ section.id }}"
@@ -112,7 +116,7 @@
                   </span>
                   {{- 'newsletter.success' | t }}
                 </h3>
-              {%- endif -%}
+             {% endunless %}
             {% endform %}
           </div>
       {%- endcase -%}
