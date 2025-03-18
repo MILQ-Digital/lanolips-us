@@ -221,18 +221,6 @@ slideshow-component:not(.page-width) .slider-buttons {
   align-items: center;
 }
 
-@media screen and (max-width: 749px) {
-  slideshow-component.page-width .slideshow__autoplay {
-    right: 1.5rem;
-  }
-  slideshow-component .slideshow__controls {
-    justify-content: center;
-    bottom: 3px; 
-  }
-  .slideshow__autoplay.slider-button {
-    right: auto;
-  }
-}
 
 @media screen and (min-width: 750px) {
   .slideshow__autoplay.slider-button {
@@ -323,4 +311,17 @@ slideshow-component .slider-counter__link--active.slider-counter__link--dots .do
   left: auto;
   right: auto;
   width: auto;
+}
+
+@media screen and (max-width: 749px) {
+  slideshow-component.page-width .slideshow__autoplay {
+    right: 1.5rem;
+  }
+  slideshow-component .slideshow__controls {
+    justify-content: center;
+    bottom: 3px; 
+  }
+  .slideshow__autoplay.slider-button {
+    right: auto;
+  }
 }
