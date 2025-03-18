@@ -466,6 +466,10 @@ a.product__text {
   .product__info-container .product_button_price {
     width: calc(100% - 113px);
   }
+
+  .template-product .product__description {
+    font-size: var(--body-sm);
+  }
 }
 
 @media screen and (min-width: 750px) {
