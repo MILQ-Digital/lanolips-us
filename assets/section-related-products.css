@@ -14,9 +14,8 @@
 
 
 @media only screen and (max-width: 450px) {
-.template-product .related-products {
-  padding-left: 0;
-  padding-right: 0;
-}
+.template-product .related-products ul li  {
+  margin-left: 0;
+  }
 
 }
