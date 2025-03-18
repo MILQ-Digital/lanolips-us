@@ -265,6 +265,40 @@
         "padding_bottom": 36
       }
     },
+    "rich_text_qVEiKy": {
+      "type": "rich-text",
+      "blocks": {
+        "text_3mwk6C": {
+          "type": "text",
+          "settings": {
+            "text": "<h2>{{ product.metafields.custom.short_descriptions | metafield_tag }}</h2>"
+          }
+        },
+        "heading_VM7xA3": {
+          "type": "heading",
+          "settings": {
+            "heading": "<span style=\"text-decoration:underline\">{{ product.metafields.custom.free_from_heading.value }}</span>",
+            "heading_size": "hl",
+            "enable_script": true
+          }
+        }
+      },
+      "block_order": [
+        "text_3mwk6C",
+        "heading_VM7xA3"
+      ],
+      "custom_css": [
+        ".lanoscript span {text-decoration: underline !important; text-decoration-thickness: 2px !important; text-underline-offset: 7px !important;}"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-f0b80d15-f0fa-461b-b588-95b62c0b760a",
+        "full_width": false,
+        "padding_top": 100,
+        "padding_bottom": 100
+      }
+    },
     "multirow_HV497Y": {
       "type": "multirow",
       "blocks": {
@@ -314,40 +348,6 @@
         "padding_bottom": 52
       }
     },
-    "rich_text_qVEiKy": {
-      "type": "rich-text",
-      "blocks": {
-        "text_3mwk6C": {
-          "type": "text",
-          "settings": {
-            "text": "<h2>{{ product.metafields.custom.short_descriptions | metafield_tag }}</h2>"
-          }
-        },
-        "heading_VM7xA3": {
-          "type": "heading",
-          "settings": {
-            "heading": "<span style=\"text-decoration:underline\">{{ product.metafields.custom.free_from_heading.value }}</span>",
-            "heading_size": "hl",
-            "enable_script": true
-          }
-        }
-      },
-      "block_order": [
-        "text_3mwk6C",
-        "heading_VM7xA3"
-      ],
-      "custom_css": [
-        ".lanoscript span {text-decoration: underline !important; text-decoration-thickness: 2px !important; text-underline-offset: 7px !important;}"
-      ],
-      "settings": {
-        "desktop_content_position": "center",
-        "content_alignment": "center",
-        "color_scheme": "scheme-f0b80d15-f0fa-461b-b588-95b62c0b760a",
-        "full_width": false,
-        "padding_top": 100,
-        "padding_bottom": 100
-      }
-    },
     "multicolumn_kzBAVh": {
       "type": "multicolumn",
       "blocks": {
@@ -378,6 +378,7 @@
         "column_KJWMef",
         "column_aAdR9K"
       ],
+      "disabled": true,
       "custom_css": [
         ".title {margin: 0 auto;}"
       ],
