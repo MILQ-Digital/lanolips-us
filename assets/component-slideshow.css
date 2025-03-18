@@ -139,14 +139,7 @@ slideshow-component .slider-counter__link {
   .slideshow__text .banner__heading {
     font-size: var(--heading-sm);
     line-height: 120%;
-  }
-
-  .slideshow-component .slideshow__controls {
-    justify-content: center;
-    bottom: 3px;
-  }
-
-  
+  } 
 }
 
 @media screen and (min-width: 750px) {
@@ -231,6 +224,10 @@ slideshow-component:not(.page-width) .slider-buttons {
 @media screen and (max-width: 749px) {
   slideshow-component.page-width .slideshow__autoplay {
     right: 1.5rem;
+  }
+  .slideshow-component .slideshow__controls {
+    justify-content: center;
+    bottom: 3px;
   }
 }
 
