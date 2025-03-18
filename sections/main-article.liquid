@@ -81,7 +81,6 @@
           {% render 'share-button', block: block, share_link: share_url %}
         </div>
     {%- endcase -%}
-    {% include 'social-sharing', share_title: article.title, share_permalink: article.url, share_image: article.image %}
     {% render 'social-sharing', block: block, share_link: share_url %}
   {%- endfor -%}
 
