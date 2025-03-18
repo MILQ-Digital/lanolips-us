@@ -152,4 +152,8 @@
   .template--faqs .accordion__title {
     font-size: 16px;
   }
+
+  .template-product .product__info-wrapper .product__accordion .accordion__title {
+    font-size: 16px;
+  }   
 } 
