@@ -477,6 +477,9 @@ a.product__text {
     min-height: 39px;
   }
 
+  .template-product .product__info-container .product_button_price .button {
+    font-size: var(--body-sm);
+  }
    
 }
 
