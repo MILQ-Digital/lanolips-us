@@ -80,8 +80,8 @@
           {% assign share_url = request.origin | append: article.url %}
           {% render 'share-button', block: block, share_link: share_url %}
         </div>
-      {% include 'social-sharing', share_title: article.title, share_permalink: article.url, share_image: article.image %}
     {%- endcase -%}
+    {% include 'social-sharing', share_title: article.title, share_permalink: article.url, share_image: article.image %}
   {%- endfor -%}
 
   <div class="article-template__back element-margin-top center{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
