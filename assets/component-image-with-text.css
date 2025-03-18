@@ -195,7 +195,7 @@
 }
 
 @media screen and (max-width: 750px) {
-  .image-with-text__content {
+  body:not(.template-page-about) .image-with-text__content {
     padding: 25px var(--outer) 45px;
     text-align: center;
     align-items: center;
