@@ -229,6 +229,9 @@ slideshow-component:not(.page-width) .slider-buttons {
     justify-content: center;
     bottom: 3px; 
   }
+  .slideshow__autoplay.slider-button {
+    right: auto;
+  }
 }
 
 @media screen and (min-width: 750px) {
