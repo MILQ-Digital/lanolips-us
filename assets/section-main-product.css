@@ -478,7 +478,7 @@ a.product__text {
   }
 
   .template-product .product__info-container .product_button_price .button {
-    font-size: var(--body-sm);
+    font-size: var(--body-xs);
   }
    
 }
