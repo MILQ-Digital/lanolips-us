@@ -292,88 +292,91 @@
                       </li>
                     </ul>
                   {%- endif -%}
-                  <div class="contact__fields">
-                    <div class="field">
-                      <label for="contact_first_name">First Name</label>
-                      <input type="text" id="contact_first_name" name="contact[first_name]" placeholder="John" class="field__input">
-                    </div>
-                    <div class="field">
-                      <label for="contact_last_name">Last Name</label>
-                      <input type="text" id="contact_last_name" name="contact[last_name]" placeholder="Smith" class="field__input">
-                    </div>
-                   </div> 
-                    <div class="field field--with-error">
-                     <label for="ContactForm-email">Email address</label>
-                      <input
-                        autocomplete="email"
-                        type="email"
-                        id="ContactForm-email"
-                        class="field__input"
-                        name="contact[email]"
-                        spellcheck="false"
-                        placeholder="ie: name@email.com"
-                        autocapitalize="off"
-                        value="{% if form.email %}{{ form.email }}{% elsif customer %}{{ customer.email }}{% endif %}"
-                        aria-required="true"
-                        {% if form.errors contains 'email' %}
-                          aria-invalid="true"
-                          aria-describedby="ContactForm-email-error"
-                        {% endif %}
-                        placeholder="{{ 'templates.contact.form.email' | t }}">
-                      
-                      {%- if form.errors contains 'email' -%}
-                        <small class="contact__field-error" id="ContactForm-email-error">
-                          <span class="visually-hidden">{{ 'accessibility.error' | t }}</span>
-                          <span class="form__message">
-                            <span class="svg-wrapper">
-                              {{- 'icon-error.svg' | inline_asset_content -}}
+
+                  {%- unless form.posted_successfully? -%}
+                    <div class="contact__fields">
+                      <div class="field">
+                        <label for="contact_first_name">First Name</label>
+                        <input type="text" id="contact_first_name" name="contact[first_name]" placeholder="John" class="field__input">
+                      </div>
+                      <div class="field">
+                        <label for="contact_last_name">Last Name</label>
+                        <input type="text" id="contact_last_name" name="contact[last_name]" placeholder="Smith" class="field__input">
+                      </div>
+                     </div> 
+                      <div class="field field--with-error">
+                       <label for="ContactForm-email">Email address</label>
+                        <input
+                          autocomplete="email"
+                          type="email"
+                          id="ContactForm-email"
+                          class="field__input"
+                          name="contact[email]"
+                          spellcheck="false"
+                          placeholder="ie: name@email.com"
+                          autocapitalize="off"
+                          value="{% if form.email %}{{ form.email }}{% elsif customer %}{{ customer.email }}{% endif %}"
+                          aria-required="true"
+                          {% if form.errors contains 'email' %}
+                            aria-invalid="true"
+                            aria-describedby="ContactForm-email-error"
+                          {% endif %}
+                          placeholder="{{ 'templates.contact.form.email' | t }}">
+                        
+                        {%- if form.errors contains 'email' -%}
+                          <small class="contact__field-error" id="ContactForm-email-error">
+                            <span class="visually-hidden">{{ 'accessibility.error' | t }}</span>
+                            <span class="form__message">
+                              <span class="svg-wrapper">
+                                {{- 'icon-error.svg' | inline_asset_content -}}
+                              </span>
+                              {{- form.errors.translated_fields.email | capitalize }}
+                              {{ form.errors.messages.email -}}
                             </span>
-                            {{- form.errors.translated_fields.email | capitalize }}
-                            {{ form.errors.messages.email -}}
-                          </span>
-                        </small>
-                      {%- endif -%}
+                          </small>
+                        {%- endif -%}
+                      </div>
+                    
+                    <div class="field">
+                      <label for="ContactForm-phone">Phone number (optional)</label>
+                      <input
+                        type="tel"
+                        id="ContactForm-phone"
+                        placeholder="ie"
+                        class="field__input"
+                        autocomplete="tel"
+                        name="contact[{{ 'templates.contact.form.phone' | t }}]"
+                        pattern="[0-9\-]*"
+                        value="{% if form.phone %}{{ form.phone }}{% elsif customer %}{{ customer.phone }}{% endif %}"
+                        placeholder="{{ 'templates.contact.form.phone' | t | default: 'Enter your phone number' }}"
+                      >
                     </div>
-                  
-                  <div class="field">
-                    <label for="ContactForm-phone">Phone number (optional)</label>
-                    <input
-                      type="tel"
-                      id="ContactForm-phone"
-                      placeholder="ie"
-                      class="field__input"
-                      autocomplete="tel"
-                      name="contact[{{ 'templates.contact.form.phone' | t }}]"
-                      pattern="[0-9\-]*"
-                      value="{% if form.phone %}{{ form.phone }}{% elsif customer %}{{ customer.phone }}{% endif %}"
-                      placeholder="{{ 'templates.contact.form.phone' | t | default: 'Enter your phone number' }}"
-                    >
-                  </div>
-                  <div class="field">
-                    <label for="contact_reason">Enquiry Type</label>
-                    <select id="contact_reason" name="contact[reason]" class="field__input field__select">
-                      <option value="General Inquiry">General Inquiry</option>
-                      <option value="Support">Support</option>
-                      <option value="Sales">Sales</option>
-                    </select>
-                  </div>  
-                  <div class="field">
-                    <label for="ContactForm-body">Enquiry</label>
-                    <textarea
-                      rows="10"
-                      id="ContactForm-body"
-                      class="text-area field__input"
-                      name="contact[{{ 'templates.contact.form.comment' | t }}]"
-                      placeholder="Type your message"
-                    >
-                      {{- form.body -}}
-                    </textarea>
-                  </div>
-                  <div class="contact__button">
-                    <button type="submit" class="button">
-                      Submit Enquiry
-                    </button>
-                  </div>
+                    <div class="field">
+                      <label for="contact_reason">Enquiry Type</label>
+                      <select id="contact_reason" name="contact[reason]" class="field__input field__select">
+                        <option value="General Inquiry">General Inquiry</option>
+                        <option value="Support">Support</option>
+                        <option value="Sales">Sales</option>
+                      </select>
+                    </div>  
+                    <div class="field">
+                      <label for="ContactForm-body">Enquiry</label>
+                      <textarea
+                        rows="10"
+                        id="ContactForm-body"
+                        class="text-area field__input"
+                        name="contact[{{ 'templates.contact.form.comment' | t }}]"
+                        placeholder="Type your message"
+                      >
+                        {{- form.body -}}
+                      </textarea>
+                    </div>
+                    <div class="contact__button">
+                      <button type="submit" class="button">
+                        Submit Enquiry
+                      </button>
+                    </div>
+                  {% endunless %}
                 {%- endform -%}
 
                 {%- when 'image_picker' -%}
