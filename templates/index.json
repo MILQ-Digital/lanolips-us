@@ -251,9 +251,7 @@
       "blocks": {
         "icon_YQkFzD": {
           "type": "icon",
-          "settings": {
-            "image_icon": "shopify://shop_images/sheep-icon_cb66472c-2e34-4bd9-811f-9510b8b8f741.png"
-          }
+          "settings": {}
         },
         "heading_hVPN7C": {
           "type": "heading",
