@@ -263,7 +263,6 @@
         },
         "row_Rxra9Y": {
           "type": "row",
-          "disabled": true,
           "settings": {
             "caption": "",
             "heading": "12 hour overnight lip mask",
@@ -277,7 +276,6 @@
         "row_6chNdY",
         "row_Rxra9Y"
       ],
-      "disabled": true,
       "custom_css": [
         "@media screen and (max-width: 750px) {.image-with-text__content {text-align: left; align-items: flex-start; }}"
       ],
