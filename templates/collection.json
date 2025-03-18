@@ -23,11 +23,11 @@
         "promo_banner_tfAVHn": {
           "type": "promo-banner",
           "settings": {
-            "banner_image": "shopify://shop_images/product_grid_1.jpg",
+            "banner_image": "shopify://shop_images/Content_Block_Image_Glossybalms.jpg",
             "promotion_position": 7,
-            "title": "Bundle It And Save",
+            "title": "Glossybalms",
             "link_label": "Shop Now",
-            "link": "",
+            "link": "shopify://collections/colour-collection",
             "color_scheme": "scheme-1",
             "image_ratio": "square"
           }
