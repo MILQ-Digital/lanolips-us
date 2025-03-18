@@ -14,6 +14,9 @@
 
 
 @media only screen and (max-width: 450px) {
+.related-products__heading  {
+  padding-left: 1.5em
+}
 .template-product .related-products ul li  {
   margin-left: 0!important;
   }
