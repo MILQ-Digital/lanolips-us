@@ -474,6 +474,7 @@ a.product__text {
   }
   .template-product .product__info-container .product_button_price {
     margin-left: 10px !important;
+    min-height: 39px;
   }
 
    
