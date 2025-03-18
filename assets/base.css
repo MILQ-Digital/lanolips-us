@@ -3954,6 +3954,9 @@ details-disclosure > details {
       width: calc(90% - var(--grid-mobile-horizontal-spacing) - 3rem);
   }
   .cart__ctas {display: flex; flex-direction: column;}
+  .template-product .multirow__inner .image-with-text__text h3 {
+    font-size: 20px;
+  }
 }
 
 @media screen and (min-width: 990px) {
