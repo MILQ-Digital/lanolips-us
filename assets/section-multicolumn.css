@@ -306,7 +306,7 @@
     padding-bottom: 100%;
   }
 
-  .multicolumn-list .media img:not(.template-page-about) {
+ body:not(.template-page-about) .multicolumn-list .media img {
     border-radius: 0;
   }
 }
