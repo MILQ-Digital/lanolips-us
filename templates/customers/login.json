@@ -22,6 +22,7 @@
       "blocks": {
         "heading_kQ4EjY": {
           "type": "heading",
+          "disabled": true,
           "settings": {
             "heading": "Image with text",
             "heading_size": "hm"
@@ -49,7 +50,6 @@
         "text_9H6Fbx",
         "button_KhTjEL"
       ],
-      "disabled": true,
       "settings": {
         "image": "shopify://shop_images/signin.jpg",
         "height": "adapt",

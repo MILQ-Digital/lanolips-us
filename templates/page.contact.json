@@ -79,7 +79,7 @@
         "contact_form_NEqNGw"
       ],
       "settings": {
-        "image": "shopify://shop_images/Contact_image.jpg",
+        "image": "shopify://shop_images/Contact_Us_Image.jpg",
         "height": "adapt",
         "desktop_image_width": "medium",
         "layout": "text_first",
@@ -138,6 +138,7 @@
         "color_scheme": "scheme-2",
         "columns_mobile": "1",
         "swipe_on_mobile": false,
+        "mobile_full": false,
         "padding_top": 52,
         "padding_bottom": 36,
         "section_class": "contact_info"
