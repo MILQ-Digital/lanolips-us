@@ -453,6 +453,7 @@ a.product__text {
 
   .product__info-wrapper .quantity {
     width: calc(9rem / var(--font-body-scale) + var(--inputs-border-width)* 2);
+    min-width: 96px;
   }
 
   .product__info-wrapper .quantity__button {
