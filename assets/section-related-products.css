@@ -11,3 +11,12 @@
     padding: 0;
   }
 }
+
+
+@media only screen and (max-width: 450px) {
+.template-product .related-products {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+}
