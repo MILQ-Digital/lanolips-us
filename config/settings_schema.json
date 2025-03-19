@@ -58,6 +58,21 @@
       }
     ]
   },
+
+
+  {
+    "name": "login_image",
+    "settings": [
+      {
+        "type": "image_picker",
+        "id": "login_image",
+        "label": "Image for the login page"
+      }
+    ]
+  },
+
+
+  
   {
     "name": "Season Settings",
     "settings": [
