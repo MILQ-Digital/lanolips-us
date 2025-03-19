@@ -270,8 +270,9 @@
       "blocks": {
         "text_3mwk6C": {
           "type": "text",
+          "disabled": true,
           "settings": {
-            "text": "<h2>{{ product.metafields.custom.short_descriptions | metafield_tag }}</h2>"
+            "text": "<p>{{ product.metafields.custom.free_from_heading.value }}</p>"
           }
         },
         "heading_VM7xA3": {
