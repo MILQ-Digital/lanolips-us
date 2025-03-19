@@ -18,7 +18,7 @@
     "favicon": "shopify://shop_images/Lanolips-Logo.svg",
     "image": "shopify://shop_images/login-image-block_73988441-27ad-463b-b2ef-4538b331e2a3.webp",
     "layout": "text_first",
-    "desktop_content_position": "middle",
+    "desktop_content_position": "top",
     "desktop_content_alignment": "left",
     "padding_bottom": 100,
     "enable_season": false,
