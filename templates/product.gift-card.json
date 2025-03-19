@@ -155,6 +155,7 @@
         "text_3mwk6C",
         "heading_VM7xA3"
       ],
+      "disabled": true,
       "settings": {
         "desktop_content_position": "center",
         "content_alignment": "center",
@@ -162,6 +163,16 @@
         "full_width": false,
         "padding_top": 100,
         "padding_bottom": 100
+      }
+    },
+    "custom_liquid_4MPxwA": {
+      "type": "custom-liquid",
+      "disabled": true,
+      "settings": {
+        "custom_liquid": "<div class=\"yotpo-widget-instance\" data-yotpo-instance-id=\"1049541\" data-yotpo-product-id=\"{{product.id}}\" data-yotpo-cart-product-id=\"{{item.product.id}}\"></div>",
+        "color_scheme": "scheme-3",
+        "padding_top": 40,
+        "padding_bottom": 52
       }
     },
     "related-products": {
@@ -221,6 +232,7 @@
         "collapsible_row_Twr9KJ",
         "collapsible_row_LFahgn"
       ],
+      "disabled": true,
       "settings": {
         "caption": "",
         "heading": "FAQS",
@@ -253,15 +265,6 @@
       "disabled": true,
       "settings": {
         "include_margins": true
-      }
-    },
-    "custom_liquid_4MPxwA": {
-      "type": "custom-liquid",
-      "settings": {
-        "custom_liquid": "<div class=\"yotpo-widget-instance\" data-yotpo-instance-id=\"1049541\" data-yotpo-product-id=\"{{product.id}}\" data-yotpo-cart-product-id=\"{{item.product.id}}\"></div>",
-        "color_scheme": "scheme-3",
-        "padding_top": 40,
-        "padding_bottom": 52
       }
     }
   },
