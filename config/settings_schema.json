@@ -61,7 +61,7 @@
 
 
   {
-    "name": "login_image",
+    "name": "Login Image Block",
     "settings": [
       {
         "type": "image_picker",
