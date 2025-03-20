@@ -8,7 +8,8 @@
 }
 
 #login {
-  font-size: var(--heading-xl)
+  font-size: var(--heading-xl);
+  margin-bottom: 0;
 }
 
 .login-title {display: none}
