@@ -14,6 +14,10 @@
   font-size: var(--body-lg)
 }
 
+.cust-login a {
+  text-decoration: underline;
+}
+
 .forgot-password{
   font-size: var(--body-lg)
 }
