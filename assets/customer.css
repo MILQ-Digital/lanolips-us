@@ -333,7 +333,7 @@
 
 /* Login */
 .login a {
-  display: block;
+  /*display: block;*/
   margin: 0 auto;
   width: fit-content;
 }
