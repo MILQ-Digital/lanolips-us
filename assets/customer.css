@@ -18,10 +18,6 @@
   text-decoration: underline;
 }
 
-.forgot-password{
-  font-size: var(--body-lg)
-}
-
 @media screen and (min-width: 750px) {
   .customer:not(.account):not(.order) {
     max-width: 406px;
