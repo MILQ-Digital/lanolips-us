@@ -69,10 +69,15 @@
       "label": "t:sections.image-with-text.settings.image.label"
     },
     {
-        "type": "text",
-        "id": "login-htitle",
-        "label": "Heading Title",
-      },  
+      "type": "text",
+      "id": "login-htitle",
+      "label": "Heading Title",
+    },
+    {
+    "type": "textarea",
+    "id": "login-description",
+    "label": "Login Page Description"
+  },  
     {
       "type": "select",
       "id": "height",
