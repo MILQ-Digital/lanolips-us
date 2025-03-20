@@ -15,7 +15,69 @@
   }
 {%- endstyle -%}
 
-<div class="customer register section-{{ section.id }}-padding">
+
+    <div class="section-{{ section.id }}-padding">
+        <div class="page-width page-width-padding-{{ settings.mobile_page_padding }}">
+          <div class="login-heading text-center">
+            <h1 id="login" tabindex="-1">
+                {% comment %} {{ 'customer.login_page.title' | t }} {% endcomment %}
+                {{ settings.login-htitle}}
+            </h1>
+            <p> {{ settings.login-description}}</p>
+          </div> 
+          <div class="gradient color-{{ settings.section_color_scheme }} image-with-text image-with-text--{{ settings.content_layout }} isolate{% if settings.text_boxes_border_thickness > 0 and settings.text_boxes_border_opacity > 0 and settings.media_border_thickness > 0 and settings.media_border_opacity > 0 %} collapse-borders{% endif %}{% unless settings.color_scheme == settings.section_color_scheme and settings.media_border_thickness > 0 and settings.text_boxes_shadow_opacity == 0 and settings.text_boxes_border_thickness == 0 or settings.text_boxes_border_opacity == 0 %} collapse-corners{% endunless %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
+            <div class="image-with-text__grid grid grid--gapless grid--1-col grid--{% if settings.desktop_image_width == 'medium' %}2-col-tablet{% else %}3-col-tablet{% endif %}{% if settings.layout == 'text_first' %} image-with-text__grid--reverse{% endif %}">
+              <div class="image-with-text__media-item 
+                  {% if settings.image.alt %}image-with-text__caption {% endif %}
+                  image-with-text__media-item--{{ settings.desktop_image_width }} 
+                  image-with-text__media-item--{{ settings.desktop_content_position }} 
+                  grid__item 
+                  disable-img--mobile-{{ settings.mobile_img_visibility }}">
+        
+          <div class="image-with-text__media 
+                    image-with-text__media--{{ settings.height }} 
+                    global-media-settings
+                    {% unless remove_color_classes %} gradient color-{{ settings.color_scheme }}{% else %} background-transparent{% endunless %}
+                    {% if settings.image != blank %} media{% else %} image-with-text__media--placeholder placeholder{% endif %}
+                    {% if settings.image_behavior != 'none' %} animate--{{ settings.image_behavior }}{% endif %}"
+             
+             {% if settings.height == 'adapt' and settings.image != blank %}
+               style="padding-bottom: {{ 1 | divided_by: settings.image.aspect_ratio | times: 100 }}%;"
+             {% endif %}>
+      
+          {%- if settings.image != blank -%}
+            {%- if settings.image_behavior == 'ambient' or settings.image_behavior == 'zoom-in' -%}
+              {%- assign widths = '198, 432, 642, 900, 1284, 1800' -%}
+              {%- capture sizes -%}
+                (min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 100 | divided_by: 1.6667 }}px,
+                (min-width: 750px) calc((100vw - 130px) / 1.667), calc((100vw - 50px) / 1.667)
+              {%- endcapture -%}
+            {%- else -%}
+              {%- assign widths = '165, 360, 535, 750, 1070, 1500' -%}
+              {%- capture sizes -%}
+                (min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 100 | divided_by: 2 }}px,
+                (min-width: 750px) calc((100vw - 130px) / 2), calc((100vw - 50px) / 2)
+              {%- endcapture -%}
+            {%- endif -%}
+            
+            {{
+              settings.image
+              | image_url: width: 1500
+              | image_tag: sizes: sizes, widths: widths, fetchpriority: fetch_priority
+            }}
+          {%- else -%}
+            {{ 'detailed-apparel-1' | placeholder_svg_tag: 'placeholder-svg' }}
+          {%- endif -%}
+        </div>
+    </div>
+    <div class="image-with-text__text-item grid__item">
+          <div
+            id="ImageWithText--}"
+            class="image-with-text__content image-with-text__content--{{ settings.desktop_content_position }} image-with-text__content--desktop-{{ settings.desktop_content_alignment }} image-with-text__content--mobile-{{ settings.mobile_content_alignment }} image-with-text__content--{{ settings.height }} content-container{% unless remove_color_classes %} gradient color-{{ settings.color_scheme }}{% else %} background-transparent{% endunless %}"
+          >
+
+
+            <div class="customer register section-{{ section.id }}-padding">
   <h1>
     {{ 'customer.register.title' | t }}
   </h1>
@@ -133,6 +195,18 @@
     </button>
   {%- endform -%}
 </div>
+           
+          </div>
+        </div>        
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+  
 
 {% schema %}
 {
