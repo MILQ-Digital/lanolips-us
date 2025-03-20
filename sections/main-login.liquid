@@ -207,8 +207,9 @@
                     </a>
                   {%- endif -%}
             
-                  <button class="hey">
-                    {{ 'customer.login_page.sign_in' | t }}
+                  <button>
+                    {% comment %} {{ 'customer.login_page.sign_in' | t }} {% endcomment %}
+                    Login
                   </button>
             
                   <a href="{{ routes.account_register_url }}">
