@@ -19,6 +19,7 @@
     "image": "shopify://shop_images/login-image-block_73988441-27ad-463b-b2ef-4538b331e2a3.webp",
     "login-htitle": "Sign in to Lanolips",
     "login-description": "Login to check in on you Lanolips account and manage your order and wishlist....",
+    "height": "small",
     "layout": "text_first",
     "desktop_content_position": "middle",
     "desktop_content_alignment": "left",
