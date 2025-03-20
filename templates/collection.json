@@ -23,11 +23,11 @@
         "promo_banner_tfAVHn": {
           "type": "promo-banner",
           "settings": {
-            "banner_image": "shopify://shop_images/product_grid_1.jpg",
+            "banner_image": "{{ collection.metafields.custom.bundle_image.value }}",
             "promotion_position": 7,
-            "title": "Bundle It And Save",
+            "title": "{{ collection.metafields.custom.bundle_title.value }}",
             "link_label": "Shop Now",
-            "link": "",
+            "link": "{{ collection.metafields.custom.bundlebutton_link.value }}",
             "color_scheme": "scheme-d2d64bb4-1602-4f59-ab3f-f35f477ef722",
             "image_ratio": "square"
           }
