@@ -9,6 +9,10 @@
 
 .login-title {display: none}
 
+.cust-login {
+  margin: 15px 0 10px;
+}
+
 @media screen and (min-width: 750px) {
   .customer:not(.account):not(.order) {
     max-width: 406px;
