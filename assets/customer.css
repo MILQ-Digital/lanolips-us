@@ -7,6 +7,10 @@
   width: 100%;
 }
 
+#login {
+  font-size: var(--heading-xl)
+}
+
 .login-title {display: none}
 
 .cust-login {
