@@ -22,6 +22,10 @@
 
 
 <div class="section-{{ section.id }}-padding">
+  <h1 id="login" tabindex="-1">
+               {% comment %} {{ 'customer.login_page.title' | t }} {% endcomment %}
+                Sign in to Lanolips
+            </h1>
   <div class="page-width page-width-padding-{{ settings.mobile_page_padding }}">
     <div class="gradient color-{{ settings.section_color_scheme }} image-with-text image-with-text--{{ settings.content_layout }} isolate{% if settings.text_boxes_border_thickness > 0 and settings.text_boxes_border_opacity > 0 and settings.media_border_thickness > 0 and settings.media_border_opacity > 0 %} collapse-borders{% endif %}{% unless settings.color_scheme == settings.section_color_scheme and settings.media_border_thickness > 0 and settings.text_boxes_shadow_opacity == 0 and settings.text_boxes_border_thickness == 0 or settings.text_boxes_border_opacity == 0 %} collapse-corners{% endunless %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
       <div class="image-with-text__grid grid grid--gapless grid--1-col grid--{% if settings.desktop_image_width == 'medium' %}2-col-tablet{% else %}3-col-tablet{% endif %}{% if settings.layout == 'text_first' %} image-with-text__grid--reverse{% endif %}">
@@ -70,7 +74,6 @@
 
   </div>
 </div>
-
         
         <div class="image-with-text__text-item grid__item">
           <div
@@ -127,11 +130,7 @@
                 {%- endform -%}
               </div>
             
-              <h1 id="login" tabindex="-1">
-               {% comment %} {{ 'customer.login_page.title' | t }} {% endcomment %}
-                Sign in to Lanolips
-              </h1>
-             
+          
               <div>
                 {%- if recover_success == true -%}
                   <h3 class="form__message" tabindex="-1" autofocus>
