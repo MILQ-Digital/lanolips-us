@@ -212,9 +212,10 @@
                     Login
                   </button>
             
-                   New customer? <a href="{{ routes.account_register_url }}">
-                   {{ 'customer.login_page.create_account' | t }}
-                  </a>
+                   <div>
+                    New customer? <a href="{{ routes.account_register_url }}">
+                     {{ 'customer.login_page.create_account' | t }}
+                    </a></div>
                 {%- endform -%}
               </div>
             
