@@ -1,6 +1,6 @@
 .customer:not(.account):not(.order) {
   margin: 0 auto;
-  max-width: 33.4rem;
+  max-width: 406px;
   padding-left: 1.5rem;
   padding-right: 1.5rem;
   text-align: center;
@@ -8,7 +8,7 @@
 
 @media screen and (min-width: 750px) {
   .customer:not(.account):not(.order) {
-    max-width: 47.8rem;
+    max-width: 406px;
   }
 }
 
