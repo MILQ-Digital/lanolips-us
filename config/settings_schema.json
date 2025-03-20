@@ -69,6 +69,11 @@
       "label": "t:sections.image-with-text.settings.image.label"
     },
     {
+        "type": "text",
+        "id": "login-htitle",
+        "label": "Heading Title",
+      },  
+    {
       "type": "select",
       "id": "height",
       "options": [
