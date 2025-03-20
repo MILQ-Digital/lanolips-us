@@ -21,225 +21,225 @@
 
 
 
-<div class="section-{{ section.id }}-padding">
-  
-  <div class="page-width page-width-padding-{{ settings.mobile_page_padding }}">
-    <div class="login-heading text-center">
-      <h1 id="login" tabindex="-1">
-          {% comment %} {{ 'customer.login_page.title' | t }} {% endcomment %}
-          {{ settings.login-htitle}}
-      </h1>
-      <p> {{ settings.login-description}}</p>
-    </div> 
-    <div class="gradient color-{{ settings.section_color_scheme }} image-with-text image-with-text--{{ settings.content_layout }} isolate{% if settings.text_boxes_border_thickness > 0 and settings.text_boxes_border_opacity > 0 and settings.media_border_thickness > 0 and settings.media_border_opacity > 0 %} collapse-borders{% endif %}{% unless settings.color_scheme == settings.section_color_scheme and settings.media_border_thickness > 0 and settings.text_boxes_shadow_opacity == 0 and settings.text_boxes_border_thickness == 0 or settings.text_boxes_border_opacity == 0 %} collapse-corners{% endunless %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
-      <div class="image-with-text__grid grid grid--gapless grid--1-col grid--{% if settings.desktop_image_width == 'medium' %}2-col-tablet{% else %}3-col-tablet{% endif %}{% if settings.layout == 'text_first' %} image-with-text__grid--reverse{% endif %}">
-        <div class="image-with-text__media-item 
-            {% if settings.image.alt %}image-with-text__caption {% endif %}
-            image-with-text__media-item--{{ settings.desktop_image_width }} 
-            image-with-text__media-item--{{ settings.desktop_content_position }} 
-            grid__item 
-            disable-img--mobile-{{ settings.mobile_img_visibility }}">
-  
-  <div class="image-with-text__media 
-              image-with-text__media--{{ settings.height }} 
-              global-media-settings
-              {% unless remove_color_classes %} gradient color-{{ settings.color_scheme }}{% else %} background-transparent{% endunless %}
-              {% if settings.image != blank %} media{% else %} image-with-text__media--placeholder placeholder{% endif %}
-              {% if settings.image_behavior != 'none' %} animate--{{ settings.image_behavior }}{% endif %}"
-       
-       {% if settings.height == 'adapt' and settings.image != blank %}
-         style="padding-bottom: {{ 1 | divided_by: settings.image.aspect_ratio | times: 100 }}%;"
-       {% endif %}>
-
-    {%- if settings.image != blank -%}
-      {%- if settings.image_behavior == 'ambient' or settings.image_behavior == 'zoom-in' -%}
-        {%- assign widths = '198, 432, 642, 900, 1284, 1800' -%}
-        {%- capture sizes -%}
-          (min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 100 | divided_by: 1.6667 }}px,
-          (min-width: 750px) calc((100vw - 130px) / 1.667), calc((100vw - 50px) / 1.667)
-        {%- endcapture -%}
-      {%- else -%}
-        {%- assign widths = '165, 360, 535, 750, 1070, 1500' -%}
-        {%- capture sizes -%}
-          (min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 100 | divided_by: 2 }}px,
-          (min-width: 750px) calc((100vw - 130px) / 2), calc((100vw - 50px) / 2)
-        {%- endcapture -%}
-      {%- endif -%}
-      
-      {{
-        settings.image
-        | image_url: width: 1500
-        | image_tag: sizes: sizes, widths: widths, fetchpriority: fetch_priority
-      }}
-    {%- else -%}
-      {{ 'detailed-apparel-1' | placeholder_svg_tag: 'placeholder-svg' }}
-    {%- endif -%}
-  </div>
-</div>
+      <div class="section-{{ section.id }}-padding">
+        <div class="page-width page-width-padding-{{ settings.mobile_page_padding }}">
+          <div class="login-heading text-center">
+            <h1 id="login" tabindex="-1">
+                {% comment %} {{ 'customer.login_page.title' | t }} {% endcomment %}
+                {{ settings.login-htitle}}
+            </h1>
+            <p> {{ settings.login-description}}</p>
+          </div> 
+          <div class="gradient color-{{ settings.section_color_scheme }} image-with-text image-with-text--{{ settings.content_layout }} isolate{% if settings.text_boxes_border_thickness > 0 and settings.text_boxes_border_opacity > 0 and settings.media_border_thickness > 0 and settings.media_border_opacity > 0 %} collapse-borders{% endif %}{% unless settings.color_scheme == settings.section_color_scheme and settings.media_border_thickness > 0 and settings.text_boxes_shadow_opacity == 0 and settings.text_boxes_border_thickness == 0 or settings.text_boxes_border_opacity == 0 %} collapse-corners{% endunless %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
+            <div class="image-with-text__grid grid grid--gapless grid--1-col grid--{% if settings.desktop_image_width == 'medium' %}2-col-tablet{% else %}3-col-tablet{% endif %}{% if settings.layout == 'text_first' %} image-with-text__grid--reverse{% endif %}">
+                  
         
-        <div class="image-with-text__text-item grid__item">
-          <div
-            id="ImageWithText--}"
-            class="image-with-text__content image-with-text__content--{{ settings.desktop_content_position }} image-with-text__content--desktop-{{ settings.desktop_content_alignment }} image-with-text__content--mobile-{{ settings.mobile_content_alignment }} image-with-text__content--{{ settings.height }} content-container{% unless remove_color_classes %} gradient color-{{ settings.color_scheme }}{% else %} background-transparent{% endunless %}"
-          >
-            <div class="customer login section-{{ section.id }}-padding">
-              <h1 id="recover" tabindex="-1">
-                {{ 'customer.recover_password.title' | t }}
-              </h1>
-              <div>
-                <p>
-                  {{ 'customer.recover_password.subtext' | t }}
-                </p>
-            
-                {%- form 'recover_customer_password' -%}
-                  {% assign recover_success = form.posted_successfully? %}
-                  <div class="field">
-                    <input
-                      type="email"
-                      value=""
-                      name="email"
-                      id="RecoverEmail"
-                      autocorrect="off"
-                      autocapitalize="off"
-                      autocomplete="email"
-                      {% if form.errors %}
-                        aria-invalid="true"
-                        aria-describedby="RecoverEmail-email-error"
-                        autofocus
-                      {% endif %}
-                      placeholder="{{ 'customer.login_page.email' | t }}"
-                    >
-                    <label for="RecoverEmail">
-                      {{ 'customer.login_page.email' | t }}
-                    </label>
+              <div class="image-with-text__text-item grid__item">
+                <div
+                  id="ImageWithText--}"
+                  class="image-with-text__content image-with-text__content--{{ settings.desktop_content_position }} image-with-text__content--desktop-{{ settings.desktop_content_alignment }} image-with-text__content--mobile-{{ settings.mobile_content_alignment }} image-with-text__content--{{ settings.height }} content-container{% unless remove_color_classes %} gradient color-{{ settings.color_scheme }}{% else %} background-transparent{% endunless %}"
+                >
+                  <div class="customer login section-{{ section.id }}-padding">
+                    <h1 id="recover" tabindex="-1">
+                      {{ 'customer.recover_password.title' | t }}
+                    </h1>
+                    <div>
+                      <p>
+                        {{ 'customer.recover_password.subtext' | t }}
+                      </p>
+                  
+                      {%- form 'recover_customer_password' -%}
+                        {% assign recover_success = form.posted_successfully? %}
+                        <div class="field">
+                          <input
+                            type="email"
+                            value=""
+                            name="email"
+                            id="RecoverEmail"
+                            autocorrect="off"
+                            autocapitalize="off"
+                            autocomplete="email"
+                            {% if form.errors %}
+                              aria-invalid="true"
+                              aria-describedby="RecoverEmail-email-error"
+                              autofocus
+                            {% endif %}
+                            placeholder="{{ 'customer.login_page.email' | t }}"
+                          >
+                          <label for="RecoverEmail">
+                            {{ 'customer.login_page.email' | t }}
+                          </label>
+                        </div>
+                        {%- if form.errors -%}
+                          <small id="RecoverEmail-email-error" class="form__message">
+                            <span class="svg-wrapper">
+                              {{- 'icon-error.svg' | inline_asset_content -}}
+                            </span>
+                            {{ form.errors.messages.form }}
+                          </small>
+                        {%- endif -%}
+                  
+                        <button>
+                          {{ 'customer.login_page.submit' | t }}
+                        </button>
+                  
+                        <a href="#login">
+                          {{ 'customer.login_page.cancel' | t }}
+                        </a>
+                      {%- endform -%}
+                    </div>
+                  
+                     <h1 id="login" tabindex="-1" class="login-title">
+                      {{ 'customer.login_page.title' | t }}
+                    </h1>
+                    <div>
+                    {%- if recover_success == true -%}
+                      <h3 class="form__message" tabindex="-1" autofocus>
+                        <span class="svg-wrapper">
+                          {{- 'icon-success.svg' | inline_asset_content -}}
+                        </span>
+                        {{ 'customer.recover_password.success' | t }}
+                      </h3>
+                    {%- endif -%}
+                    {%- form 'customer_login', novalidate: 'novalidate' -%}
+                      {%- if form.errors -%}
+                        <h2 class="form__message" tabindex="-1" autofocus>
+                          <span class="visually-hidden">{{ 'accessibility.error' | t }} </span>
+                          <span class="svg-wrapper">
+                            {{- 'icon-error.svg' | inline_asset_content -}}
+                          </span>
+                          {{ 'templates.contact.form.error_heading' | t }}
+                        </h2>
+                        {{ form.errors | default_errors }}
+                      {%- endif -%}
+                
+                      {%- if shop.features.login_with_shop_classic_customer_accounts? -%}
+                        <section name="sign-in-with-shop-provider">
+                          {{ shop | login_button: hide_button: hide_shop_login_button }}
+                
+                          {%- unless hide_shop_login_button -%}
+                            <p>
+                              {{ 'customer.login_page.alternate_provider_separator' | t }}
+                            </p>
+                          {%- endunless -%}
+                        </section>
+                      {%- endif -%}
+                      <span class="field-label">Email address</span>
+                      <div class="field">
+                        <input
+                          type="email"
+                          name="customer[email]"
+                          id="CustomerEmail"
+                          autocomplete="email"
+                          autocorrect="off"
+                          autocapitalize="off"
+                          {% if form.errors contains 'form' %}
+                            aria-invalid="true"
+                          {% endif %}
+                          placeholder="{{ 'customer.login_page.email' | t }}"
+                        >
+                        <label for="CustomerEmail">
+                          {{ 'customer.login_page.email' | t }}
+                        </label>
+                      </div>
+                
+                      {%- if form.password_needed -%}
+    
+                        <span class="field-label">Password</span>
+                        <div class="field">
+                          <input
+                            type="password"
+                            value=""
+                            name="customer[password]"
+                            id="CustomerPassword"
+                            autocomplete="current-password"
+                            {% if form.errors contains 'form' %}
+                              aria-invalid="true"
+                            {% endif %}
+                            placeholder="{{ 'customer.login_page.password' | t }}"
+                          >
+                          <label for="CustomerPassword">
+                            {{ 'customer.login_page.password' | t }}
+                          </label>
+                        </div>
+                      {%- endif -%}
+                
+                      <button>
+                        {% comment %} {{ 'customer.login_page.sign_in' | t }} {% endcomment %}
+                        Login
+                      </button>
+                
+                       <div class="cust-login text-center">
+                        New customer? <a href="{{ routes.account_register_url }}">
+                         {{ 'customer.login_page.create_account' | t }}
+                        </a>
+                       </div>
+                        <div class="forgot-password text-center">
+                          <a href="#recover">
+                            {{ 'customer.login_page.forgot_password' | t }}
+                          </a>
+                        </div>
+                    {%- endform -%}
                   </div>
-                  {%- if form.errors -%}
-                    <small id="RecoverEmail-email-error" class="form__message">
-                      <span class="svg-wrapper">
-                        {{- 'icon-error.svg' | inline_asset_content -}}
-                      </span>
-                      {{ form.errors.messages.form }}
-                    </small>
-                  {%- endif -%}
-            
-                  <button>
-                    {{ 'customer.login_page.submit' | t }}
-                  </button>
-            
-                  <a href="#login">
-                    {{ 'customer.login_page.cancel' | t }}
-                  </a>
-                {%- endform -%}
-              </div>
-            
-               <h1 id="login" tabindex="-1" class="login-title">
-                {{ 'customer.login_page.title' | t }}
-              </h1>
-              <div>
-                {%- if recover_success == true -%}
-                  <h3 class="form__message" tabindex="-1" autofocus>
-                    <span class="svg-wrapper">
-                      {{- 'icon-success.svg' | inline_asset_content -}}
-                    </span>
-                    {{ 'customer.recover_password.success' | t }}
-                  </h3>
-                {%- endif -%}
-                {%- form 'customer_login', novalidate: 'novalidate' -%}
-                  {%- if form.errors -%}
-                    <h2 class="form__message" tabindex="-1" autofocus>
-                      <span class="visually-hidden">{{ 'accessibility.error' | t }} </span>
-                      <span class="svg-wrapper">
-                        {{- 'icon-error.svg' | inline_asset_content -}}
-                      </span>
-                      {{ 'templates.contact.form.error_heading' | t }}
-                    </h2>
-                    {{ form.errors | default_errors }}
-                  {%- endif -%}
-            
-                  {%- if shop.features.login_with_shop_classic_customer_accounts? -%}
-                    <section name="sign-in-with-shop-provider">
-                      {{ shop | login_button: hide_button: hide_shop_login_button }}
-            
-                      {%- unless hide_shop_login_button -%}
-                        <p>
-                          {{ 'customer.login_page.alternate_provider_separator' | t }}
-                        </p>
-                      {%- endunless -%}
-                    </section>
-                  {%- endif -%}
-                  <span class="field-label">Email address</span>
-                  <div class="field">
-                    <input
-                      type="email"
-                      name="customer[email]"
-                      id="CustomerEmail"
-                      autocomplete="email"
-                      autocorrect="off"
-                      autocapitalize="off"
-                      {% if form.errors contains 'form' %}
-                        aria-invalid="true"
-                      {% endif %}
-                      placeholder="{{ 'customer.login_page.email' | t }}"
-                    >
-                    <label for="CustomerEmail">
-                      {{ 'customer.login_page.email' | t }}
-                    </label>
-                  </div>
-            
-                  {%- if form.password_needed -%}
-
-                    <span class="field-label">Password</span>
-                    <div class="field">
-                      <input
-                        type="password"
-                        value=""
-                        name="customer[password]"
-                        id="CustomerPassword"
-                        autocomplete="current-password"
-                        {% if form.errors contains 'form' %}
-                          aria-invalid="true"
-                        {% endif %}
-                        placeholder="{{ 'customer.login_page.password' | t }}"
-                      >
-                      <label for="CustomerPassword">
-                        {{ 'customer.login_page.password' | t }}
-                      </label>
+                
+                  {%- if shop.checkout.guest_login -%}
+                    <div>
+                      <hr>
+                      <h2>{{ 'customer.login_page.guest_title' | t }}</h2>
+                
+                      {%- form 'guest_login' -%}
+                        <button>
+                          {{ 'customer.login_page.guest_continue' | t }}
+                        </button>
+                      {%- endform -%}
                     </div>
                   {%- endif -%}
-            
-                  <button>
-                    {% comment %} {{ 'customer.login_page.sign_in' | t }} {% endcomment %}
-                    Login
-                  </button>
-            
-                   <div class="cust-login text-center">
-                    New customer? <a href="{{ routes.account_register_url }}">
-                     {{ 'customer.login_page.create_account' | t }}
-                    </a>
-                   </div>
-                    <div class="forgot-password text-center">
-                      <a href="#recover">
-                        {{ 'customer.login_page.forgot_password' | t }}
-                      </a>
-                    </div>
-                {%- endform -%}
-              </div>
-            
-              {%- if shop.checkout.guest_login -%}
-                <div>
-                  <hr>
-                  <h2>{{ 'customer.login_page.guest_title' | t }}</h2>
-            
-                  {%- form 'guest_login' -%}
-                    <button>
-                      {{ 'customer.login_page.guest_continue' | t }}
-                    </button>
-                  {%- endform -%}
                 </div>
-              {%- endif -%}
-            </div>
-          </div>
-        </div>        
+              </div>
+            </div>   
+            <div class="image-with-text__media-item 
+                      {% if settings.image.alt %}image-with-text__caption {% endif %}
+                      image-with-text__media-item--{{ settings.desktop_image_width }} 
+                      image-with-text__media-item--{{ settings.desktop_content_position }} 
+                      grid__item 
+                      disable-img--mobile-{{ settings.mobile_img_visibility }}">
+                    <div class="image-with-text__media 
+                              image-with-text__media--{{ settings.height }} 
+                              global-media-settings
+                              {% unless remove_color_classes %} gradient color-{{ settings.color_scheme }}{% else %} background-transparent{% endunless %}
+                              {% if settings.image != blank %} media{% else %} image-with-text__media--placeholder placeholder{% endif %}
+                              {% if settings.image_behavior != 'none' %} animate--{{ settings.image_behavior }}{% endif %}"
+                       
+                       {% if settings.height == 'adapt' and settings.image != blank %}
+                         style="padding-bottom: {{ 1 | divided_by: settings.image.aspect_ratio | times: 100 }}%;"
+                       {% endif %}>
+                
+                    {%- if settings.image != blank -%}
+                      {%- if settings.image_behavior == 'ambient' or settings.image_behavior == 'zoom-in' -%}
+                        {%- assign widths = '198, 432, 642, 900, 1284, 1800' -%}
+                        {%- capture sizes -%}
+                          (min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 100 | divided_by: 1.6667 }}px,
+                          (min-width: 750px) calc((100vw - 130px) / 1.667), calc((100vw - 50px) / 1.667)
+                        {%- endcapture -%}
+                      {%- else -%}
+                        {%- assign widths = '165, 360, 535, 750, 1070, 1500' -%}
+                        {%- capture sizes -%}
+                          (min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 100 | divided_by: 2 }}px,
+                          (min-width: 750px) calc((100vw - 130px) / 2), calc((100vw - 50px) / 2)
+                        {%- endcapture -%}
+                      {%- endif -%}
+                      
+                      {{
+                        settings.image
+                        | image_url: width: 1500
+                        | image_tag: sizes: sizes, widths: widths, fetchpriority: fetch_priority
+                      }}
+                    {%- else -%}
+                      {{ 'detailed-apparel-1' | placeholder_svg_tag: 'placeholder-svg' }}
+                    {%- endif -%}
+                  </div>
+              </div>  
+              
       </div>
     </div>
   </div>
