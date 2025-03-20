@@ -226,7 +226,8 @@
             
                   {%- form 'guest_login' -%}
                     <button>
-                      {{ 'customer.login_page.guest_continue' | t }}
+                      {% comment %} {{ 'customer.login_page.guest_continue' | t }} {% endcomment %}
+                      Login
                     </button>
                   {%- endform -%}
                 </div>
