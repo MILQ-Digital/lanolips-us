@@ -190,6 +190,7 @@
   margin-top: 10px;
   font-size: var(--body-lg);
   line-height: 150%;
+  display: none; /**hidden by request**/
 }
 
 .collection-list .card__inner .card__media  .media{
