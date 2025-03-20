@@ -24,6 +24,7 @@
     "layout": "image_first",
     "desktop_content_position": "middle",
     "desktop_content_alignment": "left",
+    "mobile_img_visibility": true,
     "padding_top": 72,
     "padding_bottom": 100,
     "enable_season": false,
