@@ -556,6 +556,10 @@
             "heading": "Your bag is sold out"
           }
         }
+      },
+      "customer_account": {
+        "sign_in_link_label": "Login",
+        "sign_out_link_label": "Log out"
       }
     }
   }
