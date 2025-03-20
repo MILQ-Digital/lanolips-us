@@ -12,6 +12,10 @@
   margin-bottom: 0;
 }
 
+.login-heading {
+  padding-bottom: 50px;
+}
+
 .login-title {display: none}
 
 .cust-login {
