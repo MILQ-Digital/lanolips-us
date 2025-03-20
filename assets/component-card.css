@@ -165,7 +165,7 @@
 .collection-list .card__information p,
 .promo_banner .card__information p {
   display: none;
-  color: #fff;
+  color: #2b4676;
 }
 
 .collection-list .card-wrapper:hover .card__information p,
