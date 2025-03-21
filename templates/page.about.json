@@ -12,7 +12,7 @@
     "image_banner_3xkwVM": {
       "type": "image-banner",
       "settings": {
-        "image": "shopify://shop_images/about_hero_banner.jpg",
+        "image": "shopify://shop_images/About_Page_Banner_2.jpg",
         "image_overlay_opacity": 0,
         "image_height": "medium",
         "desktop_content_position": "middle-center",
@@ -34,7 +34,7 @@
       "settings": {
         "padding_top": 28,
         "padding_bottom": 28,
-        "custom_page_title": "Emotive Headline About Brand Content",
+        "custom_page_title": "Dry skin is our thing.",
         "hidepage_content": true,
         "layout": "none",
         "color_scheme": "scheme-2",
@@ -52,7 +52,7 @@
         "text_jUrepC": {
           "type": "text",
           "settings": {
-            "text": "<p>As with anything, it’s important to read the ingredient list before purchasing or trying new cosmetics like lip balms, moisturisers and hand lotions. Being vigilant about avoiding harsh chemicals and other irritants is the key to keeping your skin hydrated and nourished all year long.<br/>At the same time, there are also ingredients that you want to look for in your skincare and beauty products. Namely, lanolin! Read on to learn more about this all-natural ingredient and why it’s amazing for your skin.</p>"
+            "text": "<p>Healthy skin starts with hydration. That’s why we always start with lanolin. And then we add only what we need. We believe great skincare should be easy. LANOLIPS is essential, Aussie lanolin skincare - minus the synthetics & hocus pocus. No BS. Choose better, use less.</p><p>Think of us as the jeans and white tee for your face. </p>"
           }
         }
       },
@@ -100,8 +100,8 @@
           "settings": {
             "image": "shopify://shop_images/signin.jpg",
             "caption": "",
-            "heading": "Dry skin is our thing",
-            "text": "<h3>Heading</h3><p>We believe in connecting urban with country and rural communities that may be invisible to many. They may be suffering through drought, fire or other hardship.</p><h3>We Believe In</h3><p>We believe in connecting urban with country and rural communities that may be invisible to many. They may be suffering through drought, fire or other hardship.</p><h3>Connecting Urban With Country</h3><p>We believe in connecting urban with country and rural communities that may be invisible to many. They may be suffering through drought, fire or other hardship.</p>",
+            "heading": "Our Values",
+            "text": "<h3>Clean & Transparent</h3><p>Lanolips is a pioneer in clean beauty. We believe that nature provides us with the most powerful ingredients of all – and that a short ingredients list is a good ingredients list. Our products contain no known ‘suspicious’ chemicals, and we list all of our ingredients and natural percentages clearly, on each of our products.</p><h3>Cruelty-Free</h3><p>We believe that beauty products should be cruelty free. We are proud to be Leaping Bunny approved. A global programme, Leaping Bunny requires cruelty free standards over & above legal requirements.  All of our products are approved under the Cruelty Free International Leaping Bunny programme, the internationally recognisable gold standard for cruelty free products. We adhere to a fixed cut-off date policy & proactively monitor our suppliers to ensure that our products continue to adhere to the Leaping Bunny criteria. Our supplier monitoring system is also independently audited. For more info go to <a href=\"https://crueltyfreeinternational.org/\" title=\"https://crueltyfreeinternational.org\">Cruelty Free International.</a></p>",
             "button_label": "",
             "button_link": ""
           }
@@ -139,13 +139,13 @@
           "type": "heading",
           "settings": {
             "heading": "Made With Love & Lanolin",
-            "heading_size": "hm"
+            "heading_size": "hs"
           }
         },
         "text_NCe7iF": {
           "type": "text",
           "settings": {
-            "text": "<p>Lanolips Lip Scrub caps are made with 100% PCR material, boxes are printed using soy-bean and vegetable-based inks. Lanolips’ goal is to transition all packaging to more eco-friendly material over the next 12-24 months</p>",
+            "text": "<p>Lanolips uses lanolin to hydrate & heal skin in the most natural way possible.</p><p>Lanolin is a deeply moisturising oil naturally occurring in sheep’s wool, humanely (and cruelty-free) sourced by Australian sheep farmers.</p>",
             "text_style": "subtitle"
           }
         },
@@ -166,7 +166,7 @@
         "button_J7awhr"
       ],
       "settings": {
-        "image": "shopify://shop_images/made_with_love_and_lanolin.jpg",
+        "image": "shopify://shop_images/About_Block_1588x1426_5e88baaa-0bd9-4e9f-89af-d19d1c726c61.jpg",
         "height": "adapt",
         "desktop_image_width": "medium",
         "layout": "image_first",
@@ -192,7 +192,7 @@
           "settings": {
             "caption": "Farming + Love + Lanolin",
             "text_style": "caption-with-letter-spacing",
-            "text_size": "medium",
+            "text_size": "small",
             "text_alignment": "text-left"
           }
         },
@@ -206,8 +206,8 @@
         "text_L89DW8": {
           "type": "text",
           "settings": {
-            "text": "<p>One of Founder, Kirsten Carriol’s, fondest memories from childhood is how her grandfather’s calloused hands magically become soft after a day of shearing sheep’s’ wool on the family farm. She learned why from her father, a molecular scientist: wool contains lanolin, which mimics the hydrating oils of human skin. After years of working in beauty, and countless chapped lips & tubes of every balm imaginable, Kirsten knew that when it comes to moisturising & healing skin, you can’t improve on lanolin. She created LANO, a lanolin-based skincare line, using the highest quality lanolin sourced (cruelty-free) from Australian farmers and their sheep - as the most natural answer to dry skin. With lanolin, your skin has literally met its match.</p>",
-            "text_style": "subtitle"
+            "text": "<p>One of Founder, Kirsten Carriol’s, fondest memories from childhood is how her grandfather’s calloused hands magically become soft after a day of shearing sheep’s’ wool on the family farm. </p><p>She learned why from her father, a molecular scientist: wool contains lanolin, which mimics the hydrating oils of human skin. </p><p>After years of working in beauty, and countless chapped lips & tubes of every balm imaginable, Kirsten knew that when it comes to moisturising & healing skin, you can’t improve on lanolin. </p><p>She created Lanolips, a lanolin-based skincare line, using the highest quality lanolin sourced (cruelty-free) from Australian farmers and their sheep - as the most natural answer to dry skin. </p><p>With lanolin, your skin has literally met its match.</p>",
+            "text_style": "body"
           }
         }
       },
@@ -217,7 +217,7 @@
         "text_L89DW8"
       ],
       "settings": {
-        "image": "shopify://shop_images/100_years_of_heritage.jpg",
+        "image": "shopify://shop_images/About_Block_1628x1436_bcdae765-5f0d-4136-9baa-ab0ae2a8b7a4.jpg",
         "height": "adapt",
         "desktop_image_width": "medium",
         "layout": "text_first",
@@ -241,7 +241,7 @@
         "heading_CmRwrV": {
           "type": "heading",
           "settings": {
-            "heading": "What Is Lanoline?",
+            "heading": "What Is Lanolin?",
             "heading_size": "hm",
             "enable_script": false
           }
@@ -249,7 +249,7 @@
         "text_wXDFd8": {
           "type": "text",
           "settings": {
-            "text": "<p>In its raw form, lanolin is a deeply moisturising oil naturally occurring in sheep’s wool. It’s essential for conditioning and protecting sheep’s wool from the elements but is also extremely close to our skin’s own natural oil, making lanolin effective at hydrating skin, which is why we call it “Nature’s Wonder Moisturiser”. <br/>Lanolin moisturisers, ointments and lip balms are excellent for softening the look and feel of dry, flaky skin and allowing it to moisturise from within. That’s why lanolin is the hero ingredient in all our LANO products.<br/><br/></p>"
+            "text": "<h3>Lanolin Nature's Wonder Moisturiser </h3><p>All our products are made with lanolin – a deeply moisturising oil naturally occurring in sheep’s wool.  Humanely (and cruelty-free) sourced from Australian sheep farmers. </p><p>Lanolin mimics the skin’s own oils to heal and hydrate and is so safe doctors recommend it to treat burns, and mothers can use it with nursing infants.</p><h4><em><strong>We believe in it so much; we use it everywhere.</strong></em></h4>"
           }
         }
       },
@@ -272,7 +272,7 @@
         "column_j8eegh": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/Lano_Lips_products.jpg",
+            "image": "shopify://shop_images/About_Images_1350x1176_4.jpg",
             "title": "",
             "text": "",
             "link_label": "",
@@ -283,7 +283,7 @@
         "column_3mNQUn": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/lano_lips_img.jpg",
+            "image": "shopify://shop_images/About_Images_1350x1176_6.jpg",
             "title": "",
             "text": "",
             "link_label": "",
@@ -321,7 +321,7 @@
         "heading_NKkJez": {
           "type": "heading",
           "settings": {
-            "heading": "Is Lanolin good for your skin?",
+            "heading": "The science of lanolin",
             "heading_size": "hm",
             "enable_script": false
           }
@@ -329,7 +329,7 @@
         "text_VHW6GY": {
           "type": "text",
           "settings": {
-            "text": "<p>Of course, just because an ingredient is all-natural doesn’t mean it’s automatically safe for your skin. So, is lanolin good for your skin? Yes!<br/>Lanolin is scientifically proven to mimic lipids in human skin extremely closely, meaning it’s less likely to irritate even the most delicate, sensitive skin. Additionally, lanolin can hold up to 400% of its weight in moisture while still being semi-occlusive which allows your skin to breathe without ever leaving any sticky residue behind.</p>"
+            "text": "<p>Lanolin works because:</p><p>It's scientifically proven to be closest to lipids in human skin, more so than <em>any</em> other ingredient. It's semi-occlusive & semi-permeable - meaning it allows skin to self-hydrate from within, but also acts as a breathable skin barrier. It holds up to 400% of its weight in moisture, behaving as a moisture reservoir for your skin. <em><strong>And it's vegetarian and animal cruelty-free.</strong></em></p><p><em><strong>With lanolin, your skin has literally met its match.</strong></em></p><p>And our exclusive Ultra-Medical Grade lanolin is 3 x purer than even Medical Grade lanolin - and is prepared using a proprietary refining process - which makes it hypoallergenic, and the world's best.</p>"
           }
         }
       },
