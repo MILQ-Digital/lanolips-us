@@ -70,6 +70,7 @@
     },
     "image_with_text_VUg6Qt": {
       "type": "image-with-text",
+      "disabled": true,
       "custom_css": [
         ".image-with-text {margin-left: calc(-1 * var(--outer));}"
       ],
@@ -97,6 +98,7 @@
       "blocks": {
         "row_EfGypg": {
           "type": "row",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/signin.jpg",
             "caption": "",
@@ -273,11 +275,43 @@
         "heading_size": "h1",
         "enable_video_looping": true,
         "video_url": "https://www.youtube.com/watch?v=8NRclrAoqq0&t=4s",
+        "cover_image": "shopify://shop_images/About_Page_Banner.jpg",
         "description": "A short video about the facts on shearing sheep.",
         "full_width": false,
         "color_scheme": "",
         "padding_top": 36,
         "padding_bottom": 36
+      }
+    },
+    "rich_text_AzzEtY": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_NKkJez": {
+          "type": "heading",
+          "settings": {
+            "heading": "The science of lanolin",
+            "heading_size": "hm",
+            "enable_script": false
+          }
+        },
+        "text_VHW6GY": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Lanolin works because:</p><p>It's scientifically proven to be closest to lipids in human skin, more so than <em>any</em> other ingredient. It's semi-occlusive & semi-permeable - meaning it allows skin to self-hydrate from within, but also acts as a breathable skin barrier. It holds up to 400% of its weight in moisture, behaving as a moisture reservoir for your skin. <em><strong>And it's vegetarian and animal cruelty-free.</strong></em></p><p><em><strong>With lanolin, your skin has literally met its match.</strong></em></p><p>And our exclusive Ultra-Medical Grade lanolin is 3 x purer than even Medical Grade lanolin - and is prepared using a proprietary refining process - which makes it hypoallergenic, and the world's best.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_NKkJez",
+        "text_VHW6GY"
+      ],
+      "settings": {
+        "desktop_content_position": "right",
+        "content_alignment": "left",
+        "color_scheme": "scheme-3",
+        "full_width": true,
+        "padding_top": 100,
+        "padding_bottom": 100
       }
     },
     "multicolumn_346w8Y": {
@@ -327,37 +361,6 @@
         "padding_top": 36,
         "padding_bottom": 36,
         "section_class": "narrow-img"
-      }
-    },
-    "rich_text_AzzEtY": {
-      "type": "rich-text",
-      "blocks": {
-        "heading_NKkJez": {
-          "type": "heading",
-          "settings": {
-            "heading": "The science of lanolin",
-            "heading_size": "hm",
-            "enable_script": false
-          }
-        },
-        "text_VHW6GY": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Lanolin works because:</p><p>It's scientifically proven to be closest to lipids in human skin, more so than <em>any</em> other ingredient. It's semi-occlusive & semi-permeable - meaning it allows skin to self-hydrate from within, but also acts as a breathable skin barrier. It holds up to 400% of its weight in moisture, behaving as a moisture reservoir for your skin. <em><strong>And it's vegetarian and animal cruelty-free.</strong></em></p><p><em><strong>With lanolin, your skin has literally met its match.</strong></em></p><p>And our exclusive Ultra-Medical Grade lanolin is 3 x purer than even Medical Grade lanolin - and is prepared using a proprietary refining process - which makes it hypoallergenic, and the world's best.</p>"
-          }
-        }
-      },
-      "block_order": [
-        "heading_NKkJez",
-        "text_VHW6GY"
-      ],
-      "settings": {
-        "desktop_content_position": "right",
-        "content_alignment": "left",
-        "color_scheme": "scheme-3",
-        "full_width": true,
-        "padding_top": 100,
-        "padding_bottom": 100
       }
     }
   },
