@@ -266,6 +266,20 @@
         "padding_bottom": 72
       }
     },
+    "video_WDVxDA": {
+      "type": "video",
+      "settings": {
+        "heading": "Behind the brand: Sheep Shearing",
+        "heading_size": "h1",
+        "enable_video_looping": true,
+        "video_url": "https://www.youtube.com/watch?v=8NRclrAoqq0&t=4s",
+        "description": "A short video about the facts on shearing sheep.",
+        "full_width": false,
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "multicolumn_346w8Y": {
       "type": "multicolumn",
       "blocks": {
@@ -345,20 +359,6 @@
         "padding_top": 100,
         "padding_bottom": 100
       }
-    },
-    "video_WDVxDA": {
-      "type": "video",
-      "settings": {
-        "heading": "Behind the brand: Sheep Shearing",
-        "heading_size": "h1",
-        "enable_video_looping": true,
-        "video_url": "https://www.youtube.com/watch?v=8NRclrAoqq0&t=4s",
-        "description": "A short video about the facts on shearing sheep.",
-        "full_width": false,
-        "color_scheme": "",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
     }
   },
   "order": [
@@ -370,8 +370,8 @@
     "image_with_text_TRx8WY",
     "image_with_text_xFPdxK",
     "rich_text_VXBwy4",
-    "multicolumn_346w8Y",
+    "video_WDVxDA",
     "rich_text_AzzEtY",
-    "video_WDVxDA"
+    "multicolumn_346w8Y"
   ]
 }
