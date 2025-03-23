@@ -727,6 +727,9 @@ document.addEventListener('DOMContentLoaded', function() {
         const submitButton = form.querySelector('button[type="submit"]');
 
         if (submitButton) {
+
+          submitButton.click();
+          
           // Hide the price when submitting
           if (priceElement) {
             priceElement.style.display = 'none';
@@ -737,8 +740,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
           // Simulate form submission delay (Replace with real AJAX if needed)
           setTimeout(() => {
-            submitButton.click(); // Submit the form
-
             // Restore price visibility after submission
             if (priceElement) {
               priceElement.style.display = 'block';
