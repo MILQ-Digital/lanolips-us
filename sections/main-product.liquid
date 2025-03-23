@@ -730,24 +730,20 @@ document.addEventListener('DOMContentLoaded', function() {
 
           submitButton.click();
 
-          // Hide the price when submitting
           if (priceElement) {
             priceElement.style.display = 'none';
           }
 
-          // Add loading class to submit button
           submitButton.classList.add('loading');
 
-          // Simulate form submission delay (Replace with real AJAX if needed)
           setTimeout(() => {
-            // Restore price visibility after submission
+
             if (priceElement) {
               priceElement.style.display = 'block';
             }
 
-            // Remove loading class
             submitButton.classList.remove('loading');
-          }, 1000); // Adjust timeout to match actual form submission response
+          }, 1000); 
         } else {
           console.error('Submit button not found inside the product form');
         }
@@ -758,6 +754,45 @@ document.addEventListener('DOMContentLoaded', function() {
   } else {
     console.error('.product_button_price not found');
   }
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+    const quantityForm = document.querySelector(".product-form__quantity");
+    const buttonPrice = document.querySelector(".product_button_price");
+
+    if (!quantityForm || !buttonPrice) return;
+
+    let quantityFormOffset = quantityForm.offsetTop;
+    let buttonPriceOffset = buttonPrice.offsetTop;
+
+    function handleScroll() {
+        let scrollPosition = window.scrollY || window.pageYOffset;
+
+        if (window.innerWidth <= 768) { // Only apply on mobile
+            if (scrollPosition >= quantityFormOffset) {
+                quantityForm.classList.add("sticky");
+            } else {
+                quantityForm.classList.remove("sticky");
+            }
+
+            if (scrollPosition >= buttonPriceOffset) {
+                buttonPrice.classList.add("sticky");
+            } else {
+                buttonPrice.classList.remove("sticky");
+            }
+        } else {
+            // Remove sticky on desktop
+            quantityForm.classList.remove("sticky");
+            buttonPrice.classList.remove("sticky");
+        }
+    }
+
+    window.addEventListener("scroll", handleScroll);
+    window.addEventListener("resize", function () {
+        // Update offsets when resizing
+        quantityFormOffset = quantityForm.offsetTop;
+        buttonPriceOffset = buttonPrice.offsetTop;
+    });
 });
 
 
