@@ -738,6 +738,31 @@ document.addEventListener('DOMContentLoaded', function() {
     console.error('.product_button_price not found');
   }
 });
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    let quantityInput = document.querySelector("input[name='quantity']");
+    let priceElement = document.querySelector(".price-item");
+
+    if (quantityInput && priceElement) {
+        quantityInput.addEventListener("input", function () {
+            let basePrice = parseFloat(priceElement.dataset.price);
+            let quantity = parseInt(quantityInput.value) || 1;
+            let newPrice = basePrice * quantity;
+            let currencySymbol = priceElement.dataset.currencySymbol;
+
+            // Check if Shopify.formatMoney is available
+            if (typeof Shopify !== "undefined" && Shopify.formatMoney) {
+                priceElement.innerHTML = Shopify.formatMoney(newPrice);
+            } else {
+                // Fallback to formatting manually with currency symbol
+                priceElement.innerHTML = currencySymbol + (newPrice / 100).toFixed(2);
+            }
+        });
+    }
+});
+
+
 </script>
 
 {% schema %}

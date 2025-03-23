@@ -66,7 +66,7 @@
                 {{- 'products.product.price.regular_price' | t -}}
               </span>
               <span>
-                <s class="price-item price-item--regular variant-item__old-price">
+                <s class="price-item price-item--regular variant-item__old-price" data-currency-symbol="{{ cart.currency.symbol }}">
                   {% if settings.currency_code_enabled %}
                     {{ compare_at_price | money_with_currency }}
                   {% else %}
@@ -77,7 +77,7 @@
             {%- endunless -%}
           {%- endif -%}
           <span class="visually-hidden visually-hidden--inline">{{ 'products.product.price.regular_price' | t }}</span>
-          <span class="price-item price-item--regular">
+          <span class="price-item price-item--regular" data-currency-symbol="{{ cart.currency.symbol }}">
             {{-
               'products.product.volume_pricing.price_range'
               | t: minimum: money_price_min, maximum: money_price_max
@@ -85,20 +85,20 @@
           </span>
         {%- else -%}
           <span class="visually-hidden visually-hidden--inline">{{ 'products.product.price.regular_price' | t }}</span>
-          <span class="price-item price-item--regular">
+          <span class="price-item price-item--regular" data-currency-symbol="{{ cart.currency.symbol }}">
             {{ money_price }}
           </span>
         {%- endif -%}
       </div>
       <div class="price__sale">
         <span class="visually-hidden visually-hidden--inline">{{ 'products.product.price.sale_price' | t }}</span>
-        <span class="price-item price-item--sale price-item--last">
+        <span class="price-item price-item--sale price-item--last" data-currency-symbol="{{ cart.currency.symbol }}">
           {{ money_price }}
         </span>
         {%- unless product.price_varies == false and product.compare_at_price_varies %}
           <span class="visually-hidden visually-hidden--inline">{{ 'products.product.price.regular_price' | t }}</span>
           <span>
-            <s class="price-item price-item--regular">
+            <s class="price-item price-item--regular" data-currency-symbol="{{ cart.currency.symbol }}">
               {% if settings.currency_code_enabled %}
                 {{ compare_at_price | money_with_currency }}
               {% else %}
@@ -110,7 +110,7 @@
       </div>
       <small class="unit-price caption{% if product.selected_or_first_available_variant.unit_price_measurement == nil %} hidden{% endif %}">
         <span class="visually-hidden">{{ 'products.product.price.unit_price' | t }}</span>
-        <span class="price-item price-item--last">
+        <span class="price-item price-item--last" data-currency-symbol="{{ cart.currency.symbol }}">
           <span>{{- product.selected_or_first_available_variant.unit_price | money -}}</span>
           <span aria-hidden="true">/</span>
           <span class="visually-hidden">&nbsp;{{ 'accessibility.unit_price_separator' | t }}&nbsp;</span>
