@@ -1446,6 +1446,7 @@ deferred-media {
 }
 
 .button,
+.btn,
 .shopify-challenge__button,
 .customer button,
 button.shopify-payment-button__button--unbranded {
@@ -1461,6 +1462,7 @@ button.shopify-payment-button__button--unbranded {
 }
 
 .button,
+.btn,
 .shopify-challenge__button,
 .customer button,
 button.shopify-payment-button__button--unbranded {
@@ -1469,6 +1471,7 @@ button.shopify-payment-button__button--unbranded {
 }
 
 .button,
+.btn,
 .shopify-challenge__button,
 .customer button {
   display: inline-flex;
@@ -1567,6 +1570,8 @@ button.shopify-payment-button__button--unbranded {
 .button:focus-visible,
 .button:focus,
 .button.focused,
+.btn:focus,
+.btn:focus-visible,
 .shopify-payment-button__button--unbranded:focus-visible,
 .shopify-payment-button__button--unbranded:focus {
   outline: 0;
@@ -1575,17 +1580,20 @@ button.shopify-payment-button__button--unbranded {
 }
 
 .button:focus:not(:focus-visible):not(.focused),
+.btn:focus:not(:focus-visible):not(.focused),
 .shopify-payment-button__button--unbranded:focus:not(:focus-visible):not(.focused) {
   box-shadow: inherit;
 }
 
 .button::selection,
+.btn::selection,
 .shopify-challenge__button::selection,
 .customer button::selection {
   background-color: rgba(var(--color-button-text), 0.3);
 }
 
 .button,
+.btn,
 .button-label,
 .shopify-challenge__button,
 .customer button {
@@ -1621,6 +1629,7 @@ shopify-accelerated-checkout-cart {
 /* Button - other */
 
 .button:disabled,
+.btn:disabled,
 .button[aria-disabled='true'],
 .button.disabled,
 .customer button:disabled,
