@@ -1,14 +1,40 @@
 .customer:not(.account):not(.order) {
   margin: 0 auto;
-  max-width: 33.4rem;
+  max-width: 406px;
   padding-left: 1.5rem;
   padding-right: 1.5rem;
   text-align: center;
+  width: 100%;
+}
+
+#login {
+  font-size: var(--heading-xl);
+  margin-bottom: 0;
+}
+
+.login-heading {
+  padding-bottom: 50px;
+}
+
+.login-title {display: none}
+
+.cust-login {
+  margin: 15px 0 10px;
+  font-size: var(--body-lg)
+}
+
+.cust-login a {
+  text-decoration: underline;
+}
+
+.forgot-password{
+  padding-top: 10px;
 }
 
 @media screen and (min-width: 750px) {
   .customer:not(.account):not(.order) {
-    max-width: 47.8rem;
+    max-width: 406px;
+    width: 100%;
   }
 }
 
@@ -19,10 +45,13 @@
 
 .customer form {
   margin-top: 4rem;
+  text-align: left;
 }
 
 .customer button {
-  margin: 4rem 0 1.5rem;
+  margin: 1rem 0 1rem;
+  width: 100%;
+  min-height: 44px;
 }
 
 .customer ul {
@@ -52,7 +81,9 @@
 }
 
 .customer .field {
-  margin: 2rem 0 0 0;
+  /*margin: 2rem 0 0 0;*/
+  margin-top: 0;
+  margin-bottom: 20px;
 }
 
 .customer .field:first-of-type {
@@ -330,7 +361,7 @@
 
 /* Login */
 .login a {
-  display: block;
+  /*display: block;*/
   margin: 0 auto;
   width: fit-content;
 }

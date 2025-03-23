@@ -195,7 +195,7 @@
 }
 
 @media screen and (max-width: 750px) {
-  .image-with-text__content {
+  body:not(.template-page-about) .image-with-text__content {
     padding: 25px var(--outer) 45px;
     text-align: center;
     align-items: center;
@@ -217,6 +217,11 @@
 
   .image-with-text__content .image-with-text__text+.button {
     margin-top: 15px;
+  }
+
+  #ContactForm label,
+  #ContactForm .contact__button{
+    text-align: left;
   }
 
 }
@@ -287,6 +292,9 @@
   .disable-img--mobile-true {display: none}
   .page-width-padding-true {padding: 0;}
   .page-width-padding-true .image-with-text {border-radius: 0}
+  .template-page-contact .image-with-text  {
+    border-radius: 0!important;
+  }
 }
 
 .image-with-text__content--mobile-right > * {

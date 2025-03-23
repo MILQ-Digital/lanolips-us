@@ -143,6 +143,10 @@
   transform: translateX(-50%);
 }
 
+.multicolumn-list.before_after .media img {
+  border-radius: 20px;
+}
+
 @media screen and (max-width: 749px) {
   .multicolumn-list {
     margin: 0;
@@ -252,6 +256,7 @@
   .template-index .multicolumn-list .media img {
     border-radius: 0;
   }
+  
 
 }
 
@@ -301,7 +306,7 @@
     padding-bottom: 100%;
   }
 
-  .multicolumn-list .media img {
+ body:not(.template-page-about) .multicolumn-list .media img {
     border-radius: 0;
   }
 }

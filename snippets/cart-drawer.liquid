@@ -649,7 +649,7 @@ document.addEventListener('DOMContentLoaded', function () {
   </div>
 
 {% else %}
-  {% assign upsell_collection = collections['default-upsell-collection'] %}  <!-- Default upsell collection -->
+  {% assign upsell_collection = collections['upsell'] %}  <!-- Default upsell collection -->
 
   {% for item in cart.items %}
     {% for collection in item.product.collections %}
@@ -658,7 +658,7 @@ document.addEventListener('DOMContentLoaded', function () {
         {% break %}
       {% endif %}
     {% endfor %}
-    {% if upsell_collection != collections['default-upsell-collection'] %}
+    {% if upsell_collection != collections['upsell'] %}
       {% break %}
     {% endif %}
   {% endfor %}

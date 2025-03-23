@@ -86,7 +86,7 @@
         "stack_images_on_mobile": true,
         "show_text_below": true,
         "padding_top": 52,
-        "padding_bottom": 100
+        "padding_bottom": 0
       }
     }
   },

@@ -1,3 +1,4 @@
+{{ 'component-image-with-text.css' | asset_url | stylesheet_tag }}
 {{ 'customer.css' | asset_url | stylesheet_tag }}
 
 {%- style -%}
@@ -14,124 +15,195 @@
   }
 {%- endstyle -%}
 
-<div class="customer register section-{{ section.id }}-padding">
-  <h1>
-    {{ 'customer.register.title' | t }}
-  </h1>
-  {%- form 'create_customer', novalidate: 'novalidate' -%}
-    {%- if form.errors -%}
-      <h2 class="form__message" tabindex="-1" autofocus>
-        <span class="svg-wrapper">
-          {{- 'icon-error.svg' | inline_asset_content -}}
-        </span>
-        {{ 'templates.contact.form.error_heading' | t }}
-      </h2>
-      <ul>
-        {%- for field in form.errors -%}
-          <li>
-            {%- if field == 'form' -%}
-              {{ form.errors.messages[field] }}
-            {%- else -%}
-              <a href="#RegisterForm-{{ field }}">
-                {{ form.errors.translated_fields[field] | capitalize }}
-                {{ form.errors.messages[field] }}
-              </a>
-            {%- endif -%}
-          </li>
-        {%- endfor -%}
-      </ul>
-    {%- endif -%}
-    <div class="field">
-      <input
-        type="text"
-        name="customer[first_name]"
-        id="RegisterForm-FirstName"
-        {% if form.first_name %}
-          value="{{ form.first_name }}"
-        {% endif %}
-        autocomplete="given-name"
-        placeholder="{{ 'customer.register.first_name' | t }}"
-      >
-      <label for="RegisterForm-FirstName">
-        {{ 'customer.register.first_name' | t }}
-      </label>
+
+    <div class="section-{{ section.id }}-padding">
+        <div class="page-width page-width-padding-{{ settings.mobile_page_padding }}">
+          <div class="login-heading text-center">
+            <h1 id="login" tabindex="-1">
+                {% comment %} {{ 'customer.login_page.title' | t }} {% endcomment %}
+                {{ settings.login-htitle}}
+            </h1>
+            <p> {{ settings.login-description}}</p>
+          </div> 
+          <div class="gradient color-{{ settings.section_color_scheme }} image-with-text image-with-text--{{ settings.content_layout }} isolate{% if settings.text_boxes_border_thickness > 0 and settings.text_boxes_border_opacity > 0 and settings.media_border_thickness > 0 and settings.media_border_opacity > 0 %} collapse-borders{% endif %}{% unless settings.color_scheme == settings.section_color_scheme and settings.media_border_thickness > 0 and settings.text_boxes_shadow_opacity == 0 and settings.text_boxes_border_thickness == 0 or settings.text_boxes_border_opacity == 0 %} collapse-corners{% endunless %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
+            <div class="image-with-text__grid grid grid--gapless grid--1-col grid--{% if settings.desktop_image_width == 'medium' %}2-col-tablet{% else %}3-col-tablet{% endif %}{% if settings.layout == 'text_first' %} image-with-text__grid--reverse{% endif %}">
+              
+            <div class="image-with-text__text-item grid__item">
+                <div
+                  id="ImageWithText--}"
+                  class="image-with-text__content image-with-text__content--{{ settings.desktop_content_position }} image-with-text__content--desktop-{{ settings.desktop_content_alignment }} image-with-text__content--mobile-{{ settings.mobile_content_alignment }} image-with-text__content--{{ settings.height }} content-container{% unless remove_color_classes %} gradient color-{{ settings.color_scheme }}{% else %} background-transparent{% endunless %}"
+                >
+                  <div class="customer register section-{{ section.id }}-padding">
+                      <h1>
+                        {{ 'customer.register.title' | t }}
+                      </h1>
+                      {%- form 'create_customer', novalidate: 'novalidate' -%}
+                        {%- if form.errors -%}
+                          <h2 class="form__message" tabindex="-1" autofocus>
+                            <span class="svg-wrapper">
+                              {{- 'icon-error.svg' | inline_asset_content -}}
+                            </span>
+                            {{ 'templates.contact.form.error_heading' | t }}
+                          </h2>
+                          <ul>
+                            {%- for field in form.errors -%}
+                              <li>
+                                {%- if field == 'form' -%}
+                                  {{ form.errors.messages[field] }}
+                                {%- else -%}
+                                  <a href="#RegisterForm-{{ field }}">
+                                    {{ form.errors.translated_fields[field] | capitalize }}
+                                    {{ form.errors.messages[field] }}
+                                  </a>
+                                {%- endif -%}
+                              </li>
+                            {%- endfor -%}
+                          </ul>
+                        {%- endif -%}
+                        <div class="field">
+                          <input
+                            type="text"
+                            name="customer[first_name]"
+                            id="RegisterForm-FirstName"
+                            {% if form.first_name %}
+                              value="{{ form.first_name }}"
+                            {% endif %}
+                            autocomplete="given-name"
+                            placeholder="{{ 'customer.register.first_name' | t }}"
+                          >
+                          <label for="RegisterForm-FirstName">
+                            {{ 'customer.register.first_name' | t }}
+                          </label>
+                        </div>
+                        <div class="field">
+                          <input
+                            type="text"
+                            name="customer[last_name]"
+                            id="RegisterForm-LastName"
+                            {% if form.last_name %}
+                              value="{{ form.last_name }}"
+                            {% endif %}
+                            autocomplete="family-name"
+                            placeholder="{{ 'customer.register.last_name' | t }}"
+                          >
+                          <label for="RegisterForm-LastName">
+                            {{ 'customer.register.last_name' | t }}
+                          </label>
+                        </div>
+                        <div class="field">
+                          <input
+                            type="email"
+                            name="customer[email]"
+                            id="RegisterForm-email"
+                            {% if form.email %}
+                              value="{{ form.email }}"
+                            {% endif %}
+                            spellcheck="false"
+                            autocapitalize="off"
+                            autocomplete="email"
+                            aria-required="true"
+                            {% if form.errors contains 'email' %}
+                              aria-invalid="true"
+                              aria-describedby="RegisterForm-email-error"
+                            {% endif %}
+                            placeholder="{{ 'customer.register.email' | t }}"
+                          >
+                          <label for="RegisterForm-email">
+                            {{ 'customer.register.email' | t }}
+                          </label>
+                        </div>
+                        {%- if form.errors contains 'email' -%}
+                          <span id="RegisterForm-email-error" class="form__message">
+                            <span class="svg-wrapper">
+                              {{- 'icon-error.svg' | inline_asset_content -}}
+                            </span>
+                            {{ form.errors.translated_fields.email | capitalize }}
+                            {{ form.errors.messages.email }}.
+                          </span>
+                        {%- endif -%}
+                        <div class="field">
+                          <input
+                            type="password"
+                            name="customer[password]"
+                            id="RegisterForm-password"
+                            aria-required="true"
+                            {% if form.errors contains 'password' %}
+                              aria-invalid="true"
+                              aria-describedby="RegisterForm-password-error"
+                            {% endif %}
+                            placeholder="{{ 'customer.register.password' | t }}"
+                          >
+                          <label for="RegisterForm-password">
+                            {{ 'customer.register.password' | t }}
+                          </label>
+                        </div>
+                        {%- if form.errors contains 'password' -%}
+                          <span id="RegisterForm-password-error" class="form__message">
+                            <span class="svg-wrapper">
+                              {{- 'icon-error.svg' | inline_asset_content -}}
+                            </span>
+                            {{ form.errors.translated_fields.password | capitalize }}
+                            {{ form.errors.messages.password }}.
+                          </span>
+                        {%- endif -%}
+                        <button>
+                          {{ 'customer.register.submit' | t }}
+                        </button>
+                      {%- endform -%}
+              </div>
+          </div>
+        </div> 
+        <div class="image-with-text__media-item 
+                  {% if settings.image.alt %}image-with-text__caption {% endif %}
+                  image-with-text__media-item--{{ settings.desktop_image_width }} 
+                  image-with-text__media-item--{{ settings.desktop_content_position }} 
+                  grid__item 
+                  disable-img--mobile-{{ settings.mobile_img_visibility }}">
+                  <div class="image-with-text__media 
+                    image-with-text__media--{{ settings.height }} 
+                    global-media-settings
+                    {% unless remove_color_classes %} gradient color-{{ settings.color_scheme }}{% else %} background-transparent{% endunless %}
+                    {% if settings.image != blank %} media{% else %} image-with-text__media--placeholder placeholder{% endif %}
+                    {% if settings.image_behavior != 'none' %} animate--{{ settings.image_behavior }}{% endif %}"
+             
+                     {% if settings.height == 'adapt' and settings.image != blank %}
+                       style="padding-bottom: {{ 1 | divided_by: settings.image.aspect_ratio | times: 100 }}%;"
+                     {% endif %}>
+              
+                  {%- if settings.image != blank -%}
+                    {%- if settings.image_behavior == 'ambient' or settings.image_behavior == 'zoom-in' -%}
+                      {%- assign widths = '198, 432, 642, 900, 1284, 1800' -%}
+                      {%- capture sizes -%}
+                        (min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 100 | divided_by: 1.6667 }}px,
+                        (min-width: 750px) calc((100vw - 130px) / 1.667), calc((100vw - 50px) / 1.667)
+                      {%- endcapture -%}
+                    {%- else -%}
+                      {%- assign widths = '165, 360, 535, 750, 1070, 1500' -%}
+                      {%- capture sizes -%}
+                        (min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 100 | divided_by: 2 }}px,
+                        (min-width: 750px) calc((100vw - 130px) / 2), calc((100vw - 50px) / 2)
+                      {%- endcapture -%}
+                    {%- endif -%}
+                    
+                    {{
+                      settings.image
+                      | image_url: width: 1500
+                      | image_tag: sizes: sizes, widths: widths, fetchpriority: fetch_priority
+                    }}
+                  {%- else -%}
+                    {{ 'detailed-apparel-1' | placeholder_svg_tag: 'placeholder-svg' }}
+                  {%- endif -%}
+                </div>
+            </div>      
+      </div>
     </div>
-    <div class="field">
-      <input
-        type="text"
-        name="customer[last_name]"
-        id="RegisterForm-LastName"
-        {% if form.last_name %}
-          value="{{ form.last_name }}"
-        {% endif %}
-        autocomplete="family-name"
-        placeholder="{{ 'customer.register.last_name' | t }}"
-      >
-      <label for="RegisterForm-LastName">
-        {{ 'customer.register.last_name' | t }}
-      </label>
-    </div>
-    <div class="field">
-      <input
-        type="email"
-        name="customer[email]"
-        id="RegisterForm-email"
-        {% if form.email %}
-          value="{{ form.email }}"
-        {% endif %}
-        spellcheck="false"
-        autocapitalize="off"
-        autocomplete="email"
-        aria-required="true"
-        {% if form.errors contains 'email' %}
-          aria-invalid="true"
-          aria-describedby="RegisterForm-email-error"
-        {% endif %}
-        placeholder="{{ 'customer.register.email' | t }}"
-      >
-      <label for="RegisterForm-email">
-        {{ 'customer.register.email' | t }}
-      </label>
-    </div>
-    {%- if form.errors contains 'email' -%}
-      <span id="RegisterForm-email-error" class="form__message">
-        <span class="svg-wrapper">
-          {{- 'icon-error.svg' | inline_asset_content -}}
-        </span>
-        {{ form.errors.translated_fields.email | capitalize }}
-        {{ form.errors.messages.email }}.
-      </span>
-    {%- endif -%}
-    <div class="field">
-      <input
-        type="password"
-        name="customer[password]"
-        id="RegisterForm-password"
-        aria-required="true"
-        {% if form.errors contains 'password' %}
-          aria-invalid="true"
-          aria-describedby="RegisterForm-password-error"
-        {% endif %}
-        placeholder="{{ 'customer.register.password' | t }}"
-      >
-      <label for="RegisterForm-password">
-        {{ 'customer.register.password' | t }}
-      </label>
-    </div>
-    {%- if form.errors contains 'password' -%}
-      <span id="RegisterForm-password-error" class="form__message">
-        <span class="svg-wrapper">
-          {{- 'icon-error.svg' | inline_asset_content -}}
-        </span>
-        {{ form.errors.translated_fields.password | capitalize }}
-        {{ form.errors.messages.password }}.
-      </span>
-    {%- endif -%}
-    <button>
-      {{ 'customer.register.submit' | t }}
-    </button>
-  {%- endform -%}
+  </div>
 </div>
+
+
+
+
+  
 
 {% schema %}
 {

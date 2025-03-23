@@ -10,6 +10,11 @@
   text-align: center;
 }
 
+.banner__buttons a {
+  min-width: 143px;
+  min-height: 44px;
+}
+
 /* Needed for gradient continuity with or without animation, the transform scopes the gradient to its container which happens already when animation are turned on */
 .banner__box.gradient {
   transform: perspective(0);

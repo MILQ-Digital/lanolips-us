@@ -25,6 +25,7 @@
           "type": "slide",
           "settings": {
             "image": "{{ collection.metafields.custom.collection_banner.value }}",
+            "slide_video_url": "",
             "subheading": "",
             "subheading_script": "Freshly Baked",
             "heading": "The new Lanolips 101 Delicious Collection",
@@ -53,7 +54,8 @@
         "change_slides_speed": 5,
         "image_behavior": "none",
         "show_text_below": true,
-        "accessibility_info": "Slideshow about Lanolips"
+        "accessibility_info": "Slideshow about Lanolips",
+        "color_scheme": ""
       }
     },
     "multirow_X8wzae": {
@@ -155,6 +157,77 @@
         "padding_bottom": 100
       }
     },
+    "rich_text_4yDxjA": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_Lza8Dj": {
+          "type": "heading",
+          "settings": {
+            "heading": "Tried, Tested and Loved",
+            "heading_size": "hs",
+            "enable_script": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_Lza8Dj"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-2",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 28
+      }
+    },
+    "17412469404f35c16d": {
+      "type": "apps",
+      "blocks": {
+        "foursixty_shoppable_social_ugc_custom_slider_tfYV6L": {
+          "type": "shopify://apps/foursixty-shoppable-social-ugc/blocks/custom_slider/e2616dfe-fbb6-4e7d-874d-d250b973556d",
+          "settings": {
+            "foreground_color": "#ffffff",
+            "background_color": "#000000",
+            "background_color_alpha": 90,
+            "post_spacing": 10,
+            "hover_margin": 0,
+            "cell_size": "20%",
+            "target_blank": false,
+            "arrows_outside": false,
+            "show_icon": true,
+            "show_text": false,
+            "show_date": false,
+            "call_to_action": "",
+            "shop_type": "button",
+            "body_font_size": 14,
+            "body_font": "helvetica_n4",
+            "accent_font_size": 14,
+            "accent_font": "helvetica_n4",
+            "disable_filter": false,
+            "override_feed_id": "",
+            "arbitrary_attributes": "",
+            "custom_css": "",
+            "custom_js": ""
+          }
+        }
+      },
+      "block_order": [
+        "foursixty_shoppable_social_ugc_custom_slider_tfYV6L"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "custom_liquid_HxgFry": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<div class=\"yotpo-widget-instance\" data-yotpo-instance-id=\"1049541\" data-yotpo-product-id=\"{{product.id}}\" data-yotpo-cart-product-id=\"{{item.product.id}}\"></div>",
+        "color_scheme": "scheme-3",
+        "padding_top": 40,
+        "padding_bottom": 92
+      }
+    },
     "collapsible_content_MFyPHg": {
       "type": "collapsible-content",
       "blocks": {
@@ -214,6 +287,9 @@
     "multirow_X8wzae",
     "product-grid",
     "image_with_text_e8BXVV",
+    "rich_text_4yDxjA",
+    "17412469404f35c16d",
+    "custom_liquid_HxgFry",
     "collapsible_content_MFyPHg"
   ]
 }

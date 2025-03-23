@@ -1642,6 +1642,10 @@ shopify-accelerated-checkout-cart {
   position: relative;
 }
 
+#checkout-main button{
+  background-color: rgba(var(--color-button), var(--alpha-button-background));
+}
+
 @media screen and (forced-colors: active) {
   .button.loading {
     color: rgb(var(--color-foreground));
@@ -3954,6 +3958,13 @@ details-disclosure > details {
       width: calc(90% - var(--grid-mobile-horizontal-spacing) - 3rem);
   }
   .cart__ctas {display: flex; flex-direction: column;}
+  .template-product .multirow__inner .image-with-text__text h3 {
+    font-size: 20px;
+  }
+
+  .template-page-about .shopify-section > div:has(.image-with-text) {
+    padding-bottom: 0;
+  }
 }
 
 @media screen and (min-width: 990px) {
@@ -3984,6 +3995,14 @@ details-disclosure > details {
 .ingredient_item_content h3 {
   margin-top: 0;
   margin-bottom: 10px;
+}
+
+.ingredient_item_content p {
+  font-family: var(--default-font);
+  font-style: normal;
+  font-weight: 400;
+  font-size: var(--body-xs) !important;
+  line-height: 150%;
 }
 
 .ingredient_item_icon {
@@ -4180,9 +4199,8 @@ body .glide__arrow--right {
 }
 
 .review-title {
-  font-size: var(--heading-sm)!important;
+  font-size: var(--heading-xs)!important;
   font-family: var(--font-heading-family)!important;
-  font-weight: 500; 
   margin: 0 !important;
   padding: 15px 0 20px;
 }
@@ -4210,4 +4228,120 @@ body .glide__arrow--right {
   text-decoration: underline;
   color: inherit!important;
 }
+
+#yotpo-reviews-main-widget .yotpo-headline {
+  font-size: var(--heading-md)!important;
+  font-family: var(--font-heading-family)!important;
+  color: var(--primary-color);
+  font-weight: 500 !important;
+}
+
+body .yotpo-sr-vertical-border {display: none!important}
+
+.collection .yotpo-sr-bottom-line-right-panel .yotpo-sr-bottom-line-text--right-panel {
+   color: var(--Lano-Blue)!important;
+}
+
+.yotpo-sr-bottom-line-left-panel,
+.yotpo-sr-bottom-line-right-panel .yotpo-sr-bottom-line-text--right-panel {
+  font-size: var(--body-xs)!important;
+  font-family: var(--font-heading-family)!important;
+  padding-top: 0 !important;
+  margin-top: -1px;
+}
+
+.yotpo-sr-bottom-line-summary > div:first-child {
+  margin-right: 2px!important;
+}
+
+.yotpo-widget-instance .star-container svg {
+  width:14px;
+  height: 14px;
+}
+
+#yotpo-reviews-main-widget .yotpo-review-border-smooth {
+  background-image: unset;
+  border-top: 1px solid #FAE8ED;
+}
+
+.afterpay-paragraph {text-align: center;}
+
+body .yotpo-widget-clear:has(.yotpo-sr-star-empty) {
+ display: none;
+}
+
+.collection .swym-wishlist-collections-v2-container {
+  opacity: 0;
+}
+
+.collection .grid__item:hover .swym-wishlist-collections-v2-container {
+  opacity: 1
+}
+
+.swym-wishlist-collections-icon-heart-filled, 
+.swym-wishlist-collections-icon-heart-unfilled, 
+.swym-wishlist-collections-icon-star-filled, 
+.swym-wishlist-collections-icon-star-unfilled, 
+.swym-wishlist-collections-icon-bookmark-unfilled, 
+.swym-wishlist-collections-icon-bookmark-filled {
+  fill: var(--Lano-Blue)!important;
+}
+
+/**foursixty**/
+
+.fs-wrapper .fs-entry-container > div {
+  border-radius: 20px;
+}
+
+.fs-slider-next-button, .fs-slider-prev-button {
+    width: 42px;
+    height: 42px;
+    min-width: auto;
+    top: 50%;
+    background: white;
+    border-radius: 50%;
+}
+.fs-slider-next-button svg, .fs-slider-prev-button svg {display: none;}
+
+.fs-slider-next-button:before {
+  content: "";
+  display: block;
+  mask-image: url(https://cdn.shopify.com/s/files/1/1630/4379/t/190/assets/arrowright.svg?v=1741942458);
+  height: 16px;
+  width: 16px;
+  background: #2B4676;
+  
+}
+
+.fs-slider-prev-button:before {
+  content: "";
+  display: block;
+  mask-image: url(https://cdn.shopify.com/s/files/1/1630/4379/t/190/assets/arrowleft.svg?v=1741942458);
+  height: 16px;
+  width: 16px;
+  background: #2B4676;
+}
+
+.fs-slider-next-button {
+  right: 85px;
+}
+
+.fs-slider-prev-button {
+  left: 85px;
+}
+
+.product__info-wrapper .fs-wrapper .fs-entry-container>div {
+  border-radius: 10px;
+  margin: 0 10px!important;
+}
+
+.template-product .image-with-text__caption {padding-bottom: 0} 
+
+.template-product .image-with-text__caption figcaption {
+  display: none;
+}
+
+
+
+
 

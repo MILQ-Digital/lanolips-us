@@ -23,24 +23,24 @@
         "promo_banner_tfAVHn": {
           "type": "promo-banner",
           "settings": {
-            "banner_image": "shopify://shop_images/Content_Block_Image_Glossybalms.jpg",
+            "banner_image": "{{ collection.metafields.custom.bundle_image.value }}",
             "promotion_position": 7,
-            "title": "Glossybalms, mega-gloss for dry lips!",
+            "title": "{{ collection.metafields.custom.bundle_title.value }}",
             "link_label": "Shop Now",
-            "link": "shopify://collections/colour-collection",
-            "color_scheme": "scheme-1",
+            "link": "{{ collection.metafields.custom.bundlebutton_link.value }}",
+            "color_scheme": "scheme-d2d64bb4-1602-4f59-ab3f-f35f477ef722",
             "image_ratio": "square"
           }
         },
         "promo_banner_CMXKXz": {
           "type": "promo-banner",
           "settings": {
-            "banner_image": "shopify://shop_images/Content_Block_Image_Lip_Oil.jpg",
+            "banner_image": "{{ collection.metafields.custom.bundle_image_2.value }}",
             "promotion_position": 13,
-            "title": "Hyaluronic Lip Oil, the new standard of lip oil",
+            "title": "{{ collection.metafields.custom.bundle_title_2.value }}",
             "link_label": "Shop Now",
-            "link": "shopify://collections/lip-oil",
-            "color_scheme": "scheme-1",
+            "link": "{{ collection.metafields.custom.bundle_button_link_2.value }}",
+            "color_scheme": "scheme-d2d64bb4-1602-4f59-ab3f-f35f477ef722",
             "image_ratio": "adapt"
           }
         }
@@ -57,7 +57,7 @@
         "image_shape": "default",
         "show_secondary_image": true,
         "show_vendor": false,
-        "show_rating": true,
+        "show_rating": false,
         "quick_add": "standard",
         "enable_filtering": true,
         "filter_type": "drawer",

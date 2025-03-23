@@ -74,4 +74,5 @@ a.pagination__item:hover::after {
 .pagination__item-arrow {
   border: 1px solid;
   padding: 2px 5px;
+  border-radius: 3px;
 }

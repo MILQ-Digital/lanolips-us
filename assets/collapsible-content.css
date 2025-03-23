@@ -148,4 +148,12 @@
   .collapsible-content__heading {
     margin-bottom: 0;
   }
+
+  .template--faqs .accordion__title {
+    font-size: var(--body-sm);
+  }
+
+  .template-product .product__info-wrapper .product__accordion .accordion__title {
+    font-size: var(--body-sm);
+  }   
 } 

@@ -394,7 +394,17 @@ slider-component.slider-component-full-width {
   .slider:not(.slider--everywhere):not(.slider--desktop) + .slider-buttons {
     display: none;
   }
+
+}
+
+@media screen and (max-width: 1650px) {
+.slider-buttons .slider-button--next {
+    right: 20px;
+  }
   
+  .slider-buttons .slider-button--prev {
+    left: 20px;
+  }
 }
 
 @media screen and (max-width: 989px) {
@@ -485,5 +495,15 @@ slider-component.slider-component-full-width {
 
   .collection-list .card.card--standard .card__inner {
     max-height: 247px;
+    max-width: 228px;
   }
 }
+
+@media screen and (max-width: 450px) {
+  .slider--desktop.grid--5-col-desktop .grid__item,
+  .slider--tablet.grid--peek.grid--1-col-tablet-down .grid__item, 
+  .slider--mobile.grid--peek.grid--1-col-tablet-down .grid__item {
+    width: calc(80% - var(--grid-mobile-horizontal-spacing) - 3rem);
+    padding: 0;
+  }
+} 

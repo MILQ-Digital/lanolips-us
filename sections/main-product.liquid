@@ -487,7 +487,9 @@
                       price_class: 'price--large'
                     -%}
                   </div>   
-                </div>             
+                </div>   
+                {% include 'afterpay' %}
+              
               {%- when 'rating' -%}
                 {%- if product.metafields.reviews.rating.value != blank -%}
                   <div class="rating-wrapper">
@@ -637,7 +639,10 @@
                       {%- for metaobject_reference in features_metaobject_references.value -%}
                         {% assign features_metaobject = metaobject_reference | metaobject %}
                         {% if features_metaobject and features_metaobject.icon %}
-                          <img src="{{ features_metaobject.icon | image_url }}"  width="100%" height="auto" alt="{{ features_metaobject.name | escape }}" />
+                          <div class="feat-icons">
+                            <img src="{{ features_metaobject.icon | image_url }}"  width="100%" height="auto" alt="{{ features_metaobject.name | escape }}" /> 
+                            <span>{{ features_metaobject.content }}</span>
+                          </div>  
                         {% endif %}
                       {% endfor %}
                     </div>

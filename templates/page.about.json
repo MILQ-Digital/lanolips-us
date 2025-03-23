@@ -362,6 +362,37 @@
         "padding_bottom": 36,
         "section_class": "narrow-img"
       }
+    },
+    "rich_text_AzzEtY": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_NKkJez": {
+          "type": "heading",
+          "settings": {
+            "heading": "Is Lanolin good for your skin?",
+            "heading_size": "hm",
+            "enable_script": false
+          }
+        },
+        "text_VHW6GY": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Of course, just because an ingredient is all-natural doesn’t mean it’s automatically safe for your skin. So, is lanolin good for your skin? Yes!<br/>Lanolin is scientifically proven to mimic lipids in human skin extremely closely, meaning it’s less likely to irritate even the most delicate, sensitive skin. Additionally, lanolin can hold up to 400% of its weight in moisture while still being semi-occlusive which allows your skin to breathe without ever leaving any sticky residue behind.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_NKkJez",
+        "text_VHW6GY"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "left",
+        "color_scheme": "scheme-3",
+        "full_width": true,
+        "padding_top": 100,
+        "padding_bottom": 100
+      }
     }
   },
   "order": [

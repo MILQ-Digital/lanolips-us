@@ -230,14 +230,14 @@
         "icon_YQkFzD": {
           "type": "icon",
           "settings": {
-            "image_icon": "shopify://shop_images/lano_icon_6eb27fbf-d05e-4cdb-adbe-af3ba14393bb.png"
+            "image_icon": "shopify://shop_images/sheep-icon_1.png"
           }
         },
         "heading_hVPN7C": {
           "type": "heading",
           "settings": {
-            "heading": "Lanolin - the <em><strong>most natural </strong></em>answer to dry skin",
-            "heading_size": "hs"
+            "heading": "Lanolin - the <span style=\"text-decoration:underline\"><em><strong>most natural</strong></em></span><em><strong> </strong></em>answer to dry skin",
+            "heading_size": "hm"
           }
         },
         "checkbox_LMyxQA": {
@@ -255,7 +255,7 @@
         "checkbox_LMyxQA"
       ],
       "custom_css": [
-        "@media screen and (max-width: 750px) {.banner__box {min-height: 78vh; } .banner__heading {font-size: 38px; margin-bottom: 40px; } .banner__heading em {font-size: 53px; }}"
+        "@media screen and (max-width: 750px) {.banner__heading {font-size: 38px; margin-bottom: 40px; } .banner__heading em {font-size: 53px; }}"
       ],
       "settings": {
         "image": "shopify://shop_images/Lanolips_Wave_Pattern.jpg",
@@ -324,6 +324,39 @@
         "section_class": ""
       }
     },
+    "rich_text_636tak": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_E8CUpz": {
+          "type": "heading",
+          "settings": {
+            "heading": "Shop Customer Faves",
+            "heading_size": "hs",
+            "enable_script": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_E8CUpz"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-2",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 40
+      }
+    },
+    "custom_liquid_qRbjDe": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<script src=\"//foursixty.com/media/scripts/fs.slider.v2.6.js\" data-feed-id=\"lanolips\" data-theme=\"slider_v2_6\" data-open-links-in-same-page=\"true\" data-connector-filter=\"58942\" data-always-show-video-detail=\"true\" data-video-gallery=\"reels\" data-cell-size=\"20%\"></script>\n<style>.fs-has-links { display:none; } .fs-video-gallery .fs-entry-container { padding-top:36% !important;width:20% !important;height:auto !important; } .fs-video-gallery.fs-narrow-timeline .fs-entry-container.fs-entry-container { padding-top:calc(50% * 1.7778) !important;width:50% !important;height:auto !important; } .fs-video-gallery.fs-small-timeline .fs-entry-container.fs-entry-container { padding-top:calc(33.3334% * 1.7778) !important;width:33.3334% !important;height:auto !important; } .fs-wrapper div.fs-text-container .fs-entry-title, div.fs-detail-title { font-family:Times New Roman, serif;font-style:normal;font-weight:normal;font-size:14px; } div.fs-text-container .fs-entry-date, div.fs-detail-container .fs-post-info, div.fs-wrapper div.fs-has-links::after, .fs-text-product, .fs-overlink-text { font-family:Helvetica Neue, Helvetica, Arial, sans-serif;font-style:normal;font-weight:normal;font-size:14px; } .fs-slider-next-button, .fs-slider-prev-button { opacity:1; } .fs-wrapper { margin:auto;width:calc(100% - 120px); } .fs-wrapper div.fs-text-container * { color:#ffffff; } .fs-wrapper div.fs-text-container { background-color:rgba(0, 0, 0, 0.15);margin:0px; } div.fs-entry-date { display:none; } div.fs-service-icon { display:none; } div.fs-entry-title { display:none; } .fs-slider_v2_6 .fs-wrapper div.fs-timeline-entry { margin:10px; } </style>",
+        "color_scheme": "scheme-3",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
     "custom_liquid_PtfDQV": {
       "type": "custom-liquid",
       "settings": {
@@ -333,10 +366,10 @@
         "padding_bottom": 56
       }
     },
-    "rich_text_636tak": {
+    "rich_text_9jF4qD": {
       "type": "rich-text",
       "blocks": {
-        "heading_E8CUpz": {
+        "heading_Hnq9x6": {
           "type": "heading",
           "settings": {
             "heading": "Shop our IG",
@@ -344,7 +377,7 @@
             "enable_script": false
           }
         },
-        "text_7HMLTg": {
+        "text_VbJbWU": {
           "type": "text",
           "settings": {
             "text": "<p>Find us on Instagram  @lanolips  #lanolips</p>"
@@ -352,8 +385,8 @@
         }
       },
       "block_order": [
-        "heading_E8CUpz",
-        "text_7HMLTg"
+        "heading_Hnq9x6",
+        "text_VbJbWU"
       ],
       "settings": {
         "desktop_content_position": "center",
@@ -362,6 +395,15 @@
         "full_width": true,
         "padding_top": 40,
         "padding_bottom": 40
+      }
+    },
+    "custom_liquid_aW4CwX": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<script src=\"//foursixty.com/media/scripts/fs.slider.v2.5.js\" data-feed-id=\"lanolips\" data-theme=\"slider_v2_5\" data-open-links-in-same-page=\"true\" data-connector-filter=\"58942\" data-cell-size=\"25%\"></script>\n<style>.fs-has-links { display:none; } .fs-wrapper { height:auto; } .fs-slider_v2_5  .fs-entry-container { height:0 !important;width:25%!important;padding-top:25%!important; } .fs-wrapper div.fs-text-container .fs-entry-title, div.fs-detail-title { font-family:Times New Roman, serif;font-style:normal;font-weight:normal;font-size:14px; } div.fs-text-container .fs-entry-date, div.fs-detail-container .fs-post-info, div.fs-wrapper div.fs-has-links::after, .fs-text-product, .fs-overlink-text { font-family:Helvetica Neue, Helvetica, Arial, sans-serif;font-style:normal;font-weight:normal;font-size:14px; } .fs-slider-next-button, .fs-slider-prev-button { opacity:1; } .fs-wrapper div.fs-text-container * { color:#ffffff; } .fs-wrapper div.fs-text-container { background-color:rgba(0, 0, 0, 0.15);margin:0px; } div.fs-entry-date { display:none; } div.fs-service-icon { display:none; } div.fs-entry-title { display:none; } .fs-slider_v2_5 .fs-wrapper div.fs-timeline-entry { margin:10px; } </style>",
+        "color_scheme": "scheme-3",
+        "padding_top": 0,
+        "padding_bottom": 92
       }
     },
     "173950177361100e1b": {
@@ -398,12 +440,14 @@
       "block_order": [
         "foursixty_shoppable_social_ugc_custom_slider_yTcYjG"
       ],
+      "disabled": true,
       "settings": {
         "include_margins": false
       }
     },
     "rich_text_fbJVJQ": {
       "type": "rich-text",
+      "disabled": true,
       "settings": {
         "desktop_content_position": "center",
         "content_alignment": "center",
@@ -411,25 +455,6 @@
         "full_width": true,
         "padding_top": 40,
         "padding_bottom": 52
-      }
-    },
-    "174118144705cafb54": {
-      "type": "apps",
-      "blocks": {
-        "foursixty_shoppable_social_ugc_custom_gallery_DnkwQ3": {
-          "type": "shopify://apps/foursixty-shoppable-social-ugc/blocks/custom_gallery/e2616dfe-fbb6-4e7d-874d-d250b973556d",
-          "disabled": true,
-          "settings": {
-            "customizer_code": ""
-          }
-        }
-      },
-      "block_order": [
-        "foursixty_shoppable_social_ugc_custom_gallery_DnkwQ3"
-      ],
-      "disabled": true,
-      "settings": {
-        "include_margins": true
       }
     }
   },
@@ -440,10 +465,12 @@
     "collection_list_aGyhDV",
     "image_banner_rxCeJC",
     "multicolumn_gqYkVh",
-    "custom_liquid_PtfDQV",
     "rich_text_636tak",
+    "custom_liquid_qRbjDe",
+    "custom_liquid_PtfDQV",
+    "rich_text_9jF4qD",
+    "custom_liquid_aW4CwX",
     "173950177361100e1b",
-    "rich_text_fbJVJQ",
-    "174118144705cafb54"
+    "rich_text_fbJVJQ"
   ]
 }

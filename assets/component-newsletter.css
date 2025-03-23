@@ -39,6 +39,7 @@
 @media screen and (min-width: 750px) {
   .newsletter-form__message {
     justify-content: flex-start;
+    margin: 2rem auto 0;
   }
 }
 
