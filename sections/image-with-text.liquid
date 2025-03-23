@@ -76,7 +76,7 @@
     cursor: pointer;
   }
 
-  #buttonModalIngredients {
+  #buttonModal {
     cursor: pointer;
     font-size: 14px;
     font-weight: 500;
@@ -203,9 +203,9 @@
                       {% if block.settings.button_link == blank %}
                         role="link" aria-disabled="true"
                       {% else %}
-                        {% if section.settings.use_ingredients %} id="buttonModalIngredients" {% else %} href="{{ block.settings.button_link }}" {% endif %}
+                        {% if section.settings.use_ingredients %} id="buttonModal" {% else %} href="{{ block.settings.button_link }}" {% endif %}
                       {% endif %}
-                      class="{% if block.settings.button_style_secondary %}button button--secondary button--bordered read-more {% elsif block.settings.button_style_underline %} underline_link full-unstyled-link  {% else %} button button--primary{% endif %}"
+                      class="{% if block.settings.button_style_secondary %}button--secondary button--bordered read-more {% elsif block.settings.button_style_underline %} underline_link full-unstyled-link  {% else %} button button--primary{% endif %}"
                       {{ block.shopify_attributes }}
                     >
                       {{ block.settings.button_label | escape }}
@@ -229,7 +229,7 @@
                                   ingredients_text: {{ collection.metafields.custom.ingredients_text | strip_newlines | replace: '"', '\"' | replace: "\n", "<br>" | json }}
                                 };
                               {% endif %}
-                              const openButton = document.getElementById("buttonModalIngredients");
+                              const openButton = document.getElementById("buttonModal");
                               openButton.addEventListener("click", function () {
                                   if (!document.querySelector(".ingredientsModal")) {
                                       const modalHTML = `
