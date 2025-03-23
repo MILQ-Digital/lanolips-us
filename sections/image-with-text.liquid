@@ -205,7 +205,7 @@
                       {% else %}
                         {% if section.settings.use_ingredients %} id="buttonModal" {% else %} href="{{ block.settings.button_link }}" {% endif %}
                       {% endif %}
-                      class="{% if block.settings.button_style_secondary %}button--secondary button--bordered read-more {% elsif block.settings.button_style_underline %} underline_link full-unstyled-link  {% else %} button button--primary{% endif %}"
+                      class="{% if block.settings.button_style_secondary %}button button--secondary button--bordered read-more {% elsif block.settings.button_style_underline %} underline_link full-unstyled-link  {% else %} button button--primary{% endif %}"
                       {{ block.shopify_attributes }}
                     >
                       {{ block.settings.button_label | escape }}
@@ -216,57 +216,6 @@
                       {% endif %}
                     </a>
                     {% if block.settings.button_style_underline %}</div>{% endif %}
-
-                    {% if section.settings.use_ingredients %}
-                      <script>
-                          document.addEventListener("DOMContentLoaded", function () {
-                            {% if template contains 'product' %}
-                                window.productMetafields = {
-                                  ingredients_text: {{ product.metafields.custom.ingredients_text | strip_newlines | replace: '"', '\"' | replace: "\n", "<br>" | json }}
-                                };
-                              {% elsif template contains 'collection' %}
-                                window.productMetafields = {
-                                  ingredients_text: {{ collection.metafields.custom.ingredients_text | strip_newlines | replace: '"', '\"' | replace: "\n", "<br>" | json }}
-                                };
-                              {% endif %}
-                              const openButton = document.getElementById("buttonModal");
-                              openButton.addEventListener("click", function () {
-                                  if (!document.querySelector(".ingredientsModal")) {
-                                      const modalHTML = `
-                                          <div class="ingredientsModal">
-                                            <div class="modal_content">
-                                              <div class="modal_body">
-                                                <button class="closeX">
-                                                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M18 6L6 18" stroke="#2B4676" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                                    <path d="M6 6L18 18" stroke="#2B4676" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                                  </svg>
-                                                </button>
-                                                <h3 class="heading-xs text-center">Ingredients</h3>
-                                                <div class="body-lg modal_text">${window.productMetafields.ingredients_text || "No ingredients available"}</div>
-                                                <button class="closeModal button button--secondary button--bordered">Close</button>
-                                              </div>
-                                            </div>
-                                          </div>
-                                      `;
-                                      // Inject modal before </body>
-                                      document.body.insertAdjacentHTML("beforeend", modalHTML);
-                                      const modal = document.querySelector(".ingredientsModal");
-                                      modal.classList.add("show");
-                                      const closeButtons = modal.querySelectorAll(".closeModal, .closeX");
-                                      closeButtons.forEach(button => {
-                                          button.addEventListener("click", function () {
-                                              modal.classList.remove("show");
-                                          });
-                                      });
-                                  } else {
-                                      document.querySelector(".ingredientsModal").classList.add("show");
-                                  }
-                              });
-                          });
-                      </script>
-                    {% endif %} 
-
                   {%- endif -%}
                 {% when 'contact_form' %}
                   {%- form 'contact', id: 'ContactForm', class: contact_form_class -%}
@@ -391,6 +340,57 @@
     </div>
   </div>
 </div>
+
+{% if section.settings.use_ingredients %}
+                      <script>
+                          document.addEventListener("DOMContentLoaded", function () {
+                            {% if template contains 'product' %}
+                                window.productMetafields = {
+                                  ingredients_text: {{ product.metafields.custom.ingredients_text | strip_newlines | replace: '"', '\"' | replace: "\n", "<br>" | json }}
+                                };
+                              {% elsif template contains 'collection' %}
+                                window.productMetafields = {
+                                  ingredients_text: {{ collection.metafields.custom.ingredients_text | strip_newlines | replace: '"', '\"' | replace: "\n", "<br>" | json }}
+                                };
+                              {% endif %}
+                              const openButton = document.getElementById("buttonModal");
+                              openButton.addEventListener("click", function () {
+                                  if (!document.querySelector(".ingredientsModal")) {
+                                      const modalHTML = `
+                                          <div class="ingredientsModal">
+                                            <div class="modal_content">
+                                              <div class="modal_body">
+                                                <button class="closeX">
+                                                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M18 6L6 18" stroke="#2B4676" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path d="M6 6L18 18" stroke="#2B4676" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                  </svg>
+                                                </button>
+                                                <h3 class="heading-xs text-center">Ingredients</h3>
+                                                <div class="body-lg modal_text">${window.productMetafields.ingredients_text || "No ingredients available"}</div>
+                                                <button class="closeModal button button--secondary button--bordered">Close</button>
+                                              </div>
+                                            </div>
+                                          </div>
+                                      `;
+                                      // Inject modal before </body>
+                                      document.body.insertAdjacentHTML("beforeend", modalHTML);
+                                      const modal = document.querySelector(".ingredientsModal");
+                                      modal.classList.add("show");
+                                      const closeButtons = modal.querySelectorAll(".closeModal, .closeX");
+                                      closeButtons.forEach(button => {
+                                          button.addEventListener("click", function () {
+                                              modal.classList.remove("show");
+                                          });
+                                      });
+                                  } else {
+                                      document.querySelector(".ingredientsModal").classList.add("show");
+                                  }
+                              });
+                          });
+                      </script>
+
+                    {% endif %} 
 
 {% schema %}
 {
