@@ -217,7 +217,7 @@
                     </a>
                     {% if block.settings.button_style_underline %}</div>{% endif %}
 
-                    {%- if section.settings.use_ingredients -%}
+                    {% if section.settings.use_ingredients %}
                       <script>
                           document.addEventListener("DOMContentLoaded", function () {
                             {% if template contains 'product' %}
@@ -266,7 +266,7 @@
                           });
                       </script>
  
-                    {%- endif -%} 
+                    {% endif %} 
 
                   {%- endif -%}
                 {% when 'contact_form' %}
