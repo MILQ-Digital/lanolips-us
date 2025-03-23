@@ -478,7 +478,7 @@
                     section_id: section.id,
                     show_pickup_availability: true,
                     use_variant: true
-                  -%} - 
+                  -%}
                   <div id="price-{{ section.id }}" role="status" {{ block.shopify_attributes }}>
                     {%- render 'price',
                       product: product,
@@ -729,7 +729,7 @@ document.addEventListener('DOMContentLoaded', function() {
         if (submitButton) {
 
           submitButton.click();
-          
+
           // Hide the price when submitting
           if (priceElement) {
             priceElement.style.display = 'none';
