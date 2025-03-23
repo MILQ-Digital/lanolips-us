@@ -739,33 +739,6 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 });
 
-document.addEventListener("DOMContentLoaded", function () {
-    let quantityInputs = document.querySelectorAll("input[name='quantity']");
-    
-    quantityInputs.forEach(function (quantityInput) {
-        quantityInput.addEventListener("input", function () {
-            let productWrapper = quantityInput.closest(".product-item"); // Adjust this selector to match your HTML structure
-            let priceElement = productWrapper.querySelector(".price-item");
-
-            if (priceElement) {
-                let basePrice = parseFloat(priceElement.dataset.price);
-                let quantity = parseInt(quantityInput.value) || 1;
-                let newPrice = basePrice * quantity;
-                let currencySymbol = priceElement.dataset.currencySymbol;
-
-                // Check if Shopify.formatMoney is available
-                if (typeof Shopify !== "undefined" && Shopify.formatMoney) {
-                    priceElement.innerHTML = Shopify.formatMoney(newPrice);
-                } else {
-                    // Fallback to formatting manually with currency symbol
-                    priceElement.innerHTML = currencySymbol + (newPrice / 100).toFixed(2);
-                }
-            }
-        });
-    });
-});
-
-
 </script>
 
 {% schema %}
