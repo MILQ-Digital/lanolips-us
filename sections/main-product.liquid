@@ -720,11 +720,11 @@ document.addEventListener('DOMContentLoaded', function() {
 
   if (button) {
     button.addEventListener('click', function() {
-      const form = button.closest('.product-form'); // Ensure we find the correct form
+      const form = button.querySelector('.product-form'); // Find form inside button
+      const priceElement = button.querySelector('.price'); // Find price inside .product_button_price
 
       if (form) {
         const submitButton = form.querySelector('button[type="submit"]');
-        const priceElement = form.querySelector('.price');
 
         if (submitButton) {
           // Hide the price when submitting
@@ -732,21 +732,21 @@ document.addEventListener('DOMContentLoaded', function() {
             priceElement.style.display = 'none';
           }
 
-          // Add loading class to the button
+          // Add loading class to submit button
           submitButton.classList.add('loading');
 
-          // Simulate a loading state (e.g., API call)
+          // Simulate form submission delay (Replace with real AJAX if needed)
           setTimeout(() => {
-            submitButton.click(); // Trigger the form submission
+            submitButton.click(); // Submit the form
 
             // Restore price visibility after submission
             if (priceElement) {
               priceElement.style.display = 'block';
             }
 
-            // Remove loading state
+            // Remove loading class
             submitButton.classList.remove('loading');
-          }, 1000); // Adjust timeout based on actual API response time
+          }, 1000); // Adjust timeout to match actual form submission response
         } else {
           console.error('Submit button not found inside the product form');
         }
