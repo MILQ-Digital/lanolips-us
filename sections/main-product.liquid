@@ -717,16 +717,36 @@
 <script>
 document.addEventListener('DOMContentLoaded', function() {
   const button = document.querySelector('.product_button_price');
-  
+
   if (button) {
     button.addEventListener('click', function() {
-      const form = button.querySelector('.product-form');
-      
+      const form = button.closest('.product-form'); // Ensure we find the correct form
+
       if (form) {
         const submitButton = form.querySelector('button[type="submit"]');
-        
+        const priceElement = form.querySelector('.price');
+
         if (submitButton) {
-          submitButton.click(); // Trigger click on the submit button
+          // Hide the price when submitting
+          if (priceElement) {
+            priceElement.style.display = 'none';
+          }
+
+          // Add loading class to the button
+          submitButton.classList.add('loading');
+
+          // Simulate a loading state (e.g., API call)
+          setTimeout(() => {
+            submitButton.click(); // Trigger the form submission
+
+            // Restore price visibility after submission
+            if (priceElement) {
+              priceElement.style.display = 'block';
+            }
+
+            // Remove loading state
+            submitButton.classList.remove('loading');
+          }, 1000); // Adjust timeout based on actual API response time
         } else {
           console.error('Submit button not found inside the product form');
         }
@@ -738,6 +758,7 @@ document.addEventListener('DOMContentLoaded', function() {
     console.error('.product_button_price not found');
   }
 });
+
 
 </script>
 
