@@ -24,7 +24,7 @@
           "type": "promo-banner",
           "settings": {
             "banner_image": "shopify://shop_images/Content_Block_Image_Lip_Oil_81efd2dd-880e-485f-95a2-5dc38ffa97a1.jpg",
-            "promotion_position": 7,
+            "promotion_position": 5,
             "title": "{{ collection.metafields.custom.bundle_title.value }}",
             "link_label": "Shop Lip Oil",
             "link": "{{ collection.metafields.custom.bundlebutton_link.value }}",
