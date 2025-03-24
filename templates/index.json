@@ -290,7 +290,7 @@
         "color_background": "#ffffff",
         "image_behavior": "none",
         "mobile_content_alignment": "center",
-        "mobile_image_height": "medium",
+        "mobile_image_height": "large",
         "stack_images_on_mobile": false,
         "show_text_below": false,
         "padding_top": 0,
