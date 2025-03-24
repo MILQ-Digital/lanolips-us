@@ -26,7 +26,7 @@
           "settings": {
             "heading": "USA",
             "icon": "none",
-            "row_content": "<p><a href=\"https://www.anthropologie.com/search?q=lano\" target=\"_blank\">Anthropologie</a><a href=\"https://www.bloomingdales.com/buy/lano\" target=\"_blank\"><br/>Bloomingdale's<br/></a><a href=\"https://www.freepeople.com/brands/lanolips/\" target=\"_blank\">Free People</a><a href=\"https://www.macys.com/shop/featured/lanolips\" target=\"_blank\"><br/>Macys</a><a href=\"https://shop.nordstrom.com/brands/lanolips--14812\" target=\"_blank\"><br/>Nordstrom</a><br/><a href=\"https://www.ulta.com/brand/lanolips\" title=\"https://www.ulta.com/brand/lanolips\">ULTA Beauty</a><a href=\"https://www.urbanoutfitters.com/brands/lano\" target=\"_blank\" title=\"Urban Outfitters\"><br/>Urban Outfitters</a></p>",
+            "row_content": "<p><a href=\"https://www.anthropologie.com/search?q=lano\" target=\"_blank\" title=\"Link to Lanolips Brand on the Anthropologie online store\">Anthropologie</a><a href=\"https://www.bloomingdales.com/buy/lano\" target=\"_blank\"><br/>Bloomingdale's<br/></a><a href=\"https://www.freepeople.com/brands/lanolips/\" target=\"_blank\" title=\"Link to Lanolips Brand on the Free People online store\">Free People</a><a href=\"https://www.macys.com/shop/featured/lanolips\" target=\"_blank\"><br/>Macys</a><a href=\"https://shop.nordstrom.com/brands/lanolips--14812\" target=\"_blank\"><br/>Nordstrom</a><br/><a href=\"https://www.ulta.com/brand/lanolips\" title=\"Link to Lanolips Brand on the Ulta Beauty online store\">ULTA Beauty</a><a href=\"https://www.urbanoutfitters.com/brands/lano\" target=\"_blank\" title=\"Link to Lanolips Brand on the Urban Outfitters online store\"><br/>Urban Outfitters</a></p>",
             "page": ""
           }
         },
@@ -35,7 +35,7 @@
           "settings": {
             "heading": "Canada",
             "icon": "none",
-            "row_content": "<p><a href=\"https://www.anthropologie.com/en-ca/brands/lanolips\" target=\"_blank\">Anthropologie</a></p>",
+            "row_content": "<p><a href=\"https://www.anthropologie.com/en-ca/brands/lanolips\" target=\"_blank\" title=\"Link to Lanolips Brand on the Anthropologieonline store\">Anthropologie</a></p>",
             "page": ""
           }
         },
@@ -44,7 +44,7 @@
           "settings": {
             "heading": "UK",
             "icon": "none",
-            "row_content": "<p><a href=\"https://www.anthropologie.com/en-gb/brands/lano\" target=\"_blank\">Anthropologie</a><a href=\"https://www.boots.com/brands/lanolips\" target=\"_blank\"><br/>Boots</a><a href=\"https://www.cultbeauty.co.uk/lanolips\" target=\"_blank\"><br/>Cult Beauty</a><a href=\"https://www.lookfantastic.com/brands/lanolips.list\" target=\"_blank\"><br/>Look Fantastic</a><a href=\"https://www.selfridges.com/GB/en/cat/lano/\" target=\"_blank\"><br/>Selfridges<br/></a><a href=\"https://www.sephora.co.uk/brands/lanolips?q=LANOLIPS&q_typ=f\">Sephora</a><a href=\"https://www.superdrug.com/search/lanolips\" title=\"Superdrug\"><br/>Superdrug<br/></a><a href=\"http://www.waitrose.com/shop/HeaderSearchCmd?searchTerm=lanolips&defaultSearch=None\" target=\"_blank\">Waitrose</a></p>",
+            "row_content": "<p><a href=\"https://www.anthropologie.com/en-gb/brands/lano\" target=\"_blank\" title=\"Link to Lanolips Brand on the Anthropologie UK online store\">Anthropologie</a><a href=\"https://www.boots.com/brands/lanolips\" target=\"_blank\" title=\"Link to Lanolips Brand on the Boots online store\"><br/>Boots</a><a href=\"https://www.cultbeauty.co.uk/lanolips\" target=\"_blank\" title=\"Link to Lanolips Brand on the Cult Beauty online store\"><br/>Cult Beauty</a><a href=\"https://www.lookfantastic.com/brands/lanolips.list\" target=\"_blank\" title=\"Link to Lanolips Brand on the Look Fantastic online store\"><br/>Look Fantastic</a><a href=\"https://www.selfridges.com/GB/en/cat/lano/\" target=\"_blank\" title=\"Link to Lanolips Brand on the Selfridges online store\"><br/>Selfridges<br/></a><a href=\"https://www.sephora.co.uk/brands/lanolips?q=LANOLIPS&q_typ=f\" title=\"Link to Lanolips Brand on the Sephora UK online store\">Sephora</a><a href=\"https://www.superdrug.com/search/lanolips\" title=\"Link to Lanolips Brand on the Superdrug online store\"><br/>Superdrug<br/></a><a href=\"http://www.waitrose.com/shop/HeaderSearchCmd?searchTerm=lanolips&defaultSearch=None\" target=\"_blank\" title=\"Link to Lanolips Brand on the Waitrose online store\">Waitrose</a></p>",
             "page": ""
           }
         },
@@ -53,7 +53,7 @@
           "settings": {
             "heading": "Europe",
             "icon": "none",
-            "row_content": "<p><a href=\"https://www.sephora.fr/recherche?q=LANOLIPS\" target=\"_blank\">Sephora</a></p>",
+            "row_content": "<p><a href=\"https://www.sephora.fr/recherche?q=LANOLIPS\" target=\"_blank\" title=\"Link to Lanolips Brand on the Sephora Europe online store\">Sephora</a></p>",
             "page": ""
           }
         },
@@ -62,7 +62,7 @@
           "settings": {
             "heading": "Hong Kong",
             "icon": "none",
-            "row_content": "<p><a href=\"https://www.sephora.hk/brands/lanolips\" target=\"_blank\">Sephora</a></p>",
+            "row_content": "<p><a href=\"https://www.sephora.hk/brands/lanolips\" target=\"_blank\" title=\"Link to Lanolips Brand on the Sephora Hong Kong online store\">Sephora</a></p>",
             "page": ""
           }
         },
@@ -71,7 +71,7 @@
           "settings": {
             "heading": "Middle East",
             "icon": "none",
-            "row_content": "<p><a href=\"https://www.sephora.ae/en/LANOL-HubPage.html\" target=\"_blank\">Sephora</a></p>",
+            "row_content": "<p><a href=\"https://www.sephora.ae/en/LANOL-HubPage.html\" target=\"_blank\" title=\"Link to Lanolips Brand on the Sephora Middle East online store\">Sephora</a></p>",
             "page": ""
           }
         },
@@ -80,7 +80,7 @@
           "settings": {
             "heading": "New Zealand",
             "icon": "none",
-            "row_content": "<p><a href=\"https://www.adorebeauty.co.nz/b/lanolips.html\" title=\"Lanolips at Adorebeauty New Zealand\">Adore Beauty</a><a href=\"https://www.meccabeauty.co.nz/lanolips/\" target=\"_blank\"><br/>Mecca Maxima<br/></a><a href=\"https://www.sephora.nz/brands/lanolips\" target=\"_blank\">Sephora</a></p>",
+            "row_content": "<p><a href=\"https://www.adorebeauty.co.nz/b/lanolips.html\" title=\"Lanolips at Adorebeauty New Zealand on line store\">Adore Beauty</a></p><p><a href=\"https://www.meccabeauty.co.nz/lanolips/\" target=\"_blank\" title=\"Link to Mecca Online Store for Lanolips Brand\">Mecca</a></p><p><a href=\"https://www.sephora.nz/brands/lanolips\" target=\"_blank\" title=\"Link to Lanolips Brand on the Sephora New Zealand online store\">Sephora</a></p>",
             "page": ""
           }
         }
