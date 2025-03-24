@@ -252,7 +252,7 @@
         "icon_YQkFzD": {
           "type": "icon",
           "settings": {
-            "image_icon": "shopify://shop_images/sheep-icon_1.png"
+            "image_icon": "shopify://shop_images/Lanolips_Website_Icon_Sheep.png"
           }
         },
         "heading_hVPN7C": {
@@ -280,7 +280,7 @@
         "@media screen and (max-width: 750px) {.banner__heading {font-size: 38px; margin-bottom: 40px; } .banner__heading em {font-size: 53px; }}"
       ],
       "settings": {
-        "image": "shopify://shop_images/SWIRL.png",
+        "image": "shopify://shop_images/Lanolips_Wave_Pattern.jpg",
         "image_overlay_opacity": 0,
         "image_height": "adapt",
         "desktop_content_position": "middle-center",
