@@ -23,10 +23,10 @@
         "promo_banner_tfAVHn": {
           "type": "promo-banner",
           "settings": {
-            "banner_image": "{{ collection.metafields.custom.bundle_image.value }}",
+            "banner_image": "shopify://shop_images/Content_Block_Image_Lip_Oil_81efd2dd-880e-485f-95a2-5dc38ffa97a1.jpg",
             "promotion_position": 7,
             "title": "{{ collection.metafields.custom.bundle_title.value }}",
-            "link_label": "Shop Now",
+            "link_label": "Shop Lip Oil",
             "link": "{{ collection.metafields.custom.bundlebutton_link.value }}",
             "color_scheme": "scheme-d2d64bb4-1602-4f59-ab3f-f35f477ef722",
             "image_ratio": "square"
