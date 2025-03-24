@@ -4355,6 +4355,7 @@ body .yotpo-widget-clear:has(.yotpo-sr-star-empty) {
     font-style: normal;
     font-weight: 400;
     font-size: var(--body-sm);
+  color: rgba(var(--color-foreground), 1);
 }
 
 
