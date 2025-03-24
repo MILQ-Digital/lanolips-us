@@ -277,7 +277,7 @@
         "checkbox_LMyxQA"
       ],
       "custom_css": [
-        "@media screen and (max-width: 750px) {.banner__heading {font-size: 38px; margin-bottom: 40px; } .banner__heading em {font-size: 53px; } .banner {padding-top: 50px; padding-bottom: 50px; }}"
+        "@media screen and (max-width: 750px) {.banner__heading {font-size: 38px; margin-bottom: 40px; } .banner__heading em {font-size: 53px; }}"
       ],
       "settings": {
         "image": "shopify://shop_images/Lanolips_Wave_Pattern.jpg",
