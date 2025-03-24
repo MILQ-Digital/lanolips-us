@@ -277,7 +277,7 @@
         "checkbox_LMyxQA"
       ],
       "custom_css": [
-        "@media screen and (max-width: 750px) {.banner__heading {font-size: 38px; margin-bottom: 40px; } .banner__heading em {font-size: 53px; } .media > img {object-fit: contain; }}"
+        "@media screen and (max-width: 750px) {.banner__heading {font-size: 38px; margin-bottom: 40px; } .banner__heading em {font-size: 53px; }}"
       ],
       "settings": {
         "image": "shopify://shop_images/Lanolips_Wave_Pattern.jpg",
@@ -290,7 +290,7 @@
         "color_background": "#ffffff",
         "image_behavior": "none",
         "mobile_content_alignment": "center",
-        "mobile_image_height": "large",
+        "mobile_image_height": "medium",
         "stack_images_on_mobile": false,
         "show_text_below": false,
         "padding_top": 0,
