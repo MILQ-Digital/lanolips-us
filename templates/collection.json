@@ -35,10 +35,10 @@
         "promo_banner_CMXKXz": {
           "type": "promo-banner",
           "settings": {
-            "banner_image": "{{ collection.metafields.custom.bundle_image_2.value }}",
+            "banner_image": "shopify://shop_images/Content_Block_Image_12_Hour_Overnight_Lip_Mask_069aacdb-aac3-42f5-9243-7c2a1679b99f.jpg",
             "promotion_position": 13,
             "title": "{{ collection.metafields.custom.bundle_title_2.value }}",
-            "link_label": "Shop Now",
+            "link_label": "Shop Lip Mask",
             "link": "{{ collection.metafields.custom.bundle_button_link_2.value }}",
             "color_scheme": "scheme-d2d64bb4-1602-4f59-ab3f-f35f477ef722",
             "image_ratio": "adapt"
