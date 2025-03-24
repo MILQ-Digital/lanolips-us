@@ -26,7 +26,7 @@
           "settings": {
             "heading": "USA",
             "icon": "none",
-            "row_content": "<p><a href=\"https://www.anthropologie.com/search?q=lano\" target=\"_blank\">Anthropologie</a><a href=\"https://www.bloomingdales.com/buy/lano\" target=\"_blank\"><br/>Bloomingdale's<br/></a><a href=\"https://www.freepeople.com/brands/lanolips/\" target=\"_blank\">Free People</a><a href=\"https://www.macys.com/shop/featured/lanolips\" target=\"_blank\"><br/>Macys</a><a href=\"https://shop.nordstrom.com/brands/lanolips--14812\" target=\"_blank\"><br/>Nordstrom</a><a href=\"https://www.ulta.com/brand/lano\" target=\"_blank\"><br/>ULTA Beauty</a><a href=\"https://www.urbanoutfitters.com/brands/lano\" target=\"_blank\" title=\"Urban Outfitters\"><br/>Urban Outfitters</a></p>",
+            "row_content": "<p><a href=\"https://www.anthropologie.com/search?q=lano\" target=\"_blank\">Anthropologie</a><a href=\"https://www.bloomingdales.com/buy/lano\" target=\"_blank\"><br/>Bloomingdale's<br/></a><a href=\"https://www.freepeople.com/brands/lanolips/\" target=\"_blank\">Free People</a><a href=\"https://www.macys.com/shop/featured/lanolips\" target=\"_blank\"><br/>Macys</a><a href=\"https://shop.nordstrom.com/brands/lanolips--14812\" target=\"_blank\"><br/>Nordstrom</a><br/><a href=\"https://www.ulta.com/brand/lanolips\" title=\"https://www.ulta.com/brand/lanolips\">ULTA Beauty</a><a href=\"https://www.urbanoutfitters.com/brands/lano\" target=\"_blank\" title=\"Urban Outfitters\"><br/>Urban Outfitters</a></p>",
             "page": ""
           }
         },
