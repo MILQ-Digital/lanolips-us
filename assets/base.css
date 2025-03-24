@@ -4350,7 +4350,7 @@ body .yotpo-widget-clear:has(.yotpo-sr-star-empty) {
   display: none;
 }
 
-.template-page table seclect {
+.template-page table select {
     font-family: var(--default-font);
     font-style: normal;
     font-weight: 400;
