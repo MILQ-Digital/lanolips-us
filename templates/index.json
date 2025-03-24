@@ -229,9 +229,7 @@
       "blocks": {
         "icon_YQkFzD": {
           "type": "icon",
-          "settings": {
-            "image_icon": "shopify://shop_images/sheep-icon_1.png"
-          }
+          "settings": {}
         },
         "heading_hVPN7C": {
           "type": "heading",
@@ -296,7 +294,7 @@
             "title": "12 Hour Overnight Lip Mask",
             "text": "<p>An intensive blend of hydrating ultra-pure lanolin and powerhouse mega-actives. </p>",
             "link_label": "Shop Now",
-            "link": "shopify://collections/all",
+            "link": "shopify://products/12-hour-overnight-lip-mask",
             "button_style_secondary": false
           }
         }
