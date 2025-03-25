@@ -212,7 +212,7 @@
         "featured_collection_PE3zqw": {
           "type": "featured_collection",
           "settings": {
-            "collection": "test-collection"
+            "collection": "lips"
           }
         },
         "featured_collection_hBDbwN": {
@@ -251,9 +251,7 @@
       "blocks": {
         "icon_YQkFzD": {
           "type": "icon",
-          "settings": {
-            "image_icon": "shopify://shop_images/Lanolips_Website_Icon_Sheep.png"
-          }
+          "settings": {}
         },
         "heading_hVPN7C": {
           "type": "heading",
