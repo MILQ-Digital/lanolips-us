@@ -1132,6 +1132,10 @@ summary::-webkit-details-marker {
   row-gap: var(--grid-mobile-vertical-spacing);
 }
 
+.grid__item .grid-product-item {
+  height: 100%;
+}
+
 @media screen and (min-width: 750px) {
   .grid {
     column-gap: var(--grid-desktop-horizontal-spacing);
