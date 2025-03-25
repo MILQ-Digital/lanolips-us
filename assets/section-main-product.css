@@ -1641,7 +1641,7 @@ a.product__text {
 
 
 @media (max-width: 768px) {
-  .product .sticky {
+  /*.product .sticky {
       position: fixed;
       bottom: 0;
       left: 0;
@@ -1654,7 +1654,7 @@ a.product__text {
 
   .product .product-form__quantity.sticky {
       bottom: 60px; /* Leaves space for the button */
-  }
+  }*/
 
   .product .product_button_price.sticky {
       bottom: 0;
