@@ -26,4 +26,8 @@
   padding-right: 0;
   }  
 
+.template-product .related-products .card__content {
+  padding: 0 1.5rem;
+  } 
+
 }
