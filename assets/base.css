@@ -4383,7 +4383,7 @@ body:not(.template-product) .price > span {
 
 @media screen and (max-width: 575px) {
   .fs-wrapper {
-    width: 100%;
+    width: 100%!Important;
   }
 
   .yotpo-carousel .glide__slides {
