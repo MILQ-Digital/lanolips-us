@@ -572,7 +572,7 @@ cart-drawer-items::-webkit-scrollbar-track-piece {
 .cart-upsell .card--standard>.card__content { 
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-start;
 }
 
 @media screen and (min-width: 990px) {
@@ -594,4 +594,8 @@ cart-drawer-items::-webkit-scrollbar-track-piece {
 
 .cart-upsell .yotpo-widget-instance {
   display: none;
+}
+
+.cart-upsell .card-wrapper {
+  height: auto;
 }
