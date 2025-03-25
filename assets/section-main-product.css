@@ -1634,6 +1634,9 @@ a.product__text {
   .product_features_icons img {
     max-height: 50px;
   }
+  .product_features_icons .feat-icons {
+    max-width: 75px;
+  }
 }
 
 
