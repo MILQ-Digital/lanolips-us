@@ -286,6 +286,10 @@ cart-drawer-items {
   display: none;
 }
 
+.cart-drawer .cart-item__details .product-option dl .product-option dt {
+  display: none;
+}
+
 .cart-drawer .cart-item__totals {
   pointer-events: none;
   display: flex;
