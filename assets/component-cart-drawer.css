@@ -286,7 +286,7 @@ cart-drawer-items {
   display: none;
 }
 
-.cart-drawer .cart-item__details .product-option dl .product-option dt {
+.cart-drawer .cart-item__details dl .product-option dt {
   display: none;
 }
 
