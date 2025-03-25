@@ -1613,7 +1613,8 @@ a.product__text {
 
 .product_features_icons img {
   width: 100%;
-  max-width: 65px;
+  /*max-width: 65px;*/
+  max-height: 55px;
 }
 
 .product_features_icons .feat-icons {
