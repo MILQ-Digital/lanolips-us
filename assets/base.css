@@ -4391,7 +4391,7 @@ body:not(.template-product) .price > span {
   } 
 
   body .yotpo-carousel .glide__slide {
-    width: initial !important;
+    width: 100vw!important;
     margin: 0 10px !important;
   }
 }
