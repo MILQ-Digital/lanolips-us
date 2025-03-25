@@ -947,4 +947,7 @@
   .grid:not(.collection-list) .card__information {
     grid-row-start: 1;
   }
+  .card--standard>.card__content .card__information {
+    min-height: max-content;
+  }
 }
