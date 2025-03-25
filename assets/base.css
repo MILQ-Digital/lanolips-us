@@ -4388,11 +4388,13 @@ body:not(.template-product) .price > span {
 
   .yotpo-carousel .glide__slides {
     justify-content: flex-end;
+    gap: 10px;
   } 
 
   body .yotpo-carousel .glide__slide {
     width: 100vw!important;
     margin: 0 10px !important;
+    flex-shrink: 1;
   }
 
   body .reviews-carousel-card-container {
