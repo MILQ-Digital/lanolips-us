@@ -4359,7 +4359,7 @@ body .yotpo-widget-clear:has(.yotpo-sr-star-empty) {
     border: 1px solid #2B4676;
 }
 
-body:not(.template-product) .price span {
+body:not(.template-product) .price > span {
     display: none;
 }
 
