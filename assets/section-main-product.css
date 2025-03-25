@@ -1632,7 +1632,7 @@ a.product__text {
 
 @media (max-width: 1200px) {
   .product_features_icons img {
-    max-height: 50px;
+    max-height: 45px;
   }
   .product_features_icons .feat-icons {
     max-width: 75px;
