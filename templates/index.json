@@ -251,7 +251,9 @@
       "blocks": {
         "icon_YQkFzD": {
           "type": "icon",
-          "settings": {}
+          "settings": {
+            "image_icon": "shopify://shop_images/Lanolips-Website-Icon-Sheep.png"
+          }
         },
         "heading_hVPN7C": {
           "type": "heading",
