@@ -2883,6 +2883,12 @@ account-icon {
   display: flex;
 }
 
+@media screen and (max-width: 749px) {
+  .header__icons .header__icon--account  {
+    display: none;
+  }
+}
+
 /* Search */
 menu-drawer + .header__search {
   display: none;
