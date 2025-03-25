@@ -4305,6 +4305,9 @@ body .yotpo-widget-clear:has(.yotpo-sr-star-empty) {
  .yotpo-reviews-carousel-widget-container.yotpo-reviews-carousel-widget-mobile-mode {
     padding: unset;
  }
+  .yotpo-reviews-carousel-container {
+    padding: 40px 20px;
+  }
 }
 
 
