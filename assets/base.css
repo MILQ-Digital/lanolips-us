@@ -4381,6 +4381,14 @@ body:not(.template-product) .price > span {
     display: none;
 }
 
+@media only screen and (max-width: 768px) {
+  .fs-mobile div.fs-entry-container, .fs-desktop div.fs-entry-container {
+      height: 0;
+      width: calc(100% / 2) !important;
+      padding-top: calc(100% / 2) !important;
+  }
+}
+
 @media screen and (max-width: 575px) {
   .fs-wrapper {
     width: 100%!Important;
