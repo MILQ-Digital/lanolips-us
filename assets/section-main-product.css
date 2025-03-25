@@ -1612,7 +1612,7 @@ a.product__text {
 }
 
 .product_features_icons img {
-  width: 100%;
+   width: auto;
   /*max-width: 65px;*/
   max-height: 55px;
 }
