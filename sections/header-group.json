@@ -66,15 +66,6 @@
             "image_link": "shopify://collections/lips"
           }
         },
-        "image_picker_849ywR": {
-          "type": "image_picker",
-          "settings": {
-            "position": "2",
-            "image_block": "shopify://shop_images/Lanolips-Banana-Balm-3-In-1-Lip-Sheen-Model-1.jpg",
-            "image_title": "heading",
-            "image_link": "shopify://pages/about"
-          }
-        },
         "megamenu_eAHRng": {
           "type": "megamenu",
           "settings": {
@@ -161,7 +152,6 @@
         "megamenu_nKJz4B",
         "image_picker_nbbXJR",
         "image_picker_xEJ8td",
-        "image_picker_849ywR",
         "megamenu_eAHRng",
         "image_picker_V6VQVT",
         "image_picker_Axyq9F",
