@@ -942,3 +942,9 @@
     min-height: 274px;
   }
 }
+
+@media screen and (max-width: 450px) {
+  .grid:not(.collection-list) .card__information {
+    grid-row-start: 1;
+  }
+}
