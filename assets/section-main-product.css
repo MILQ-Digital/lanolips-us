@@ -1630,6 +1630,12 @@ a.product__text {
   padding-top: 3px;
 }
 
+@media (max-width: 1200px) {
+  .product_features_icons img {
+    max-height: 50px;
+  }
+}
+
 
 @media (max-width: 768px) {
   .product .sticky {
