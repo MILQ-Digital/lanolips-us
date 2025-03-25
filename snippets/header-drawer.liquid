@@ -53,9 +53,6 @@
 
                       {%- assign collection = collections[link.handle] -%} 
                       
-                       
-
-
                       {%- if collection.metafields.custom.mobile_image_menu != blank -%}
                         <div class="menu-image-icon">
                           <img src="{{ collection.metafields.custom.mobile_image_menu | image_url: width: 100 }}" 
@@ -63,8 +60,6 @@
                                class="menu-collection-image">
                         </div>
                       {%- endif -%} 
-
-                        
 
                         <span>{{ link.title | escape }}</span>
                         <span class="svg-wrapper">
@@ -179,7 +174,6 @@
                                class="menu-collection-image">
                         </div>
                       {%- endif -%}
-
                       
                       <span>{{ link.title | escape }}</span>
                     </a>
