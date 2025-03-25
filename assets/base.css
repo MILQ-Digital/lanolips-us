@@ -4151,6 +4151,7 @@ body .otCookiesNotification #cookies-message-context a {
 .yotpo-reviews-carousel-header-container {
   order: 2;
   padding-bottom: 45px;
+  text-align: center;
 }
 
 .yotpo-reviews-carousel-bottomline-seo {
