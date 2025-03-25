@@ -4381,5 +4381,13 @@ body:not(.template-product) .price > span {
     display: none;
 }
 
+@media screen and (max-width: 575px) {
+  .fs-wrapper {
+    width: 100%;
+  }
 
+  .yotpo-carousel .glide__slides {
+    justify-content: flex-end;
+  }
+}
 
