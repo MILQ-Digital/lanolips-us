@@ -4300,7 +4300,7 @@ body .yotpo-widget-clear:has(.yotpo-sr-star-empty) {
 
 @media screen and (max-width: 575px) {
   .yotpo-carousel .glide__arrows {
-    display: block;
+    display: block!important;
   }
 }
 
