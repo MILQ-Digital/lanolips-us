@@ -4394,5 +4394,9 @@ body:not(.template-product) .price > span {
     width: 100vw!important;
     margin: 0 10px !important;
   }
+
+  body .reviews-carousel-card-container {
+    width: 100vw!important;
+  }
 }
 
