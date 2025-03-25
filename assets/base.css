@@ -4297,6 +4297,14 @@ body .yotpo-widget-clear:has(.yotpo-sr-star-empty) {
   fill: var(--Lano-Blue)!important;
 }
 
+
+@media screen and (max-width: 575px) {
+  .yotpo-carousel .glide__arrows {
+    display: block;
+  }
+}
+
+
 /**foursixty**/
 
 .fs-wrapper .fs-entry-container > div {
