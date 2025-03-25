@@ -1623,6 +1623,8 @@ a.product__text {
 
 .product_features_icons .feat-icons span {
   font-size: 12px;
+  line-height: normal;
+  text-align: center;
 }
 
 
