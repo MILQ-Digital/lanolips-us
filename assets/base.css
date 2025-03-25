@@ -4302,7 +4302,9 @@ body .yotpo-widget-clear:has(.yotpo-sr-star-empty) {
   .yotpo-carousel .glide__arrows {
     display: block!important;
   }
- #yotpo-reviews-carousel-widget  
+ .yotpo-reviews-carousel-widget-container.yotpo-reviews-carousel-widget-mobile-mode {
+    padding: unset;
+ }
 }
 
 
