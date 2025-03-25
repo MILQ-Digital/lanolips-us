@@ -18,7 +18,8 @@
 .drawer__inner {
   height: 100%;
   width: 576px;
-  max-width: calc(100vw - 3rem);
+  /*max-width: calc(100vw - 3rem);*/
+  max-width: calc(100vw - 0rem);
   padding: 0;
   border: 0.1rem solid rgba(var(--color-foreground), 0.2);
   border-right: 0;
@@ -280,6 +281,14 @@ cart-drawer-items {
 .cart-drawer .cart-item__details {
   width: auto;
   grid-column: 2 / 4;
+}
+
+.cart-drawer .cart-item__details > .product-option {
+  display: none;
+}
+
+.cart-drawer .cart-item__details dl .product-option dt {
+  display: none;
 }
 
 .cart-drawer .cart-item__totals {
@@ -563,7 +572,7 @@ cart-drawer-items::-webkit-scrollbar-track-piece {
 .cart-upsell .card--standard>.card__content { 
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-start;
 }
 
 @media screen and (min-width: 990px) {
@@ -581,4 +590,12 @@ cart-drawer-items::-webkit-scrollbar-track-piece {
       padding-left: 0 !important;
       padding-right: 0 !important;
   }
+}
+
+.cart-upsell .yotpo-widget-instance {
+  display: none;
+}
+
+.cart-upsell .card-wrapper {
+  height: auto;
 }

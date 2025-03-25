@@ -87,7 +87,8 @@
     margin-bottom: 30px;
   }
 
-  .modal_body .button {
+  .modal_body .button,
+  .modal_body .btn {
     width: 100%;
     background: transparent;
   }
@@ -217,7 +218,7 @@
                     </a>
                     {% if block.settings.button_style_underline %}</div>{% endif %}
 
-                    {%- if section.settings.use_ingredients -%}
+                    {% if section.settings.use_ingredients %}
                       <script>
                           document.addEventListener("DOMContentLoaded", function () {
                             {% if template contains 'product' %}
@@ -244,12 +245,11 @@
                                                 </button>
                                                 <h3 class="heading-xs text-center">Ingredients</h3>
                                                 <div class="body-lg modal_text">${window.productMetafields.ingredients_text || "No ingredients available"}</div>
-                                                <button class="closeModal button button--secondary button--bordered">Close</button>
+                                                <button class="closeModal btn button--secondary button--bordered">Close</button>
                                               </div>
                                             </div>
                                           </div>
                                       `;
-                                      // Inject modal before </body>
                                       document.body.insertAdjacentHTML("beforeend", modalHTML);
                                       const modal = document.querySelector(".ingredientsModal");
                                       modal.classList.add("show");
@@ -265,8 +265,8 @@
                               });
                           });
                       </script>
- 
-                    {%- endif -%} 
+
+                    {% endif %} 
 
                   {%- endif -%}
                 {% when 'contact_form' %}

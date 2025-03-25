@@ -1132,6 +1132,10 @@ summary::-webkit-details-marker {
   row-gap: var(--grid-mobile-vertical-spacing);
 }
 
+.grid__item .grid-product-item {
+  height: 100%;
+}
+
 @media screen and (min-width: 750px) {
   .grid {
     column-gap: var(--grid-desktop-horizontal-spacing);
@@ -1446,6 +1450,7 @@ deferred-media {
 }
 
 .button,
+.btn,
 .shopify-challenge__button,
 .customer button,
 button.shopify-payment-button__button--unbranded {
@@ -1461,6 +1466,7 @@ button.shopify-payment-button__button--unbranded {
 }
 
 .button,
+.btn,
 .shopify-challenge__button,
 .customer button,
 button.shopify-payment-button__button--unbranded {
@@ -1469,6 +1475,7 @@ button.shopify-payment-button__button--unbranded {
 }
 
 .button,
+.btn,
 .shopify-challenge__button,
 .customer button {
   display: inline-flex;
@@ -1567,6 +1574,8 @@ button.shopify-payment-button__button--unbranded {
 .button:focus-visible,
 .button:focus,
 .button.focused,
+.btn:focus,
+.btn:focus-visible,
 .shopify-payment-button__button--unbranded:focus-visible,
 .shopify-payment-button__button--unbranded:focus {
   outline: 0;
@@ -1575,17 +1584,20 @@ button.shopify-payment-button__button--unbranded {
 }
 
 .button:focus:not(:focus-visible):not(.focused),
+.btn:focus:not(:focus-visible):not(.focused),
 .shopify-payment-button__button--unbranded:focus:not(:focus-visible):not(.focused) {
   box-shadow: inherit;
 }
 
 .button::selection,
+.btn::selection,
 .shopify-challenge__button::selection,
 .customer button::selection {
   background-color: rgba(var(--color-button-text), 0.3);
 }
 
 .button,
+.btn,
 .button-label,
 .shopify-challenge__button,
 .customer button {
@@ -1621,6 +1633,7 @@ shopify-accelerated-checkout-cart {
 /* Button - other */
 
 .button:disabled,
+.btn:disabled,
 .button[aria-disabled='true'],
 .button.disabled,
 .customer button:disabled,
@@ -2868,6 +2881,12 @@ details[open] .header__icon-close {
 
 account-icon {
   display: flex;
+}
+
+@media screen and (max-width: 749px) {
+  .header__icons .header__icon--account  {
+    display: none;
+  }
 }
 
 /* Search */
@@ -4142,6 +4161,7 @@ body .otCookiesNotification #cookies-message-context a {
 .yotpo-reviews-carousel-header-container {
   order: 2;
   padding-bottom: 45px;
+  text-align: center;
 }
 
 .yotpo-reviews-carousel-bottomline-seo {
@@ -4287,6 +4307,23 @@ body .yotpo-widget-clear:has(.yotpo-sr-star-empty) {
   fill: var(--Lano-Blue)!important;
 }
 
+
+@media screen and (max-width: 575px) {
+  .yotpo-carousel .glide__arrows {
+    display: block!important;
+  }
+ .yotpo-reviews-carousel-widget-container.yotpo-reviews-carousel-widget-mobile-mode {
+    padding: unset;
+ }
+  .yotpo-reviews-carousel-container {
+    padding: 40px 20px;
+  }
+ .afterpay-paragraph {
+    text-align: left;
+} 
+}
+
+
 /**foursixty**/
 
 .fs-wrapper .fs-entry-container > div {
@@ -4341,7 +4378,45 @@ body .yotpo-widget-clear:has(.yotpo-sr-star-empty) {
   display: none;
 }
 
+.template-page table select {
+    font-family: var(--default-font);
+    font-style: normal;
+    font-weight: 400;
+    font-size: var(--body-sm);
+    color: rgba(var(--color-foreground), 1);
+    border: 1px solid #2B4676;
+}
 
+body:not(.template-product) .price > span {
+    display: none;
+}
 
+@media only screen and (max-width: 768px) {
+  .fs-mobile div.fs-entry-container, .fs-desktop div.fs-entry-container {
+      height: 0;
+      width: calc(100% / 2) !important;
+      padding-top: calc(100% / 2) !important;
+  }
+}
 
+@media screen and (max-width: 575px) {
+  .fs-wrapper {
+    width: 100%!Important;
+  }
+
+  .yotpo-carousel .glide__slides {
+    justify-content: flex-end;
+    gap: 10px;
+  } 
+
+  body .yotpo-carousel .glide__slide {
+    margin: 0 10px 0 0 !important;
+    flex-shrink: 1;
+  }
+
+  body .reviews-carousel-card-container {
+    max-width: 100vw;
+    width: 100vw !important;
+  }
+}
 

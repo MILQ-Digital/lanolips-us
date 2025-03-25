@@ -478,7 +478,7 @@
                     section_id: section.id,
                     show_pickup_availability: true,
                     use_variant: true
-                  -%} - 
+                  -%}
                   <div id="price-{{ section.id }}" role="status" {{ block.shopify_attributes }}>
                     {%- render 'price',
                       product: product,
@@ -717,16 +717,33 @@
 <script>
 document.addEventListener('DOMContentLoaded', function() {
   const button = document.querySelector('.product_button_price');
-  
+
   if (button) {
     button.addEventListener('click', function() {
-      const form = button.querySelector('.product-form');
-      
+      const form = button.querySelector('.product-form'); // Find form inside button
+      const priceElement = button.querySelector('.price'); // Find price inside .product_button_price
+
       if (form) {
         const submitButton = form.querySelector('button[type="submit"]');
-        
+
         if (submitButton) {
-          submitButton.click(); // Trigger click on the submit button
+
+          submitButton.click();
+
+          if (priceElement) {
+            priceElement.style.display = 'none';
+          }
+
+          submitButton.classList.add('loading');
+
+          setTimeout(() => {
+
+            if (priceElement) {
+              priceElement.style.display = 'block';
+            }
+
+            submitButton.classList.remove('loading');
+          }, 1000); 
         } else {
           console.error('Submit button not found inside the product form');
         }
@@ -738,6 +755,47 @@ document.addEventListener('DOMContentLoaded', function() {
     console.error('.product_button_price not found');
   }
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+    const quantityForm = document.querySelector(".product-form__quantity");
+    const buttonPrice = document.querySelector(".product_button_price");
+
+    if (!quantityForm || !buttonPrice) return;
+
+    let quantityFormOffset = quantityForm.offsetTop;
+    let buttonPriceOffset = buttonPrice.offsetTop;
+
+    function handleScroll() {
+        let scrollPosition = window.scrollY || window.pageYOffset;
+
+        if (window.innerWidth <= 768) { // Only apply on mobile
+            if (scrollPosition >= quantityFormOffset) {
+                quantityForm.classList.add("sticky");
+            } else {
+                quantityForm.classList.remove("sticky");
+            }
+
+            if (scrollPosition >= buttonPriceOffset) {
+                buttonPrice.classList.add("sticky");
+            } else {
+                buttonPrice.classList.remove("sticky");
+            }
+        } else {
+            // Remove sticky on desktop
+            quantityForm.classList.remove("sticky");
+            buttonPrice.classList.remove("sticky");
+        }
+    }
+
+    window.addEventListener("scroll", handleScroll);
+    window.addEventListener("resize", function () {
+        // Update offsets when resizing
+        quantityFormOffset = quantityForm.offsetTop;
+        buttonPriceOffset = buttonPrice.offsetTop;
+    });
+});
+
+
 </script>
 
 {% schema %}

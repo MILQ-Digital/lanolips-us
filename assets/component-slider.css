@@ -495,7 +495,7 @@ slider-component.slider-component-full-width {
 
   .collection-list .card.card--standard .card__inner {
     max-height: 247px;
-    max-width: 228px;
+    max-width: 100%;
   }
 }
 

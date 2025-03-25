@@ -26,4 +26,10 @@
   padding-right: 0;
   }  
 
+.template-product .related-products .card__content .card__information,
+.template-product .related-products .card__content .quick-add {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  } 
+
 }
