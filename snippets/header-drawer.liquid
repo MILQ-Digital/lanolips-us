@@ -53,11 +53,18 @@
 
                       {%- assign collection = collections[link.handle] -%} 
                       
-                       {%- if collection != blank and collection.image != blank -%}
+                       
+
+
+                      {%- if collection.metafields.custom.collection_image != blank -%}
                         <div class="menu-image-icon">
-                          <img src="{{ collection.image | image_url: width: 100 }}" alt="{{ collection.title | escape }}" class="menu-collection-image">
+                          <img src="{{ collection.metafields.custom.collection_image | image_url: width: 100 }}" 
+                               alt="{{ collection.title | escape }}" 
+                               class="menu-collection-image">
                         </div>
-                      {%- endif -%}  
+                      {%- endif -%} 
+
+                        
 
                         <span>{{ link.title | escape }}</span>
                         <span class="svg-wrapper">
