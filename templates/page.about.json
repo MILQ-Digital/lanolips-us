@@ -12,7 +12,7 @@
     "image_banner_3xkwVM": {
       "type": "image-banner",
       "settings": {
-        "image": "shopify://shop_images/About_Page_Banner_2.jpg",
+        "image": "shopify://shop_images/Lanolips-About-Page-Banner-2.jpg",
         "image_overlay_opacity": 0,
         "image_height": "medium",
         "desktop_content_position": "middle-center",
@@ -275,92 +275,12 @@
         "heading_size": "h1",
         "enable_video_looping": true,
         "video_url": "https://www.youtube.com/watch?v=8NRclrAoqq0&t=4s",
-        "cover_image": "shopify://shop_images/About_Page_Banner.jpg",
+        "cover_image": "shopify://shop_images/lanolips-heritage-page-banner-holder.jpg",
         "description": "A short video about the facts on shearing sheep.",
         "full_width": false,
         "color_scheme": "",
         "padding_top": 36,
         "padding_bottom": 36
-      }
-    },
-    "rich_text_AzzEtY": {
-      "type": "rich-text",
-      "blocks": {
-        "heading_NKkJez": {
-          "type": "heading",
-          "settings": {
-            "heading": "The science of lanolin",
-            "heading_size": "hm",
-            "enable_script": false
-          }
-        },
-        "text_VHW6GY": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Lanolin works because:</p><p>It's scientifically proven to be closest to lipids in human skin, more so than <em>any</em> other ingredient. It's semi-occlusive & semi-permeable - meaning it allows skin to self-hydrate from within, but also acts as a breathable skin barrier. It holds up to 400% of its weight in moisture, behaving as a moisture reservoir for your skin. <em><strong>And it's vegetarian and animal cruelty-free.</strong></em></p><p><em><strong>With lanolin, your skin has literally met its match.</strong></em></p><p>And our exclusive Ultra-Medical Grade lanolin is 3 x purer than even Medical Grade lanolin - and is prepared using a proprietary refining process - which makes it hypoallergenic, and the world's best.</p>"
-          }
-        }
-      },
-      "block_order": [
-        "heading_NKkJez",
-        "text_VHW6GY"
-      ],
-      "settings": {
-        "desktop_content_position": "right",
-        "content_alignment": "left",
-        "color_scheme": "scheme-3",
-        "full_width": true,
-        "padding_top": 100,
-        "padding_bottom": 100
-      }
-    },
-    "multicolumn_346w8Y": {
-      "type": "multicolumn",
-      "blocks": {
-        "column_j8eegh": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/About_Images_1350x1176_4.jpg",
-            "title": "",
-            "text": "",
-            "link_label": "",
-            "link": "",
-            "button_style_secondary": false
-          }
-        },
-        "column_3mNQUn": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/About_Images_1350x1176_6.jpg",
-            "title": "",
-            "text": "",
-            "link_label": "",
-            "link": "",
-            "button_style_secondary": false
-          }
-        }
-      },
-      "block_order": [
-        "column_j8eegh",
-        "column_3mNQUn"
-      ],
-      "settings": {
-        "title": "",
-        "heading_size": "hm",
-        "image_width": "full",
-        "image_ratio": "adapt",
-        "columns_desktop": 2,
-        "column_alignment": "left",
-        "background_style": "none",
-        "button_label": "",
-        "button_link": "",
-        "color_scheme": "scheme-2",
-        "columns_mobile": "1",
-        "swipe_on_mobile": false,
-        "mobile_full": false,
-        "padding_top": 36,
-        "padding_bottom": 36,
-        "section_class": "narrow-img"
       }
     },
     "rich_text_AzzEtY": {
@@ -392,6 +312,55 @@
         "full_width": true,
         "padding_top": 100,
         "padding_bottom": 100
+      }
+    },
+    "multicolumn_346w8Y": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_j8eegh": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/About_Images_1350x1176_4.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "",
+            "button_style_secondary": false
+          }
+        },
+        "column_3mNQUn": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Lanolips-About-Images-Sheep.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "column_j8eegh",
+        "column_3mNQUn"
+      ],
+      "settings": {
+        "title": "",
+        "heading_size": "hm",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 2,
+        "column_alignment": "left",
+        "background_style": "none",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "scheme-2",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "mobile_full": false,
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "section_class": "narrow-img"
       }
     }
   },
