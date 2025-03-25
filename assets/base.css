@@ -4392,13 +4392,8 @@ body:not(.template-product) .price > span {
   } 
 
   body .yotpo-carousel .glide__slide {
-    width: 100vw!important;
-    margin: 0 10px !important;
+    margin: 0 10px 0 0 !important;
     flex-shrink: 1;
-  }
-
-  body .reviews-carousel-card-container {
-    width: 100vw!important;
   }
 }
 
