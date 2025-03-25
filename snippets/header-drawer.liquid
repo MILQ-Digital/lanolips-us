@@ -161,24 +161,7 @@
                         </div>
                       </div>
                     </details>
-                  {%- else -%}
-                    <a
-                      id="HeaderDrawer-{{ link.handle }}"
-                      href="{{ link.url }}"
-                      class="menu-drawer__menu-item list-menu__item link link--text focus-inset{% if link.current %} menu-drawer__menu-item--active{% endif %}"
-                      {% if link.current %}
-                        aria-current="page"
-                      {% endif %}
-                    >
-                      {%- assign collection = collections[link.handle] -%} 
-                      
-                       {%- if collection != blank and collection.image != blank -%}
-                        <div class="menu-image-icon">
-                          <img src="{{ collection.image | image_url: width: 100 }}" alt="{{ collection.title | escape }}" class="menu-collection-image">
-                        </div>
-                      {%- endif -%}                      
-                      <span>{{ link.title | escape }}</span>
-                    </a>
+                  
                   {%- endif -%}
                   
                 </li>
