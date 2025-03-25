@@ -591,3 +591,7 @@ cart-drawer-items::-webkit-scrollbar-track-piece {
       padding-right: 0 !important;
   }
 }
+
+.cart-upsell .yotpo-widget-instance {
+  display: none;
+}
