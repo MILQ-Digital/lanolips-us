@@ -1659,6 +1659,11 @@ a.product__text {
   .product .product_button_price.sticky {
       bottom: 0;
   }
+
+  .product_features_icons img {
+      max-height: 35px;
+  }
+  
 }
 
 
