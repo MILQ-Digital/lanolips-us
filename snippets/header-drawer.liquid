@@ -56,9 +56,9 @@
                        
 
 
-                      {%- if collection.metafields.custom.collection_image != blank -%}
+                      {%- if collection.metafields.custom.mobile_image_menu != blank -%}
                         <div class="menu-image-icon">
-                          <img src="{{ collection.metafields.custom.collection_image | image_url: width: 100 }}" 
+                          <img src="{{ collection.metafields.custom.mobile_image_menu | image_url: width: 100 }}" 
                                alt="{{ collection.title | escape }}" 
                                class="menu-collection-image">
                         </div>
