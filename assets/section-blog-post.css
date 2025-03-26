@@ -95,7 +95,7 @@
     max-width: 1188px;
   }
 
-  .article-template__content {
+  .template-article-customised  .article-template__content {
     display: flex;
     flex-wrap: wrap;
   }
