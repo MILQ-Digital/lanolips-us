@@ -463,6 +463,29 @@
       });
     </script>
 
+    <!-- Rakuten Marketing Additional Fields -->
+      <script type="text/javascript">
+      {%- assign rakutenMarketing_customerStatus = 'New' -%}
+      {%- if customer.orders.size > 1 -%}
+        {%- assign rakutenMarketing_customerStatus = 'Existing' -%}
+      {%- endif-%}
+        window.rm_Shopify = {
+            customerStatus: '{{ rakutenMarketing_customerStatus }}',
+            orderName: '{{ order_number }}',
+            line_items : [
+            {% for line_item in line_items %}  {
+                    optionalData: {
+                          cat: '{{ line_item.product.type }}',
+                          brand: '{{ line_item.vendor }}'
+                    }
+                }
+            {% if line_items.last != line_item %},{% endif %}
+            {% endfor %}
+            ]
+        };
+      </script>
+      <!-- End Rakuten Marketing Additional Fields-->
+
     <script src="https://a.klaviyo.com/media/js/onsite/onsite.js"></script>
     <script>
         var klaviyo = klaviyo || [];
