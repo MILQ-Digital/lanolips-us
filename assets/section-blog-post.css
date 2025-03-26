@@ -76,8 +76,8 @@
 }
 
 .template-article-customised .article-template__content img:first-of-type,
-.template-article-customised   .article-template__content div:has(img):first-of-type,
-.template-article-customised   .article-template__content p:has(img):first-of-type {
+.template-article-customised .article-template__content div:has(img):first-of-type,
+.template-article-customised .article-template__content p:has(img):first-of-type {
     max-width: fit-content;
     overflow: hidden;
     border-radius: 22px;
