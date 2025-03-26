@@ -13,6 +13,10 @@
   line-height: 160%; 
 }
 
+body:not(.template-article) .image-with-text__caption {
+  padding: 0;
+}
+
 body:not(.template-article) .image-with-text__caption figcaption {
   display: none;
   padding: 0;
