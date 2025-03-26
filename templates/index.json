@@ -58,7 +58,6 @@
         "slide_BxjGpJ": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/1920_x_1080_-_Lanolips_Hyaluronic_Lip_Oil.jpg",
             "slide_video_file": "shopify://files/videos/Copy of 1920 x 1080 - Content Video - Hyaluronic Lip Oil.mp4",
             "slide_video_url": "",
             "subheading": "",
@@ -152,7 +151,7 @@
         "button_AxwgMt": {
           "type": "button",
           "settings": {
-            "button_label": "Shop Lip OIl",
+            "button_label": "Shop Lip Oil",
             "button_link": "shopify://collections/lip-oil",
             "button_style_secondary": false,
             "button_style_underline": false
