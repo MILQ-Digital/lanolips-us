@@ -293,7 +293,7 @@
           "settings": {
             "image": "shopify://shop_images/Home_Page_Featured_Card_Images_1.jpg",
             "title": "12 Hour Overnight Lip Mask",
-            "text": "<p>An intensive blend of hydrating ultra-pure lanolin and powerhouse mega-actives. </p>",
+            "text": "<p>An intensive blend of hydrating ultra-pure lanolin and powerhouse mega-actives</p>",
             "link_label": "Shop Lip Mask",
             "link": "shopify://products/12-hour-overnight-lip-mask",
             "button_style_secondary": false
