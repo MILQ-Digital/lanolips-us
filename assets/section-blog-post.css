@@ -274,3 +274,9 @@
 .article-template__back:last-child {
   margin-bottom: 3.2rem;
 }
+
+.article-template__content.rte blockquote {
+  display: block;
+  margin-left: 0;
+  padding: var(--outer);
+}
