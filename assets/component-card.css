@@ -110,7 +110,6 @@
 .card .media {
   width: 100%;
   background-color: #F5EFF1;
-  padding: 20px;
 }
 
 .card__media {
@@ -444,12 +443,12 @@
 }
 
 .grid:not(.collection-list):not(.blog__posts ) .card__media .media img:first-child {
-  height: 90%;
+  height: 100%;
   left: 0;
   right: 0;
   top: auto;
   margin: 0 auto;
-  width: 80%;
+  width: 100%;
 }
 
 .card__inner:not(.ratio) > .card__content {
