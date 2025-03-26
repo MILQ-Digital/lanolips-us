@@ -13,26 +13,6 @@
       "type": "main-404",
       "settings": {}
     },
-    "image_banner_qwWypG": {
-      "type": "image-banner",
-      "settings": {
-        "image": "shopify://shop_images/404_Page.jpg",
-        "image_overlay_opacity": 0,
-        "image_height": "large",
-        "desktop_content_position": "top-center",
-        "show_text_box": true,
-        "desktop_content_alignment": "center",
-        "color_scheme": "",
-        "color_background": "",
-        "image_behavior": "none",
-        "mobile_content_alignment": "center",
-        "mobile_image_height": "medium",
-        "stack_images_on_mobile": true,
-        "show_text_below": true,
-        "padding_top": 52,
-        "padding_bottom": 0
-      }
-    },
     "rich_text_4M3mRB": {
       "type": "rich-text",
       "blocks": {
@@ -88,11 +68,31 @@
         "padding_top": 40,
         "padding_bottom": 100
       }
+    },
+    "image_banner_qwWypG": {
+      "type": "image-banner",
+      "settings": {
+        "image": "shopify://shop_images/lanolips-under-maintenance-banner.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "large",
+        "desktop_content_position": "top-center",
+        "show_text_box": true,
+        "desktop_content_alignment": "center",
+        "color_scheme": "",
+        "color_background": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "mobile_image_height": "medium",
+        "stack_images_on_mobile": true,
+        "show_text_below": true,
+        "padding_top": 52,
+        "padding_bottom": 0
+      }
     }
   },
   "order": [
-    "image_banner_qwWypG",
     "main",
-    "rich_text_4M3mRB"
+    "rich_text_4M3mRB",
+    "image_banner_qwWypG"
   ]
 }
