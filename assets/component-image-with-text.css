@@ -15,6 +15,9 @@
 
 body:not(.template-article) .image-with-text__caption figcaption {
   display: none;
+  padding: 0;
+  visibility: hidden;
+  height: 0;
 }
 
 .image-with-text .grid {
