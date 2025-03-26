@@ -18,7 +18,7 @@ body:not(.template-article) .image-with-text__caption figcaption {
   padding: 0;
   visibility: hidden;
   height: 0;
-}
+} 
 
 .image-with-text .grid {
   margin-bottom: 0;
