@@ -75,9 +75,9 @@
   font-weight: 500;
 }
 
-.article-template__content img:first-of-type,
-  .article-template__content div:has(img):first-of-type,
-  .article-template__content p:has(img):first-of-type {
+.template-article-customised .article-template__content img:first-of-type,
+.template-article-customised   .article-template__content div:has(img):first-of-type,
+.template-article-customised   .article-template__content p:has(img):first-of-type {
     max-width: fit-content;
     overflow: hidden;
     border-radius: 22px;
@@ -87,7 +87,7 @@
 
 
 @media screen and (min-width: 750px) {
-  .article-template header {
+  .template-article-customised   .article-template header {
     margin-top: 5rem;
   }
 
