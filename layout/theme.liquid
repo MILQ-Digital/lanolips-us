@@ -360,7 +360,7 @@
   
   <script>(() => {const previewKey = 'docapp-volume-test'; const urlParams = new URLSearchParams(window.location.search); if (urlParams.get(previewKey)) {window.sessionStorage.setItem(previewKey, JSON.stringify({active: true, integrationId: urlParams.get('docapp-volume-inst-test')}));}})();</script>
 
-    
+  <script src="https://cdn-widgetsrepository.yotpo.com/v1/loader/saIvlxOA1YDKuvXrWwWSMinllEkWznowM8hLlqcm" async></script>
   </head>
 
   <body class="template-{{ template | replace: '.', '-' }} gradient{% if settings.animations_hover_elements != 'none' %} animate--hover-{{ settings.animations_hover_elements }}{% endif %} {{ page_type }} {% if template.name == '404' %}error-page error-404{% endif %} {% if template == 'page.contact' %}contact-page{% else %}template--{{ page.handle }}{% endif %}">
@@ -442,8 +442,7 @@
     {%- if settings.cart_type == 'drawer' -%}
       <script src="{{ 'cart-drawer.js' | asset_url }}" defer="defer"></script>
     {%- endif -%}
-    
-    <script src="https://cdn-widgetsrepository.yotpo.com/v1/loader/saIvlxOA1YDKuvXrWwWSMinllEkWznowM8hLlqcm" async></script>
+
    <script>
       window.SwymCallbacks = window.SwymCallbacks || [];
       window.SwymCallbacks.push(function(swat) {
