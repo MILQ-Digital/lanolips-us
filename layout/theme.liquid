@@ -501,3 +501,47 @@
 
   </body>
 </html>
+
+<!-- Begin Shopify-Afterpay JavaScript Snippet (v1.0.10) -->
+<script type="text/javascript">
+// Editable fields (remove "//" from the start of each line to activate):
+// var afterpay_min = 0.04;  // As per your Afterpay contract.
+// var afterpay_max = 2000.00;  // As per your Afterpay contract.
+
+var afterpay_product_selector = '.product__price';  // The selector used to identify the price on the Product pages.
+// var afterpay_product_css = {'margin-top': '15px'};  // The CSS styling of the Afterpay assets on the Product pages.
+// var afterpay_logo_theme = 'colour';  // The Afterpay logo colour. Can be 'colour' (default), 'black' or 'white'.
+// var afterpay_modal_open_icon = true;	 // If enabled, an "ⓘ" icon is displayed next to the Afterpay logo in place of the "More info" text.
+// var afterpay_cbt_enabled = false;  // As per your Afterpay contract. Change to true to display Cross Border Trade artwork (for AU/NZ).
+
+// var afterpay_variable_price_fallback_selector = '.product-price-selector';  // The selector used to identify the price on the Product pages if the Afterpay assets are disappearing after page-load or price is incorrect when a variant is selected.
+// var afterpay_variable_price_fallback_method = "interval";  // Ensures the instalment price updates when the price changes. Can be "mutation" (default) or "interval".
+
+var afterpay_cart_integration_enabled = true;  // Enables/disables the Cart page display. Can be true or false (default).
+// var afterpay_cart_static_selector = '.cart-subtotal-selector';  // The selector used to identify the price on the Cart page.
+// var afterpay_cart_static_css = {'margin-top': '15px'};  // The CSS styling of the Afterpay assets on the Cart page.
+// var afterpay_cart_static_logo_theme = 'colour';  // The Afterpay logo colour. Can be 'colour' (default), 'black' or 'white'.
+
+// var afterpay_variable_subtotal_fallback_selector = '.cart-subtotal-selector';  // The selector used to identify the price on the Cart page if the Afterpay assets are disappearing after page-load.
+// var afterpay_variable_subtotal_fallback_method = "interval";  // Ensures the instalment price updates when the price changes. Can be "mutation" (default) or "interval".
+
+// var afterpay_footer_logo_enabled = true;  // Enables/disables the footer payment icon. Can be true (default) or false.
+// var afterpay_footer_logo_container = '.payment-icons';  // The selector used to identify the payment icons in the footer.
+// var afterpay_footer_logo_format = 'icon';  // The Afterpay payment icon style. Can be 'icon' (default), 'stacked' or 'logo'.
+// var afterpay_footer_logo_theme = 'colour';  // The Afterpay payment icon colour. Can be 'colour' (default), 'black' or 'white'.
+// var afterpay_footer_logo_background = 'border';  // The Afterpay payment icon border style. Can be 'border' (default) or 'transparent'.
+// var afterpay_footer_logo_css = {'width': '38px', 'height': '22px', 'vertical-align': 'baseline'};  // The CSS styling of the Afterpay payment icon in the footer.
+
+// Non-editable fields:
+var afterpay_shop_currency = {{ shop.currency | json }};
+var afterpay_cart_currency = {{ cart.currency.iso_code | json }};
+var afterpay_shop_money_format = {{ shop.money_format | json }};
+var afterpay_shop_permanent_domain = {{ shop.permanent_domain | json }};
+var afterpay_theme_name = {{ theme.name | json }};
+var afterpay_product = {{ product | json }};
+var afterpay_current_variant = {{ product.selected_or_first_available_variant | json }};
+var afterpay_cart_total_price = {{ cart.total_price | json }};
+var afterpay_js_snippet_version = '1.0.10';
+</script>
+<script type="text/javascript" src="https://static.afterpay.com/shopify-afterpay-javascript.js"></script>
+<!-- End Shopify-Afterpay JavaScript Snippet (v1.0.10) -->
