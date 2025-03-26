@@ -283,8 +283,8 @@
           "settings": {
             "image": "shopify://shop_images/Home_Page_Featured_Card_Images_2.jpg",
             "title": "The Original 101 Multipurpose Superbalm",
-            "text": "<p>The Worlds Best Lip Balm</p>",
-            "link_label": "Shop Now",
+            "text": "<p>The World's Best Lip Balm</p>",
+            "link_label": "Shop 101 Ointment",
             "link": "shopify://products/101-ointment-multipurpose-superbalm",
             "button_style_secondary": false
           }
@@ -295,7 +295,7 @@
             "image": "shopify://shop_images/Home_Page_Featured_Card_Images_1.jpg",
             "title": "12 Hour Overnight Lip Mask",
             "text": "<p>An intensive blend of hydrating ultra-pure lanolin and powerhouse mega-actives. </p>",
-            "link_label": "Shop Now",
+            "link_label": "Shop Lip Mask",
             "link": "shopify://products/12-hour-overnight-lip-mask",
             "button_style_secondary": false
           }
