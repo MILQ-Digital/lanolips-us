@@ -100,17 +100,17 @@
     flex-wrap: wrap;
   }
 
-  .article-template__content p:first-of-type:not(:has(img)),
-  .article-template__content div:first-of-type:not(:has(img)),
-  .article-template__content h1:first-of-type,
-  .article-template__content h2:first-of-type,
-  .article-template__content h3:first-of-type,
-  .article-template__content h4:first-of-type,
-  .article-template__content h5:first-of-type,
-  .article-template__content h6:first-of-type,
-  .article-template__content div:has(img):first-of-type ~ *,
-  .article-template__content p:has(img):first-of-type ~ *,
-  .article-template__content img:first-of-type ~ * {
+  .template-article-customised .article-template__content p:first-of-type:not(:has(img)),
+  .template-article-customised  .article-template__content div:first-of-type:not(:has(img)),
+  .template-article-customised  .article-template__content h1:first-of-type,
+  .template-article-customised  .article-template__content h2:first-of-type,
+  .template-article-customised  .article-template__content h3:first-of-type,
+  .template-article-customised  .article-template__content h4:first-of-type,
+  .template-article-customised  .article-template__content h5:first-of-type,
+  .template-article-customised  .article-template__content h6:first-of-type,
+  .template-article-customised  .article-template__content div:has(img):first-of-type ~ *,
+  .template-article-customised  .article-template__content p:has(img):first-of-type ~ *,
+  .template-article-customised  .article-template__content img:first-of-type ~ * {
     max-width: 811px;
     margin-left: auto;
     margin-right: 10rem;
