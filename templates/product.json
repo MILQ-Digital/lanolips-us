@@ -228,6 +228,55 @@
         "padding_bottom": 12
       }
     },
+    "multirow_HV497Y": {
+      "type": "multirow",
+      "blocks": {
+        "row_6chNdY": {
+          "type": "row",
+          "settings": {
+            "image": "{{ product.metafields.custom.product_highlights_image.value }}",
+            "caption": "",
+            "heading": "{{ product.metafields.custom.product_highlights_title.value }}",
+            "text": "{{ product.metafields.custom.product_highlight_content | metafield_tag }}",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "row_Rxra9Y": {
+          "type": "row",
+          "disabled": true,
+          "settings": {
+            "caption": "",
+            "heading": "12 hour overnight lip mask",
+            "text": "<h3>Feels Like:</h3><p>Rich, buttery that melts onto lips</p><h3>Smells Like:</h3><p>A light hint of vanilla and honey</p><h3>Why We Love It:</h3><p>Soften, strengthen  and replenish your lips while you sleep.</p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "row_6chNdY",
+        "row_Rxra9Y"
+      ],
+      "custom_css": [
+        "@media screen and (max-width: 750px) {.image-with-text__content {text-align: left; align-items: flex-start; }}"
+      ],
+      "settings": {
+        "image_height": "adapt",
+        "desktop_image_width": "large",
+        "heading_size": "hm",
+        "text_style": "subtitle",
+        "button_style": "secondary",
+        "desktop_content_position": "bottom",
+        "desktop_content_alignment": "left",
+        "image_layout": "align-right",
+        "section_color_scheme": "scheme-2",
+        "row_color_scheme": "scheme-1",
+        "mobile_content_alignment": "left",
+        "padding_top": 52,
+        "padding_bottom": 52
+      }
+    },
     "image_with_text_9nJtjb": {
       "type": "image-with-text",
       "blocks": {
@@ -296,6 +345,7 @@
         "text_3mwk6C",
         "heading_VM7xA3"
       ],
+      "disabled": true,
       "custom_css": [
         ".lanoscript span {text-decoration: underline !important; text-decoration-thickness: 2px !important; text-underline-offset: 7px !important;}"
       ],
@@ -306,55 +356,6 @@
         "full_width": false,
         "padding_top": 100,
         "padding_bottom": 100
-      }
-    },
-    "multirow_HV497Y": {
-      "type": "multirow",
-      "blocks": {
-        "row_6chNdY": {
-          "type": "row",
-          "settings": {
-            "image": "{{ product.metafields.custom.product_highlights_image.value }}",
-            "caption": "",
-            "heading": "{{ product.metafields.custom.product_highlights_title.value }}",
-            "text": "{{ product.metafields.custom.product_highlight_content | metafield_tag }}",
-            "button_label": "",
-            "button_link": ""
-          }
-        },
-        "row_Rxra9Y": {
-          "type": "row",
-          "disabled": true,
-          "settings": {
-            "caption": "",
-            "heading": "12 hour overnight lip mask",
-            "text": "<h3>Feels Like:</h3><p>Rich, buttery that melts onto lips</p><h3>Smells Like:</h3><p>A light hint of vanilla and honey</p><h3>Why We Love It:</h3><p>Soften, strengthen  and replenish your lips while you sleep.</p>",
-            "button_label": "",
-            "button_link": ""
-          }
-        }
-      },
-      "block_order": [
-        "row_6chNdY",
-        "row_Rxra9Y"
-      ],
-      "custom_css": [
-        "@media screen and (max-width: 750px) {.image-with-text__content {text-align: left; align-items: flex-start; }}"
-      ],
-      "settings": {
-        "image_height": "adapt",
-        "desktop_image_width": "large",
-        "heading_size": "hm",
-        "text_style": "subtitle",
-        "button_style": "secondary",
-        "desktop_content_position": "bottom",
-        "desktop_content_alignment": "left",
-        "image_layout": "align-right",
-        "section_color_scheme": "scheme-2",
-        "row_color_scheme": "scheme-1",
-        "mobile_content_alignment": "left",
-        "padding_top": 52,
-        "padding_bottom": 52
       }
     },
     "multicolumn_kzBAVh": {
@@ -471,6 +472,7 @@
     },
     "custom_liquid_jEJB7q": {
       "type": "custom-liquid",
+      "disabled": true,
       "settings": {
         "custom_liquid": "<div class=\"yotpo-widget-instance\" data-yotpo-instance-id=\"1049541\" data-yotpo-product-id=\"{{product.id}}\" data-yotpo-cart-product-id=\"{{item.product.id}}\"></div>",
         "color_scheme": "scheme-3",
@@ -545,9 +547,9 @@
   },
   "order": [
     "main",
+    "multirow_HV497Y",
     "image_with_text_9nJtjb",
     "rich_text_qVEiKy",
-    "multirow_HV497Y",
     "multicolumn_kzBAVh",
     "image_with_text_AL7pCG",
     "custom_liquid_jEJB7q",

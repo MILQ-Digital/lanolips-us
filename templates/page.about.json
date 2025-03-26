@@ -12,7 +12,7 @@
     "image_banner_3xkwVM": {
       "type": "image-banner",
       "settings": {
-        "image": "shopify://shop_images/Lanolips-About-Page-Banner-2.jpg",
+        "image": "shopify://shop_images/lanolips-about-page-banner-101-ointment.jpg",
         "image_overlay_opacity": 0,
         "image_height": "medium",
         "desktop_content_position": "middle-center",
@@ -155,7 +155,7 @@
           "type": "button",
           "settings": {
             "button_label": "Learn More",
-            "button_link": "",
+            "button_link": "https://lanolips.com.au/blogs/blog/what-is-lanolin-and-is-it-safe-for-your-skin",
             "button_style_secondary": false,
             "button_style_underline": true
           }

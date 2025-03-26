@@ -1,0 +1,91 @@
+<!-- /snippets/gwa-hreflang.liquid v.1.0.2  from https://apps.shopify.com/hreflang-manager -->
+{%- assign hlm_add_hreflang_tags = false -%}
+{%- assign hlm_shops = shop.metafields['gwa.hreflang'].hreflang_shops[0] -%}
+{%- assign hlm_meta_key = false -%}
+{%- assign hlm_page_type_url = false -%}
+{%- assign hlm_handles = false -%}
+{%- assign hlm_permanent_page = false -%}
+{%- assign hlm_unsync_object = false -%}
+{%- case template.name -%}
+    {%- when 'product' -%}
+        {%- assign hlm_meta_key = 'hreflang_products' -%}
+        {%- assign hlm_page_type_url = '/products/' -%}
+    {%- when 'collection' -%}
+        {%- assign hlm_meta_key = 'hreflang_collections' -%}
+        {%- assign hlm_page_type_url = '/collections/' -%}
+    {%- when 'page' -%}
+        {%- assign hlm_meta_key = 'hreflang_pages' -%}
+        {%- assign hlm_page_type_url = '/pages/' -%}
+    {%- when 'blog' -%}
+        {%- assign hlm_meta_key = 'hreflang_blogs' -%}
+        {%- assign hlm_page_type_url = '/blogs/' -%}
+    {%- when 'article' -%}
+        {%- assign hlm_meta_key = 'hreflang_articles' -%}
+        {%- assign hlm_page_type_url = '/blogs/{blog_handle}/' -%}
+    {%- when 'index' -%}
+        {%- assign hlm_page_type_url = '' -%}
+    {%- when 'list-collections' -%}
+        {%- assign hlm_page_type_url = '/collections' -%}
+{%- endcase -%}
+{%- if hlm_meta_key -%}
+    {%- assign hlm_handles = [template.name].metafields['gwa.hreflang'][hlm_meta_key][0] -%}
+{%- elsif hlm_page_type_url -%}
+    {%- assign hlm_permanent_page = true -%}
+{%- endif -%}
+{%- if hlm_page_type_url -%}
+    {%- assign hlm_add_hreflang_tags = true -%}
+{%- endif -%}
+{%- unless hlm_handles -%}
+    {%- if handle and hlm_shops[shop.permanent_domain].size == 1 and hlm_shops[shop.permanent_domain][0].locales.size == 1 -%}
+        {%- assign hlm_add_hreflang_tags = false -%}
+    {%- elsif handle -%}
+        {%- assign hlm_unsync_object = true -%}
+    {%- endif -%}
+{%- endunless -%}
+{%- if hlm_add_hreflang_tags -%}
+    {%- for hlm_shop in hlm_shops -%}
+        {%- assign hlm_shop_domains = hlm_shop.last -%}
+        {%- assign hlm_primary_domain = hlm_shop.first -%}
+        {%- assign hlm_x_default_added = false -%}
+        {%- if hlm_unsync_object and hlm_primary_domain != shop.permanent_domain -%}
+            {%- continue -%}
+        {%- endif -%}
+        {%- for hlm_domain in hlm_shop_domains -%}
+            {%- for hlm_locale in  hlm_domain.locales -%}
+                {%- if hlm_locale.locale_code != hlm_domain.primary_locale -%}
+                    {%- assign hlm_link_href = hlm_domain.domain | append: '/' | append: hlm_locale.locale_code -%}
+                {%- else -%}
+                    {%- if template.name == 'index' -%}
+                        {%- assign hlm_link_href = hlm_domain.domain | append: '/' -%}
+                    {%- else -%}
+                        {%- assign hlm_link_href = hlm_domain.domain -%}
+                    {%- endif -%}
+                {%- endif -%}
+                {%- if hlm_permanent_page -%}
+                    {%- assign hlm_link_href = hlm_link_href | append: hlm_page_type_url -%}
+                {%- elsif hlm_handles[hlm_primary_domain].handle -%}
+                    {%- assign hlm_link_href = hlm_link_href | append: hlm_page_type_url | append: hlm_handles[hlm_primary_domain].handle | replace: '{blog_handle}', hlm_handles[hlm_primary_domain].blog_handle -%}
+                {%- elsif hlm_unsync_object -%}
+                    {%- assign hlm_link_href = hlm_link_href | append: hlm_page_type_url | append: [template.name].handle | replace: '{blog_handle}/', '' -%}
+                {%- else -%}
+                    {%- continue -%}
+                {%- endif -%}
+                {%- if hlm_locale.is_x_default -%}
+                    <link rel="alternate" hreflang="x-default" href="https://{{ hlm_link_href }}">
+                    {%- assign hlm_x_default_added = true -%}
+                {%- endif -%}
+                {%- for hlm_locale_setting in hlm_locale.locale_settings -%}
+                    {%- if hlm_locale_setting.country and hlm_locale_setting.is_main_store -%}
+                        <link rel="alternate" hreflang="{{ hlm_locale_setting.language }}" href="https://{{ hlm_link_href }}">
+                    {%- endif -%}
+                    <link rel="alternate" hreflang="{{ hlm_locale_setting.language }}{% if hlm_locale_setting.country %}-{{ hlm_locale_setting.country }}{% endif %}" href="https://{{ hlm_link_href }}">
+                {%- endfor -%}
+            {%- endfor -%}
+        {%- endfor -%}
+        {%- if hlm_unsync_object and hlm_x_default_added == false -%}
+            {%- assign hlm_link_href = shop.domain | append: hlm_page_type_url | append: [template.name].handle | replace: '{blog_handle}/', '' -%}
+            <link rel="alternate" hreflang="x-default" href="https://{{ hlm_link_href }}">
+        {%- endif -%}
+    {%- endfor -%}
+{%- endif -%}
+<!-- end of gwa-hreflang -->
