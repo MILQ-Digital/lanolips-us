@@ -199,9 +199,19 @@
         "disabled": false,
         "settings": {}
       },
+      "18128612654622612671": {
+        "type": "shopify://apps/selecty/blocks/app-embed/a005a4a7-4aa2-4155-9c2b-0ab41acbf99c",
+        "disabled": true,
+        "settings": {}
+      },
+      "855628211100114053": {
+        "type": "shopify://apps/klaviyo-email-marketing-sms/blocks/klaviyo-onsite-embed/2632fe16-c075-4321-a88b-50b567f42507",
+        "disabled": false,
+        "settings": {}
+      },
       "5946647744298494267": {
         "type": "shopify://apps/wishlist-plus/blocks/wishlist-app-embed/80c3b1fc-3a8f-407e-8367-ffdeebb8b612",
-        "disabled": false,
+        "disabled": true,
         "settings": {
           "storefront_layout_enabled": false,
           "storefront_layout_type": "as-section",
@@ -221,11 +231,9 @@
       },
       "10274264662263595587": {
         "type": "shopify://apps/wishlist-plus/blocks/wishlist-collections-embed/80c3b1fc-3a8f-407e-8367-ffdeebb8b612",
-        "disabled": false,
+        "disabled": true,
         "settings": {
           "swym_collections_icon_type": "heart",
-          "swym_collections_add_icon": "shopify://shop_images/heart-collection.svg",
-          "swym_collections_added_icon": "shopify://shop_images/heart-collection-active.svg",
           "swym_collections_position": "top-right",
           "swym_collections_vertical_offset": 0,
           "swym_collections_horizontal_offset": 0,
@@ -246,16 +254,6 @@
           "swym_variant_selector_create_list_placeholder_text": "Enter wishlist name",
           "swym_variant_selector_create_list_title": "Name Your Wishlist"
         }
-      },
-      "18128612654622612671": {
-        "type": "shopify://apps/selecty/blocks/app-embed/a005a4a7-4aa2-4155-9c2b-0ab41acbf99c",
-        "disabled": true,
-        "settings": {}
-      },
-      "855628211100114053": {
-        "type": "shopify://apps/klaviyo-email-marketing-sms/blocks/klaviyo-onsite-embed/2632fe16-c075-4321-a88b-50b567f42507",
-        "disabled": false,
-        "settings": {}
       }
     },
     "color_schemes": {
