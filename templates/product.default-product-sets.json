@@ -331,6 +331,7 @@
         "row_6chNdY",
         "row_Rxra9Y"
       ],
+      "disabled": true,
       "custom_css": [
         "@media screen and (max-width: 750px) {.image-with-text__content {text-align: left; align-items: flex-start; }}"
       ],
@@ -464,6 +465,7 @@
     },
     "custom_liquid_jEJB7q": {
       "type": "custom-liquid",
+      "disabled": true,
       "settings": {
         "custom_liquid": "<div class=\"yotpo-widget-instance\" data-yotpo-instance-id=\"1049541\" data-yotpo-product-id=\"{{product.id}}\" data-yotpo-cart-product-id=\"{{item.product.id}}\"></div>",
         "color_scheme": "scheme-3",
