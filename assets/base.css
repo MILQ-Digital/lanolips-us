@@ -4286,10 +4286,6 @@ body .yotpo-sr-vertical-border {display: none!important}
 
 .afterpay-paragraph {text-align: center;}
 
-body .yotpo-widget-clear:has(.yotpo-sr-star-empty) {
- display: none;
-}
-
 .collection .swym-wishlist-collections-v2-container {
   opacity: 0;
 }
