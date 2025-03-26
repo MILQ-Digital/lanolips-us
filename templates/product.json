@@ -537,6 +537,7 @@
     },
     "custom_liquid_3W8L6J": {
       "type": "custom-liquid",
+      "disabled": true,
       "settings": {
         "custom_liquid": "<div class=\"yotpo-widget-instance\" data-yotpo-instance-id=\"1048469\" data-yotpo-product-id=\"{{product.id}}\" data-yotpo-name=\"{{ product.title | escape }}\" data-yotpo-url=\"{{ shop.url }}{{ product.url }}\" data-yotpo-image-url=\"{{ product.featured_image | product_img_url: \"large\" | prepend: \"https:\" | replace: '?', '%3F' | replace: '&','%26'}}\" data-yotpo-price=\"{{ product.price | divided_by: 100.00 }}\" data-yotpo-currency=\"{{ shop.currency }}\" data-yotpo-description=\"{{ product.description | escape }}\"></div>",
         "color_scheme": "scheme-3",
@@ -560,28 +561,10 @@
       "settings": {
         "include_margins": true
       }
-    },
-    "de2ac3e3457cfb9a2697": {
-      "type": "apps",
-      "blocks": {
-        "f69fc122-336b-403b-9a68-10a965769cc0": {
-          "type": "shopify://apps/yotpo-product-reviews/blocks/reviews/eb7dfd7d-db44-4334-bc49-c893b51b36cf",
-          "settings": {
-            "product": "{{product}}"
-          }
-        }
-      },
-      "block_order": [
-        "f69fc122-336b-403b-9a68-10a965769cc0"
-      ],
-      "settings": {
-        "include_margins": true
-      }
     }
   },
   "order": [
     "main",
-    "de2ac3e3457cfb9a2697",
     "multirow_HV497Y",
     "image_with_text_9nJtjb",
     "rich_text_qVEiKy",
