@@ -168,7 +168,7 @@
         "button_J7awhr"
       ],
       "settings": {
-        "image": "shopify://shop_images/About_Block_1588x1426_5e88baaa-0bd9-4e9f-89af-d19d1c726c61.jpg",
+        "image": "shopify://shop_images/about-block-image-3.jpg",
         "height": "adapt",
         "desktop_image_width": "medium",
         "layout": "image_first",
@@ -219,7 +219,7 @@
         "text_L89DW8"
       ],
       "settings": {
-        "image": "shopify://shop_images/About_Block_1628x1436_bcdae765-5f0d-4136-9baa-ab0ae2a8b7a4.jpg",
+        "image": "shopify://shop_images/about-block-heritage-image.jpg",
         "height": "adapt",
         "desktop_image_width": "medium",
         "layout": "text_first",
@@ -320,7 +320,7 @@
         "column_j8eegh": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/About_Images_1350x1176_4.jpg",
+            "image": "shopify://shop_images/about-block-heritage-image-2.jpg",
             "title": "",
             "text": "",
             "link_label": "",
@@ -331,7 +331,7 @@
         "column_3mNQUn": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/Lanolips-About-Images-Sheep.jpg",
+            "image": "shopify://shop_images/lanolips-about-image-sheep.jpg",
             "title": "",
             "text": "",
             "link_label": "",
