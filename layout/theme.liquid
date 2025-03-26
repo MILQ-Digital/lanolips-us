@@ -1,6 +1,10 @@
 <!doctype html>
 <html class="js" lang="{{ request.locale.iso_code }}">
   <head>
+
+    {% include 'multi-store-hreflang-tags' %}
+
+    <meta name="author" content="Made by MILQ. https://milqdigital.com">
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -303,6 +307,18 @@
     </script>
     {{ 'sitewide.css' | asset_url | stylesheet_tag }}
     <script async src="https://wishlist.swymrelay.com/swym.js"></script>
+
+    <!-- Google Tag Manager -->
+  <script>
+    window.dataLayer = window.dataLayer || [];
+  </script>
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-PXJGGMMN');</script>
+  <!-- End Google Tag Manager -->
+    
   </head>
 
   <body class="template-{{ template | replace: '.', '-' }} gradient{% if settings.animations_hover_elements != 'none' %} animate--hover-{{ settings.animations_hover_elements }}{% endif %} {{ page_type }} {% if template.name == '404' %}error-page error-404{% endif %} {% if template == 'page.contact' %}contact-page{% else %}template--{{ page.handle }}{% endif %}">

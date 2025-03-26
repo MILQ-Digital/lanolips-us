@@ -1,0 +1,119 @@
+{% assign lines = content_for_header | newline_to_br | split: '<br />' %}
+    {% for line in lines %}
+    {% if line contains '<link rel="alternate" hreflang' %}
+    {% assign content_for_header = content_for_header | remove: line %}
+    {% endif %}
+    {% endfor %}
+    <!-- /snippets/multi-store-hreflang-tags.liquid from apps.shopify.com/multi-store-hreflang-tags (Facadess)-->
+    {%- if template.name == "product" -%}
+    {% assign off_collection = true %}
+    {%- if canonical_url contains "products/" -%}
+    {%- if product.metafields.global.hreflang_tags != blank and page.id == blank -%}
+    {%- assign product_hreflang_tags = product.metafields.global.hreflang_tags.value -%}
+    {%- for hreflang_tag in product_hreflang_tags -%}
+    {% if hreflang_tag.region != blank %}
+    <link rel="alternate" href="{{ hreflang_tag.url | url_decode }}" hreflang="{{ hreflang_tag.lang }}-{{ hreflang_tag.region }}">
+    {%- else %}
+    <link rel="alternate" href="{{ hreflang_tag.url | url_decode }}" hreflang="{{ hreflang_tag.lang }}">
+    {%- endif -%}
+    {% endfor %}
+    {%- endif -%}
+    {%- else -%}
+    {%- endif -%}
+    {%- endif -%}
+    {%- if template.name == "list-collections" -%}
+    {%- if canonical_url contains "products/" -%}
+    {%- else %}
+    {%- if current_page == 1 -%}
+    {%- if shop.metafields.global.product_hreflang_tags != blank -%}
+    {%- assign product_hreflang_tags = shop.metafields.global.product_hreflang_tags.value -%}
+    {%- for hreflang_tag in product_hreflang_tags -%}
+    {% if hreflang_tag.region != blank %}
+    <link rel="alternate" href="{{ hreflang_tag.url | url_decode }}" hreflang="{{ hreflang_tag.lang }}-{{ hreflang_tag.region }}">
+    {%- else %}
+    <link rel="alternate" href="{{ hreflang_tag.url | url_decode }}" hreflang="{{ hreflang_tag.lang }}">
+    {%- endif -%}
+    {% endfor %}
+    {%- endif -%}
+    {%- endif -%}
+    {%- endif -%}
+    {%- endif -%}
+    {%- if template.name == "collection" and off_collection != true -%}
+    {% assign url = canonical_url | split: "/" | last %}
+    {%- if url == "all" or url == "all?page="-%}
+    {% assign collection_hreflang_tags = shop.metafields.global.collection_hreflang_tags.value %}
+    {%- if current_page == 1 -%}
+    {%- if shop.metafields.global.collection_hreflang_tags != blank -%}
+    {%- for hreflang_tag in collection_hreflang_tags -%}
+    {% if hreflang_tag.region != blank %}
+    <link rel="alternate" href="{{ hreflang_tag.url | url_decode }}" hreflang="{{ hreflang_tag.lang }}-{{ hreflang_tag.region }}">
+    {%- else %}
+    <link rel="alternate" href="{{ hreflang_tag.url | url_decode }}" hreflang="{{ hreflang_tag.lang }}">
+    {%- endif -%}
+    {% endfor %}
+    {%- endif -%}
+    {%- endif -%}
+    {%- else -%}
+    {% assign collection_hreflang_tags = collection.metafields.global.hreflang_tags.value %}
+    {%- if current_page == 1 -%}
+    {%- if collection.metafields.global.hreflang_tags != blank -%}
+    {%- for hreflang_tag in collection_hreflang_tags -%}
+    {% if hreflang_tag.region != blank %}
+    <link rel="alternate" href="{{ hreflang_tag.url | url_decode }}" hreflang="{{ hreflang_tag.lang }}-{{ hreflang_tag.region }}">
+    {%- else %}
+    <link rel="alternate" href="{{ hreflang_tag.url | url_decode }}" hreflang="{{ hreflang_tag.lang }}">
+    {%- endif -%}
+    {% endfor %}
+    {%- endif -%}
+    {%- endif -%}
+    {%- endif -%}
+    {%- endif -%}
+    {%- if page.metafields.global.hreflang_tags != blank -%}
+    {% assign page_hreflang_tags = page.metafields.global.hreflang_tags.value %}
+    {%- for hreflang_tag in page_hreflang_tags -%}
+    {% if hreflang_tag.region != blank %}
+    <link rel="alternate" href="{{ hreflang_tag.url | url_decode }}" hreflang="{{ hreflang_tag.lang }}-{{ hreflang_tag.region }}">
+    {%- else %}
+    <link rel="alternate" href="{{ hreflang_tag.url | url_decode }}" hreflang="{{ hreflang_tag.lang }}">
+    {%- endif -%}
+    {% endfor %}
+    {%- endif -%}
+    {%- if template.name == "blog" -%}
+    {% if current_tags == blank %}
+    {% assign blog_hreflang_tags = blog.metafields.global.hreflang_tags.value %}
+    {% else %}
+    {% assign filename = current_tags.first | truncate: 30 | replace: " ", "-" %}
+    {% assign blog_hreflang_tags = blog.metafields.global[filename].value %}
+    {%- endif -%}
+    {%- if current_page == 1 -%}
+    {%- for hreflang_tag in blog_hreflang_tags -%}
+    {% if hreflang_tag.region != blank %}
+    <link rel="alternate" href="{{ hreflang_tag.url | url_decode }}" hreflang="{{ hreflang_tag.lang }}-{{ hreflang_tag.region }}">
+    {%- else %}
+    <link rel="alternate" href="{{ hreflang_tag.url | url_decode }}" hreflang="{{ hreflang_tag.lang }}">
+    {%- endif -%}
+    {% endfor %}
+    {%- endif -%}
+    {%- endif -%}
+    {%- if article.metafields.global.hreflang_tags != blank -%}
+    {% assign article_hreflang_tags = article.metafields.global.hreflang_tags.value %}
+    {%- for hreflang_tag in article_hreflang_tags -%}
+    {% if hreflang_tag.region != blank %}
+    <link rel="alternate" href="{{ hreflang_tag.url | url_decode }}" hreflang="{{ hreflang_tag.lang }}-{{ hreflang_tag.region }}">
+    {%- else %}
+    <link rel="alternate" href="{{ hreflang_tag.url | url_decode }}" hreflang="{{ hreflang_tag.lang }}">
+    {%- endif -%}
+    {% endfor %}
+    {%- endif -%}
+    {%- if template == "index" -%}
+    {%- if shop.metafields.global.hreflang_tags != blank -%}
+    {% assign shop_hreflang_tags = shop.metafields.global.hreflang_tags.value %}
+    {%- for hreflang_tag in shop_hreflang_tags -%}
+    {%- if hreflang_tag.region != blank -%}
+    <link rel="alternate" href="{{ hreflang_tag.url | url_decode }}" hreflang="{{ hreflang_tag.lang }}-{{ hreflang_tag.region }}">
+    {% else -%}
+    <link rel="alternate" href="{{ hreflang_tag.url | url_decode }}" hreflang="{{ hreflang_tag.lang }}">
+    {% endif -%}
+    {% endfor %}
+    {%- endif -%}
+    {%- endif -%}
