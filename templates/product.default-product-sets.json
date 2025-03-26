@@ -287,6 +287,7 @@
         "text_3mwk6C",
         "heading_VM7xA3"
       ],
+      "disabled": true,
       "custom_css": [
         ".lanoscript span {text-decoration: underline !important; text-decoration-thickness: 2px !important; text-underline-offset: 7px !important;}"
       ],
@@ -304,6 +305,7 @@
       "blocks": {
         "row_6chNdY": {
           "type": "row",
+          "disabled": true,
           "settings": {
             "image": "{{ product.metafields.custom.product_highlights_image.value }}",
             "caption": "",
@@ -315,6 +317,7 @@
         },
         "row_Rxra9Y": {
           "type": "row",
+          "disabled": true,
           "settings": {
             "caption": "",
             "heading": "12 hour overnight lip mask",
