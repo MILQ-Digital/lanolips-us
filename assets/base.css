@@ -4420,3 +4420,6 @@ body:not(.template-product) .price > span {
   }
 }
 
+.cart-upsell .swym-wishlist-collections-v2-container {
+  display: none;
+}
