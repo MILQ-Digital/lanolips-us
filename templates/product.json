@@ -560,6 +560,23 @@
       "settings": {
         "include_margins": true
       }
+    },
+    "174299422827b627c5": {
+      "type": "apps",
+      "blocks": {
+        "yotpo_product_reviews_reviews_carousel_pY448E": {
+          "type": "shopify://apps/yotpo-product-reviews/blocks/reviews_carousel/eb7dfd7d-db44-4334-bc49-c893b51b36cf",
+          "settings": {
+            "product": "{{product}}"
+          }
+        }
+      },
+      "block_order": [
+        "yotpo_product_reviews_reviews_carousel_pY448E"
+      ],
+      "settings": {
+        "include_margins": true
+      }
     }
   },
   "order": [
@@ -573,6 +590,7 @@
     "related-products",
     "collapsible_content_GiNw6Y",
     "custom_liquid_3W8L6J",
-    "17429924404741879a"
+    "17429924404741879a",
+    "174299422827b627c5"
   ]
 }
