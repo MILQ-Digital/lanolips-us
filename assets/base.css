@@ -4383,7 +4383,7 @@ body .yotpo-sr-vertical-border {display: none!important}
     border: 1px solid #2B4676;
 }
 
-body:not(.product__info-wrapper) .price > span {
+:not(.product__info-wrapper) .price > span {
     display: none;
 }
 
