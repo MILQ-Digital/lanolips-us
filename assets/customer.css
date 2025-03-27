@@ -82,8 +82,12 @@
 
 .customer .field {
   /*margin: 2rem 0 0 0;*/
-  margin-top: 20px;
+  margin-top: 0px;
   margin-bottom: 20px;
+}
+
+.customer.register .field {
+   margin-top: 20px;
 }
 
 .customer .field:first-of-type {
