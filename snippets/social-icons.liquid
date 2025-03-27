@@ -12,7 +12,7 @@
 <ul class="list-unstyled list-social{% if class %} {{ class}}{% endif %}" role="list">
   {%- if settings.social_tiktok_link != blank -%}
     <li class="list-social__item">
-      <a href="{{ settings.social_tiktok_link }}" class="link list-social__link">
+      <a href="{{ settings.social_tiktok_link }}" rel="noopener" target="_blank" class="link list-social__link">
         <span class="svg-wrapper">
           {{- 'icon-tiktok.svg' | inline_asset_content -}}
         </span>
