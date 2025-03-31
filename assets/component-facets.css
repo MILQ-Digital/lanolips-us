@@ -16,6 +16,10 @@
   padding-bottom: 10px;
 }
 
+.template-search .mobile-facets__inner {
+  background: #fff;
+}
+
 @media screen and (min-width: 750px) {
   .facets-container > * + * {
     margin-top: 0;
