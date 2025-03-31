@@ -123,6 +123,10 @@ product-recommendations.is-accordion + .accordion {
   font-size: 14px;
 }
 
+.complementary-products__container .quick-add__submit.loading .price__regular {
+  visibility:visible;
+}
+
 .complementary-products__container .quick-add__submit:hover {
   background-color: rgba(0, 0, 0, .2);
 }
