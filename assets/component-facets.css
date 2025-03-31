@@ -17,7 +17,8 @@
 }
 
 
-.template-search facet-filters-form .gradient {
+.template-search facet-filters-form .gradient,
+.template-search .mobile-facets__footer {
   background: #fff;
 }
 
