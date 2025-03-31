@@ -17,7 +17,8 @@
 }
 
 .template-search .mobile-facets__inner,
-.template-search .mobile-facets__main{
+.template-search .mobile-facets__main,
+.template-search .mobile-facets__footer {
   background: #fff;
 }
 
