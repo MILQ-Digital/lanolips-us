@@ -2838,7 +2838,7 @@ input[type='checkbox'] {
   content: none;
 }
 
-.header__icon:hover .icon,
+/*.header__icon:hover .icon,*/
 .modal__close-button:hover .icon {
   transform: scale(1.07);
 }
