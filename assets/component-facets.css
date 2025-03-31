@@ -16,7 +16,8 @@
   padding-bottom: 10px;
 }
 
-.template-search .mobile-facets__inner {
+.template-search .mobile-facets__inner,
+.template-search .mobile-facets__main{
   background: #fff;
 }
 
