@@ -4396,16 +4396,17 @@ body .yotpo-sr-vertical-border {display: none!important}
 
   form.klaviyo-form {
     flex-direction: column!important;
+    max-width: 85%!important;
+    margin: 0 auto!important;
   }
 
   form.klaviyo-form div:first-child {
     width: 100%!important;
   }
 
-  /*.needsclick data-testid="POPUP" > div > .needsclick {
-    max-width: 85%!important;
-    margin: 0 auto!important; 
-  }*/
+  .needsclick data-testid="POPUP" > div > .needsclick {
+    
+  }
 }
 
 @media screen and (max-width: 575px) {
