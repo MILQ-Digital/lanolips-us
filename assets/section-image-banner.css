@@ -537,6 +537,10 @@
     min-height: 70vh;
   }
 
+  .template-index .banner-mobile-large {
+     min-height: 50vh;
+  }
+
   .banner__heading.hm  {
     font-size: 38px;
     line-height: 38px;;
