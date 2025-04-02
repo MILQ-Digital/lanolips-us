@@ -201,8 +201,11 @@ product-info {
 
 .template-product .product__info-wrapper:has(.price--sold-out) .product_button_price  {
     cursor: not-allowed;
-  
 }
+
+.template-product .product__info-wrapper:has(.price--sold-out) .price {
+    opacity: .5;
+} 
 
 /* Form Elements */
 .product-form__input {
