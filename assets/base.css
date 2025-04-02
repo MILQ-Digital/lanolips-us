@@ -4402,10 +4402,10 @@ body .yotpo-sr-vertical-border {display: none!important}
     width: 100%!important;
   }
 
-  .needsclick data-testid="POPUP" > div > .needsclick {
+  /*.needsclick data-testid="POPUP" > div > .needsclick {
     max-width: 85%!important;
     margin: 0 auto!important; 
-  }
+  }*/
 }
 
 @media screen and (max-width: 575px) {
