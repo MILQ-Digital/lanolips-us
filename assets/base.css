@@ -4404,7 +4404,7 @@ body .yotpo-sr-vertical-border {display: none!important}
 
   .needsclick data-testid="POPUP" > div > .needsclick {
     max-width: 85%!important;
-    margin: 0 auto!important;
+    margin: 0 auto!important; 
   }
 }
 
