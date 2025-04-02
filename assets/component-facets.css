@@ -1267,4 +1267,8 @@ input.mobile-facets__checkbox {
   .mobile-facets__footer {
     z-index: 3;
   }
+
+  .facets-container .mobile-facets__open {
+    width: auto;
+  }
 }
