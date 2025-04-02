@@ -199,7 +199,7 @@ product-info {
   margin-top: 0.25rem;
 }
 
-.template-product .product__info-container .product_button_price:has(.product-form span:contains("Sold out")) {
+.template-product .product__info-wrapper:has(.price--sold-out) .product_button_price  {
     cursor: not-allowed;
   
 }
