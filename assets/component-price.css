@@ -73,6 +73,10 @@
   gap: 5px;
 }
 
+.price--on-sale .price__sale .price-item--sale {
+  color: unset;
+}
+
 .price--center {
   display: initial;
   justify-content: center;
