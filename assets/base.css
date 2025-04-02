@@ -4393,6 +4393,15 @@ body .yotpo-sr-vertical-border {display: none!important}
       width: calc(100% / 2) !important;
       padding-top: calc(100% / 2) !important;
   }
+
+  form.klaviyo-form {
+    flex-direction: column;
+  }
+
+  form.klaviyo-form div:first-child {
+    width: 100%;
+  }
+  
 }
 
 @media screen and (max-width: 575px) {
