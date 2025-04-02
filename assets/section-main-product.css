@@ -201,6 +201,7 @@ product-info {
 
 .template-product .product__info-container .product_button_price:has(span:contains("Sold out")) {
     cursor: not-allowed;
+  
 }
 
 /* Form Elements */
