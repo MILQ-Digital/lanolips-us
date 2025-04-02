@@ -4395,11 +4395,11 @@ body .yotpo-sr-vertical-border {display: none!important}
   }
 
   form.klaviyo-form {
-    flex-direction: column;
+    flex-direction: column!important;
   }
 
   form.klaviyo-form div:first-child {
-    width: 100%;
+    width: 100%!important;
   }
   
 }
