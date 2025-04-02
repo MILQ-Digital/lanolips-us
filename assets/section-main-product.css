@@ -199,6 +199,10 @@ product-info {
   margin-top: 0.25rem;
 }
 
+.template-product .product__info-container .product_button_price:has(span:contains("Sold out")) {
+    cursor: not-allowed;
+}
+
 /* Form Elements */
 .product-form__input {
   flex: 0 0 100%;
