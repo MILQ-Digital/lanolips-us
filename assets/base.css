@@ -4250,6 +4250,10 @@ body .glide__arrow--right {
   color: inherit!important;
 }
 
+.yotpo-reviews-list .yotpo-review-rating-title .yotpo-review-content > div {
+  font-family: var(--font-heading-family) !important;
+}
+
 #yotpo-reviews-main-widget .yotpo-headline {
   font-size: var(--heading-md)!important;
   font-family: var(--font-heading-family)!important;
