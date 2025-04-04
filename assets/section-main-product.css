@@ -479,7 +479,7 @@ a.product__text {
   }
 
   .product__info-container .product_button_price {
-    width: calc(100% - 113px);
+    width: calc(100% - 130px);
   }
 
   .template-product .product__description {
