@@ -81,7 +81,8 @@
         </ul>
       {% endif %}
       <ul role="list" class="list-unstyled countries">
-        {%- for country in localization.available_countries -%}
+       {%- for country in localization.available_countries -%}
+          {%- unless country.iso_code == 'BR' or country.iso_code == 'MX' -%}
           <li class="disclosure__item" tabindex="-1">
             <a
               class="link link--text disclosure__link caption-large focus-inset"
@@ -105,6 +106,7 @@
               </span>
             </a>
           </li>
+          {%- endunless -%}  
         {%- endfor -%}
       </ul>
     </div>
