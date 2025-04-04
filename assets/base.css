@@ -71,6 +71,7 @@ body {
   background: #fff;
   overflow-x: hidden;
   font-size: 16px;
+  -webkit-font-smoothing: antialiased;
 }
 
 .lanoscript,
