@@ -480,6 +480,7 @@ a.product__text {
 
   .product__info-container .product_button_price {
     width: calc(100% - 130px);
+    min-height: 39px;
   }
 
   .template-product .product__description {
