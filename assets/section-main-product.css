@@ -489,7 +489,7 @@ a.product__text {
     margin-left: 10px !important;
     min-height: 39px;
     font-size: var(--body-xs);
-    width: auto;
+    width: auto; 
   }
 
   .template-product .product__info-container .product_button_price .button {
