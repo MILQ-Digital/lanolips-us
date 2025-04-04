@@ -4250,7 +4250,7 @@ body .glide__arrow--right {
   color: inherit!important;
 }
 
-.yotpo-reviews-list .yotpo-review-rating-title .yotpo-review-content > div {
+.yotpo-reviews-list .yotpo-review-rating-title .yotpo-review-content .yotpo-read-more-text {
   font-family: var(--font-heading-family) !important;
 }
 
