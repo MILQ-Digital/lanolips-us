@@ -4260,7 +4260,7 @@ body .glide__arrow--right {
 .yotpo-media-modal .yotpo-review .yotpo-review-center-panel .yotpo-review-title,
 .yotpo-review-title, .yotpo-date-format, .yotpo-reviews-pagination-item, 
 .yotpo-new-review-btn-wrapper .yotpo-btn-s,
-.yotpo-dropdown-closable { 
+.yotpo-filters-container .yotpo-dropdown-closable { 
   font-family: var(--font-heading-family) !important;
 }
 
