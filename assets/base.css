@@ -4261,14 +4261,10 @@ body .glide__arrow--right {
 .yotpo-media-modal .yotpo-review .yotpo-review-center-panel .yotpo-review-title,
 .yotpo-review-title, .yotpo-date-format, .yotpo-reviews-pagination-item, 
 .yotpo-new-review-btn-wrapper .yotpo-btn-s,
-body .yotpo-filters-container .yotpo-dropdown-closable { 
+body .yotpo-filters-container .yotpo-dropdown-closable,
+body .yotpo-dropdown-closable span.yotpo-dropdown-placeholder{ 
   font-family: var(--font-heading-family) !important;
 }
-
-body .yotpo-filters-container .yotpo-dropdown-closable {
-  font-family: var(--secondary-font-family);
-}
---secondary-font-family
 
 #yotpo-reviews-main-widget .yotpo-headline {
   font-size: var(--heading-md)!important;
