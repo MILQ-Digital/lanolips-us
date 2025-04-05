@@ -4265,6 +4265,13 @@ body .yotpo-dropdown-closable span.yotpo-dropdown-placeholder{
   font-family: var(--font-heading-family) !important;
 }
 
+.yotpo-vertical-pagination .yotpo-reviews-pagination-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+}
+
 #yotpo-reviews-main-widget .yotpo-headline {
   font-size: var(--heading-md)!important;
   font-family: var(--font-heading-family)!important;
