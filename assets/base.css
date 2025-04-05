@@ -4250,6 +4250,11 @@ body .glide__arrow--right {
   color: inherit!important;
 }
 
+.yotpo-dropdown-closable span.yotpo-dropdown-placeholder {
+  color: var(--Lano-Blue);
+}
+
+
 .yotpo-text-container .yotpo-read-more-text,
 .yotpo-bottom-line .yotpo-bottom-line-left-panel.yotpo-bottom-line-score,
 .yotpo-header-container .yotpo-bottom-line-text,
