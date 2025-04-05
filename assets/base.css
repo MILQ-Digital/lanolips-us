@@ -4254,7 +4254,8 @@ body .glide__arrow--right {
 .yotpo-bottom-line .yotpo-bottom-line-left-panel.yotpo-bottom-line-score,
 .yotpo-header-container .yotpo-bottom-line-text,
 .yotpo-header-container .yotpo-star-distribution-value,
-.yotpo-header-container, .yotpo-reviewer-name {
+.yotpo-header-container, .yotpo-reviewer-name, 
+.yotpo-reviewer-verified-buyer-text {
   font-family: var(--font-heading-family) !important;
 }
 
