@@ -4265,6 +4265,11 @@ body .yotpo-filters-container .yotpo-dropdown-closable {
   font-family: var(--font-heading-family) !important;
 }
 
+body .yotpo-filters-container .yotpo-dropdown-closable {
+  font-family: var(--secondary-font-family);
+}
+--secondary-font-family
+
 #yotpo-reviews-main-widget .yotpo-headline {
   font-size: var(--heading-md)!important;
   font-family: var(--font-heading-family)!important;
