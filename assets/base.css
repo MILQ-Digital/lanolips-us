@@ -4250,7 +4250,8 @@ body .glide__arrow--right {
   color: inherit!important;
 }
 
-.yotpo-text-container .yotpo-read-more-text {
+.yotpo-text-container .yotpo-read-more-text,
+.yotpo-bottom-line .yotpo-bottom-line-left-panel.yotpo-bottom-line-score {
   font-family: var(--font-heading-family) !important;
 }
 
