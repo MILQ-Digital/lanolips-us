@@ -38,7 +38,6 @@
   --inputs-radius: 6px;
   --grid-desktop-horizontal-spacing: 20px;
   --grid-desktop-vertical-spacing: 20px;
-  --secondary-font-family: "Supreme LL TT", sans-serif;
 }
 
 @media screen and (max-width: 749px) {
