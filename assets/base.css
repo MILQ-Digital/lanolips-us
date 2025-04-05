@@ -4266,7 +4266,8 @@ body .glide__arrow--right {
 .yotpo-review-title, .yotpo-date-format, .yotpo-reviews-pagination-item, 
 .yotpo-new-review-btn-wrapper .yotpo-btn-s,
 body .yotpo-filters-container .yotpo-dropdown-closable,
-body .yotpo-dropdown-closable span.yotpo-dropdown-placeholder{ 
+body .yotpo-dropdown-closable span.yotpo-dropdown-placeholder,
+.yotpo-dropdown-option { 
   font-family: var(--font-heading-family) !important;
 }
 
