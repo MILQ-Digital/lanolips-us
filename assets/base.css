@@ -4250,7 +4250,8 @@ body .glide__arrow--right {
   color: inherit!important;
 }
 
-.yotpo-dropdown-closable span.yotpo-dropdown-placeholder {
+.yotpo-dropdown-closable span.yotpo-dropdown-placeholder,
+.yotpo-selected-value {
   color: var(--Lano-Blue);
 }
 
