@@ -1681,4 +1681,12 @@ a.product__text {
   
 }
 
+@media (max-width: 540px) {
+  .product_features_icons {
+    column-gap: 15px;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+}
+
 
