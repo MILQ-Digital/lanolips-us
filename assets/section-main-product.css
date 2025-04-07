@@ -1686,6 +1686,7 @@ a.product__text {
     column-gap: 15px;
     flex-wrap: wrap;
     justify-content: flex-start;
+    row-gap: 10px;
   }
 }
 
