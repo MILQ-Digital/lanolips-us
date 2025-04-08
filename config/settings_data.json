@@ -240,7 +240,7 @@
           "swym_collections_button_size": 25,
           "swym_collections_icon_color": "#000000",
           "swym_collections_product_link_selector": "a.full-unstyled-link.grid-product-item",
-          "swym_collections_product_tile_selector": ".card-wrapper.product-card-wrapper",
+          "swym_collections_product_tile_selector": "li.grid__item",
           "enable_variant_selector": false,
           "swym_add_to_wishlist_title_color": "#333333",
           "swym_variant_selector_font_size_1": 14,
