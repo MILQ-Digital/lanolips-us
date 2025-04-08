@@ -31,10 +31,40 @@
       "settings": {
         "include_margins": true
       }
+    },
+    "17441083223ab01101": {
+      "type": "apps",
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "174410832687f3506d": {
+      "type": "apps",
+      "blocks": {
+        "wishlist_plus_wishlist_page_section_xiCGbH": {
+          "type": "shopify://apps/wishlist-plus/blocks/wishlist-page-section/80c3b1fc-3a8f-407e-8367-ffdeebb8b612",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "wishlist_plus_wishlist_page_section_xiCGbH"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "1744108343305db948": {
+      "type": "apps",
+      "settings": {
+        "include_margins": true
+      }
     }
   },
   "order": [
     "main",
-    "1744108054c4966c69"
+    "1744108054c4966c69",
+    "17441083223ab01101",
+    "174410832687f3506d",
+    "1744108343305db948"
   ]
 }
