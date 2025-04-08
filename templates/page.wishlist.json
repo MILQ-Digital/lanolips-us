@@ -29,13 +29,13 @@
     "17441050164cd79bdd": {
       "type": "apps",
       "blocks": {
-        "wishlist_plus_wishlist_page_section_RHXxrw": {
+        "wishlist_plus_wishlist_page_section_4TzQ3B": {
           "type": "shopify://apps/wishlist-plus/blocks/wishlist-page-section/80c3b1fc-3a8f-407e-8367-ffdeebb8b612",
           "settings": {}
         }
       },
       "block_order": [
-        "wishlist_plus_wishlist_page_section_RHXxrw"
+        "wishlist_plus_wishlist_page_section_4TzQ3B"
       ],
       "settings": {
         "include_margins": true
