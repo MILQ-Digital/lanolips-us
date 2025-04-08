@@ -26,16 +26,10 @@
         "desktop_layout": "image_second"
       }
     },
-    "17441050164cd79bdd": {
-      "type": "apps",
-      "settings": {
-        "include_margins": true
-      }
-    },
-    "17441122683e113220": {
+    "1744118179d8638dba": {
       "type": "apps",
       "blocks": {
-        "wishlist_plus_engage_myaccount_wishlisteditems_BWDm6X": {
+        "wishlist_plus_engage_myaccount_wishlisteditems_YJ6Djr": {
           "type": "shopify://apps/wishlist-plus/blocks/engage-myaccount-wishlisteditems/80c3b1fc-3a8f-407e-8367-ffdeebb8b612",
           "settings": {
             "swym_engage_wishlist_items_background_color": "transparent",
@@ -67,8 +61,20 @@
         }
       },
       "block_order": [
-        "wishlist_plus_engage_myaccount_wishlisteditems_BWDm6X"
+        "wishlist_plus_engage_myaccount_wishlisteditems_YJ6Djr"
       ],
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "17441050164cd79bdd": {
+      "type": "apps",
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "17441122683e113220": {
+      "type": "apps",
       "settings": {
         "include_margins": true
       }
@@ -76,6 +82,7 @@
   },
   "order": [
     "main",
+    "1744118179d8638dba",
     "17441050164cd79bdd",
     "17441122683e113220"
   ]
