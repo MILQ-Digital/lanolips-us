@@ -239,7 +239,7 @@
           "swym_collections_horizontal_offset": 0,
           "swym_collections_button_size": 25,
           "swym_collections_icon_color": "#000000",
-          "swym_collections_product_link_selector": "a.grid-product-item",
+          "swym_collections_product_link_selector": "a.full-unstyled-link.grid-product-item",
           "swym_collections_product_tile_selector": "li.grid__item",
           "enable_variant_selector": false,
           "swym_add_to_wishlist_title_color": "#333333",
