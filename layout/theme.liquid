@@ -364,6 +364,41 @@
   </head>
 
   <body class="template-{{ template | replace: '.', '-' }} gradient{% if settings.animations_hover_elements != 'none' %} animate--hover-{{ settings.animations_hover_elements }}{% endif %} {{ page_type }} {% if template.name == '404' %}error-page error-404{% endif %} {% if template == 'page.contact' %}contact-page{% else %}template--{{ page.handle }}{% endif %}">
+    <div id="loader-wrapper">
+      <div class="loader">
+        <div class="header__heading-logo-wrapper">
+                {% if settings.enable_season %}
+                  {%- assign logo_alt = settings.season_logo.alt | default: shop.name | escape -%}
+                  {%- assign logo_height = settings.season_logo_width | divided_by: settings.season_logo.aspect_ratio -%}
+                  {% capture sizes %}(max-width: {{ settings.season_logo_width | times: 2 }}px) 50vw, {{ settings.season_logo_width }}px{% endcapture %}
+                  {% capture widths %}{{ settings.logo_width }}, {{ settings.season_logo_width | times: 1.5 | round }}, {{ settings.season_logo_width | times: 2 }}{% endcapture %}
+                  {{ settings.season_logo | image_url: width: 600 | image_tag:
+                    class: 'header__heading-logo header__heading-season-logo motion-reduce',
+                    widths: widths,
+                    height: logo_height,
+                    width: settings.season_logo_width,
+                    alt: logo_alt,
+                    sizes: sizes,
+                    preload: true
+                  }}
+                {% else %}
+                  {%- assign logo_alt = settings.logo.alt | default: shop.name | escape -%}
+                  {%- assign logo_height = settings.logo_width | divided_by: settings.logo.aspect_ratio -%}
+                  {% capture sizes %}(max-width: {{ settings.logo_width | times: 2 }}px) 50vw, {{ settings.logo_width }}px{% endcapture %}
+                  {% capture widths %}{{ settings.logo_width }}, {{ settings.logo_width | times: 1.5 | round }}, {{ settings.logo_width | times: 2 }}{% endcapture %}
+                  {{ settings.logo | image_url: width: 600 | image_tag:
+                    class: 'header__heading-logo motion-reduce',
+                    widths: widths,
+                    height: logo_height,
+                    width: settings.logo_width,
+                    alt: logo_alt,
+                    sizes: sizes,
+                    preload: true
+                  }}
+                {% endif %}
+              </div>
+      </div>
+    </div>
     <!-- Google Tag Manager (noscript) -->
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PXJGGMMN"
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
@@ -512,6 +547,15 @@
       });
     </script>
   {% render 'appikon-discounts' %}
+
+    <script>
+      window.addEventListener('load', function () {
+        var loader = document.getElementById('loader-wrapper');
+        if (loader) {
+          loader.classList.add('fade-out');
+        }
+      });
+    </script>
   </body>
 </html>
 
