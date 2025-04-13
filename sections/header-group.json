@@ -17,13 +17,21 @@
         "announcement_6yfKbX": {
           "type": "announcement",
           "settings": {
-            "text": "Free Shipping For Orders Over $50 | We Ship Internationally",
+            "text": "Free Shipping For Orders Over $50",
+            "link": ""
+          }
+        },
+        "announcement_p6MUhh": {
+          "type": "announcement",
+          "settings": {
+            "text": "We Ship Internationally",
             "link": ""
           }
         }
       },
       "block_order": [
-        "announcement_6yfKbX"
+        "announcement_6yfKbX",
+        "announcement_p6MUhh"
       ],
       "settings": {
         "color_scheme": "scheme-1",
