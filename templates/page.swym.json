@@ -49,8 +49,8 @@
           "settings": {
             "swym_engage_wishlist_items_background_color": "rgba(0,0,0,0)",
             "swym_engage_wishlist_items_text_color": "#2b4676",
-            "swym_engage_wishlist_items_background_color_secondary": "#e7e7e7",
-            "swym_engage_wishlist_items_highlight_color": "#808080",
+            "swym_engage_wishlist_items_background_color_secondary": "#f5eff1",
+            "swym_engage_wishlist_items_highlight_color": "#f5eff1",
             "swym_engage_wishlist_items_title": 20,
             "swym_engage_wishlist_items_per_row_desktop": 4,
             "swym_engage_wishlist_items_per_row_tablet": 3,
