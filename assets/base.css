@@ -4342,6 +4342,11 @@ body .yotpo-sr-vertical-border {display: none!important}
     margin: 0 5px !important;
 }
 
+.yotpo-modal .yotpo-review-form textarea,
+.yotpo-modal .yotpo-review-form input {
+  border: 1px solid #FAE8ED;
+}
+
 @media screen and (max-width: 575px) {
   .yotpo-carousel .glide__arrows {
     display: block!important;
