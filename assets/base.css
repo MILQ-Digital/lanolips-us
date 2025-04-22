@@ -4352,6 +4352,11 @@ body .yotpo-sr-vertical-border {display: none!important}
   font-family: var(--font-heading-family)!important;
 }
 
+.yotpo-modal .yotpo-review-form input::placeholder,
+.yotpo-modal .yotpo-review-form textarea::placeholder {
+  color: var(--text-color)!important;
+}
+
 @media screen and (max-width: 575px) {
   .yotpo-carousel .glide__arrows {
     display: block!important;
