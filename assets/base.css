@@ -4344,7 +4344,7 @@ body .yotpo-sr-vertical-border {display: none!important}
 }
 
 .yotpo-modal .yotpo-review-form textarea,
-.yotpo-modal .yotpo-review-form input {
+.yotpo-modal .yotpo-review-form input, .yotpo-modal .yotpo-upload-label {
   border: 1px solid #FAE8ED!important;
   
 }
