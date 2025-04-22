@@ -4337,8 +4337,9 @@ body .yotpo-sr-vertical-border {display: none!important}
   color: var(--text-color)!important;
 }
 
-.yotpo-star-rating-icon {
-  height: 15px!important;
+.yotpo-modal .yotpo-star-rating-icon {
+    height: 15px !important;
+    margin: 0 5px !important;
 }
 
 @media screen and (max-width: 575px) {
