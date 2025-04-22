@@ -4333,7 +4333,8 @@ body .yotpo-sr-vertical-border {display: none!important}
 }
 
 .yotpo-modal .yotpo-modal-header, .yotpo-form-label,
-.yotpo-modal .yotpo-file-input-headline {
+.yotpo-modal .yotpo-file-input-headline,
+.yotpo-modal .yotpo-input-wrapper .yotpo-new-input-message {
   font-family: var(--font-heading-family)!important;
   color: var(--text-color)!important;
 }
