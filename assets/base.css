@@ -4334,6 +4334,7 @@ body .yotpo-sr-vertical-border {display: none!important}
 
 .yotpo-modal .yotpo-modal-header {
   font-family: var(--font-heading-family)!important;
+  color: var(--text-color);
 }
 
 
