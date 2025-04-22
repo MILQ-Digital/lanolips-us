@@ -4332,6 +4332,10 @@ body .yotpo-sr-vertical-border {display: none!important}
   fill: var(--Lano-Blue)!important;
 }
 
+.yotpo-modal .yotpo-modal-header {
+  font-family: var(--font-heading-family)!important;
+}
+
 
 @media screen and (max-width: 575px) {
   .yotpo-carousel .glide__arrows {
