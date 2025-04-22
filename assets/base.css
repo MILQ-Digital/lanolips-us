@@ -4332,7 +4332,7 @@ body .yotpo-sr-vertical-border {display: none!important}
   fill: var(--Lano-Blue)!important;
 }
 
-.yotpo-modal .yotpo-modal-header {
+.yotpo-modal .yotpo-modal-header, .yotpo-form-label {
   font-family: var(--font-heading-family)!important;
   color: var(--text-color);
 }
