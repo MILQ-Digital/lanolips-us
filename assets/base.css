@@ -4492,3 +4492,14 @@ body .yotpo-sr-vertical-border {display: none!important}
     opacity: 1;
   }
 }
+
+.collection-list .card__information section,
+.promo_banner .card__information section {
+  max-height: 44px;
+  margin-top: 15px;
+  width: fit-content;
+}
+
+.grid__item {
+  position: relative !important;
+}

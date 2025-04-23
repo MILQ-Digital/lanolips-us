@@ -130,7 +130,8 @@
               | split: "&" | first -%}
         
             <!-- YouTube Embed -->
-            <iframe 
+            <iframe
+              title="Video Player"
               class="slideshow__video"
               src="https://www.youtube.com/embed/{{ video_id }}?autoplay=1&mute=1&loop=1&playlist={{ video_id }}" 
               frameborder="0"
@@ -145,6 +146,7 @@
         
             <!-- Vimeo Embed -->
             <iframe 
+              title="Video Player"
               class="slideshow__video"
               src="https://player.vimeo.com/video/{{ vimeo_id }}?autoplay=1&muted=1&loop=1" 
               frameborder="0"
@@ -159,7 +161,7 @@
         {%- elsif block.settings.slide_video_file != blank -%}
           <!-- Shopify MP4 Video Upload -->
           {%- assign poster_url = block.settings.image | image_url: width: 3840 -%}
-          {{ block.settings.slide_video_file | video_tag: autoplay: true, loop: true, muted: true, controls: false, class: 'slideshow__video', poster: poster_url }}
+          {{ block.settings.slide_video_file | video_tag: autoplay: true, loop: true, muted: true, controls: true, class: 'slideshow__video', poster: poster_url }}
         
         {%- elsif block.settings.image -%}
           <!-- Fallback Image -->
@@ -202,7 +204,7 @@
                   {% endif %}
                   class="button {% if block.settings.button_style_secondary %}button--secondary{% else %}button--primary{% endif %}"
                 >
-                  {{- block.settings.button_label | escape -}}
+                  {{- block.settings.button_label | escape -}} <span class="visually-hidden"> - {{ block.settings.heading | escape }}</span>
                 </a>
               </div>
             {%- endif -%}
