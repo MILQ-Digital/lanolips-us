@@ -68,6 +68,7 @@
               </span>
             </button>
             <input
+              title="Search Input Field"
               class="search__input field__input"
               id="{{ input_id }}"
               type="search"
@@ -87,7 +88,9 @@
                 spellcheck="false"
               {%- endif -%}
             >
+            {% comment %}
             <label class="field__label" for="{{ input_id }}">{{ 'general.search.search' | t }}</label>
+            {% endcomment %}
             <input type="hidden" name="options[prefix]" value="last">
             <button
               type="reset"

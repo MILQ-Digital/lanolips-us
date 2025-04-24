@@ -129,7 +129,11 @@
               </span>            
             </p>
           </div>
-          <button class="button button--bright-pink button_desktop">Shop Now</button>
+              {%- if card_collection.title != blank -%}
+                <section class="button button--bright-pink button_desktop">Shop Now <span class="visually-hidden"> - {{ card_collection.title | escape }}</span></section>
+              {%- else -%}
+                <section class="button button--bright-pink button_desktop">Shop Now <span class="visually-hidden"> - {{ 'onboarding.collection_title' | t }}</span></section>
+              {%- endif -%}
         </div>
       </div>
           {%- if card_collection.featured_image and card_collection.description != blank -%}
@@ -137,7 +141,11 @@
               {{- card_collection.description | strip_html | truncatewords: 12 -}}
             </p>
           {%- endif -%}   
-      <div class="card__content button_mobile"><div class="card__information"><button class="button button--bright-pink ">Shop Now</button></div>  </div>
+              {%- if card_collection.title != blank -%}
+                <section class="button button--bright-pink button_desktop">Shop Now <span class="visually-hidden"> - {{ card_collection.title | escape }}</span></section>
+              {%- else -%}
+                <section class="button button--bright-pink button_desktop">Shop Now <span class="visually-hidden"> - {{ 'onboarding.collection_title' | t }}</span></section>
+              {%- endif -%}
     {%- endif -%}
     {%- if card_collection == blank -%}
       <div class="card__content">

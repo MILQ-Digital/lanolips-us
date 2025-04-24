@@ -1,5 +1,5 @@
 <nav class="header__inline-menu">
-  <ul class="list-menu list-menu--inline" role="list">
+  <ul class="list-menu list-menu--inline">
     {%- for link in section.settings.menu.links -%}
       {%- liquid
         assign parent_index = forloop.index
@@ -35,7 +35,6 @@
         endfor
       -%}
       <li
-        role="menuitem"
         class="{{ link.title | handle }} {% if link.title contains 'Sale' %}link-sale{% endif %} {% if has_mega_menu and has_image %}with_megamenu_image {% endif %} {% if has_sub_menu or has_mega_menu or has_image or has_promotion %} menu-item-has-children{% endif %}{% if has_mega_menu %} menu-item-has-megamenu{% endif %}{% if link.active %} active{% endif %}"
         {% if has_sub_menu %}
           data-item-title="{{ link.title | escape }}"
@@ -44,6 +43,16 @@
         <a href="{{ link.url }}" {%- if link.active %} aria-current="page"{% endif -%}>
           {{- link.title -}}
         </a> 
+
+        {% if has_sub_menu or has_mega_menu or has_image or has_promotion %}
+        <button aria-label="Expand {{ link.title | escape }} Sub-Menu" aria-expanded="false" class="visually-hidden expand-subMenu">
+            <span class="icon-dropdown">
+                <svg width="40" height="25" viewBox="-2.5 -5 75 60" preserveAspectRatio="none">
+                  <path d="M0,0 l35,50 l35,-50" fill="none" stroke="black" stroke-linecap="round" stroke-width="5"></path>
+                </svg> 
+            </span>
+        </button>
+        {% endif %}
 
             {%- if has_sub_menu == true and has_mega_menu == false and has_image == false -%}
               <div class="sub-menu sub-menu--static withsub {%- if has_promotion %} sub-menu--has-promotion{%- endif -%}" tabindex="-1">
@@ -58,19 +67,18 @@
                     -%}
                     <li
                       class="{%- if l.active %}active{% endif %}{% if has_sub_menu %} menu-item-has-children{%- endif -%}"
-                      role="none"
                       {% if has_sub_menu %}
                         data-item-title="{{ l.title | escape }}"
                       {% endif %}
                     >
-                      <a href="{{ l.url }}" role="menuitem">
+                      <a href="{{ l.url }}">
                         {{- l.title -}}
                       </a>
                       {%- if has_sub_menu -%}
-                        <ul class="sub-menu" role="menu">
+                        <ul class="sub-menu">
                           {%- for sub_link in l.links -%}
-                            <li class="{%- if sub_link.active %} active{% endif %}" role="none">
-                              <a href="{{ sub_link.url }}" role="menuitem">{{- sub_link.title -}}</a>
+                            <li class="{%- if sub_link.active %} active{% endif %}">
+                              <a href="{{ sub_link.url }}">{{- sub_link.title -}}</a>
                             </li>
                           {%- endfor -%}
                         </ul>
@@ -100,13 +108,13 @@
 
                               <ul class="mega-menu-columns" tabindex="-1">
                                 {%- for l in mega_sub_menu.links -%}
-                                  <li class="{% if l.active %} active{% endif %}" role="none">
-                                    <a href="{{ l.url }}" class="mega-menu-columns__heading" role="menuitem">{{ l.title }}</a>
+                                  <li class="{% if l.active %} active{% endif %}">
+                                    <a href="{{ l.url }}" class="mega-menu-columns__heading">{{ l.title }}</a>
                                     {%- if l.links.size > 0 -%}
-                                      <ul role="menu">
+                                      <ul>
                                         {%- for sub_link in l.links -%}
-                                          <li class="{% if sub_link.active %} active{% endif %}" role="none">
-                                            <a href="{{ sub_link.url }}" role="menuitem">{{ sub_link.title }}</a>
+                                          <li class="{% if sub_link.active %} active{% endif %}">
+                                            <a href="{{ sub_link.url }}">{{ sub_link.title }}</a>
                                           </li>
                                         {%- endfor -%}
                                       </ul>

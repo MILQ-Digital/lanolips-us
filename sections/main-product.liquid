@@ -269,6 +269,7 @@
                         </span>
                       </button>
                       <input
+                        title="Input Desired Quantity"
                         class="quantity__input"
                         type="number"
                         name="quantity"
@@ -571,7 +572,6 @@
                           <div
                             id="Slider-{{ block.id }}"
                             class="contains-card contains-card--product complementary-slider grid grid--1-col"
-                            role="list"
                             {% if number_of_slides > 1 %}
                               aria-label="{{ 'general.slider.name' | t }}"
                             {% endif %}
@@ -582,13 +582,12 @@
                                 id="Slide-{{ block.id }}-{{ forloop.index }}"
                                 class="complementary-slide complementary-slide--{{ settings.card_style }} grid__item slider__slide slideshow__slide"
                                 tabindex="-1"
-                                role="group"
                                 {% if number_of_slides > 1 %}
                                   aria-roledescription="{{ 'sections.slideshow.slide' | t }}"
                                   aria-label="{{ forloop.index }} {{ 'general.slider.of' | t }} {{ forloop.length }}"
                                 {% endif %}
                               >
-                                <ul class="list-unstyled" role="list">
+                                <ul class="list-unstyled">
                                   {%- for product in recommendations.products
                                     limit: block.settings.products_per_page
                                     offset: continue
@@ -668,7 +667,6 @@
     {%- for block in popups -%}
       <modal-dialog id="PopupModal-{{ block.id }}" class="product-popup-modal" {{ block.shopify_attributes }}>
         <div
-          role="dialog"
           aria-label="{{ block.settings.text }}"
           aria-modal="true"
           class="product-popup-modal__content"
