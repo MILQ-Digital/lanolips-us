@@ -587,6 +587,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
 {% if cart.total_price >= free_gift_limit  %}
 
+  {%- unless settings.enable_freegift -%}
+
   <div class="free-gift-products cart-upsell">
     <h2 class="heading-2xs">Choose your free gift</h2>
     <slider-component class="cart-upsell-carousel upsell-carousel slider-mobile-gutter slider-component-full-width slider-component-desktop scroll-trigger animate--slide-in">
@@ -648,21 +650,21 @@ document.addEventListener('DOMContentLoaded', function () {
       </div>
     </slider-component>
   </div>
-
-{% else %}
-  {% assign upsell_collection = collections['upsell'] %}  <!-- Default upsell collection -->
-
-  {% for item in cart.items %}
-    {% for collection in item.product.collections %}
-      {% if collection.handle %}
-        {% assign upsell_collection = collections[collection.handle] %}
+  {%- endunless -%}
+  {% else %}
+    {% assign upsell_collection = collections['upsell'] %}  <!-- Default upsell collection -->
+  
+    {% for item in cart.items %}
+      {% for collection in item.product.collections %}
+        {% if collection.handle %}
+          {% assign upsell_collection = collections[collection.handle] %}
+          {% break %}
+        {% endif %}
+      {% endfor %}
+      {% if upsell_collection != collections['upsell'] %}
         {% break %}
       {% endif %}
     {% endfor %}
-    {% if upsell_collection != collections['upsell'] %}
-      {% break %}
-    {% endif %}
-  {% endfor %}
 
   {% assign upsell_products = upsell_collection.products | limit: 6 %}
 
