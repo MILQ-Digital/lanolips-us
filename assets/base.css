@@ -4179,12 +4179,12 @@ body .otCookiesNotification #cookies-message-context a {
   line-height: 1em !important;
 }
 
-.yotpo-reviews-carousel-container {
+/*.yotpo-reviews-carousel-container {
   order: 3;
   padding: 40px;
   border-radius: 8px;
   background: #FAE8ED;
-}
+}*/
 
 .yotpo-reviews-carousel-widget-container.yotpo-reviews-carousel-widget-mobile-mode {
   padding: 0 var(--outer);
