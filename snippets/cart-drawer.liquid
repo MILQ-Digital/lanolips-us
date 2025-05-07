@@ -587,7 +587,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 {% if cart.total_price >= free_gift_limit  %}
 
-  {%- unless settings.enable_freegift -%}
+  {%- if settings.enable_freegift -%}
 
   <div class="free-gift-products cart-upsell">
     <h2 class="heading-2xs">Choose your free gift</h2>
@@ -650,7 +650,7 @@ document.addEventListener('DOMContentLoaded', function () {
       </div>
     </slider-component>
   </div>
-  {%- endunless -%}
+  {%- endif -%}
   
   {% else %}
     {% assign upsell_collection = collections['upsell'] %}  <!-- Default upsell collection -->
