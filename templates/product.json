@@ -136,6 +136,7 @@
         },
         "foursixty_shoppable_social_ugc_custom_minifeed_9Bjg6Y": {
           "type": "shopify://apps/foursixty-shoppable-social-ugc/blocks/custom_minifeed/e2616dfe-fbb6-4e7d-874d-d250b973556d",
+          "disabled": true,
           "settings": {
             "foreground_color": "#ffffff",
             "background_color": "#000000",
