@@ -4179,12 +4179,12 @@ body .otCookiesNotification #cookies-message-context a {
   line-height: 1em !important;
 }
 
-/*.yotpo-reviews-carousel-container {
+.yotpo-reviews-carousel-container {
   order: 3;
   padding: 40px;
   border-radius: 8px;
   background: #FAE8ED;
-}*/
+}
 
 .yotpo-reviews-carousel-widget-container.yotpo-reviews-carousel-widget-mobile-mode {
   padding: 0 var(--outer);
@@ -4192,13 +4192,13 @@ body .otCookiesNotification #cookies-message-context a {
   max-width: var(--page-width);
 } 
 
-/*body .reviews-carousel-card-container {
+body .reviews-carousel-card-container {
   border: none;
   border-radius: 8px;
   padding: 40px!important;
   max-width: 375px;
   width: 375px!important;
-} */
+}
 
 body .yotpo-carousel .glide__slide {
   width: auto!important;
@@ -4364,9 +4364,9 @@ body .yotpo-sr-vertical-border {display: none!important}
  .yotpo-reviews-carousel-widget-container.yotpo-reviews-carousel-widget-mobile-mode {
     padding: unset;
  }
-  /*.yotpo-reviews-carousel-container {
+  .yotpo-reviews-carousel-container {
     padding: 40px 20px;
-  }*/
+  }
  .afterpay-paragraph {
     text-align: left;
 } 
@@ -4473,9 +4473,9 @@ body .yotpo-sr-vertical-border {display: none!important}
   }
 
   body .reviews-carousel-card-container {
-    /*max-width: 100vw;
+    max-width: 100vw;
     width: 100vw !important;
-  }*/
+  }
 }
 
 .cart-upsell .swym-wishlist-collections-v2-container {
