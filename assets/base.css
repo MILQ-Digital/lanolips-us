@@ -4364,9 +4364,9 @@ body .yotpo-sr-vertical-border {display: none!important}
  .yotpo-reviews-carousel-widget-container.yotpo-reviews-carousel-widget-mobile-mode {
     padding: unset;
  }
-  .yotpo-reviews-carousel-container {
+  /*.yotpo-reviews-carousel-container {
     padding: 40px 20px;
-  }
+  }*/
  .afterpay-paragraph {
     text-align: left;
 } 
