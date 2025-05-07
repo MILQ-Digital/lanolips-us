@@ -359,11 +359,29 @@
     },
     "custom_liquid_PtfDQV": {
       "type": "custom-liquid",
+      "disabled": true,
       "settings": {
         "custom_liquid": "<div class=\"yotpo-widget-instance\" data-yotpo-instance-id=\"1049541\" data-yotpo-product-id=\"{{product.id}}\" data-yotpo-cart-product-id=\"{{item.product.id}}\"></div>",
         "color_scheme": "scheme-3",
         "padding_top": 56,
         "padding_bottom": 56
+      }
+    },
+    "1746592088edea3eb3": {
+      "type": "apps",
+      "blocks": {
+        "yotpo_product_reviews_reviews_carousel_CiPBb3": {
+          "type": "shopify://apps/yotpo-product-reviews/blocks/reviews_carousel/eb7dfd7d-db44-4334-bc49-c893b51b36cf",
+          "settings": {
+            "product": "101-dry-skin-super-cream-multipurpose-for-face-body"
+          }
+        }
+      },
+      "block_order": [
+        "yotpo_product_reviews_reviews_carousel_CiPBb3"
+      ],
+      "settings": {
+        "include_margins": true
       }
     },
     "rich_text_9jF4qD": {
@@ -468,6 +486,7 @@
     "rich_text_636tak",
     "custom_liquid_qRbjDe",
     "custom_liquid_PtfDQV",
+    "1746592088edea3eb3",
     "rich_text_9jF4qD",
     "custom_liquid_aW4CwX",
     "173950177361100e1b",
