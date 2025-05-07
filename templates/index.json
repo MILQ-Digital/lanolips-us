@@ -359,7 +359,6 @@
     },
     "custom_liquid_PtfDQV": {
       "type": "custom-liquid",
-      "disabled": true,
       "settings": {
         "custom_liquid": "<div class=\"yotpo-widget-instance\" data-yotpo-instance-id=\"1049541\" data-yotpo-product-id=\"{{product.id}}\" data-yotpo-cart-product-id=\"{{item.product.id}}\"></div>",
         "color_scheme": "scheme-3",
@@ -380,6 +379,7 @@
       "block_order": [
         "yotpo_product_reviews_reviews_carousel_CiPBb3"
       ],
+      "disabled": true,
       "settings": {
         "include_margins": true
       }
