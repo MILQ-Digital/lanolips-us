@@ -795,16 +795,12 @@
 .quick-add-media {
   opacity: 0;
   position: absolute;
-  bottom: 180px;
+  bottom: 10px;
   left: 20px;
   right: 20px;
 }
 
-.collection_slider .quick-add-media {
-  bottom: 140px !important;
-}
-
-.grid__item:hover .quick-add-media {
+.card-wrapper:hover .quick-add-media {
   opacity: 1;
 }
 
@@ -818,8 +814,6 @@
   .quick-add-mobile,
   .collection-list .card__content.button_mobile {
     display: block;
-    position: relative;
-    top: -60px;
   }
 
   .quick-add-media,
@@ -924,7 +918,6 @@
   .card--standard:not(.article-card)>.card__content .card__information {
     flex-direction: column-reverse;
     display: flex;
-    height: fit-content;
   }
 
   .article-card .card__content {

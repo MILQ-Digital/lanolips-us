@@ -27,11 +27,11 @@
 
 <div class="disclosure">
   <button
-    aria-label="Country Selector"
     type="button"
     class="disclosure__button localization-form__select localization-selector link link--text caption-large"
     aria-expanded="false"
     aria-controls="{{ localPosition }}-country-results"
+    aria-describedby="{{ localPosition }}Label"
   >
     <span>
       {{ localization.country.currency.iso_code }}

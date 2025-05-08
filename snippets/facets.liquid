@@ -391,10 +391,10 @@
                 <div class="select">
                   {%- assign sort_by = results.sort_by | default: results.default_sort_by -%}
                   <select
-                    title="Sort-By Filter Selector"
                     name="sort_by"
                     class="facet-filters__sort select__select caption-large"
                     id="SortBy"
+                    aria-describedby="a11y-refresh-page-message"
                   >
                     {%- for option in results.sort_options -%}
                       <option
@@ -735,10 +735,10 @@
             <div class="select">              
               {%- assign sort_by = results.sort_by | default: results.default_sort_by -%}
               <select
-                title="Sort-By Filter Selector"
                 name="sort_by"
                 class="facet-filters__sort select__select caption-large"
                 id="SortBy"
+                aria-describedby="a11y-refresh-page-message"
               >
                 <option value="" disabled selected>Sort</option>
                 {%- for option in results.sort_options -%}

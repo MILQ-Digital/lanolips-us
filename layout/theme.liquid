@@ -408,10 +408,6 @@
       {{ 'accessibility.skip_to_text' | t }}
     </a>
 
-    <a class="skip-to-content-link button visually-hidden" href="/pages/accessibility-statement">
-      Go to Accessibility Statement
-    </a>
-
     {%- if settings.cart_type == 'drawer' -%}
       {%- render 'cart-drawer' -%}
     {%- endif -%}
@@ -560,114 +556,6 @@
         }
       });
     </script>
-
-  <script>
-  const focusableElements =
-                'button, a, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])';
-
-            function trapFocus(selector) {
-                const modal = document.querySelector(selector); // select the modal by it's CSS selector
-                const firstFocusableElement = modal.querySelectorAll(focusableElements)[0]; // get first element to be focused inside modal
-                const focusableContent = modal.querySelectorAll(focusableElements);
-                const lastFocusableElement = focusableContent[focusableContent.length - 1]; // get last element to be focused inside modal
-                document.addEventListener('keydown', function(e) {
-                let isTabPressed = e.key === 'Tab' || e.keyCode === 9;
-
-                if (!isTabPressed) {
-                    return;
-                }
-
-                if (e.shiftKey) { // if shift key pressed for shift + tab combination
-                    if (document.activeElement === firstFocusableElement) {
-                    lastFocusableElement.focus(); // add focus for the last focusable element
-                    e.preventDefault();
-                    }
-                } else { // if tab key is pressed
-                    if (document.activeElement === lastFocusableElement) { // if focused has reached to last focusable element then focus first focusable element after pressing tab
-                    firstFocusableElement.focus(); // add focus for the first focusable element
-                    e.preventDefault();
-                    }
-                }
-                });
-
-                firstFocusableElement.focus();
-            }
-
-    function keyToClick(event) {
-                if (event.key == "Enter") {
-                    event.preventDefault();
-                    event.target.click();
-                }
-            }
-  var $$ = (selector, attribute, value) => {
-      const interval = setInterval(() => {
-          const elems = document.querySelectorAll(selector)
-          elems.forEach((elem) => {
-              if (value) {
-                  if(!elem.hasAttribute(attribute)) {
-                      elem.setAttribute(attribute, value)
-                      clearInterval(interval)
-                  }
-              } else {
-                  elem.removeAttribute(attribute)
-                  clearInterval(interval)
-              }
-          }) 
-      }, 100)
-  }
-  $$(".swym-wishlist", "aria-label", "Swym Wishlist. Redirects you to Wishlist Page")
-  $$("#PBarNextFrame", "title", "Video Player")
-  $$(".kl-private-reset-css-Xuajs1 img", "alt", "Klaviyo Marketing Image")
-  $$("#swym-atw-pdp-button-img-icon", "alt", "Add to Wishlist Icon")
-  $$(".yotpo-main-reviews-widget", "role")
-  $$(".yotpo-main-reviews-widget", "aria-labelledby")
-  </script>
-          <script>
-            const expandButtons = document.querySelectorAll('.expand-subMenu');
-            
-            expandButtons.forEach((button) => {
-              const dropdownMenu = button.nextElementSibling;
-            
-              function closeMenu() {
-                button.setAttribute('aria-expanded', 'false');
-                  dropdownMenu.style.opacity = '0';
-                  dropdownMenu.style.visibility = 'hidden';
-                  dropdownMenu.style.display = 'none';
-                  dropdownMenu.style.height = 'auto';
-              }
-            
-              function toggleMenu() {
-                const isExpanded = button.getAttribute('aria-expanded') === 'true';
-                if (isExpanded) {
-                  closeMenu();
-                } else {
-                  button.setAttribute('aria-expanded', 'true');
-                  dropdownMenu.style.opacity = '1';
-                  dropdownMenu.style.visibility = 'visible';
-                  dropdownMenu.style.display = 'block';
-                  dropdownMenu.style.height = 'auto';
-                }
-              }
-            
-              button.addEventListener('keydown', (event) => {
-                if (event.key === 'Enter') {
-                  toggleMenu();
-                  event.preventDefault(); 
-                } else if (event.key === 'Escape') {
-                  if (button.getAttribute('aria-expanded') === 'true') {
-                    closeMenu();
-                  }
-                }
-              });
-            
-              dropdownMenu.addEventListener('keydown', (event) => {
-                if (event.key === 'Escape') {
-                  closeMenu();
-                  button.focus();
-                }
-              });
-            });
-        </script>
   </body>
 </html>
 
