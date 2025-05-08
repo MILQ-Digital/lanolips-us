@@ -269,13 +269,13 @@
   }
 }
 
-.collection-list .card-wrapper:hover .card.card--standard > .card__content {
+/*.collection-list .card-wrapper:hover .card.card--standard > .card__content {
   background: rgb(255,255,255);
   background: -moz-linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(0,0,0,0.14889705882352944) 100%);
   background: -webkit-linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(0,0,0,0.14889705882352944) 100%);
   background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(0,0,0,0.14889705882352944) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#000000",GradientType=1);
-}
+}*/
 
 .card:not(.ratio) > .card__content {
   grid-template-rows: max-content minmax(0, 1fr) max-content auto;
