@@ -81,11 +81,24 @@
       "settings": {
         "include_margins": true
       }
+    },
+    "rich_text_J6mETJ": {
+      "type": "rich-text",
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-3",
+        "full_width": true,
+        "padding_top": 20,
+        "padding_bottom": 32
+      }
     }
   },
   "order": [
     "main",
     "174410832687f3506d",
-    "1744108343305db948"
+    "1744108343305db948",
+    "rich_text_J6mETJ"
   ]
 }
