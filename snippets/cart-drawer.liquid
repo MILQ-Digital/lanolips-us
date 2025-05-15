@@ -588,232 +588,153 @@ document.addEventListener('DOMContentLoaded', function () {
 {% if cart.total_price >= free_gift_limit  %}
 
   {%- if settings.enable_freegift -%}
-    <div class="free-gift-products cart-upsell">
-      <h2 class="heading-2xs">Choose your free gift</h2>
-      <slider-component class="cart-upsell-carousel upsell-carousel slider-mobile-gutter slider-component-full-width slider-component-desktop scroll-trigger animate--slide-in">
-        <ul id="Slider-Upsell"
-            data-id="Slider-Upsell"
-            class="grid product-grid contains-card contains-card--product contains-card--standard grid--1-col-desktop grid--1-col-tablet-down slider slider--desktop slider--tablet grid--peek"
-            role="list"
-            aria-label="{{ 'general.slider.name' | t }}">
-  
-              {%- for product in freegift_product_list limit: freegift_product_list_size -%}
-                {% assign product_form_id = 'quick-add-' | append: section_id | append: product.id %}
-                <li id="Slide-Upsell-{{ forloop.index }}"
-                    class="cart-upsell-item upsell-item grid__item{% if show_mobile_slider or show_desktop_slider %} slider__slide{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
-                    {% if settings.animations_reveal_on_scroll %}
-                      data-cascade
-                      style="--animation-order: {{ forloop.index }};"
-                    {% endif %}">
-  
-                              {% assign quick_add = 'standard' %}
-              {% assign image_ratio = 'portrait' %}
-              {% render 'card-product',
-                                          card_product: product,
-                                          media_aspect_ratio: image_ratio,
-                                          show_secondary_image: false,
-                                          lazy_load: false,
-                                          skip_styles: skip_card_product_styles,
-                                          quick_add: 'standard',
-                                          section_id: section.id,
-                                          horizontal_class: true,
-                                          horizontal_quick_add: true
-                                        %}
-  
-                </li>
-              {%- endfor -%}
-        </ul>
-        <div class="slider-buttons">
-          <button
-            type="button"
-            class="slider-button slider-button--prev"
-            name="previous"
-            aria-label="{{ 'general.slider.previous_slide' | t }}"
-            aria-controls="Slider-{{ section.id }}"
-          >
-            <span class="svg-wrapper">
-              {{- 'icon-arrow-left.svg' | inline_asset_content -}}
-            </span>
-          </button>
-          <button
-            type="button"
-            class="slider-button slider-button--next"
-            name="next"
-            aria-label="{{ 'general.slider.next_slide' | t }}"
-            aria-controls="Slider-{{ section.id }}"
-          >
-            <span class="svg-wrapper">
-              {{- 'icon-arrow-right.svg' | inline_asset_content -}}
-            </span>
-          </button>
-        </div>
-      </slider-component>
-    </div>
-    {% else %}
-      {% assign upsell_collection = collections['upsell'] %}  <!-- Default upsell collection -->
-    
-      {% for item in cart.items %}
-        {% for collection in item.product.collections %}
-          {% if collection.handle %}
-            {% assign upsell_collection = collections[collection.handle] %}
-            {% break %}
-          {% endif %}
-        {% endfor %}
-        {% if upsell_collection != collections['upsell'] %}
-          {% break %}
-        {% endif %}
-      {% endfor %}
-  
-    {% assign upsell_products = upsell_collection.products | limit: 6 %}
-  
-    <div class="cart-upsell">
-      <h2 class="heading-2xs">Pair with</h2>
-      <slider-component class="cart-upsell-carousel upsell-carousel slider-mobile-gutter slider-component-full-width slider-component-desktop scroll-trigger animate--slide-in">
-        <ul id="Slider-Upsell"
-            data-id="Slider-Upsell"
-            class="grid product-grid contains-card contains-card--product contains-card--standard grid--1-col-desktop grid--1-col-tablet-down slider slider--desktop slider--tablet grid--peek"
-            role="list"
-            aria-label="{{ 'general.slider.name' | t }}">
-  
-          {% for product in upsell_products %}
-            {% assign product_form_id = 'quick-add-' | append: section_id | append: product.id %}
-            <li id="Slide-Upsell-{{ forloop.index }}"
-                class="cart-upsell-item upsell-item grid__item{% if show_mobile_slider or show_desktop_slider %} slider__slide{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
-                {% if settings.animations_reveal_on_scroll %}
-                  data-cascade
-                  style="--animation-order: {{ forloop.index }};"
-                {% endif %}">
-  
-              {% assign quick_add = 'standard' %}
-              {% assign image_ratio = 'portrait' %}
-              {% render 'card-product',
-                card_product: product,
-                media_aspect_ratio: image_ratio,
-                show_secondary_image: false,
-                lazy_load: false,
-                skip_styles: skip_card_product_styles,
-                quick_add: 'standard',
-                section_id: section.id,
-                horizontal_class: true,
-                horizontal_quick_add: true
-              %}
-            </li>
-          {% endfor %}
-        </ul>
-        <div class="slider-buttons">
-          <button
-            type="button"
-            class="slider-button slider-button--prev"
-            name="previous"
-            aria-label="{{ 'general.slider.previous_slide' | t }}"
-            aria-controls="Slider-{{ section.id }}"
-          >
-            <span class="svg-wrapper">
-              {{- 'icon-arrow-left.svg' | inline_asset_content -}}
-            </span>
-          </button>
-          <button
-            type="button"
-            class="slider-button slider-button--next"
-            name="next"
-            aria-label="{{ 'general.slider.next_slide' | t }}"
-            aria-controls="Slider-{{ section.id }}"
-          >
-            <span class="svg-wrapper">
-              {{- 'icon-arrow-right.svg' | inline_asset_content -}}
-            </span>
-          </button>
-        </div>
-      </slider-component>
-    </div>
-    {{ 'component-card.css' | asset_url | stylesheet_tag }}
-    {{ 'component-complementary-products.css' | asset_url | stylesheet_tag }}
-    {{ 'quick-add.css' | asset_url | stylesheet_tag }}
-    <script src="{{ 'quick-add.js' | asset_url }}" defer="defer"></script>  
+
+  <div class="free-gift-products cart-upsell">
+    <h2 class="heading-2xs">Choose your free gift</h2>
+    <slider-component class="cart-upsell-carousel upsell-carousel slider-mobile-gutter slider-component-full-width slider-component-desktop scroll-trigger animate--slide-in">
+      <ul id="Slider-Upsell"
+          data-id="Slider-Upsell"
+          class="grid product-grid contains-card contains-card--product contains-card--standard grid--1-col-desktop grid--1-col-tablet-down slider slider--desktop slider--tablet grid--peek"
+          role="list"
+          aria-label="{{ 'general.slider.name' | t }}">
+
+            {%- for product in freegift_product_list limit: freegift_product_list_size -%}
+              {% assign product_form_id = 'quick-add-' | append: section_id | append: product.id %}
+              <li id="Slide-Upsell-{{ forloop.index }}"
+                  class="cart-upsell-item upsell-item grid__item{% if show_mobile_slider or show_desktop_slider %} slider__slide{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
+                  {% if settings.animations_reveal_on_scroll %}
+                    data-cascade
+                    style="--animation-order: {{ forloop.index }};"
+                  {% endif %}">
+
+                            {% assign quick_add = 'standard' %}
+            {% assign image_ratio = 'portrait' %}
+            {% render 'card-product',
+                                        card_product: product,
+                                        media_aspect_ratio: image_ratio,
+                                        show_secondary_image: false,
+                                        lazy_load: false,
+                                        skip_styles: skip_card_product_styles,
+                                        quick_add: 'standard',
+                                        section_id: section.id,
+                                        horizontal_class: true,
+                                        horizontal_quick_add: true
+                                      %}
+
+              </li>
+            {%- endfor -%}
+      </ul>
+      <div class="slider-buttons">
+        <button
+          type="button"
+          class="slider-button slider-button--prev"
+          name="previous"
+          aria-label="{{ 'general.slider.previous_slide' | t }}"
+          aria-controls="Slider-{{ section.id }}"
+        >
+          <span class="svg-wrapper">
+            {{- 'icon-arrow-left.svg' | inline_asset_content -}}
+          </span>
+        </button>
+        <button
+          type="button"
+          class="slider-button slider-button--next"
+          name="next"
+          aria-label="{{ 'general.slider.next_slide' | t }}"
+          aria-controls="Slider-{{ section.id }}"
+        >
+          <span class="svg-wrapper">
+            {{- 'icon-arrow-right.svg' | inline_asset_content -}}
+          </span>
+        </button>
+      </div>
+    </slider-component>
+  </div>
   {%- endif -%}
   
   {% else %}
-      {% assign upsell_collection = collections['upsell'] %}  <!-- Default upsell collection -->
-    
-      {% for item in cart.items %}
-        {% for collection in item.product.collections %}
-          {% if collection.handle %}
-            {% assign upsell_collection = collections[collection.handle] %}
-            {% break %}
-          {% endif %}
-        {% endfor %}
-        {% if upsell_collection != collections['upsell'] %}
+    {% assign upsell_collection = collections['upsell'] %}  <!-- Default upsell collection -->
+  
+    {% for item in cart.items %}
+      {% for collection in item.product.collections %}
+        {% if collection.handle %}
+          {% assign upsell_collection = collections[collection.handle] %}
           {% break %}
         {% endif %}
       {% endfor %}
-  
-    {% assign upsell_products = upsell_collection.products | limit: 6 %}
-  
-    <div class="cart-upsell">
-      <h2 class="heading-2xs">Pair with</h2>
-      <slider-component class="cart-upsell-carousel upsell-carousel slider-mobile-gutter slider-component-full-width slider-component-desktop scroll-trigger animate--slide-in">
-        <ul id="Slider-Upsell"
-            data-id="Slider-Upsell"
-            class="grid product-grid contains-card contains-card--product contains-card--standard grid--1-col-desktop grid--1-col-tablet-down slider slider--desktop slider--tablet grid--peek"
-            role="list"
-            aria-label="{{ 'general.slider.name' | t }}">
-  
-          {% for product in upsell_products %}
-            {% assign product_form_id = 'quick-add-' | append: section_id | append: product.id %}
-            <li id="Slide-Upsell-{{ forloop.index }}"
-                class="cart-upsell-item upsell-item grid__item{% if show_mobile_slider or show_desktop_slider %} slider__slide{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
-                {% if settings.animations_reveal_on_scroll %}
-                  data-cascade
-                  style="--animation-order: {{ forloop.index }};"
-                {% endif %}">
-  
-              {% assign quick_add = 'standard' %}
-              {% assign image_ratio = 'portrait' %}
-              {% render 'card-product',
-                card_product: product,
-                media_aspect_ratio: image_ratio,
-                show_secondary_image: false,
-                lazy_load: false,
-                skip_styles: skip_card_product_styles,
-                quick_add: 'standard',
-                section_id: section.id,
-                horizontal_class: true,
-                horizontal_quick_add: true
-              %}
-            </li>
-          {% endfor %}
-        </ul>
-        <div class="slider-buttons">
-          <button
-            type="button"
-            class="slider-button slider-button--prev"
-            name="previous"
-            aria-label="{{ 'general.slider.previous_slide' | t }}"
-            aria-controls="Slider-{{ section.id }}"
-          >
-            <span class="svg-wrapper">
-              {{- 'icon-arrow-left.svg' | inline_asset_content -}}
-            </span>
-          </button>
-          <button
-            type="button"
-            class="slider-button slider-button--next"
-            name="next"
-            aria-label="{{ 'general.slider.next_slide' | t }}"
-            aria-controls="Slider-{{ section.id }}"
-          >
-            <span class="svg-wrapper">
-              {{- 'icon-arrow-right.svg' | inline_asset_content -}}
-            </span>
-          </button>
-        </div>
-      </slider-component>
-    </div>
-    {{ 'component-card.css' | asset_url | stylesheet_tag }}
-    {{ 'component-complementary-products.css' | asset_url | stylesheet_tag }}
-    {{ 'quick-add.css' | asset_url | stylesheet_tag }}
-    <script src="{{ 'quick-add.js' | asset_url }}" defer="defer"></script>  
-  {% endif %}
+      {% if upsell_collection != collections['upsell'] %}
+        {% break %}
+      {% endif %}
+    {% endfor %}
+
+  {% assign upsell_products = upsell_collection.products | limit: 6 %}
+
+  <div class="cart-upsell">
+    <h2 class="heading-2xs">Pair with</h2>
+    <slider-component class="cart-upsell-carousel upsell-carousel slider-mobile-gutter slider-component-full-width slider-component-desktop scroll-trigger animate--slide-in">
+      <ul id="Slider-Upsell"
+          data-id="Slider-Upsell"
+          class="grid product-grid contains-card contains-card--product contains-card--standard grid--1-col-desktop grid--1-col-tablet-down slider slider--desktop slider--tablet grid--peek"
+          role="list"
+          aria-label="{{ 'general.slider.name' | t }}">
+
+        {% for product in upsell_products %}
+          {% assign product_form_id = 'quick-add-' | append: section_id | append: product.id %}
+          <li id="Slide-Upsell-{{ forloop.index }}"
+              class="cart-upsell-item upsell-item grid__item{% if show_mobile_slider or show_desktop_slider %} slider__slide{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
+              {% if settings.animations_reveal_on_scroll %}
+                data-cascade
+                style="--animation-order: {{ forloop.index }};"
+              {% endif %}">
+
+            {% assign quick_add = 'standard' %}
+            {% assign image_ratio = 'portrait' %}
+            {% render 'card-product',
+                                        card_product: product,
+                                        media_aspect_ratio: image_ratio,
+                                        show_secondary_image: false,
+                                        lazy_load: false,
+                                        skip_styles: skip_card_product_styles,
+                                        quick_add: 'standard',
+                                        section_id: section.id,
+                                        horizontal_class: true,
+                                        horizontal_quick_add: true
+                                      %}
+
+          </li>
+        {% endfor %}
+      </ul>
+      <div class="slider-buttons">
+        <button
+          type="button"
+          class="slider-button slider-button--prev"
+          name="previous"
+          aria-label="{{ 'general.slider.previous_slide' | t }}"
+          aria-controls="Slider-{{ section.id }}"
+        >
+          <span class="svg-wrapper">
+            {{- 'icon-arrow-left.svg' | inline_asset_content -}}
+          </span>
+        </button>
+        <button
+          type="button"
+          class="slider-button slider-button--next"
+          name="next"
+          aria-label="{{ 'general.slider.next_slide' | t }}"
+          aria-controls="Slider-{{ section.id }}"
+        >
+          <span class="svg-wrapper">
+            {{- 'icon-arrow-right.svg' | inline_asset_content -}}
+          </span>
+        </button>
+      </div>
+    </slider-component>
+  </div>
+{{ 'component-card.css' | asset_url | stylesheet_tag }}
+                  {{ 'component-complementary-products.css' | asset_url | stylesheet_tag }}
+                    {{ 'quick-add.css' | asset_url | stylesheet_tag }}
+                    <script src="{{ 'quick-add.js' | asset_url }}" defer="defer"></script>  
+{% endif %}
 
 
 
