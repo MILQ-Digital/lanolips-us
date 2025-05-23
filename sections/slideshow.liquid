@@ -26,16 +26,16 @@
 {%- endif -%}
 
 {%- style -%}
-
-  @media screen and (max-width: 749px) {
-     .slideshow__text-wrapper {
-       background-color: {{ block.settings.text_bg_mobile }};
-     }
-  }
+  {% for block in section.blocks %}
+      @media screen and (max-width: 749px) {
+        #Slider-{{ section.id }} .slideshow__text-wrapper {
+            background-color: {{ blocks.settings.text_bg_mobile }};
+          }
+        }
+  {% endfor %}
   
 {%- endstyle -%}  
 
-{{ block.settings.text_bg_mobile }}
 
 <slideshow-component
   class="slider-mobile-gutter{% if section.settings.layout == 'grid' %} page-width{% endif %}{% if section.settings.show_text_below %} mobile-text-below{% endif %} color-{{ section.settings.color_scheme }} gradient"
