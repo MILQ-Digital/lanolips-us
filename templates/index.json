@@ -31,7 +31,7 @@
             "image_overlay_opacity": 0,
             "color_scheme": "scheme-3",
             "text_alignment_mobile": "center",
-            "text_color_mobile": "#fb558e",
+            "text_color_mobile": "#ffffff",
             "hide_text_mobile": false,
             "text_bg_mobile": "#fb558e"
           }
@@ -80,7 +80,7 @@
             "image_overlay_opacity": 0,
             "color_scheme": "scheme-3",
             "text_alignment_mobile": "center",
-            "text_color_mobile": "#fb558e",
+            "text_color_mobile": "#121212",
             "hide_text_mobile": false,
             "text_bg_mobile": "#fb558e"
           }
