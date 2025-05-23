@@ -197,12 +197,12 @@
               </h4>
             {%- endif -%}                 
             {%- if block.settings.heading != blank -%}
-              <h2 class="banner__heading inline-richtext {{ block.settings.heading_size }}">
+              <h2 class="banner__heading inline-richtext {{ block.settings.heading_size }} banner__heading-{{ block.id }}">
                 {{ block.settings.heading }}
               </h2>
             {%- endif -%}
             {%- if block.settings.subcontent != blank -%}
-              <div class="banner__text rte" {{ block.shopify_attributes }}>
+              <div class="banner__text rte banner__text-{{ block.id }}" {{ block.shopify_attributes }}>
                 {{ block.settings.subcontent }}
               </div>
             {%- endif -%}
@@ -214,7 +214,7 @@
                   {% else %}
                     role="link" aria-disabled="true"
                   {% endif %}
-                  class="button {% if block.settings.button_style_secondary %}button--secondary{% else %}button--primary{% endif %}"
+                  class="button {% if block.settings.button_style_secondary %}button--secondary{% else %}button--primary{% endif %} button-{{ block.id }}"
                 >
                   {{- block.settings.button_label | escape -}}
                 </a>
