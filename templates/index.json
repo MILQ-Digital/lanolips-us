@@ -35,7 +35,7 @@
             "hide_text_mobile": false,
             "text_bg_mobile": "#ffd5e3",
             "btn_bg_mobile": "#2b4676",
-            "heading_font_size_mobile": 16
+            "heading_font_size_mobile": 39
           }
         },
         "slide_NAx7bN": {
@@ -88,7 +88,7 @@
             "hide_text_mobile": false,
             "text_bg_mobile": "#fb558e",
             "btn_bg_mobile": "#2b4676",
-            "heading_font_size_mobile": 16
+            "heading_font_size_mobile": 51
           }
         }
       },
