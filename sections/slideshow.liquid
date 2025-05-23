@@ -28,7 +28,7 @@
 {%- style -%}
   {% for block in section.blocks %}
     @media screen and (max-width: 749px) {
-      .slideshow__text-wrapper-{{ block.id }} {
+      #Slider-{{ section.id }} .slideshow__text-wrapper-{{ block.id }} {
         background-color: {{ block.settings.text_bg_mobile }};
         height: 100%;
       }
