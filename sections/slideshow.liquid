@@ -36,6 +36,7 @@
       #Slider-{{ section.id }} .banner__text-{{ block.id }}{
         color: {{ block.settings.text_color_mobile }};
       }
+      #Slider-{{ section.id }}
     }
   {% endfor %}
 {%- endstyle -%}
@@ -654,6 +655,12 @@
           "id": "text_bg_mobile",
           "label": "Text background in mobile",
           "default": "#FB558E"
+        },
+        {
+          "type": "color",
+          "id": "btn_bg_mobile",
+          "label": "Butto background in mobile",
+          "default": "#2B4676"
         },
       ]
     }
