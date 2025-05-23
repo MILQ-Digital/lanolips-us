@@ -41,6 +41,10 @@
         #Slider-{{ section.id }} .banner__buttons .button-{{ block.id }} {
           background-color: {{ block.settings.btn_bg_mobile }};
         }
+
+        #Slider-{{ section.id }} .banner__heading-{{ block.id }} {
+          font-size: {{ block.settings.heading_font_size_mobile }}px;
+        }
       }
     {% endfor %}
   {%- endstyle -%}
@@ -669,7 +673,7 @@
         },
         {
           "type": "range",
-          "id": "font_size",
+          "id": "heading_font_size_mobile",
           "label": "Heading font size (px)",
           "min": 12,
           "max": 72,
