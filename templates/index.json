@@ -14,7 +14,6 @@
       "blocks": {
         "slide_VULtDz": {
           "type": "slide",
-          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/Lanolips_hero.webp",
             "slide_video_url": "",
@@ -39,6 +38,7 @@
         },
         "slide_NAx7bN": {
           "type": "slide",
+          "disabled": true,
           "settings": {
             "slide_video_url": "",
             "subheading": "Serie",
