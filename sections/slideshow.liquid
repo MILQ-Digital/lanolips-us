@@ -33,10 +33,12 @@
         height: 100%;
       }
       #Slider-{{ section.id }} .banner__heading-{{ block.id }},
-      #Slider-{{ section.id }} .banner__text-{{ block.id }}{
+      #Slider-{{ section.id }} .banner__text-{{ block.id }} {
         color: {{ block.settings.text_color_mobile }};
       }
-      #Slider-{{ section.id }}
+      #Slider-{{ section.id }} .banner__buttons .button-{{ block.id }} {
+        background-color: {{ block.settings.btn_bg_mobile }};
+      }
     }
   {% endfor %}
 {%- endstyle -%}
