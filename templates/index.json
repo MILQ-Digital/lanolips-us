@@ -14,6 +14,7 @@
       "blocks": {
         "slide_VULtDz": {
           "type": "slide",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/Lanolips_hero.webp",
             "slide_video_url": "",
@@ -62,7 +63,6 @@
         },
         "slide_BxjGpJ": {
           "type": "slide",
-          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/lanolips-hyaluronic-lip-oil-banner-holder.jpg",
             "slide_video_file": "shopify://files/videos/Copy of 1920 x 1080 - Content Video - Hyaluronic Lip Oil.mp4",
