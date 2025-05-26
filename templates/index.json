@@ -84,7 +84,7 @@
             "text_alignment": "left",
             "image_overlay_opacity": 0,
             "color_scheme": "scheme-3",
-            "text_alignment_mobile": "center",
+            "text_alignment_mobile": "right",
             "text_color_mobile": "#ffffff",
             "hide_text_mobile": false,
             "text_bg_mobile": "rgba(0,0,0,0)",
