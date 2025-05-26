@@ -86,10 +86,10 @@
             "text_alignment": "left",
             "image_overlay_opacity": 0,
             "color_scheme": "scheme-3",
-            "text_alignment_mobile": "right",
+            "text_alignment_mobile": "center",
             "text_color_mobile": "#ffffff",
             "hide_text_mobile": false,
-            "text_bg_mobile": "rgba(0,0,0,0)",
+            "text_bg_mobile": "#fb558e",
             "btn_bg_mobile": "#2b4676",
             "heading_font_size_mobile": 50,
             "script_heading_font_size_mobile": 30
