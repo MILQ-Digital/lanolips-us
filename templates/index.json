@@ -92,7 +92,7 @@
             "text_bg_mobile": "rgba(0,0,0,0)",
             "btn_bg_mobile": "#2b4676",
             "heading_font_size_mobile": 43,
-            "script_heading_font_size_mobile": 64
+            "script_heading_font_size_mobile": 30
           }
         }
       },
