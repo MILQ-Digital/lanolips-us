@@ -36,7 +36,8 @@
             "hide_text_mobile": false,
             "text_bg_mobile": "#ffd5e3",
             "btn_bg_mobile": "#2b4676",
-            "heading_font_size_mobile": 72
+            "heading_font_size_mobile": 72,
+            "script_heading_font_size_mobile": 16
           }
         },
         "slide_NAx7bN": {
@@ -62,7 +63,8 @@
             "hide_text_mobile": false,
             "text_bg_mobile": "#fb558e",
             "btn_bg_mobile": "#2b4676",
-            "heading_font_size_mobile": 16
+            "heading_font_size_mobile": 16,
+            "script_heading_font_size_mobile": 16
           }
         },
         "slide_BxjGpJ": {
@@ -89,7 +91,8 @@
             "hide_text_mobile": false,
             "text_bg_mobile": "rgba(0,0,0,0)",
             "btn_bg_mobile": "#2b4676",
-            "heading_font_size_mobile": 43
+            "heading_font_size_mobile": 43,
+            "script_heading_font_size_mobile": 64
           }
         }
       },
