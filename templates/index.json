@@ -88,7 +88,7 @@
             "color_scheme": "scheme-3",
             "text_alignment_mobile": "right",
             "text_color_mobile": "#ffffff",
-            "hide_text_mobile": false,
+            "hide_text_mobile": true,
             "text_bg_mobile": "#ffd5e3",
             "btn_bg_mobile": "#2b4676",
             "heading_font_size_mobile": 50,
