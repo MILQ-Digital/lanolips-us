@@ -14,6 +14,7 @@
       "blocks": {
         "slide_VULtDz": {
           "type": "slide",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/Lanolips_hero.webp",
             "slide_video_url": "",
@@ -35,7 +36,7 @@
             "hide_text_mobile": false,
             "text_bg_mobile": "#ffd5e3",
             "btn_bg_mobile": "#2b4676",
-            "heading_font_size_mobile": 72,
+            "heading_font_size_mobile": 32,
             "script_heading_font_size_mobile": 16
           }
         },
@@ -68,7 +69,6 @@
         },
         "slide_BxjGpJ": {
           "type": "slide",
-          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/lanolips-hyaluronic-lip-oil-banner-holder.jpg",
             "slide_video_file": "shopify://files/videos/Copy of 1920 x 1080 - Content Video - Hyaluronic Lip Oil.mp4",
