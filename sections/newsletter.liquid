@@ -55,6 +55,7 @@
                   style="--animation-order: {{ forloop.index }};"
                 {% endif %}
               >
+              <div id="newsletter-message"></div>  
                 <div class="field">
                   <input
                     id="NewsletterForm--{{ section.id }}"
@@ -117,6 +118,39 @@
                 </h3>
               {%- endif -%}
             {% endform %}
+
+          
+              <script>
+              document.getElementById('newsletter-form').addEventListener('submit', function(e) {
+                e.preventDefault();
+              
+                const form = e.target;
+                const formData = new FormData(form);
+                const messageEl = document.getElementById('newsletter-message');
+              
+                fetch('/contact#contact_form', {
+                  method: 'POST',
+                  body: formData,
+                  headers: {
+                    'X-Requested-With': 'XMLHttpRequest'
+                  }
+                })
+                .then(response => {
+                  if (response.ok) {
+                    // Shopify doesn't give clear status for duplicates
+                    messageEl.textContent = 'Thanks for subscribing! If you're already subscribed, you're all set.';
+                    form.reset();
+                  } else {
+                    // Fallback error handler
+                    messageEl.textContent = 'Something went wrong. Please try again.';
+                  }
+                })
+                .catch(() => {
+                  messageEl.textContent = 'Network error. Please try again.';
+                });
+              });
+              </script>
+            
           </div>
       {%- endcase -%}
     {%- endfor -%}
