@@ -147,7 +147,7 @@
             "columns": 5,
             "target_blank": false,
             "show_icon": false,
-            "show_text": false,
+            "show_text": true,
             "show_date": false,
             "call_to_action": "SHOP IT",
             "shop_type": "none",
