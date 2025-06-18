@@ -154,7 +154,7 @@
     "shipping_message": "Add ||amount|| or more for FREE shipping!",
     "qualified_shipping_message": "FREE Standard shipping included",
     "free_shipping_limit": "50",
-    "enable_freegift": false,
+    "enable_freegift": true,
     "qualified_freegift_message": "FREE gift added to your cart",
     "free_gift_limit": "100",
     "freegift_product_list": [
