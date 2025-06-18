@@ -156,6 +156,7 @@
     "free_shipping_limit": "50",
     "enable_freegift": false,
     "qualified_freegift_message": "FREE gift added to your cart",
+    "free_gift_limit": "100",
     "freegift_product_list": [
       "lanolips-dry-body-brush",
       "101-strawberry-lip-balm-phone-holder",
