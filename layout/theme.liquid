@@ -2,10 +2,6 @@
 <html class="js" lang="{{ request.locale.iso_code }}">
   <head>
 
-    {% if request.path contains '/search' %}
-      <meta name="robots" content="noindex, nofollow">
-    {% endif %}
-
     {% include 'multi-store-hreflang-tags' %}
 
     <meta name="author" content="Made by MILQ. https://milqdigital.com">
@@ -13,6 +9,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="theme-color" content="">
+    {% if request.path contains '/search' %}
+    <meta name="robots" content="noindex, nofollow">
+    {% endif %}
     
    {%- if canonical_url != blank  -%}
       <link rel="canonical" href="{{ canonical_url }}">
