@@ -149,7 +149,7 @@
     "currency_code_enabled": false,
     "cart_type": "drawer",
     "show_vendor": false,
-    "show_cart_note": false,
+    "show_cart_note": true,
     "enable_freeshipping": true,
     "shipping_message": "Add ||amount|| or more for FREE shipping!",
     "qualified_shipping_message": "FREE Standard shipping included",
