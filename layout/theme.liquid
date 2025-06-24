@@ -9,9 +9,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="theme-color" content="">
-    {% if request.path contains '/search' %}
-    <meta name="robots" content="noindex, nofollow">
-    {% endif %}
+    {%- assign robots_content = "index, follow" -%}
+
+    {%- if request.path contains '/search' or request.path contains '/cart' or request.path contains '/checkout' -%}
+      {%- assign robots_content = "noindex, nofollow" -%}
+    {%- elsif request.query_string contains 'sort_by' or request.query_string contains 'filter' -%}
+      {%- assign robots_content = "noindex, follow" -%}
+    {%- endif -%}
+
+    <meta name="robots" content="{{ robots_content }}">
+
     
    {%- if canonical_url != blank  -%}
       <link rel="canonical" href="{{ canonical_url }}">
