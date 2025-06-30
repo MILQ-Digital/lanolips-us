@@ -109,9 +109,10 @@
                   </a>
                 </div>
               {% comment %}
-              <div class="yotpo-widget-instance" data-yotpo-instance-id="1048422" data-yotpo-product-id="{{product.id}}" data-yotpo-cart-product-id="{{item.product.id}}" data-yotpo-section-id="{{template.name}}"></div>
+              <div class="yotpo-widget-instance" data-yotpo-instance-id="1053523" data-yotpo-product-id="{{product.id}}" data-yotpo-cart-product-id="{{item.product.id}}" data-yotpo-section-id="{{template.name}}"></div>
               {% endcomment %}
               {%- when 'price' -%}
+                {% unless product.tags contains 'hidden' %}
                 <div id="price-{{ section.id }}" role="status" {{ block.shopify_attributes }}>
                   {%- render 'price',
                     product: product,
@@ -146,7 +147,9 @@
                     {{ form | payment_terms }}
                   {%- endform -%}
                 </div>
+                {% endunless %}
               {%- when 'inventory' -%}
+                {% unless product.tags contains 'hidden' %}
                 <p
                   class="product__inventory{% if block.settings.text_style == 'uppercase' %} caption-with-letter-spacing{% elsif block.settings.text_style == 'subtitle' %} subtitle{% endif %}{% if product.selected_or_first_available_variant.inventory_management != 'shopify' %} visibility-hidden{% endif %}"
                   {{ block.shopify_attributes }}
@@ -197,6 +200,7 @@
                     {%- endif -%}
                   {%- endif -%}
                 </p>
+                {% endunless %}
               {%- when 'description' -%}
                 {%- if product.metafields.custom.short_descriptions != blank -%}
                   <div class="product__description rte quick-add-hidden body-lg" {{ block.shopify_attributes }}>
@@ -236,6 +240,7 @@
                   </div>
                 {%- endif -%}
               {%- when 'quantity_selector' -%}
+                {% unless product.tags contains 'hidden' %}
                 <div
                   id="Quantity-Form-{{ section.id }}"
                   class="product-form__input product-form__quantity{% if settings.inputs_shadow_vertical_offset != 0 and settings.inputs_shadow_vertical_offset < 0 %} product-form__quantity-top{% endif %}"
@@ -269,6 +274,7 @@
                         </span>
                       </button>
                       <input
+                        title="Input Desired Quantity"
                         class="quantity__input"
                         type="number"
                         name="quantity"
@@ -448,6 +454,7 @@
                     </volume-pricing>
                   {%- endif -%}
                 </div>
+                {% endunless %}
               {%- when 'popup' -%}
                 <modal-opener
                   class="product-popup-modal__opener quick-add-hidden"
@@ -470,8 +477,11 @@
                 %}
 
               {%- when 'variant_picker' -%}
+                {% unless product.tags contains 'hidden' %}
                 {% render 'product-variant-picker', product: product, block: block, product_form_id: product_form_id %}
+                {% endunless %}
               {%- when 'buy_buttons' -%}
+                {% unless product.tags contains 'hidden' %}
                 <div class="product_button_price button button--full-width button--primary">
                   {%- render 'buy-buttons',
                     block: block,
@@ -491,7 +501,7 @@
                   </div>   
                 </div>   
                 {% include 'afterpay' %}
-              
+                {% endunless %}
               {%- when 'rating' -%}
                 {%- if product.metafields.reviews.rating.value != blank -%}
                   <div class="rating-wrapper">
@@ -571,7 +581,6 @@
                           <div
                             id="Slider-{{ block.id }}"
                             class="contains-card contains-card--product complementary-slider grid grid--1-col"
-                            role="list"
                             {% if number_of_slides > 1 %}
                               aria-label="{{ 'general.slider.name' | t }}"
                             {% endif %}
@@ -582,13 +591,12 @@
                                 id="Slide-{{ block.id }}-{{ forloop.index }}"
                                 class="complementary-slide complementary-slide--{{ settings.card_style }} grid__item slider__slide slideshow__slide"
                                 tabindex="-1"
-                                role="group"
                                 {% if number_of_slides > 1 %}
                                   aria-roledescription="{{ 'sections.slideshow.slide' | t }}"
                                   aria-label="{{ forloop.index }} {{ 'general.slider.of' | t }} {{ forloop.length }}"
                                 {% endif %}
                               >
-                                <ul class="list-unstyled" role="list">
+                                <ul class="list-unstyled">
                                   {%- for product in recommendations.products
                                     limit: block.settings.products_per_page
                                     offset: continue

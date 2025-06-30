@@ -115,10 +115,10 @@
                 <div class="select">
                   {%- assign sort_by = search.sort_by | default: search.default_sort_by -%}
                   <select
+                    title="Sort-By Filter Selector"
                     name="sort_by"
                     class="facet-filters__sort select__select caption-large"
                     id="SortBy"
-                    aria-describedby="a11y-refresh-page-message"
                   >
                     {%- for option in search.sort_options -%}
                       <option
@@ -213,6 +213,7 @@
               >
                 {%- assign skip_card_product_styles = false -%}
                 {%- for item in search.results -%}
+                  {% unless item.tags contains 'hidden' %}
                   {% assign lazy_load = false %}
                   {%- if forloop.index > 2 -%}
                     {%- assign lazy_load = true -%}
@@ -273,6 +274,7 @@
                         </div>
                     {%- endcase -%}
                   </li>
+                  {% endunless %}
                 {%- endfor -%}
               </ul>
               {%- if paginate.pages > 1 -%}

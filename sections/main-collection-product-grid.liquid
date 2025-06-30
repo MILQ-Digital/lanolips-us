@@ -50,10 +50,10 @@
               <div class="select">
                 {%- assign sort_by = collection.sort_by | default: collection.default_sort_by -%}
                 <select
+                  title="Sort-By Filter Selector"
                   name="sort_by"
                   class="facet-filters__sort select__select caption-large"
                   id="SortBy"
-                  aria-describedby="a11y-refresh-page-message"
                 >
                   {%- for option in collection.sort_options -%}
                     <option
@@ -102,7 +102,6 @@
       <script src="{{ 'facets.js' | asset_url }}" defer="defer"></script>
       {%- if section.settings.enable_filtering or section.settings.enable_sorting -%}
         <aside
-          aria-labelledby="verticalTitle"
           class="facets-wrapper{% unless section.settings.enable_filtering %} facets-wrapper--no-filters{% endunless %}{% if section.settings.filter_type != 'vertical' %} page-width{% endif %}"
           id="main-collection-filters"
           data-id="{{ section.id }}"
@@ -185,7 +184,7 @@
 
 
     <li
-      class="grid__item{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
+      class="grid__item collection_slider{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
       {% if settings.animations_reveal_on_scroll %}
         data-cascade
         style="--animation-order: {{ forloop.index }};"

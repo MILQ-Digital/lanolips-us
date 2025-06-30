@@ -127,6 +127,7 @@
                 aria-labelledby="predictive-search-products"
               >
                   {%- for product in predictive_search.resources.products -%}
+                    {% unless product.tags contains 'hidden' %}
                     <li
                       class="grid__item{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
                       {% if settings.animations_reveal_on_scroll %} data-cascade style="--animation-order: {{ forloop.index }};" {% endif %}
@@ -144,6 +145,7 @@
                         section_id: section.id
                       %}
                     </li>
+                    {% endunless %}
                   {%- endfor -%}
                 </ul>
             </div>
@@ -156,6 +158,7 @@
                 aria-labelledby="predictive-search-products"
               >
                 {%- for product in predictive_search.resources.products -%}
+                  {% unless product.tags contains 'hidden' %}
                   <li
                     class="grid__item{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
                     {% if settings.animations_reveal_on_scroll %}
@@ -176,6 +179,7 @@
                       section_id: section.id
                     %}
                   </li>
+                  {% endunless %}
                 {%- endfor -%}
               </ul>
             </div>

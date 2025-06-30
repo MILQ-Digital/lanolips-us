@@ -147,7 +147,7 @@
                   {{ block.settings.caption | escape }}
                 </p>
               {%- endif -%}
-              {%- if block.settings.heading -%}
+              {%- if block.settings.heading != blank -%}
                 <h2 class="image-with-text__heading {{ section.settings.heading_size }} rte">
                   {{ block.settings.heading }}
                 </h2>
@@ -164,7 +164,7 @@
                   {% endif %}
                   class="button button--{{ section.settings.button_style }}"
                 >
-                  {{ block.settings.button_label | escape }}
+                  {{ block.settings.button_label | escape }} <span class="visually-hidden"> - {{ block.settings.heading | escape }}</span>
                 </a>
               {%- endif -%}
             </div>
