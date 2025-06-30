@@ -479,7 +479,7 @@ a.product__text {
   }
 
   .product__info-container .product_button_price {
-    width: calc(100% - 117px);
+    width: calc(100% - 120px);
     min-height: 39px;
   }
 
@@ -490,7 +490,7 @@ a.product__text {
     margin-left: 10px !important;
     min-height: 39px;
     font-size: var(--body-xs);
-    width: auto; 
+    /*width: auto; */
   }
 
   .template-product .product__info-container .product_button_price .button {
@@ -1681,6 +1681,7 @@ a.product__text {
   
 }
 
+
 @media (max-width: 540px) {
   .product_features_icons {
     column-gap: 15px;
@@ -1689,5 +1690,3 @@ a.product__text {
     row-gap: 10px;
   }
 }
-
-
