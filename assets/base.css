@@ -4340,22 +4340,15 @@ body .yotpo-sr-vertical-border {display: none!important}
   color: var(--text-color)!important;
 }
 
-.yotpo-modal .yotpo-star-rating-icon {
-    height: 15px !important;
-    margin: 0 5px !important;
+.swym-wishlist-collections-icon-heart-filled, 
+.swym-wishlist-collections-icon-heart-unfilled, 
+.swym-wishlist-collections-icon-star-filled, 
+.swym-wishlist-collections-icon-star-unfilled, 
+.swym-wishlist-collections-icon-bookmark-unfilled, 
+.swym-wishlist-collections-icon-bookmark-filled {
+  fill: var(--Lano-Blue)!important;
 }
 
-.yotpo-modal .yotpo-review-form textarea,
-.yotpo-modal .yotpo-review-form input, .yotpo-modal .yotpo-upload-label {
-  border: 1px solid #FAE8ED!important;
-  color: var(--text-color)!important;
-  font-family: var(--font-heading-family)!important;
-}
-
-.yotpo-modal .yotpo-review-form input::placeholder,
-.yotpo-modal .yotpo-review-form textarea::placeholder {
-  color: var(--text-color)!important;
-}
 
 @media screen and (max-width: 575px) {
   .yotpo-carousel .glide__arrows {
@@ -4515,4 +4508,49 @@ body .yotpo-sr-vertical-border {display: none!important}
   to {
     opacity: 1;
   }
+}
+
+.collection-list .card__information section,
+.promo_banner .card__information section {
+  max-height: 44px;
+  margin-top: 15px;
+  width: fit-content;
+}
+
+.grid__item {
+  position: relative !important;
+}
+
+.skip-link {
+                position: absolute;
+                left: -10000px;
+                top: 0px;
+                padding: 12px;
+                background-color: white;
+                color: black;
+                border: 2px solid black;
+                border-radius: 5px;
+                z-index: 999999999;
+            }
+            .skip-link:focus-visible {
+                left: 0px;
+            }
+
+.card__inner .card__content {
+  text-decoration: unset;
+}
+
+.cart__ctas {
+    display: flex;
+    gap: 1.5rem;
+    flex-direction: column;
+    text-align: center;
+}
+
+.cart-drawer__footer {
+  padding-bottom: 20px;
+}
+
+.cart-drawer__footer .totals {
+  padding-bottom: 15px;
 }
