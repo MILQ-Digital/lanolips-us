@@ -1,1 +1,493 @@
-{"sections":{"slideshow_dJncwY":{"type":"slideshow","blocks":{"slide_VULtDz":{"type":"slide","disabled":true,"settings":{"slide_video_url":"","subheading":"Freshly Baked","subheading_script":"","heading":"The new Lanolips 101 Delicious 123 bla collection for us","heading_size":"hxxl","subcontent":"<p>Discover our new range of mouth watering flavours Discover our new range of mouth watering flavours Discover our new range of mouth watering flavours Discover our new \u2028<\/p>","button_label":"Shop Now","link":"shopify:\/\/collections\/all","button_style_secondary":false,"box_align":"bottom-left","show_text_box":false,"text_alignment":"left","image_overlay_opacity":0,"color_scheme":"scheme-3","text_alignment_mobile":"center","text_color_mobile":"#fb558e","hide_text_mobile":false,"text_bg_mobile":"#fb558e","btn_bg_mobile":"#2b4676","heading_font_size_mobile":16,"script_heading_font_size_mobile":16}},"slide_NAx7bN":{"type":"slide","disabled":true,"settings":{"slide_video_url":"","subheading":"Serie","subheading_script":"Freshly Baked","heading":"The new Lanolips 101 Delicious collection","heading_size":"hxxl","subcontent":"<p>Discover our new range of mouth watering flavours<\/p>","button_label":"","link":"","button_style_secondary":false,"box_align":"middle-left","show_text_box":false,"text_alignment":"left","image_overlay_opacity":80,"color_scheme":"scheme-3","text_alignment_mobile":"center","text_color_mobile":"#fb558e","hide_text_mobile":false,"text_bg_mobile":"#fb558e","btn_bg_mobile":"#2b4676","heading_font_size_mobile":16,"script_heading_font_size_mobile":16}},"slide_BxjGpJ":{"type":"slide","settings":{"image":"shopify:\/\/shop_images\/lanolips-hyaluronic-lip-oil-banner-holder.jpg","slide_video_file":"shopify:\/\/files\/videos\/Copy of 1920 x 1080 - Content Video - Hyaluronic Lip Oil.mp4","slide_video_url":"","subheading":"","subheading_script":"","heading":"Lanolips Hyaluronic Lip Oil","heading_size":"hxxl","subcontent":"<p>Introducing the New Standard of Lip Oils.      Experience the ultimate in lip hydration and shine.<\/p>","button_label":"Shop Lip Oil","link":"shopify:\/\/collections\/lip-oil","button_style_secondary":false,"box_align":"bottom-left","show_text_box":false,"text_alignment":"left","image_overlay_opacity":0,"color_scheme":"scheme-3","text_alignment_mobile":"center","text_color_mobile":"#ffffff","hide_text_mobile":false,"text_bg_mobile":"#fb558e","btn_bg_mobile":"#2b4676","heading_font_size_mobile":16,"script_heading_font_size_mobile":16}}},"block_order":["slide_VULtDz","slide_NAx7bN","slide_BxjGpJ"],"settings":{"layout":"full_bleed","slide_height":"large","slider_visual":"dots","auto_rotate":true,"change_slides_speed":9,"image_behavior":"none","show_text_below":true,"accessibility_info":"Slideshow about Lanolips","color_scheme":"scheme-1"}},"featured_collection":{"type":"featured-collection","settings":{"title":"Best Sellers","heading_size":"hs","description":"","show_description":false,"description_style":"body","collection":"best-sellers","products_to_show":8,"columns_desktop":5,"full_width":true,"show_view_all":true,"view_all_style":"link","enable_desktop_slider":true,"color_scheme":"scheme-2","image_ratio":"portrait","image_shape":"default","show_secondary_image":true,"show_vendor":false,"show_rating":false,"quick_add":"standard","columns_mobile":"1","swipe_on_mobile":true,"padding_top":48,"padding_bottom":36}},"image_with_text_WkDiJU":{"type":"image-with-text","blocks":{"caption_AcJ3mj":{"type":"caption","settings":{"caption":"","text_style":"caption-with-letter-spacing","text_size":"large","text_alignment":"text-left"}},"heading_Db9tcb":{"type":"heading","settings":{"heading":"Meet New Hyaluronic Lip Oil","heading_size":"hs"}},"text_jTzLCJ":{"type":"text","settings":{"text":"<p>Introducing the New Standard of Lip Oils. The ultimate in lip hydration and shine with Lanolips Hyaluronic Lip Oil<\/p>","text_style":"subtitle"}},"button_AxwgMt":{"type":"button","settings":{"button_label":"Shop Lip Oil","button_link":"https:\/\/lanolips.com\/collections\/lip-oil","button_style_secondary":false,"button_style_underline":false}}},"block_order":["caption_AcJ3mj","heading_Db9tcb","text_jTzLCJ","button_AxwgMt"],"settings":{"image":"shopify:\/\/shop_images\/Hyaluronic_Lip_Oil_Product_Honey_and_Raspberry_Image_0bf8cd3b-f042-4d18-acf9-5204127f1d6d.jpg","height":"adapt","desktop_image_width":"medium","layout":"text_first","desktop_content_position":"middle","desktop_content_alignment":"center","content_layout":"no-overlap","section_color_scheme":"scheme-1","color_scheme":"","use_ingredients":false,"image_behavior":"none","mobile_content_alignment":"left","mobile_page_padding":false,"mobile_img_visibility":false,"padding_top":40,"padding_bottom":0}},"collection_list_aGyhDV":{"type":"collection-list","blocks":{"featured_collection_PE3zqw":{"type":"featured_collection","settings":{"collection":"lips"}},"featured_collection_hBDbwN":{"type":"featured_collection","settings":{"collection":"face"}},"featured_collection_FVHLxp":{"type":"featured_collection","settings":{"collection":"hands-body"}}},"block_order":["featured_collection_PE3zqw","featured_collection_hBDbwN","featured_collection_FVHLxp"],"settings":{"title":"Shop By Category","heading_size":"hs","image_ratio":"portrait","columns_desktop":3,"color_scheme":"scheme-2","show_view_all":false,"columns_mobile":"1","swipe_on_mobile":true,"padding_top":64,"padding_bottom":80}},"image_banner_rxCeJC":{"type":"image-banner","blocks":{"icon_YQkFzD":{"type":"icon","settings":{"image_icon":"shopify:\/\/shop_images\/Lanolips-Website-Icon-Sheep.png"}},"heading_hVPN7C":{"type":"heading","settings":{"heading":"Lanolin - the <span style=\"text-decoration:underline\"><em><strong>most natural<\/strong><\/em><\/span><em><strong> <\/strong><\/em>answer to dry skin","heading_size":"hm"}},"checkbox_LMyxQA":{"type":"checkbox","settings":{"text_text":"Learn More","text_link":"shopify:\/\/pages\/why-lanolin","view_all_style":"link"}}},"block_order":["icon_YQkFzD","heading_hVPN7C","checkbox_LMyxQA"],"custom_css":["@media screen and (max-width: 750px) {.banner__heading {font-size: 38px; margin-bottom: 40px; } .banner__heading em {font-size: 53px; } .media > img {height: 50%; top: 25%; }}"],"settings":{"image":"shopify:\/\/shop_images\/Lanolips_Wave_Pattern.jpg","image_overlay_opacity":0,"image_height":"adapt","desktop_content_position":"middle-center","show_text_box":false,"desktop_content_alignment":"center","color_scheme":"scheme-2","color_background":"#ffffff","image_behavior":"none","mobile_content_alignment":"center","mobile_image_height":"large","stack_images_on_mobile":false,"show_text_below":false,"padding_top":0,"padding_bottom":0}},"multicolumn_gqYkVh":{"type":"multicolumn","blocks":{"column_mGc7n6":{"type":"column","settings":{"image":"shopify:\/\/shop_images\/Home_Page_Featured_Card_Images_2.jpg","title":"The Original 101 Multipurpose Superbalm","text":"<p>The World's Best Lip Balm<\/p>","link_label":"Shop 101 Ointment","link":"shopify:\/\/products\/101-ointment-multipurpose-superbalm","button_style_secondary":false}},"column_nBnMPt":{"type":"column","settings":{"image":"shopify:\/\/shop_images\/Home_Page_Featured_Card_Images_1.jpg","title":"12 Hour Overnight Lip Mask","text":"<p>An intensive blend of hydrating ultra-pure lanolin and powerhouse mega-actives<\/p>","link_label":"Shop Lip Mask","link":"shopify:\/\/products\/12-hour-overnight-lip-mask","button_style_secondary":false}}},"block_order":["column_mGc7n6","column_nBnMPt"],"settings":{"title":"","heading_size":"h1","image_width":"full","image_ratio":"square","columns_desktop":2,"column_alignment":"center","background_style":"none","button_label":"","button_link":"","color_scheme":"scheme-3","columns_mobile":"1","swipe_on_mobile":false,"mobile_full":true,"padding_top":44,"padding_bottom":44,"section_class":""}},"rich_text_636tak":{"type":"rich-text","blocks":{"heading_E8CUpz":{"type":"heading","settings":{"heading":"Shop Customer Faves","heading_size":"hs","enable_script":false}}},"block_order":["heading_E8CUpz"],"settings":{"desktop_content_position":"center","content_alignment":"center","color_scheme":"scheme-2","full_width":true,"padding_top":40,"padding_bottom":40}},"custom_liquid_qRbjDe":{"type":"custom-liquid","settings":{"custom_liquid":"<script src=\"\/\/foursixty.com\/media\/scripts\/fs.slider.v2.6.js\" data-feed-id=\"lanolips\" data-theme=\"slider_v2_6\" data-open-links-in-same-page=\"true\" data-connector-filter=\"58942\" data-always-show-video-detail=\"true\" data-video-gallery=\"reels\" data-cell-size=\"20%\"><\/script>\n<style>.fs-has-links { display:none; } .fs-video-gallery .fs-entry-container { padding-top:36% !important;width:20% !important;height:auto !important; } .fs-video-gallery.fs-narrow-timeline .fs-entry-container.fs-entry-container { padding-top:calc(50% * 1.7778) !important;width:50% !important;height:auto !important; } .fs-video-gallery.fs-small-timeline .fs-entry-container.fs-entry-container { padding-top:calc(33.3334% * 1.7778) !important;width:33.3334% !important;height:auto !important; } .fs-wrapper div.fs-text-container .fs-entry-title, div.fs-detail-title { font-family:Times New Roman, serif;font-style:normal;font-weight:normal;font-size:14px; } div.fs-text-container .fs-entry-date, div.fs-detail-container .fs-post-info, div.fs-wrapper div.fs-has-links::after, .fs-text-product, .fs-overlink-text { font-family:Helvetica Neue, Helvetica, Arial, sans-serif;font-style:normal;font-weight:normal;font-size:14px; } .fs-slider-next-button, .fs-slider-prev-button { opacity:1; } .fs-wrapper { margin:auto;width:calc(100% - 120px); } .fs-wrapper div.fs-text-container * { color:#ffffff; } .fs-wrapper div.fs-text-container { background-color:rgba(0, 0, 0, 0.15);margin:0px; } div.fs-entry-date { display:none; } div.fs-service-icon { display:none; } div.fs-entry-title { display:none; } .fs-slider_v2_6 .fs-wrapper div.fs-timeline-entry { margin:10px; } <\/style>","color_scheme":"scheme-3","padding_top":40,"padding_bottom":52}},"custom_liquid_PtfDQV":{"type":"custom-liquid","settings":{"custom_liquid":"<div class=\"yotpo-widget-instance\" data-yotpo-instance-id=\"1053535\" data-yotpo-product-id=\"{{product.id}}\" data-yotpo-cart-product-id=\"{{item.product.id}}\"><\/div>","color_scheme":"scheme-3","padding_top":56,"padding_bottom":56}},"rich_text_9jF4qD":{"type":"rich-text","blocks":{"heading_Hnq9x6":{"type":"heading","settings":{"heading":"Shop our IG","heading_size":"hs","enable_script":false}},"text_VbJbWU":{"type":"text","settings":{"text":"<p>Find us on Instagram  @lanolips  #lanolips<\/p>"}}},"block_order":["heading_Hnq9x6","text_VbJbWU"],"settings":{"desktop_content_position":"center","content_alignment":"center","color_scheme":"scheme-2","full_width":true,"padding_top":40,"padding_bottom":40}},"custom_liquid_aW4CwX":{"type":"custom-liquid","settings":{"custom_liquid":"<script src=\"\/\/foursixty.com\/media\/scripts\/fs.slider.v2.5.js\" data-feed-id=\"lanolips\" data-theme=\"slider_v2_5\" data-open-links-in-same-page=\"true\" data-connector-filter=\"58942\" data-cell-size=\"25%\"><\/script>\n<style>.fs-has-links { display:none; } .fs-wrapper { height:auto; } .fs-slider_v2_5  .fs-entry-container { height:0 !important;width:25%!important;padding-top:25%!important; } .fs-wrapper div.fs-text-container .fs-entry-title, div.fs-detail-title { font-family:Times New Roman, serif;font-style:normal;font-weight:normal;font-size:14px; } div.fs-text-container .fs-entry-date, div.fs-detail-container .fs-post-info, div.fs-wrapper div.fs-has-links::after, .fs-text-product, .fs-overlink-text { font-family:Helvetica Neue, Helvetica, Arial, sans-serif;font-style:normal;font-weight:normal;font-size:14px; } .fs-slider-next-button, .fs-slider-prev-button { opacity:1; } .fs-wrapper div.fs-text-container * { color:#ffffff; } .fs-wrapper div.fs-text-container { background-color:rgba(0, 0, 0, 0.15);margin:0px; } div.fs-entry-date { display:none; } div.fs-service-icon { display:none; } div.fs-entry-title { display:none; } .fs-slider_v2_5 .fs-wrapper div.fs-timeline-entry { margin:10px; } <\/style>","color_scheme":"scheme-3","padding_top":0,"padding_bottom":92}},"173950177361100e1b":{"type":"apps","blocks":{"foursixty_shoppable_social_ugc_custom_slider_yTcYjG":{"type":"shopify:\/\/apps\/foursixty-shoppable-social-ugc\/blocks\/custom_slider\/e2616dfe-fbb6-4e7d-874d-d250b973556d","settings":{"foreground_color":"#ffffff","background_color":"#f3e5ef","background_color_alpha":80,"post_spacing":10,"hover_margin":0,"cell_size":"25%","target_blank":false,"arrows_outside":false,"show_icon":true,"show_text":false,"show_date":false,"call_to_action":"","shop_type":"none","body_font_size":14,"body_font":"helvetica_n4","accent_font_size":14,"accent_font":"helvetica_n4","disable_filter":false,"override_feed_id":"lanolips","arbitrary_attributes":"","custom_css":"","custom_js":""}}},"block_order":["foursixty_shoppable_social_ugc_custom_slider_yTcYjG"],"disabled":true,"settings":{"include_margins":false}},"rich_text_fbJVJQ":{"type":"rich-text","disabled":true,"settings":{"desktop_content_position":"center","content_alignment":"center","color_scheme":"scheme-2","full_width":true,"padding_top":40,"padding_bottom":52}}},"order":["slideshow_dJncwY","featured_collection","image_with_text_WkDiJU","collection_list_aGyhDV","image_banner_rxCeJC","multicolumn_gqYkVh","rich_text_636tak","custom_liquid_qRbjDe","custom_liquid_PtfDQV","rich_text_9jF4qD","custom_liquid_aW4CwX","173950177361100e1b","rich_text_fbJVJQ"]}
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "slideshow_dJncwY": {
+      "type": "slideshow",
+      "blocks": {
+        "slide_VULtDz": {
+          "type": "slide",
+          "disabled": true,
+          "settings": {
+            "slide_video_url": "",
+            "subheading": "Freshly Baked",
+            "subheading_script": "",
+            "heading": "The new Lanolips 101 Delicious 123 bla collection for us",
+            "heading_size": "hxxl",
+            "subcontent": "<p>Discover our new range of mouth watering flavours Discover our new range of mouth watering flavours Discover our new range of mouth watering flavours Discover our new  </p>",
+            "button_label": "Shop Now",
+            "link": "shopify://collections/all",
+            "button_style_secondary": false,
+            "box_align": "bottom-left",
+            "show_text_box": false,
+            "text_alignment": "left",
+            "image_overlay_opacity": 0,
+            "color_scheme": "scheme-3",
+            "text_alignment_mobile": "center",
+            "text_color_mobile": "#fb558e",
+            "hide_text_mobile": false,
+            "text_bg_mobile": "#fb558e",
+            "btn_bg_mobile": "#2b4676",
+            "heading_font_size_mobile": 16,
+            "script_heading_font_size_mobile": 16
+          }
+        },
+        "slide_NAx7bN": {
+          "type": "slide",
+          "disabled": true,
+          "settings": {
+            "slide_video_url": "",
+            "subheading": "Serie",
+            "subheading_script": "Freshly Baked",
+            "heading": "The new Lanolips 101 Delicious collection",
+            "heading_size": "hxxl",
+            "subcontent": "<p>Discover our new range of mouth watering flavours</p>",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "middle-left",
+            "show_text_box": false,
+            "text_alignment": "left",
+            "image_overlay_opacity": 80,
+            "color_scheme": "scheme-3",
+            "text_alignment_mobile": "center",
+            "text_color_mobile": "#fb558e",
+            "hide_text_mobile": false,
+            "text_bg_mobile": "#fb558e",
+            "btn_bg_mobile": "#2b4676",
+            "heading_font_size_mobile": 16,
+            "script_heading_font_size_mobile": 16
+          }
+        },
+        "slide_BxjGpJ": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/lanolips-hyaluronic-lip-oil-banner-holder.jpg",
+            "slide_video_file": "shopify://files/videos/Copy of 1920 x 1080 - Content Video - Hyaluronic Lip Oil.mp4",
+            "slide_video_url": "",
+            "subheading": "",
+            "subheading_script": "",
+            "heading": "Lanolips Hyaluronic Lip Oil",
+            "heading_size": "hxxl",
+            "subcontent": "<p>Introducing the New Standard of Lip Oils.      Experience the ultimate in lip hydration and shine.</p>",
+            "button_label": "Shop Lip Oil",
+            "link": "shopify://collections/lip-oil",
+            "button_style_secondary": false,
+            "box_align": "bottom-left",
+            "show_text_box": false,
+            "text_alignment": "left",
+            "image_overlay_opacity": 0,
+            "color_scheme": "scheme-3",
+            "text_alignment_mobile": "center",
+            "text_color_mobile": "#ffffff",
+            "hide_text_mobile": false,
+            "text_bg_mobile": "#fb558e",
+            "btn_bg_mobile": "#2b4676",
+            "heading_font_size_mobile": 16,
+            "script_heading_font_size_mobile": 16
+          }
+        }
+      },
+      "block_order": [
+        "slide_VULtDz",
+        "slide_NAx7bN",
+        "slide_BxjGpJ"
+      ],
+      "settings": {
+        "layout": "full_bleed",
+        "slide_height": "large",
+        "slider_visual": "dots",
+        "auto_rotate": true,
+        "change_slides_speed": 9,
+        "image_behavior": "none",
+        "show_text_below": true,
+        "accessibility_info": "Slideshow about Lanolips",
+        "color_scheme": "scheme-1"
+      }
+    },
+    "featured_collection": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Best Sellers",
+        "heading_size": "hs",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "best-sellers",
+        "products_to_show": 8,
+        "columns_desktop": 5,
+        "full_width": true,
+        "show_view_all": true,
+        "view_all_style": "link",
+        "enable_desktop_slider": true,
+        "color_scheme": "scheme-2",
+        "image_ratio": "portrait",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "quick_add": "standard",
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "padding_top": 48,
+        "padding_bottom": 36
+      }
+    },
+    "image_with_text_WkDiJU": {
+      "type": "image-with-text",
+      "blocks": {
+        "caption_AcJ3mj": {
+          "type": "caption",
+          "settings": {
+            "caption": "",
+            "text_style": "caption-with-letter-spacing",
+            "text_size": "large",
+            "text_alignment": "text-left"
+          }
+        },
+        "heading_Db9tcb": {
+          "type": "heading",
+          "settings": {
+            "heading": "Lanolips Hyaluronic Lip Oil",
+            "heading_size": "hs"
+          }
+        },
+        "text_jTzLCJ": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Introducing the New Standard of Lip Oils. The ultimate in lip hydration and shine with Lanolips Hyaluronic Lip Oil</p>",
+            "text_style": "subtitle"
+          }
+        },
+        "button_AxwgMt": {
+          "type": "button",
+          "settings": {
+            "button_label": "Shop Lip Oil",
+            "button_link": "https://lanolips.com/collections/lip-oil",
+            "button_style_secondary": false,
+            "button_style_underline": false
+          }
+        }
+      },
+      "block_order": [
+        "caption_AcJ3mj",
+        "heading_Db9tcb",
+        "text_jTzLCJ",
+        "button_AxwgMt"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/Hyaluronic_Lip_Oil_Product_Honey_and_Raspberry_Image_0bf8cd3b-f042-4d18-acf9-5204127f1d6d.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "center",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "scheme-1",
+        "color_scheme": "",
+        "use_ingredients": false,
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "mobile_page_padding": false,
+        "mobile_img_visibility": false,
+        "padding_top": 40,
+        "padding_bottom": 0
+      }
+    },
+    "collection_list_aGyhDV": {
+      "type": "collection-list",
+      "blocks": {
+        "featured_collection_PE3zqw": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "lips"
+          }
+        },
+        "featured_collection_hBDbwN": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "face"
+          }
+        },
+        "featured_collection_FVHLxp": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "hands-body"
+          }
+        }
+      },
+      "block_order": [
+        "featured_collection_PE3zqw",
+        "featured_collection_hBDbwN",
+        "featured_collection_FVHLxp"
+      ],
+      "settings": {
+        "title": "Shop By Category",
+        "heading_size": "hs",
+        "image_ratio": "portrait",
+        "columns_desktop": 3,
+        "color_scheme": "scheme-2",
+        "show_view_all": false,
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "padding_top": 64,
+        "padding_bottom": 80
+      }
+    },
+    "image_banner_rxCeJC": {
+      "type": "image-banner",
+      "blocks": {
+        "icon_YQkFzD": {
+          "type": "icon",
+          "settings": {
+            "image_icon": "shopify://shop_images/Lanolips-Website-Icon-Sheep.png"
+          }
+        },
+        "heading_hVPN7C": {
+          "type": "heading",
+          "settings": {
+            "heading": "Lanolin - the <span style=\"text-decoration:underline\"><em><strong>most natural</strong></em></span><em><strong> </strong></em>answer to dry skin",
+            "heading_size": "hm"
+          }
+        },
+        "checkbox_LMyxQA": {
+          "type": "checkbox",
+          "settings": {
+            "text_text": "Learn More",
+            "text_link": "shopify://pages/why-lanolin",
+            "view_all_style": "link"
+          }
+        }
+      },
+      "block_order": [
+        "icon_YQkFzD",
+        "heading_hVPN7C",
+        "checkbox_LMyxQA"
+      ],
+      "custom_css": [
+        "@media screen and (max-width: 750px) {.banner__heading {font-size: 38px; margin-bottom: 40px; } .banner__heading em {font-size: 53px; } .media > img {height: 50%; top: 25%; }}"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/Lanolips_Wave_Pattern.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "adapt",
+        "desktop_content_position": "middle-center",
+        "show_text_box": false,
+        "desktop_content_alignment": "center",
+        "color_scheme": "scheme-2",
+        "color_background": "#ffffff",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "mobile_image_height": "large",
+        "stack_images_on_mobile": false,
+        "show_text_below": false,
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "multicolumn_gqYkVh": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_mGc7n6": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Home_Page_Featured_Card_Images_2.jpg",
+            "title": "The Original 101 Multipurpose Superbalm",
+            "text": "<p>The World's Best Lip Balm</p>",
+            "link_label": "Shop 101 Ointment",
+            "link": "shopify://products/101-ointment-multipurpose-superbalm",
+            "button_style_secondary": false
+          }
+        },
+        "column_nBnMPt": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Home_Page_Featured_Card_Images_1.jpg",
+            "title": "12 Hour Overnight Lip Mask",
+            "text": "<p>An intensive blend of hydrating ultra-pure lanolin and powerhouse mega-actives</p>",
+            "link_label": "Shop Lip Mask",
+            "link": "shopify://products/12-hour-overnight-lip-mask",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "column_mGc7n6",
+        "column_nBnMPt"
+      ],
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "square",
+        "columns_desktop": 2,
+        "column_alignment": "center",
+        "background_style": "none",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "scheme-3",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "mobile_full": true,
+        "padding_top": 44,
+        "padding_bottom": 44,
+        "section_class": ""
+      }
+    },
+    "rich_text_636tak": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_E8CUpz": {
+          "type": "heading",
+          "settings": {
+            "heading": "Shop Customer Faves",
+            "heading_size": "hs",
+            "enable_script": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_E8CUpz"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-2",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 40
+      }
+    },
+    "custom_liquid_qRbjDe": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<script src=\"//foursixty.com/media/scripts/fs.slider.v2.6.js\" data-feed-id=\"lanolips\" data-theme=\"slider_v2_6\" data-open-links-in-same-page=\"true\" data-connector-filter=\"58942\" data-always-show-video-detail=\"true\" data-video-gallery=\"reels\" data-cell-size=\"20%\"></script>\n<style>.fs-has-links { display:none; } .fs-video-gallery .fs-entry-container { padding-top:36% !important;width:20% !important;height:auto !important; } .fs-video-gallery.fs-narrow-timeline .fs-entry-container.fs-entry-container { padding-top:calc(50% * 1.7778) !important;width:50% !important;height:auto !important; } .fs-video-gallery.fs-small-timeline .fs-entry-container.fs-entry-container { padding-top:calc(33.3334% * 1.7778) !important;width:33.3334% !important;height:auto !important; } .fs-wrapper div.fs-text-container .fs-entry-title, div.fs-detail-title { font-family:Times New Roman, serif;font-style:normal;font-weight:normal;font-size:14px; } div.fs-text-container .fs-entry-date, div.fs-detail-container .fs-post-info, div.fs-wrapper div.fs-has-links::after, .fs-text-product, .fs-overlink-text { font-family:Helvetica Neue, Helvetica, Arial, sans-serif;font-style:normal;font-weight:normal;font-size:14px; } .fs-slider-next-button, .fs-slider-prev-button { opacity:1; } .fs-wrapper { margin:auto;width:calc(100% - 120px); } .fs-wrapper div.fs-text-container * { color:#ffffff; } .fs-wrapper div.fs-text-container { background-color:rgba(0, 0, 0, 0.15);margin:0px; } div.fs-entry-date { display:none; } div.fs-service-icon { display:none; } div.fs-entry-title { display:none; } .fs-slider_v2_6 .fs-wrapper div.fs-timeline-entry { margin:10px; } </style>",
+        "color_scheme": "scheme-3",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "custom_liquid_PtfDQV": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<div class=\"yotpo-widget-instance\" data-yotpo-instance-id=\"1053535\" data-yotpo-product-id=\"{{product.id}}\" data-yotpo-cart-product-id=\"{{item.product.id}}\"></div>",
+        "color_scheme": "scheme-3",
+        "padding_top": 56,
+        "padding_bottom": 56
+      }
+    },
+    "rich_text_9jF4qD": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_Hnq9x6": {
+          "type": "heading",
+          "settings": {
+            "heading": "Shop our IG",
+            "heading_size": "hs",
+            "enable_script": false
+          }
+        },
+        "text_VbJbWU": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Find us on Instagram  @lanolips  #lanolips</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_Hnq9x6",
+        "text_VbJbWU"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-2",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 40
+      }
+    },
+    "custom_liquid_aW4CwX": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<script src=\"//foursixty.com/media/scripts/fs.slider.v2.5.js\" data-feed-id=\"lanolips\" data-theme=\"slider_v2_5\" data-open-links-in-same-page=\"true\" data-connector-filter=\"58942\" data-cell-size=\"25%\"></script>\n<style>.fs-has-links { display:none; } .fs-wrapper { height:auto; } .fs-slider_v2_5  .fs-entry-container { height:0 !important;width:25%!important;padding-top:25%!important; } .fs-wrapper div.fs-text-container .fs-entry-title, div.fs-detail-title { font-family:Times New Roman, serif;font-style:normal;font-weight:normal;font-size:14px; } div.fs-text-container .fs-entry-date, div.fs-detail-container .fs-post-info, div.fs-wrapper div.fs-has-links::after, .fs-text-product, .fs-overlink-text { font-family:Helvetica Neue, Helvetica, Arial, sans-serif;font-style:normal;font-weight:normal;font-size:14px; } .fs-slider-next-button, .fs-slider-prev-button { opacity:1; } .fs-wrapper div.fs-text-container * { color:#ffffff; } .fs-wrapper div.fs-text-container { background-color:rgba(0, 0, 0, 0.15);margin:0px; } div.fs-entry-date { display:none; } div.fs-service-icon { display:none; } div.fs-entry-title { display:none; } .fs-slider_v2_5 .fs-wrapper div.fs-timeline-entry { margin:10px; } </style>",
+        "color_scheme": "scheme-3",
+        "padding_top": 0,
+        "padding_bottom": 92
+      }
+    },
+    "173950177361100e1b": {
+      "type": "apps",
+      "blocks": {
+        "foursixty_shoppable_social_ugc_custom_slider_yTcYjG": {
+          "type": "shopify://apps/foursixty-shoppable-social-ugc/blocks/custom_slider/e2616dfe-fbb6-4e7d-874d-d250b973556d",
+          "settings": {
+            "foreground_color": "#ffffff",
+            "background_color": "#f3e5ef",
+            "background_color_alpha": 80,
+            "post_spacing": 10,
+            "hover_margin": 0,
+            "cell_size": "25%",
+            "target_blank": false,
+            "arrows_outside": false,
+            "show_icon": true,
+            "show_text": false,
+            "show_date": false,
+            "call_to_action": "",
+            "shop_type": "none",
+            "body_font_size": 14,
+            "body_font": "helvetica_n4",
+            "accent_font_size": 14,
+            "accent_font": "helvetica_n4",
+            "disable_filter": false,
+            "override_feed_id": "lanolips",
+            "arbitrary_attributes": "",
+            "custom_css": "",
+            "custom_js": ""
+          }
+        }
+      },
+      "block_order": [
+        "foursixty_shoppable_social_ugc_custom_slider_yTcYjG"
+      ],
+      "disabled": true,
+      "settings": {
+        "include_margins": false
+      }
+    },
+    "rich_text_fbJVJQ": {
+      "type": "rich-text",
+      "disabled": true,
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-2",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    }
+  },
+  "order": [
+    "slideshow_dJncwY",
+    "featured_collection",
+    "image_with_text_WkDiJU",
+    "collection_list_aGyhDV",
+    "image_banner_rxCeJC",
+    "multicolumn_gqYkVh",
+    "rich_text_636tak",
+    "custom_liquid_qRbjDe",
+    "custom_liquid_PtfDQV",
+    "rich_text_9jF4qD",
+    "custom_liquid_aW4CwX",
+    "173950177361100e1b",
+    "rich_text_fbJVJQ"
+  ]
+}
