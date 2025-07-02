@@ -61,11 +61,8 @@
   ====================================================================================================
   {%- endcomment -%}
 
-    <link rel="alternate" hreflang="x-default" href="{{ canonical_url | replace: shop.domain, 'lanolips.com' }}" />
-	<link rel="alternate" href="{{ canonical_url | replace: shop.domain, 'lanolips.com' }}" hreflang="en-us" />
-  	<link rel="alternate" href="{{ canonical_url | replace: shop.domain, 'lanolips.com.au' }}" hreflang="en-au" />
-  	<link rel="alternate" href="{{ canonical_url | replace: shop.domain, 'lanolips.eu' }}" hreflang="en" />
-  	<link rel="alternate" href="{{ canonical_url | replace: shop.domain, 'lanolips.co.uk' }}" hreflang="en-gb" />
+  
+    {% render 'hreflang-tags' %}
 
     {% include 'social-meta-tags' %}
     {% render 'meta-tags' %}
