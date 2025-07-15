@@ -667,7 +667,19 @@ document.addEventListener('DOMContentLoaded', function () {
     {% assign upsell_products = upsell_collection.products | limit: 6 %}
   
     <div class="cart-upsell">
-      <h2 class="heading-2xs">Pair with</h2>
+      <div class="cart-upsell-heading">
+          <h2 class="heading-2xs">Pair with</h2> 
+          <button
+            class="drawer__close_pw"
+            type="button"
+            onclick="sessionStorage.setItem('hideCartUpsell', 'true'); this.closest('.cart-upsell')?.remove();"
+            aria-label="{{ 'accessibility.close' | t }}"
+          >
+            <span class="svg-wrapper">
+              {{- 'icon-close-new.svg' | inline_asset_content -}}
+            </span>
+          </button>
+      </div>
       <slider-component class="cart-upsell-carousel upsell-carousel slider-mobile-gutter slider-component-full-width slider-component-desktop scroll-trigger animate--slide-in">
         <ul id="Slider-Upsell"
             data-id="Slider-Upsell"
@@ -750,7 +762,19 @@ document.addEventListener('DOMContentLoaded', function () {
     {% assign upsell_products = upsell_collection.products | limit: 6 %}
   
     <div class="cart-upsell">
-      <h2 class="heading-2xs">Pair with</h2>
+      <div class="cart-upsell-heading">
+          <h2 class="heading-2xs">Pair with</h2> 
+          <button
+            class="drawer__close_pw"
+            type="button"
+            onclick="sessionStorage.setItem('hideCartUpsell', 'true'); this.closest('.cart-upsell')?.remove();"
+            aria-label="{{ 'accessibility.close' | t }}"
+          >
+            <span class="svg-wrapper">
+              {{- 'icon-close-new.svg' | inline_asset_content -}}
+            </span>
+          </button>
+      </div>
       <slider-component class="cart-upsell-carousel upsell-carousel slider-mobile-gutter slider-component-full-width slider-component-desktop scroll-trigger animate--slide-in">
         <ul id="Slider-Upsell"
             data-id="Slider-Upsell"
