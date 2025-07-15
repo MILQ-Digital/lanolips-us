@@ -77,6 +77,24 @@ cart-drawer:not(.is-empty) .cart-drawer__collection {
   align-items: center;
 }
 
+.cart-upsell-heading {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.drawer__close_pw {
+  display: inline-block;
+    padding: 0;
+    min-width: 4.4rem;
+    min-height: 4.4rem;
+    box-shadow: 0 0 0 .2rem rgba(var(--color-button), 0);
+    color: rgb(var(--color-foreground));
+    background-color: transparent;
+    border: none;
+    cursor: pointer
+}
+
 .drawer__heading {
   margin: 0 0 1rem;
 }
