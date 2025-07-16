@@ -1,1 +1,549 @@
-{"current":{"location_us":"https:\/\/lanolips.com","location_au":"https:\/\/lanolips.com.au","location_uk":"https:\/\/lanolips.co.uk","location_eu":"https:\/\/lanolips.eu","logo":"shopify:\/\/shop_images\/new-lanolips-logo.png","logo_width":190,"favicon":"shopify:\/\/shop_images\/lanolips-favicon.png","image":"shopify:\/\/shop_images\/Lanolips-Login-Image-Block.webp","login-htitle":"Sign in to Lanolips","login-description":"Login to check in on you Lanolips account and manage your order and wishlist....","height":"adapt","desktop_image_width":"medium","layout":"image_first","desktop_content_position":"middle","desktop_content_alignment":"left","mobile_img_visibility":false,"padding_top":72,"padding_bottom":100,"enable_season":false,"season_logo":"shopify:\/\/shop_images\/season_logo.svg","season_logo_width":195,"season_favicon":"shopify:\/\/shop_images\/season_logo.svg","season_color_scheme":"scheme-1ee0be7b-eba0-4080-9dcf-bc07de4e1d9b","type_header_font":"assistant_n4","heading_scale":100,"type_body_font":"assistant_n4","body_scale":100,"page_width":1600,"spacing_sections":20,"spacing_grid_horizontal":4,"spacing_grid_vertical":8,"animations_reveal_on_scroll":true,"animations_hover_elements":"none","buttons_border_thickness":1,"buttons_border_opacity":100,"buttons_radius":8,"buttons_shadow_opacity":0,"buttons_shadow_horizontal_offset":0,"buttons_shadow_vertical_offset":0,"buttons_shadow_blur":5,"variant_pills_border_thickness":1,"variant_pills_border_opacity":55,"variant_pills_radius":40,"variant_pills_shadow_opacity":0,"variant_pills_shadow_horizontal_offset":0,"variant_pills_shadow_vertical_offset":4,"variant_pills_shadow_blur":5,"inputs_border_thickness":1,"inputs_border_opacity":55,"inputs_radius":0,"inputs_shadow_opacity":0,"inputs_shadow_horizontal_offset":0,"inputs_shadow_vertical_offset":0,"inputs_shadow_blur":5,"card_style":"standard","card_image_padding":0,"card_text_alignment":"left","show_secondary_image":true,"card_color_scheme":"scheme-2","card_border_thickness":0,"card_border_opacity":10,"card_corner_radius":0,"card_shadow_opacity":0,"card_shadow_horizontal_offset":0,"card_shadow_vertical_offset":4,"card_shadow_blur":5,"collection_card_style":"standard","collection_card_image_padding":0,"collection_card_text_alignment":"left","collection_card_color_scheme":"scheme-2","collection_card_border_thickness":0,"collection_card_border_opacity":10,"collection_card_corner_radius":0,"collection_card_shadow_opacity":0,"collection_card_shadow_horizontal_offset":0,"collection_card_shadow_vertical_offset":4,"collection_card_shadow_blur":5,"blog_card_style":"standard","blog_card_image_padding":0,"blog_card_text_alignment":"left","blog_card_color_scheme":"scheme-2","blog_card_border_thickness":0,"blog_card_border_opacity":10,"blog_card_corner_radius":0,"blog_card_shadow_opacity":0,"blog_card_shadow_horizontal_offset":0,"blog_card_shadow_vertical_offset":4,"blog_card_shadow_blur":5,"text_boxes_border_thickness":0,"text_boxes_border_opacity":10,"text_boxes_radius":0,"text_boxes_shadow_opacity":0,"text_boxes_shadow_horizontal_offset":0,"text_boxes_shadow_vertical_offset":4,"text_boxes_shadow_blur":5,"media_border_thickness":1,"media_border_opacity":5,"media_radius":0,"media_shadow_opacity":0,"media_shadow_horizontal_offset":0,"media_shadow_vertical_offset":4,"media_shadow_blur":5,"popup_border_thickness":1,"popup_border_opacity":10,"popup_corner_radius":0,"popup_shadow_opacity":5,"popup_shadow_horizontal_offset":0,"popup_shadow_vertical_offset":4,"popup_shadow_blur":5,"drawer_border_thickness":1,"drawer_border_opacity":10,"drawer_shadow_opacity":0,"drawer_shadow_horizontal_offset":0,"drawer_shadow_vertical_offset":4,"drawer_shadow_blur":5,"badge_position":"top left","badge_corner_radius":40,"sale_badge_color_scheme":"scheme-3","sold_out_badge_color_scheme":"scheme-3","badge_new_date_limit":10,"brand_headline":"","brand_description":"<p><\/p>","brand_image_width":100,"social_facebook_link":"https:\/\/www.facebook.com\/lanolips\/","social_instagram_link":"https:\/\/www.instagram.com\/lanolips","social_youtube_link":"https:\/\/www.youtube.com\/channel\/UC-qn41LRjYxPHtKILC1UgHA","social_tiktok_link":"https:\/\/www.tiktok.com\/@lanolips","social_twitter_link":"","social_snapchat_link":"","social_pinterest_link":"https:\/\/www.pinterest.com\/lanolips\/","social_tumblr_link":"","social_vimeo_link":"","predictive_search_enabled":true,"predictive_search_show_vendor":false,"predictive_search_show_price":true,"empty_search_menu":"","empty_search_product_list":[],"currency_code_enabled":false,"cart_type":"drawer","show_vendor":false,"show_cart_note":false,"enable_freeshipping":true,"shipping_message":"Add ||amount|| more for FREE shipping!","qualified_shipping_message":"FREE Standard shipping included","free_shipping_limit":"40","enable_freegift":false,"qualified_freegift_message":"FREE gift added to your cart","freegift_product_list":["lanolips-dry-body-brush","101-strawberry-lip-balm-phone-holder","hydrate-glow-duo","hyaluronic-lip-oil-raspberry"],"cart_drawer_collection":"","cart_color_scheme":"scheme-2","login_image":"shopify:\/\/shop_images\/login-image-block.webp","message":"Add ||amount|| more for FREE shipping!","sections":{"main-password-header":{"type":"main-password-header","settings":{"color_scheme":"scheme-1"}},"main-password-footer":{"type":"main-password-footer","settings":{"color_scheme":"scheme-1"}}},"content_for_index":[],"blocks":{"7570552984445421165":{"type":"shopify:\/\/apps\/yotpo-product-reviews\/blocks\/settings\/eb7dfd7d-db44-4334-bc49-c893b51b36cf","disabled":false,"settings":{}},"14339172867238703359":{"type":"shopify:\/\/apps\/yotpo-product-reviews\/blocks\/reviews_tab\/eb7dfd7d-db44-4334-bc49-c893b51b36cf","disabled":false,"settings":{"product":""}},"6858403126979251294":{"type":"shopify:\/\/apps\/consentik-cookie\/blocks\/omega-cookies-notification\/13cba824-a338-452e-9b8e-c83046a79f21","disabled":false,"settings":{}},"18128612654622612671":{"type":"shopify:\/\/apps\/selecty\/blocks\/app-embed\/a005a4a7-4aa2-4155-9c2b-0ab41acbf99c","disabled":false,"settings":{}},"855628211100114053":{"type":"shopify:\/\/apps\/klaviyo-email-marketing-sms\/blocks\/klaviyo-onsite-embed\/2632fe16-c075-4321-a88b-50b567f42507","disabled":false,"settings":{}},"8605505498557855500":{"type":"shopify:\/\/apps\/bogos-io-free-gift\/blocks\/app-embed\/0432bba6-720a-4e95-be5a-b868386f7aa6","disabled":false,"settings":{}},"10274264662263595587":{"type":"shopify:\/\/apps\/wishlist-plus\/blocks\/wishlist-collections-embed\/80c3b1fc-3a8f-407e-8367-ffdeebb8b612","disabled":false,"settings":{"swym_collections_icon_type":"heart","swym_collections_add_icon":"shopify:\/\/shop_images\/heart-collection.svg","swym_collections_added_icon":"shopify:\/\/shop_images\/heart-collection-active.svg","swym_collections_position":"top-right","swym_collections_vertical_offset":0,"swym_collections_horizontal_offset":0,"swym_collections_button_size":25,"swym_collections_icon_color":"#000000","swym_collections_product_link_selector":"a.grid-product-item","swym_collections_product_tile_selector":"li.grid__item","enable_variant_selector":false,"swym_add_to_wishlist_title_color":"#333333","swym_variant_selector_font_size_1":14,"swym_variant_selector_popup_bg_color":"#ffffff","swym_variant_selector_section_heading_color":"#000000","swym_variant_selector_section_heading_font_size_2":12,"swym_variant_selector_choose_create_text":"Choose or Create new Wishlist","swym_variant_selector_wishlist_btn_bg_color":"#292929","swym_variant_selector_wishlist_btn_color":"#ffffff","swym_variant_selector_product_detail_font_color":"#ffffff","swym_variant_selector_create_list_placeholder_text":"Enter wishlist name","swym_variant_selector_create_list_title":"Name Your Wishlist"}},"5946647744298494267":{"type":"shopify:\/\/apps\/wishlist-plus\/blocks\/wishlist-app-embed\/80c3b1fc-3a8f-407e-8367-ffdeebb8b612","disabled":false,"settings":{"storefront_layout_enabled":false,"storefront_layout_type":"as-section","storefront_layout_collection_enabled":true,"storefront_layout_primary_bg_color":"#000000","storefront_layout_primary_text_color":"#ffffff","storefront_layout_secondary_bg_color":"#f4f8fe","storefront_layout_secondary_text_color":"#333333","storefront_layout_ui_border_radius":6,"storefront_layout_notification_enabled_as_default":true,"storefront_layout_notification_position":"left","storefront_layout_action_popup_position":"left","storefront_layout_drawer_position":"left","storefront_layout_drawer_width":400,"storefront_layout_as_section_page":"swym-wishlist"}}},"color_schemes":{"scheme-1":{"settings":{"background":"#f3e5ef","background_gradient":"","text":"#2b4676","button":"#fb558e","button_label":"#ffffff","secondary_button_label":"#2b4676","shadow":"rgba(0,0,0,0)"}},"scheme-2":{"settings":{"background":"#ffffff","background_gradient":"","text":"#2b4676","button":"#fb558e","button_label":"#ffffff","secondary_button_label":"#2b4676","shadow":"rgba(0,0,0,0)"}},"scheme-3":{"settings":{"background":"rgba(0,0,0,0)","background_gradient":"","text":"#2b4676","button":"#fb558e","button_label":"#ffffff","secondary_button_label":"#fb558e","shadow":"rgba(0,0,0,0)"}},"scheme-4":{"settings":{"background":"#121212","background_gradient":"","text":"#ffffff","button":"#ffffff","button_label":"#121212","secondary_button_label":"#ffffff","shadow":"#121212"}},"scheme-5":{"settings":{"background":"#2b4676","background_gradient":"","text":"#ffffff","button":"#2b4676","button_label":"#ffffff","secondary_button_label":"#2b4676","shadow":"rgba(0,0,0,0)"}},"scheme-f0b80d15-f0fa-461b-b588-95b62c0b760a":{"settings":{"background":"#ffd5e3","background_gradient":"","text":"#2b4676","button":"#fb558e","button_label":"#ffffff","secondary_button_label":"#2b4676","shadow":"rgba(0,0,0,0)"}},"scheme-1ee0be7b-eba0-4080-9dcf-bc07de4e1d9b":{"settings":{"background":"rgba(0,0,0,0)","background_gradient":"","text":"#2b4676","button":"#2b4676","button_label":"#ffffff","secondary_button_label":"#2b4676","shadow":"rgba(0,0,0,0)"}},"scheme-d2d64bb4-1602-4f59-ab3f-f35f477ef722":{"settings":{"background":"#fae8ed","background_gradient":"","text":"#2b4676","button":"#fb558e","button_label":"#ffffff","secondary_button_label":"#2b4676","shadow":"rgba(0,0,0,0)"}}}},"presets":{"Default":{"logo_width":90,"color_schemes":{"scheme-1":{"settings":{"background":"#FFFFFF","background_gradient":"","text":"#121212","button":"#121212","button_label":"#FFFFFF","secondary_button_label":"#121212","shadow":"#121212"}},"scheme-2":{"settings":{"background":"#F3F3F3","background_gradient":"","text":"#121212","button":"#121212","button_label":"#F3F3F3","secondary_button_label":"#121212","shadow":"#121212"}},"scheme-3":{"settings":{"background":"#242833","background_gradient":"","text":"#FFFFFF","button":"#FFFFFF","button_label":"#000000","secondary_button_label":"#FFFFFF","shadow":"#121212"}},"scheme-4":{"settings":{"background":"#121212","background_gradient":"","text":"#FFFFFF","button":"#FFFFFF","button_label":"#121212","secondary_button_label":"#FFFFFF","shadow":"#121212"}},"scheme-5":{"settings":{"background":"#334FB4","background_gradient":"","text":"#FFFFFF","button":"#FFFFFF","button_label":"#334FB4","secondary_button_label":"#FFFFFF","shadow":"#121212"}}},"type_header_font":"assistant_n4","heading_scale":100,"type_body_font":"assistant_n4","body_scale":100,"page_width":1200,"spacing_sections":0,"spacing_grid_horizontal":8,"spacing_grid_vertical":8,"animations_reveal_on_scroll":true,"animations_hover_elements":"none","buttons_border_thickness":1,"buttons_border_opacity":100,"buttons_radius":0,"buttons_shadow_opacity":0,"buttons_shadow_horizontal_offset":0,"buttons_shadow_vertical_offset":4,"buttons_shadow_blur":5,"variant_pills_border_thickness":1,"variant_pills_border_opacity":55,"variant_pills_radius":40,"variant_pills_shadow_opacity":0,"variant_pills_shadow_horizontal_offset":0,"variant_pills_shadow_vertical_offset":4,"variant_pills_shadow_blur":5,"inputs_border_thickness":1,"inputs_border_opacity":55,"inputs_radius":0,"inputs_shadow_opacity":0,"inputs_shadow_horizontal_offset":0,"inputs_shadow_vertical_offset":4,"inputs_shadow_blur":5,"card_style":"standard","card_image_padding":0,"card_text_alignment":"left","card_color_scheme":"scheme-2","card_border_thickness":0,"card_border_opacity":10,"card_corner_radius":0,"card_shadow_opacity":0,"card_shadow_horizontal_offset":0,"card_shadow_vertical_offset":4,"card_shadow_blur":5,"collection_card_style":"standard","collection_card_image_padding":0,"collection_card_text_alignment":"left","collection_card_color_scheme":"scheme-2","collection_card_border_thickness":0,"collection_card_border_opacity":10,"collection_card_corner_radius":0,"collection_card_shadow_opacity":0,"collection_card_shadow_horizontal_offset":0,"collection_card_shadow_vertical_offset":4,"collection_card_shadow_blur":5,"blog_card_style":"standard","blog_card_image_padding":0,"blog_card_text_alignment":"left","blog_card_color_scheme":"scheme-2","blog_card_border_thickness":0,"blog_card_border_opacity":10,"blog_card_corner_radius":0,"blog_card_shadow_opacity":0,"blog_card_shadow_horizontal_offset":0,"blog_card_shadow_vertical_offset":4,"blog_card_shadow_blur":5,"text_boxes_border_thickness":0,"text_boxes_border_opacity":10,"text_boxes_radius":0,"text_boxes_shadow_opacity":0,"text_boxes_shadow_horizontal_offset":0,"text_boxes_shadow_vertical_offset":4,"text_boxes_shadow_blur":5,"media_border_thickness":1,"media_border_opacity":5,"media_radius":0,"media_shadow_opacity":0,"media_shadow_horizontal_offset":0,"media_shadow_vertical_offset":4,"media_shadow_blur":5,"popup_border_thickness":1,"popup_border_opacity":10,"popup_corner_radius":0,"popup_shadow_opacity":5,"popup_shadow_horizontal_offset":0,"popup_shadow_vertical_offset":4,"popup_shadow_blur":5,"drawer_border_thickness":1,"drawer_border_opacity":10,"drawer_shadow_opacity":0,"drawer_shadow_horizontal_offset":0,"drawer_shadow_vertical_offset":4,"drawer_shadow_blur":5,"badge_position":"bottom left","badge_corner_radius":40,"sale_badge_color_scheme":"scheme-4","sold_out_badge_color_scheme":"scheme-3","brand_headline":"","brand_description":"<p><\/p>","brand_image_width":100,"social_twitter_link":"","social_facebook_link":"","social_pinterest_link":"","social_instagram_link":"","social_tiktok_link":"","social_tumblr_link":"","social_snapchat_link":"","social_youtube_link":"","social_vimeo_link":"","predictive_search_enabled":true,"predictive_search_show_vendor":false,"predictive_search_show_price":false,"currency_code_enabled":true,"cart_type":"notification","show_vendor":false,"show_cart_note":false,"cart_drawer_collection":"","cart_color_scheme":"scheme-1","sections":{"main-password-header":{"type":"main-password-header","settings":{"color_scheme":"scheme-1"}},"main-password-footer":{"type":"main-password-footer","settings":{"color_scheme":"scheme-1"}}}}}}
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "current": {
+    "location_us": "https://lanolips.com",
+    "location_au": "https://lanolips.com.au",
+    "location_uk": "https://lanolips.co.uk",
+    "location_eu": "https://lanolips.eu",
+    "logo": "shopify://shop_images/lanolips-logo-header.png",
+    "logo_width": 190,
+    "favicon": "shopify://shop_images/lanolips-favicon.png",
+    "image": "shopify://shop_images/Lanolips-Login-Image-Block.webp",
+    "login-htitle": "Sign in to Lanolips",
+    "login-description": "Login to check in on you Lanolips account and manage your order and wishlist....",
+    "height": "adapt",
+    "desktop_image_width": "medium",
+    "layout": "image_first",
+    "desktop_content_position": "middle",
+    "desktop_content_alignment": "left",
+    "mobile_img_visibility": false,
+    "padding_top": 72,
+    "padding_bottom": 100,
+    "enable_season": false,
+    "season_logo": "shopify://shop_images/season_logo.svg",
+    "season_logo_width": 195,
+    "season_favicon": "shopify://shop_images/season_logo.svg",
+    "season_color_scheme": "scheme-1ee0be7b-eba0-4080-9dcf-bc07de4e1d9b",
+    "type_header_font": "assistant_n4",
+    "heading_scale": 100,
+    "type_body_font": "assistant_n4",
+    "body_scale": 100,
+    "page_width": 1600,
+    "spacing_sections": 20,
+    "spacing_grid_horizontal": 4,
+    "spacing_grid_vertical": 8,
+    "animations_reveal_on_scroll": true,
+    "animations_hover_elements": "none",
+    "buttons_border_thickness": 1,
+    "buttons_border_opacity": 100,
+    "buttons_radius": 8,
+    "buttons_shadow_opacity": 0,
+    "buttons_shadow_horizontal_offset": 0,
+    "buttons_shadow_vertical_offset": 0,
+    "buttons_shadow_blur": 5,
+    "variant_pills_border_thickness": 1,
+    "variant_pills_border_opacity": 55,
+    "variant_pills_radius": 40,
+    "variant_pills_shadow_opacity": 0,
+    "variant_pills_shadow_horizontal_offset": 0,
+    "variant_pills_shadow_vertical_offset": 4,
+    "variant_pills_shadow_blur": 5,
+    "inputs_border_thickness": 1,
+    "inputs_border_opacity": 55,
+    "inputs_radius": 0,
+    "inputs_shadow_opacity": 0,
+    "inputs_shadow_horizontal_offset": 0,
+    "inputs_shadow_vertical_offset": 0,
+    "inputs_shadow_blur": 5,
+    "card_style": "standard",
+    "card_image_padding": 0,
+    "card_text_alignment": "left",
+    "show_secondary_image": true,
+    "card_color_scheme": "scheme-2",
+    "card_border_thickness": 0,
+    "card_border_opacity": 10,
+    "card_corner_radius": 0,
+    "card_shadow_opacity": 0,
+    "card_shadow_horizontal_offset": 0,
+    "card_shadow_vertical_offset": 4,
+    "card_shadow_blur": 5,
+    "collection_card_style": "standard",
+    "collection_card_image_padding": 0,
+    "collection_card_text_alignment": "left",
+    "collection_card_color_scheme": "scheme-2",
+    "collection_card_border_thickness": 0,
+    "collection_card_border_opacity": 10,
+    "collection_card_corner_radius": 0,
+    "collection_card_shadow_opacity": 0,
+    "collection_card_shadow_horizontal_offset": 0,
+    "collection_card_shadow_vertical_offset": 4,
+    "collection_card_shadow_blur": 5,
+    "blog_card_style": "standard",
+    "blog_card_image_padding": 0,
+    "blog_card_text_alignment": "left",
+    "blog_card_color_scheme": "scheme-2",
+    "blog_card_border_thickness": 0,
+    "blog_card_border_opacity": 10,
+    "blog_card_corner_radius": 0,
+    "blog_card_shadow_opacity": 0,
+    "blog_card_shadow_horizontal_offset": 0,
+    "blog_card_shadow_vertical_offset": 4,
+    "blog_card_shadow_blur": 5,
+    "text_boxes_border_thickness": 0,
+    "text_boxes_border_opacity": 10,
+    "text_boxes_radius": 0,
+    "text_boxes_shadow_opacity": 0,
+    "text_boxes_shadow_horizontal_offset": 0,
+    "text_boxes_shadow_vertical_offset": 4,
+    "text_boxes_shadow_blur": 5,
+    "media_border_thickness": 1,
+    "media_border_opacity": 5,
+    "media_radius": 0,
+    "media_shadow_opacity": 0,
+    "media_shadow_horizontal_offset": 0,
+    "media_shadow_vertical_offset": 4,
+    "media_shadow_blur": 5,
+    "popup_border_thickness": 1,
+    "popup_border_opacity": 10,
+    "popup_corner_radius": 0,
+    "popup_shadow_opacity": 5,
+    "popup_shadow_horizontal_offset": 0,
+    "popup_shadow_vertical_offset": 4,
+    "popup_shadow_blur": 5,
+    "drawer_border_thickness": 1,
+    "drawer_border_opacity": 10,
+    "drawer_shadow_opacity": 0,
+    "drawer_shadow_horizontal_offset": 0,
+    "drawer_shadow_vertical_offset": 4,
+    "drawer_shadow_blur": 5,
+    "badge_position": "top left",
+    "badge_corner_radius": 40,
+    "sale_badge_color_scheme": "scheme-3",
+    "sold_out_badge_color_scheme": "scheme-3",
+    "badge_new_date_limit": 10,
+    "brand_headline": "",
+    "brand_description": "<p></p>",
+    "brand_image_width": 100,
+    "social_facebook_link": "https://www.facebook.com/lanolips/",
+    "social_instagram_link": "https://www.instagram.com/lanolips",
+    "social_youtube_link": "https://www.youtube.com/channel/UC-qn41LRjYxPHtKILC1UgHA",
+    "social_tiktok_link": "https://www.tiktok.com/@lanolips",
+    "social_twitter_link": "",
+    "social_snapchat_link": "",
+    "social_pinterest_link": "https://www.pinterest.com/lanolips/",
+    "social_tumblr_link": "",
+    "social_vimeo_link": "",
+    "predictive_search_enabled": true,
+    "predictive_search_show_vendor": false,
+    "predictive_search_show_price": true,
+    "empty_search_menu": "",
+    "empty_search_product_list": [],
+    "currency_code_enabled": false,
+    "cart_type": "drawer",
+    "show_vendor": false,
+    "show_cart_note": false,
+    "enable_freeshipping": true,
+    "shipping_message": "Add ||amount|| more for FREE shipping!",
+    "qualified_shipping_message": "FREE Standard shipping included",
+    "free_shipping_limit": "40",
+    "enable_freegift": false,
+    "qualified_freegift_message": "FREE gift added to your cart",
+    "freegift_product_list": [
+      "lanolips-dry-body-brush",
+      "101-strawberry-lip-balm-phone-holder",
+      "hydrate-glow-duo",
+      "hyaluronic-lip-oil-raspberry"
+    ],
+    "cart_drawer_collection": "",
+    "cart_color_scheme": "scheme-2",
+    "login_image": "shopify://shop_images/login-image-block.webp",
+    "message": "Add ||amount|| more for FREE shipping!",
+    "sections": {
+      "main-password-header": {
+        "type": "main-password-header",
+        "settings": {
+          "color_scheme": "scheme-1"
+        }
+      },
+      "main-password-footer": {
+        "type": "main-password-footer",
+        "settings": {
+          "color_scheme": "scheme-1"
+        }
+      }
+    },
+    "content_for_index": [],
+    "blocks": {
+      "7570552984445421165": {
+        "type": "shopify://apps/yotpo-product-reviews/blocks/settings/eb7dfd7d-db44-4334-bc49-c893b51b36cf",
+        "disabled": false,
+        "settings": {}
+      },
+      "14339172867238703359": {
+        "type": "shopify://apps/yotpo-product-reviews/blocks/reviews_tab/eb7dfd7d-db44-4334-bc49-c893b51b36cf",
+        "disabled": false,
+        "settings": {
+          "product": ""
+        }
+      },
+      "6858403126979251294": {
+        "type": "shopify://apps/consentik-cookie/blocks/omega-cookies-notification/13cba824-a338-452e-9b8e-c83046a79f21",
+        "disabled": false,
+        "settings": {}
+      },
+      "18128612654622612671": {
+        "type": "shopify://apps/selecty/blocks/app-embed/a005a4a7-4aa2-4155-9c2b-0ab41acbf99c",
+        "disabled": false,
+        "settings": {}
+      },
+      "855628211100114053": {
+        "type": "shopify://apps/klaviyo-email-marketing-sms/blocks/klaviyo-onsite-embed/2632fe16-c075-4321-a88b-50b567f42507",
+        "disabled": false,
+        "settings": {}
+      },
+      "8605505498557855500": {
+        "type": "shopify://apps/bogos-io-free-gift/blocks/app-embed/0432bba6-720a-4e95-be5a-b868386f7aa6",
+        "disabled": false,
+        "settings": {}
+      },
+      "10274264662263595587": {
+        "type": "shopify://apps/wishlist-plus/blocks/wishlist-collections-embed/80c3b1fc-3a8f-407e-8367-ffdeebb8b612",
+        "disabled": false,
+        "settings": {
+          "swym_collections_icon_type": "heart",
+          "swym_collections_add_icon": "shopify://shop_images/heart-collection.svg",
+          "swym_collections_added_icon": "shopify://shop_images/heart-collection-active.svg",
+          "swym_collections_position": "top-right",
+          "swym_collections_vertical_offset": 0,
+          "swym_collections_horizontal_offset": 0,
+          "swym_collections_button_size": 25,
+          "swym_collections_icon_color": "#000000",
+          "swym_collections_product_link_selector": "a.grid-product-item",
+          "swym_collections_product_tile_selector": "li.grid__item",
+          "enable_variant_selector": false,
+          "swym_add_to_wishlist_title_color": "#333333",
+          "swym_variant_selector_font_size_1": 14,
+          "swym_variant_selector_popup_bg_color": "#ffffff",
+          "swym_variant_selector_section_heading_color": "#000000",
+          "swym_variant_selector_section_heading_font_size_2": 12,
+          "swym_variant_selector_choose_create_text": "Choose or Create new Wishlist",
+          "swym_variant_selector_wishlist_btn_bg_color": "#292929",
+          "swym_variant_selector_wishlist_btn_color": "#ffffff",
+          "swym_variant_selector_product_detail_font_color": "#ffffff",
+          "swym_variant_selector_create_list_placeholder_text": "Enter wishlist name",
+          "swym_variant_selector_create_list_title": "Name Your Wishlist"
+        }
+      },
+      "5946647744298494267": {
+        "type": "shopify://apps/wishlist-plus/blocks/wishlist-app-embed/80c3b1fc-3a8f-407e-8367-ffdeebb8b612",
+        "disabled": false,
+        "settings": {
+          "storefront_layout_enabled": false,
+          "storefront_layout_type": "as-section",
+          "storefront_layout_collection_enabled": true,
+          "storefront_layout_primary_bg_color": "#000000",
+          "storefront_layout_primary_text_color": "#ffffff",
+          "storefront_layout_secondary_bg_color": "#f4f8fe",
+          "storefront_layout_secondary_text_color": "#333333",
+          "storefront_layout_ui_border_radius": 6,
+          "storefront_layout_notification_enabled_as_default": true,
+          "storefront_layout_notification_position": "left",
+          "storefront_layout_action_popup_position": "left",
+          "storefront_layout_drawer_position": "left",
+          "storefront_layout_drawer_width": 400,
+          "storefront_layout_as_section_page": "swym-wishlist"
+        }
+      }
+    },
+    "color_schemes": {
+      "scheme-1": {
+        "settings": {
+          "background": "#f3e5ef",
+          "background_gradient": "",
+          "text": "#2b4676",
+          "button": "#fb558e",
+          "button_label": "#ffffff",
+          "secondary_button_label": "#2b4676",
+          "shadow": "rgba(0,0,0,0)"
+        }
+      },
+      "scheme-2": {
+        "settings": {
+          "background": "#ffffff",
+          "background_gradient": "",
+          "text": "#2b4676",
+          "button": "#fb558e",
+          "button_label": "#ffffff",
+          "secondary_button_label": "#2b4676",
+          "shadow": "rgba(0,0,0,0)"
+        }
+      },
+      "scheme-3": {
+        "settings": {
+          "background": "rgba(0,0,0,0)",
+          "background_gradient": "",
+          "text": "#2b4676",
+          "button": "#fb558e",
+          "button_label": "#ffffff",
+          "secondary_button_label": "#fb558e",
+          "shadow": "rgba(0,0,0,0)"
+        }
+      },
+      "scheme-4": {
+        "settings": {
+          "background": "#121212",
+          "background_gradient": "",
+          "text": "#ffffff",
+          "button": "#ffffff",
+          "button_label": "#121212",
+          "secondary_button_label": "#ffffff",
+          "shadow": "#121212"
+        }
+      },
+      "scheme-5": {
+        "settings": {
+          "background": "#2b4676",
+          "background_gradient": "",
+          "text": "#ffffff",
+          "button": "#2b4676",
+          "button_label": "#ffffff",
+          "secondary_button_label": "#2b4676",
+          "shadow": "rgba(0,0,0,0)"
+        }
+      },
+      "scheme-f0b80d15-f0fa-461b-b588-95b62c0b760a": {
+        "settings": {
+          "background": "#ffd5e3",
+          "background_gradient": "",
+          "text": "#2b4676",
+          "button": "#fb558e",
+          "button_label": "#ffffff",
+          "secondary_button_label": "#2b4676",
+          "shadow": "rgba(0,0,0,0)"
+        }
+      },
+      "scheme-1ee0be7b-eba0-4080-9dcf-bc07de4e1d9b": {
+        "settings": {
+          "background": "rgba(0,0,0,0)",
+          "background_gradient": "",
+          "text": "#2b4676",
+          "button": "#2b4676",
+          "button_label": "#ffffff",
+          "secondary_button_label": "#2b4676",
+          "shadow": "rgba(0,0,0,0)"
+        }
+      },
+      "scheme-d2d64bb4-1602-4f59-ab3f-f35f477ef722": {
+        "settings": {
+          "background": "#fae8ed",
+          "background_gradient": "",
+          "text": "#2b4676",
+          "button": "#fb558e",
+          "button_label": "#ffffff",
+          "secondary_button_label": "#2b4676",
+          "shadow": "rgba(0,0,0,0)"
+        }
+      }
+    }
+  },
+  "presets": {
+    "Default": {
+      "logo_width": 90,
+      "color_schemes": {
+        "scheme-1": {
+          "settings": {
+            "background": "#FFFFFF",
+            "background_gradient": "",
+            "text": "#121212",
+            "button": "#121212",
+            "button_label": "#FFFFFF",
+            "secondary_button_label": "#121212",
+            "shadow": "#121212"
+          }
+        },
+        "scheme-2": {
+          "settings": {
+            "background": "#F3F3F3",
+            "background_gradient": "",
+            "text": "#121212",
+            "button": "#121212",
+            "button_label": "#F3F3F3",
+            "secondary_button_label": "#121212",
+            "shadow": "#121212"
+          }
+        },
+        "scheme-3": {
+          "settings": {
+            "background": "#242833",
+            "background_gradient": "",
+            "text": "#FFFFFF",
+            "button": "#FFFFFF",
+            "button_label": "#000000",
+            "secondary_button_label": "#FFFFFF",
+            "shadow": "#121212"
+          }
+        },
+        "scheme-4": {
+          "settings": {
+            "background": "#121212",
+            "background_gradient": "",
+            "text": "#FFFFFF",
+            "button": "#FFFFFF",
+            "button_label": "#121212",
+            "secondary_button_label": "#FFFFFF",
+            "shadow": "#121212"
+          }
+        },
+        "scheme-5": {
+          "settings": {
+            "background": "#334FB4",
+            "background_gradient": "",
+            "text": "#FFFFFF",
+            "button": "#FFFFFF",
+            "button_label": "#334FB4",
+            "secondary_button_label": "#FFFFFF",
+            "shadow": "#121212"
+          }
+        }
+      },
+      "type_header_font": "assistant_n4",
+      "heading_scale": 100,
+      "type_body_font": "assistant_n4",
+      "body_scale": 100,
+      "page_width": 1200,
+      "spacing_sections": 0,
+      "spacing_grid_horizontal": 8,
+      "spacing_grid_vertical": 8,
+      "animations_reveal_on_scroll": true,
+      "animations_hover_elements": "none",
+      "buttons_border_thickness": 1,
+      "buttons_border_opacity": 100,
+      "buttons_radius": 0,
+      "buttons_shadow_opacity": 0,
+      "buttons_shadow_horizontal_offset": 0,
+      "buttons_shadow_vertical_offset": 4,
+      "buttons_shadow_blur": 5,
+      "variant_pills_border_thickness": 1,
+      "variant_pills_border_opacity": 55,
+      "variant_pills_radius": 40,
+      "variant_pills_shadow_opacity": 0,
+      "variant_pills_shadow_horizontal_offset": 0,
+      "variant_pills_shadow_vertical_offset": 4,
+      "variant_pills_shadow_blur": 5,
+      "inputs_border_thickness": 1,
+      "inputs_border_opacity": 55,
+      "inputs_radius": 0,
+      "inputs_shadow_opacity": 0,
+      "inputs_shadow_horizontal_offset": 0,
+      "inputs_shadow_vertical_offset": 4,
+      "inputs_shadow_blur": 5,
+      "card_style": "standard",
+      "card_image_padding": 0,
+      "card_text_alignment": "left",
+      "card_color_scheme": "scheme-2",
+      "card_border_thickness": 0,
+      "card_border_opacity": 10,
+      "card_corner_radius": 0,
+      "card_shadow_opacity": 0,
+      "card_shadow_horizontal_offset": 0,
+      "card_shadow_vertical_offset": 4,
+      "card_shadow_blur": 5,
+      "collection_card_style": "standard",
+      "collection_card_image_padding": 0,
+      "collection_card_text_alignment": "left",
+      "collection_card_color_scheme": "scheme-2",
+      "collection_card_border_thickness": 0,
+      "collection_card_border_opacity": 10,
+      "collection_card_corner_radius": 0,
+      "collection_card_shadow_opacity": 0,
+      "collection_card_shadow_horizontal_offset": 0,
+      "collection_card_shadow_vertical_offset": 4,
+      "collection_card_shadow_blur": 5,
+      "blog_card_style": "standard",
+      "blog_card_image_padding": 0,
+      "blog_card_text_alignment": "left",
+      "blog_card_color_scheme": "scheme-2",
+      "blog_card_border_thickness": 0,
+      "blog_card_border_opacity": 10,
+      "blog_card_corner_radius": 0,
+      "blog_card_shadow_opacity": 0,
+      "blog_card_shadow_horizontal_offset": 0,
+      "blog_card_shadow_vertical_offset": 4,
+      "blog_card_shadow_blur": 5,
+      "text_boxes_border_thickness": 0,
+      "text_boxes_border_opacity": 10,
+      "text_boxes_radius": 0,
+      "text_boxes_shadow_opacity": 0,
+      "text_boxes_shadow_horizontal_offset": 0,
+      "text_boxes_shadow_vertical_offset": 4,
+      "text_boxes_shadow_blur": 5,
+      "media_border_thickness": 1,
+      "media_border_opacity": 5,
+      "media_radius": 0,
+      "media_shadow_opacity": 0,
+      "media_shadow_horizontal_offset": 0,
+      "media_shadow_vertical_offset": 4,
+      "media_shadow_blur": 5,
+      "popup_border_thickness": 1,
+      "popup_border_opacity": 10,
+      "popup_corner_radius": 0,
+      "popup_shadow_opacity": 5,
+      "popup_shadow_horizontal_offset": 0,
+      "popup_shadow_vertical_offset": 4,
+      "popup_shadow_blur": 5,
+      "drawer_border_thickness": 1,
+      "drawer_border_opacity": 10,
+      "drawer_shadow_opacity": 0,
+      "drawer_shadow_horizontal_offset": 0,
+      "drawer_shadow_vertical_offset": 4,
+      "drawer_shadow_blur": 5,
+      "badge_position": "bottom left",
+      "badge_corner_radius": 40,
+      "sale_badge_color_scheme": "scheme-4",
+      "sold_out_badge_color_scheme": "scheme-3",
+      "brand_headline": "",
+      "brand_description": "<p></p>",
+      "brand_image_width": 100,
+      "social_twitter_link": "",
+      "social_facebook_link": "",
+      "social_pinterest_link": "",
+      "social_instagram_link": "",
+      "social_tiktok_link": "",
+      "social_tumblr_link": "",
+      "social_snapchat_link": "",
+      "social_youtube_link": "",
+      "social_vimeo_link": "",
+      "predictive_search_enabled": true,
+      "predictive_search_show_vendor": false,
+      "predictive_search_show_price": false,
+      "currency_code_enabled": true,
+      "cart_type": "notification",
+      "show_vendor": false,
+      "show_cart_note": false,
+      "cart_drawer_collection": "",
+      "cart_color_scheme": "scheme-1",
+      "sections": {
+        "main-password-header": {
+          "type": "main-password-header",
+          "settings": {
+            "color_scheme": "scheme-1"
+          }
+        },
+        "main-password-footer": {
+          "type": "main-password-footer",
+          "settings": {
+            "color_scheme": "scheme-1"
+          }
+        }
+      }
+    }
+  }
+}
