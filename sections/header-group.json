@@ -14,13 +14,6 @@
     "announcement-bar": {
       "type": "announcement-bar",
       "blocks": {
-        "announcement_6yfKbX": {
-          "type": "announcement",
-          "settings": {
-            "text": "Scoop  101 Dulce Gelato or Mango Sorbet for $9.95 - Ends Sunday",
-            "link": ""
-          }
-        },
         "announcement_pLqYVa": {
           "type": "announcement",
           "settings": {
@@ -30,7 +23,6 @@
         }
       },
       "block_order": [
-        "announcement_6yfKbX",
         "announcement_pLqYVa"
       ],
       "settings": {
