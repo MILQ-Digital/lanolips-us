@@ -27,7 +27,7 @@
 
 
 
- {%- style -%}
+  {%- style -%}
     {% for block in section.blocks %}
       @media screen and (max-width: 749px) {
         #Slider-{{ section.id }} .slideshow__text-wrapper-{{ block.id }} {
@@ -157,7 +157,7 @@
         aria-label="{{ forloop.index }} {{ 'general.slider.of' | t }} {{ forloop.length }}"
         tabindex="-1"
       >
-        <div class="slideshow__media banner__media media">
+        <div class="slideshow__media banner__media media {{ block.settings.image_alignment }} {% if block.settings.mobileimage %}with-mobile-image{% endif %} {% if block.settings.slide_video_file_mobile %}with-mobile-video{% endif %}">
         {%- if block.settings.slide_video_url != blank -%}
           {%- if block.settings.slide_video_url contains "youtube.com" or block.settings.slide_video_url contains "youtu.be" -%}
             {%- assign video_id = block.settings.slide_video_url 
@@ -168,7 +168,6 @@
         
             <!-- YouTube Embed -->
             <iframe 
-              title="Video Player"
               class="slideshow__video"
               src="https://www.youtube.com/embed/{{ video_id }}?autoplay=1&mute=1&loop=1&playlist={{ video_id }}" 
               frameborder="0"
@@ -183,7 +182,6 @@
         
             <!-- Vimeo Embed -->
             <iframe 
-              title="Video Player"
               class="slideshow__video"
               src="https://player.vimeo.com/video/{{ vimeo_id }}?autoplay=1&muted=1&loop=1" 
               frameborder="0"
@@ -198,16 +196,19 @@
         {%- elsif block.settings.slide_video_file != blank -%}
           <!-- Shopify MP4 Video Upload -->
           {%- assign poster_url = block.settings.image | image_url: width: 3840 -%}
-         {{ block.settings.slide_video_file | video_tag: autoplay: true, loop: true, muted: true, controls: true, class: 'slideshow__video', poster: poster_url }}
+          {{ block.settings.slide_video_file | video_tag: autoplay: true, loop: true, muted: true, controls: false, class: 'slideshow__video desktop--video-slide', poster: poster_url  }}
+          {% if block.settings.slide_video_file_mobile %}
+            {{ block.settings.slide_video_file_mobile | video_tag: autoplay: true, loop: true, muted: true, controls: false, class: 'slideshow__video mobile--video-slide', poster: poster_url  }}
+          {%- endif -%}
         
-        {%- elsif block.settings.image -%}
+        {%- elsif block.settings.image or block.settings.mobileimage -%}
           <!-- Fallback Image -->
-          <img src="{{ block.settings.image | image_url: width: 3840 }}" alt="Slide Image">
+          <img class="desktop-image" src="{{ block.settings.image | image_url: width: 3840 }}" alt="Slide Image">
+          {%- if block.settings.mobileimage -%}
+            <img class="mobile-image" src="{{ block.settings.mobileimage | image_url: width: 750}}"alt="Mobile Slide Image">
+          {%- endif -%}
         {%- endif -%}
-
       </div>
-
-
         
         <div class="slideshow__text-wrapper slideshow__text-wrapper-{{ block.id }} banner__content banner__content--{{ block.settings.box_align }} page-width{% if block.settings.show_text_box == false %} banner--desktop-transparent{% endif %}{% if settings.animations_reveal_on_scroll and forloop.index == 1 %} scroll-trigger animate--slide-in{% endif %}">
           <div class="slideshow__text {% if block.settings.hide_text_mobile %}hide_slideshow__text-{{ block.id }}{% endif %} banner__box content-container content-container--full-width-mobile color-{{ block.settings.color_scheme }} gradient slideshow__text--{{ block.settings.text_alignment }} slideshow__text-mobile--{{ block.settings.text_alignment_mobile }}">
@@ -215,9 +216,9 @@
                <h6 class="banner__sub_heading inline-richtext banner__sub_heading-{{ block.id }}">
                 {{ block.settings.subheading }}
               </h6>
-            {%- endif -%}
+            {%- endif -%}      
             {%- if block.settings.subheading_script != blank -%}
-               <h4 class="banner__subheading_script lanoscript inline-richtext banner__subheading_script-{{ block.id }}">  
+               <h4 class="banner__subheading_script lanoscript inline-richtext banner__subheading_script-{{ block.id }}">
                 {{ block.settings.subheading_script }}
               </h4>
             {%- endif -%}                 
@@ -241,7 +242,7 @@
                   {% endif %}
                   class="button {% if block.settings.button_style_secondary %}button--secondary{% else %}button--primary{% endif %} button-{{ block.id }}"
                 >
-                  {{- block.settings.button_label | escape -}} <span class="visually-hidden"> - {{ block.settings.heading | escape }}</span>
+                  {{- block.settings.button_label | escape -}}
                 </a>
               </div>
             {%- endif -%}
@@ -467,6 +468,31 @@
           "label": "t:sections.slideshow.blocks.slide.settings.image.label"
         },
         {
+          "type": "image_picker",
+          "id": "mobileimage",
+          "label": "Mobile Image"
+        },
+        {
+          "type": "select",
+          "id": "image_alignment",
+          "label": "Image Alignment",
+          "default": "image-center",
+          "options": [
+            {
+              "value": "image-left",
+              "label": "Left"
+            },
+            {
+              "value": "image-center",
+              "label": "Center"
+            },
+            {
+              "value": "image-right",
+              "label": "Right"
+            }
+          ]
+        },
+        {
           "type": "video",
           "id": "slide_video_file",
           "label": "Upload MP4 Video"
@@ -476,6 +502,11 @@
           "id": "slide_video_url",
           "label": "YouTube/Vimeo Video",
           "accept": ["youtube", "vimeo"]
+        },
+        {
+          "type": "video",
+          "id": "slide_video_file_mobile",
+          "label": "Mobile Upload MP4 Video"
         },
         {
           "type": "inline_richtext",
