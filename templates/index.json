@@ -45,11 +45,12 @@
           "disabled": true,
           "settings": {
             "image": "shopify://shop_images/Sun_Balm_SPF_30_Tropical_Phone_Lip_Balm_Holder_BANNER_2.jpg",
+            "mobileimage": "shopify://shop_images/lanolips-sun-balm-spf-30-video-still-mobile-version.jpg",
             "image_alignment": "image-center",
             "slide_video_file": "shopify://files/videos/lanolips-sunbalm-spf-30-and-phone-lip-balm-holder-video-banner.mp4",
             "slide_video_url": "",
             "slide_video_file_mobile": "shopify://files/videos/lanolips-sun-balm-phone-lip-balm-holder-mobile-banner.mp4",
-            "subheading": "Seri",
+            "subheading": "",
             "subheading_script": "",
             "heading": "Sun Balm SPF 30 + Phone Lip Balm Holder",
             "heading_size": "hxxl",
