@@ -16,6 +16,7 @@
           "type": "slide",
           "disabled": true,
           "settings": {
+            "image_alignment": "image-center",
             "slide_video_url": "",
             "subheading": "Freshly Baked",
             "subheading_script": "",
@@ -43,6 +44,9 @@
           "type": "slide",
           "disabled": true,
           "settings": {
+            "image": "shopify://shop_images/Sun_Balm_SPF_30_Tropical_Phone_Lip_Balm_Holder_BANNER_2.jpg",
+            "image_alignment": "image-center",
+            "slide_video_file": "shopify://files/videos/lanolips-sunbalm-spf-30-and-phone-lip-balm-holder-video-banner.mp4",
             "slide_video_url": "",
             "subheading": "Serie",
             "subheading_script": "Freshly Baked",
@@ -70,6 +74,7 @@
           "type": "slide",
           "settings": {
             "image": "shopify://shop_images/lanolips-hyaluronic-lip-oil-banner-holder.jpg",
+            "image_alignment": "image-center",
             "slide_video_file": "shopify://files/videos/lanolips-hyaluronic-lip-oil-homepage-video.mp4",
             "slide_video_url": "",
             "subheading": "",
