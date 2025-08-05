@@ -42,7 +42,6 @@
         "slide_NAx7bN": {
           "type": "slide",
           "name": "Sun Balm + Phone Lip Balm Holder (DRAFT)",
-          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/Sun_Balm_SPF_30_Tropical_Phone_Lip_Balm_Holder_BANNER_2.jpg",
             "slide_video_file": "shopify://files/videos/lanolips-sunbalm-spf-30-and-phone-lip-balm-holder-video-banner.mp4",
@@ -58,7 +57,7 @@
             "box_align": "middle-left",
             "show_text_box": false,
             "text_alignment": "left",
-            "image_overlay_opacity": 80,
+            "image_overlay_opacity": 0,
             "color_scheme": "scheme-3",
             "text_alignment_mobile": "center",
             "text_color_mobile": "#2b4676",
@@ -66,11 +65,12 @@
             "text_bg_mobile": "#ffd5e3",
             "btn_bg_mobile": "#fb558e",
             "heading_font_size_mobile": 30,
-            "script_heading_font_size_mobile": 16
+            "script_heading_font_size_mobile": 30
           }
         },
         "slide_BxjGpJ": {
           "type": "slide",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/lanolips-hyaluronic-lip-oil-banner-holder.jpg",
             "slide_video_file": "shopify://files/videos/lanolips-hyaluronic-lip-oil-homepage-video.mp4",
