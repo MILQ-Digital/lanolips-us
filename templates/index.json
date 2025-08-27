@@ -42,7 +42,6 @@
         },
         "slide_NAx7bN": {
           "type": "slide",
-          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/Sun_Balm_SPF_30_Tropical_Phone_Lip_Balm_Holder_BANNER_2.jpg",
             "mobileimage": "shopify://shop_images/lanolips-sun-balm-spf-30-video-still-mobile-version.jpg",
@@ -56,7 +55,7 @@
             "heading_size": "hxxl",
             "subcontent": "<p>Snap, Hydrate, Protect</p>",
             "button_label": "SPF Lip Care, On Call",
-            "link": "shopify://collections/all",
+            "link": "shopify://products/sun-balm-spf-30-phone-lip-balm-holder",
             "button_style_secondary": false,
             "box_align": "middle-left",
             "show_text_box": false,
