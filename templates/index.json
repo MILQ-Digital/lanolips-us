@@ -161,22 +161,22 @@
         "heading_Db9tcb": {
           "type": "heading",
           "settings": {
-            "heading": "Lanolips Hyaluronic Lip Oil",
+            "heading": "Sun Balm SPF 30 + Phone Lip Balm Holder",
             "heading_size": "hs"
           }
         },
         "text_jTzLCJ": {
           "type": "text",
           "settings": {
-            "text": "<p>Introducing the New Standard of Lip Oils. The ultimate in lip hydration and shine with Lanolips Hyaluronic Lip Oil</p>",
+            "text": "<p>SNAP ON HYDRATION ANYTIME. ANYWHERE.<br/>It's your wakeup call for dry lips!</p>",
             "text_style": "subtitle"
           }
         },
         "button_AxwgMt": {
           "type": "button",
           "settings": {
-            "button_label": "Shop Lip Oil",
-            "button_link": "https://lanolips.com/collections/lip-oil",
+            "button_label": "SPF Lip Care, On Call",
+            "button_link": "shopify://products/sun-balm-spf-30-phone-lip-balm-holder",
             "button_style_secondary": false,
             "button_style_underline": false
           }
@@ -189,7 +189,7 @@
         "button_AxwgMt"
       ],
       "settings": {
-        "image": "shopify://shop_images/Hyaluronic_Lip_Oil_Product_Honey_and_Raspberry_Image_0bf8cd3b-f042-4d18-acf9-5204127f1d6d.jpg",
+        "image": "shopify://shop_images/model-holding-lanolips-sunbalm-spf-30-phone-lip-balm-holder-against-face-homepage.jpg",
         "height": "adapt",
         "desktop_image_width": "medium",
         "layout": "text_first",
