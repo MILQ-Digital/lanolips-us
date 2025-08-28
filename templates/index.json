@@ -16,13 +16,14 @@
           "type": "slide",
           "disabled": true,
           "settings": {
+            "image": "shopify://shop_images/lanolips-flash-sale-banner-promo.png",
             "image_alignment": "image-center",
             "slide_video_url": "",
-            "subheading": "Freshly Baked",
+            "subheading": "Lanolips Sale",
             "subheading_script": "",
-            "heading": "The new Lanolips 101 Delicious 123 bla collection for us",
+            "heading": "20% Off Sitewide",
             "heading_size": "hxxl",
-            "subcontent": "<p>Discover our new range of mouth watering flavours Discover our new range of mouth watering flavours Discover our new range of mouth watering flavours Discover our new  </p>",
+            "subcontent": "<p>Offer ends Tuesday 2nd September</p>",
             "button_label": "Shop Now",
             "link": "shopify://collections/all",
             "button_style_secondary": false,
@@ -73,6 +74,7 @@
         },
         "slide_BxjGpJ": {
           "type": "slide",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/lanolips-hyaluronic-lip-oil-banner-holder.jpg",
             "image_alignment": "image-center",
