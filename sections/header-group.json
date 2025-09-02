@@ -23,6 +23,7 @@
         },
         "announcement_VmKR77": {
           "type": "announcement",
+          "disabled": true,
           "settings": {
             "text": "20% off Sitewide - ends Tuesday!",
             "link": ""
