@@ -5,13 +5,17 @@
   {% render 'cart-drawer' %}
 {% endcomment %}
 
-{{ 'quantity-popover.css' | asset_url | stylesheet_tag }}
-{{ 'component-card.css' | asset_url | stylesheet_tag }}
+<link rel="stylesheet" href="{{ 'quantity-popover.css' | asset_url }}" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="{{ 'quantity-popover.css' | asset_url }}"></noscript>
+
+<link rel="stylesheet" href="{{ 'component-card.css' | asset_url }}" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="{{ 'component-card.css' | asset_url }}"></noscript>
 
 <script src="{{ 'cart.js' | asset_url }}" defer="defer"></script>
 <script src="{{ 'quantity-popover.js' | asset_url }}" defer="defer"></script>
 
-{{ 'component-slider.css' | asset_url | stylesheet_tag }}
+<link rel="stylesheet" href="{{ 'component-slider.css' | asset_url }}" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="{{ 'component-slider.css' | asset_url }}"></noscript>
 <script src="{{ 'quick-add.js' | asset_url }}" defer="defer"></script>
 <script>
 
@@ -738,9 +742,14 @@ document.addEventListener('DOMContentLoaded', function () {
         </div>
       </slider-component>
     </div>
-    {{ 'component-card.css' | asset_url | stylesheet_tag }}
-    {{ 'component-complementary-products.css' | asset_url | stylesheet_tag }}
-    {{ 'quick-add.css' | asset_url | stylesheet_tag }}
+    <link rel="stylesheet" href="{{ 'component-card.css' | asset_url }}" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="{{ 'component-card.css' | asset_url }}"></noscript>
+    
+    <link rel="stylesheet" href="{{ 'component-complementary-products.css' | asset_url }}" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="{{ 'component-complementary-products.css' | asset_url }}"></noscript>
+    
+    <link rel="stylesheet" href="{{ 'quick-add.css' | asset_url }}" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="{{ 'quick-add.css' | asset_url }}"></noscript>
     <script src="{{ 'quick-add.js' | asset_url }}" defer="defer"></script>  
   {%- endif -%}
   
@@ -833,9 +842,14 @@ document.addEventListener('DOMContentLoaded', function () {
         </div>
       </slider-component>
     </div>
-    {{ 'component-card.css' | asset_url | stylesheet_tag }}
-    {{ 'component-complementary-products.css' | asset_url | stylesheet_tag }}
-    {{ 'quick-add.css' | asset_url | stylesheet_tag }}
+    <link rel="stylesheet" href="{{ 'component-card.css' | asset_url }}" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="{{ 'component-card.css' | asset_url }}"></noscript>
+    
+    <link rel="stylesheet" href="{{ 'component-complementary-products.css' | asset_url }}" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="{{ 'component-complementary-products.css' | asset_url }}"></noscript>
+    
+    <link rel="stylesheet" href="{{ 'quick-add.css' | asset_url }}" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="{{ 'quick-add.css' | asset_url }}"></noscript>
     <script src="{{ 'quick-add.js' | asset_url }}" defer="defer"></script>  
   {% endif %}
 
