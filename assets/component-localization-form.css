@@ -59,7 +59,6 @@
   .localization-form__currency {
     opacity: 1;
   }
-  
 }
 
 .localization-form__select {
@@ -292,6 +291,10 @@
 
 .countries {
   padding-top: 0.6rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .popular-countries {

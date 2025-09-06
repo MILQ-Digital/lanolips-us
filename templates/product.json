@@ -16,10 +16,43 @@
           "type": "title",
           "settings": {}
         },
+        "wishlist_plus_wishlist_pdp_button_kRjrt4": {
+          "type": "shopify://apps/wishlist-plus/blocks/wishlist-pdp-button/80c3b1fc-3a8f-407e-8367-ffdeebb8b612",
+          "settings": {
+            "swym_atw_button_icon": "heart",
+            "swym_atw_icon_thickness": 1.7,
+            "swym_atw_display_btn_text": false,
+            "swym_button_position": "product_title_right",
+            "swym_atw_button_vertical_offset": 0,
+            "swym_atw_full_width": true,
+            "swym_atw_button_alignment": "center",
+            "swym_add_to_wishlist_color": "#ffffff",
+            "swym_added_to_wishlist_color": "#ffffff",
+            "swym_button_text_color": "#2b4676",
+            "swym_atw_border_color": "#ffffff",
+            "swym_atw_border_thickness": 0,
+            "swym_atw_button_border_radius": 0,
+            "swym_enable_hover_customization": true,
+            "swym_hover_add_to_wishlist_color": "#ffffff",
+            "swym_hover_added_to_wishlist_color": "#ffffff",
+            "swym_hover_button_text_color": "#2b4676",
+            "swym_hover_atw_border_color": "#ffffff",
+            "swym_hover_atw_border_thickness": 0,
+            "swym_hover_atw_button_border_radius": 0,
+            "swym_custom_css": ""
+          }
+        },
+        "yotpo_product_reviews_star_rating_t3XDVb": {
+          "type": "shopify://apps/yotpo-product-reviews/blocks/star-rating/eb7dfd7d-db44-4334-bc49-c893b51b36cf",
+          "settings": {
+            "product": "{{product}}"
+          }
+        },
         "wishlist_plus_wishlist_pdp_button_aPiPed": {
           "type": "shopify://apps/wishlist-plus/blocks/wishlist-pdp-button/80c3b1fc-3a8f-407e-8367-ffdeebb8b612",
           "settings": {
             "swym_atw_button_icon": "heart",
+            "swym_atw_icon_thickness": 1.7,
             "swym_atw_custom_icon": "shopify://shop_images/whishlist-heart.svg",
             "swym_atw_display_btn_text": false,
             "swym_button_position": "product_title_right",
@@ -28,7 +61,7 @@
             "swym_atw_button_alignment": "right",
             "swym_add_to_wishlist_color": "#ffffff",
             "swym_added_to_wishlist_color": "#ffffff",
-            "swym_button_text_color": "#FAE8ED",
+            "swym_button_text_color": "#2b4676",
             "swym_atw_border_color": "#ffffff",
             "swym_atw_border_thickness": 0,
             "swym_atw_button_border_radius": 0,
@@ -46,12 +79,6 @@
           "type": "price",
           "disabled": true,
           "settings": {}
-        },
-        "24fa7db6-08e7-49e0-a3ab-1bb6847ff6a3": {
-          "type": "shopify://apps/yotpo-product-reviews/blocks/star-rating/eb7dfd7d-db44-4334-bc49-c893b51b36cf",
-          "settings": {
-            "product": "{{product}}"
-          }
         },
         "description": {
           "type": "description",
@@ -99,6 +126,29 @@
             "custom_liquid": "<script src=\"//foursixty.com/media/scripts/fs.slider.v2.5.js\" data-feed-id=\"lanolips\" data-theme=\"slider_v2_5\" data-open-links-in-same-page=\"true\"  data-cell-size=\"20%\"></script>\n<style>.fs-has-links { display:none; } .fs-wrapper { height:auto; } .fs-slider_v2_5  .fs-entry-container { height:0 !important;width:20%!important;padding-top:20%!important; } .fs-wrapper div.fs-text-container .fs-entry-title, div.fs-detail-title { font-family:Times New Roman, serif;font-style:normal;font-weight:normal;font-size:14px; } div.fs-text-container .fs-entry-date, div.fs-detail-container .fs-post-info, div.fs-wrapper div.fs-has-links::after, .fs-text-product, .fs-overlink-text { font-family:Helvetica Neue, Helvetica, Arial, sans-serif;font-style:normal;font-weight:normal;font-size:14px; } .fs-wrapper div.fs-text-container * { color:#ffffff; } .fs-wrapper div.fs-text-container { background-color:rgba(0, 0, 0, 0.15);margin:0px; } div.fs-entry-date { display:none; } div.fs-service-icon { display:none; } div.fs-entry-title { display:none; } .fs-slider_v2_5 .fs-wrapper div.fs-timeline-entry { margin:10px; } </style>"
           }
         },
+        "foursixty_shoppable_social_ugc_custom_gallery_TYaYDw": {
+          "type": "shopify://apps/foursixty-shoppable-social-ugc/blocks/custom_gallery/e2616dfe-fbb6-4e7d-874d-d250b973556d",
+          "name": "Custom Gallery -current",
+          "disabled": true,
+          "settings": {
+            "customizer_code": "<div id=\"foursixty-hideable-container\" style=\"display:none\">\t\n\t<p class=\"product__heading strong\">See Me In Action</p>\n\t<script src=\"//foursixty.com/media/scripts/fs.slider.v2.5.js\" data-feed-id=\"lanolips\" data-theme=\"slider_v2_5\" data-open-links-in-same-page=\"true\" data-cell-size=\"20%\" data-has-posts-selector=\"#foursixty-hideable-container\" data-for-url=\"true\"></script>\n</div>\t\n\t<style>.fs-has-links { display:none; } .fs-wrapper { height:auto; } .fs-slider_v2_5  .fs-entry-container { height:0 !important;width:20%!important;padding-top:20%!important; } .fs-wrapper div.fs-text-container .fs-entry-title, div.fs-detail-title { font-family:Times New Roman, serif;font-style:normal;font-weight:normal;font-size:14px; } div.fs-text-container .fs-entry-date, div.fs-detail-container .fs-post-info, div.fs-wrapper div.fs-has-links::after, .fs-text-product, .fs-overlink-text { font-family:Helvetica Neue, Helvetica, Arial, sans-serif;font-style:normal;font-weight:normal;font-size:14px; } .fs-wrapper div.fs-text-container * { color:#ffffff; } .fs-wrapper div.fs-text-container { background-color:rgba(0, 0, 0, 0.15);margin:0px; } div.fs-entry-date { display:none; } div.fs-service-icon { display:none; } div.fs-entry-title { display:none; } .fs-slider_v2_5 .fs-wrapper div.fs-timeline-entry { margin:10px; } </style>"
+          }
+        },
+        "custom_liquid_V6XiCq": {
+          "type": "custom_liquid",
+          "name": "Current",
+          "disabled": true,
+          "settings": {
+            "custom_liquid": "<div id=\"foursixty-hideable-container\" style=\"display:none\">\t\n\t<p class=\"product__heading strong\">See Me In Action</p>\n\t<script src=\"//foursixty.com/media/scripts/fs.slider.v2.5.js\" data-feed-id=\"lanolips\" data-theme=\"slider_v2_5\" data-open-links-in-same-page=\"true\"  data-cell-size=\"20%\" data-has-posts-selector=\"#foursixty-hideable-container\" data-for-url=\"true\"></script>\n</div>\t\n\t<style>.fs-has-links { display:none; } .fs-wrapper { height:auto; } .fs-slider_v2_5  .fs-entry-container { height:0 !important;width:20%!important;padding-top:20%!important; } .fs-wrapper div.fs-text-container .fs-entry-title, div.fs-detail-title { font-family:Times New Roman, serif;font-style:normal;font-weight:normal;font-size:14px; } div.fs-text-container .fs-entry-date, div.fs-detail-container .fs-post-info, div.fs-wrapper div.fs-has-links::after, .fs-text-product, .fs-overlink-text { font-family:Helvetica Neue, Helvetica, Arial, sans-serif;font-style:normal;font-weight:normal;font-size:14px; } .fs-wrapper div.fs-text-container * { color:#ffffff; } .fs-wrapper div.fs-text-container { background-color:rgba(0, 0, 0, 0.15);margin:0px; } div.fs-entry-date { display:none; } div.fs-service-icon { display:none; } div.fs-entry-title { display:none; } .fs-slider_v2_5 .fs-wrapper div.fs-timeline-entry { margin:10px; } </style>"
+          }
+        },
+        "custom_liquid_Yn7rxk": {
+          "type": "custom_liquid",
+          "disabled": true,
+          "settings": {
+            "custom_liquid": "<script src=\"//foursixty.com/media/scripts/fs.slider.v2.5.js\" data-feed-id=\"lanolips\" data-theme=\"slider_v2_5\" data-open-links-in-same-page=\"true\"  data-cell-size=\"20%\" data-for-url=\"true\"></script>\n<style>.fs-has-links { display:none; } .fs-wrapper { height:auto; } .fs-slider_v2_5  .fs-entry-container { height:0 !important;width:20%!important;padding-top:20%!important; } .fs-wrapper div.fs-text-container .fs-entry-title, div.fs-detail-title { font-family:Times New Roman, serif;font-style:normal;font-weight:normal;font-size:14px; } div.fs-text-container .fs-entry-date, div.fs-detail-container .fs-post-info, div.fs-wrapper div.fs-has-links::after, .fs-text-product, .fs-overlink-text { font-family:Helvetica Neue, Helvetica, Arial, sans-serif;font-style:normal;font-weight:normal;font-size:14px; } .fs-wrapper div.fs-text-container * { color:#ffffff; } .fs-wrapper div.fs-text-container { background-color:rgba(0, 0, 0, 0.15);margin:0px; } div.fs-entry-date { display:none; } div.fs-service-icon { display:none; } div.fs-entry-title { display:none; } .fs-slider_v2_5 .fs-wrapper div.fs-timeline-entry { margin:10px; } </style>"
+          }
+        },
         "foursixty_shoppable_social_ugc_custom_minifeed_9Bjg6Y": {
           "type": "shopify://apps/foursixty-shoppable-social-ugc/blocks/custom_minifeed/e2616dfe-fbb6-4e7d-874d-d250b973556d",
           "disabled": true,
@@ -108,20 +158,20 @@
             "background_color_alpha": 90,
             "post_spacing": 1,
             "hover_margin": 0,
-            "rows": 2,
-            "columns": 6,
+            "rows": 1,
+            "columns": 5,
             "target_blank": false,
-            "show_icon": true,
+            "show_icon": false,
             "show_text": false,
             "show_date": false,
             "call_to_action": "SHOP IT",
-            "shop_type": "button",
+            "shop_type": "none",
             "body_font_size": 14,
             "body_font": "helvetica_n4",
             "accent_font_size": 14,
             "accent_font": "helvetica_n4",
             "disable_filter": false,
-            "override_feed_id": "",
+            "override_feed_id": "lanolips",
             "arbitrary_attributes": "",
             "custom_css": "",
             "custom_js": ""
@@ -170,9 +220,10 @@
       },
       "block_order": [
         "title",
+        "wishlist_plus_wishlist_pdp_button_kRjrt4",
+        "yotpo_product_reviews_star_rating_t3XDVb",
         "wishlist_plus_wishlist_pdp_button_aPiPed",
         "price",
-        "24fa7db6-08e7-49e0-a3ab-1bb6847ff6a3",
         "description",
         "variant_picker",
         "quantity_selector",
@@ -180,12 +231,16 @@
         "metaobject_images_CETKk7",
         "icon_with_text_jLqfjX",
         "custom_liquid_CLm8Ng",
+        "foursixty_shoppable_social_ugc_custom_gallery_TYaYDw",
+        "custom_liquid_V6XiCq",
+        "custom_liquid_Yn7rxk",
         "foursixty_shoppable_social_ugc_custom_minifeed_9Bjg6Y",
         "collapsible_tab_UKpPTB",
         "collapsible_tab_xBK7PF",
         "collapsible_tab_L8cyBQ",
         "complementary_349zD4"
       ],
+      "custom_css": [],
       "settings": {
         "enable_sticky_info": true,
         "color_scheme": "scheme-3",
@@ -446,8 +501,9 @@
     },
     "custom_liquid_jEJB7q": {
       "type": "custom-liquid",
+      "disabled": true,
       "settings": {
-        "custom_liquid": "<div class=\"yotpo-widget-instance\" data-yotpo-instance-id=\"1053535\" data-yotpo-product-id=\"{{product.id}}\" data-yotpo-cart-product-id=\"{{item.product.id}}\"></div>",
+        "custom_liquid": "<div class=\"yotpo-widget-instance\" data-yotpo-instance-id=\"1049541\" data-yotpo-product-id=\"{{product.id}}\" data-yotpo-cart-product-id=\"{{item.product.id}}\"></div>",
         "color_scheme": "scheme-3",
         "padding_top": 56,
         "padding_bottom": 36
@@ -512,16 +568,16 @@
       "type": "custom-liquid",
       "disabled": true,
       "settings": {
-        "custom_liquid": "<div class=\"yotpo-widget-instance\" data-yotpo-instance-id=\"1014235\" data-yotpo-product-id=\"{{product.id}}\" data-yotpo-name=\"{{ product.title | escape }}\" data-yotpo-url=\"{{ shop.url }}{{ product.url }}\" data-yotpo-image-url=\"{{ product.featured_image | product_img_url: \"large\" | prepend: \"https:\" | replace: '?', '%3F' | replace: '&','%26'}}\" data-yotpo-price=\"{{ product.price | divided_by: 100.00 }}\" data-yotpo-currency=\"{{ shop.currency }}\" data-yotpo-description=\"{{ product.description | escape }}\"></div>",
+        "custom_liquid": "<div class=\"yotpo-widget-instance\" data-yotpo-instance-id=\"1048469\" data-yotpo-product-id=\"{{product.id}}\" data-yotpo-name=\"{{ product.title | escape }}\" data-yotpo-url=\"{{ shop.url }}{{ product.url }}\" data-yotpo-image-url=\"{{ product.featured_image | product_img_url: \"large\" | prepend: \"https:\" | replace: '?', '%3F' | replace: '&','%26'}}\" data-yotpo-price=\"{{ product.price | divided_by: 100.00 }}\" data-yotpo-currency=\"{{ shop.currency }}\" data-yotpo-description=\"{{ product.description | escape }}\"></div>",
         "color_scheme": "scheme-3",
         "padding_top": 40,
         "padding_bottom": 52
       }
     },
-    "174299745115fe626e": {
+    "17429924404741879a": {
       "type": "apps",
       "blocks": {
-        "yotpo_product_reviews_reviews_6aBW3b": {
+        "yotpo_product_reviews_reviews_ij36Gw": {
           "type": "shopify://apps/yotpo-product-reviews/blocks/reviews/eb7dfd7d-db44-4334-bc49-c893b51b36cf",
           "settings": {
             "product": "{{product}}"
@@ -529,7 +585,7 @@
         }
       },
       "block_order": [
-        "yotpo_product_reviews_reviews_6aBW3b"
+        "yotpo_product_reviews_reviews_ij36Gw"
       ],
       "settings": {
         "include_margins": true
@@ -547,6 +603,6 @@
     "related-products",
     "collapsible_content_GiNw6Y",
     "custom_liquid_3W8L6J",
-    "174299745115fe626e"
+    "17429924404741879a"
   ]
 }

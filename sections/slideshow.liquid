@@ -168,7 +168,6 @@
         
             <!-- YouTube Embed -->
             <iframe 
-              title="Video Player"
               class="slideshow__video"
               src="https://www.youtube.com/embed/{{ video_id }}?autoplay=1&mute=1&loop=1&playlist={{ video_id }}" 
               frameborder="0"
@@ -183,7 +182,6 @@
         
             <!-- Vimeo Embed -->
             <iframe 
-              title="Video Player"
               class="slideshow__video"
               src="https://player.vimeo.com/video/{{ vimeo_id }}?autoplay=1&muted=1&loop=1" 
               frameborder="0"
@@ -244,7 +242,7 @@
                   {% endif %}
                   class="button {% if block.settings.button_style_secondary %}button--secondary{% else %}button--primary{% endif %} button-{{ block.id }}"
                 >
-                  {{- block.settings.button_label | escape -}} <span class="visually-hidden"> - {{ block.settings.heading | escape }}</span>
+                  {{- block.settings.button_label | escape -}}
                 </a>
               </div>
             {%- endif -%}

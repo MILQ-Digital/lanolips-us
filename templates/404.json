@@ -1,1 +1,98 @@
-{"sections":{"main":{"type":"main-404","settings":{}},"rich_text_4M3mRB":{"type":"rich-text","blocks":{"caption_VVFpce":{"type":"caption","settings":{"caption":"Error 404","text_style":"caption-with-letter-spacing","text_size":"medium"}},"heading_gFjHfy":{"type":"heading","settings":{"heading":"<em>Uh-oh! Looks like your lips aren’t the only thing lost in hydration!💧<\/em>","heading_size":"hs","enable_script":false}},"text_eCrDdG":{"type":"text","settings":{"text":"<p>The page you’re searching for seems to have disappeared like a tube of your favourite Lanolips lip balm at the bottom of your handbag. <\/p><p>But don’t worry, even when things get a little chapped, we’ll help you stay soft and hydrated! 😉<\/p><p>Head back to our homepage to smooth things over!<br\/><\/p><p><br\/><\/p>"}},"button_XKdciq":{"type":"button","settings":{"button_label":"Back To Homepage","button_link":"https:\/\/lanolips.com","button_style_secondary":true,"button_label_2":"","button_link_2":"","button_style_secondary_2":false}}},"block_order":["caption_VVFpce","heading_gFjHfy","text_eCrDdG","button_XKdciq"],"custom_css":[".rich-text__text p {font-size: 18px; line-height: 27px;}","@media screen and (max-width: 749px) {.rich-text__text p {font-size: 16px; line-height: 27px; }}"],"settings":{"desktop_content_position":"left","content_alignment":"left","color_scheme":"scheme-2","full_width":true,"padding_top":40,"padding_bottom":100}},"image_banner_qwWypG":{"type":"image-banner","settings":{"image":"shopify:\/\/shop_images\/Lanolips_Under_Maintenance_Banner.jpg","image_overlay_opacity":0,"image_height":"large","desktop_content_position":"top-center","show_text_box":true,"desktop_content_alignment":"center","color_scheme":"","color_background":"","image_behavior":"none","mobile_content_alignment":"center","mobile_image_height":"medium","stack_images_on_mobile":true,"show_text_below":true,"padding_top":52,"padding_bottom":0}}},"order":["main","rich_text_4M3mRB","image_banner_qwWypG"]}
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-404",
+      "settings": {}
+    },
+    "rich_text_4M3mRB": {
+      "type": "rich-text",
+      "blocks": {
+        "caption_VVFpce": {
+          "type": "caption",
+          "settings": {
+            "caption": "Error 404",
+            "text_style": "caption-with-letter-spacing",
+            "text_size": "medium"
+          }
+        },
+        "heading_gFjHfy": {
+          "type": "heading",
+          "settings": {
+            "heading": "<em>Uh-oh! Looks like your lips aren’t the only thing lost in hydration!💧</em>",
+            "heading_size": "hs",
+            "enable_script": false
+          }
+        },
+        "text_eCrDdG": {
+          "type": "text",
+          "settings": {
+            "text": "<p>The page you’re searching for seems to have disappeared like a tube of your favourite Lanolips lip balm at the bottom of your handbag. </p><p>But don’t worry, even when things get a little chapped, we’ll help you stay soft and hydrated! 😉</p><p>Head back to our homepage to smooth things over!<br/></p><p><br/></p>"
+          }
+        },
+        "button_XKdciq": {
+          "type": "button",
+          "settings": {
+            "button_label": "Back To Homepage",
+            "button_link": "https://lanolips.com.au/",
+            "button_style_secondary": true,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "caption_VVFpce",
+        "heading_gFjHfy",
+        "text_eCrDdG",
+        "button_XKdciq"
+      ],
+      "custom_css": [
+        ".rich-text__text p {font-size: 18px; line-height: 27px;}",
+        "@media screen and (max-width: 749px) {.rich-text__text p {font-size: 16px; line-height: 27px; }}"
+      ],
+      "settings": {
+        "desktop_content_position": "left",
+        "content_alignment": "left",
+        "color_scheme": "scheme-2",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 100
+      }
+    },
+    "image_banner_qwWypG": {
+      "type": "image-banner",
+      "settings": {
+        "image": "shopify://shop_images/lanolips-under-maintenance-banner.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "large",
+        "desktop_content_position": "top-center",
+        "show_text_box": true,
+        "desktop_content_alignment": "center",
+        "color_scheme": "",
+        "color_background": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "mobile_image_height": "medium",
+        "stack_images_on_mobile": true,
+        "show_text_below": true,
+        "padding_top": 52,
+        "padding_bottom": 0
+      }
+    }
+  },
+  "order": [
+    "main",
+    "rich_text_4M3mRB",
+    "image_banner_qwWypG"
+  ]
+}

@@ -16,8 +16,11 @@
           "type": "slide",
           "disabled": true,
           "settings": {
+            "image": "shopify://shop_images/Lanolips_hero.webp",
             "image_alignment": "image-center",
+            "slide_video_file": "shopify://files/videos/spend-and-save-web-banner-au.mp4",
             "slide_video_url": "",
+            "slide_video_file_mobile": "shopify://files/videos/spend-and-save-banner-au.mp4",
             "subheading": "Freshly Baked",
             "subheading_script": "",
             "heading": "The new Lanolips 101 Delicious 123 bla collection for us",
@@ -32,21 +35,21 @@
             "image_overlay_opacity": 0,
             "color_scheme": "scheme-3",
             "text_alignment_mobile": "center",
-            "text_color_mobile": "#fb558e",
+            "text_color_mobile": "#2b4676",
             "hide_text_mobile": false,
-            "text_bg_mobile": "#fb558e",
+            "text_bg_mobile": "#ffd5e3",
             "btn_bg_mobile": "#2b4676",
-            "heading_font_size_mobile": 16,
+            "heading_font_size_mobile": 32,
             "script_heading_font_size_mobile": 16
           }
         },
         "slide_NAx7bN": {
           "type": "slide",
-          "name": "Sun Balm + Phone Lip Balm Holder (DRAFT)",
+          "name": "Sun Balm Phone Lip Balm Holder",
           "settings": {
             "image": "shopify://shop_images/Sun_Balm_SPF_30_Tropical_Phone_Lip_Balm_Holder_BANNER_2.jpg",
             "mobileimage": "shopify://shop_images/lanolips-sun-balm-spf-30-video-still-mobile-version.jpg",
-            "image_alignment": "image-center",
+            "image_alignment": "image-left",
             "slide_video_file": "shopify://files/videos/lanolips-sunbalm-spf-30-and-phone-lip-balm-holder-video-banner.mp4",
             "slide_video_url": "",
             "slide_video_file_mobile": "shopify://files/videos/lanolips-sun-balm-phone-lip-balm-holder-mobile-banner.mp4",
@@ -55,14 +58,14 @@
             "heading": "Sun Balm SPF 30 + Phone Lip Balm Holder",
             "heading_size": "hxxl",
             "subcontent": "<p>Snap, Hydrate, Protect</p>",
-            "button_label": "SPF Lip Care, On Call",
-            "link": "shopify://collections/all",
+            "button_label": "Shop Now",
+            "link": "shopify://products/sun-balm-spf-30-phone-lip-balm-holder",
             "button_style_secondary": false,
             "box_align": "middle-left",
             "show_text_box": false,
             "text_alignment": "left",
             "image_overlay_opacity": 0,
-            "color_scheme": "scheme-3f0fdc2e-5646-40a7-91fd-f8a80f6cdb8c",
+            "color_scheme": "scheme-92558f25-b055-4e6b-9769-8d8bd2e88875",
             "text_alignment_mobile": "center",
             "text_color_mobile": "#2b4676",
             "hide_text_mobile": false,
@@ -76,30 +79,30 @@
           "type": "slide",
           "disabled": true,
           "settings": {
-            "image": "shopify://shop_images/lanolips-hyaluronic-lip-oil-banner-holder.jpg",
+            "image": "shopify://shop_images/lanolips-12-hour-overnight-lip-mask-model-banner.jpg",
             "image_alignment": "image-center",
-            "slide_video_file": "shopify://files/videos/lanolips-hyaluronic-lip-oil-homepage-video.mp4",
+            "slide_video_file": "shopify://files/videos/lanolips-12-hour-overnight-lip-mask-web-banner.mp4",
             "slide_video_url": "",
-            "subheading": "Lanolips Sale",
+            "subheading": "",
             "subheading_script": "",
-            "heading": "20% Off Sitewide",
-            "heading_size": "hxxl",
-            "subcontent": "<p>Offer ends Tuesday 2nd September</p>",
-            "button_label": "Shop The Sale",
-            "link": "shopify://collections/all",
+            "heading": "Sun Balm SPF 30 + Phone Lip Balm Holder",
+            "heading_size": "hxl",
+            "subcontent": "<p>Snap, Hydrate, Protect</p>",
+            "button_label": "SPF Lip Care, On Call",
+            "link": "shopify://products/12-hour-overnight-lip-mask",
             "button_style_secondary": false,
             "box_align": "bottom-left",
             "show_text_box": false,
             "text_alignment": "left",
             "image_overlay_opacity": 0,
-            "color_scheme": "scheme-3",
+            "color_scheme": "scheme-92558f25-b055-4e6b-9769-8d8bd2e88875",
             "text_alignment_mobile": "center",
-            "text_color_mobile": "#ffffff",
+            "text_color_mobile": "#2b4676",
             "hide_text_mobile": false,
-            "text_bg_mobile": "#fb558e",
-            "btn_bg_mobile": "#2b4676",
+            "text_bg_mobile": "#ffd5e3",
+            "btn_bg_mobile": "#fb558e",
             "heading_font_size_mobile": 30,
-            "script_heading_font_size_mobile": 16
+            "script_heading_font_size_mobile": 30
           }
         }
       },
@@ -128,7 +131,7 @@
         "description": "",
         "show_description": false,
         "description_style": "body",
-        "collection": "best-sellers",
+        "collection": "daily-essentials",
         "products_to_show": 8,
         "columns_desktop": 5,
         "full_width": true,
@@ -163,22 +166,22 @@
         "heading_Db9tcb": {
           "type": "heading",
           "settings": {
-            "heading": "Lanolips Hyaluronic Lip Oil",
+            "heading": "SNAP ON HYDRATION ANYTIME. ANYWHERE.",
             "heading_size": "hs"
           }
         },
         "text_jTzLCJ": {
           "type": "text",
           "settings": {
-            "text": "<p>Introducing the New Standard of Lip Oils. The ultimate in lip hydration and shine with Lanolips Hyaluronic Lip Oil</p>",
+            "text": "<p>Sun Balm SPF 30 + Phone Lip Balm Holder.<br/>It's your wakeup call for dry lips! </p>",
             "text_style": "subtitle"
           }
         },
         "button_AxwgMt": {
           "type": "button",
           "settings": {
-            "button_label": "Shop Lip Oil",
-            "button_link": "https://lanolips.com/collections/lip-oil",
+            "button_label": "SPF Lip Care, On Call",
+            "button_link": "shopify://products/sun-balm-spf-30-phone-lip-balm-holder",
             "button_style_secondary": false,
             "button_style_underline": false
           }
@@ -191,7 +194,7 @@
         "button_AxwgMt"
       ],
       "settings": {
-        "image": "shopify://shop_images/Hyaluronic_Lip_Oil_Product_Honey_and_Raspberry_Image_0bf8cd3b-f042-4d18-acf9-5204127f1d6d.jpg",
+        "image": "shopify://shop_images/model-holding-lanolips-sunbalm-spf-30-phone-lip-balm-holder-against-face-homepage.jpg",
         "height": "adapt",
         "desktop_image_width": "medium",
         "layout": "text_first",
@@ -255,7 +258,7 @@
         "icon_YQkFzD": {
           "type": "icon",
           "settings": {
-            "image_icon": "shopify://shop_images/lanolips-ecomm-sheepie.png"
+            "image_icon": "shopify://shop_images/sheepie-ecomm.png"
           }
         },
         "heading_hVPN7C": {
@@ -385,10 +388,28 @@
     "custom_liquid_PtfDQV": {
       "type": "custom-liquid",
       "settings": {
-        "custom_liquid": "<div class=\"yotpo-widget-instance\" data-yotpo-instance-id=\"1053535\" data-yotpo-product-id=\"{{product.id}}\" data-yotpo-cart-product-id=\"{{item.product.id}}\"></div>",
+        "custom_liquid": "<div class=\"yotpo-widget-instance\" data-yotpo-instance-id=\"1049541\" data-yotpo-product-id=\"{{product.id}}\" data-yotpo-cart-product-id=\"{{item.product.id}}\"></div>",
         "color_scheme": "scheme-3",
         "padding_top": 56,
         "padding_bottom": 56
+      }
+    },
+    "1746592088edea3eb3": {
+      "type": "apps",
+      "blocks": {
+        "yotpo_product_reviews_reviews_carousel_CiPBb3": {
+          "type": "shopify://apps/yotpo-product-reviews/blocks/reviews_carousel/eb7dfd7d-db44-4334-bc49-c893b51b36cf",
+          "settings": {
+            "product": "101-dry-skin-super-cream-multipurpose-for-face-body"
+          }
+        }
+      },
+      "block_order": [
+        "yotpo_product_reviews_reviews_carousel_CiPBb3"
+      ],
+      "disabled": true,
+      "settings": {
+        "include_margins": true
       }
     },
     "rich_text_9jF4qD": {
@@ -493,6 +514,7 @@
     "rich_text_636tak",
     "custom_liquid_qRbjDe",
     "custom_liquid_PtfDQV",
+    "1746592088edea3eb3",
     "rich_text_9jF4qD",
     "custom_liquid_aW4CwX",
     "173950177361100e1b",

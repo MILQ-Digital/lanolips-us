@@ -117,7 +117,7 @@
             "heading_3": ""
           }
         },
-        "custom_liquid_gCQadR": {
+        "custom_liquid_V9Qq7q": {
           "type": "custom_liquid",
           "settings": {
             "custom_liquid": "<script src=\"//foursixty.com/media/scripts/fs.slider.v2.5.js\" data-feed-id=\"lanolips\" data-theme=\"slider_v2_5\" data-open-links-in-same-page=\"true\"  data-cell-size=\"20%\"></script>\n<style>.fs-has-links { display:none; } .fs-wrapper { height:auto; } .fs-slider_v2_5  .fs-entry-container { height:0 !important;width:20%!important;padding-top:20%!important; } .fs-wrapper div.fs-text-container .fs-entry-title, div.fs-detail-title { font-family:Times New Roman, serif;font-style:normal;font-weight:normal;font-size:14px; } div.fs-text-container .fs-entry-date, div.fs-detail-container .fs-post-info, div.fs-wrapper div.fs-has-links::after, .fs-text-product, .fs-overlink-text { font-family:Helvetica Neue, Helvetica, Arial, sans-serif;font-style:normal;font-weight:normal;font-size:14px; } .fs-wrapper div.fs-text-container * { color:#ffffff; } .fs-wrapper div.fs-text-container { background-color:rgba(0, 0, 0, 0.15);margin:0px; } div.fs-entry-date { display:none; } div.fs-service-icon { display:none; } div.fs-entry-title { display:none; } .fs-slider_v2_5 .fs-wrapper div.fs-timeline-entry { margin:10px; } </style>"
@@ -204,7 +204,7 @@
         "buy_buttons",
         "metaobject_images_CETKk7",
         "icon_with_text_jLqfjX",
-        "custom_liquid_gCQadR",
+        "custom_liquid_V9Qq7q",
         "foursixty_shoppable_social_ugc_custom_minifeed_9Bjg6Y",
         "collapsible_tab_UKpPTB",
         "collapsible_tab_xBK7PF",
@@ -312,6 +312,7 @@
       "blocks": {
         "row_6chNdY": {
           "type": "row",
+          "disabled": true,
           "settings": {
             "image": "{{ product.metafields.custom.product_highlights_image.value }}",
             "caption": "",
@@ -323,6 +324,7 @@
         },
         "row_Rxra9Y": {
           "type": "row",
+          "disabled": true,
           "settings": {
             "caption": "",
             "heading": "12 hour overnight lip mask",
@@ -533,10 +535,10 @@
         "padding_bottom": 100
       }
     },
-    "174299784827047e73": {
+    "174299575116398884": {
       "type": "apps",
       "blocks": {
-        "yotpo_product_reviews_reviews_LfhD6p": {
+        "yotpo_product_reviews_reviews_Cdm6tX": {
           "type": "shopify://apps/yotpo-product-reviews/blocks/reviews/eb7dfd7d-db44-4334-bc49-c893b51b36cf",
           "settings": {
             "product": "{{product}}"
@@ -544,7 +546,7 @@
         }
       },
       "block_order": [
-        "yotpo_product_reviews_reviews_LfhD6p"
+        "yotpo_product_reviews_reviews_Cdm6tX"
       ],
       "settings": {
         "include_margins": true
@@ -561,6 +563,6 @@
     "custom_liquid_jEJB7q",
     "related-products",
     "collapsible_content_GiNw6Y",
-    "174299784827047e73"
+    "174299575116398884"
   ]
 }

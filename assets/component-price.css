@@ -94,7 +94,3 @@
   text-transform: uppercase;
   color: rgba(var(--color-foreground), 0.7);
 }
-
-.template-product .product__info-wrapper:has(.price--sold-out) .price {
-  opacity: .5 
-}

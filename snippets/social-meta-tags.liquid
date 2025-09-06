@@ -46,7 +46,7 @@
 <meta property="og:type" content="{{ og_type }}">
 <meta property="og:description" content="{{ og_description }}">
 {% if request.page_type == 'product' %}
-  <meta property="og:price:amount" content="{{ product.price | money_without_currency | strip_html }}">
+  <meta property="og:price:amount" content="{{ product.selected_or_first_available_variant.price | money_without_currency | strip_html | escape  }}">
   <meta property="og:price:currency" content="{{ cart.currency.iso_code }}">
 {% endif %}
 {{ og_image_tags }}

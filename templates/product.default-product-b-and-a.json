@@ -117,7 +117,7 @@
             "heading_3": ""
           }
         },
-        "custom_liquid_jhPLNR": {
+        "custom_liquid_WjULAx": {
           "type": "custom_liquid",
           "settings": {
             "custom_liquid": "<script src=\"//foursixty.com/media/scripts/fs.slider.v2.5.js\" data-feed-id=\"lanolips\" data-theme=\"slider_v2_5\" data-open-links-in-same-page=\"true\"  data-cell-size=\"20%\"></script>\n<style>.fs-has-links { display:none; } .fs-wrapper { height:auto; } .fs-slider_v2_5  .fs-entry-container { height:0 !important;width:20%!important;padding-top:20%!important; } .fs-wrapper div.fs-text-container .fs-entry-title, div.fs-detail-title { font-family:Times New Roman, serif;font-style:normal;font-weight:normal;font-size:14px; } div.fs-text-container .fs-entry-date, div.fs-detail-container .fs-post-info, div.fs-wrapper div.fs-has-links::after, .fs-text-product, .fs-overlink-text { font-family:Helvetica Neue, Helvetica, Arial, sans-serif;font-style:normal;font-weight:normal;font-size:14px; } .fs-wrapper div.fs-text-container * { color:#ffffff; } .fs-wrapper div.fs-text-container { background-color:rgba(0, 0, 0, 0.15);margin:0px; } div.fs-entry-date { display:none; } div.fs-service-icon { display:none; } div.fs-entry-title { display:none; } .fs-slider_v2_5 .fs-wrapper div.fs-timeline-entry { margin:10px; } </style>"
@@ -204,7 +204,7 @@
         "buy_buttons",
         "metaobject_images_CETKk7",
         "icon_with_text_jLqfjX",
-        "custom_liquid_jhPLNR",
+        "custom_liquid_WjULAx",
         "foursixty_shoppable_social_ugc_custom_minifeed_9Bjg6Y",
         "collapsible_tab_UKpPTB",
         "collapsible_tab_xBK7PF",
@@ -469,6 +469,7 @@
     },
     "custom_liquid_jEJB7q": {
       "type": "custom-liquid",
+      "disabled": true,
       "settings": {
         "custom_liquid": "<div class=\"yotpo-widget-instance\" data-yotpo-instance-id=\"1049541\" data-yotpo-product-id=\"{{product.id}}\" data-yotpo-cart-product-id=\"{{item.product.id}}\"></div>",
         "color_scheme": "scheme-3",
@@ -531,10 +532,10 @@
         "padding_bottom": 100
       }
     },
-    "1742997678249e70b4": {
+    "1742995709347a9570": {
       "type": "apps",
       "blocks": {
-        "yotpo_product_reviews_reviews_3D68q9": {
+        "yotpo_product_reviews_reviews_FbAC64": {
           "type": "shopify://apps/yotpo-product-reviews/blocks/reviews/eb7dfd7d-db44-4334-bc49-c893b51b36cf",
           "settings": {
             "product": "{{product}}"
@@ -542,7 +543,7 @@
         }
       },
       "block_order": [
-        "yotpo_product_reviews_reviews_3D68q9"
+        "yotpo_product_reviews_reviews_FbAC64"
       ],
       "settings": {
         "include_margins": true
@@ -559,6 +560,6 @@
     "custom_liquid_jEJB7q",
     "related-products",
     "collapsible_content_GiNw6Y",
-    "1742997678249e70b4"
+    "1742995709347a9570"
   ]
 }

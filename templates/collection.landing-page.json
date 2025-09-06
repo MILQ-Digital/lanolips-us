@@ -64,7 +64,7 @@
         "row_zXx4Yc": {
           "type": "row",
           "settings": {
-            "image": "shopify://shop_images/Rectangle_93_1.jpg",
+            "image": "shopify://shop_images/image.jpg",
             "caption": "",
             "heading": "Emotive benefit headline for this collection or product",
             "text": "<h3>Key Feature:</h3><p>Rich, buttery that melts onto lips</p><h3>Key Feature:</h3><p>A light hint of vanilla and honey</p><h3>Why We Love It:</h3><p>Soften, strengthen  and replenish your lips while you sleep.</p>",
@@ -102,7 +102,7 @@
         "image_shape": "default",
         "show_secondary_image": true,
         "show_vendor": false,
-        "show_rating": false,
+        "show_rating": true,
         "quick_add": "standard",
         "enable_filtering": true,
         "filter_type": "drawer",

@@ -14,16 +14,24 @@
     "announcement-bar": {
       "type": "announcement-bar",
       "blocks": {
-        "announcement_pLqYVa": {
+        "announcement_EUw7Ak": {
           "type": "announcement",
           "settings": {
-            "text": "Free Shipping For Orders Over $40",
+            "text": "Free Shipping For Orders Over $50",
+            "link": ""
+          }
+        },
+        "announcement_p6MUhh": {
+          "type": "announcement",
+          "settings": {
+            "text": "We Ship Internationally",
             "link": ""
           }
         }
       },
       "block_order": [
-        "announcement_pLqYVa"
+        "announcement_EUw7Ak",
+        "announcement_p6MUhh"
       ],
       "settings": {
         "color_scheme": "scheme-1",
@@ -31,7 +39,7 @@
         "show_line_separator": true,
         "show_social": false,
         "auto_rotate": true,
-        "change_slides_speed": 5,
+        "change_slides_speed": 3,
         "enable_country_selector": false,
         "enable_language_selector": false
       }
@@ -43,10 +51,30 @@
           "type": "megamenu",
           "disabled": true,
           "settings": {
-            "image_title": "",
+            "image_title": "heading",
             "image_link": "",
             "position": "1",
-            "mega_sub_menu": ""
+            "mega_sub_menu": "shop-all"
+          }
+        },
+        "megamenu_eLajWF": {
+          "type": "megamenu",
+          "disabled": true,
+          "settings": {
+            "image_title": "heading",
+            "image_link": "",
+            "position": "2",
+            "mega_sub_menu": "wcc-best-sellers"
+          }
+        },
+        "megamenu_yK9naV": {
+          "type": "megamenu",
+          "disabled": true,
+          "settings": {
+            "image_title": "heading",
+            "image_link": "",
+            "position": "3",
+            "mega_sub_menu": "wcc-101-ointment"
           }
         },
         "image_picker_qRiqMK": {
@@ -63,28 +91,19 @@
           "type": "image_picker",
           "disabled": true,
           "settings": {
-            "position": "4",
-            "image_block": "shopify://shop_images/lano_lips_menu_for_lips2.jpg",
-            "image_title": "Tinted Lip Balm",
-            "image_link": "#"
+            "position": "3",
+            "image_block": "shopify://shop_images/12_Hour_Overnight_Lip_Mask_Tubes.jpg",
+            "image_title": "12 Hour Overnight Lip Mask",
+            "image_link": "shopify://products/12-hour-overnight-lip-mask"
           }
         },
-        "megamenu_rQybad": {
-          "type": "megamenu",
-          "settings": {
-            "image_title": "heading",
-            "image_link": "",
-            "position": "4",
-            "mega_sub_menu": "wcc-lips"
-          }
-        },
-        "megamenu_eLajWF": {
+        "megamenu_bL8xeU": {
           "type": "megamenu",
           "settings": {
             "image_title": "",
-            "image_link": "",
-            "position": "5",
-            "mega_sub_menu": "wcc-face"
+            "image_link": "shopify://collections/all",
+            "position": "4",
+            "mega_sub_menu": "wcc-lips-mega-menu"
           }
         },
         "image_picker_DGeEfg": {
@@ -105,14 +124,13 @@
             "image_link": "shopify://collections/colour-collection"
           }
         },
-        "megamenu_yK9naV": {
+        "megamenu_eAHRng": {
           "type": "megamenu",
-          "disabled": true,
           "settings": {
             "image_title": "heading",
             "image_link": "",
-            "position": "6",
-            "mega_sub_menu": "wcc-hands-body"
+            "position": "5",
+            "mega_sub_menu": "wcc-face"
           }
         },
         "image_picker_V6VQVT": {
@@ -133,7 +151,7 @@
             "image_link": "shopify://products/101-dry-skin-super-cream-multipurpose-for-face-body"
           }
         },
-        "megamenu_bL8xeU": {
+        "megamenu_NaggUE": {
           "type": "megamenu",
           "settings": {
             "image_title": "heading",
@@ -160,13 +178,13 @@
             "image_link": "shopify://products/lano-everywhere-multi-cream"
           }
         },
-        "megamenu_UyXjMK": {
+        "megamenu_MxT4G3": {
           "type": "megamenu",
           "settings": {
             "image_title": "heading",
             "image_link": "",
             "position": "7",
-            "mega_sub_menu": "wcc-gifts"
+            "mega_sub_menu": "gifts"
           }
         },
         "image_picker_Ep9tMf": {
@@ -190,8 +208,8 @@
         "megamenu_FexHtw": {
           "type": "megamenu",
           "settings": {
-            "image_title": "Our Story",
-            "image_link": "shopify://pages/lano-heritage",
+            "image_title": "",
+            "image_link": "",
             "position": "8",
             "mega_sub_menu": "wcc-discover"
           }
@@ -217,19 +235,20 @@
       },
       "block_order": [
         "megamenu_gbPBTT",
+        "megamenu_eLajWF",
+        "megamenu_yK9naV",
         "image_picker_qRiqMK",
         "image_picker_XB6FJ3",
-        "megamenu_rQybad",
-        "megamenu_eLajWF",
+        "megamenu_bL8xeU",
         "image_picker_DGeEfg",
         "image_picker_DET4Eb",
-        "megamenu_yK9naV",
+        "megamenu_eAHRng",
         "image_picker_V6VQVT",
         "image_picker_Axyq9F",
-        "megamenu_bL8xeU",
+        "megamenu_NaggUE",
         "image_picker_WfNLdw",
         "image_picker_ddxb77",
-        "megamenu_UyXjMK",
+        "megamenu_MxT4G3",
         "image_picker_Ep9tMf",
         "image_picker_M46JhC",
         "megamenu_FexHtw",
