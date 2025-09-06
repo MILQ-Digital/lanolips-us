@@ -1,0 +1,50 @@
+.read-more {
+  position: relative;
+}
+
+.read-more:not(.read-more--full-width) .read-more__wrapper {
+  margin: auto;
+  width: calc(100% - 8rem / var(--font-body-scale));
+}
+
+.read-more__content {
+  max-height: var(--initial-height, 200px);
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+}
+
+.read-more__button {
+  background: none;
+  border: none;
+  color: inherit;
+  cursor: pointer;
+  font-size: inherit;
+  padding: 1rem 0;
+  text-decoration: underline;
+}
+
+.read-more__button:hover {
+  text-decoration: none;
+}
+
+.read-more__button:focus {
+  outline: none;
+}
+
+/* Fade effect at the bottom when collapsed */
+.read-more__content::after {
+  background: linear-gradient(transparent, var(--gradient-background, #fff));
+  bottom: 0;
+  content: '';
+  height: 2rem;
+  left: 0;
+  opacity: 1;
+  pointer-events: none;
+  position: absolute;
+  right: 0;
+  transition: opacity 0.3s ease;
+}
+
+.read-more.expanded .read-more__content::after {
+  opacity: 0;
+}
