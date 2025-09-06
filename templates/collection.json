@@ -71,7 +71,7 @@
       "type": "read-more",
       "name": "Read More",
       "settings": {
-        "color_scheme": "",
+        "color_scheme": "scheme-2",
         "full_width": false,
         "content": "<p>{{ collection.metafields.custom.read_more | metafield_tag }}</p>",
         "initial_height": 100,
