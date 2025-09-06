@@ -14,25 +14,16 @@
     "announcement-bar": {
       "type": "announcement-bar",
       "blocks": {
-        "announcement_6yfKbX": {
+        "announcement_pLqYVa": {
           "type": "announcement",
           "settings": {
             "text": "Free Shipping For Orders Over $40",
             "link": ""
           }
-        },
-        "announcement_RDqYTb": {
-          "type": "announcement",
-          "disabled": true,
-          "settings": {
-            "text": "20% off Sitewide - ends Tuesday!",
-            "link": ""
-          }
         }
       },
       "block_order": [
-        "announcement_6yfKbX",
-        "announcement_RDqYTb"
+        "announcement_pLqYVa"
       ],
       "settings": {
         "color_scheme": "scheme-1",

@@ -16,6 +16,7 @@
           "type": "slide",
           "disabled": true,
           "settings": {
+            "image_alignment": "image-center",
             "slide_video_url": "",
             "subheading": "Freshly Baked",
             "subheading_script": "",
@@ -44,21 +45,24 @@
           "name": "Sun Balm + Phone Lip Balm Holder (DRAFT)",
           "settings": {
             "image": "shopify://shop_images/Sun_Balm_SPF_30_Tropical_Phone_Lip_Balm_Holder_BANNER_2.jpg",
+            "mobileimage": "shopify://shop_images/lanolips-sun-balm-spf-30-video-still-mobile-version.jpg",
+            "image_alignment": "image-center",
             "slide_video_file": "shopify://files/videos/lanolips-sunbalm-spf-30-and-phone-lip-balm-holder-video-banner.mp4",
             "slide_video_url": "",
+            "slide_video_file_mobile": "shopify://files/videos/lanolips-sun-balm-phone-lip-balm-holder-mobile-banner.mp4",
             "subheading": "",
             "subheading_script": "",
             "heading": "Sun Balm SPF 30 + Phone Lip Balm Holder",
             "heading_size": "hxxl",
             "subcontent": "<p>Snap, Hydrate, Protect</p>",
-            "button_label": "SHOP NOW",
+            "button_label": "SPF Lip Care, On Call",
             "link": "shopify://collections/all",
             "button_style_secondary": false,
             "box_align": "middle-left",
             "show_text_box": false,
             "text_alignment": "left",
             "image_overlay_opacity": 0,
-            "color_scheme": "scheme-65210bc6-4d92-4303-9977-52900a59e3eb",
+            "color_scheme": "scheme-3f0fdc2e-5646-40a7-91fd-f8a80f6cdb8c",
             "text_alignment_mobile": "center",
             "text_color_mobile": "#2b4676",
             "hide_text_mobile": false,
@@ -72,7 +76,9 @@
           "type": "slide",
           "disabled": true,
           "settings": {
-            "image": "shopify://shop_images/lanolips-flash-sale-banner-promo.png",
+            "image": "shopify://shop_images/lanolips-hyaluronic-lip-oil-banner-holder.jpg",
+            "image_alignment": "image-center",
+            "slide_video_file": "shopify://files/videos/lanolips-hyaluronic-lip-oil-homepage-video.mp4",
             "slide_video_url": "",
             "subheading": "Lanolips Sale",
             "subheading_script": "",
@@ -249,7 +255,7 @@
         "icon_YQkFzD": {
           "type": "icon",
           "settings": {
-            "image_icon": "shopify://shop_images/Lanolips-Website-Icon-Sheep.png"
+            "image_icon": "shopify://shop_images/lanolips-ecomm-sheepie.png"
           }
         },
         "heading_hVPN7C": {

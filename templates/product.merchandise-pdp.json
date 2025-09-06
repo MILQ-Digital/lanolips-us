@@ -20,6 +20,7 @@
           "type": "shopify://apps/wishlist-plus/blocks/wishlist-pdp-button/80c3b1fc-3a8f-407e-8367-ffdeebb8b612",
           "settings": {
             "swym_atw_button_icon": "heart",
+            "swym_atw_icon_thickness": 1.7,
             "swym_atw_display_btn_text": false,
             "swym_button_position": "product_title_right",
             "swym_atw_button_vertical_offset": 0,
@@ -51,6 +52,7 @@
           "type": "shopify://apps/wishlist-plus/blocks/wishlist-pdp-button/80c3b1fc-3a8f-407e-8367-ffdeebb8b612",
           "settings": {
             "swym_atw_button_icon": "heart",
+            "swym_atw_icon_thickness": 1.7,
             "swym_atw_display_btn_text": false,
             "swym_button_position": "product_title_right",
             "swym_atw_button_vertical_offset": 0,
