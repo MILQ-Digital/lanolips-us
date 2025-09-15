@@ -42,6 +42,66 @@
             "script_heading_font_size_mobile": 16
           }
         },
+        "slide_BxjGpJ": {
+          "type": "slide",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/lanolips-hyaluronic-lip-oil-banner-holder.jpg",
+            "image_alignment": "image-center",
+            "slide_video_file": "shopify://files/videos/lanolips-hyaluronic-lip-oil-homepage-video.mp4",
+            "slide_video_url": "",
+            "subheading": "",
+            "subheading_script": "",
+            "heading": "Lanolips Hyaluronic Lip Oil",
+            "heading_size": "hxxl",
+            "subcontent": "<p>Introducing the New Standard of Lip Oils.      Experience the ultimate in lip hydration and shine.</p>",
+            "button_label": "Shop Lip Oil",
+            "link": "shopify://collections/lip-oil",
+            "button_style_secondary": false,
+            "box_align": "bottom-left",
+            "show_text_box": false,
+            "text_alignment": "left",
+            "image_overlay_opacity": 0,
+            "color_scheme": "scheme-3",
+            "text_alignment_mobile": "center",
+            "text_color_mobile": "#ffffff",
+            "hide_text_mobile": false,
+            "text_bg_mobile": "#fb558e",
+            "btn_bg_mobile": "#2b4676",
+            "heading_font_size_mobile": 30,
+            "script_heading_font_size_mobile": 16
+          }
+        },
+        "slide_DjBz8E": {
+          "type": "slide",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/3460_x_1748_-_101_Ointment_With_Badge_copy.png",
+            "mobileimage": "shopify://shop_images/750_x_700_-_101_Ointment_With_Badge_copy.png",
+            "image_alignment": "image-center",
+            "slide_video_url": "",
+            "subheading": "",
+            "subheading_script": "",
+            "heading": "Lanolips Hyaluronic Lip Oil",
+            "heading_size": "hxxl",
+            "subcontent": "<p>Introducing the New Standard of Lip Oils.      Experience the ultimate in lip hydration and shine.</p>",
+            "button_label": "Discover Now",
+            "link": "shopify://products/101-ointment-multipurpose-superbalm",
+            "button_style_secondary": false,
+            "box_align": "bottom-left",
+            "show_text_box": false,
+            "text_alignment": "left",
+            "image_overlay_opacity": 0,
+            "color_scheme": "scheme-3",
+            "text_alignment_mobile": "center",
+            "text_color_mobile": "#2b4676",
+            "hide_text_mobile": false,
+            "text_bg_mobile": "#ffd5e3",
+            "btn_bg_mobile": "#fb558e",
+            "heading_font_size_mobile": 30,
+            "script_heading_font_size_mobile": 30
+          }
+        },
         "slide_NAx7bN": {
           "type": "slide",
           "settings": {
@@ -72,42 +132,13 @@
             "heading_font_size_mobile": 30,
             "script_heading_font_size_mobile": 30
           }
-        },
-        "slide_BxjGpJ": {
-          "type": "slide",
-          "disabled": true,
-          "settings": {
-            "image": "shopify://shop_images/lanolips-hyaluronic-lip-oil-banner-holder.jpg",
-            "image_alignment": "image-center",
-            "slide_video_file": "shopify://files/videos/lanolips-hyaluronic-lip-oil-homepage-video.mp4",
-            "slide_video_url": "",
-            "subheading": "",
-            "subheading_script": "",
-            "heading": "Lanolips Hyaluronic Lip Oil",
-            "heading_size": "hxxl",
-            "subcontent": "<p>Introducing the New Standard of Lip Oils.      Experience the ultimate in lip hydration and shine.</p>",
-            "button_label": "Shop Lip Oil",
-            "link": "shopify://collections/lip-oil",
-            "button_style_secondary": false,
-            "box_align": "bottom-left",
-            "show_text_box": false,
-            "text_alignment": "left",
-            "image_overlay_opacity": 0,
-            "color_scheme": "scheme-3",
-            "text_alignment_mobile": "center",
-            "text_color_mobile": "#ffffff",
-            "hide_text_mobile": false,
-            "text_bg_mobile": "#fb558e",
-            "btn_bg_mobile": "#2b4676",
-            "heading_font_size_mobile": 30,
-            "script_heading_font_size_mobile": 16
-          }
         }
       },
       "block_order": [
         "slide_VULtDz",
-        "slide_NAx7bN",
-        "slide_BxjGpJ"
+        "slide_BxjGpJ",
+        "slide_DjBz8E",
+        "slide_NAx7bN"
       ],
       "settings": {
         "layout": "full_bleed",
@@ -452,9 +483,9 @@
             "call_to_action": "",
             "shop_type": "none",
             "body_font_size": 14,
-            "body_font": "helvetica_n4",
+            "body_font": "sans_serif_n4",
             "accent_font_size": 14,
-            "accent_font": "helvetica_n4",
+            "accent_font": "sans_serif_n4",
             "disable_filter": false,
             "override_feed_id": "lanolips",
             "arbitrary_attributes": "",
