@@ -11,7 +11,7 @@
   --Lano-Blue: #2B4676;
   --Lano-Blue-Light: #6081BD;
   --Lano-Cream: #FDF7EC; 
-  --Lano-Pink: #F3E5EF;
+  --Lano-Pink: #FAE8ED;
   --Lano-light-pink: #F8F2F6; 
   --Lano-Bright-pink: #FB558E;
   --Lano-Bright-pink-hover: #ED4A82;
@@ -3480,26 +3480,31 @@ details-disclosure > details {
   display: block;
 }
 
-.rte > *:first-child {
+.rte > *:first-child,
+.metafield-rich_text_field > *:first-child {
   margin-top: 0;
 }
 
-.rte > *:last-child {
+.rte > *:last-child,
+.metafield-rich_text_field > *:last-child {
   margin-bottom: 0;
 }
 
-.rte table {
+.rte table,
+.metafield-rich_text_field table {
   table-layout: fixed;
 }
 
 @media screen and (min-width: 750px) {
-  .rte table td {
+  .rte table td,
+  .metafield-rich_text_field table td {
     padding-left: 1.2rem;
     padding-right: 1.2rem;
   }
 }
 
-.rte img {
+.rte img,
+.metafield-rich_text_field img {
   height: auto;
   max-width: 100%;
   border: var(--media-border-width) solid rgba(var(--color-foreground), var(--media-border-opacity));
@@ -3510,36 +3515,44 @@ details-disclosure > details {
 }
 
 .rte ul,
-.rte ol {
+.rte ol,
+.metafield-rich_text_field ul,
+.metafield-rich_text_field ol {
   list-style-position: inside;
   padding-left: 2rem;
 }
 
-.rte li {
+.rte li,
+.metafield-rich_text_field li {
   list-style: inherit;
 }
 
-.rte li:last-child {
+.rte li:last-child,
+.metafield-rich_text_field li:last-child {
   margin-bottom: 0;
 }
 
-.rte a {
+.rte a,
+.metafield-rich_text_field a {
   color: rgba(var(--color-link), var(--alpha-link));
   text-underline-offset: 0.3rem;
   text-decoration-thickness: 0.1rem;
   transition: text-decoration-thickness var(--duration-short) ease;
 }
 
-.rte a:hover {
+.rte a:hover,
+.metafield-rich_text_field a:hover {
   color: rgb(var(--color-link));
   text-decoration-thickness: 0.2rem;
 }
 
-.rte blockquote {
+.rte blockquote,
+.metafield-rich_text_field blockquote {
   display: inline-flex;
 }
 
-.rte blockquote > * {
+.rte blockquote > *,
+.metafield-rich_text_field blockquote > * {
   margin: -0.5rem 0 -0.5rem 0;
 }
 
@@ -4340,15 +4353,22 @@ body .yotpo-sr-vertical-border {display: none!important}
   color: var(--text-color)!important;
 }
 
-.swym-wishlist-collections-icon-heart-filled, 
-.swym-wishlist-collections-icon-heart-unfilled, 
-.swym-wishlist-collections-icon-star-filled, 
-.swym-wishlist-collections-icon-star-unfilled, 
-.swym-wishlist-collections-icon-bookmark-unfilled, 
-.swym-wishlist-collections-icon-bookmark-filled {
-  fill: var(--Lano-Blue)!important;
+.yotpo-modal .yotpo-star-rating-icon {
+    height: 15px !important;
+    margin: 0 5px !important;
 }
 
+.yotpo-modal .yotpo-review-form textarea,
+.yotpo-modal .yotpo-review-form input, .yotpo-modal .yotpo-upload-label {
+  border: 1px solid #FAE8ED!important;
+  color: var(--text-color)!important;
+  font-family: var(--font-heading-family)!important;
+}
+
+.yotpo-modal .yotpo-review-form input::placeholder,
+.yotpo-modal .yotpo-review-form textarea::placeholder {
+  color: var(--text-color)!important;
+}
 
 @media screen and (max-width: 575px) {
   .yotpo-carousel .glide__arrows {
@@ -4508,49 +4528,4 @@ body .yotpo-sr-vertical-border {display: none!important}
   to {
     opacity: 1;
   }
-}
-
-.collection-list .card__information section,
-.promo_banner .card__information section {
-  max-height: 44px;
-  margin-top: 15px;
-  width: fit-content;
-}
-
-.grid__item {
-  position: relative !important;
-}
-
-.skip-link {
-                position: absolute;
-                left: -10000px;
-                top: 0px;
-                padding: 12px;
-                background-color: white;
-                color: black;
-                border: 2px solid black;
-                border-radius: 5px;
-                z-index: 999999999;
-            }
-            .skip-link:focus-visible {
-                left: 0px;
-            }
-
-.card__inner .card__content {
-  text-decoration: unset;
-}
-
-.cart__ctas {
-    display: flex;
-    gap: 1.5rem;
-    flex-direction: column;
-    text-align: center;
-}
-
-.cart-drawer__footer {
-  padding-bottom: 20px;
-}
-
-.cart-drawer__footer .totals {
-  padding-bottom: 15px;
 }
