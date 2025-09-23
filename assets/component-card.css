@@ -100,6 +100,10 @@
   text-align: var(--text-alignment);
 }
 
+a.card__media {
+  z-index: 1;
+}
+
 .card__media,
 .card .media {
   bottom: 0;
