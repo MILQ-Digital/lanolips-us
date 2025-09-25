@@ -470,7 +470,7 @@
           "type": "shopify://apps/foursixty-shoppable-social-ugc/blocks/custom_slider/e2616dfe-fbb6-4e7d-874d-d250b973556d",
           "settings": {
             "foreground_color": "#ffffff",
-            "background_color": "#f3e5ef",
+            "background_color": "#FAE8ED",
             "background_color_alpha": 80,
             "post_spacing": 10,
             "hover_margin": 0,
