@@ -1,20 +1,13 @@
-<link rel="stylesheet" href="{{ 'template-collection.css' | asset_url }}" media="print" onload="this.media='all'">
-<noscript><link rel="stylesheet" href="{{ 'template-collection.css' | asset_url }}"></noscript>
-
-<link rel="stylesheet" href="{{ 'component-card.css' | asset_url }}" media="print" onload="this.media='all'">
-<noscript><link rel="stylesheet" href="{{ 'component-card.css' | asset_url }}"></noscript>
-
-<link rel="stylesheet" href="{{ 'component-price.css' | asset_url }}" media="print" onload="this.media='all'">
-<noscript><link rel="stylesheet" href="{{ 'component-price.css' | asset_url }}"></noscript>
+{{ 'template-collection.css' | asset_url | stylesheet_tag }}
+{{ 'component-card.css' | asset_url | stylesheet_tag }}
+{{ 'component-price.css' | asset_url | stylesheet_tag }}
 
 {% if section.settings.image_shape == 'blob' %}
-  <link rel="stylesheet" href="{{ 'mask-blobs.css' | asset_url }}" media="print" onload="this.media='all'">
-  <noscript><link rel="stylesheet" href="{{ 'mask-blobs.css' | asset_url }}"></noscript>
+  {{ 'mask-blobs.css' | asset_url | stylesheet_tag }}
 {%- endif -%}
 
 {%- unless section.settings.quick_add == 'none' -%}
-  <link rel="stylesheet" href="{{ 'quick-add.css' | asset_url }}" media="print" onload="this.media='all'">
-  <noscript><link rel="stylesheet" href="{{ 'quick-add.css' | asset_url }}"></noscript>
+  {{ 'quick-add.css' | asset_url | stylesheet_tag }}
 {%- endunless -%}
 
 {%- if section.settings.quick_add == 'standard' -%}
@@ -105,8 +98,7 @@
     {%- endif -%}
 
     <div class="{% if section.settings.filter_type == 'vertical' %} facets-vertical page-width{% endif %}">
-      <link rel="stylesheet" href="{{ 'component-facets.css' | asset_url }}" media="print" onload="this.media='all'">
-      <noscript><link rel="stylesheet" href="{{ 'component-facets.css' | asset_url }}"></noscript>
+      {{ 'component-facets.css' | asset_url | stylesheet_tag }}
       <script src="{{ 'facets.js' | asset_url }}" defer="defer"></script>
       {%- if section.settings.enable_filtering or section.settings.enable_sorting -%}
         <aside

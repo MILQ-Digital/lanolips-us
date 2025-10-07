@@ -1,23 +1,14 @@
-<link rel="stylesheet" href="{{ 'component-card.css' | asset_url }}" media="print" onload="this.media='all'">
-<noscript><link rel="stylesheet" href="{{ 'component-card.css' | asset_url }}"></noscript>
-
-<link rel="stylesheet" href="{{ 'component-price.css' | asset_url }}" media="print" onload="this.media='all'">
-<noscript><link rel="stylesheet" href="{{ 'component-price.css' | asset_url }}"></noscript>
-
-<link rel="stylesheet" href="{{ 'component-slider.css' | asset_url }}" media="print" onload="this.media='all'">
-<noscript><link rel="stylesheet" href="{{ 'component-slider.css' | asset_url }}"></noscript>
-
-<link rel="stylesheet" href="{{ 'template-collection.css' | asset_url }}" media="print" onload="this.media='all'">
-<noscript><link rel="stylesheet" href="{{ 'template-collection.css' | asset_url }}"></noscript>
+{{ 'component-card.css' | asset_url | stylesheet_tag }}
+{{ 'component-price.css' | asset_url | stylesheet_tag }}
+{{ 'component-slider.css' | asset_url | stylesheet_tag }}
+{{ 'template-collection.css' | asset_url | stylesheet_tag }}
 
 {% if section.settings.image_shape == 'blob' %}
-  <link rel="stylesheet" href="{{ 'mask-blobs.css' | asset_url }}" media="print" onload="this.media='all'">
-  <noscript><link rel="stylesheet" href="{{ 'mask-blobs.css' | asset_url }}"></noscript>
+  {{ 'mask-blobs.css' | asset_url | stylesheet_tag }}
 {%- endif -%}
 
 {%- unless section.settings.quick_add == 'none' -%}
-  <link rel="stylesheet" href="{{ 'quick-add.css' | asset_url }}" media="print" onload="this.media='all'">
-  <noscript><link rel="stylesheet" href="{{ 'quick-add.css' | asset_url }}"></noscript>
+  {{ 'quick-add.css' | asset_url | stylesheet_tag }}
   <script src="{{ 'product-form.js' | asset_url }}" defer="defer"></script>
 {%- endunless -%}
 

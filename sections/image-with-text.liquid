@@ -1,5 +1,4 @@
-<link rel="stylesheet" href="{{ 'component-image-with-text.css' | asset_url }}" media="print" onload="this.media='all'">
-<noscript><link rel="stylesheet" href="{{ 'component-image-with-text.css' | asset_url }}"></noscript>
+{{ 'component-image-with-text.css' | asset_url | stylesheet_tag }}
 
 {%- style -%}
   .section-{{ section.id }}-padding {
