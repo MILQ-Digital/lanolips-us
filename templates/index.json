@@ -44,19 +44,18 @@
         },
         "slide_BxjGpJ": {
           "type": "slide",
-          "disabled": true,
           "settings": {
-            "image": "shopify://shop_images/lanolips-hyaluronic-lip-oil-banner-holder.jpg",
+            "image": "shopify://shop_images/flash-sale-web-banner-us.jpg",
+            "mobileimage": "shopify://shop_images/flash-sale-mobile-banner-us.jpg",
             "image_alignment": "image-center",
-            "slide_video_file": "shopify://files/videos/lanolips-hyaluronic-lip-oil-homepage-video.mp4",
             "slide_video_url": "",
             "subheading": "",
             "subheading_script": "",
-            "heading": "Lanolips Hyaluronic Lip Oil",
+            "heading": "Flash Sale",
             "heading_size": "hxxl",
-            "subcontent": "<p>Introducing the New Standard of Lip Oils.      Experience the ultimate in lip hydration and shine.</p>",
-            "button_label": "Shop Lip Oil",
-            "link": "shopify://collections/lip-oil",
+            "subcontent": "<p>Up to 40% off selected items. Offer ends 6th October 2025</p>",
+            "button_label": "Shop Sale",
+            "link": "shopify://collections/flash-sale",
             "button_style_secondary": false,
             "box_align": "bottom-left",
             "show_text_box": false,
@@ -64,12 +63,12 @@
             "image_overlay_opacity": 0,
             "color_scheme": "scheme-3",
             "text_alignment_mobile": "center",
-            "text_color_mobile": "#ffffff",
+            "text_color_mobile": "#2b4676",
             "hide_text_mobile": false,
-            "text_bg_mobile": "#fb558e",
-            "btn_bg_mobile": "#2b4676",
+            "text_bg_mobile": "#ffd5e3",
+            "btn_bg_mobile": "#fb558e",
             "heading_font_size_mobile": 30,
-            "script_heading_font_size_mobile": 16
+            "script_heading_font_size_mobile": 30
           }
         },
         "slide_DjBz8E": {
@@ -180,6 +179,55 @@
         "padding_bottom": 36
       }
     },
+    "custom_liquid_PtfDQV": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<div class=\"yotpo-widget-instance\" data-yotpo-instance-id=\"1053535\" data-yotpo-product-id=\"{{product.id}}\" data-yotpo-cart-product-id=\"{{item.product.id}}\"></div>",
+        "color_scheme": "scheme-3",
+        "padding_top": 56,
+        "padding_bottom": 56
+      }
+    },
+    "collection_list_aGyhDV": {
+      "type": "collection-list",
+      "blocks": {
+        "featured_collection_PE3zqw": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "lips"
+          }
+        },
+        "featured_collection_hBDbwN": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "face"
+          }
+        },
+        "featured_collection_FVHLxp": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "hands-body"
+          }
+        }
+      },
+      "block_order": [
+        "featured_collection_PE3zqw",
+        "featured_collection_hBDbwN",
+        "featured_collection_FVHLxp"
+      ],
+      "settings": {
+        "title": "Shop By Category",
+        "heading_size": "hs",
+        "image_ratio": "portrait",
+        "columns_desktop": 3,
+        "color_scheme": "scheme-2",
+        "show_view_all": false,
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "padding_top": 64,
+        "padding_bottom": 80
+      }
+    },
     "image_with_text_WkDiJU": {
       "type": "image-with-text",
       "blocks": {
@@ -241,53 +289,37 @@
         "padding_bottom": 0
       }
     },
-    "custom_liquid_PtfDQV": {
-      "type": "custom-liquid",
-      "settings": {
-        "custom_liquid": "<div class=\"yotpo-widget-instance\" data-yotpo-instance-id=\"1053535\" data-yotpo-product-id=\"{{product.id}}\" data-yotpo-cart-product-id=\"{{item.product.id}}\"></div>",
-        "color_scheme": "scheme-3",
-        "padding_top": 56,
-        "padding_bottom": 56
-      }
-    },
-    "collection_list_aGyhDV": {
-      "type": "collection-list",
+    "rich_text_636tak": {
+      "type": "rich-text",
       "blocks": {
-        "featured_collection_PE3zqw": {
-          "type": "featured_collection",
+        "heading_E8CUpz": {
+          "type": "heading",
           "settings": {
-            "collection": "lips"
-          }
-        },
-        "featured_collection_hBDbwN": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "face"
-          }
-        },
-        "featured_collection_FVHLxp": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "hands-body"
+            "heading": "Shop Customer Faves",
+            "heading_size": "hs",
+            "enable_script": false
           }
         }
       },
       "block_order": [
-        "featured_collection_PE3zqw",
-        "featured_collection_hBDbwN",
-        "featured_collection_FVHLxp"
+        "heading_E8CUpz"
       ],
       "settings": {
-        "title": "Shop By Category",
-        "heading_size": "hs",
-        "image_ratio": "portrait",
-        "columns_desktop": 3,
+        "desktop_content_position": "center",
+        "content_alignment": "center",
         "color_scheme": "scheme-2",
-        "show_view_all": false,
-        "columns_mobile": "1",
-        "swipe_on_mobile": true,
-        "padding_top": 64,
-        "padding_bottom": 80
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 40
+      }
+    },
+    "custom_liquid_qRbjDe": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<script src=\"//foursixty.com/media/scripts/fs.slider.v2.6.js\" data-feed-id=\"lanolips\" data-theme=\"slider_v2_6\" data-open-links-in-same-page=\"true\" data-connector-filter=\"58942\" data-always-show-video-detail=\"true\" data-video-gallery=\"reels\" data-cell-size=\"20%\"></script>\n<style>.fs-has-links { display:none; } .fs-video-gallery .fs-entry-container { padding-top:36% !important;width:20% !important;height:auto !important; } .fs-video-gallery.fs-narrow-timeline .fs-entry-container.fs-entry-container { padding-top:calc(50% * 1.7778) !important;width:50% !important;height:auto !important; } .fs-video-gallery.fs-small-timeline .fs-entry-container.fs-entry-container { padding-top:calc(33.3334% * 1.7778) !important;width:33.3334% !important;height:auto !important; } .fs-wrapper div.fs-text-container .fs-entry-title, div.fs-detail-title { font-family:Times New Roman, serif;font-style:normal;font-weight:normal;font-size:14px; } div.fs-text-container .fs-entry-date, div.fs-detail-container .fs-post-info, div.fs-wrapper div.fs-has-links::after, .fs-text-product, .fs-overlink-text { font-family:Helvetica Neue, Helvetica, Arial, sans-serif;font-style:normal;font-weight:normal;font-size:14px; } .fs-slider-next-button, .fs-slider-prev-button { opacity:1; } .fs-wrapper { margin:auto;width:calc(100% - 120px); } .fs-wrapper div.fs-text-container * { color:#ffffff; } .fs-wrapper div.fs-text-container { background-color:rgba(0, 0, 0, 0.15);margin:0px; } div.fs-entry-date { display:none; } div.fs-service-icon { display:none; } div.fs-entry-title { display:none; } .fs-slider_v2_6 .fs-wrapper div.fs-timeline-entry { margin:10px; } </style>",
+        "color_scheme": "scheme-3",
+        "padding_top": 40,
+        "padding_bottom": 52
       }
     },
     "image_banner_rxCeJC": {
@@ -390,39 +422,6 @@
         "section_class": ""
       }
     },
-    "rich_text_636tak": {
-      "type": "rich-text",
-      "blocks": {
-        "heading_E8CUpz": {
-          "type": "heading",
-          "settings": {
-            "heading": "Shop Customer Faves",
-            "heading_size": "hs",
-            "enable_script": false
-          }
-        }
-      },
-      "block_order": [
-        "heading_E8CUpz"
-      ],
-      "settings": {
-        "desktop_content_position": "center",
-        "content_alignment": "center",
-        "color_scheme": "scheme-2",
-        "full_width": true,
-        "padding_top": 40,
-        "padding_bottom": 40
-      }
-    },
-    "custom_liquid_qRbjDe": {
-      "type": "custom-liquid",
-      "settings": {
-        "custom_liquid": "<script src=\"//foursixty.com/media/scripts/fs.slider.v2.6.js\" data-feed-id=\"lanolips\" data-theme=\"slider_v2_6\" data-open-links-in-same-page=\"true\" data-connector-filter=\"58942\" data-always-show-video-detail=\"true\" data-video-gallery=\"reels\" data-cell-size=\"20%\"></script>\n<style>.fs-has-links { display:none; } .fs-video-gallery .fs-entry-container { padding-top:36% !important;width:20% !important;height:auto !important; } .fs-video-gallery.fs-narrow-timeline .fs-entry-container.fs-entry-container { padding-top:calc(50% * 1.7778) !important;width:50% !important;height:auto !important; } .fs-video-gallery.fs-small-timeline .fs-entry-container.fs-entry-container { padding-top:calc(33.3334% * 1.7778) !important;width:33.3334% !important;height:auto !important; } .fs-wrapper div.fs-text-container .fs-entry-title, div.fs-detail-title { font-family:Times New Roman, serif;font-style:normal;font-weight:normal;font-size:14px; } div.fs-text-container .fs-entry-date, div.fs-detail-container .fs-post-info, div.fs-wrapper div.fs-has-links::after, .fs-text-product, .fs-overlink-text { font-family:Helvetica Neue, Helvetica, Arial, sans-serif;font-style:normal;font-weight:normal;font-size:14px; } .fs-slider-next-button, .fs-slider-prev-button { opacity:1; } .fs-wrapper { margin:auto;width:calc(100% - 120px); } .fs-wrapper div.fs-text-container * { color:#ffffff; } .fs-wrapper div.fs-text-container { background-color:rgba(0, 0, 0, 0.15);margin:0px; } div.fs-entry-date { display:none; } div.fs-service-icon { display:none; } div.fs-entry-title { display:none; } .fs-slider_v2_6 .fs-wrapper div.fs-timeline-entry { margin:10px; } </style>",
-        "color_scheme": "scheme-3",
-        "padding_top": 40,
-        "padding_bottom": 52
-      }
-    },
     "rich_text_9jF4qD": {
       "type": "rich-text",
       "blocks": {
@@ -470,7 +469,7 @@
           "type": "shopify://apps/foursixty-shoppable-social-ugc/blocks/custom_slider/e2616dfe-fbb6-4e7d-874d-d250b973556d",
           "settings": {
             "foreground_color": "#ffffff",
-            "background_color": "#FAE8ED",
+            "background_color": "#fae8ed",
             "background_color_alpha": 80,
             "post_spacing": 10,
             "hover_margin": 0,
