@@ -12,65 +12,6 @@
     "slideshow_dJncwY": {
       "type": "slideshow",
       "blocks": {
-        "slide_VULtDz": {
-          "type": "slide",
-          "disabled": true,
-          "settings": {
-            "image": "shopify://shop_images/20_-off-sitewide-product-banner-3.jpg",
-            "mobileimage": "shopify://shop_images/20_-off-sitewide-produc-banner-mobile.jpg",
-            "image_alignment": "image-center",
-            "slide_video_url": "",
-            "subheading": "Lanolips Sale",
-            "subheading_script": "",
-            "heading": "20% Off Sitewide",
-            "heading_size": "hxl",
-            "subcontent": "<p>Offer ends Tuesday 2nd September</p>",
-            "button_label": "Shop Now",
-            "link": "shopify://collections/all",
-            "button_style_secondary": false,
-            "box_align": "bottom-left",
-            "show_text_box": false,
-            "text_alignment": "left",
-            "image_overlay_opacity": 0,
-            "color_scheme": "scheme-3",
-            "text_alignment_mobile": "center",
-            "text_color_mobile": "#ffffff",
-            "hide_text_mobile": false,
-            "text_bg_mobile": "#fb558e",
-            "btn_bg_mobile": "#2b4676",
-            "heading_font_size_mobile": 16,
-            "script_heading_font_size_mobile": 16
-          }
-        },
-        "slide_BxjGpJ": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify://shop_images/flash-sale-web-banner-us.jpg",
-            "mobileimage": "shopify://shop_images/flash-sale-mobile-banner-us.jpg",
-            "image_alignment": "image-center",
-            "slide_video_url": "",
-            "subheading": "",
-            "subheading_script": "",
-            "heading": "Flash Sale",
-            "heading_size": "hxxl",
-            "subcontent": "<p>Up to 40% off selected items. Offer ends 6th October 2025</p>",
-            "button_label": "Shop Sale",
-            "link": "shopify://collections/flash-sale",
-            "button_style_secondary": false,
-            "box_align": "bottom-left",
-            "show_text_box": false,
-            "text_alignment": "left",
-            "image_overlay_opacity": 0,
-            "color_scheme": "scheme-3",
-            "text_alignment_mobile": "center",
-            "text_color_mobile": "#2b4676",
-            "hide_text_mobile": false,
-            "text_bg_mobile": "#ffd5e3",
-            "btn_bg_mobile": "#fb558e",
-            "heading_font_size_mobile": 30,
-            "script_heading_font_size_mobile": 30
-          }
-        },
         "slide_DjBz8E": {
           "type": "slide",
           "name": "101 Ointment Challenge",
@@ -134,8 +75,6 @@
         }
       },
       "block_order": [
-        "slide_VULtDz",
-        "slide_BxjGpJ",
         "slide_DjBz8E",
         "slide_NAx7bN"
       ],

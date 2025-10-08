@@ -14,13 +14,6 @@
     "announcement-bar": {
       "type": "announcement-bar",
       "blocks": {
-        "announcement_pLqYVa": {
-          "type": "announcement",
-          "settings": {
-            "text": "Flash Sale - Up To 40% Off Selected Lanolips Items. Ends Monday",
-            "link": "shopify://collections/flash-sale"
-          }
-        },
         "announcement_gGkC9U": {
           "type": "announcement",
           "settings": {
@@ -38,7 +31,6 @@
         }
       },
       "block_order": [
-        "announcement_pLqYVa",
         "announcement_gGkC9U",
         "announcement_VmKR77"
       ],
