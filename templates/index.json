@@ -15,6 +15,37 @@
         "slide_DjBz8E": {
           "type": "slide",
           "name": "101 Ointment Challenge",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/3460_x_1748_-_101_Ointment_With_Badge_copy.png",
+            "mobileimage": "shopify://shop_images/750_x_700_-_101_Ointment_With_Badge_copy.png",
+            "image_alignment": "image-center",
+            "slide_video_url": "",
+            "subheading": "The World's Best Lip Balm",
+            "subheading_script": "",
+            "heading": "Take On The 101 Ointment Ultimate Hydration Challenge",
+            "heading_size": "hxl",
+            "subcontent": "<p>1 Balm. 101 Uses. 100% Natural. Cruelty Free. </p>",
+            "button_label": "Discover Now",
+            "link": "shopify://products/101-ointment-multipurpose-superbalm",
+            "button_style_secondary": false,
+            "box_align": "bottom-left",
+            "show_text_box": false,
+            "text_alignment": "left",
+            "image_overlay_opacity": 0,
+            "color_scheme": "scheme-3",
+            "text_alignment_mobile": "center",
+            "text_color_mobile": "#2b4676",
+            "hide_text_mobile": false,
+            "text_bg_mobile": "#ffd5e3",
+            "btn_bg_mobile": "#fb558e",
+            "heading_font_size_mobile": 30,
+            "script_heading_font_size_mobile": 30
+          }
+        },
+        "slide_kbJygU": {
+          "type": "slide",
+          "name": "101 Ointment Challenge",
           "settings": {
             "image": "shopify://shop_images/3460_x_1748_-_101_Ointment_With_Badge_copy.png",
             "mobileimage": "shopify://shop_images/750_x_700_-_101_Ointment_With_Badge_copy.png",
@@ -76,6 +107,7 @@
       },
       "block_order": [
         "slide_DjBz8E",
+        "slide_kbJygU",
         "slide_NAx7bN"
       ],
       "settings": {
