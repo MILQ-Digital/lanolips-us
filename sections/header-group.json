@@ -20,19 +20,10 @@
             "text": "Free Shipping For Orders Over $40",
             "link": ""
           }
-        },
-        "announcement_VmKR77": {
-          "type": "announcement",
-          "disabled": true,
-          "settings": {
-            "text": "20% off Sitewide - ends Tuesday!",
-            "link": ""
-          }
         }
       },
       "block_order": [
-        "announcement_gGkC9U",
-        "announcement_VmKR77"
+        "announcement_gGkC9U"
       ],
       "settings": {
         "color_scheme": "scheme-1",
