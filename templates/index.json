@@ -228,8 +228,8 @@
         "button_AxwgMt": {
           "type": "button",
           "settings": {
-            "button_label": "Read More",
-            "button_link": "shopify://pages/faqs",
+            "button_label": "Shop Now",
+            "button_link": "shopify://products/101-ointment-multipurpose-superbalm",
             "button_style_secondary": false,
             "button_style_underline": false
           }
