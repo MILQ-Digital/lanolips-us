@@ -221,7 +221,7 @@
         "text_jTzLCJ": {
           "type": "text",
           "settings": {
-            "text": "<p>1 Balm. 101 Uses. 100% Natural. Cruelty Free.<br/>Accepted by the National Eczema Association. </p>",
+            "text": "<p>1 Balm. 101 Uses. 100% Natural. Cruelty Free.<br/>Accepted by the National Eczema Association. <a href=\"/pages/faqs\" title=\"FAQs\">Read More</a>.</p>",
             "text_style": "subtitle"
           }
         },
