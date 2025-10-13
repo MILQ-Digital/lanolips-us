@@ -43,6 +43,38 @@
             "script_heading_font_size_mobile": 30
           }
         },
+        "slide_NAx7bN": {
+          "type": "slide",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/lanolips-holiday-gift-guide-web-banner-still.jpg",
+            "mobileimage": "shopify://shop_images/lanolips-holiday-gift-guide-mobile-banner.jpg",
+            "image_alignment": "image-center",
+            "slide_video_file": "shopify://files/videos/lanolips-holiday-gift-guide-2025-web-banner.mp4",
+            "slide_video_url": "",
+            "slide_video_file_mobile": "shopify://files/videos/lanolips-holiday-gift-guide-mobile-banner.mp4",
+            "subheading": "",
+            "subheading_script": "",
+            "heading": "Holiday Gift Guide",
+            "heading_size": "hxxl",
+            "subcontent": "<p>Limited Edition Holiday gifts for the lip-balm-obsessed</p>",
+            "button_label": "Shop Holidays",
+            "link": "shopify://collections/holiday-gift-sets",
+            "button_style_secondary": false,
+            "box_align": "middle-left",
+            "show_text_box": false,
+            "text_alignment": "left",
+            "image_overlay_opacity": 0,
+            "color_scheme": "scheme-3",
+            "text_alignment_mobile": "center",
+            "text_color_mobile": "#2b4676",
+            "hide_text_mobile": false,
+            "text_bg_mobile": "#ffd5e3",
+            "btn_bg_mobile": "#fb558e",
+            "heading_font_size_mobile": 30,
+            "script_heading_font_size_mobile": 30
+          }
+        },
         "slide_kbJygU": {
           "type": "slide",
           "name": "101 Ointment Challenge",
@@ -73,8 +105,9 @@
             "script_heading_font_size_mobile": 30
           }
         },
-        "slide_NAx7bN": {
+        "slide_6LweMm": {
           "type": "slide",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/Sun_Balm_SPF_30_Tropical_Phone_Lip_Balm_Holder_BANNER_2.jpg",
             "mobileimage": "shopify://shop_images/lanolips-sun-balm-spf-30-video-still-mobile-version.jpg",
@@ -107,8 +140,9 @@
       },
       "block_order": [
         "slide_DjBz8E",
+        "slide_NAx7bN",
         "slide_kbJygU",
-        "slide_NAx7bN"
+        "slide_6LweMm"
       ],
       "settings": {
         "layout": "full_bleed",
