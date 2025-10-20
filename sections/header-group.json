@@ -17,13 +17,21 @@
         "announcement_gGkC9U": {
           "type": "announcement",
           "settings": {
+            "text": "The Holiday Gift Guide Is Here",
+            "link": "https://lanolips.com/collections/holiday-gift-sets"
+          }
+        },
+        "announcement_zbNW4k": {
+          "type": "announcement",
+          "settings": {
             "text": "Free Shipping For Orders Over $40",
             "link": ""
           }
         }
       },
       "block_order": [
-        "announcement_gGkC9U"
+        "announcement_gGkC9U",
+        "announcement_zbNW4k"
       ],
       "settings": {
         "color_scheme": "scheme-1",
