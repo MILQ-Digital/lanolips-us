@@ -18,26 +18,26 @@
 
           <img
             srcset="
-              {%- if banner_image and banner_image != blank -%}
-                {%- if banner_image.width >= 165 -%}{{ banner_image | image_url: width: 165 }} 165w,{%- endif -%}
-                {%- if banner_image.width >= 360 -%}{{ banner_image | image_url: width: 360 }} 360w,{%- endif -%}
-                {%- if banner_image.width >= 535 -%}{{ banner_image | image_url: width: 535 }} 535w,{%- endif -%}
-                {%- if banner_image.width >= 750 -%}{{ banner_image | image_url: width: 750 }} 750w,{%- endif -%}
-                {%- if banner_image.width >= 1070 -%}{{ banner_image | image_url: width: 1070 }} 1070w,{%- endif -%}
-                {%- if banner_image.width >= 1500 -%}{{ banner_image | image_url: width: 1500 }} 1500w,{%- endif -%}
-                {{ banner_image | image_url }} {{ banner_image.width }}
-              {%- else -%}
-                {%- if collection.image.width >= 165 -%}{{ collection.image | image_url: width: 165 }} 165w,{%- endif -%}
-                {%- if collection.image.width >= 360 -%}{{ collection.image | image_url: width: 360 }} 360w,{%- endif -%}
-                {%- if collection.image.width >= 535 -%}{{ collection.image | image_url: width: 535 }} 535w,{%- endif -%}
-                {%- if collection.image.width >= 750 -%}{{ collection.image | image_url: width: 750 }} 750w,{%- endif -%}
-                {%- if collection.image.width >= 1070 -%}{{ collection.image | image_url: width: 1070 }} 1070w,{%- endif -%}
-                {%- if collection.image.width >= 1500 -%}{{ collection.image | image_url: width: 1500 }} 1500w,{%- endif -%}
-                {{ collection.image | image_url }} {{ collection.image.width }}
-              {%- endif -%}
+            {%- if banner_image and banner_image != blank -%}
+              {%- if banner_image.width >= 330 -%}{{ banner_image | image_url: width: 330 }} 330w,{%- endif -%}
+              {%- if banner_image.width >= 720 -%}{{ banner_image | image_url: width: 720 }} 720w,{%- endif -%}
+              {%- if banner_image.width >= 1070 -%}{{ banner_image | image_url: width: 1070 }} 1070w,{%- endif -%}
+              {%- if banner_image.width >= 1500 -%}{{ banner_image | image_url: width: 1500 }} 1500w,{%- endif -%}
+              {%- if banner_image.width >= 2140 -%}{{ banner_image | image_url: width: 2140 }} 2140w,{%- endif -%}
+              {%- if banner_image.width >= 3000 -%}{{ banner_image | image_url: width: 3000 }} 3000w,{%- endif -%}
+              {{ banner_image | image_url }} {{ banner_image.width }}
+            {%- else -%}
+              {%- if collection.image.width >= 330 -%}{{ collection.image | image_url: width: 330 }} 330w,{%- endif -%}
+              {%- if collection.image.width >= 720 -%}{{ collection.image | image_url: width: 720 }} 720w,{%- endif -%}
+              {%- if collection.image.width >= 1070 -%}{{ collection.image | image_url: width: 1070 }} 1070w,{%- endif -%}
+              {%- if collection.image.width >= 1500 -%}{{ collection.image | image_url: width: 1500 }} 1500w,{%- endif -%}
+              {%- if collection.image.width >= 2140 -%}{{ collection.image | image_url: width: 2140 }} 2140w,{%- endif -%}
+              {%- if collection.image.width >= 3000 -%}{{ collection.image | image_url: width: 3000 }} 3000w,{%- endif -%}
+              {{ collection.image | image_url }} {{ collection.image.width }}
+            {%- endif -%}
             "
-            src="{% if banner_image and banner_image != blank %}{{ banner_image | image_url: width: 1728 }}{% else %}{{ collection.image | image_url: width: 1728 }}{% endif %}"
-            sizes="(min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 100 | divided_by: 2 }}px, (min-width: 1728px) calc(50vw - 130px), calc(50vw - 55px)"
+            src="{% if banner_image and banner_image != blank %}{{ banner_image | image_url: width: 3456 }}{% else %}{{ collection.image | image_url: width: 3456 }}{% endif %}"
+            sizes="(min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 100 }}px, (min-width: 3456px) calc(50vw - 130px), calc(50vw - 55px)"
             alt="{% if banner_image and banner_image != blank %}{{ banner_image.alt | escape }}{% else %}{{ collection.image.alt | escape }}{% endif %}"
             width="{% if banner_image and banner_image != blank %}{{ banner_image.width }}{% else %}{{ collection.image.width }}{% endif %}"
             height="{% if banner_image and banner_image != blank %}{{ banner_image.height }}{% else %}{{ collection.image.height }}{% endif %}"
