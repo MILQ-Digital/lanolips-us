@@ -1,5 +1,4 @@
-<link rel="stylesheet" href="{{ 'section-blog-post.css' | asset_url }}" media="print" onload="this.media='all'">
-<noscript><link rel="stylesheet" href="{{ 'section-blog-post.css' | asset_url }}"></noscript>
+{{ 'section-blog-post.css' | asset_url | stylesheet_tag }}
 
 <article class="article-template">
   <div class="page-width _breadcrumb">{%- render 'breadcrumbs' -%}</div>

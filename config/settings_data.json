@@ -262,12 +262,17 @@
         "type": "shopify://apps/notify-me/blocks/app-embed/b399b727-6c85-44fc-9e21-63114bd72054",
         "disabled": false,
         "settings": {}
+      },
+      "735721325670868888": {
+        "type": "shopify://apps/checkmate/blocks/checked_network/697a3444-1374-4f13-ba8c-ec03db25ebf0",
+        "disabled": false,
+        "settings": {}
       }
     },
     "color_schemes": {
       "scheme-1": {
         "settings": {
-          "background": "#f3e5ef",
+          "background": "#fae8ed",
           "background_gradient": "",
           "text": "#2b4676",
           "button": "#fb558e",

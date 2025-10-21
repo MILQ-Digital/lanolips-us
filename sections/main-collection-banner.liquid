@@ -1,6 +1,5 @@
 {% comment %}theme-check-disable ImgLazyLoading{% endcomment %}
-<link rel="stylesheet" href="{{ 'component-collection-hero.css' | asset_url }}" media="print" onload="this.media='all'">
-<noscript><link rel="stylesheet" href="{{ 'component-collection-hero.css' | asset_url }}"></noscript>
+{{ 'component-collection-hero.css' | asset_url | stylesheet_tag }}
 
 {%- style -%}
   @media screen and (max-width: 749px) {

@@ -1,6 +1,4 @@
-<link rel="stylesheet" href="{{ 'quick-order-list.css' | asset_url }}" media="print" onload="this.media='all'">
-<noscript><link rel="stylesheet" href="{{ 'quick-order-list.css' | asset_url }}"></noscript>
-
+{{ 'quick-order-list.css' | asset_url | stylesheet_tag }}
 <script src="{{ 'quick-order-list.js' | asset_url }}" defer="defer"></script>
 
 {% render 'quick-order-list', product: product, show_image: true, show_sku: true, is_modal: true %}
