@@ -17,7 +17,7 @@
         "announcement_EUw7Ak": {
           "type": "announcement",
           "settings": {
-            "text": "Free Shipping For Orders Over $50",
+            "text": "Free Shipping For Orders Over $40",
             "link": ""
           }
         },
@@ -54,7 +54,7 @@
             "image_title": "heading",
             "image_link": "",
             "position": "1",
-            "mega_sub_menu": "shop-all"
+            "mega_sub_menu": ""
           }
         },
         "megamenu_eLajWF": {
@@ -64,7 +64,7 @@
             "image_title": "heading",
             "image_link": "",
             "position": "2",
-            "mega_sub_menu": "wcc-best-sellers"
+            "mega_sub_menu": ""
           }
         },
         "megamenu_yK9naV": {
@@ -74,7 +74,7 @@
             "image_title": "heading",
             "image_link": "",
             "position": "3",
-            "mega_sub_menu": "wcc-101-ointment"
+            "mega_sub_menu": ""
           }
         },
         "image_picker_qRiqMK": {
@@ -103,7 +103,7 @@
             "image_title": "",
             "image_link": "shopify://collections/all",
             "position": "4",
-            "mega_sub_menu": "wcc-lips-mega-menu"
+            "mega_sub_menu": ""
           }
         },
         "image_picker_DGeEfg": {
@@ -184,7 +184,7 @@
             "image_title": "heading",
             "image_link": "",
             "position": "7",
-            "mega_sub_menu": "gifts"
+            "mega_sub_menu": ""
           }
         },
         "image_picker_Ep9tMf": {
