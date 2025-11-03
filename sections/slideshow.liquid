@@ -211,6 +211,24 @@
           {%- endif -%}
         {%- endif -%}
       </div>
+
+      {% if block.settings.show_heading_outline %}
+        {% style %}
+          .slideshow__text-wrapper-{{ block.id }} .banner__heading {
+            position: relative;
+          }
+
+          .slideshow__text-wrapper-{{ block.id }} .banner__heading::before {
+            content: attr(data-text);
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+            -webkit-text-stroke: 6px white;
+            color: transparent;
+          }
+        {% endstyle %}
+      {% endif %}
         
         <div class="slideshow__text-wrapper slideshow__text-wrapper-{{ block.id }} banner__content banner__content--{{ block.settings.box_align }} page-width{% if block.settings.show_text_box == false %} banner--desktop-transparent{% endif %}{% if settings.animations_reveal_on_scroll and forloop.index == 1 %} scroll-trigger animate--slide-in{% endif %}">
           <div class="slideshow__text {% if block.settings.hide_text_mobile %}hide_slideshow__text-{{ block.id }}{% endif %} banner__box content-container content-container--full-width-mobile color-{{ block.settings.color_scheme }} gradient slideshow__text--{{ block.settings.text_alignment }} slideshow__text-mobile--{{ block.settings.text_alignment_mobile }}">
@@ -225,8 +243,14 @@
               </h4>
             {%- endif -%}                 
             {%- if block.settings.heading != blank -%}
-              <h2 class="banner__heading inline-richtext {{ block.settings.heading_size }} banner__heading-{{ block.id }}">
-                {{ block.settings.heading }}
+              <h2 class="banner__heading inline-richtext {{ block.settings.heading_size }} banner__heading-{{ block.id }}"
+              {% if block.settings.show_heading_outline %}
+                data-text="{{ block.settings.heading | escape }}"
+              {% endif %}
+              style="
+                letter-spacing: {{ block.settings.heading_letter_spacing }}px;"
+              >
+                {{ block.settings.heading | escape }}
               </h2>
             {%- endif -%}
             {%- if block.settings.subcontent != blank -%}
@@ -515,7 +539,7 @@
           "id": "subheading",
           "default": "t:sections.slideshow.blocks.slide.settings.subheading.default",
           "label": "t:sections.slideshow.blocks.slide.settings.subheading.label"
-        }, 
+        },
         {
           "type": "inline_richtext",
           "id": "subheading_script",
@@ -555,6 +579,22 @@
           ],
           "default": "h1",
           "label": "t:sections.all.heading_size.label"
+        },
+        {
+          "type": "checkbox",
+          "id": "show_heading_outline",
+          "label": "Show Heading Outline",
+          "default": false
+        },
+        {
+          "type": "range",
+          "id": "heading_letter_spacing",
+          "min": 0,
+          "max": 10,
+          "step": 0.1,
+          "unit": "px",
+          "label": "Heading Letter Spacing",
+          "default": 0
         },
         {
           "type": "richtext",
