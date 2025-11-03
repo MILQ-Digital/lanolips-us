@@ -25,7 +25,7 @@
             "subheading_script": "",
             "heading": "Holiday Gift Guide",
             "heading_size": "hxxl",
-            "show_heading_outline": true,
+            "show_heading_outline": false,
             "heading_letter_spacing": 1,
             "subcontent": "<p>Limited Edition Holiday gifts for the lip-balm-obsessed</p>",
             "button_label": "Shop Holidays",
