@@ -14,24 +14,24 @@
     "announcement-bar": {
       "type": "announcement-bar",
       "blocks": {
-        "announcement_EUw7Ak": {
-          "type": "announcement",
-          "settings": {
-            "text": "Free Shipping For Orders Over $50",
-            "link": ""
-          }
-        },
         "announcement_p6MUhh": {
           "type": "announcement",
           "settings": {
-            "text": "We Ship Internationally",
+            "text": "Holiday Gift Guide Is Here",
+            "link": "shopify://collections/holiday-gift-sets"
+          }
+        },
+        "announcement_EUw7Ak": {
+          "type": "announcement",
+          "settings": {
+            "text": "Free Shipping For Orders Over $40",
             "link": ""
           }
         }
       },
       "block_order": [
-        "announcement_EUw7Ak",
-        "announcement_p6MUhh"
+        "announcement_p6MUhh",
+        "announcement_EUw7Ak"
       ],
       "settings": {
         "color_scheme": "scheme-1",
@@ -54,7 +54,7 @@
             "image_title": "heading",
             "image_link": "",
             "position": "1",
-            "mega_sub_menu": "shop-all"
+            "mega_sub_menu": ""
           }
         },
         "megamenu_eLajWF": {
@@ -64,7 +64,7 @@
             "image_title": "heading",
             "image_link": "",
             "position": "2",
-            "mega_sub_menu": "wcc-best-sellers"
+            "mega_sub_menu": ""
           }
         },
         "megamenu_yK9naV": {
@@ -74,7 +74,7 @@
             "image_title": "heading",
             "image_link": "",
             "position": "3",
-            "mega_sub_menu": "wcc-101-ointment"
+            "mega_sub_menu": ""
           }
         },
         "image_picker_qRiqMK": {
@@ -102,14 +102,14 @@
           "settings": {
             "image_title": "",
             "image_link": "shopify://collections/all",
-            "position": "4",
-            "mega_sub_menu": "wcc-lips-mega-menu"
+            "position": "5",
+            "mega_sub_menu": "wcc-lips"
           }
         },
         "image_picker_DGeEfg": {
           "type": "image_picker",
           "settings": {
-            "position": "4",
+            "position": "5",
             "image_block": "shopify://shop_images/Menu_Category_Images_Featured_Image_Lips_1.jpg",
             "image_title": "101 Ointments",
             "image_link": "shopify://collections/101-ointments"
@@ -118,7 +118,7 @@
         "image_picker_DET4Eb": {
           "type": "image_picker",
           "settings": {
-            "position": "4",
+            "position": "5",
             "image_block": "shopify://shop_images/Menu_Category_Images_Featured_Image_Lips_2.jpg",
             "image_title": "Tinted Lip Balm",
             "image_link": "shopify://collections/colour-collection"
@@ -129,14 +129,14 @@
           "settings": {
             "image_title": "heading",
             "image_link": "",
-            "position": "5",
+            "position": "6",
             "mega_sub_menu": "wcc-face"
           }
         },
         "image_picker_V6VQVT": {
           "type": "image_picker",
           "settings": {
-            "position": "5",
+            "position": "6",
             "image_block": "shopify://shop_images/Menu_Category_Images_Featured_Image_Face1.jpg",
             "image_title": "Face Base Day Cream",
             "image_link": "shopify://products/face-base-vitamin-e-day-cream"
@@ -145,7 +145,7 @@
         "image_picker_Axyq9F": {
           "type": "image_picker",
           "settings": {
-            "position": "5",
+            "position": "6",
             "image_block": "shopify://shop_images/Menu_Category_Images_Featured_Image_Face.jpg",
             "image_title": "101 Dry Skin Super Cream",
             "image_link": "shopify://products/101-dry-skin-super-cream-multipurpose-for-face-body"
@@ -156,14 +156,14 @@
           "settings": {
             "image_title": "heading",
             "image_link": "",
-            "position": "6",
+            "position": "7",
             "mega_sub_menu": "wcc-hands-body"
           }
         },
         "image_picker_WfNLdw": {
           "type": "image_picker",
           "settings": {
-            "position": "6",
+            "position": "7",
             "image_block": "shopify://shop_images/Menu_Category_Images_Featured_Image_Hands_Body_2.jpg",
             "image_title": "Golden Dry Skin Miracle Salve",
             "image_link": "shopify://products/golden-dry-skin-salve-25g"
@@ -172,7 +172,7 @@
         "image_picker_ddxb77": {
           "type": "image_picker",
           "settings": {
-            "position": "6",
+            "position": "7",
             "image_block": "shopify://shop_images/Menu_Category_Images_Featured_Image_Hands_Body_3.jpg",
             "image_title": "Everywhere Cream",
             "image_link": "shopify://products/lano-everywhere-multi-cream"
@@ -183,14 +183,14 @@
           "settings": {
             "image_title": "heading",
             "image_link": "",
-            "position": "7",
-            "mega_sub_menu": "gifts"
+            "position": "8",
+            "mega_sub_menu": "wcc-gifts"
           }
         },
         "image_picker_Ep9tMf": {
           "type": "image_picker",
           "settings": {
-            "position": "7",
+            "position": "8",
             "image_block": "shopify://shop_images/Menu_Category_Images_Featured_Image_Gifts_1.jpg",
             "image_title": "Lip Heroes Day & Night Duo",
             "image_link": "shopify://products/lip-heroes-day-night-duo"
@@ -199,7 +199,7 @@
         "image_picker_M46JhC": {
           "type": "image_picker",
           "settings": {
-            "position": "7",
+            "position": "8",
             "image_block": "shopify://shop_images/Menu_Category_Images_Featured_Image_Gifts_2.jpg",
             "image_title": "Lip Rituals Scrub & Balm Strawberry",
             "image_link": "shopify://products/lip-rituals-scrub-balm-strawberry"
@@ -210,14 +210,14 @@
           "settings": {
             "image_title": "",
             "image_link": "",
-            "position": "8",
+            "position": "9",
             "mega_sub_menu": "wcc-discover"
           }
         },
         "image_picker_cVMpbW": {
           "type": "image_picker",
           "settings": {
-            "position": "8",
+            "position": "9",
             "image_block": "shopify://shop_images/Menu_Category_Images_Featured_Image_Discover_4.jpg",
             "image_title": "Why Lanolin?",
             "image_link": "shopify://pages/why-lanolin"
@@ -226,7 +226,7 @@
         "image_picker_JdyALT": {
           "type": "image_picker",
           "settings": {
-            "position": "8",
+            "position": "9",
             "image_block": "shopify://shop_images/Menu_Category_Images_Featured_Image_Discover_3.jpg",
             "image_title": "Our Story",
             "image_link": "shopify://pages/lano-heritage"
