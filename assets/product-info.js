@@ -14,6 +14,20 @@ if (!customElements.get('product-info')) {
       constructor() {
         super();
 
+        // CRITICAL: Initialize arrays using Object.defineProperty to ensure they always exist
+        Object.defineProperty(this, 'preProcessHtmlCallbacks', {
+          value: [],
+          writable: true,
+          configurable: true,
+          enumerable: true
+        });
+        Object.defineProperty(this, 'postProcessHtmlCallbacks', {
+          value: [],
+          writable: true,
+          configurable: true,
+          enumerable: true
+        });
+
         this.quantityInput = this.querySelector('.quantity__input');
       }
 
@@ -30,6 +44,15 @@ if (!customElements.get('product-info')) {
       }
 
       addPreProcessCallback(callback) {
+        // Ensure array exists - use defineProperty if needed
+        if (!this.preProcessHtmlCallbacks || !Array.isArray(this.preProcessHtmlCallbacks)) {
+          Object.defineProperty(this, 'preProcessHtmlCallbacks', {
+            value: [],
+            writable: true,
+            configurable: true,
+            enumerable: true
+          });
+        }
         this.preProcessHtmlCallbacks.push(callback);
       }
 
@@ -51,6 +74,24 @@ if (!customElements.get('product-info')) {
       }
 
       initializeProductSwapUtility() {
+        // Ensure arrays exist using defineProperty
+        if (!this.preProcessHtmlCallbacks || !Array.isArray(this.preProcessHtmlCallbacks)) {
+          Object.defineProperty(this, 'preProcessHtmlCallbacks', {
+            value: [],
+            writable: true,
+            configurable: true,
+            enumerable: true
+          });
+        }
+        if (!this.postProcessHtmlCallbacks || !Array.isArray(this.postProcessHtmlCallbacks)) {
+          Object.defineProperty(this, 'postProcessHtmlCallbacks', {
+            value: [],
+            writable: true,
+            configurable: true,
+            enumerable: true
+          });
+        }
+        
         this.preProcessHtmlCallbacks.push((html) =>
           html.querySelectorAll('.scroll-trigger').forEach((element) => element.classList.add('scroll-trigger--cancel'))
         );
