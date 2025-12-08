@@ -68,6 +68,7 @@
     "card_text_alignment": "left",
     "show_secondary_image": true,
     "card_color_scheme": "scheme-2",
+    "card_choose_options_function": "redirect_to_product",
     "card_border_thickness": 0,
     "card_border_opacity": 10,
     "card_corner_radius": 0,
