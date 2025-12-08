@@ -1,0 +1,125 @@
+{% liquid
+  assign ss = section.settings
+
+  assign initial_height = ss.initial_height
+  assign content = ss.content
+
+  assign expand_text = ss.expand_text
+  assign collapse_text = ss.collapse_text
+
+  assign padding_top = ss.padding_top
+  assign padding_bottom = ss.padding_bottom
+%}
+
+{%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: {{ padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ padding_bottom | times: 0.75 | round: 0 }}px;
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ padding_top }}px;
+      padding-bottom: {{ padding_bottom }}px;
+    }
+  }
+{%- endstyle -%}
+
+{{ 'section-read-more.css' | asset_url | stylesheet_tag: preload: true }}
+<script src="{{ 'read-more.js' | asset_url }}" defer="defer"></script>
+
+{% if content != blank %}
+
+  <div class="isolate{% unless section.settings.full_width %} page-width{% endunless %}">
+    <div class="read-more content-container color-{{ section.settings.color_scheme }} gradient{% if section.settings.full_width %} read-more--full-width content-container--full-width{% endif %} section-{{ section.id }}-padding">
+      <read-more
+        data-expand-text="{{ expand_text | escape }}"
+        data-collapse-text="{{ collapse_text | escape }}"
+        style="--initial-height: {{ initial_height }}px;">
+        <div class="read-more__content" data-read-more-content>
+          {{ content }}
+        </div>
+        <button class="read-more__button" data-read-more-button>
+          {{ expand_text }}
+        </button>
+      </read-more>
+    </div>
+  </div>
+
+{% endif %}
+
+
+{% schema %}
+  {
+    "name": "Read More",
+    "settings": [
+      {
+        "type": "color_scheme",
+        "id": "color_scheme",
+        "label": "t:sections.all.colors.label",
+        "default": "scheme-1"
+      },
+      {
+        "type": "checkbox",
+        "id": "full_width",
+        "default": false,
+        "label": "t:sections.rich-text.settings.full_width.label"
+      },
+      {
+        "type": "header",
+        "content": "Content"
+      },
+      {
+        "type": "richtext",
+        "id": "content",
+        "label": "Content",
+        "default": "{{ collection.metafields.custom.read_more | metafield_tag }}"
+      }, {
+        "type": "range",
+        "id": "initial_height",
+        "label": "Initial height",
+        "default": 100,
+        "min": 100,
+        "max": 200,
+        "step": 5,
+        "unit": "px"
+      }, {
+        "type": "text",
+        "id": "expand_text",
+        "label": "Expand text",
+        "default": "Read More"
+      }, {
+        "type": "text",
+        "id": "collapse_text",
+        "label": "Collapse text",
+        "default": "Read Less"
+      }, {
+        "type": "header",
+        "content": "t:sections.all.padding.section_padding_heading"
+      }, {
+        "type": "range",
+        "id": "padding_top",
+        "min": 0,
+        "max": 100,
+        "step": 4,
+        "unit": "px",
+        "label": "t:sections.all.padding.padding_top",
+        "default": 40
+      }, {
+        "type": "range",
+        "id": "padding_bottom",
+        "min": 0,
+        "max": 100,
+        "step": 4,
+        "unit": "px",
+        "label": "t:sections.all.padding.padding_bottom",
+        "default": 52
+      }
+    ],
+    "presets": [
+      {
+        "name": "Read More"
+      }
+    ]
+  }
+{% endschema %}

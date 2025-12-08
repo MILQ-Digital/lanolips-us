@@ -12,19 +12,56 @@
     "slideshow_dJncwY": {
       "type": "slideshow",
       "blocks": {
-        "slide_VULtDz": {
+        "slide_NAx7bN": {
           "type": "slide",
-          "disabled": true,
           "settings": {
+            "image": "shopify://shop_images/lanolips-holiday-gift-guide-web-banner-still.jpg",
+            "mobileimage": "shopify://shop_images/lanolips-holiday-gift-guide-mobile-banner.jpg",
+            "image_alignment": "image-center",
+            "slide_video_file": "shopify://files/videos/lanolips-holiday-gift-guide-2025-web-banner.mp4",
+            "slide_video_url": "",
+            "slide_video_file_mobile": "shopify://files/videos/lanolips-holiday-gift-guide-mobile-banner.mp4",
+            "subheading": "",
+            "subheading_script": "",
+            "heading": "Holiday Gift Guide",
+            "heading_size": "hxxl",
+            "show_heading_outline": false,
+            "heading_letter_spacing": 1,
+            "subcontent": "<p>Limited Edition Holiday gifts for the lip-balm-obsessed</p>",
+            "button_label": "Shop Holidays",
+            "link": "shopify://collections/holiday-gift-sets",
+            "button_style_secondary": false,
+            "box_align": "middle-left",
+            "show_text_box": false,
+            "text_alignment": "left",
+            "image_overlay_opacity": 0,
+            "color_scheme": "scheme-3",
+            "text_alignment_mobile": "center",
+            "text_color_mobile": "#2b4676",
+            "hide_text_mobile": false,
+            "text_bg_mobile": "#ffd5e3",
+            "btn_bg_mobile": "#fb558e",
+            "heading_font_size_mobile": 30,
+            "script_heading_font_size_mobile": 30
+          }
+        },
+        "slide_kbJygU": {
+          "type": "slide",
+          "name": "101 Ointment Challenge",
+          "settings": {
+            "image": "shopify://shop_images/3460_x_1748_-_101_Ointment_With_Eczema_Badge_FINAL.png",
+            "mobileimage": "shopify://shop_images/750_x_700_-_101_Ointment_With_Eczema.png",
             "image_alignment": "image-center",
             "slide_video_url": "",
-            "subheading": "Freshly Baked",
+            "subheading": "The World's Best Lip Balm",
             "subheading_script": "",
-            "heading": "The new Lanolips 101 Delicious 123 bla collection for us",
-            "heading_size": "hxxl",
-            "subcontent": "<p>Discover our new range of mouth watering flavours Discover our new range of mouth watering flavours Discover our new range of mouth watering flavours Discover our new  </p>",
-            "button_label": "Shop Now",
-            "link": "shopify://collections/all",
+            "heading": "Take On The 101 Ointment Ultimate Hydration Challenge",
+            "heading_size": "hxl",
+            "show_heading_outline": false,
+            "heading_letter_spacing": 0,
+            "subcontent": "<p>1 Balm. 101 Uses. 100% Natural. Cruelty Free.<br/>Accepted by the National Eczema Association. </p>",
+            "button_label": "Discover Now",
+            "link": "shopify://products/101-ointment-multipurpose-superbalm",
             "button_style_secondary": false,
             "box_align": "bottom-left",
             "show_text_box": false,
@@ -32,15 +69,48 @@
             "image_overlay_opacity": 0,
             "color_scheme": "scheme-3",
             "text_alignment_mobile": "center",
-            "text_color_mobile": "#fb558e",
+            "text_color_mobile": "#2b4676",
             "hide_text_mobile": false,
-            "text_bg_mobile": "#fb558e",
-            "btn_bg_mobile": "#2b4676",
-            "heading_font_size_mobile": 16,
-            "script_heading_font_size_mobile": 16
+            "text_bg_mobile": "#ffd5e3",
+            "btn_bg_mobile": "#fb558e",
+            "heading_font_size_mobile": 30,
+            "script_heading_font_size_mobile": 30
           }
         },
-        "slide_NAx7bN": {
+        "slide_DjBz8E": {
+          "type": "slide",
+          "name": "101 Ointment Challenge",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/3460_x_1748_-_101_Ointment_With_Badge_copy.png",
+            "mobileimage": "shopify://shop_images/750_x_700_-_101_Ointment_With_Badge_copy.png",
+            "image_alignment": "image-center",
+            "slide_video_url": "",
+            "subheading": "The World's Best Lip Balm",
+            "subheading_script": "",
+            "heading": "Take On The 101 Ointment Ultimate Hydration Challenge",
+            "heading_size": "hxl",
+            "show_heading_outline": false,
+            "heading_letter_spacing": 0,
+            "subcontent": "<p>1 Balm. 101 Uses. 100% Natural. Cruelty Free. </p>",
+            "button_label": "Discover Now",
+            "link": "shopify://products/101-ointment-multipurpose-superbalm",
+            "button_style_secondary": false,
+            "box_align": "bottom-left",
+            "show_text_box": false,
+            "text_alignment": "left",
+            "image_overlay_opacity": 0,
+            "color_scheme": "scheme-3",
+            "text_alignment_mobile": "center",
+            "text_color_mobile": "#2b4676",
+            "hide_text_mobile": false,
+            "text_bg_mobile": "#ffd5e3",
+            "btn_bg_mobile": "#fb558e",
+            "heading_font_size_mobile": 30,
+            "script_heading_font_size_mobile": 30
+          }
+        },
+        "slide_6LweMm": {
           "type": "slide",
           "name": "Sun Balm + Phone Lip Balm Holder (DRAFT)",
           "settings": {
@@ -54,9 +124,11 @@
             "subheading_script": "",
             "heading": "Sun Balm SPF 30 + Phone Lip Balm Holder",
             "heading_size": "hxxl",
+            "show_heading_outline": false,
+            "heading_letter_spacing": 0,
             "subcontent": "<p>Snap, Hydrate, Protect</p>",
-            "button_label": "SPF Lip Care, On Call",
-            "link": "shopify://collections/all",
+            "button_label": "Shop Now",
+            "link": "shopify://products/sun-balm-spf-30-phone-lip-balm-holder",
             "button_style_secondary": false,
             "box_align": "middle-left",
             "show_text_box": false,
@@ -71,42 +143,13 @@
             "heading_font_size_mobile": 30,
             "script_heading_font_size_mobile": 30
           }
-        },
-        "slide_BxjGpJ": {
-          "type": "slide",
-          "disabled": true,
-          "settings": {
-            "image": "shopify://shop_images/lanolips-hyaluronic-lip-oil-banner-holder.jpg",
-            "image_alignment": "image-center",
-            "slide_video_file": "shopify://files/videos/lanolips-hyaluronic-lip-oil-homepage-video.mp4",
-            "slide_video_url": "",
-            "subheading": "Lanolips Sale",
-            "subheading_script": "",
-            "heading": "20% Off Sitewide",
-            "heading_size": "hxxl",
-            "subcontent": "<p>Offer ends Tuesday 2nd September</p>",
-            "button_label": "Shop The Sale",
-            "link": "shopify://collections/all",
-            "button_style_secondary": false,
-            "box_align": "bottom-left",
-            "show_text_box": false,
-            "text_alignment": "left",
-            "image_overlay_opacity": 0,
-            "color_scheme": "scheme-3",
-            "text_alignment_mobile": "center",
-            "text_color_mobile": "#ffffff",
-            "hide_text_mobile": false,
-            "text_bg_mobile": "#fb558e",
-            "btn_bg_mobile": "#2b4676",
-            "heading_font_size_mobile": 30,
-            "script_heading_font_size_mobile": 16
-          }
         }
       },
       "block_order": [
-        "slide_VULtDz",
         "slide_NAx7bN",
-        "slide_BxjGpJ"
+        "slide_kbJygU",
+        "slide_DjBz8E",
+        "slide_6LweMm"
       ],
       "settings": {
         "layout": "full_bleed",
@@ -148,65 +191,13 @@
         "padding_bottom": 36
       }
     },
-    "image_with_text_WkDiJU": {
-      "type": "image-with-text",
-      "blocks": {
-        "caption_AcJ3mj": {
-          "type": "caption",
-          "settings": {
-            "caption": "",
-            "text_style": "caption-with-letter-spacing",
-            "text_size": "large",
-            "text_alignment": "text-left"
-          }
-        },
-        "heading_Db9tcb": {
-          "type": "heading",
-          "settings": {
-            "heading": "Lanolips Hyaluronic Lip Oil",
-            "heading_size": "hs"
-          }
-        },
-        "text_jTzLCJ": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Introducing the New Standard of Lip Oils. The ultimate in lip hydration and shine with Lanolips Hyaluronic Lip Oil</p>",
-            "text_style": "subtitle"
-          }
-        },
-        "button_AxwgMt": {
-          "type": "button",
-          "settings": {
-            "button_label": "Shop Lip Oil",
-            "button_link": "https://lanolips.com/collections/lip-oil",
-            "button_style_secondary": false,
-            "button_style_underline": false
-          }
-        }
-      },
-      "block_order": [
-        "caption_AcJ3mj",
-        "heading_Db9tcb",
-        "text_jTzLCJ",
-        "button_AxwgMt"
-      ],
+    "custom_liquid_PtfDQV": {
+      "type": "custom-liquid",
       "settings": {
-        "image": "shopify://shop_images/Hyaluronic_Lip_Oil_Product_Honey_and_Raspberry_Image_0bf8cd3b-f042-4d18-acf9-5204127f1d6d.jpg",
-        "height": "adapt",
-        "desktop_image_width": "medium",
-        "layout": "text_first",
-        "desktop_content_position": "middle",
-        "desktop_content_alignment": "center",
-        "content_layout": "no-overlap",
-        "section_color_scheme": "scheme-1",
-        "color_scheme": "",
-        "use_ingredients": false,
-        "image_behavior": "none",
-        "mobile_content_alignment": "left",
-        "mobile_page_padding": false,
-        "mobile_img_visibility": false,
-        "padding_top": 40,
-        "padding_bottom": 0
+        "custom_liquid": "<div class=\"yotpo-widget-instance\" data-yotpo-instance-id=\"1053535\" data-yotpo-product-id=\"{{product.id}}\" data-yotpo-cart-product-id=\"{{item.product.id}}\"></div>",
+        "color_scheme": "scheme-3",
+        "padding_top": 56,
+        "padding_bottom": 56
       }
     },
     "collection_list_aGyhDV": {
@@ -247,6 +238,100 @@
         "swipe_on_mobile": true,
         "padding_top": 64,
         "padding_bottom": 80
+      }
+    },
+    "image_with_text_WkDiJU": {
+      "type": "image-with-text",
+      "blocks": {
+        "caption_AcJ3mj": {
+          "type": "caption",
+          "settings": {
+            "caption": "",
+            "text_style": "caption-with-letter-spacing",
+            "text_size": "large",
+            "text_alignment": "text-left"
+          }
+        },
+        "heading_Db9tcb": {
+          "type": "heading",
+          "settings": {
+            "heading": "101 Ointment Multipurpose Superbalm",
+            "heading_size": "hs"
+          }
+        },
+        "text_jTzLCJ": {
+          "type": "text",
+          "settings": {
+            "text": "<p>1 Balm. 101 Uses. 100% Natural. Cruelty Free.<br/>Accepted by the National Eczema Association. <a href=\"/pages/faqs\" title=\"FAQs\">Read More</a>.</p>",
+            "text_style": "subtitle"
+          }
+        },
+        "button_AxwgMt": {
+          "type": "button",
+          "settings": {
+            "button_label": "Shop Now",
+            "button_link": "shopify://products/101-ointment-multipurpose-superbalm",
+            "button_style_secondary": false,
+            "button_style_underline": false
+          }
+        }
+      },
+      "block_order": [
+        "caption_AcJ3mj",
+        "heading_Db9tcb",
+        "text_jTzLCJ",
+        "button_AxwgMt"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/lifestyle-shot-101-ointment-multipurpose-superbalm-eczema-approved.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "center",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "scheme-1",
+        "color_scheme": "",
+        "use_ingredients": false,
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "mobile_page_padding": false,
+        "mobile_img_visibility": false,
+        "padding_top": 40,
+        "padding_bottom": 0
+      }
+    },
+    "rich_text_636tak": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_E8CUpz": {
+          "type": "heading",
+          "settings": {
+            "heading": "Shop Customer Faves",
+            "heading_size": "hs",
+            "enable_script": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_E8CUpz"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-2",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 40
+      }
+    },
+    "custom_liquid_qRbjDe": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<script src=\"//foursixty.com/media/scripts/fs.slider.v2.6.js\" data-feed-id=\"lanolips\" data-theme=\"slider_v2_6\" data-open-links-in-same-page=\"true\" data-connector-filter=\"58942\" data-always-show-video-detail=\"true\" data-video-gallery=\"reels\" data-cell-size=\"20%\"></script>\n<style>.fs-has-links { display:none; } .fs-video-gallery .fs-entry-container { padding-top:36% !important;width:20% !important;height:auto !important; } .fs-video-gallery.fs-narrow-timeline .fs-entry-container.fs-entry-container { padding-top:calc(50% * 1.7778) !important;width:50% !important;height:auto !important; } .fs-video-gallery.fs-small-timeline .fs-entry-container.fs-entry-container { padding-top:calc(33.3334% * 1.7778) !important;width:33.3334% !important;height:auto !important; } .fs-wrapper div.fs-text-container .fs-entry-title, div.fs-detail-title { font-family:Times New Roman, serif;font-style:normal;font-weight:normal;font-size:14px; } div.fs-text-container .fs-entry-date, div.fs-detail-container .fs-post-info, div.fs-wrapper div.fs-has-links::after, .fs-text-product, .fs-overlink-text { font-family:Helvetica Neue, Helvetica, Arial, sans-serif;font-style:normal;font-weight:normal;font-size:14px; } .fs-slider-next-button, .fs-slider-prev-button { opacity:1; } .fs-wrapper { margin:auto;width:calc(100% - 120px); } .fs-wrapper div.fs-text-container * { color:#ffffff; } .fs-wrapper div.fs-text-container { background-color:rgba(0, 0, 0, 0.15);margin:0px; } div.fs-entry-date { display:none; } div.fs-service-icon { display:none; } div.fs-entry-title { display:none; } .fs-slider_v2_6 .fs-wrapper div.fs-timeline-entry { margin:10px; } </style>",
+        "color_scheme": "scheme-3",
+        "padding_top": 40,
+        "padding_bottom": 52
       }
     },
     "image_banner_rxCeJC": {
@@ -349,48 +434,6 @@
         "section_class": ""
       }
     },
-    "rich_text_636tak": {
-      "type": "rich-text",
-      "blocks": {
-        "heading_E8CUpz": {
-          "type": "heading",
-          "settings": {
-            "heading": "Shop Customer Faves",
-            "heading_size": "hs",
-            "enable_script": false
-          }
-        }
-      },
-      "block_order": [
-        "heading_E8CUpz"
-      ],
-      "settings": {
-        "desktop_content_position": "center",
-        "content_alignment": "center",
-        "color_scheme": "scheme-2",
-        "full_width": true,
-        "padding_top": 40,
-        "padding_bottom": 40
-      }
-    },
-    "custom_liquid_qRbjDe": {
-      "type": "custom-liquid",
-      "settings": {
-        "custom_liquid": "<script src=\"//foursixty.com/media/scripts/fs.slider.v2.6.js\" data-feed-id=\"lanolips\" data-theme=\"slider_v2_6\" data-open-links-in-same-page=\"true\" data-connector-filter=\"58942\" data-always-show-video-detail=\"true\" data-video-gallery=\"reels\" data-cell-size=\"20%\"></script>\n<style>.fs-has-links { display:none; } .fs-video-gallery .fs-entry-container { padding-top:36% !important;width:20% !important;height:auto !important; } .fs-video-gallery.fs-narrow-timeline .fs-entry-container.fs-entry-container { padding-top:calc(50% * 1.7778) !important;width:50% !important;height:auto !important; } .fs-video-gallery.fs-small-timeline .fs-entry-container.fs-entry-container { padding-top:calc(33.3334% * 1.7778) !important;width:33.3334% !important;height:auto !important; } .fs-wrapper div.fs-text-container .fs-entry-title, div.fs-detail-title { font-family:Times New Roman, serif;font-style:normal;font-weight:normal;font-size:14px; } div.fs-text-container .fs-entry-date, div.fs-detail-container .fs-post-info, div.fs-wrapper div.fs-has-links::after, .fs-text-product, .fs-overlink-text { font-family:Helvetica Neue, Helvetica, Arial, sans-serif;font-style:normal;font-weight:normal;font-size:14px; } .fs-slider-next-button, .fs-slider-prev-button { opacity:1; } .fs-wrapper { margin:auto;width:calc(100% - 120px); } .fs-wrapper div.fs-text-container * { color:#ffffff; } .fs-wrapper div.fs-text-container { background-color:rgba(0, 0, 0, 0.15);margin:0px; } div.fs-entry-date { display:none; } div.fs-service-icon { display:none; } div.fs-entry-title { display:none; } .fs-slider_v2_6 .fs-wrapper div.fs-timeline-entry { margin:10px; } </style>",
-        "color_scheme": "scheme-3",
-        "padding_top": 40,
-        "padding_bottom": 52
-      }
-    },
-    "custom_liquid_PtfDQV": {
-      "type": "custom-liquid",
-      "settings": {
-        "custom_liquid": "<div class=\"yotpo-widget-instance\" data-yotpo-instance-id=\"1053535\" data-yotpo-product-id=\"{{product.id}}\" data-yotpo-cart-product-id=\"{{item.product.id}}\"></div>",
-        "color_scheme": "scheme-3",
-        "padding_top": 56,
-        "padding_bottom": 56
-      }
-    },
     "rich_text_9jF4qD": {
       "type": "rich-text",
       "blocks": {
@@ -438,7 +481,7 @@
           "type": "shopify://apps/foursixty-shoppable-social-ugc/blocks/custom_slider/e2616dfe-fbb6-4e7d-874d-d250b973556d",
           "settings": {
             "foreground_color": "#ffffff",
-            "background_color": "#FAE8ED",
+            "background_color": "#fae8ed",
             "background_color_alpha": 80,
             "post_spacing": 10,
             "hover_margin": 0,
@@ -451,9 +494,9 @@
             "call_to_action": "",
             "shop_type": "none",
             "body_font_size": 14,
-            "body_font": "helvetica_n4",
+            "body_font": "sans_serif_n4",
             "accent_font_size": 14,
-            "accent_font": "helvetica_n4",
+            "accent_font": "sans_serif_n4",
             "disable_filter": false,
             "override_feed_id": "lanolips",
             "arbitrary_attributes": "",
@@ -486,13 +529,13 @@
   "order": [
     "slideshow_dJncwY",
     "featured_collection",
-    "image_with_text_WkDiJU",
+    "custom_liquid_PtfDQV",
     "collection_list_aGyhDV",
-    "image_banner_rxCeJC",
-    "multicolumn_gqYkVh",
+    "image_with_text_WkDiJU",
     "rich_text_636tak",
     "custom_liquid_qRbjDe",
-    "custom_liquid_PtfDQV",
+    "image_banner_rxCeJC",
+    "multicolumn_gqYkVh",
     "rich_text_9jF4qD",
     "custom_liquid_aW4CwX",
     "173950177361100e1b",
