@@ -862,6 +862,26 @@
       },
       {
         "type": "header",
+        "content": "Choose options"
+      },
+      {
+        "type": "select",
+        "id": "card_choose_options_function",
+        "options": [
+          {
+            "value": "show_popup",
+            "label": "Show popup"
+          },
+          {
+            "value": "redirect_to_product",
+            "label": "Redirect to product"
+          }
+        ],
+        "default": "show_popup",
+        "label": "Choose options function"
+      },
+      {
+        "type": "header",
         "content": "t:settings_schema.global.settings.header__border.content"
       },
       {
