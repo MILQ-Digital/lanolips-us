@@ -21,6 +21,13 @@
             "link": "shopify://collections/holiday-gift-sets"
           }
         },
+        "announcement_CyAyYF": {
+          "type": "announcement",
+          "settings": {
+            "text": "Beat the rush, view our Holiday shipping cut offs 🎄",
+            "link": "shopify://pages/delivery-orders"
+          }
+        },
         "announcement_EUw7Ak": {
           "type": "announcement",
           "settings": {
@@ -31,6 +38,7 @@
       },
       "block_order": [
         "announcement_p6MUhh",
+        "announcement_CyAyYF",
         "announcement_EUw7Ak"
       ],
       "settings": {
