@@ -1,15 +1,19 @@
 <!doctype html>
 <html class="js" lang="{{ request.locale.iso_code }}">
   <head>
-    <meta name="google-site-verification" content="3AEYG-3ZxSWQsyqcvi80nj2bT_TigbfevDtMenIFqxU" />
+
+    <meta name="google-site-verification" content="rsDLOfHB7u5HpybHEK_8DqoJ4CCrroEyMX4oyRcmJ5k" />
     
-    <meta name="facebook-domain-verification" content="gtzqv2sisth5bd6t8wmf7q84q5zfmj" />
+   {% comment %} {% include 'multi-store-hreflang-tags' %} {% endcomment %}
+
+    <meta name="author" content="Made by MILQ. https://milqdigital.com">
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="theme-color" content="">
-    <link rel="canonical" href="{{ canonical_url }}">
-    <meta name="author" content="Made by MILQ. https://milqdigital.com">
+
+     {% render 'hreflang-tags' %}
+
     {%- assign robots_content = "index, follow" -%}
 
     {%- if request.path contains '/search' or request.path contains '/cart' or request.path contains '/checkout' -%}
@@ -17,55 +21,39 @@
     {%- elsif request.query_string contains 'sort_by' or request.query_string contains 'filter' -%}
       {%- assign robots_content = "noindex, follow" -%}
     {%- endif -%}
-    
+
     <meta name="robots" content="{{ robots_content }}">
 
     
+   {%- if canonical_url != blank  -%}
+      <link rel="canonical" href="{{ canonical_url }}">
+    {%- endif -%} 
+
     {%- if settings.favicon != blank or settings.season_favicon != blank  -%}
       {%- if settings.enable_season -%}
         <link rel="icon" type="image/png" href="{{ settings.season_favicon | image_url: width: 32, height: 32 }}">
       {%- else -%}
         <link rel="icon" type="image/png" href="{{ settings.favicon | image_url: width: 32, height: 32 }}">
-      {%- endif -%} 
+      {%- endif -%}
     {%- endif -%} 
 
     {%- unless settings.type_header_font.system? and settings.type_body_font.system? -%}
       <link rel="preconnect" href="https://fonts.shopifycdn.com" crossorigin>
     {%- endunless -%}
 
-    {%- comment -%}
-  	====================================================================================================
-  	Check for "All collections" page to implement their title and meta description 
-  	- else render original title, desc - Added by NPA
-  	====================================================================================================
-  	{%- endcomment -%}
-	{% if collection.handle == 'all' %}
-  		{% unless current_tags %}
-			<title>Products With Lanolin - All Collections - Lanolips USA Store</title>
-			<meta name="description" content="Shop for the best beauty products containing lanolin. Start hydrating & healing your skin in the most natural way with exclusive Lano selected products.">
-		{% endunless %}
-	{% else %}
     <title>
       {{ page_title }}
       {%- if current_tags %} &ndash; tagged "{{ current_tags | join: ', ' }}"{% endif -%}
       {%- if current_page != 1 %} &ndash; Page {{ current_page }}{% endif -%}
       {%- unless page_title contains shop.name %} &ndash; {{ shop.name }}{% endunless -%}
     </title>
-  {%- endif -%}
-  {%- if page_description -%}
-    <meta name="description" content="{{ page_description | escape }}">
-  {%- endif -%}
-  {%- comment -%}
-  ====================================================================================================
-  Check for "All collections" page to implement their title and meta description, 
-  else render original title, desc
-  ====================================================================================================
-  {%- endcomment -%}
 
-  
-    {% render 'hreflang-tags' %}
+    {% if page_description %}
+      <meta name="description" content="{{ page_description | escape }}">
+    {% endif %}
 
     {% include 'social-meta-tags' %}
+    
     {% render 'meta-tags' %}
 
     <script src="{{ 'constants.js' | asset_url }}" defer="defer"></script>
@@ -297,16 +285,16 @@
       }
     {% endstyle %}
 
-  {{ 'base.css' | asset_url | stylesheet_tag }}
-  <link rel="stylesheet" href="{{ 'component-cart-items.css' | asset_url }}" media="print" onload="this.media='all'">
+    {{ 'base.css' | asset_url | stylesheet_tag }}
+    <link rel="stylesheet" href="{{ 'component-cart-items.css' | asset_url }}" media="print" onload="this.media='all'">
 
-  {%- if settings.cart_type == 'drawer' -%}
-    {{ 'component-cart-drawer.css' | asset_url | stylesheet_tag }}
-    {{ 'component-cart.css' | asset_url | stylesheet_tag }}
-    {{ 'component-totals.css' | asset_url | stylesheet_tag }}
-    {{ 'component-price.css' | asset_url | stylesheet_tag }}
-    {{ 'component-discounts.css' | asset_url | stylesheet_tag }}
-  {%- endif -%}
+    {%- if settings.cart_type == 'drawer' -%}
+      {{ 'component-cart-drawer.css' | asset_url | stylesheet_tag }}
+      {{ 'component-cart.css' | asset_url | stylesheet_tag }}
+      {{ 'component-totals.css' | asset_url | stylesheet_tag }}
+      {{ 'component-price.css' | asset_url | stylesheet_tag }}
+      {{ 'component-discounts.css' | asset_url | stylesheet_tag }}
+    {%- endif -%}
 
     {%- unless settings.type_body_font.system? -%}
       {% comment %}theme-check-disable AssetPreload{% endcomment %}
@@ -320,14 +308,17 @@
     {%- endunless -%}
 
     {%- if localization.available_countries.size > 1 or localization.available_languages.size > 1 -%}
-      <link rel="stylesheet" href="{{ 'component-localization-form.css' | asset_url }}" media="print" onload="this.media='all'">
-      {{ 'component-localization-form.css' | asset_url | stylesheet_tag }}
+      {{ 'component-localization-form.css' | asset_url | stylesheet_tag: preload: true }}
       <script src="{{ 'localization-form.js' | asset_url }}" defer="defer"></script>
     {%- endif -%}
 
     {%- if settings.predictive_search_enabled -%}
-      <link rel="stylesheet" href="{{ 'component-predictive-search.css' | asset_url }}" media="print" onload="this.media='all'">
-      {{ 'component-predictive-search.css' | asset_url | stylesheet_tag }}
+      <link
+        rel="stylesheet"
+        href="{{ 'component-predictive-search.css' | asset_url }}"
+        media="print"
+        onload="this.media='all'"
+      >
     {%- endif -%}
 
     <script>
@@ -336,30 +327,58 @@
       }
     </script>
     {{ 'sitewide.css' | asset_url | stylesheet_tag }}
-    {% comment %} <script async src="https://wishlist.swymrelay.com/swym.js"></script> {% endcomment %}
+  <script async src="https://wishlist.swymrelay.com/swym.js"></script>
 
     <!-- Google Tag Manager -->
-    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-P954WCRF');</script>
-    <!-- End Google Tag Manager -->
-    <!-- Hotjar Tracking Code for https://lanolips.com -->
-    <script>
-        (function(h,o,t,j,a,r){
-            h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
-            h._hjSettings={hjid:2001598,hjsv:6};
-            a=o.getElementsByTagName('head')[0];
-            r=o.createElement('script');r.async=1;
-            r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
-            a.appendChild(r);
-        })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
-    </script>
-    <script id="docapp-volume-speedup">
-    (() => { if (!document.documentElement.innerHTML.includes('\\/shop' + '\\/js' + '\\/shopdocs-volume-discounts.min.js') || window.shopdocsVolumeDiscountsAppLoaded) return; let script = document.createElement('script'); script.src = "https://d2e5xyzdl0rkli.cloudfront.net/shop/js/shopdocs-volume-discounts.min.js?shop=lanolips-us.myshopify.com"; document.getElementById('docapp-volume-speedup').after(script); })();
-    </script>
-    
+  <script>
+    window.dataLayer = window.dataLayer || [];
+  </script>
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-PXJGGMMN');</script>
+  <!-- End Google Tag Manager -->
+
+  <!-- Hotjar Tracking Code for https://lanolips.com.au/ -->
+  <script>
+      (function(h,o,t,j,a,r){
+          h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+          h._hjSettings={hjid:2001299,hjsv:6};
+          a=o.getElementsByTagName('head')[0];
+          r=o.createElement('script');r.async=1;
+          r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+          a.appendChild(r);
+      })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+  </script>  
+  <script type="text/javascript">
+  EF.click({
+  offer_id: EF.urlParameter('oid'),
+  affiliate_id: EF.urlParameter('affid'),
+  sub1: EF.urlParameter('sub1'),
+  sub2: EF.urlParameter('sub2'),
+  sub3: EF.urlParameter('sub3'),
+  sub4: EF.urlParameter('sub4'),
+  sub5: EF.urlParameter('sub5'),
+  uid: EF.urlParameter('uid'),
+  transaction_id: EF.urlParameter('utm_term'),
+  });
+  </script>  
+  {% if handle contains 'heres-your-special-treat' %}
+    <meta name="robots" content="noindex">
+  {% endif %} 
+
+  {% comment %} {% include 'gwa-hreflang' %}  {% endcomment %}
+
+  <script id="docapp-volume-speedup">
+  (() => { if (!document.documentElement.innerHTML.includes('\\/shop' + '\\/js' + '\\/shopdocs-volume-discounts.min.js') || window.shopdocsVolumeDiscountsAppLoaded) return; let script = document.createElement('script'); script.src = "https://d2e5xyzdl0rkli.cloudfront.net/shop/js/shopdocs-volume-discounts.min.js?shop=lanolips.myshopify.com"; document.getElementById('docapp-volume-speedup').after(script); })();
+  </script>
+  
+  <script>(() => {const installerKey = 'docapp-volume-auto-install'; const urlParams = new URLSearchParams(window.location.search); if (urlParams.get(installerKey)) {window.sessionStorage.setItem(installerKey, JSON.stringify({integrationId: urlParams.get('docapp-integration-id'), divClass: urlParams.get('docapp-install-class'), check: urlParams.get('docapp-check')}));}})();</script>
+  
+  <script>(() => {const previewKey = 'docapp-volume-test'; const urlParams = new URLSearchParams(window.location.search); if (urlParams.get(previewKey)) {window.sessionStorage.setItem(previewKey, JSON.stringify({active: true, integrationId: urlParams.get('docapp-volume-inst-test')}));}})();</script>
+
+  <script src="https://cdn-widgetsrepository.yotpo.com/v1/loader/saIvlxOA1YDKuvXrWwWSMinllEkWznowM8hLlqcm" async></script>
   </head>
 
   <body class="template-{{ template | replace: '.', '-' }} gradient{% if settings.animations_hover_elements != 'none' %} animate--hover-{{ settings.animations_hover_elements }}{% endif %} {{ page_type }} {% if template.name == '404' %}error-page error-404{% endif %} {% if template == 'page.contact' %}contact-page{% else %}template--{{ page.handle }}{% endif %}">
@@ -399,15 +418,12 @@
       </div>
     </div>
     <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P954WCRF"
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PXJGGMMN"
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
-    <a class="skip-link" href="#MainContent">
+    
+    <a class="skip-to-content-link button visually-hidden" href="#MainContent">
       {{ 'accessibility.skip_to_text' | t }}
-    </a>
-
-    <a class="skip-link" href="/pages/accessibility-statement">
-      Go to Accessibility Statement
     </a>
 
     {%- if settings.cart_type == 'drawer' -%}
@@ -479,19 +495,44 @@
     {%- if settings.cart_type == 'drawer' -%}
       <script src="{{ 'cart-drawer.js' | asset_url }}" defer="defer"></script>
     {%- endif -%}
-    <script src="https://cdn-widgetsrepository.yotpo.com/v1/loader/mQ1OtahieU7lXQLGHGIuEqB0FMpwksVk4JQfJdya" async></script>
-    <script>
+
+   <script>
       window.SwymCallbacks = window.SwymCallbacks || [];
       window.SwymCallbacks.push(function(swat) {
         swat.initialize();
       });
     </script>
 
+    <!-- Rakuten Marketing Additional Fields -->
+      <script type="text/javascript">
+      {%- assign rakutenMarketing_customerStatus = 'New' -%}
+      {%- if customer.orders.size > 1 -%}
+        {%- assign rakutenMarketing_customerStatus = 'Existing' -%}
+      {%- endif-%}
+        window.rm_Shopify = {
+            customerStatus: '{{ rakutenMarketing_customerStatus }}',
+            orderName: '{{ order_number }}',
+            line_items : [
+            {% for line_item in line_items %}  {
+                    optionalData: {
+                          cat: '{{ line_item.product.type }}',
+                          brand: '{{ line_item.vendor }}'
+                    }
+                }
+            {% if line_items.last != line_item %},{% endif %}
+            {% endfor %}
+            ]
+        };
+      </script>
+      <!-- End Rakuten Marketing Additional Fields-->
+
+    {% comment %}{% include 'eu-cookie' %}{% endcomment %}
+    
     <script src="https://a.klaviyo.com/media/js/onsite/onsite.js"></script>
     <script>
         var klaviyo = klaviyo || [];
         klaviyo.init({
-          account: "SzmPyJ",
+          account: "Rngc6X",
           platform: "shopify"
         });
         klaviyo.enable("backinstock",{ 
@@ -523,6 +564,8 @@
         }
       });
     </script>
+  {% render 'appikon-discounts' %}
+
     <script>
       window.addEventListener('load', function () {
         var loader = document.getElementById('loader-wrapper');
@@ -531,109 +574,49 @@
         }
       });
     </script>
-
-  <script>
-  const focusableElements =
-                'button, a, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])';
-            function trapFocus(selector) {
-                const modal = document.querySelector(selector); // select the modal by it's CSS selector
-                const firstFocusableElement = modal.querySelectorAll(focusableElements)[0]; // get first element to be focused inside modal
-                const focusableContent = modal.querySelectorAll(focusableElements);
-                const lastFocusableElement = focusableContent[focusableContent.length - 1]; // get last element to be focused inside modal
-                document.addEventListener('keydown', function(e) {
-                let isTabPressed = e.key === 'Tab' || e.keyCode === 9;
-                if (!isTabPressed) {
-                    return;
-                }
-                if (e.shiftKey) { // if shift key pressed for shift + tab combination
-                    if (document.activeElement === firstFocusableElement) {
-                    lastFocusableElement.focus(); // add focus for the last focusable element
-                    e.preventDefault();
-                    }
-                } else { // if tab key is pressed
-                    if (document.activeElement === lastFocusableElement) { // if focused has reached to last focusable element then focus first focusable element after pressing tab
-                    firstFocusableElement.focus(); // add focus for the first focusable element
-                    e.preventDefault();
-                    }
-                }
-                });
-                firstFocusableElement.focus();
-            }
-    function keyToClick(event) {
-                if (event.key == "Enter") {
-                    event.preventDefault();
-                    event.target.click();
-                }
-            }
-  var $$ = (selector, attribute, value) => {
-      const interval = setInterval(() => {
-          const elems = document.querySelectorAll(selector)
-          elems.forEach((elem) => {
-              if (value) {
-                  if(!elem.hasAttribute(attribute)) {
-                      elem.setAttribute(attribute, value)
-                      clearInterval(interval)
-                  }
-              } else {
-                  elem.removeAttribute(attribute)
-                  clearInterval(interval)
-              }
-          }) 
-      }, 100)
-  }
-  $$(".swym-wishlist", "aria-label", "Swym Wishlist. Redirects you to Wishlist Page")
-  $$("#swym-atw-collections-img-icon", "alt", "Swym Wishlist. Add this product to your wishlist")
-  $$("#PBarNextFrame", "title", "Video Player")
-  $$(".kl-private-reset-css-Xuajs1 img", "alt", "Klaviyo Marketing Image")
-  $$("#swym-atw-pdp-button-img-icon", "alt", "Add to Wishlist Icon")
-  $$(".yotpo-main-reviews-widget", "role")
-  $$(".yotpo-main-reviews-widget", "aria-labelledby")
-  </script>
-          <script>
-            const expandButtons = document.querySelectorAll('.expand-subMenu');
-            
-            expandButtons.forEach((button) => {
-              const dropdownMenu = button.nextElementSibling;
-            
-              function closeMenu() {
-                button.setAttribute('aria-expanded', 'false');
-                  dropdownMenu.style.opacity = '0';
-                  dropdownMenu.style.visibility = 'hidden';
-                  dropdownMenu.style.display = 'none';
-                  dropdownMenu.style.height = 'auto';
-              }
-            
-              function toggleMenu() {
-                const isExpanded = button.getAttribute('aria-expanded') === 'true';
-                if (isExpanded) {
-                  closeMenu();
-                } else {
-                  button.setAttribute('aria-expanded', 'true');
-                  dropdownMenu.style.opacity = '1';
-                  dropdownMenu.style.visibility = 'visible';
-                  dropdownMenu.style.display = 'block';
-                  dropdownMenu.style.height = 'auto';
-                }
-              }
-            
-              button.addEventListener('keydown', (event) => {
-                if (event.key === 'Enter') {
-                  toggleMenu();
-                  event.preventDefault(); 
-                } else if (event.key === 'Escape') {
-                  if (button.getAttribute('aria-expanded') === 'true') {
-                    closeMenu();
-                  }
-                }
-              });
-            
-              dropdownMenu.addEventListener('keydown', (event) => {
-                if (event.key === 'Escape') {
-                  closeMenu();
-                  button.focus();
-                }
-              });
-            });
-        </script>
   </body>
 </html>
+
+<!-- Begin Shopify-Afterpay JavaScript Snippet (v1.0.10) -->
+<script type="text/javascript">
+// Editable fields (remove "//" from the start of each line to activate):
+// var afterpay_min = 0.04;  // As per your Afterpay contract.
+// var afterpay_max = 2000.00;  // As per your Afterpay contract.
+
+var afterpay_product_selector = '.product__price';  // The selector used to identify the price on the Product pages.
+// var afterpay_product_css = {'margin-top': '15px'};  // The CSS styling of the Afterpay assets on the Product pages.
+// var afterpay_logo_theme = 'colour';  // The Afterpay logo colour. Can be 'colour' (default), 'black' or 'white'.
+// var afterpay_modal_open_icon = true;	 // If enabled, an "ⓘ" icon is displayed next to the Afterpay logo in place of the "More info" text.
+// var afterpay_cbt_enabled = false;  // As per your Afterpay contract. Change to true to display Cross Border Trade artwork (for AU/NZ).
+
+// var afterpay_variable_price_fallback_selector = '.product-price-selector';  // The selector used to identify the price on the Product pages if the Afterpay assets are disappearing after page-load or price is incorrect when a variant is selected.
+// var afterpay_variable_price_fallback_method = "interval";  // Ensures the instalment price updates when the price changes. Can be "mutation" (default) or "interval".
+
+var afterpay_cart_integration_enabled = true;  // Enables/disables the Cart page display. Can be true or false (default).
+// var afterpay_cart_static_selector = '.cart-subtotal-selector';  // The selector used to identify the price on the Cart page.
+// var afterpay_cart_static_css = {'margin-top': '15px'};  // The CSS styling of the Afterpay assets on the Cart page.
+// var afterpay_cart_static_logo_theme = 'colour';  // The Afterpay logo colour. Can be 'colour' (default), 'black' or 'white'.
+
+// var afterpay_variable_subtotal_fallback_selector = '.cart-subtotal-selector';  // The selector used to identify the price on the Cart page if the Afterpay assets are disappearing after page-load.
+// var afterpay_variable_subtotal_fallback_method = "interval";  // Ensures the instalment price updates when the price changes. Can be "mutation" (default) or "interval".
+
+// var afterpay_footer_logo_enabled = true;  // Enables/disables the footer payment icon. Can be true (default) or false.
+// var afterpay_footer_logo_container = '.payment-icons';  // The selector used to identify the payment icons in the footer.
+// var afterpay_footer_logo_format = 'icon';  // The Afterpay payment icon style. Can be 'icon' (default), 'stacked' or 'logo'.
+// var afterpay_footer_logo_theme = 'colour';  // The Afterpay payment icon colour. Can be 'colour' (default), 'black' or 'white'.
+// var afterpay_footer_logo_background = 'border';  // The Afterpay payment icon border style. Can be 'border' (default) or 'transparent'.
+// var afterpay_footer_logo_css = {'width': '38px', 'height': '22px', 'vertical-align': 'baseline'};  // The CSS styling of the Afterpay payment icon in the footer.
+
+// Non-editable fields:
+var afterpay_shop_currency = {{ shop.currency | json }};
+var afterpay_cart_currency = {{ cart.currency.iso_code | json }};
+var afterpay_shop_money_format = {{ shop.money_format | json }};
+var afterpay_shop_permanent_domain = {{ shop.permanent_domain | json }};
+var afterpay_theme_name = {{ theme.name | json }};
+var afterpay_product = {{ product | json }};
+var afterpay_current_variant = {{ product.selected_or_first_available_variant | json }};
+var afterpay_cart_total_price = {{ cart.total_price | json }};
+var afterpay_js_snippet_version = '1.0.10';
+</script>
+<script type="text/javascript" src="https://static.afterpay.com/shopify-afterpay-javascript.js"></script>
+<!-- End Shopify-Afterpay JavaScript Snippet (v1.0.10) -->

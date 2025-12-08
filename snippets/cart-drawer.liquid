@@ -5,17 +5,13 @@
   {% render 'cart-drawer' %}
 {% endcomment %}
 
-<link rel="stylesheet" href="{{ 'quantity-popover.css' | asset_url }}" media="print" onload="this.media='all'">
-<noscript><link rel="stylesheet" href="{{ 'quantity-popover.css' | asset_url }}"></noscript>
-
-<link rel="stylesheet" href="{{ 'component-card.css' | asset_url }}" media="print" onload="this.media='all'">
-<noscript><link rel="stylesheet" href="{{ 'component-card.css' | asset_url }}"></noscript>
+{{ 'quantity-popover.css' | asset_url | stylesheet_tag }}
+{{ 'component-card.css' | asset_url | stylesheet_tag }}
 
 <script src="{{ 'cart.js' | asset_url }}" defer="defer"></script>
 <script src="{{ 'quantity-popover.js' | asset_url }}" defer="defer"></script>
 
-<link rel="stylesheet" href="{{ 'component-slider.css' | asset_url }}" media="print" onload="this.media='all'">
-<noscript><link rel="stylesheet" href="{{ 'component-slider.css' | asset_url }}"></noscript>
+{{ 'component-slider.css' | asset_url | stylesheet_tag }}
 <script src="{{ 'quick-add.js' | asset_url }}" defer="defer"></script>
 <script>
 
@@ -683,7 +679,7 @@ document.addEventListener('DOMContentLoaded', function () {
               {{- 'icon-close-new.svg' | inline_asset_content -}}
             </span>
           </button>
-      </div>
+      </div>  
       <slider-component class="cart-upsell-carousel upsell-carousel slider-mobile-gutter slider-component-full-width slider-component-desktop scroll-trigger animate--slide-in">
         <ul id="Slider-Upsell"
             data-id="Slider-Upsell"
@@ -742,14 +738,9 @@ document.addEventListener('DOMContentLoaded', function () {
         </div>
       </slider-component>
     </div>
-    <link rel="stylesheet" href="{{ 'component-card.css' | asset_url }}" media="print" onload="this.media='all'">
-    <noscript><link rel="stylesheet" href="{{ 'component-card.css' | asset_url }}"></noscript>
-    
-    <link rel="stylesheet" href="{{ 'component-complementary-products.css' | asset_url }}" media="print" onload="this.media='all'">
-    <noscript><link rel="stylesheet" href="{{ 'component-complementary-products.css' | asset_url }}"></noscript>
-    
-    <link rel="stylesheet" href="{{ 'quick-add.css' | asset_url }}" media="print" onload="this.media='all'">
-    <noscript><link rel="stylesheet" href="{{ 'quick-add.css' | asset_url }}"></noscript>
+    {{ 'component-card.css' | asset_url | stylesheet_tag }}
+    {{ 'component-complementary-products.css' | asset_url | stylesheet_tag }}
+    {{ 'quick-add.css' | asset_url | stylesheet_tag }}
     <script src="{{ 'quick-add.js' | asset_url }}" defer="defer"></script>  
   {%- endif -%}
   
@@ -771,7 +762,7 @@ document.addEventListener('DOMContentLoaded', function () {
     {% assign upsell_products = upsell_collection.products | limit: 6 %}
   
     <div class="cart-upsell">
-      <div class="cart-upsell-heading">
+        <div class="cart-upsell-heading">
           <h2 class="heading-2xs">Pair with</h2> 
           <button
             class="drawer__close_pw"
@@ -783,7 +774,7 @@ document.addEventListener('DOMContentLoaded', function () {
               {{- 'icon-close-new.svg' | inline_asset_content -}}
             </span>
           </button>
-      </div>
+        </div>
       <slider-component class="cart-upsell-carousel upsell-carousel slider-mobile-gutter slider-component-full-width slider-component-desktop scroll-trigger animate--slide-in">
         <ul id="Slider-Upsell"
             data-id="Slider-Upsell"
@@ -842,14 +833,9 @@ document.addEventListener('DOMContentLoaded', function () {
         </div>
       </slider-component>
     </div>
-    <link rel="stylesheet" href="{{ 'component-card.css' | asset_url }}" media="print" onload="this.media='all'">
-    <noscript><link rel="stylesheet" href="{{ 'component-card.css' | asset_url }}"></noscript>
-    
-    <link rel="stylesheet" href="{{ 'component-complementary-products.css' | asset_url }}" media="print" onload="this.media='all'">
-    <noscript><link rel="stylesheet" href="{{ 'component-complementary-products.css' | asset_url }}"></noscript>
-    
-    <link rel="stylesheet" href="{{ 'quick-add.css' | asset_url }}" media="print" onload="this.media='all'">
-    <noscript><link rel="stylesheet" href="{{ 'quick-add.css' | asset_url }}"></noscript>
+    {{ 'component-card.css' | asset_url | stylesheet_tag }}
+    {{ 'component-complementary-products.css' | asset_url | stylesheet_tag }}
+    {{ 'quick-add.css' | asset_url | stylesheet_tag }}
     <script src="{{ 'quick-add.js' | asset_url }}" defer="defer"></script>  
   {% endif %}
 
@@ -960,4 +946,3 @@ document.addEventListener('DOMContentLoaded', function () {
     </div>
   </div>
 </cart-drawer>
-
