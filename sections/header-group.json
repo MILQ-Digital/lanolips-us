@@ -14,6 +14,13 @@
     "announcement-bar": {
       "type": "announcement-bar",
       "blocks": {
+        "announcement_GW6JnN": {
+          "type": "announcement",
+          "settings": {
+            "text": "Every order gets a little extra joy, FREE Holiday Stickers 🎄",
+            "link": ""
+          }
+        },
         "announcement_p6MUhh": {
           "type": "announcement",
           "settings": {
@@ -37,6 +44,7 @@
         }
       },
       "block_order": [
+        "announcement_GW6JnN",
         "announcement_p6MUhh",
         "announcement_CyAyYF",
         "announcement_EUw7Ak"
