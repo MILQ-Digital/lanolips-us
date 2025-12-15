@@ -113,6 +113,7 @@
         "slide_6LweMm": {
           "type": "slide",
           "name": "Sun Balm + Phone Lip Balm Holder (DRAFT)",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/Sun_Balm_SPF_30_Tropical_Phone_Lip_Balm_Holder_BANNER_2.jpg",
             "mobileimage": "shopify://shop_images/lanolips-sun-balm-spf-30-video-still-mobile-version.jpg",
