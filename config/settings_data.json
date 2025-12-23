@@ -13,10 +13,10 @@
     "location_au": "https://lanolips.com.au",
     "location_uk": "https://lanolips.co.uk",
     "location_eu": "https://lanolips.eu",
-    "logo": "shopify://shop_images/lanolips-logo-header.png",
+    "logo": "shopify://shop_images/Ecomm_logo_header.png",
     "logo_width": 190,
     "favicon": "shopify://shop_images/lanolips-favicon.png",
-    "image": "shopify://shop_images/Lanolips-Login-Image-Block.webp",
+    "image": "shopify://shop_images/lanolips-login-image-mulitple-products.webp",
     "login-htitle": "Sign in to Lanolips",
     "login-description": "Login to check in on you Lanolips account and manage your order and wishlist....",
     "height": "adapt",
@@ -40,7 +40,7 @@
     "spacing_sections": 20,
     "spacing_grid_horizontal": 4,
     "spacing_grid_vertical": 8,
-    "animations_reveal_on_scroll": true,
+    "animations_reveal_on_scroll": false,
     "animations_hover_elements": "none",
     "buttons_border_thickness": 1,
     "buttons_border_opacity": 100,
@@ -151,11 +151,12 @@
     "show_vendor": false,
     "show_cart_note": false,
     "enable_freeshipping": true,
-    "shipping_message": "Add ||amount|| more for FREE shipping!",
+    "shipping_message": "Add ||amount|| or more for FREE shipping!",
     "qualified_shipping_message": "FREE Standard shipping included",
-    "free_shipping_limit": "40",
+    "free_shipping_limit": "50",
     "enable_freegift": false,
     "qualified_freegift_message": "FREE gift added to your cart",
+    "free_gift_limit": "100",
     "freegift_product_list": [
       "lanolips-dry-body-brush",
       "101-strawberry-lip-balm-phone-holder",
@@ -199,34 +200,50 @@
         "disabled": false,
         "settings": {}
       },
-      "18128612654622612671": {
-        "type": "shopify://apps/selecty/blocks/app-embed/a005a4a7-4aa2-4155-9c2b-0ab41acbf99c",
-        "disabled": false,
-        "settings": {}
-      },
       "855628211100114053": {
         "type": "shopify://apps/klaviyo-email-marketing-sms/blocks/klaviyo-onsite-embed/2632fe16-c075-4321-a88b-50b567f42507",
         "disabled": false,
         "settings": {}
       },
-      "8605505498557855500": {
-        "type": "shopify://apps/bogos-io-free-gift/blocks/app-embed/0432bba6-720a-4e95-be5a-b868386f7aa6",
+      "18128612654622612671": {
+        "type": "shopify://apps/selecty/blocks/app-embed/a005a4a7-4aa2-4155-9c2b-0ab41acbf99c",
         "disabled": false,
         "settings": {}
+      },
+      "5946647744298494267": {
+        "type": "shopify://apps/wishlist-plus/blocks/wishlist-app-embed/80c3b1fc-3a8f-407e-8367-ffdeebb8b612",
+        "disabled": false,
+        "settings": {
+          "storefront_layout_enabled": false,
+          "storefront_layout_type": "as-section",
+          "storefront_layout_collection_enabled": true,
+          "storefront_layout_primary_bg_color": "#000000",
+          "storefront_layout_primary_text_color": "#ffffff",
+          "storefront_layout_secondary_bg_color": "#f4f8fe",
+          "storefront_layout_secondary_text_color": "#333333",
+          "storefront_layout_ui_border_radius": 6,
+          "storefront_layout_notification_enabled_as_default": true,
+          "storefront_layout_notification_position": "left",
+          "storefront_layout_action_popup_position": "left",
+          "storefront_layout_drawer_position": "left",
+          "storefront_layout_drawer_width": 400,
+          "storefront_layout_as_section_page": "swym-wishlist"
+        }
       },
       "10274264662263595587": {
         "type": "shopify://apps/wishlist-plus/blocks/wishlist-collections-embed/80c3b1fc-3a8f-407e-8367-ffdeebb8b612",
         "disabled": false,
         "settings": {
           "swym_collections_icon_type": "heart",
-          "swym_collections_add_icon": "shopify://shop_images/heart-collection.svg",
-          "swym_collections_added_icon": "shopify://shop_images/heart-collection-active.svg",
+          "swym_collections_icon_thickness": 1.7,
+          "swym_collections_add_icon": "shopify://shop_images/lanolips-websiteicon-heart-collection.svg",
+          "swym_collections_added_icon": "shopify://shop_images/lanolips-websiteicon-heart-collection-active.svg",
           "swym_collections_position": "top-right",
           "swym_collections_vertical_offset": 0,
           "swym_collections_horizontal_offset": 0,
           "swym_collections_button_size": 25,
           "swym_collections_icon_color": "#000000",
-          "swym_collections_product_link_selector": "a.grid-product-item",
+          "swym_collections_product_link_selector": "a.full-unstyled-link.grid-product-item",
           "swym_collections_product_tile_selector": "li.grid__item",
           "enable_variant_selector": false,
           "swym_add_to_wishlist_title_color": "#333333",
@@ -242,29 +259,13 @@
           "swym_variant_selector_create_list_title": "Name Your Wishlist"
         }
       },
-      "5946647744298494267": {
-        "type": "shopify://apps/wishlist-plus/blocks/wishlist-app-embed/80c3b1fc-3a8f-407e-8367-ffdeebb8b612",
-        "disabled": false,
-        "settings": {
-          "storefront_layout_enabled": false,
-          "storefront_layout_primary_bg_color": "#000000",
-          "storefront_layout_primary_text_color": "#ffffff",
-          "storefront_layout_secondary_bg_color": "#f4f8fe",
-          "storefront_layout_secondary_text_color": "#333333",
-          "storefront_layout_ui_border_radius": 6,
-          "storefront_layout_notification_position": "left",
-          "storefront_layout_action_popup_position": "left",
-          "storefront_layout_drawer_position": "left",
-          "storefront_layout_as_section_page": "swym-wishlist"
-        }
-      },
-      "11349500561483629931": {
-        "type": "shopify://apps/notify-me/blocks/app-embed/b399b727-6c85-44fc-9e21-63114bd72054",
+      "8605505498557855500": {
+        "type": "shopify://apps/bogos-io-free-gift/blocks/app-embed/0432bba6-720a-4e95-be5a-b868386f7aa6",
         "disabled": false,
         "settings": {}
       },
-      "735721325670868888": {
-        "type": "shopify://apps/checkmate/blocks/checked_network/697a3444-1374-4f13-ba8c-ec03db25ebf0",
+      "11349500561483629931": {
+        "type": "shopify://apps/notify-me/blocks/app-embed/b399b727-6c85-44fc-9e21-63114bd72054",
         "disabled": false,
         "settings": {}
       }
@@ -272,7 +273,7 @@
     "color_schemes": {
       "scheme-1": {
         "settings": {
-          "background": "#fae8ed",
+          "background": "#FAE8ED",
           "background_gradient": "",
           "text": "#2b4676",
           "button": "#fb558e",
@@ -358,7 +359,7 @@
           "shadow": "rgba(0,0,0,0)"
         }
       },
-      "scheme-3f0fdc2e-5646-40a7-91fd-f8a80f6cdb8c": {
+      "scheme-92558f25-b055-4e6b-9769-8d8bd2e88875": {
         "settings": {
           "background": "rgba(0,0,0,0)",
           "background_gradient": "",
