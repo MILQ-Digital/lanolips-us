@@ -14,24 +14,24 @@
     "announcement-bar": {
       "type": "announcement-bar",
       "blocks": {
-        "announcement_CyAyYF": {
-          "type": "announcement",
-          "settings": {
-            "text": "Beat the rush, view our Holiday shipping cut offs 🎄",
-            "link": "shopify://pages/delivery-orders"
-          }
-        },
         "announcement_EUw7Ak": {
           "type": "announcement",
           "settings": {
             "text": "Free Shipping For Orders Over $40",
             "link": ""
           }
+        },
+        "announcement_CyAyYF": {
+          "type": "announcement",
+          "settings": {
+            "text": "Beat the rush, view our Holiday shipping cut offs 🎄",
+            "link": "shopify://pages/delivery-orders"
+          }
         }
       },
       "block_order": [
-        "announcement_CyAyYF",
-        "announcement_EUw7Ak"
+        "announcement_EUw7Ak",
+        "announcement_CyAyYF"
       ],
       "settings": {
         "color_scheme": "scheme-1",
