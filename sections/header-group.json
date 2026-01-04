@@ -23,6 +23,7 @@
         },
         "announcement_CyAyYF": {
           "type": "announcement",
+          "disabled": true,
           "settings": {
             "text": "Beat the rush, view our Holiday shipping cut offs 🎄",
             "link": "shopify://pages/delivery-orders"
