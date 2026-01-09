@@ -119,7 +119,7 @@
         "image_picker_DET4Eb": {
           "type": "image_picker",
           "settings": {
-            "position": "5",
+            "position": "4",
             "image_block": "shopify://shop_images/Menu_Category_Images_Featured_Image_Lips_2.jpg",
             "image_title": "Tinted Lip Balm",
             "image_link": "shopify://collections/colour-collection"
@@ -137,7 +137,7 @@
         "image_picker_V6VQVT": {
           "type": "image_picker",
           "settings": {
-            "position": "6",
+            "position": "5",
             "image_block": "shopify://shop_images/Menu_Category_Images_Featured_Image_Face1.jpg",
             "image_title": "Face Base Day Cream",
             "image_link": "shopify://products/face-base-vitamin-e-day-cream"
