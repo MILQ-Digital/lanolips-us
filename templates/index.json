@@ -16,6 +16,38 @@
           "type": "slide",
           "name": "101 Ointment Challenge",
           "settings": {
+            "image": "shopify://shop_images/lanolips-dry-skin-heroes-web-banner.jpg",
+            "mobileimage": "shopify://shop_images/lanolips-dry-skin-heroes-mobile-banner.jpg",
+            "image_alignment": "image-center",
+            "slide_video_url": "",
+            "subheading": "",
+            "subheading_script": "",
+            "heading": "Dry Skin Heroes",
+            "heading_size": "hxl",
+            "show_heading_outline": false,
+            "heading_letter_spacing": 0,
+            "subcontent": "<p>There's a reason why dry skin is our thing</p>",
+            "button_label": "Shop Now",
+            "link": "shopify://products/101-ointment-multipurpose-superbalm",
+            "button_style_secondary": false,
+            "box_align": "bottom-left",
+            "show_text_box": false,
+            "text_alignment": "left",
+            "image_overlay_opacity": 0,
+            "color_scheme": "scheme-3",
+            "text_alignment_mobile": "center",
+            "text_color_mobile": "#2b4676",
+            "hide_text_mobile": false,
+            "text_bg_mobile": "#ffd5e3",
+            "btn_bg_mobile": "#fb558e",
+            "heading_font_size_mobile": 30,
+            "script_heading_font_size_mobile": 30
+          }
+        },
+        "slide_QnTTkd": {
+          "type": "slide",
+          "name": "101 Ointment Challenge",
+          "settings": {
             "image": "shopify://shop_images/lanolips-original-101-ointment-national-ezcema-association-usa.jpg",
             "mobileimage": "shopify://shop_images/lanolips-original-101-ointment-national-ezcema-association-mobile-banner-usa.jpg",
             "image_alignment": "image-center",
@@ -149,6 +181,7 @@
       },
       "block_order": [
         "slide_kbJygU",
+        "slide_QnTTkd",
         "slide_NAx7bN",
         "slide_DjBz8E",
         "slide_6LweMm"
