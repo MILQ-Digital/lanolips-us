@@ -403,7 +403,7 @@
         "@media screen and (max-width: 750px) {.banner__heading {font-size: 38px; margin-bottom: 40px; } .banner__heading em {font-size: 53px; } .media > img {height: 50%; top: 25%; }}"
       ],
       "settings": {
-        "image": "shopify://shop_images/Lanolips_Wave_Pattern.jpg",
+        "image": "shopify://shop_images/lanolips-lanolin-banner-home-page.jpg",
         "image_overlay_opacity": 0,
         "image_height": "adapt",
         "desktop_content_position": "middle-center",
@@ -426,22 +426,22 @@
         "column_mGc7n6": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/Home_Page_Featured_Card_Images_2.jpg",
-            "title": "The Original 101 Multipurpose Superbalm",
-            "text": "<p>The World's Best Lip Balm</p>",
-            "link_label": "Shop 101 Ointment",
-            "link": "shopify://products/101-ointment-multipurpose-superbalm",
+            "image": "shopify://shop_images/lanolips-everywhere-cream-image-3.jpg",
+            "title": "Everywhere Cream",
+            "text": "<p>A rich, multi-purpose allover cream. One tube. Endless uses.</p>",
+            "link_label": "Shop Now",
+            "link": "shopify://products/lano-everywhere-multi-cream",
             "button_style_secondary": false
           }
         },
         "column_nBnMPt": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/Home_Page_Featured_Card_Images_1.jpg",
-            "title": "12 Hour Overnight Lip Mask",
-            "text": "<p>An intensive blend of hydrating ultra-pure lanolin and powerhouse mega-actives</p>",
-            "link_label": "Shop Lip Mask",
-            "link": "shopify://products/12-hour-overnight-lip-mask",
+            "image": "shopify://shop_images/lanolips-golden-dry-skin-miracle-salve-image-1.jpg",
+            "title": "Golden Dry Skin Miracle Salve",
+            "text": "<p>The richest hydrating fix for very dry & compromised skin. </p>",
+            "link_label": "Shop Now",
+            "link": "shopify://products/golden-dry-skin-salve-25g",
             "button_style_secondary": false
           }
         }
