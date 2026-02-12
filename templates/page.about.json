@@ -155,7 +155,7 @@
           "type": "button",
           "settings": {
             "button_label": "What is Lanolin",
-            "button_link": "https://lanolips.com/blogs/blog/what-is-lanolin-and-is-it-safe-for-your-skin",
+            "button_link": "shopify://pages/why-lanolin",
             "button_style_secondary": false,
             "button_style_underline": true
           }
@@ -288,6 +288,7 @@
       "blocks": {
         "heading_NKkJez": {
           "type": "heading",
+          "disabled": true,
           "settings": {
             "heading": "Is Lanolin good for your skin?",
             "heading_size": "hm",
@@ -296,6 +297,7 @@
         },
         "text_VHW6GY": {
           "type": "text",
+          "disabled": true,
           "settings": {
             "text": "<p>Of course, just because an ingredient is all-natural doesn’t mean it’s automatically safe for your skin. So, is lanolin good for your skin? Yes!<br/>Lanolin is scientifically proven to mimic lipids in human skin extremely closely, meaning it’s less likely to irritate even the most delicate, sensitive skin. Additionally, lanolin can hold up to 400% of its weight in moisture while still being semi-occlusive which allows your skin to breathe without ever leaving any sticky residue behind.</p>"
           }
@@ -305,6 +307,7 @@
         "heading_NKkJez",
         "text_VHW6GY"
       ],
+      "disabled": true,
       "settings": {
         "desktop_content_position": "center",
         "content_alignment": "left",
@@ -344,6 +347,7 @@
         "column_j8eegh",
         "column_3mNQUn"
       ],
+      "disabled": true,
       "settings": {
         "title": "",
         "heading_size": "hm",
