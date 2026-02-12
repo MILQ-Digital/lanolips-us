@@ -242,6 +242,7 @@
       "blocks": {
         "heading_CmRwrV": {
           "type": "heading",
+          "disabled": true,
           "settings": {
             "heading": "What Is Lanolin?",
             "heading_size": "hm",
@@ -250,6 +251,7 @@
         },
         "text_wXDFd8": {
           "type": "text",
+          "disabled": true,
           "settings": {
             "text": "<p>Proven for thousands of years, lanolin is a deeply moisturising oil naturally found in sheep’s wool. We source ours humanely and cruelty-free from Australian sheep farmers.</p><p>Lanolin is skin-identical moisture that mimics your natural oils. It doesn’t just sit on skin. It behaves like it. Because lanolin closely resembles the lipids found in human skin, it absorbs, flexes, and helps repair the skin barrier - rather than simply coating the surface like conventional occlusives.</p><p>That’s why doctors recommend it for compromised skin, burns, and even for use by nursing mothers and infants.</p><p><strong>We believe in it so much; we use it everywhere.</strong></p>"
           }
@@ -307,7 +309,6 @@
         "heading_NKkJez",
         "text_VHW6GY"
       ],
-      "disabled": true,
       "settings": {
         "desktop_content_position": "center",
         "content_alignment": "left",
