@@ -1,1 +1,380 @@
-{"sections":{"image_banner_3xkwVM":{"type":"image-banner","settings":{"image":"shopify:\/\/shop_images\/Lanolips-About-Page-Banner-2.jpg","image_overlay_opacity":0,"image_height":"medium","desktop_content_position":"middle-center","show_text_box":true,"desktop_content_alignment":"center","color_scheme":"","color_background":"","image_behavior":"none","mobile_content_alignment":"center","mobile_image_height":"medium","stack_images_on_mobile":true,"show_text_below":true,"padding_top":36,"padding_bottom":36}},"main":{"type":"main-page","settings":{"padding_top":28,"padding_bottom":28,"custom_page_title":"Dry skin is our thing.","hidepage_content":true,"layout":"none","color_scheme":"scheme-2","container_color_scheme":"","open_first_collapsible_row":false,"use_metaobject_faq":false,"mobile_img_visibility":false,"image_ratio":"adapt","desktop_layout":"image_second"}},"rich_text_DRnPTK":{"type":"rich-text","blocks":{"text_jUrepC":{"type":"text","settings":{"text":"<p>Healthy skin starts with hydration. That’s why we always start with lanolin. And then we add only what we need. We believe great skincare should be easy. LANOLIPS is essential, Aussie lanolin skincare - minus the synthetics & hocus pocus. No BS. Choose better, use less.<\/p><p>Think of us as the jeans and white tee for your face. <\/p>"}}},"block_order":["text_jUrepC"],"settings":{"desktop_content_position":"center","content_alignment":"left","color_scheme":"scheme-3","full_width":true,"padding_top":40,"padding_bottom":52}},"image_with_text_VUg6Qt":{"type":"image-with-text","disabled":true,"custom_css":[".image-with-text {margin-left: calc(-1 * var(--outer));}"],"settings":{"image":"shopify:\/\/shop_images\/Lanolips_products_image.webp","height":"adapt","desktop_image_width":"medium","layout":"image_first","desktop_content_position":"top","desktop_content_alignment":"left","content_layout":"no-overlap","section_color_scheme":"scheme-3","color_scheme":"scheme-3","use_ingredients":false,"image_behavior":"none","mobile_content_alignment":"left","mobile_page_padding":false,"mobile_img_visibility":false,"padding_top":36,"padding_bottom":36}},"multirow_TffBAK":{"type":"multirow","blocks":{"row_EfGypg":{"type":"row","disabled":true,"settings":{"image":"shopify:\/\/shop_images\/signin.jpg","caption":"","heading":"Our Values","text":"<h3>Clean & Transparent<\/h3><p>Lanolips is a pioneer in clean beauty. We believe that nature provides us with the most powerful ingredients of all – and that a short ingredients list is a good ingredients list. Our products contain no known ‘suspicious’ chemicals, and we list all of our ingredients and natural percentages clearly, on each of our products.<\/p><h3>Cruelty-Free<\/h3><p>We believe that beauty products should be cruelty free. We are proud to be Leaping Bunny approved. A global programme, Leaping Bunny requires cruelty free standards over & above legal requirements.  All of our products are approved under the Cruelty Free International Leaping Bunny programme, the internationally recognisable gold standard for cruelty free products. We adhere to a fixed cut-off date policy & proactively monitor our suppliers to ensure that our products continue to adhere to the Leaping Bunny criteria. Our supplier monitoring system is also independently audited. For more info go to <a href=\"https:\/\/crueltyfreeinternational.org\/\" title=\"https:\/\/crueltyfreeinternational.org\">Cruelty Free International.<\/a><\/p>","button_label":"","button_link":""}}},"block_order":["row_EfGypg"],"settings":{"image_height":"adapt","desktop_image_width":"large","heading_size":"hm","text_style":"subtitle","button_style":"secondary","desktop_content_position":"middle","desktop_content_alignment":"left","image_layout":"align-right","section_color_scheme":"scheme-2","row_color_scheme":"scheme-1","mobile_content_alignment":"left","padding_top":80,"padding_bottom":64}},"image_with_text_TRx8WY":{"type":"image-with-text","blocks":{"image_picker_xEjfnh":{"type":"image_picker","settings":{"image_icon":"shopify:\/\/shop_images\/Vector.png"}},"heading_aeyDXF":{"type":"heading","settings":{"heading":"Made With Love & Lanolin","heading_size":"hs"}},"text_NCe7iF":{"type":"text","settings":{"text":"<p>Lanolips uses lanolin to hydrate & heal skin in the most natural way possible.<\/p><p>Lanolin is a deeply moisturising oil naturally occurring in sheep’s wool, humanely (and cruelty-free) sourced by Australian sheep farmers.<\/p>","text_style":"subtitle"}},"button_J7awhr":{"type":"button","settings":{"button_label":"What is Lanolin","button_link":"https:\/\/lanolips.com\/blogs\/blog\/what-is-lanolin-and-is-it-safe-for-your-skin","button_style_secondary":false,"button_style_underline":true}}},"block_order":["image_picker_xEjfnh","heading_aeyDXF","text_NCe7iF","button_J7awhr"],"settings":{"image":"shopify:\/\/shop_images\/About_Block_1588x1426_5e88baaa-0bd9-4e9f-89af-d19d1c726c61.jpg","height":"adapt","desktop_image_width":"medium","layout":"image_first","desktop_content_position":"bottom","desktop_content_alignment":"left","content_layout":"no-overlap","section_color_scheme":"scheme-2","color_scheme":"scheme-2","use_ingredients":false,"image_behavior":"none","mobile_content_alignment":"left","mobile_page_padding":false,"mobile_img_visibility":false,"padding_top":36,"padding_bottom":100}},"image_with_text_xFPdxK":{"type":"image-with-text","blocks":{"caption_46UTE3":{"type":"caption","settings":{"caption":"Farming + Love + Lanolin","text_style":"caption-with-letter-spacing","text_size":"small","text_alignment":"text-left"}},"heading_iJkpEf":{"type":"heading","settings":{"heading":"100 Years Of Heritage","heading_size":"hm"}},"text_L89DW8":{"type":"text","settings":{"text":"<p>One of Founder, Kirsten Carriol’s, fondest memories from childhood is how her grandfather’s calloused hands magically become soft after a day of shearing sheep’s’ wool on the family farm. <\/p><p>She learned why from her father, a molecular scientist: wool contains lanolin, which mimics the hydrating oils of human skin. <\/p><p>After years of working in beauty, and countless chapped lips & tubes of every balm imaginable, Kirsten knew that when it comes to moisturising & healing skin, you can’t improve on lanolin. <\/p><p>She created Lanolips, a lanolin-based skincare line, using the highest quality lanolin sourced (cruelty-free) from Australian farmers and their sheep - as the most natural answer to dry skin. <\/p><p>With lanolin, your skin has literally met its match.<\/p>","text_style":"body"}}},"block_order":["caption_46UTE3","heading_iJkpEf","text_L89DW8"],"settings":{"image":"shopify:\/\/shop_images\/About_Block_1628x1436_bcdae765-5f0d-4136-9baa-ab0ae2a8b7a4.jpg","height":"adapt","desktop_image_width":"medium","layout":"text_first","desktop_content_position":"bottom","desktop_content_alignment":"left","content_layout":"no-overlap","section_color_scheme":"scheme-2","color_scheme":"scheme-2","use_ingredients":false,"image_behavior":"none","mobile_content_alignment":"left","mobile_page_padding":false,"mobile_img_visibility":false,"padding_top":100,"padding_bottom":100}},"rich_text_VXBwy4":{"type":"rich-text","blocks":{"heading_CmRwrV":{"type":"heading","settings":{"heading":"What Is Lanolin?","heading_size":"hm","enable_script":false}},"text_wXDFd8":{"type":"text","settings":{"text":"<h3>Lanolin Nature's Wonder Moisturiser <\/h3><p>All our products are made with lanolin – a deeply moisturising oil naturally occurring in sheep’s wool.  Humanely (and cruelty-free) sourced from Australian sheep farmers. <\/p><p>Lanolin mimics the skin’s own oils to heal and hydrate and is so safe doctors recommend it to treat burns, and mothers can use it with nursing infants.<\/p><h4><em><strong>We believe in it so much; we use it everywhere.<\/strong><\/em><\/h4>"}}},"block_order":["heading_CmRwrV","text_wXDFd8"],"settings":{"desktop_content_position":"right","content_alignment":"left","color_scheme":"scheme-3","full_width":true,"padding_top":40,"padding_bottom":72}},"video_WDVxDA":{"type":"video","settings":{"heading":"Behind the brand: Sheep Shearing","heading_size":"h1","enable_video_looping":true,"video_url":"https:\/\/www.youtube.com\/watch?v=8NRclrAoqq0&t=4s","cover_image":"shopify:\/\/shop_images\/lanolips-heritage-page-banner-holder.jpg","description":"A short video about the facts on shearing sheep.","full_width":false,"color_scheme":"","padding_top":36,"padding_bottom":36}},"rich_text_AzzEtY":{"type":"rich-text","blocks":{"heading_NKkJez":{"type":"heading","settings":{"heading":"Is Lanolin good for your skin?","heading_size":"hm","enable_script":false}},"text_VHW6GY":{"type":"text","settings":{"text":"<p>Of course, just because an ingredient is all-natural doesn’t mean it’s automatically safe for your skin. So, is lanolin good for your skin? Yes!<br\/>Lanolin is scientifically proven to mimic lipids in human skin extremely closely, meaning it’s less likely to irritate even the most delicate, sensitive skin. Additionally, lanolin can hold up to 400% of its weight in moisture while still being semi-occlusive which allows your skin to breathe without ever leaving any sticky residue behind.<\/p>"}}},"block_order":["heading_NKkJez","text_VHW6GY"],"settings":{"desktop_content_position":"center","content_alignment":"left","color_scheme":"scheme-3","full_width":true,"padding_top":100,"padding_bottom":100}},"multicolumn_346w8Y":{"type":"multicolumn","blocks":{"column_j8eegh":{"type":"column","settings":{"image":"shopify:\/\/shop_images\/About_Images_1350x1176_4.jpg","title":"","text":"","link_label":"","link":"","button_style_secondary":false}},"column_3mNQUn":{"type":"column","settings":{"image":"shopify:\/\/shop_images\/Lanolips-About-Images-Sheep.jpg","title":"","text":"","link_label":"","link":"","button_style_secondary":false}}},"block_order":["column_j8eegh","column_3mNQUn"],"settings":{"title":"","heading_size":"hm","image_width":"full","image_ratio":"adapt","columns_desktop":2,"column_alignment":"left","background_style":"none","button_label":"","button_link":"","color_scheme":"scheme-2","columns_mobile":"1","swipe_on_mobile":false,"mobile_full":false,"padding_top":36,"padding_bottom":36,"section_class":"narrow-img"}}},"order":["image_banner_3xkwVM","main","rich_text_DRnPTK","image_with_text_VUg6Qt","multirow_TffBAK","image_with_text_TRx8WY","image_with_text_xFPdxK","rich_text_VXBwy4","video_WDVxDA","rich_text_AzzEtY","multicolumn_346w8Y"]}
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "image_banner_3xkwVM": {
+      "type": "image-banner",
+      "settings": {
+        "image": "shopify://shop_images/Lanolips-About-Page-Banner-2.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "medium",
+        "desktop_content_position": "middle-center",
+        "show_text_box": true,
+        "desktop_content_alignment": "center",
+        "color_scheme": "",
+        "color_background": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "mobile_image_height": "medium",
+        "stack_images_on_mobile": true,
+        "show_text_below": true,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28,
+        "custom_page_title": "Dry skin is our thing.",
+        "hidepage_content": true,
+        "layout": "none",
+        "color_scheme": "scheme-2",
+        "container_color_scheme": "",
+        "open_first_collapsible_row": false,
+        "use_metaobject_faq": false,
+        "mobile_img_visibility": false,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second"
+      }
+    },
+    "rich_text_DRnPTK": {
+      "type": "rich-text",
+      "blocks": {
+        "text_jUrepC": {
+          "type": "text",
+          "settings": {
+            "text": "<p>At the heart of every LANOLIPS formula is lanolin - a natural oil that closely mimics the lipids found in human skin. Because of this molecular similarity, it doesn’t just coat the surface. It absorbs, flexes with skin and helps support true barrier repair.<br/> <br/>Lanolin is uniquely semi-occlusive and semi-permeable - helping prevent moisture loss while still allowing skin to self-hydrate. It can hold up to twice its weight in water, delivering proven hydration retention where dry skin needs it most.<br/> <br/>For decades, dermatologists have recommended lanolin for dry, sensitive and compromised skin. <br/> <br/>We source the highest-quality, cruelty-free Australian lanolin and formulate with only what enhances performance.<br/> <br/>Ingredient-led. Science-backed. Proven hydration.<br/></p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_jUrepC"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "left",
+        "color_scheme": "scheme-3",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "image_with_text_VUg6Qt": {
+      "type": "image-with-text",
+      "disabled": true,
+      "custom_css": [
+        ".image-with-text {margin-left: calc(-1 * var(--outer));}"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/Lanolips_products_image.webp",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "scheme-3",
+        "color_scheme": "scheme-3",
+        "use_ingredients": false,
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "mobile_page_padding": false,
+        "mobile_img_visibility": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "multirow_TffBAK": {
+      "type": "multirow",
+      "blocks": {
+        "row_EfGypg": {
+          "type": "row",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/signin.jpg",
+            "caption": "",
+            "heading": "Our Values",
+            "text": "<h3>Clean & Transparent</h3><p>Lanolips is a pioneer in clean beauty. We believe that nature provides us with the most powerful ingredients of all – and that a short ingredients list is a good ingredients list. Our products contain no known ‘suspicious’ chemicals, and we list all of our ingredients and natural percentages clearly, on each of our products.</p><h3>Cruelty-Free</h3><p>We believe that beauty products should be cruelty free. We are proud to be Leaping Bunny approved. A global programme, Leaping Bunny requires cruelty free standards over & above legal requirements.  All of our products are approved under the Cruelty Free International Leaping Bunny programme, the internationally recognisable gold standard for cruelty free products. We adhere to a fixed cut-off date policy & proactively monitor our suppliers to ensure that our products continue to adhere to the Leaping Bunny criteria. Our supplier monitoring system is also independently audited. For more info go to <a href=\"https://crueltyfreeinternational.org/\" title=\"https://crueltyfreeinternational.org\">Cruelty Free International.</a></p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "row_EfGypg"
+      ],
+      "settings": {
+        "image_height": "adapt",
+        "desktop_image_width": "large",
+        "heading_size": "hm",
+        "text_style": "subtitle",
+        "button_style": "secondary",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "image_layout": "align-right",
+        "section_color_scheme": "scheme-2",
+        "row_color_scheme": "scheme-1",
+        "mobile_content_alignment": "left",
+        "padding_top": 80,
+        "padding_bottom": 64
+      }
+    },
+    "image_with_text_TRx8WY": {
+      "type": "image-with-text",
+      "blocks": {
+        "image_picker_xEjfnh": {
+          "type": "image_picker",
+          "settings": {
+            "image_icon": "shopify://shop_images/Vector.png"
+          }
+        },
+        "heading_aeyDXF": {
+          "type": "heading",
+          "settings": {
+            "heading": "Made With Love & Lanolin",
+            "heading_size": "hs"
+          }
+        },
+        "text_NCe7iF": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Lanolips uses lanolin to hydrate & heal skin in the most natural way possible.</p><p>Lanolin is a deeply moisturising oil naturally occurring in sheep’s wool, humanely (and cruelty-free) sourced by Australian sheep farmers.</p>",
+            "text_style": "subtitle"
+          }
+        },
+        "button_J7awhr": {
+          "type": "button",
+          "settings": {
+            "button_label": "What is Lanolin",
+            "button_link": "https://lanolips.com/blogs/blog/what-is-lanolin-and-is-it-safe-for-your-skin",
+            "button_style_secondary": false,
+            "button_style_underline": true
+          }
+        }
+      },
+      "block_order": [
+        "image_picker_xEjfnh",
+        "heading_aeyDXF",
+        "text_NCe7iF",
+        "button_J7awhr"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/About_Block_1588x1426_5e88baaa-0bd9-4e9f-89af-d19d1c726c61.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "bottom",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "scheme-2",
+        "color_scheme": "scheme-2",
+        "use_ingredients": false,
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "mobile_page_padding": false,
+        "mobile_img_visibility": false,
+        "padding_top": 36,
+        "padding_bottom": 100
+      }
+    },
+    "image_with_text_xFPdxK": {
+      "type": "image-with-text",
+      "blocks": {
+        "caption_46UTE3": {
+          "type": "caption",
+          "settings": {
+            "caption": "Farming + Love + Lanolin",
+            "text_style": "caption-with-letter-spacing",
+            "text_size": "small",
+            "text_alignment": "text-left"
+          }
+        },
+        "heading_iJkpEf": {
+          "type": "heading",
+          "settings": {
+            "heading": "100 Years Of Heritage",
+            "heading_size": "hm"
+          }
+        },
+        "text_L89DW8": {
+          "type": "text",
+          "settings": {
+            "text": "<p>One of Founder, Kirsten Carriol’s, fondest memories from childhood is how her grandfather’s calloused hands magically become soft after a day of shearing sheep’s’ wool on the family farm. </p><p>She learned why from her father, a molecular scientist: wool contains lanolin, which mimics the hydrating oils of human skin. </p><p>After years of working in beauty, and countless chapped lips & tubes of every balm imaginable, Kirsten knew that when it comes to moisturising & healing skin, you can’t improve on lanolin. </p><p>She created Lanolips, a lanolin-based skincare line, using the highest quality lanolin sourced (cruelty-free) from Australian farmers and their sheep - as the most natural answer to dry skin. </p><p>With lanolin, your skin has literally met its match.</p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "caption_46UTE3",
+        "heading_iJkpEf",
+        "text_L89DW8"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/About_Block_1628x1436_bcdae765-5f0d-4136-9baa-ab0ae2a8b7a4.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "desktop_content_position": "bottom",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "scheme-2",
+        "color_scheme": "scheme-2",
+        "use_ingredients": false,
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "mobile_page_padding": false,
+        "mobile_img_visibility": false,
+        "padding_top": 100,
+        "padding_bottom": 100
+      }
+    },
+    "rich_text_VXBwy4": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_CmRwrV": {
+          "type": "heading",
+          "settings": {
+            "heading": "What Is Lanolin?",
+            "heading_size": "hm",
+            "enable_script": false
+          }
+        },
+        "text_wXDFd8": {
+          "type": "text",
+          "settings": {
+            "text": "<h3>Lanolin Nature's Wonder Moisturiser </h3><p>All our products are made with lanolin – a deeply moisturising oil naturally occurring in sheep’s wool.  Humanely (and cruelty-free) sourced from Australian sheep farmers. </p><p>Lanolin mimics the skin’s own oils to heal and hydrate and is so safe doctors recommend it to treat burns, and mothers can use it with nursing infants.</p><h4><em><strong>We believe in it so much; we use it everywhere.</strong></em></h4>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_CmRwrV",
+        "text_wXDFd8"
+      ],
+      "settings": {
+        "desktop_content_position": "right",
+        "content_alignment": "left",
+        "color_scheme": "scheme-3",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 72
+      }
+    },
+    "video_WDVxDA": {
+      "type": "video",
+      "settings": {
+        "heading": "Behind the brand: Sheep Shearing",
+        "heading_size": "h1",
+        "enable_video_looping": true,
+        "video_url": "https://www.youtube.com/watch?v=8NRclrAoqq0&t=4s",
+        "cover_image": "shopify://shop_images/lanolips-heritage-page-banner-holder.jpg",
+        "description": "A short video about the facts on shearing sheep.",
+        "full_width": false,
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "rich_text_AzzEtY": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_NKkJez": {
+          "type": "heading",
+          "settings": {
+            "heading": "Is Lanolin good for your skin?",
+            "heading_size": "hm",
+            "enable_script": false
+          }
+        },
+        "text_VHW6GY": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Of course, just because an ingredient is all-natural doesn’t mean it’s automatically safe for your skin. So, is lanolin good for your skin? Yes!<br/>Lanolin is scientifically proven to mimic lipids in human skin extremely closely, meaning it’s less likely to irritate even the most delicate, sensitive skin. Additionally, lanolin can hold up to 400% of its weight in moisture while still being semi-occlusive which allows your skin to breathe without ever leaving any sticky residue behind.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_NKkJez",
+        "text_VHW6GY"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "left",
+        "color_scheme": "scheme-3",
+        "full_width": true,
+        "padding_top": 100,
+        "padding_bottom": 100
+      }
+    },
+    "multicolumn_346w8Y": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_j8eegh": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/About_Images_1350x1176_4.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "",
+            "button_style_secondary": false
+          }
+        },
+        "column_3mNQUn": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Lanolips-About-Images-Sheep.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "column_j8eegh",
+        "column_3mNQUn"
+      ],
+      "settings": {
+        "title": "",
+        "heading_size": "hm",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 2,
+        "column_alignment": "left",
+        "background_style": "none",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "scheme-2",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "mobile_full": false,
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "section_class": "narrow-img"
+      }
+    }
+  },
+  "order": [
+    "image_banner_3xkwVM",
+    "main",
+    "rich_text_DRnPTK",
+    "image_with_text_VUg6Qt",
+    "multirow_TffBAK",
+    "image_with_text_TRx8WY",
+    "image_with_text_xFPdxK",
+    "rich_text_VXBwy4",
+    "video_WDVxDA",
+    "rich_text_AzzEtY",
+    "multicolumn_346w8Y"
+  ]
+}
