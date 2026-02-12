@@ -100,13 +100,13 @@
               <span>
                   {% assign current_url = "https://" | append: request.host %}
                   {% if current_url == settings.location_uk %}
-                    UK 
+                    UK <span class="visually-hidden">Country Selector</span>
                   {% elsif current_url == settings.location_eu %}
-                    EU
+                    EU <span class="visually-hidden">Country Selector</span>
                   {% elsif current_url == settings.location_au %}
-                    AU/Int
+                    AU/Int <span class="visually-hidden">Country Selector</span>
                   {% elsif current_url == settings.location_us %}
-                    US
+                    US <span class="visually-hidden">Country Selector</span>
                   {% endif %}
               </span>              
             </button>
