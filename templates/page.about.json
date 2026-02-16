@@ -133,6 +133,7 @@
       "blocks": {
         "image_picker_xEjfnh": {
           "type": "image_picker",
+          "disabled": true,
           "settings": {
             "image_icon": "shopify://shop_images/Vector.png"
           }
@@ -147,7 +148,7 @@
         "text_NCe7iF": {
           "type": "text",
           "settings": {
-            "text": "<p>We use ultra-pure, cruelty-free Australian & New Zealand lanolin - sourced humanely from sheep farmers we trust.<br/><br/>It’s nature’s original moisturiser. Nothing synthetic can truly replicate it.<br/><br/>Simple. Powerful. Proven.</p>",
+            "text": "<p>We use ultra-pure, cruelty-free Australian & New Zealand lanolin - sourced humanely from sheep farmers we trust.<br/><br/>It’s nature’s original moisturizer. Nothing synthetic can truly replicate it.<br/><br/>Simple. Powerful. Proven.</p>",
             "text_style": "subtitle"
           }
         },
@@ -191,6 +192,7 @@
       "blocks": {
         "caption_46UTE3": {
           "type": "caption",
+          "disabled": true,
           "settings": {
             "caption": "Farming + Love + Lanolin",
             "text_style": "caption-with-letter-spacing",
@@ -309,6 +311,7 @@
         "heading_NKkJez",
         "text_VHW6GY"
       ],
+      "disabled": true,
       "settings": {
         "desktop_content_position": "center",
         "content_alignment": "left",
