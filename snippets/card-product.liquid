@@ -56,7 +56,6 @@
             class="card__media{% if image_shape and image_shape != 'default' %} shape--{{ image_shape }} color-{{ settings.card_color_scheme }} gradient{% endif %} full-unstyled-link"
             href="{{ card_product.url }}"
             id="StandardCardNoMediaLink-{{ section_id }}-{{ card_product.id }}"
-            aria-labelledby="StandardCardNoMediaLink-{{ section_id }}-{{ card_product.id }} NoMediaStandardBadge-{{ section_id }}-{{ card_product.id }}"
           >
             <div class="media media--transparent media--hover-effect">
               {% comment %}theme-check-disable ImgLazyLoading{% endcomment %}
