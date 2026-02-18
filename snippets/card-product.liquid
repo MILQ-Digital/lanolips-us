@@ -134,6 +134,13 @@
               >
                 {{- 'products.product.on_sale' | t -}}
               </span>
+            {%- elsif card_product.metafields.custom.show_badge == true and card_product.metafields.custom.badge.value.title != blank -%}
+              <span
+                id="NoMediaStandardBadge-{{ section_id }}-{{ card_product.id }}"
+                class="badge badge--bottom-left color-{{ settings.new_badge_color_scheme }}"
+              >
+                {{ card_product.metafields.custom.badge.value.title }}
+              </span>
             {%- endif -%}
           {%- liquid      
             assign badge_new = ''
@@ -702,6 +709,13 @@
               class="badge badge--bottom-left color-{{ settings.sale_badge_color_scheme }}"
             >
               {{- 'products.product.on_sale' | t -}}
+            </span>
+          {%- elsif card_product.metafields.custom.show_badge == true and card_product.metafields.custom.badge.value.title != blank -%}
+            <span
+              id="NoMediaStandardBadge-{{ section_id }}-{{ card_product.id }}"
+              class="badge badge--bottom-left color-{{ settings.new_badge_color_scheme }}"
+            >
+              {{ card_product.metafields.custom.badge.value.title }}
             </span>
           {%- endif -%}
           {%- liquid      

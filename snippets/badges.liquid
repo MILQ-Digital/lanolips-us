@@ -31,10 +31,13 @@
       {%- if product.price_varies == false and product.compare_at_price_varies %} price--no-compare{% endif -%}
       {%- if show_badges %} price--show-badge{% endif -%}
     ">
-    {%- if badge_new != '' -%}
-        <span class="badge price__badge-new color-{{ settings.new_badge_color_scheme }}">
-            {{ badge_new }}
-        </span>
+    {%- if product.metafields.custom.show_badge == true and product.metafields.custom.badge.value.title != blank -%}
+      <span
+        id="NoMediaStandardBadge-{{ section_id }}-{{ product.id }}"
+        class="badge badge--bottom-left color-{{ settings.new_badge_color_scheme }}"
+      >
+        {{ product.metafields.custom.badge.value.title }}
+      </span>
     {%- endif -%}
     {%- if show_badges -%}
       <span class="badge price__badge-sale color-{{ settings.sale_badge_color_scheme }}">
