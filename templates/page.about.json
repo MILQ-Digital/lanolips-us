@@ -59,6 +59,7 @@
       "block_order": [
         "text_jUrepC"
       ],
+      "disabled": true,
       "settings": {
         "desktop_content_position": "center",
         "content_alignment": "left",
@@ -70,15 +71,26 @@
     },
     "image_with_text_VUg6Qt": {
       "type": "image-with-text",
-      "disabled": true,
+      "blocks": {
+        "text_68tTH4": {
+          "type": "text",
+          "settings": {
+            "text": "<p>At the heart of every LANOLIPS formula is lanolin - a natural oil that closely mimics the lipids found in human skin.<br/><br/>Because it’s so similar to your skin’s natural oils, it doesn’t just coat the surface. It absorbs, flexes and supports true barrier repair and hydration.</p><p>Uniquely semi-occlusive and semi-permeable - helping prevent moisture loss while allowing skin to self-hydrate. It can hold up to twice its weight in water.</p><p>Natural. Science-backed. Trusted in dermatology for decades.<br/><br/><strong>Made with love and lanolin.</strong></p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "text_68tTH4"
+      ],
       "custom_css": [
         ".image-with-text {margin-left: calc(-1 * var(--outer));}"
       ],
       "settings": {
-        "image": "shopify://shop_images/Lanolips_products_image.webp",
+        "image": "shopify://shop_images/why-lanolin-page-product-image-101-ointment_-image-1.jpg",
         "height": "adapt",
         "desktop_image_width": "medium",
-        "layout": "image_first",
+        "layout": "text_first",
         "desktop_content_position": "top",
         "desktop_content_alignment": "left",
         "content_layout": "no-overlap",
