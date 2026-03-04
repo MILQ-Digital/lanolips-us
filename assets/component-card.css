@@ -136,6 +136,7 @@
   padding: 1rem;
   width: 100%;
   flex-grow: 1;
+  z-index: -1;
 }
 
 .card__content--auto-margins {
