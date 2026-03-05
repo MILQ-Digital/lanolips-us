@@ -23,7 +23,9 @@
         "promo_banner_tfAVHn": {
           "type": "promo-banner",
           "settings": {
+            "media_type": "video",
             "banner_image": "{{ collection.metafields.custom.bundle_image.value }}",
+            "banner_video": "{{ collection.metafields.custom.promotional_banner_video.value }}",
             "promotion_position": 7,
             "title": "{{ collection.metafields.custom.bundle_title.value }}",
             "link_label": "Shop Now",
@@ -35,7 +37,9 @@
         "promo_banner_CMXKXz": {
           "type": "promo-banner",
           "settings": {
+            "media_type": "video",
             "banner_image": "{{ collection.metafields.custom.bundle_image_2.value }}",
+            "banner_video": "{{ collection.metafields.custom.promotional_banner_video_2.value }}",
             "promotion_position": 13,
             "title": "{{ collection.metafields.custom.bundle_title_2.value }}",
             "link_label": "Shop Now",
