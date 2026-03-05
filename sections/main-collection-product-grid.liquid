@@ -447,9 +447,32 @@
       "name": "Promotional Banner",
       "settings": [
         {
+          "type": "select",
+          "id": "media_type",
+          "label": "Media type to show",
+          "options": [
+            {
+              "value": "image",
+              "label": "Image"
+            },
+            {
+              "value": "video",
+              "label": "Video"
+            }
+          ],
+          "default": "image"
+        },
+        {
           "type": "image_picker",
           "id": "banner_image",
-          "label": "Banner image"
+          "label": "Banner image",
+          "visible_if": "{{ block.settings.media_type == 'image' }}"
+        },
+        {
+          "type": "video",
+          "id": "banner_video",
+          "label": "Banner video",
+          "visible_if": "{{ block.settings.media_type == 'video' }}"
         },
         {
           "type": "range",
