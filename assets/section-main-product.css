@@ -218,11 +218,23 @@ product-info {
   margin-bottom: 0;
 }
 
+.product_button_price:has(.product-form__submit[disabled]) {
+  display: none;
+}
+
+body:has(.product-form__submit:not([disabled])) .nm-portal {
+  display: none;
+}
+
 .nm-portal .notifyButtonStyle {
   margin: 0;
   background-color: transparent;
   border: 1px solid var(--Lano-Bright-pink);
   color: var(--Lano-Bright-pink);
+}
+
+.nm-portal .notifyButtonStyle svg path {
+  fill: var(--Lano-Bright-pink);
 }
 
 .nm-portal .notifyButtonStyle .nm-price {
@@ -231,6 +243,10 @@ product-info {
 
 .nm-portal .notifyButtonStyle:hover {
   color: white;
+}
+
+.nm-portal .notifyButtonStyle:hover svg path {
+  fill: #fff;
 }
 
 .nm-portal {
