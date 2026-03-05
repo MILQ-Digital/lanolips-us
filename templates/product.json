@@ -20,6 +20,7 @@
           "type": "shopify://apps/wishlist-plus/blocks/wishlist-pdp-button/80c3b1fc-3a8f-407e-8367-ffdeebb8b612",
           "settings": {
             "swym_atw_button_icon": "heart",
+            "swym_atw_icon_thickness": 1.7,
             "swym_atw_custom_icon": "shopify://shop_images/whishlist-heart.svg",
             "swym_atw_display_btn_text": false,
             "swym_button_position": "product_title_right",
@@ -28,7 +29,7 @@
             "swym_atw_button_alignment": "right",
             "swym_add_to_wishlist_color": "#ffffff",
             "swym_added_to_wishlist_color": "#ffffff",
-            "swym_button_text_color": "#FAE8ED",
+            "swym_button_text_color": "#fae8ed",
             "swym_atw_border_color": "#ffffff",
             "swym_atw_border_thickness": 0,
             "swym_atw_button_border_radius": 0,
@@ -117,9 +118,9 @@
             "call_to_action": "SHOP IT",
             "shop_type": "button",
             "body_font_size": 14,
-            "body_font": "helvetica_n4",
+            "body_font": "sans_serif_n4",
             "accent_font_size": 14,
-            "accent_font": "helvetica_n4",
+            "accent_font": "sans_serif_n4",
             "disable_filter": false,
             "override_feed_id": "",
             "arbitrary_attributes": "",
@@ -208,7 +209,9 @@
         "row_6chNdY": {
           "type": "row",
           "settings": {
+            "media_type": "video",
             "image": "{{ product.metafields.custom.product_highlights_image.value }}",
+            "video": "{{ product.metafields.custom.product_highlights_video.value }}",
             "caption": "",
             "heading": "{{ product.metafields.custom.product_highlights_title.value }}",
             "text": "{{ product.metafields.custom.product_highlight_content | metafield_tag }}",
@@ -220,6 +223,7 @@
           "type": "row",
           "disabled": true,
           "settings": {
+            "media_type": "image",
             "caption": "",
             "heading": "12 hour overnight lip mask",
             "text": "<h3>Feels Like:</h3><p>Rich, buttery that melts onto lips</p><h3>Smells Like:</h3><p>A light hint of vanilla and honey</p><h3>Why We Love It:</h3><p>Soften, strengthen  and replenish your lips while you sleep.</p>",
@@ -278,7 +282,9 @@
         "button_hwfChE"
       ],
       "settings": {
+        "media_type": "video",
         "image": "{{ product.metafields.custom.ingredients_section_image.value }}",
+        "video": "{{ product.metafields.custom.product_ingredients_video.value }}",
         "height": "adapt",
         "desktop_image_width": "medium",
         "layout": "text_first",
@@ -338,6 +344,7 @@
         "column_KJWMef": {
           "type": "column",
           "settings": {
+            "media_type": "image",
             "image": "{{ product.metafields.custom.before_image.value }}",
             "title": "Before",
             "text": "",
@@ -349,6 +356,7 @@
         "column_aAdR9K": {
           "type": "column",
           "settings": {
+            "media_type": "image",
             "image": "{{ product.metafields.custom.after_image.value }}",
             "title": "After",
             "text": "",
@@ -426,6 +434,7 @@
       ],
       "disabled": true,
       "settings": {
+        "media_type": "image",
         "image": "{{ product.metafields.custom.sustainable_image.value }}",
         "height": "adapt",
         "desktop_image_width": "medium",

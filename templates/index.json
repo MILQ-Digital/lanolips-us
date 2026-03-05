@@ -318,7 +318,9 @@
         "button_AxwgMt"
       ],
       "settings": {
+        "media_type": "video",
         "image": "shopify://shop_images/lifestyle-shot-101-ointment-multipurpose-superbalm-eczema-approved.jpg",
+        "video": "shopify://files/videos/lanolips-yellow-key-ring.mp4",
         "height": "adapt",
         "desktop_image_width": "medium",
         "layout": "text_first",
@@ -426,7 +428,9 @@
         "column_mGc7n6": {
           "type": "column",
           "settings": {
+            "media_type": "video",
             "image": "shopify://shop_images/lanolips-everywhere-cream-image-3.jpg",
+            "video": "shopify://files/videos/lanolips-christmas-flash-sale-mobile-banner.mp4",
             "title": "Everywhere Cream",
             "text": "<p>A rich, multi-purpose allover cream. One tube. Endless uses.</p>",
             "link_label": "Shop Now",
@@ -437,7 +441,9 @@
         "column_nBnMPt": {
           "type": "column",
           "settings": {
+            "media_type": "video",
             "image": "shopify://shop_images/lanolips-golden-dry-skin-miracle-salve-image-1.jpg",
+            "video": "shopify://files/videos/lanolips-wonderland-mini-bites-video.mp4",
             "title": "Golden Dry Skin Miracle Salve",
             "text": "<p>The richest hydrating fix for very dry & compromised skin. </p>",
             "link_label": "Shop Now",
