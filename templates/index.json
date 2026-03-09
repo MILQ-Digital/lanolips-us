@@ -15,6 +15,7 @@
         "slide_kbJygU": {
           "type": "slide",
           "name": "101 Ointment Challenge",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/lanolips-dry-skin-heroes-web-banner.jpg",
             "mobileimage": "shopify://shop_images/lanolips-dry-skin-heroes-mobile-banner.jpg",
