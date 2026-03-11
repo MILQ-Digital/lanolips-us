@@ -139,6 +139,17 @@
   z-index: -1;
 }
 
+@media screen and (max-width: 750px) {
+  .card__content {
+    z-index: auto;
+  }
+}
+
+.complementary-slider .card__content {
+  z-index: auto;
+}
+
+
 .card__content--auto-margins {
   grid-template-rows: minmax(0, auto) max-content minmax(0, auto);
 }
