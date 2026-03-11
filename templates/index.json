@@ -207,7 +207,7 @@
         "description": "",
         "show_description": false,
         "description_style": "body",
-        "collection": "best-sellers-archive",
+        "collection": "best-sellers",
         "products_to_show": 8,
         "columns_desktop": 5,
         "full_width": true,
