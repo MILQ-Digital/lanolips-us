@@ -138,6 +138,10 @@
   flex-grow: 1;
   z-index: -1;
 }
+.collection .card__inner .card__content  {
+  z-index: -1;
+}
+
 
 @media screen and (max-width: 750px) {
   .card__content {
@@ -145,7 +149,9 @@
   }
 }
 
-.complementary-slider .card__content {
+.complementary-slider .card__content,
+.cart-upsell .card__content,
+.collection .card__content {
   z-index: auto;
 }
 
