@@ -224,7 +224,7 @@
             top: 0;
             left: 0;
             z-index: -1;
-            -webkit-text-stroke: 6px white;
+            -webkit-text-stroke: 6px {{ block.settings.heading_outline_colour | default: '#ffffff' }};
             color: transparent;
           }
         {% endstyle %}
@@ -248,7 +248,8 @@
                 data-text="{{ block.settings.heading | escape }}"
               {% endif %}
               style="
-                letter-spacing: {{ block.settings.heading_letter_spacing }}px;"
+                letter-spacing: {{ block.settings.heading_letter_spacing }}px;
+                color: {{ block.settings.heading_colour | default: '#ffffff' }};"
               >
                 {{ block.settings.heading | escape }}
               </h2>
@@ -585,6 +586,18 @@
           "id": "show_heading_outline",
           "label": "Show Heading Outline",
           "default": false
+        },
+        {
+          "type": "color",
+          "id": "heading_colour",
+          "label": "Heading colour",
+          "default": "#ffffff"
+        },
+        {
+          "type": "color",
+          "id": "heading_outline_colour",
+          "label": "Heading outline colour",
+          "default": "#ffffff"
         },
         {
           "type": "range",
