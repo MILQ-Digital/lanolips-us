@@ -1,10 +1,19 @@
 {{ 'component-card.css' | asset_url | stylesheet_tag }}
 {%- liquid
+  assign show_banner_video = false
+  if block.settings.media_type == 'video' and block.settings.banner_video != blank
+    assign show_banner_video = true
+  endif
+
   assign ratio = 1
   if block.settings.image_ratio == 'portrait'
     assign ratio = 0.8
   elsif block.settings.image_ratio == 'adapt'
-    assign ratio = block.settings.banner_image.aspect_ratio
+    if show_banner_video
+      assign ratio = block.settings.banner_video.aspect_ratio
+    else
+      assign ratio = block.settings.banner_image.aspect_ratio
+    endif
   endif
   if ratio == 0 or ratio == null
     assign ratio = 1
@@ -18,26 +27,38 @@
         <div class="card__inner color-{{ card_color_scheme }} gradient ratio" style="--ratio-percent: {{ 1 | divided_by: ratio | times: 100 }}%;">
             <div class="card__media">
                 <div class="media media--transparent media--hover-effect">
-                    <img
-                    srcset="
-                        {%- if block.settings.banner_image.width >= 165 -%}{{ block.settings.banner_image | image_url: width: 165 }} 165w,{%- endif -%}
-                        {%- if block.settings.banner_image.width >= 330 -%}{{ block.settings.banner_image | image_url: width: 330 }} 330w,{%- endif -%}
-                        {%- if block.settings.banner_image.width >= 535 -%}{{ block.settings.banner_image | image_url: width: 535 }} 535w,{%- endif -%}
-                        {%- if block.settings.banner_image.width >= 750 -%}{{ block.settings.banner_image | image_url: width: 750 }} 750w,{%- endif -%}
-                        {%- if block.settings.banner_image.width >= 1000 -%}{{ block.settings.banner_image | image_url: width: 1000 }} 1000w,{%- endif -%}
-                        {%- if block.settings.banner_image.width >= 1500 -%}{{ block.settings.banner_image | image_url: width: 1500 }} 1500w,{%- endif -%}
-                        {%- if block.settings.banner_image.width >= 3000 -%}{{ block.settings.banner_image | image_url: width: 3000 }} 3000w,{%- endif -%}
-                        {{ block.settings.banner_image | image_url }} {{ block.settings.banner_image.width }}w
-                    "
-                    src="{{ block.settings.banner_image | image_url: width: 1500 }}"
-                    sizes=" (min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 100 | divided_by: columns }}px,
-                        (min-width: 750px) {% if columns > 1 %}calc((100vw - 10rem) / 2){% else %}calc(100vw - 10rem){% endif %},
-                        calc(100vw - 3rem)"
-                    alt="{{ block.settings.banner_image.alt | escape }}"
-                    height="{{ block.settings.banner_image.height }}"
-                    width="{{ block.settings.banner_image.width }}"
-                    loading="lazy"
-                    class="motion-reduce">
+                    {%- if show_banner_video -%}
+                      {{
+                        block.settings.banner_video
+                        | video_tag:
+                          autoplay: true,
+                          loop: true,
+                          muted: true,
+                          controls: false,
+                          style: 'width:100%;height:100%;object-fit:cover;'
+                      }}
+                    {%- else -%}
+                      <img
+                      srcset="
+                          {%- if block.settings.banner_image.width >= 165 -%}{{ block.settings.banner_image | image_url: width: 165 }} 165w,{%- endif -%}
+                          {%- if block.settings.banner_image.width >= 330 -%}{{ block.settings.banner_image | image_url: width: 330 }} 330w,{%- endif -%}
+                          {%- if block.settings.banner_image.width >= 535 -%}{{ block.settings.banner_image | image_url: width: 535 }} 535w,{%- endif -%}
+                          {%- if block.settings.banner_image.width >= 750 -%}{{ block.settings.banner_image | image_url: width: 750 }} 750w,{%- endif -%}
+                          {%- if block.settings.banner_image.width >= 1000 -%}{{ block.settings.banner_image | image_url: width: 1000 }} 1000w,{%- endif -%}
+                          {%- if block.settings.banner_image.width >= 1500 -%}{{ block.settings.banner_image | image_url: width: 1500 }} 1500w,{%- endif -%}
+                          {%- if block.settings.banner_image.width >= 3000 -%}{{ block.settings.banner_image | image_url: width: 3000 }} 3000w,{%- endif -%}
+                          {{ block.settings.banner_image | image_url }} {{ block.settings.banner_image.width }}w
+                      "
+                      src="{{ block.settings.banner_image | image_url: width: 1500 }}"
+                      sizes=" (min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 100 | divided_by: columns }}px,
+                          (min-width: 750px) {% if columns > 1 %}calc((100vw - 10rem) / 2){% else %}calc(100vw - 10rem){% endif %},
+                          calc(100vw - 3rem)"
+                      alt="{{ block.settings.banner_image.alt | escape }}"
+                      height="{{ block.settings.banner_image.height }}"
+                      width="{{ block.settings.banner_image.width }}"
+                      loading="lazy"
+                      class="motion-reduce">
+                    {%- endif -%}
                 </div>
             </div>
         </div>
