@@ -29,6 +29,10 @@
 
   {%- style -%}
     {% for block in section.blocks %}
+      #Slider-{{ section.id }} .banner__heading-{{ block.id }} {
+        color: {{ block.settings.heading_colour | default: '#ffffff' }};
+      }
+
       @media screen and (max-width: 749px) {
         #Slider-{{ section.id }} .slideshow__text-wrapper-{{ block.id }} {
           background-color: {{ block.settings.text_bg_mobile }};
@@ -248,8 +252,7 @@
                 data-text="{{ block.settings.heading | escape }}"
               {% endif %}
               style="
-                letter-spacing: {{ block.settings.heading_letter_spacing }}px;
-                color: {{ block.settings.heading_colour | default: '#ffffff' }};"
+                letter-spacing: {{ block.settings.heading_letter_spacing }}px;"
               >
                 {{ block.settings.heading | escape }}
               </h2>
