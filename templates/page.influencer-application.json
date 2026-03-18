@@ -61,25 +61,20 @@
             "heading_size": "hs"
           }
         },
-        "text_eWBYAD": {
-          "type": "text",
-          "disabled": true,
+        "influencer_app_form_NEqNGw": {
+          "type": "influencer_app_form",
           "settings": {
-            "text": "<p>All fields are mandatory<br/></p>",
-            "text_style": "body"
+            "email_subject": "Influencer Squad Application",
+            "intro_text": "<p>Fill in the form below to be considered for product gifting and future collaborations with the Lanolips Squad.</p>"
           }
-        },
-        "contact_form_NEqNGw": {
-          "type": "contact_form",
-          "settings": {}
         }
       },
       "block_order": [
         "heading_BbxH7D",
-        "text_eWBYAD",
-        "contact_form_NEqNGw"
+        "influencer_app_form_NEqNGw"
       ],
       "settings": {
+        "media_type": "image",
         "image": "shopify://shop_images/Lanolips-Contact-Us-Image-Block.jpg",
         "height": "adapt",
         "desktop_image_width": "medium",
@@ -104,8 +99,9 @@
         "column_fhC3TL": {
           "type": "column",
           "settings": {
-            "title": "Customer Service & Wholesale Enquiries:",
-            "text": "<p>Lanolips Pty Ltd (Australia)<br/><a href=\"mailto:hello@lanolips.com\" title=\"mailto:hello@lanolips.com\">hello@lanolips.com</a></p><p>North America Consumer Enquiries:<br/><a href=\"mailto:hellousa@lanolips.com\">hellousa@lanolips.com</a></p>",
+            "media_type": "image",
+            "title": "Customer Service & Wholesale Enquiries",
+            "text": "<p>Lanolips Limited (EU)<br/><a href=\"mailto:helloeu@lanolips.com\" title=\"Email address to the lanolips eu customer service\">helloeu@lanolips.com</a><br/><br/><strong>Responsible Person (for authorities only):<br/></strong><a href=\"https://www.theregulatorycompany.com/rp\" title=\"https://www.theregulatorycompany.com/rp\">The Regulatory Company<br/></a>TRC 2514 AA NL</p>",
             "link_label": "",
             "link": "",
             "button_style_secondary": false
@@ -114,28 +110,18 @@
         "column_73LdDY": {
           "type": "column",
           "settings": {
+            "media_type": "image",
             "title": "Press Enquiries",
-            "text": "<p>USA: Alison Brod Marketing + Communications<br/><a href=\"mailto:press@lanolips.com\" target=\"_blank\" title=\"mailto:press@lanolips.com\">press@lanolips.com</a></p><p>CANADA: Lanolips USA <br/><a href=\"mailto:hellousa@lanolips.com\">hellousa@lanolips.com</a></p><p>AUSTRALIA: SHA PR<br/><a href=\"mailto:lanolips@shapr.com.au\" title=\"mailto:lanolips@shapr.com.au\">lanolips@shapr.com.au</a></p><p>UK: Imagination PR<br/><a href=\"mailto:lano@imaginationpr.co.uk\" title=\"mailto:lano@imaginationpr.co.uk\">lano@imaginationpr.co.uk</a></p><p>FR: Nice Work (Paris)<br/><a href=\"mailto:charlotte@nicework.fr\" title=\"mailto:charlotte@nicework.fr\">charlotte@nicework.fr</a></p><p>DE: LOVEMARK Public Relations (Germany)<br/><a href=\"mailto:lanolips@lovemark-pr.com\" title=\"mailto:lanolips@lovemark-pr.com\">lanolips@lovemark-pr.com<br/></a><a href=\"tel:+498974747070\">+49 (0)89 74747070</a></p><p>ME: Red Havas (UAE)<br/><a href=\"mailto:laiba-ali.raza@redhavasme.com\" title=\"mailto:laiba-ali.raza@redhavasme.com\">laiba-ali.raza@redhavasme.com</a></p><p></p>",
+            "text": "<p>FR: Nice Work (Paris) <br/><a href=\"mailto:charlotte@nicework.fr\">charlotte@nicework.fr</a><a href=\"tel: 01.58.18.33.33\">01.58.18.33.33</a></p><p>DE: LOVEMARK Public Relations (Germany)<br/><a href=\"mailto:lanolips@lovemark-pr.comt\">lanolips@lovemark-pr.com</a><a href=\"tel:+498974747070\">+49 (0)89 74747070</a></p><p>ME: Red Havas (UAE)<br/><a href=\"mailto:laiba-ali.raza@redhavasme.com\" title=\"mailto:laiba-ali.raza@redhavasme.com\">laiba-ali.raza@redhavasme.com</a></p><p>UK: Imagination PR <br/><a href=\"mailto:lano@imaginationpr.co.uk\">lano@imaginationpr.co.uk</a></p><p>AU: SHA PR <br/><a href=\"mailto:lanolips@shapr.com.au\">lanolips@shapr.com.au</a></p><p>USA: Alison Brod Marketing + Communications <br/><a href=\"mailto:press@lanolips.com\">press@lanolips.com</a></p><p>CA: Lanolips USA <br/><a href=\"mailto:hellousa@lanolips.com\">hellousa@lanolips.com</a></p>",
             "link_label": "",
             "link": "",
-            "button_style_secondary": false
-          }
-        },
-        "column_influencer_squad": {
-          "type": "column",
-          "settings": {
-            "title": "Influencer Squad Application:",
-            "text": "<p>Are you an influencer with an established audience? We would like to hear from you.</p>",
-            "link_label": "Click Here",
-            "link": "/pages/influencer-application",
             "button_style_secondary": false
           }
         }
       },
       "block_order": [
         "column_fhC3TL",
-        "column_73LdDY",
-        "column_influencer_squad"
+        "column_73LdDY"
       ],
       "settings": {
         "title": "",

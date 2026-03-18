@@ -271,6 +271,11 @@
         "error_heading": "Please adjust the following:"
       }
     },
+    "influencer_application": {
+      "form": {
+        "post_success": "Thanks for your submission! We love discovering new creators and will be in touch if an opportunity comes up with the Lanolips squad."
+      }
+    },
     "404": {
       "title": "Page not found",
       "subtext": "404"
