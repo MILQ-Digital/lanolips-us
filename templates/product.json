@@ -534,10 +534,28 @@
       "settings": {
         "include_margins": true
       }
+    },
+    "93583ff2ca4d96628189": {
+      "type": "apps",
+      "blocks": {
+        "c32ca8d0-4ce3-4b30-843c-ca31d95bc3a9": {
+          "type": "shopify://apps/yotpo-product-reviews/blocks/reviews/eb7dfd7d-db44-4334-bc49-c893b51b36cf",
+          "settings": {
+            "product": "{{product}}"
+          }
+        }
+      },
+      "block_order": [
+        "c32ca8d0-4ce3-4b30-843c-ca31d95bc3a9"
+      ],
+      "settings": {
+        "include_margins": true
+      }
     }
   },
   "order": [
     "main",
+    "93583ff2ca4d96628189",
     "multirow_HV497Y",
     "image_with_text_9nJtjb",
     "rich_text_qVEiKy",
