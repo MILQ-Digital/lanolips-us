@@ -27,6 +27,8 @@
             "heading": "Sun Balm SPF 30 Tropical",
             "heading_size": "hxxl",
             "show_heading_outline": false,
+            "heading_colour": "#ffffff",
+            "heading_outline_colour": "#ffffff",
             "heading_letter_spacing": 0,
             "subcontent": "<p>Hello Sunshine! <br/>The ultimate lip sun visor: Hydrates, illuminates and shields lips</p>",
             "button_label": "Shop Sun Balm",
@@ -59,6 +61,8 @@
             "heading": "Take On The 101 Ointment Ultimate Hydration Challenge",
             "heading_size": "hxl",
             "show_heading_outline": false,
+            "heading_colour": "#2b4676",
+            "heading_outline_colour": "#ffffff",
             "heading_letter_spacing": 0,
             "subcontent": "<p>1 Balm. 101 Uses. 100% Natural. Cruelty Free.<br/>Accepted by the National Eczema Association. </p>",
             "button_label": "Discover Now",
@@ -92,6 +96,8 @@
             "heading": "Dry Skin Heroes",
             "heading_size": "hxl",
             "show_heading_outline": false,
+            "heading_colour": "#ffffff",
+            "heading_outline_colour": "#ffffff",
             "heading_letter_spacing": 0,
             "subcontent": "<p>There's a reason why dry skin is our thing</p>",
             "button_label": "Shop Now",
@@ -126,6 +132,8 @@
             "heading": "Holiday Gift Guide",
             "heading_size": "hxxl",
             "show_heading_outline": false,
+            "heading_colour": "#ffffff",
+            "heading_outline_colour": "#ffffff",
             "heading_letter_spacing": 1,
             "subcontent": "<p>Limited Edition Holiday gifts for the lip-balm-obsessed</p>",
             "button_label": "Shop Holidays",
@@ -159,6 +167,8 @@
             "heading": "Take On The 101 Ointment Ultimate Hydration Challenge",
             "heading_size": "hxl",
             "show_heading_outline": false,
+            "heading_colour": "#ffffff",
+            "heading_outline_colour": "#ffffff",
             "heading_letter_spacing": 0,
             "subcontent": "<p>1 Balm. 101 Uses. 100% Natural. Cruelty Free. </p>",
             "button_label": "Discover Now",
@@ -318,6 +328,7 @@
         "button_AxwgMt"
       ],
       "settings": {
+        "media_type": "image",
         "image": "shopify://shop_images/lifestyle-shot-101-ointment-multipurpose-superbalm-eczema-approved.jpg",
         "height": "adapt",
         "desktop_image_width": "medium",
@@ -426,6 +437,7 @@
         "column_mGc7n6": {
           "type": "column",
           "settings": {
+            "media_type": "image",
             "image": "shopify://shop_images/lanolips-everywhere-cream-image-3.jpg",
             "title": "Everywhere Cream",
             "text": "<p>A rich, multi-purpose allover cream. One tube. Endless uses.</p>",
@@ -437,6 +449,7 @@
         "column_nBnMPt": {
           "type": "column",
           "settings": {
+            "media_type": "image",
             "image": "shopify://shop_images/lanolips-golden-dry-skin-miracle-salve-image-1.jpg",
             "title": "Golden Dry Skin Miracle Salve",
             "text": "<p>The richest hydrating fix for very dry & compromised skin. </p>",
