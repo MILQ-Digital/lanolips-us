@@ -58,9 +58,13 @@
           color: {{ block.settings.heading_colour_mobile | default: block.settings.heading_colour | default: '#ffffff' }} !important;
         }
 
-        {% if block.settings.show_heading_outline %}
+        {% if block.settings.show_heading_outline_mobile %}
           #Slider-{{ section.id }} .slideshow__text-wrapper-{{ block.id }} .banner__heading::before {
             -webkit-text-stroke: 6px {{ block.settings.heading_outline_colour_mobile | default: block.settings.heading_outline_colour | default: '#ffffff' }};
+          }
+        {% else %}
+          #Slider-{{ section.id }} .slideshow__text-wrapper-{{ block.id }} .banner__heading::before {
+            display: none;
           }
         {% endif %}
       }
@@ -240,7 +244,11 @@
 
           @media screen and (max-width: 749px) {
             .slideshow__text-wrapper-{{ block.id }} .banner__heading::before {
-              -webkit-text-stroke: 6px {{ block.settings.heading_outline_colour_mobile | default: block.settings.heading_outline_colour | default: '#ffffff' }};
+              {% if block.settings.show_heading_outline_mobile %}
+                -webkit-text-stroke: 6px {{ block.settings.heading_outline_colour_mobile | default: block.settings.heading_outline_colour | default: '#ffffff' }};
+              {% else %}
+                display: none;
+              {% endif %}
             }
           }
         {% endstyle %}
@@ -801,6 +809,12 @@
           "max": 72,
           "step": 1,
           "default": 16
+        },
+        {
+          "type": "checkbox",
+          "id": "show_heading_outline_mobile",
+          "label": "Show Heading Outline (mobile)",
+          "default": false
         },
         {
           "type": "color",
