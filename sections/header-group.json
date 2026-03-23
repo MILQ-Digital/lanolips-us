@@ -21,6 +21,13 @@
             "link": ""
           }
         },
+        "announcement_jxjjcr": {
+          "type": "announcement",
+          "settings": {
+            "text": "Get a free Glossy Balm Candy 3g with every order",
+            "link": ""
+          }
+        },
         "announcement_CyAyYF": {
           "type": "announcement",
           "disabled": true,
@@ -32,6 +39,7 @@
       },
       "block_order": [
         "announcement_EUw7Ak",
+        "announcement_jxjjcr",
         "announcement_CyAyYF"
       ],
       "settings": {
