@@ -14,6 +14,13 @@
     "announcement-bar": {
       "type": "announcement-bar",
       "blocks": {
+        "announcement_CyAyYF": {
+          "type": "announcement",
+          "settings": {
+            "text": "NEW: 12 Hour Overnight Hand Mask Has Arrived",
+            "link": "shopify://products/12-hour-overnight-lip-mask"
+          }
+        },
         "announcement_EUw7Ak": {
           "type": "announcement",
           "settings": {
@@ -27,20 +34,12 @@
             "text": "Get a free Glossy Balm Candy 3g with every order",
             "link": ""
           }
-        },
-        "announcement_CyAyYF": {
-          "type": "announcement",
-          "disabled": true,
-          "settings": {
-            "text": "Beat the rush, view our Holiday shipping cut offs 🎄",
-            "link": "shopify://pages/delivery-orders"
-          }
         }
       },
       "block_order": [
+        "announcement_CyAyYF",
         "announcement_EUw7Ak",
-        "announcement_jxjjcr",
-        "announcement_CyAyYF"
+        "announcement_jxjjcr"
       ],
       "settings": {
         "color_scheme": "scheme-1",
