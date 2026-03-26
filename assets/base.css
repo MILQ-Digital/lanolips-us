@@ -4460,6 +4460,16 @@ body .yotpo-sr-vertical-border {display: none!important}
   form.klaviyo-form div:first-child {
     width: 100%!important;
   }
+
+  .klaviyo-close-form {
+    height: 48px !important;
+    width: 48px !important;
+  }
+
+  .klaviyo-close-form svg {
+    height: 100% !important;
+    width: 100% !important;
+  }
   
 }
 
