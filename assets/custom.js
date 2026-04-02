@@ -66,3 +66,15 @@ document.addEventListener("DOMContentLoaded", function() {
     subtree: true
   });
 });
+
+// Override Klaviyo close button size on mobile
+const klaviyoCloseObserver = new MutationObserver(() => {
+  if (window.innerWidth > 768) return;
+  const closeBtn = document.querySelector('.klaviyo-close-form');
+  if (closeBtn) {
+    closeBtn.style.setProperty('height', '44px', 'important');
+    closeBtn.style.setProperty('width', '44px', 'important');
+  }
+});
+
+klaviyoCloseObserver.observe(document.body, { childList: true, subtree: true });
