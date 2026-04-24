@@ -12,6 +12,44 @@
     "slideshow_dJncwY": {
       "type": "slideshow",
       "blocks": {
+        "slide_DjBz8E": {
+          "type": "slide",
+          "name": "Launch: Ceramide Milkshake Balm",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/lanolips-ceramide-milkshake-balm-raspberry-web-banner.jpg",
+            "mobileimage": "shopify://shop_images/lanolips-ceramide-milkshake-balm-raspberry-mobile-banner.png",
+            "image_alignment": "image-center",
+            "slide_video_url": "",
+            "subheading": "Let’s Shake Things Up!",
+            "subheading_script": "",
+            "heading": "Ceramide Milkshake Balm",
+            "heading_size": "hxl",
+            "show_heading_outline": false,
+            "heading_colour": "#ffffff",
+            "heading_outline_colour": "#ffffff",
+            "heading_letter_spacing": 0,
+            "subcontent": "<p>A powerfully creamy blend of 90% Lanolin, boosted with Ceramides + Murumuru Butter</p>",
+            "button_label": "Shop Ceramide Milkshake Balm",
+            "link": "shopify://collections/ceramide-milkshake-balm",
+            "button_style_secondary": false,
+            "box_align": "bottom-left",
+            "show_text_box": false,
+            "text_alignment": "left",
+            "image_overlay_opacity": 0,
+            "color_scheme": "scheme-3",
+            "text_alignment_mobile": "center",
+            "show_heading_outline_mobile": false,
+            "heading_colour_mobile": "#2b4676",
+            "heading_outline_colour_mobile": "#ffffff",
+            "text_color_mobile": "#2b4676",
+            "hide_text_mobile": false,
+            "text_bg_mobile": "#ffd5e3",
+            "btn_bg_mobile": "#fb558e",
+            "heading_font_size_mobile": 30,
+            "script_heading_font_size_mobile": 30
+          }
+        },
         "slide_kbJygU": {
           "type": "slide",
           "name": "Launch: 12 Hour Overnight Mask",
@@ -164,52 +202,14 @@
             "heading_font_size_mobile": 30,
             "script_heading_font_size_mobile": 30
           }
-        },
-        "slide_DjBz8E": {
-          "type": "slide",
-          "name": "101 Ointment Challenge",
-          "disabled": true,
-          "settings": {
-            "image": "shopify://shop_images/lanolips-ceramide-milkshake-balm-raspberry-web-banner.jpg",
-            "mobileimage": "shopify://shop_images/lanolips-ceramide-milkshake-balm-raspberry-mobile-banner.png",
-            "image_alignment": "image-center",
-            "slide_video_url": "",
-            "subheading": "Let’s Shake Things Up!",
-            "subheading_script": "",
-            "heading": "Ceramide Milkshake Balm",
-            "heading_size": "hxl",
-            "show_heading_outline": false,
-            "heading_colour": "#ffffff",
-            "heading_outline_colour": "#ffffff",
-            "heading_letter_spacing": 0,
-            "subcontent": "<p>A powerfully creamy blend of 90% Lanolin, boosted with Ceramides + Murumuru Butter</p>",
-            "button_label": "Shop Ceramide Milkshake Balm",
-            "link": "shopify://collections/ceramide-milkshake-balm",
-            "button_style_secondary": false,
-            "box_align": "bottom-left",
-            "show_text_box": false,
-            "text_alignment": "left",
-            "image_overlay_opacity": 0,
-            "color_scheme": "scheme-3",
-            "text_alignment_mobile": "center",
-            "show_heading_outline_mobile": false,
-            "heading_colour_mobile": "#2b4676",
-            "heading_outline_colour_mobile": "#ffffff",
-            "text_color_mobile": "#2b4676",
-            "hide_text_mobile": false,
-            "text_bg_mobile": "#ffd5e3",
-            "btn_bg_mobile": "#fb558e",
-            "heading_font_size_mobile": 30,
-            "script_heading_font_size_mobile": 30
-          }
         }
       },
       "block_order": [
+        "slide_DjBz8E",
         "slide_kbJygU",
         "slide_QnTTkd",
         "slide_6LweMm",
-        "slide_NAx7bN",
-        "slide_DjBz8E"
+        "slide_NAx7bN"
       ],
       "settings": {
         "layout": "full_bleed",
