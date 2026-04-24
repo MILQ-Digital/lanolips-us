@@ -14,8 +14,17 @@
     "announcement-bar": {
       "type": "announcement-bar",
       "blocks": {
+        "announcement_LAEQ9L": {
+          "type": "announcement",
+          "disabled": true,
+          "settings": {
+            "text": "NEW: Ceramide Milkshake Balm Has Arrived",
+            "link": "shopify://collections/ceramide-milkshake-balm"
+          }
+        },
         "announcement_CyAyYF": {
           "type": "announcement",
+          "disabled": true,
           "settings": {
             "text": "NEW: 12 Hour Overnight Hand Mask Has Arrived",
             "link": "shopify://products/12-hour-overnight-hand-mask"
@@ -37,6 +46,7 @@
         }
       },
       "block_order": [
+        "announcement_LAEQ9L",
         "announcement_CyAyYF",
         "announcement_EUw7Ak",
         "announcement_jxjjcr"
