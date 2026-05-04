@@ -16,7 +16,6 @@
       "blocks": {
         "announcement_LAEQ9L": {
           "type": "announcement",
-          "disabled": true,
           "settings": {
             "text": "NEW: Ceramide Milkshake Balm Has Arrived",
             "link": "shopify://collections/ceramide-milkshake-balm"

@@ -15,7 +15,6 @@
         "slide_DjBz8E": {
           "type": "slide",
           "name": "Launch: Ceramide Milkshake Balm",
-          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/lanolips-ceramide-milkshake-balm-raspberry-web-banner.jpg",
             "mobileimage": "shopify://shop_images/lanolips-ceramide-milkshake-balm-raspberry-mobile-banner.png",
@@ -55,6 +54,7 @@
         "slide_kbJygU": {
           "type": "slide",
           "name": "Launch: 12 Hour Overnight Mask",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/lanolips-12-hour-overnight-hand-mask-web-banner.jpg",
             "mobileimage": "shopify://shop_images/lanolips-12-hour-overnight-hand-mask-mobile-banner.jpg",
