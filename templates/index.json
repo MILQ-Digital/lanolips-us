@@ -168,6 +168,7 @@
         },
         "slide_NAx7bN": {
           "type": "slide",
+          "name": "Summer Sale June 2026",
           "disabled": true,
           "settings": {
             "image": "shopify://shop_images/lanolips-spring-sale.jpg",
@@ -182,7 +183,7 @@
             "heading_colour": "#2b4676",
             "heading_outline_colour": "#2b4676",
             "heading_letter_spacing": 1,
-            "subcontent": "<p>Offer ends 11.59pm PDT on Monday 9th June 2026</p>",
+            "subcontent": "<p>Offer ends 11.59pm PDT on Monday 8th June 2026</p>",
             "button_label": "Shop Now",
             "link": "shopify://collections/shop-all",
             "button_style_secondary": false,
