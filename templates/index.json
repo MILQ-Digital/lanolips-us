@@ -129,7 +129,6 @@
         "slide_6LweMm": {
           "type": "slide",
           "name": "101 Delicious",
-          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/desktop-banner-lanolips-101-delicious-butterscotch-cookie-white-chocolate-raspberry.jpg",
             "mobileimage": "shopify://shop_images/mobile-banner-lanolips-101-delicious-butterscotch-cookie-white-chocolate-raspberry.jpg",
@@ -143,7 +142,7 @@
             "heading_colour": "#2b4676",
             "heading_outline_colour": "#ffffff",
             "heading_letter_spacing": 1,
-            "subcontent": "<p>New Flavours: Butterscotch Cookie & White Chocolate Raspberry</p>",
+            "subcontent": "<p>New Flavors: Butterscotch Cookie & White Chocolate Raspberry</p>",
             "button_label": "Shop Now",
             "link": "shopify://collections/101-ointments",
             "button_style_secondary": false,
@@ -167,6 +166,7 @@
         "slide_NAx7bN": {
           "type": "slide",
           "name": "Summer Sale June 2026",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/lanolips-spring-sale.jpg",
             "mobileimage": "shopify://shop_images/lanolips-march-sale-mobile-banner.jpg",
