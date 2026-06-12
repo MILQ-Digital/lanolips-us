@@ -148,7 +148,7 @@
     "empty_search_menu": "",
     "empty_search_product_list": [],
     "currency_code_enabled": false,
-    "cart_type": "notification",
+    "cart_type": "drawer",
     "show_vendor": false,
     "show_cart_note": true,
     "enable_freeshipping": true,
