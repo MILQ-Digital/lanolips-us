@@ -303,7 +303,7 @@
       "remove_title": "Remove {{ title }}",
       "estimated_total": "Estimated total",
       "new_estimated_total": "New estimated total",
-      "note": "",
+      "note": "Orders may be slightly delayed due to stocktake — thank you for your patience.",
       "checkout": "Checkout",
       "empty": "Your bag is empty",
       "cart_error": "There was an error while updating your bag. Please try again.",
