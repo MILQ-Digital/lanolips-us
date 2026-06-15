@@ -23,9 +23,8 @@
         },
         "announcement_CyAyYF": {
           "type": "announcement",
-          "disabled": true,
           "settings": {
-            "text": "Orders may be delayed due to stocktake.",
+            "text": "Orders may be delayed due to stocktake",
             "link": ""
           }
         },
