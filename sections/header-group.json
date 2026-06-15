@@ -289,38 +289,10 @@
         "padding_top": 8,
         "padding_bottom": 8
       }
-    },
-    "blocks_EKTT6p": {
-      "type": "_blocks",
-      "blocks": {
-        "ai_gen_block_f5842fc_hPAzQ3": {
-          "type": "ai_gen_block_f5842fc",
-          "settings": {
-            "show_announcement": true,
-            "dismissible": false,
-            "message": "Delays to shipping due to stocktake",
-            "show_icon": true,
-            "icon_prefix": "ℹ️",
-            "background_color": "#fae8ed",
-            "text_color": "#2b4676",
-            "text_size": 14,
-            "icon_size": 18,
-            "padding": 12,
-            "border_radius": 8
-          },
-          "blocks": {}
-        }
-      },
-      "block_order": [
-        "ai_gen_block_f5842fc_hPAzQ3"
-      ],
-      "name": "Cart announcement",
-      "settings": {}
     }
   },
   "order": [
     "announcement-bar",
-    "header",
-    "blocks_EKTT6p"
+    "header"
   ]
 }
