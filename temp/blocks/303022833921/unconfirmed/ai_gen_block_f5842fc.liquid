@@ -1,6 +1,253 @@
+{% doc %}
+  @prompt
+    Create a custom cart drawer announcement block that displays a temporary message to customers (e.g. "Delays to shipping due to stocktake"). The block should have the following customizable settings in the theme editor: a text field for the message content, a toggle to show/hide the block without removing it, an icon or emoji prefix option, and background/text color settings so it can be styled to stand out (e.g. as a warning or info banner). The block should be designed to sit inside the cart drawer and be dismissible or always visible based on a setting. Keep it clean and consistent with a premium skincare brand aesthetic.
+{% enddoc %}
+{% assign ai_gen_id = block.id | replace: '_', '' | downcase %}
+
+{% if block.settings.show_announcement %}
+  {% style %}
+    .ai-cart-announcement-{{ ai_gen_id }} {
+      display: block;
+      width: 100%;
+      background-color: {{ block.settings.background_color }};
+      border-radius: {{ block.settings.border_radius }}px;
+      padding: {{ block.settings.padding }}px;
+      margin-bottom: 16px;
+      position: relative;
+    }
+
+    .ai-cart-announcement-content-{{ ai_gen_id }} {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+    }
+
+    .ai-cart-announcement-icon-{{ ai_gen_id }} {
+      flex-shrink: 0;
+      font-size: {{ block.settings.icon_size }}px;
+      line-height: 1;
+      margin-top: 2px;
+    }
+
+    .ai-cart-announcement-text-{{ ai_gen_id }} {
+      flex-grow: 1;
+      color: {{ block.settings.text_color }};
+      font-size: {{ block.settings.text_size }}px;
+      line-height: 1.5;
+      margin: 0;
+    }
+
+    .ai-cart-announcement-dismiss-{{ ai_gen_id }} {
+      flex-shrink: 0;
+      background: none;
+      border: none;
+      padding: 0;
+      cursor: pointer;
+      color: {{ block.settings.text_color }};
+      opacity: 0.6;
+      width: 20px;
+      height: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: opacity 0.2s ease;
+    }
+
+    .ai-cart-announcement-dismiss-{{ ai_gen_id }}:hover {
+      opacity: 1;
+    }
+
+    .ai-cart-announcement-{{ ai_gen_id }}.ai-cart-announcement-hidden-{{ ai_gen_id }} {
+      display: none;
+    }
+
+    .ai-cart-announcement-dismiss-{{ ai_gen_id }} svg {
+      width: 16px;
+      height: 16px;
+    }
+  {% endstyle %}
+
+  <cart-announcement-{{ ai_gen_id }}
+    class="ai-cart-announcement-{{ ai_gen_id }}"
+    data-dismissible="{{ block.settings.dismissible }}"
+    {{ block.shopify_attributes }}
+  >
+    <div class="ai-cart-announcement-content-{{ ai_gen_id }}">
+      {% if block.settings.show_icon and block.settings.icon_prefix != blank %}
+        <span class="ai-cart-announcement-icon-{{ ai_gen_id }}">
+          {{ block.settings.icon_prefix }}
+        </span>
+      {% endif %}
+
+      <p class="ai-cart-announcement-text-{{ ai_gen_id }}">
+        {{ block.settings.message }}
+      </p>
+
+      {% if block.settings.dismissible %}
+        <button
+          class="ai-cart-announcement-dismiss-{{ ai_gen_id }}"
+          aria-label="Dismiss announcement"
+          type="button"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      {% endif %}
+    </div>
+  </cart-announcement-{{ ai_gen_id }}>
+
+  <script>
+    (function() {
+      class CartAnnouncement{{ ai_gen_id }} extends HTMLElement {
+        constructor() {
+          super();
+          this.storageKey = 'cart-announcement-dismissed-{{ ai_gen_id }}';
+        }
+
+        connectedCallback() {
+          const isDismissible = this.dataset.dismissible === 'true';
+
+          if (isDismissible) {
+            const isDismissed = localStorage.getItem(this.storageKey);
+            if (isDismissed === 'true') {
+              this.classList.add('ai-cart-announcement-hidden-{{ ai_gen_id }}');
+            }
+
+            const dismissButton = this.querySelector('.ai-cart-announcement-dismiss-{{ ai_gen_id }}');
+            if (dismissButton) {
+              dismissButton.addEventListener('click', () => {
+                this.handleDismiss();
+              });
+            }
+          }
+        }
+
+        handleDismiss() {
+          this.classList.add('ai-cart-announcement-hidden-{{ ai_gen_id }}');
+          localStorage.setItem(this.storageKey, 'true');
+        }
+      }
+
+      customElements.define('cart-announcement-{{ ai_gen_id }}', CartAnnouncement{{ ai_gen_id }});
+    })();
+  </script>
+{% endif %}
+
 {% schema %}
- {
-   "name": "AI_Block",
-   "tag": "shopify-ai-generated-block"
- }
+{
+  "name": "Cart announcement",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Visibility"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_announcement",
+      "label": "Show announcement",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "dismissible",
+      "label": "Allow customers to dismiss",
+      "default": true,
+      "info": "Dismissed state is saved in browser storage"
+    },
+    {
+      "type": "header",
+      "content": "Content"
+    },
+    {
+      "type": "textarea",
+      "id": "message",
+      "label": "Message",
+      "default": "Delays to shipping due to stocktake"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_icon",
+      "label": "Show icon",
+      "default": true
+    },
+    {
+      "type": "text",
+      "id": "icon_prefix",
+      "label": "Icon or emoji",
+      "default": "ℹ️",
+      "info": "Use an emoji or single character"
+    },
+    {
+      "type": "header",
+      "content": "Style"
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Background",
+      "default": "#fae8ed"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Text",
+      "default": "#2b4676"
+    },
+    {
+      "type": "range",
+      "id": "text_size",
+      "label": "Text size",
+      "min": 12,
+      "max": 18,
+      "step": 1,
+      "unit": "px",
+      "default": 14
+    },
+    {
+      "type": "range",
+      "id": "icon_size",
+      "label": "Icon size",
+      "min": 14,
+      "max": 24,
+      "step": 2,
+      "unit": "px",
+      "default": 18
+    },
+    {
+      "type": "range",
+      "id": "padding",
+      "label": "Padding",
+      "min": 8,
+      "max": 24,
+      "step": 2,
+      "unit": "px",
+      "default": 12
+    },
+    {
+      "type": "range",
+      "id": "border_radius",
+      "label": "Border radius",
+      "min": 0,
+      "max": 16,
+      "step": 2,
+      "unit": "px",
+      "default": 8
+    }
+  ],
+  "presets": [
+    {
+      "name": "Cart announcement"
+    }
+  ]
+}
 {% endschema %}
