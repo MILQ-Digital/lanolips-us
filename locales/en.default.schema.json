@@ -339,6 +339,31 @@
         },
         "cart_drawer": {
           "header": "Cart drawer",
+          "enable_message": {
+            "label": "Show cart drawer message"
+          },
+          "message": {
+            "label": "Cart drawer message",
+            "info": "Read-only notification shown in the cart drawer. Use for shipping updates, promotions, or other time-sensitive information."
+          },
+          "message_color": {
+            "label": "Message color"
+          },
+          "message_alignment": {
+            "label": "Message alignment"
+          },
+          "message_font_size": {
+            "label": "Message font size",
+            "options__1": {
+              "label": "Small"
+            },
+            "options__2": {
+              "label": "Medium"
+            },
+            "options__3": {
+              "label": "Large"
+            }
+          },
           "collection": {
             "label": "Collection",
             "info": "Visible when cart drawer is empty."

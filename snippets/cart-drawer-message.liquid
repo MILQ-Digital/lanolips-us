@@ -1,0 +1,9 @@
+{%- if settings.enable_cart_drawer_message and settings.cart_drawer_message != blank -%}
+  <div
+    class="cart-drawer__message cart-drawer__message--{{ settings.cart_drawer_message_font_size }} rte"
+    style="text-align: {{ settings.cart_drawer_message_alignment }}; color: {{ settings.cart_drawer_message_color }};"
+    role="status"
+  >
+    {{ settings.cart_drawer_message }}
+  </div>
+{%- endif -%}

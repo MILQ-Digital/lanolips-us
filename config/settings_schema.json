@@ -1824,6 +1824,64 @@
       },
       {
         "type": "checkbox",
+        "id": "enable_cart_drawer_message",
+        "label": "t:settings_schema.cart.settings.cart_drawer.enable_message.label",
+        "default": false
+      },
+      {
+        "type": "richtext",
+        "id": "cart_drawer_message",
+        "label": "t:settings_schema.cart.settings.cart_drawer.message.label",
+        "info": "t:settings_schema.cart.settings.cart_drawer.message.info"
+      },
+      {
+        "type": "color",
+        "id": "cart_drawer_message_color",
+        "label": "t:settings_schema.cart.settings.cart_drawer.message_color.label",
+        "default": "#121212"
+      },
+      {
+        "type": "select",
+        "id": "cart_drawer_message_alignment",
+        "label": "t:settings_schema.cart.settings.cart_drawer.message_alignment.label",
+        "options": [
+          {
+            "value": "left",
+            "label": "t:settings_schema.global.settings.text_alignment.options__1.label"
+          },
+          {
+            "value": "center",
+            "label": "t:settings_schema.global.settings.text_alignment.options__2.label"
+          },
+          {
+            "value": "right",
+            "label": "t:settings_schema.global.settings.text_alignment.options__3.label"
+          }
+        ],
+        "default": "center"
+      },
+      {
+        "type": "select",
+        "id": "cart_drawer_message_font_size",
+        "label": "t:settings_schema.cart.settings.cart_drawer.message_font_size.label",
+        "options": [
+          {
+            "value": "body-xs",
+            "label": "t:settings_schema.cart.settings.cart_drawer.message_font_size.options__1.label"
+          },
+          {
+            "value": "body-sm",
+            "label": "t:settings_schema.cart.settings.cart_drawer.message_font_size.options__2.label"
+          },
+          {
+            "value": "body-lg",
+            "label": "t:settings_schema.cart.settings.cart_drawer.message_font_size.options__3.label"
+          }
+        ],
+        "default": "body-sm"
+      },
+      {
+        "type": "checkbox",
         "id": "enable_freeshipping",
         "label": "Enable Free Shipping Bar",
         "default": false

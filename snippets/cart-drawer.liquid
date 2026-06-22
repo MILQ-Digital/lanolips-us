@@ -855,6 +855,8 @@ function updateCartDrawer() {
 
         <!-- CTAs -->
 
+        {%- render 'cart-drawer-message' -%}
+
         <div class="cart__ctas" {{ block.shopify_attributes }}>
           <button
             type="submit"

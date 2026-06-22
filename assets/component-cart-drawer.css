@@ -141,7 +141,8 @@ cart-drawer:not(.is-empty) .cart-drawer__collection {
 
 .cart-upsell h2,
 .cart-drawer__footer,
-.cart__ctas {
+.cart__ctas,
+.cart-drawer__message {
   padding-right: 20px;
 }
 
@@ -452,6 +453,35 @@ cart-drawer-items::-webkit-scrollbar-track-piece {
   .cart-drawer .cart-item__error {
     margin-left: 0;
   }
+}
+
+.cart-drawer__message {
+  padding-bottom: 16px;
+  margin: 0;
+}
+
+.cart-drawer__message--body-xs {
+  font-size: var(--body-xs);
+}
+
+.cart-drawer__message--body-sm {
+  font-size: var(--body-sm);
+}
+
+.cart-drawer__message--body-lg {
+  font-size: var(--body-lg);
+}
+
+.cart-drawer__message a {
+  color: inherit;
+}
+
+.cart-drawer__message > *:first-child {
+  margin-top: 0;
+}
+
+.cart-drawer__message > *:last-child {
+  margin-bottom: 0;
 }
 
 .free-shipping {
