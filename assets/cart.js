@@ -100,10 +100,6 @@ class CartItems extends HTMLElement {
               targetElement.replaceWith(sourceElement);
             }
           }
-          const cartDrawer = document.querySelector('cart-drawer');
-          if (cartDrawer && typeof cartDrawer.initCartDrawerExtras === 'function') {
-            cartDrawer.initCartDrawerExtras();
-          }
         })
         .catch((e) => {
           console.error(e);
@@ -188,12 +184,6 @@ class CartItems extends HTMLElement {
             section.selector
           );
         });
-        if (this.tagName === 'CART-DRAWER-ITEMS') {
-          const cartDrawer = document.querySelector('cart-drawer');
-          if (cartDrawer && typeof cartDrawer.initCartDrawerExtras === 'function') {
-            cartDrawer.initCartDrawerExtras();
-          }
-        }
         const updatedValue = parsedState.items[line - 1] ? parsedState.items[line - 1].quantity : undefined;
         let message = '';
         if (items.length === parsedState.items.length && updatedValue !== parseInt(quantityElement.value)) {
