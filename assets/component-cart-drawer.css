@@ -99,6 +99,10 @@ cart-drawer:not(.is-empty) .cart-drawer__collection {
   margin: 0 0 1rem;
 }
 
+.cart-item-count {
+  margin-left: 1rem;
+}
+
 .drawer__close {
   display: inline-block;
   padding: 0;
