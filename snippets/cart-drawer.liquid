@@ -103,7 +103,7 @@ function updateCartDrawer() {
       {%- endif -%}
       {%- endunless -%}
       <div class="drawer__header">
-        <h2 id="cart-drawer-title" class="drawer__heading">{{ 'sections.cart.title' | t }}{%- unless lazy -%} <span id="cart-item-count" class="body-sm">{{ cart.item_count }}</span>{%- endunless -%}</h2>
+        <h2 id="cart-drawer-title" class="drawer__heading">{{ 'sections.cart.title' | t }}{%- unless lazy -%} <span id="cart-item-count" class="body-sm cart-item-count">{{ cart.item_count }}</span>{%- endunless -%}</h2>
         <button
           class="drawer__close"
           type="button"
