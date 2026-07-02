@@ -166,7 +166,6 @@
         "slide_NAx7bN": {
           "type": "slide",
           "name": "Summer Sale June 2026",
-          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/summer-glow-sale-banner.png",
             "mobileimage": "shopify://shop_images/summer-glow-sale-banner-mobile.png",
