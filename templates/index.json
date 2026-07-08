@@ -166,7 +166,6 @@
         "slide_NAx7bN": {
           "type": "slide",
           "name": "Summer Sale June 2026",
-          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/101-glazed-donut-gwp-banner-desktop3.png",
             "mobileimage": "shopify://shop_images/101-glazed-donut-gwp-banner-mobile3.png",
@@ -177,8 +176,8 @@
             "heading": "101 Ointment Glazed Donut",
             "heading_size": "hxl",
             "show_heading_outline": false,
-            "heading_colour": "#2B4676",
-            "heading_outline_colour": "#2B4676",
+            "heading_colour": "#2b4676",
+            "heading_outline_colour": "#2b4676",
             "heading_letter_spacing": 1,
             "subcontent": "<h4>When you spend $40+, offer ends 11.59pm PDT on Sunday 12th July 2026</h4>",
             "button_label": "Shop Now",
@@ -195,7 +194,7 @@
             "heading_outline_colour_mobile": "#2b4676",
             "text_color_mobile": "#2b4676",
             "hide_text_mobile": false,
-            "text_bg_mobile": "#FAFAFA",
+            "text_bg_mobile": "#fafafa",
             "btn_bg_mobile": "#fb558e",
             "heading_font_size_mobile": 30,
             "script_heading_font_size_mobile": 30
