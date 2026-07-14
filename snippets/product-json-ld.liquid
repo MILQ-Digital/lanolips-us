@@ -1,0 +1,28 @@
+{% comment %}
+  Outputs Product JSON-LD based on Shopify structured_data,
+  with selected-variant SKU and GTIN (barcode) fields added.
+
+  Usage:
+  {% render 'product-json-ld', product: product %}
+{% endcomment %}
+{%- liquid
+  assign selected_variant = product.selected_or_first_available_variant
+-%}
+{%- capture product_ld_json -%}
+{{ product | structured_data }}
+{%- endcapture -%}
+<script type="application/ld+json">
+{%- if selected_variant.sku != blank or selected_variant.barcode != blank -%}
+  {%- assign product_ld_json = product_ld_json | strip | remove_first: '{' -%}
+  {
+    {%- if selected_variant.sku != blank -%}
+      "sku": {{ selected_variant.sku | json }},
+    {%- endif -%}
+    {%- if selected_variant.barcode != blank -%}
+      "gtin": {{ selected_variant.barcode | json }},
+    {%- endif -%}
+    {{ product_ld_json }}
+{%- else -%}
+  {{ product_ld_json }}
+{%- endif -%}
+</script>
