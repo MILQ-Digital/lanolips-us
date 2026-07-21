@@ -718,6 +718,53 @@
       endif
     -%}
 
+    {%- liquid
+      assign yotpo_bottomline_raw = product.metafields.yotpo.preloaded_bottomline.value | default: ''
+      assign yotpo_review_count = 0
+      assign yotpo_average_score = 0
+
+      if yotpo_bottomline_raw contains '"totalReviews":'
+        assign yotpo_review_count = yotpo_bottomline_raw | split: '"totalReviews":' | last | split: ',' | first | plus: 0
+      elsif yotpo_bottomline_raw contains '"totalReview":'
+        assign yotpo_review_count = yotpo_bottomline_raw | split: '"totalReview":' | last | split: ',' | first | plus: 0
+      endif
+
+      if yotpo_bottomline_raw contains '"averageScore":'
+        assign yotpo_average_score = yotpo_bottomline_raw | split: '"averageScore":' | last | split: ',' | first | plus: 0
+      endif
+
+      assign yotpo_rating_value = product.metafields.yotpo.reviews_average.value | plus: 0
+
+      if yotpo_rating_value <= 0
+        assign yotpo_rating_value = yotpo_average_score
+      endif
+    -%}
+
+    {%- capture product_schema -%}
+      {{ product | structured_data }}
+    {%- endcapture -%}
+
+    {%- assign product_schema = product_schema | strip -%}
+
+    {%- if yotpo_review_count > 0 and yotpo_rating_value > 0 -%}
+      {%- unless product_schema contains '"aggregateRating"' -%}
+        {%- capture aggregate_rating_json -%}
+          ,"aggregateRating":{
+            "@type":"AggregateRating",
+            "ratingValue":{{ yotpo_rating_value | json }},
+            "reviewCount":{{ yotpo_review_count | json }},
+            "bestRating":5,
+            "worstRating":1
+          }
+        {%- endcapture -%}
+
+        {%- assign product_schema = product_schema | replace_last: '}', aggregate_rating_json | append: '}' -%}
+      {%- endunless -%}
+    {%- endif -%}
+
+    <script type="application/ld+json" id="ProductJsonLd-{{ section.id }}">
+      {{ product_schema }}
+    </script>
     <script type="application/ld+json">
       {{ product | structured_data }}
     </script>
