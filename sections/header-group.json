@@ -224,6 +224,7 @@
         },
         "megamenu_FexHtw": {
           "type": "megamenu",
+          "disabled": true,
           "settings": {
             "image_title": "",
             "image_link": "",
@@ -233,6 +234,7 @@
         },
         "image_picker_cVMpbW": {
           "type": "image_picker",
+          "disabled": true,
           "settings": {
             "position": "9",
             "image_block": "shopify://shop_images/Menu_Category_Images_Featured_Image_Discover_4.jpg",
@@ -242,6 +244,7 @@
         },
         "image_picker_JdyALT": {
           "type": "image_picker",
+          "disabled": true,
           "settings": {
             "position": "9",
             "image_block": "shopify://shop_images/Menu_Category_Images_Featured_Image_Discover_3.jpg",
