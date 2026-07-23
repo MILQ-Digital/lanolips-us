@@ -38,10 +38,9 @@
         },
         "announcement_jxjjcr": {
           "type": "announcement",
-          "disabled": true,
           "settings": {
-            "text": "Get a free Glossy Balm Candy 3g with every order",
-            "link": ""
+            "text": "3 for $33 on 101 Fruities & 101 Delicious Bundles, Ends Monday",
+            "link": "https://lanolips.com/a/bundles/101-fruities-&-101-delicious-bundle-bybc"
           }
         }
       },
@@ -219,7 +218,7 @@
           "settings": {
             "position": "7",
             "image_block": "shopify://shop_images/lanolips-sun-balm-spf30-phone-lip-balm-holder.png",
-            "image_title": "Sun Balm SPF 30 Phone Lip Balm Holder",
+            "image_title": "Sun Balm SPF Phone Lip Balm Holder",
             "image_link": "shopify://products/sun-balm-spf-30-phone-lip-balm-holder-1"
           }
         },
