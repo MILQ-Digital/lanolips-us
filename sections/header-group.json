@@ -38,6 +38,7 @@
         },
         "announcement_jxjjcr": {
           "type": "announcement",
+          "disabled": true,
           "settings": {
             "text": "3 for $33 on 101 Fruities & 101 Delicious Bundles, Ends Monday",
             "link": "https://lanolips.com/a/bundles/101-fruities-&-101-delicious-bundle-bybc"
