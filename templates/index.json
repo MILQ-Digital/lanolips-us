@@ -168,8 +168,8 @@
           "name": "Summer Sale June 2026",
           "disabled": true,
           "settings": {
-            "image": "shopify://shop_images/spend-and-save-usa-web-banner_55fa43be-b5af-4da1-a6f5-53994443106a.png",
-            "mobileimage": "shopify://shop_images/spend-and-save-usa-and-us-mobile-banner.png",
+            "image": "shopify://shop_images/spend-and-save-usa-web-banner_ef056e23-2ab3-4ca1-a62f-a40da52f5fc8.png",
+            "mobileimage": "shopify://shop_images/spend-and-save-usa-mobile-banner.png",
             "image_alignment": "image-center",
             "slide_video_url": "",
             "subheading": "SALE",
@@ -193,10 +193,10 @@
             "show_heading_outline_mobile": false,
             "heading_colour_mobile": "#ffffff",
             "heading_outline_colour_mobile": "#ffffff",
-            "text_color_mobile": "#FFFFFF",
+            "text_color_mobile": "#ffffff",
             "hide_text_mobile": false,
-            "text_bg_mobile": "#FB558E",
-            "btn_bg_mobile": "#FFD5E3",
+            "text_bg_mobile": "#fb558e",
+            "btn_bg_mobile": "#ffd5e3",
             "heading_font_size_mobile": 30,
             "script_heading_font_size_mobile": 30
           }
