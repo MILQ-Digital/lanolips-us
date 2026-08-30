@@ -87,6 +87,10 @@
   border-radius: calc(var(--border-radius) - var(--border-width) - var(--image-padding));
 }
 
+.article-card-wrapper .card__inner .card__media {
+  z-index: 1;
+}
+
 .card--card .card__inner .card__media {
   border-bottom-right-radius: 0;
   border-bottom-left-radius: 0;
@@ -151,7 +155,8 @@
 
 .complementary-slider .card__content,
 .cart-upsell .card__content,
-.collection .card__content {
+.collection .card__content,
+.blog-articles .card__content {
   z-index: auto;
 }
 
