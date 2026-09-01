@@ -166,6 +166,7 @@
         "slide_NAx7bN": {
           "type": "slide",
           "name": "Summer Sale June 2026",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/spend-and-save-usa-web-banner_ef056e23-2ab3-4ca1-a62f-a40da52f5fc8.png",
             "mobileimage": "shopify://shop_images/spend-and-save-usa-mobile-banner.png",
