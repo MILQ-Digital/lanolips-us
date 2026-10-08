@@ -451,6 +451,25 @@
 .card:not(.card--horizontal) > .card__content > .card__badge {
   margin: 1.3rem;
 }
+/* Product metafield badge (custom.badge) sits above the card image link */
+.card__inner > .card__badge--metafield {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+  margin: 1.3rem;
+  pointer-events: none;
+}
+
+.card__inner > .card__badge--metafield.top {
+  top: 0;
+  bottom: auto;
+}
+
+.card__inner > .card__badge--metafield.right {
+  left: auto;
+  right: 0;
+}
 
 .card__media .media img {
   height: 100%;
