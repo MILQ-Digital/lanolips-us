@@ -50,7 +50,17 @@
         {% if card_product.featured_media == nil and settings.card_style == 'card' %} ratio{% endif %}
         {% if horizontal_class %} card--horizontal{% endif %}" style="--ratio-percent: {{ 1 | divided_by: ratio | times: 100 }}%;">
      
-      <div class="card__inner {% if settings.card_style == 'standard' %}color-{{ settings.card_color_scheme }} gradient{% endif %}{% if card_product.featured_media or settings.card_style == 'standard' %} ratio{% endif %}" style="--ratio-percent: 132.591%;">  
+      <div class="card__inner {% if settings.card_style == 'standard' %}color-{{ settings.card_color_scheme }} gradient{% endif %}{% if card_product.featured_media or settings.card_style == 'standard' %} ratio{% endif %}" style="--ratio-percent: 132.591%;">
+        {%- if card_product.metafields.custom.show_badge == true and card_product.metafields.custom.badge.value.title != blank -%}
+          <div class="card__badge card__badge--metafield badges {{ settings.badge_position }}">
+            <span
+              id="MetafieldBadge-{{ section_id }}-{{ card_product.id }}"
+              class="badge color-{{ settings.new_badge_color_scheme }}"
+            >
+              {{ card_product.metafields.custom.badge.value.title }}
+            </span>
+          </div>
+        {%- endif -%}
         {%- if card_product.featured_media -%}
           <a 
             class="card__media{% if image_shape and image_shape != 'default' %} shape--{{ image_shape }} color-{{ settings.card_color_scheme }} gradient{% endif %} full-unstyled-link"
@@ -133,13 +143,6 @@
                 class="badge badge--bottom-left color-{{ settings.sale_badge_color_scheme }}"
               >
                 {{- 'products.product.on_sale' | t -}}
-              </span>
-            {%- elsif card_product.metafields.custom.show_badge == true and card_product.metafields.custom.badge.value.title != blank -%}
-              <span
-                id="NoMediaStandardBadge-{{ section_id }}-{{ card_product.id }}"
-                class="badge badge--bottom-left color-{{ settings.new_badge_color_scheme }}"
-              >
-                {{ card_product.metafields.custom.badge.value.title }}
               </span>
             {%- endif -%}
           {%- liquid      
@@ -709,13 +712,6 @@
               class="badge badge--bottom-left color-{{ settings.sale_badge_color_scheme }}"
             >
               {{- 'products.product.on_sale' | t -}}
-            </span>
-          {%- elsif card_product.metafields.custom.show_badge == true and card_product.metafields.custom.badge.value.title != blank -%}
-            <span
-              id="NoMediaStandardBadge-{{ section_id }}-{{ card_product.id }}"
-              class="badge badge--bottom-left color-{{ settings.new_badge_color_scheme }}"
-            >
-              {{ card_product.metafields.custom.badge.value.title }}
             </span>
           {%- endif -%}
           {%- liquid      
