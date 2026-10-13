@@ -166,6 +166,7 @@
         "slide_NAx7bN": {
           "type": "slide",
           "name": "Summer Sale June 2026",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/101-glazed-donut-gwp-banner-desktop3.png",
             "mobileimage": "shopify://shop_images/101-glazed-donut-gwp-banner-mobile3.png",
