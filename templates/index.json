@@ -166,6 +166,7 @@
         "slide_NAx7bN": {
           "type": "slide",
           "name": "Summer Sale June 2026",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/lanolips-fruit-party-sale-web-banner_41cabbb6-9266-4d93-9fe6-5bc9cc9eb62f.jpg",
             "mobileimage": "shopify://shop_images/lanolips-fruit-party-sale-mobile-banner_2170870b-3ded-4af0-aeb4-dbe5d57ee4c2.jpg",
