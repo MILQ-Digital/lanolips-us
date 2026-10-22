@@ -129,7 +129,6 @@
         "slide_6LweMm": {
           "type": "slide",
           "name": "101 Delicious",
-          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/lanolips-holiday-desktop-banner.jpg",
             "mobileimage": "shopify://shop_images/lanolips-holiday-mobile-banner.jpg",
@@ -145,7 +144,7 @@
             "heading_letter_spacing": 1,
             "subcontent": "<p>New Festive Flavours: Toffee Apple, Cinnamon Roll & Cherry Chocolate.</p>",
             "button_label": "Shop Now",
-            "link": "shopify://collections/101-ointments",
+            "link": "shopify://collections/holiday-gift-sets",
             "button_style_secondary": false,
             "box_align": "middle-left",
             "show_text_box": false,
@@ -158,7 +157,7 @@
             "heading_outline_colour_mobile": "#ffffff",
             "text_color_mobile": "#2b4676",
             "hide_text_mobile": false,
-            "text_bg_mobile": "#FDFDFD",
+            "text_bg_mobile": "#fdfdfd",
             "btn_bg_mobile": "#fb558e",
             "heading_font_size_mobile": 30,
             "script_heading_font_size_mobile": 30
