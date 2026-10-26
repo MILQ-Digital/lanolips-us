@@ -142,7 +142,7 @@
             "heading_colour": "#2b4676",
             "heading_outline_colour": "#ffffff",
             "heading_letter_spacing": 1,
-            "subcontent": "<p>New Festive Flavors: Toffee Apple, Cinnamon Roll & Cherry Chocolate.</p>",
+            "subcontent": "<p>New Festive Flavors:&nbsp;<br/>Toffee Apple, Cinnamon Roll &&nbsp;<br/>Cherry Chocolate.</p>",
             "button_label": "Shop Now",
             "link": "shopify://collections/holiday-gift-sets",
             "button_style_secondary": false,
