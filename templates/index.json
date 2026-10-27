@@ -166,7 +166,6 @@
         "slide_NAx7bN": {
           "type": "slide",
           "name": "Summer Sale June 2026",
-          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/happy-halloween-sale-banner-slide-all-markets-plain.jpg",
             "mobileimage": "shopify://shop_images/happy-halloween-sale-mobile-banner-slide-all-plain.jpg",
@@ -194,7 +193,7 @@
             "heading_colour_mobile": "#FFFFFF",
             "heading_outline_colour_mobile": "#FFFFFF",
             "text_color_mobile": "#FFFFFF",
-            "hide_text_mobile": true,
+            "hide_text_mobile": false,
             "text_bg_mobile": "#2B4676",
             "btn_bg_mobile": "#fb558e",
             "heading_font_size_mobile": 31,
