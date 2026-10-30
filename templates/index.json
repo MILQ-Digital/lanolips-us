@@ -123,7 +123,7 @@
             "text_bg_mobile": "#ffd5e3",
             "btn_bg_mobile": "#fb558e",
             "heading_font_size_mobile": 30,
-            "script_heading_font_size_mobile": 30
+            "script_heading_font_size_mobile": 16
           }
         },
         "slide_6LweMm": {
@@ -341,7 +341,7 @@
       ],
       "settings": {
         "media_type": "image",
-        "image": "shopify://shop_images/lifestyle-shot-101-ointment-multipurpose-superbalm-eczema-approved.jpg",
+        "image": "shopify://shop_images/lanolips-homepage-content-block-usa.jpg",
         "height": "adapt",
         "desktop_image_width": "medium",
         "layout": "text_first",
