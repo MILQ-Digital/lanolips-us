@@ -23,9 +23,8 @@
             <a
               href="{{ paginate.previous.url }}{{ anchor }}"
               class="pagination__item pagination__item--next pagination__item-arrow link motion-reduce"
-              aria-label="{{ 'general.pagination.previous' | t }}"
             >
-              Prev
+              Prev <span class="visually-hidden">{{ 'general.pagination.previous' | t }}</span>
             </a>
           </li>
         {%- endif -%}
@@ -63,9 +62,8 @@
             <a
               href="{{ paginate.next.url }}{{ anchor }}"
               class="pagination__item pagination__item--prev pagination__item-arrow link motion-reduce"
-              aria-label="{{ 'general.pagination.next' | t }}"
             >
-             Next
+             Next <span class="visually-hidden">{{ 'general.pagination.next' | t }}</span>
             </a>
           </li>
         {%- endif -%}
