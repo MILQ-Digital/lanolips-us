@@ -628,5 +628,31 @@
               });
             });
         </script>
+
+  <script>
+    (function () {
+      function fixSvgs(root) {
+        (root.querySelectorAll ? root : document).querySelectorAll('svg:not([role])').forEach(function (svg) {
+          // Leave SVGs alone if they have an accessible name
+          if (svg.hasAttribute('aria-label') || svg.hasAttribute('aria-labelledby') || svg.querySelector('title')) return;
+          svg.setAttribute('role', 'presentation');
+          svg.setAttribute('aria-hidden', 'true');
+        });
+      }
+
+      fixSvgs(document);
+
+      // Also catch SVGs added later (cart drawers, quick view, section reloads)
+      new MutationObserver(function (mutations) {
+        mutations.forEach(function (m) {
+          m.addedNodes.forEach(function (node) {
+            if (node.nodeType !== 1) return;
+            if (node.tagName && node.tagName.toLowerCase() === 'svg') fixSvgs(node.parentNode);
+            else fixSvgs(node);
+          });
+        });
+      }).observe(document.body, { childList: true, subtree: true });
+    })();
+  </script>
   </body>
 </html>
