@@ -319,7 +319,7 @@
         "text_jTzLCJ": {
           "type": "text",
           "settings": {
-            "text": "<p>The Original - powered by Lanolin. Skin-identical moisture. *Clinically proven hydration for up to 48 hours.</p><p>Proudly partnering with the National Eczema Association.&nbsp;<a href=\"/pages/faqs\" title=\"FAQs\">Read More</a>.</p><p>*Clinically tested by the Australian Photobiology Testing Facility (APTF). Individual results may vary.</p>",
+            "text": "<p>The Original - powered by Lanolin. Skin-identical moisture. *Clinically proven hydration for up to 48 hours.</p><p>Proudly partnering with the National Eczema Association.&nbsp;<a href=\"/pages/faqs\" title=\"FAQs\">Read More</a>.</p><h6>*Clinically tested by the Australian Photobiology Testing Facility (APTF). Individual results may vary.</h6>",
             "text_style": "subtitle"
           }
         },
