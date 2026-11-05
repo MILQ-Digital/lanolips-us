@@ -23,7 +23,8 @@
         "promo_banner_tfAVHn": {
           "type": "promo-banner",
           "settings": {
-            "banner_image": "{{ collection.metafields.custom.bundle_image.value }}",
+            "media_type": "image",
+            "banner_image": "shopify://shop_images/lanolips-collection-page-image-model-101.jpg",
             "promotion_position": 7,
             "title": "{{ collection.metafields.custom.bundle_title.value }}",
             "link_label": "Shop Now",
@@ -35,7 +36,8 @@
         "promo_banner_CMXKXz": {
           "type": "promo-banner",
           "settings": {
-            "banner_image": "{{ collection.metafields.custom.bundle_image_2.value }}",
+            "media_type": "image",
+            "banner_image": "shopify://shop_images/lanolips-collection-page-image-model-milkshake.jpg",
             "promotion_position": 13,
             "title": "{{ collection.metafields.custom.bundle_title_2.value }}",
             "link_label": "Shop Now",
