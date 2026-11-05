@@ -80,6 +80,7 @@
         "contact_form_NEqNGw"
       ],
       "settings": {
+        "media_type": "image",
         "image": "shopify://shop_images/Lanolips-Contact-Us-Image-Block.jpg",
         "height": "adapt",
         "desktop_image_width": "medium",
@@ -104,6 +105,7 @@
         "column_fhC3TL": {
           "type": "column",
           "settings": {
+            "media_type": "image",
             "title": "Customer Service & Wholesale Enquiries:",
             "text": "<p>Lanolips Pty Ltd (Australia)<br/><a href=\"mailto:hello@lanolips.com\" title=\"mailto:hello@lanolips.com\">hello@lanolips.com</a></p><p>North America Consumer Enquiries:<br/><a href=\"mailto:hellousa@lanolips.com\">hellousa@lanolips.com</a></p>",
             "link_label": "",
@@ -114,8 +116,9 @@
         "column_73LdDY": {
           "type": "column",
           "settings": {
+            "media_type": "image",
             "title": "Press Enquiries",
-            "text": "<p>USA: Alison Brod Marketing + Communications<br/><a href=\"mailto:press@lanolips.com\" target=\"_blank\" title=\"mailto:press@lanolips.com\">press@lanolips.com</a></p><p>CANADA: Lanolips USA <br/><a href=\"mailto:hellousa@lanolips.com\">hellousa@lanolips.com</a></p><p>AUSTRALIA: SHA PR<br/><a href=\"mailto:lanolips@shapr.com.au\" title=\"mailto:lanolips@shapr.com.au\">lanolips@shapr.com.au</a></p><p>UK: Imagination PR<br/><a href=\"mailto:lano@imaginationpr.co.uk\" title=\"mailto:lano@imaginationpr.co.uk\">lano@imaginationpr.co.uk</a></p><p>FR: Nice Work (Paris)<br/><a href=\"mailto:charlotte@nicework.fr\" title=\"mailto:charlotte@nicework.fr\">charlotte@nicework.fr</a></p><p>DE: LOVEMARK Public Relations (Germany)<br/><a href=\"mailto:lanolips@lovemark-pr.com\" title=\"mailto:lanolips@lovemark-pr.com\">lanolips@lovemark-pr.com<br/></a><a href=\"tel:+498974747070\">+49 (0)89 74747070</a></p><p>ME: Red Havas (UAE)<br/><a href=\"mailto:laiba-ali.raza@redhavasme.com\" title=\"mailto:laiba-ali.raza@redhavasme.com\">laiba-ali.raza@redhavasme.com</a></p><p></p>",
+            "text": "<p>USA: Alison Brod Marketing + Communications<br/><a href=\"mailto:press@lanolips.com\" target=\"_blank\" title=\"mailto:press@lanolips.com\">press@lanolips.com</a></p><p>CANADA: Lanolips USA&nbsp;<br/><a href=\"mailto:hellousa@lanolips.com\">hellousa@lanolips.com</a></p><p>AUSTRALIA: SHA PR<br/><a href=\"mailto:lanolips@shapr.com.au\" title=\"mailto:lanolips@shapr.com.au\">lanolips@shapr.com.au</a></p><p>UK:&nbsp;<br/><a href=\"hellouk@lanolips.com\">hellouk@lanolips.com</a></p><p>ME: Red Havas (UAE)<br/><a href=\"mailto:laiba-ali.raza@redhavasme.com\" title=\"mailto:laiba-ali.raza@redhavasme.com\">laiba-ali.raza@redhavasme.com</a></p><p>FR: Nice Work (Paris)<br/><a href=\"mailto:charlotte@nicework.fr\" title=\"mailto:charlotte@nicework.fr\">charlotte@nicework.fr</a></p><p>IT: Attila PR&nbsp;<br/><a href=\"mailto:Eleonora.rizza@attila.it\">Eleonora.rizza@attila.it </a><a href=\"mailto:Susanna.santarelli@attila.it\">Susanna.santarelli@attila.it</a></p><p>EU:<br/><a href=\"helloeu@lanolips.com\">helloeu@lanolips.com</a></p><p></p>",
             "link_label": "",
             "link": "",
             "button_style_secondary": false
@@ -124,6 +127,7 @@
         "column_influencer_squad": {
           "type": "column",
           "settings": {
+            "media_type": "image",
             "title": "Influencer Squad Application:",
             "text": "<p>Are you an influencer with an established audience? We would like to hear from you.</p>",
             "link_label": "Click Here",
