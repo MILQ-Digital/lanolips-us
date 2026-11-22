@@ -306,6 +306,7 @@
       "note": "Orders may be slightly delayed due to stocktake — thank you for your patience.",
       "checkout": "Checkout",
       "empty": "Your bag is empty",
+      "upsell_heading": "You May Also Like",
       "cart_error": "There was an error while updating your bag. Please try again.",
       "cart_quantity_error_html": "You can only add {{ quantity }} of this item to your bag.",
       "duties_and_taxes_included_shipping_at_checkout_with_policy_html": "Duties and taxes included. Discounts and <a href=\"{{ link }}\">shipping</a> calculated at checkout.",

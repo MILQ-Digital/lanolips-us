@@ -1937,6 +1937,39 @@
         "id": "freegift_product_list",
         "label": "Products",
         "limit": 4
+      },
+      {
+        "type": "header",
+        "content": "Cart upsell (You May Also Like)"
+      },
+      {
+        "type": "text",
+        "id": "cart_upsell_heading",
+        "label": "Upsell heading",
+        "info": "Leave blank to use the default translation (\"You May Also Like\")."
+      },
+      {
+        "type": "select",
+        "id": "cart_upsell_limit",
+        "label": "Number of products to show",
+        "options": [
+          { "value": "1", "label": "1" },
+          { "value": "2", "label": "2" }
+        ],
+        "default": "2"
+      },
+      {
+        "type": "product_list",
+        "id": "cart_upsell_products",
+        "label": "Featured upsell products",
+        "info": "Shown in this order. Products already in the cart are skipped and the next one is shown.",
+        "limit": 10
+      },
+      {
+        "type": "collection",
+        "id": "cart_upsell_collection",
+        "label": "Fallback upsell collection",
+        "info": "Used when no featured products are eligible. If blank, a collection of a cart item is used."
       },                      
       {
         "type": "collection",

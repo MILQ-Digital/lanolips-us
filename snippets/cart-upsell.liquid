@@ -1,0 +1,125 @@
+{% comment %}
+  Renders the cart drawer upsell ("You May Also Like") block.
+
+  Product order:
+  1. Theme settings > Cart > "Featured upsell products" (in the order set by the merchant)
+  2. Theme settings > Cart > "Fallback upsell collection"
+  3. If no fallback collection is set: the first collection of a cart item, or the 'upsell' collection
+
+  Products already in the cart, unavailable products and duplicates are skipped, so the next
+  eligible product is shown instead. Nothing is rendered when no eligible products remain.
+
+  Accepts:
+  - section_id: {String} ID of the section the drawer is rendered in (optional)
+
+  Usage:
+  {% render 'cart-upsell', section_id: section.id %}
+{% endcomment %}
+
+{%- liquid
+  assign upsell_limit = settings.cart_upsell_limit | default: 2 | plus: 0 | at_least: 1 | at_most: 2
+
+  assign upsell_heading = settings.cart_upsell_heading | strip
+  if upsell_heading == blank
+    assign upsell_heading = 'sections.cart.upsell_heading' | t
+  endif
+
+  assign cart_product_ids = cart.items | map: 'product_id' | join: ','
+  assign cart_product_ids = ',' | append: cart_product_ids | append: ','
+
+  assign upsell_collection = settings.cart_upsell_collection
+  if upsell_collection == blank
+    assign upsell_collection = collections['upsell']
+    for item in cart.items
+      for collection in item.product.collections
+        if collection.handle
+          assign upsell_collection = collections[collection.handle]
+          break
+        endif
+      endfor
+      if upsell_collection != collections['upsell']
+        break
+      endif
+    endfor
+  endif
+
+  assign upsell_ids = ','
+  assign upsell_handles = ''
+  assign upsell_count = 0
+
+  for product in settings.cart_upsell_products
+    if upsell_count >= upsell_limit
+      break
+    endif
+    assign product_key = ',' | append: product.id | append: ','
+    if product.available == false or cart_product_ids contains product_key or upsell_ids contains product_key
+      continue
+    endif
+    assign upsell_ids = upsell_ids | append: product.id | append: ','
+    assign upsell_handles = upsell_handles | append: product.handle | append: '|'
+    assign upsell_count = upsell_count | plus: 1
+  endfor
+
+  if upsell_count < upsell_limit and upsell_collection != blank
+    for product in upsell_collection.products
+      if upsell_count >= upsell_limit
+        break
+      endif
+      assign product_key = ',' | append: product.id | append: ','
+      if product.available == false or cart_product_ids contains product_key or upsell_ids contains product_key
+        continue
+      endif
+      assign upsell_ids = upsell_ids | append: product.id | append: ','
+      assign upsell_handles = upsell_handles | append: product.handle | append: '|'
+      assign upsell_count = upsell_count | plus: 1
+    endfor
+  endif
+
+  assign upsell_handles = upsell_handles | split: '|'
+-%}
+
+{%- if upsell_count > 0 -%}
+  <div class="cart-upsell">
+    <div class="cart-upsell-heading">
+      <h2 class="heading-2xs">{{ upsell_heading | escape }}</h2>
+      <button
+        class="drawer__close_pw"
+        type="button"
+        onclick="sessionStorage.setItem('hideCartUpsell', 'true'); this.closest('.cart-upsell')?.remove();"
+        aria-label="{{ 'accessibility.close' | t }}"
+      >
+        <span class="svg-wrapper">
+          {{- 'icon-close-new.svg' | inline_asset_content -}}
+        </span>
+      </button>
+    </div>
+    <ul
+      class="cart-upsell__list cart-upsell__list--{{ upsell_count }} grid product-grid contains-card contains-card--product contains-card--standard grid--1-col-desktop grid--1-col-tablet-down"
+      role="list"
+      aria-label="{{ upsell_heading | escape }}"
+    >
+      {%- for handle in upsell_handles -%}
+        {%- assign product = all_products[handle] -%}
+        <li
+          id="Upsell-Item-{{ forloop.index }}"
+          class="cart-upsell-item upsell-item grid__item{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
+          {% if settings.animations_reveal_on_scroll %}
+            data-cascade
+            style="--animation-order: {{ forloop.index }};"
+          {% endif %}
+        >
+          {% render 'card-product',
+            card_product: product,
+            media_aspect_ratio: 'portrait',
+            show_secondary_image: false,
+            lazy_load: false,
+            quick_add: 'standard',
+            section_id: section_id,
+            horizontal_class: true,
+            horizontal_quick_add: true
+          %}
+        </li>
+      {%- endfor -%}
+    </ul>
+  </div>
+{%- endif -%}
