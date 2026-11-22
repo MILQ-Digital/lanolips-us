@@ -40,8 +40,8 @@
           "type": "announcement",
           "disabled": true,
           "settings": {
-            "text": "3 for $33 on 101 Fruities & 101 Delicious Bundles, Ends Monday",
-            "link": "https://lanolips.com/a/bundles/101-fruities-&-101-delicious-bundle-bybc"
+            "text": "Black Friday Sale On Now - Shop 30% Off Storewide",
+            "link": "shopify://collections/shop-all"
           }
         }
       },
@@ -287,7 +287,6 @@
         "enable_country_selector": false,
         "enable_language_selector": false,
         "enable_customer_avatar": true,
-        "show_wishlist": false,
         "mobile_logo_position": "center",
         "margin_bottom": 0,
         "padding_top": 8,
