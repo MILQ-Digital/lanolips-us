@@ -168,12 +168,10 @@
           "name": "Summer Sale June 2026",
           "disabled": true,
           "settings": {
-            "image": "shopify://shop_images/lanolips-101-strawberry-gwp-banner.png",
-            "mobileimage": "shopify://shop_images/lanolips-101-strawberry-gwp-banner-mobile-2-1.png",
             "image_alignment": "image-center",
-            "slide_video_file": "shopify://files/videos/BLACK FRIDAY BANNER_3460x1748px (3).mp4",
+            "slide_video_file": "shopify://files/videos/BLACK FRIDAY BANNER_3460x1748px (5).mp4",
             "slide_video_url": "",
-            "slide_video_file_mobile": "shopify://files/videos/BLACK FRIDAY BANNER_750x700px (1).mp4",
+            "slide_video_file_mobile": "shopify://files/videos/BLACK FRIDAY BANNER_750x700px (3).mp4",
             "subheading": "",
             "subheading_script": "",
             "heading": "",
@@ -197,7 +195,7 @@
             "heading_outline_colour_mobile": "#2b4676",
             "text_color_mobile": "#2b4676",
             "hide_text_mobile": false,
-            "text_bg_mobile": "#fdfdfd",
+            "text_bg_mobile": "#000000",
             "btn_bg_mobile": "#fb558e",
             "heading_font_size_mobile": 31,
             "script_heading_font_size_mobile": 20
@@ -429,6 +427,7 @@
         "@media screen and (max-width: 750px) {.banner__heading {font-size: 38px; margin-bottom: 40px; } .banner__heading em {font-size: 53px; } .media > img {height: 50%; top: 25%; }}"
       ],
       "settings": {
+        "media_type": "image",
         "image": "shopify://shop_images/lanolips-lanolin-banner-home-page.jpg",
         "image_overlay_opacity": 0,
         "image_height": "adapt",
