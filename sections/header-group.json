@@ -38,7 +38,6 @@
         },
         "announcement_jxjjcr": {
           "type": "announcement",
-          "disabled": true,
           "settings": {
             "text": "Black Friday Sale On Now - Shop 30% Off Storewide",
             "link": "shopify://collections/shop-all"
